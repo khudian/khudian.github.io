@@ -1,0 +1,684 @@
+
+       \magnification=1200
+   \baselineskip 17 pt
+
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\F {{\cal F}}
+\def\grad {{^{\circ}}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+
+\bigskip
+
+ $$ $$
+
+
+    \centerline {\bf Applying Galois Theory to Elementary Problems. Examples}
+
+\bigskip
+
+\bigskip
+
+   \centerline  {\bf ${\cal x}$ 1. How to calculate $\sin 6^{\circ}$}
+
+\medskip
+
+
+
+ First of all try to find polynomial (with rational coefficients)
+ such that $\sin 6^{\circ}$ is its root. Notice that $6\cdot 5=30$
+ and $\sin 30\grad={1\over 2}$. Hence express $\sin 30\grad$ via $\sin 6\grad$:
+                  $$
+ \sin 5\varphi=\sin 3\varphi\cos2\varphi+\cos 3\varphi\sin 2\varphi=
+          16\sin^5\varphi-20\sin^3\varphi+5\sin\varphi\,.
+          \eqno (1)
+                  $$
+    We come to the polynomial equation
+     for $u=\sin 6\grad$:
+                   $$
+                 16u^5-20u^3+5u=\sin 30\grad={1\over 2}\,.
+                   \eqno (2)
+                   $$
+    (We use here trigonometric formulae: $\sin 3\varphi=3\sin \varphi-4\sin^3\varphi$
+     and $\cos 3\varphi=4cos^3\varphi-3\cos\varphi$.)
+
+     We do not hope to solve it in radicals straightforwardly. Try to attack
+     it using elementary tools of Galois theory.
+     It is evident from (1) and (2) that if $u=\sin\varphi$
+     is a root of (2) then $u^\prime=\sin (\varphi+{2\pi\over 5})$
+     is a root of this equation too:
+     $\sin 5(\varphi+{2\pi\over 5})=$
+     $\sin (5\varphi+2\pi)=\sin 5\varphi$. Hence it is easy
+     to find all five roots of the polynomial (2) using trigonometric
+     functions:
+                           $$
+                           \matrix
+                           {
+                  u_1=\sin 6\grad\,,\cr\cr
+                  u_2=\sin (6\grad+{360\grad\over 5})=\sin 78\grad=\cos 12\grad\,,\cr\cr
+             u_3=\sin (6\grad+2\cdot{360\grad\over 5})=\sin 150\grad={1\over 2}\,,\cr\cr
+             u_4=\sin (6\grad+3\cdot {360\grad\over 5})=\sin 222\grad=-\cos 48\grad\,,\cr\cr
+             u_5=\sin (6\grad+4\cdot{360\grad\over 5})=\sin294\grad=-\cos 24\grad\,.\cr
+                                 }
+                                 \eqno (3)
+                                $$
+
+
+One of the roots of this polynomial is a rational number, hence the polynomial
+$16u^5-20u^3+5u-{1\over 2}$ in (2) is reducible over $\Q$:
+it has linear factor $u-{1\over 2}$.
+
+It is more convenient (for calculations) to consider a new variable $t=2u$.
+We rewrite our polynomial as
+                 $$
+  {1\over 2}t^5-{5\over 2}t^3+{5\over 2}t-{1\over 2}=
+   {1\over 2}\left(t^5-5t^3+5t-1\right)\,.
+                     \eqno (4)
+                 $$
+This polynomial has a root $t=2u=1$. Thus it contains the linear factor $t-1$:
+             $$
+         {1\over 2}\left(t^5-5t^3+5t-1\right)=
+         {1\over 2}(t-1)P_4(t)\,,
+               $$
+where
+                $$
+      P_4(t)=t^4+t^3-4t^2-4t+1\,.
+      \eqno (5a)
+                $$
+We come to a four order equation:
+                     $$
+         P_4(t)=t^4+t^3-4t^2-4t+1=0\,.
+                   \eqno (5b)
+                     $$
+           for $t=2\sin 6\grad$.
+ It follows from (3) that its roots
+ $t_1,t_2,t_3,t_4$ are
+               $$
+               <2\sin 6\grad, 2\cos 12\grad,-2\cos 24\grad,-2\cos 48\grad>\,.
+               \eqno (6)
+               $$
+It can be straightforwardly checked that the polynomial
+$P_4(t)$ is irreducible over $\Q$.
+
+A splitting field of the polynomial $P_4$
+(a minimal field that contains all the roots of this polynomial)
+is $\S(P_4)=\Q(\sin 6\grad, \cos 12\grad,\cos 24\grad,\cos 48\grad)$.
+
+First calculate the degree of extension $[\S(P_4):\Q]$.
+Notice that $\cos 12\grad=1-2\sin^2 6\grad$,
+   $\cos 24\grad=2\cos^2 12\grad-1$, $\cos 48\grad=2\cos^2 24\grad-1$,
+   $-\sin 6\grad=2\cos^2 48\grad-1$.
+
+   We see that
+ rational transformation
+                 $$
+             t\mapsto 2-t^2
+                 \eqno (7)
+                  $$
+ {\bf transforms roots of $P_4$ to another roots}.
+  This transformation defines $\Q$-automorphism $\s$ of the field $\S(P_4)$
+  such that:
+                   $$
+    \s(t_1)=t_2,\quad \s(t_2)=t_3,\quad\s(t_3)=t_4,\quad \s(t_4)=t_1\,.
+                  \eqno (8)
+                   $$
+  From (7) and (8) it is evident that all roots belong to field
+  $\Q(t_1)=\Q(\sin 6\grad)$ ($t_3=\s^2(t)=2-(2-t)^2$,
+  $t_4=2-(2-(2-t)^2)^2$). Hence
+  splitting field $\S(P_4)$ for irreducible polynomial
+          $P_4(t)$
+     ($\S(P_4)=\Q(t_1,t_2,t_3,t_4)$)
+          is nothing but simple extension $\Q(\sin 6\grad):\Q$:
+                    $$
+              \S(P_4)=\Q(t_1,t_2,t_3,t_4)=\Q(\sin 6\grad)\,
+                         \quad {\rm and}
+                         \quad [\S(P_4):\Q]=[\Q(\sin 6\grad):\Q]=4\,.
+                                  \eqno (9)
+                    $$
+ This extension is normal extension of degree $4$.
+ Hence Galois group of polynomial (5) (group of automorphisms
+ of the field $\Q(\sin 6\grad)=\S(P_4(t)$) contains precisely 4 elements:
+                    $$
+           G=\G(\S:\Q)=\{1,\s,\s^2,\s^3\}\,,
+                            \eqno (10)
+                    $$
+ where $\sigma$ is automorphism (8).
+
+  This group is abelian cyclic group: $\sigma^4=1$.
+  It contains only one proper subgroup $H$ ($H\not=1$, $H\not=G$):
+                $$
+             H=\{1,\sigma^2\},\quad |H|=2\,.
+                 $$
+
+To subgroup $H$ corresponds intermediate field $M=H^\dagger$:
+$M=H^\dagger$ is maximal subfield in $Q(\sin 6\grad)$ such that its elements
+ are invariant under transformations from $H$, i.e. under transformation $\s^2$:
+               $$
+   \Q\subset M\subset \Q(\sin 6\grad),\quad
+   M=\{a\in \Q(\sin 6\grad)\,\,{\rm such\,\,that}\,\,\s^2(a)=a \}\,,
+               $$
+               $$
+ [\Q(\sin 6\grad):M]=2,\quad [M:\Q]=2\,.
+                     \eqno (11)
+               $$
+ Intermediate extensions are quadratic (degree is equal to $2$).
+   Hence every element of field $\Q(\sin 6\grad)$
+  and in particularly $\sin 6\grad$
+   is a root of {\bf quadratic polynomial with coefficients in} $M$.
+   This quadratic polynomial is reducible over $M$ iff
+    the element belongs to the intermediate field $M$
+    \footnote {$^{1)}$}{If $[L:K]=2$ then for arbitrary $a\in L$
+   elements $1,a, a^2$ are linear dependent over field $K$,
+   hence there exist coefficients $p,q,r,\in K$ such that
+   not all are equal to zero and relation $p+qa+ra^2=0$ is obeyed.}.
+    In the same way coefficients of this quadratic polynomial are
+  roots of quadratic polynomials with rational coefficients.
+   Hence we can calculate every element of the field $\Q(\sin 6^\grad)$
+   and in particularly $\sin 6^\grad$ solving two quadratic equations.
+
+   Perform these calculations.
+
+    Find first quadratic polynomial with coefficients in $M$ such
+    that $\sin 6^\grad$ is its root.
+       Consider elements $\alpha$ and $\beta$ in $\Q(\sin 6^\grad)$ such that
+                          $$
+                          \matrix
+                             {
+                         \alpha=t_1+t_3=t_1+\sigma^2 t_1\,,\cr\cr
+                         \beta=t_1\cdot t_3=t_1\cdot\sigma^2 t_1\,,\cr
+                             }
+                             \eqno (12)
+                           $$
+       where $t_1,t_2,t_3,t_4$ are roots (6) of polynomial $P_4(t)$.
+
+
+    It is evident from (12) that
+                $t_1=2\sin 6\grad$ and $t_3=-2\cos 24\grad$
+   are roots of the following quadratic polynomial
+                    $$
+                P_2(t)=t^2-\alpha t+\beta\,.
+                \eqno (13)
+                $$
+
+     On the other hand one can see from (8) that $\sigma^2 (\alpha)=\alpha$ and
+     $\sigma^2 (\beta)=\beta$.
+     Hence elements $\alpha$ and $\beta$  belong to intermediate field
+     $M$, because they do not change under the action of automorphism
+     $\s^2$.
+
+     We see that quadratic polynomial (13)
+     with coefficients $\alpha$ and $\beta$ in the field $M$
+     is just required quadratic polynomial with coefficients in $M$:
+     $P_2(\sin 6^\grad)=0$.
+
+    It remains to calculate $\alpha$ and $\beta$ which belong
+   to field $M$.  $M$ is quadratic extension of $\Q$ ($[M:\Q]=2$). Thus
+   $\alpha\in M$ and $\beta\in M$ are roots of quadratic polynomial
+   with rational coefficients.
+
+   It follows from (6) and (12) and elementary stuff of trigonometric formulae that
+
+   $\alpha=t_1+t_3=2\sin 6\grad-2\cos 24\grad=$
+                       $$
+              =     2\sin 6\grad-2\sin 66\grad=
+                   4\sin {6-66\over 2}\cos {6+66\over 2}=-2\cos 36=4\sin^2 18\grad-2
+                   \eqno (14 a)
+                       $$
+and $\beta=t_1\cdot t_3=$
+                       $$
+                       2\sin 6\grad\cdot (-2\cos 24)
+              = -4 (\sin 6\grad\cos 24\grad)=
+                 -2 (\sin 30\grad-\sin 18\grad)=
+                   2\sin 18 \grad-1\,.
+                   \eqno (14 b)
+                      $$
+ We see from these relations that
+                    $$
+           M=\Q(\sin 18\grad)\,.
+                     $$
+  In particularly this means that $\sin 18\grad$
+  is a root of quadratic polynomial with rational coefficients.
+    So instead calculating $\alpha$ and $\beta$ as roots of quadratic
+   polynomials we calculate just $\sin 18^\grad$ as a root of quadratic polynomial
+   and express $\alpha$ and $\beta$ via $\sin 18^\grad$.
+
+
+ Find this quadratic polynomial with rational coefficients for $\sin 18\grad$.
+  One can see that $\sin 18 \grad$ is a root of polynomial $4t^2+2t-1$:
+                            $$
+                     4\sin^2 18\grad+2\sin 18\grad-1=0\,.
+                     \eqno (15)
+                             $$
+           Hence
+                          $$
+                       \sin 18\grad={\sqrt 5-1\over 4}\,.
+                           $$
+{\bf Remark 1} There are many ways to obtain relation (15).
+  Not the most beautiful one but right one is the following:
+
+  $0=\cos 36\grad-\sin 54\grad=(1-2\sin^2 18)-(3\sin 18\grad-4\sin ^3 18\grad)=$
+                                $$
+             4\sin^3 18\grad-2\sin^2 18\grad-3\sin 18\grad+1=
+             (\sin 18\grad-1)(4\sin^2 18\grad+2\sin 18\grad-1)\,.
+                                $$
+
+
+  {\bf Remark 2}. The number $\tau=2\sin 18\grad={\sqrt 5-1\over 2}$
+  is so called "golden ratio". It has many wonderful properties...
+  One of the ways to obtain relation (15) straightforwardly
+  as relation for golden ratio is to consider triangle
+  with angles $(72\grad, 72\grad, 36\grad)$ and bisect the angle $72\grad$.
+
+
+ Now from (14) and (15) it follows that
+                 $$
+                 \alpha=4\sin^2 18\grad-2=-2\sin 18\grad-1=-{1+\sqrt 5\over 2}\,.
+                         $$
+                             $$
+\beta=2\sin 18\grad-1={\sqrt 5-3\over 2}\eqno (16)\,.
+                          $$.
+
+So  from (13) and (16) it follows that
+                $t_1=2\sin 6\grad$ and $t_3=-2\cos 24\grad$,
+   are roots of quadratic equation
+                    $$
+                t^2+ {1+\sqrt 5\over 2}t-{3-\sqrt 5\over 2}=0\,.
+                \eqno (17)
+                $$
+                $$
+              t_{1,2}=
+             {\pm\sqrt{30-6\sqrt{5}}-\sqrt{5}-1\over 4}
+                $$
+Positive root of this equation is equal just to $t_1=2\sin 6\grad$
+  and
+                  $$
+            \sin 6\grad=
+             {\sqrt{30-6\sqrt{5}}-\sqrt{5}-1\over 8}
+             \eqno (18)
+                   $$
+\centerline {We calcualted $\sin 6\grad\,\,$!}
+
+\bigskip
+
+   \centerline {\bf ${\cal x}$ 2.Angles that can be constructed by ruler and compass.}
+      \centerline {\bf Why 50 pence coin has 7 edges?}
+
+\medskip
+
+We see from (18) that $\sin 6\grad$ (so and $\cos 6\grad$) is
+expressed trough rational numbers with additional
+operation $\sqrt{}$ of taking square root. It means that we can construct
+ by ruler and compass the angle $6\grad$, i.e.
+ we can divide the circle by ruler and compass on 60 equal
+ arcs.\footnote{$^{2)}$}{
+  Operations with rational numbers:
+ multiplication, addition substraction and division
+ and operation of taking of square root
+ are possible with ruler and compass:
+ If $a$ and $b$ are segments on the line and $c$ is segment corresponding to unity
+  then one can construct by ruler and compass
+ the segments $a+b$, $a-b$, ${ab\over c}$, ${ac\over b}$ and $\sqrt {ab}$.}
+
+ The reason why it happens is obvious.
+ The degree of normal extension
+ $\Q(\sin 6\grad):\Q$ is equal to $4=2\times 2$.
+ Hence elements of intermediate field $M$
+ in (11) are expressed through elements of field $\Q$ with square root operation
+ and elements of $\Q(\sin 6\grad)$ are expressed through
+ elements of field $M$
+ with square root operation.
+
+ Now we consider a more general situation.
+
+ {\bf Definition} We say that complex number $a$ is {\it quadratic
+ irrationality}\footnote{it is better to call iteraed quadratic irrationality} if it belongs to the field $L$ such that it can be included
+  in a  tower of quadratic extensions:
+                    $$
+   \Q=M_0\subseteq M_1\subseteq M_2\subset\dots\subseteq M_n=L\,, \quad
+   [M_{k+1}:M_k]\leq 2\,\,{\rm for\,\,every}\,\, k=0,1,\dots,n-1\,.
+                       \eqno (2.1)
+                     $$
+It is evident that the set of quadratic irrationalities
+(including usual rational numbers)
+is a field.
+
+
+       For example the number $\alpha=\sqrt {3}+\sqrt{2+\sqrt {5+\sqrt {7}}}$
+       is quadratic irrationality because the field $\Q(\alpha)$
+       can be included in the following tower
+                      $$
+          \Q\subseteq\Q\left(\sqrt {7}\right)
+          \subseteq\Q\left(\sqrt {5+\sqrt {7}}\right)
+          \subseteq\Q\left(\sqrt{2+\sqrt {5+\sqrt {7}}}\right)
+          \subseteq\Q\left(\sqrt {3},\sqrt{2+\sqrt {5+\sqrt {7}}}\right)
+          \eqno (2.2)
+                    $$
+and all these extensions are evidently quadratic.
+
+
+ The number $\sin 6\grad$ is quadratic irrationality
+ because  for the tower (11) extensions $M:\Q$
+ and $\Q:\Q(\sin 6\grad)$ are quadratic.
+
+
+If number is quadratic irrationality then
+  from (2.1) it follows that it can be expressed
+  via rational numbers with taking square root operation:
+  every number in $M_n$ is a root of quadratic equation
+  with coefficients in $M_{n-1}$, coefficients
+  in $M_{n-1}$ are roots of quadratic equation with
+  coefficients in $M_{n-2}$ and so on.
+
+ We say that angle $\varphi$ is constructive if it can be constructed
+ by ruler and compass.
+  Angle $\varphi$ is constructive if and only if
+  $\sin \varphi$ is quadratic irrationality.
+  (Evidently $\cos\varphi=\pm\sqrt {1-\sin^2\varphi}$
+  is quadratic irrationality iff $\sin\varphi$
+ is quadratic irrationality.)
+  The circle can be divided on $N$ equal arcs by ruler and compass
+ if and only if the angle ${2\pi\over N}$ is constructive.
+
+  We know from school that  for $N=2,3,4,6$, $N=2^k$
+  circle can be divided on $N$ equal parts by ruler and compass.
+  ($\sin 45\grad={\sqrt {2}\over 2}$, $\sin 60\grad={\sqrt {3}\over 2}$,
+  $\sin {2\pi\over 2^{k+1}}=\sqrt {1-\cos {2\pi\over 2^k}\over 2}$
+  are quadratic irrationalities).
+
+  In the previous Section we proved in fact that
+   for all $N$ such that $N$ divides $60$,
+   circle can be divided on $N$ equal parts by ruler and compass:
+  If $Nk=60$ then $\sin {2\pi\over N}$ is quadratic irrationality
+  because $\sin {2\pi\over N}=\sin {2\pi\over 60}k=\sin k\cdot 6\grad$.
+
+   Now we describe all $N$ such that $\sin {2\pi\over N}$
+   is quadratic irrationality, i.e.
+   all $N$ such that circle can be divided on $N$ equal arcs
+   by ruler and compass\footnote{$^{3)}$}
+ {The problem of dividing of circle on $N$ equal arcs
+  with ruler and compass was posed by ancient Greeks.
+  They knew the answer for $N=3,5,15$.
+  Also they knew the answer for $N=2k$ provided
+  there exists an answer for $N=k$
+  (obvious method of bisecting the angle).
+  For about two thousands year little progress was made beyond the Greeks.
+  On 30 March 1796, Gauss made the remarkable discovery:
+  he solved this problem for $N=17$.
+  He was nineteen years old at the time.
+  So pleased was he with this discovery that he resolved to
+  dedicate the rest of his life to mathematics.}.
+
+\def\e {\varepsilon}
+\def\a {\alpha}
+
+    Consider the complex number
+                  $$
+           \e_N=\exp \left({2\pi i\over N}\right)\,,
+                   \eqno (2.3)
+                  $$
+where $N=1,2,3,\dots$ is an arbitrary positive integer.
+
+We study this complex number instead $\sin {2\pi\over N}$.
+ The number $\e_N$ is quadratic irrationality
+ if and only if $\sin {2\pi\over N}$ is quadratic irrationality
+ ($\sin\varphi={\exp (i\varphi)-\exp (-i\varphi)\over 2i}$,
+  $\exp (i\varphi)=\cos\varphi+i\sin\varphi$).
+
+  The field extension $\Q(\e_N):\Q$ is finite normal extension,
+  because it is splitting field for polynomial $t^N-1$.
+  (The roots of this polynomial are $\{1,\e_N,\e^2_N,\dots,\e^{N-1}_N\}$.)
+   So from fundamental theorem of Galois theory it follows
+   that number of elements in Galois group of field extension
+   $\Q(\e_n):\Q$ is equal to the degree of this extension:
+                      $$
+            |\G(\Q(\e_N):\Q)|=[\Q(\e_N):\Q]\,.
+                            \eqno (2.4)
+                      $$
+    For the considerations below we need the following two lemmas.
+
+    {\bf Lemma 1} {\it Consider the decomposition of $N$
+    in prime factors:
+                $$
+          N=p_1^{n_1}p_2^{n_2}\dots p_k^{n_k}\,.
+                       \eqno (2.5)
+                $$
+     Then for normal extension $\G(\Q(\e_N):\Q)$
+     the degree of this extension and correspondingly
+     the number of elements in Galois group $\G(\Q(\e_N):Q)$
+     are given by the following formula}:
+                       $$
+    |\G(\Q(\e_N):Q)|=[\Q(\e_N):Q]=
+    (p_1-1)p_1^{n_1-1}(p_2-1)p_2^{n_2-1}\dots (p_k-1)p_k^{n_k-1}\,.
+                     \eqno (2.6)
+               $$
+
+\smallskip
+
+{\bf Lemma 2} {\it If finite group $G$ contains $2^k$ elements then
+  for this group there always exists the sequence  $\{G_0,G_1,\dots,G_k\}$ of subgroups
+    such that $G_k=G$, $G_0=1$ and $G_i$ is subgroup of the
+    index $2$ in the subgroup $G_{i+1}$
+    ($i=0,1,2,\dots,k-1$)}:
+                       $$
+          1=G_0<G_1\dots <G_k=G,\quad |G_{k+1}|:|G_k|=2\,.
+                               \eqno (2.7)
+                       $$
+       We prove these lemmas in the end. Now we use these lemmas
+       for studying necessary and sufficient conditions for $\e_N$
+       be quadratic irrationality.
+
+
+ If $\e_n$ is quadratic irrationality then from
+ definition (2.1) and "Tower Law" it follows that degree
+ of normal extension $\Q(\e_n):Q$ is equal to the
+ $[\Q(\e_n):M_{n-1}]\cdot[M_{n-1}:M_{n-2}]\cdots [M_1:\Q]=2^k$ for some
+ positive integer $k$.
+  On the other hand from Lemma 2 it follows that if degree (2.6) of normal
+ extension $\Q(\e_N):Q$ is equal to the power of $2$
+ ($[\Q(\e_N):Q]=2^k$) then $\e_N$ is quadratic irrationality.
+  Namely consider the sequence
+ of subgroups (2.7).
+   The extension $\Q(\varepsilon_N):\Q$ is normal extension and
+ according to Fundamental theorem
+ of Galois theory to this sequence of subgroups
+  correspond the tower of field extensions:
+                        $$
+      \Q=G^\dagger=G_k^\dagger\subset G_{k-1}^\dagger
+      \subset\dots \G_1^\dagger\subset G_0^\dagger=\Q(\e_N)
+                               \eqno (2.8)
+                         $$
+   Here we denote by $G$ the Galois group $\G(\Q(\e_N):\Q)$,
+   for the subgroup $G_i$ as usually we denoted by $G_i^\dagger$
+   the subfield of all elements of the field $\Q(\e_n)$
+   that do not change  under the action of elements of subgroup $G_i$
+   ($G_i^\dagger=\{a\colon\quad \forall g\in G_i\,g(a)=a\}$).
+
+      Note that all subgroups $G_i$ are normal subgroups in $G_{i+1}$
+      because their index is equal to $2$. This  corresponds
+      to the fact that every extension of degree 2 is normal
+      \footnote{$^{3)}$}{We note that in the case if $\s$ is an automorphism
+      of field $L$ such that $\s\not=1$ and $\s^2=1$ and $K$ is subfield
+      of elements that do not change under $\s$
+      (Galois group of extension $L:K$ contains exactly two elements
+      $\{1,\s\}$) then one can explicitly describe the field $L$
+      in terms of field $K$:
+      Consider arbitrary $a\in L/K$ and element $s=a-\s(a)$. $\s(s)=-s$,
+      $s^2\in K$ and $s\not=0$.
+      For every element $x$ in $L$ $x_1=x+\s(x)\in K$ and
+      $x_2=s(x-\s(x))\in K$ because $\s(x_1)=x_1,\s(x_2)=x_2$.
+      Hence $x=x_1/2+s^{-1}x_2/2$. $L=K(s)$, where $s$ a square
+      of polynomial $t-s^2$.}.
+      The Galois correspondence gives that all
+      extensions $G_{i-1}^\dagger:G_i^\dagger$ are quadratic extensions:
+      $[G_{i-1}^\dagger:G_i^\dagger]=|G_i/G_{i-1}|=|G_i|:|G_{i-1}|=2$.
+      Hence $\e_N$ is quadratic irrationality.
+
+     We see that $\e_N$ is quadratic irrationality if and only if
+   the degree (2.6) of normal extension $\Q(\e_N):\Q$
+   is equal to the power of $2$ ($[\Q(\e_N):\Q]=2^k$).
+   To find such $N$ we apply Lemma 1.
+
+   It is obvious that the right hand side of (2.6)
+   is equal to the power of $2$ if and only if the following conditions hold:
+
+    1) all $n_i\leq 1$ for $p_i\not =2$, i.e.
+    $N$ is a product of power of $2$ on the different odd prime numbers.
+
+   2) all odd primes $p$, factors of $N$ obey to condition
+   that $p-1$ is a power of $2$.
+
+      Prime number $p$ obeying to the condition that $p-1=2^m$ is called
+      Fermat prime numbers (or sometimes they are called Messner prime numbers).
+     It is evident that if $p$ is prime number and
+      $p-1=2^m$ then $m$ is also power of $2$.
+     (If $m=2^rq$, where $q$ is odd, then $p$ contains the factor $2^{2^r}+1$).
+    So Fermat prime number  is a prime number $p$ such that
+                       $$
+                  p=2^{2^r}+1\,.
+                                 \eqno (2.9)
+                        $$
+E.g. $p=3,5,17,257$ are Fermat prime numbers
+\footnote {$^{4)}$}
+{
+Fermat conjectured that numbers (2.5) are prime for all $n$. This is wrong.}.
+
+
+
+Thus we come to Theorem:
+
+ {\bf Theorem}  For the integer $N$ the number $\sin {2\pi\over N}$
+   is quadratic irrationality and correspondingly
+   circle can be divided on $N$ equal arcs
+   by ruler and compass if and only if the decomposition of $N$
+   in prime factors have the following form
+                 $$
+         N=2^k p_1\dots p_s\,,
+                      $$
+      where all $p_1,\dots,p_s$ are different Fermat prime numbers.
+
+\bigskip
+
+
+  For example circle can be divided on $60$ parts.
+   Circle cannot be divided
+  on 7,9,11 parts.
+  ($60=2^2\cdot 3\cdot 3\cdot 5$, $3$ and $5$ are Fermat primes,
+   $9=3^2$ it is square of odd prime, 7 and 11 are not Fermat primes)
+
+  We see that $7$ is the smallest number such that
+  circle cannot be divided on the $7$ parts with ruler and compass.
+    May be it is the reason why 50 pence coin has 7 edges?..
+
+\medskip
+
+  Finally we prove the Lemmas.
+
+   Proof of the Lemma 1.
+
+   In the case if $N=p$ is simple number then
+   $\e_p$ is a root of irreducible polynomial
+   $1+t+\dots+t^{p-1}$ of degree $p-1$ and  we come to (2.6).
+
+   In the general case it is easier to calculate Galois group.
+
+   Consider the ring $\Z/{N\Z}$ corresponding to the
+   roots ${1,\e_N,\e_N^2\dots,\e_N^{N_-1}}$.
+   The Galois automorphism are in one-one correspondence
+   with invertible elements of this ring:
+   if $r$ is invertible element of the ring $\Z/{NZ}$
+   (i.e. $r$ and $N$ are coprime) then transformation $\e_N\mapsto \e_N^r$
+     defines automorphism $\s_r\in \G(\Q(\e_N):\Q)$.
+     To every automorphism  $\s\in \G(\Q(\e_N):\Q)$
+      such that $\s(\e_N)=\e_N^r$
+    corresponds element $r$ and $r$ is invertible because
+    if $\s(\e_N^{-1})=\e_N^q$
+    then  $rq=1(mod\, N)$.
+    Hence the number of elements in Galois group $\G(\Q(\e_N):\Q)$
+    is equal to number of positive integers $r$ such that
+    $r<N$ and $r$ and $N$ are coprime. This number is evidently equal
+    to r.h.s. of (2.6). Lemma is proved.
+
+    \medskip
+
+    Proof of the Lemma 2
+
+
+
+  Prove it by induction. For $|G|=2$ proof is evident.
+
+\def\O {{\cal O}}
+
+  Suppose that we already prove the Lemma for $m\leq k$
+  ($|G|=2^m$).
+
+   Consider finite group containing $2^{k+1}$
+  elements.
+
+   First prove that there exist in $G$ element $a$
+   such that it commutes with all elements in $G$.
+
+   Consider for every element $h$ of this
+  group the subgroup $N_h$ stabilizer of this element and
+  class $\O_h$ of all conjugated elements
+                 $$
+            N_h=\{g\in G\colon\quad ghg^{-1}=h\}\,,\quad
+        \O_h=\{ghg^{-1}, g\in G\}\,.
+                   $$
+  ($\O_h$ is the orbit of $h$ under  adjoined action of the group $G$ ).
+
+  It is evident that
+           $$
+  |N_h|\cdot|\O_h|=2^{k+1}\,,
+                \eqno (2.7)
+        $$
+  i.e. number of elements in the every class is equal to the
+  index of corresponding subgroup.
+
+  Let $h_1,\dots h_m$ are all representatives of all classes
+  of conjugated elements.
+
+  It follows from (2.7) that every class $\O_{h_i}$ contains $2^{q(h_i)}$
+ elements. $2^{q(h_1)}+\dots+2^{q(h_m)}=2^{k+1}$ Class of unity contains one element.
+ Hence there exists another class which contains one element too.
+ Thus there exists an element $a$ such that $|\O_a|=1$, i.e.
+ $ag=ga,$ $\forall g\in G$.
+ Considering the set $\{1,a,a^2,\dots \}$ we come to
+ cyclic subgroup  ${1,a,a^2,\dots,a^{r-1}}$ generated by $a$.
+  This subgroup  (like every subgroup of $G$) contains
+  power of $2$ ($r=2^t$) elements.
+  Consider element $c=a^{r\over 2}$. This element
+  obviously commutes with all elements in $G$
+  and $c^2=1$. Thus we come to the subgroup
+           $H=\{1,c\}$ such that this subgroup is normal subgroup.
+  Consider group $G^\prime=G/H$.
+  This group contains $2^k$ elements and by inductive
+  hypothesis there exists the sequence
+                       $$
+     1=G^\prime_0<\dots<G_k^\prime=G^\prime=G/H
+                       \eqno (2.8)
+                       $$
+          obeying to condition (2.6).
+
+   Consider now subgroups $G_k$
+   in $G$ such that $G_0=H$ , and all $G_k$ ($k\geq 1$) are subgroups of $G$
+     such that $G_k/H=G^{\prime}_{k-1}$.
+   ($G_k=G_{k-1}^\prime\cup cG_{k-1}^\prime$)
+     Then we come to the sequence
+                    $$
+      1=G_0< G_1<\dots <G_{k+1}=G
+                    $$
+     which obeys to Lemma 2.
+
+
+   Lemma is proved.
+
+\bye

@@ -1,0 +1,316 @@
+
+
+\magnification=1200 \baselineskip=14pt
+
+
+\def\p {\partial}
+\def \D {\Delta_{d{\bf v}}}
+\def \Ds  {\Delta^{\#}}
+\def\t{\tilde}
+\def\s {\sigma}
+\def\vare {\varepsilon}
+\def\L {\Lambda}
+\def\Darboux {$z^A=$  $x^1,\dots,x^n$, $\theta_1,\dots,\theta_n$}
+\def\a{\alpha}
+\def\O{\Omega}
+\def\d{\delta}
+\def\dv  {{d{\bf{v}}}}
+\def\A {{\cal A}}
+\def\R {I\!R}
+\def\t {\tilde}
+\def\Q{\bf Q}
+\def\C{\bf C}
+\def\CP{\bf CP}
+\def \deg   {{\rm deg\,}}
+             \centerline
+             {\bf Nice fractions and Platonic bodies}
+
+\medskip
+
+\centerline {\it {(reflections on the Klein book and Lueroth Theorem...)}}
+\medskip
+
+This text is the continuation of the text on Lueroth theorem.
+
+We consider fractions---rational functions on indeterminate $t$ or if you prefer
+elements of simple transcendent extensions.
+
+
+ Consider an arbitrary irreducible fraction $R(x)=f(x)/g(x)$. Suppose its degree
+ is equal $N$. Consider the equation
+                    $$
+                    {f(x)\over g(x)}={f(t)\over g(t)}
+                    \eqno (1)
+                    $$
+     If this equation has exactly $N$ solutions which are fractions on $t$
+        (i.e. elements in $\C(t)$ then we call this fraction {\it nice fraction}
+
+
+        Suppose fractions $\{\psi_0(t),\psi(t_1),\dots,\psi_N(t)\}$
+        ($\psi_0(t)=t$)
+        are solutions of equation (1) for the nice fractions $F=f/g$, i.e.
+     $f(\psi(t))/g(\psi(t))\equiv f(t)/g(t)$.
+     Their degrees coincide and degree of $\psi$ must be equal to $1$
+     (Is it vraie?) The $N$ substitutions $\{\psi_i(t)\}$
+     form invariance group of the fraction $f(x)/g(x)$.
+
+       {\it Every nice fraction $R$ of degree $N$ defines the finite subgroup
+       $H_R$ of fractional-linear transformations containing $N$ elements}
+
+
+       The inverse is true too:
+
+       Let $H$ be the finite subgroup of the group $PGL(2,C)$ of fractional linear
+       transformations.  Consider the polynomial
+                          $$
+                   P_H(x)=\prod_{g_i\in H}\left(x-t^{g_i}\right)=x^N+
+                   b_{N-1}(t)x^{N_1}+\dots+b_1(t)x+b_0
+                               $$
+where $t^{g}$ is the action of fraction-linear transformation on $t$. This polynomial
+has $N$ roots $\psi_i(t)=t^{g_i}$
+ Here $N$ is number of elements in $H$
+ and  $b_k(t)$ are fractions on $t$. At least one of these fractions is not trivial
+  (because polynomial has root $x=t$).
+ Take one of the fractions
+  $b_k=f(t)/g(t)$.  This coefficient is some symmetric polynomial
+  on the roots $\{\psi_i(t)\}$ hence {\it this is a nice fraction
+  which has just the same roots that polynomial $P_H$}.
+  Of course we could consider another coefficient, come to another
+  nice fraction with the same roots. It is just related with Lueroth theorem:
+  all coefficients have to be expressed via one of non-trivial coefficient.
+  Moreover if $R$ is a nice fraction then ${aR+b\over cR+d}$
+is a nice fraction which defines the same group.
+
+
+If  $F=f(z)/g(z)$ is the nice fraction then the fractions
+ $F^\prime(z)=aF(z)+b/cF(z)+d$ ($a,b,c,d\in \C$)
+and the fraction $\tilde F(z)=F\left(az+b/cz+d\right)$
+ are nice fraction too. The nice fractions $F, F^\prime=aF+b/cF+d$
+ have the same ramification points. They define the same invariance group.
+
+The nice fractions  $F(z),\tilde F(z)=F\left(az+b/cz+d\right)$
+define conjugate invariance subgroups.
+
+
+  {\bf Example}  Consider the fractions $x^2$ and $x+1\over x$.
+  They both are nice fractions
+  with different ramification points (see the previous text).
+  The transformation $x\to {x+1\over x+1}$ transforms ramification points
+  $[0,\infty]$ of $x^2$ to $[-1,1]$. $x^2\to ({x+1/ x+1})^2$.
+   One can see that this function is just fractional-linear transformation
+  of $x+1/x$:
+                      $$
+         {\left(x+{1\over x}\right)+2\over \left(x+{1\over x}\right)-2}=
+              \left({x+1\over x-1}\right)
+                     $$
+
+More tricky to show the relation between nice fractions
+    $x^3$ and $x^3-3x-1\over x(x+1)$ considered in the previous text.
+
+But e.g. fraction $x^3/over x^3+(1-x)^3$ is the nice fraction produced from $x^3$ by
+changing ramif. points ($[0,\infty]\to [0,1]$)
+
+
+$$ $$
+
+
+Now we go to very fundamental result belonging to Klein:
+
+To every Platonic body corresponds
+ finite subgroup of rational transformation
+ and a class of nice fraction. It is obvious. One can prove that
+ it is all!
+
+    This fact is dual to the kindergarten  result:
+  there is a finite number of Platonic bodies.
+  There are five Platonic bodies: tetrahedra, hexahedra, octahedra, dodecahedral and
+  icosahedra. Plus we consider also degenerated bodies: diedres (They have to sides which
+   are regular $n$-gones.)
+   The point is that not only the statement about the finitness of Platonic bodies
+   is analogous to the statement about the finite number of groups
+   (up to conjugancy)
+
+
+  Consider arbitrary Platonic body. Let every vertex is incident to $r$ edges
+  and every side is $n$-gon. If $E$  is number of edges then
+  $\Gamma$ (number of sides) is equal to $En/2$ and $V$(number of vertices)
+  is equal to $Er/2$, According to Euler identity
+  $$V-E+\Gamma=2 \eqno (E1)$$. Hence
+                   $$
+             {1\over r}+{1\over n}={1\over 2}+{1\over E}
+             \eqno (E2)
+                    $$
+ It is very easy to solve this diophantine equation.
+ If $r\geq 6$ then $1/r+1/n\leq 1/2$ because $n\geq 3$.
+ Hence $r\leq 5$.
+ Consider cases $r=2,3,4,5$
+
+
+
+ 1. $r=5$
+
+    If $n\geq 4$ then $1/r+1/n\leq 1/5+1/4<1/2$. Hence only $n=3$ is allowed.
+    If $n=3$ then $E=30$ we come to {\it icosahedra}:
+                     $$
+          V=12, E=30, \Gamma=10
+                 $$
+\medskip
+
+ 2. $r=4$. If $n\geq 4$ then $1/r+1/n\leq 1/4+1/4\leq 1/2$. Hence again
+ only $n=3$ is allowed. If $n=3$ then $E=12$. We come to octahedra:
+                             $$
+               V=6, E=12, \Gamma=8
+                               $$
+
+3.  $r=3$. If $n\geq 6$ then $1/r+1/n\leq 1/3+1/6\leq 1/2$. Hence
+ only $n=3,4,5$ are allowed.
+
+ a) If $n=5$ we come to {\it dodecahedral}
+(dual to icosahedra): :
+                     $$
+          V=10, E=30, \Gamma=12
+                 $$
+
+b) if $n=4$  we come to {\it hexahedral } (dual to octahedra): :
+                     $$
+          V=8, E=12, \Gamma=6
+                 $$
+c)  if $n=3$  we come to {\it tetrahedra}: :
+                     $$
+          V=4, E=6, \Gamma=4
+                 $$
+
+4. $r=2$. It is degenerate case; $E=n$  We come to diedre.
+
+ Solving diophantine equation is key step to prove that there are
+ few Platonic bodies.
+
+  $$ $$
+
+
+
+
+Now we will show that the fact that there are few finite groups in group of rational
+transformations is reduced to simple diophantine equation too.
+(Of course this can be treated pure geometrically: Instead the group of
+fractional transformations we can consider the group $S0(3)$
+and to prove that this group has finite number of finite
+subgroups (so called cristollagr.....))
+
+Let $H$ be finite subgroup. Let $f(x)/g(x)$ be its corresponding fraction and
+characteristic equation:
+                $$
+        {f(x)\over g(x)}={
+              f(t)\over g(t)}
+              $$
+
+
+ Here I
+repeat up to some modifications Klein considerations:
+
+
+Let $F(z)$ be a rational function. It maps $\CP$
+on $\CP$. We say that the point $z=z_0$ has an index $n=\mu(z_0| F)$ if $z_0$ is the
+zero of the order $n$ for the function $F(z)-F(z_0)$. Evidently the index is
+ invariant under rational fraction-linear transformations of $z$ and $F(z)$. (In the
+case $z_0=\infty$, or $F(z)=\infty$ index can be easily calculated with the help of
+transformation $z\to 1/z$). If the point $z_0$ has the index $n$ then the derivative
+has zero of the order $n-1$ at the point $z_0$.  On the other hand one can show that
+if a degree
+\footnote{$^*$}{As always we define $\deg F=\max{f,g}$ if $F$ is a ration of two
+polynomials $f,g$ and these polynomials are coprime}
+  $\deg F$ of the rational function  $F$ is equal to $N$ then
+  the degree of the derivative is equal
+to $2N-2$. (It is easy to see for the special gauging when
+for rational
+function $F(z)$ all points with index $\geq 2$ are regular points of
+$\CP$ and its image is regular too. E.g.
+one can always by suitable fraction-linear transformation) Hence we come to the following relation:
+                        $$
+      \hbox {for arbitrary rational function $F(z)$\quad}$$
+      $$    \sum_{z\in \CP} \left[\mu(z|F(z))-1\right]=
+          \sum_{z\colon\,\, F'(z)=0} \left[\mu(z|F'(z))\right]=2\deg F-2
+                        $$
+The relation
+                      $$
+                      \sum_{z\in \CP} \left[\mu(z|F(z))-1\right]=2\deg F-2
+                      \eqno (E^*1)
+                      $$
+can be considered as an analogue of Euler identity (E1)
+{\it Proof}  Suppose that for the rational function $F(z)$
+ the points $z=0,\infty$ have an order $1$. (You come by this condition
+ by suitable fraction-linear transformation which does not affect the relation
+ ($E^*1$)). In this case let $F=f(z)/g(z)$ where polynomials $f,g$
+ and $g(z)$ has not degenerate zeros. All zeros of
+ of the function $F'$ are the same that for the function $fg'-gf'$.
+ This function has the degree $N-2$.
+
+ Making suitable fraction-linear transformation of $z$ and of $F$
+ we can restrict the function $F$ by the condition
+
+
+
+The relation ($E^81$) has the following geometrical
+meaning:If $F(z)\colon\,\,\CP\to \CP$
+is $N$-sheaves covering  $(N=\deg F)$ with ramification points  ${z_1,\dots,z_k}$
+such that ramification index at the point $z_i$ is equal to $\nu_i$ ($\nu_i\geq 2$)
+then the relation $\sum_{k}\left(\nu_k-1\right)=2N-2$ holds.
+This is the special case of the so called Riemann Hourvitz formula: Let $F$
+  be a complex map from complex surface $\bar R$ of the genre $\bar g$
+  onto complex surface $R$ of the genre $g$.
+  If $F$ is $N$-sheaves covering  with ramification points  ${z_1,\dots,z_k}$
+such that ramification index at the point $z_i$ is equal to $\nu_i$ ($\nu_i\geq 2$)
+then the relation $\sum_{k}\left(\nu_k-1\right)=2N-2+g+\dots$ holds.
+
+
+
+
+
+Now {\it revenons a nos moutons}
+
+
+
+Let $H$ be finite subgroup of the group of rational transformations of $\CP$.
+
+Consider nice fraction $F_H(z)$ corresponding to this group. Let $z_0$ be a
+ point of an index $n\geq 2$, then the point $w=F(z_0)$ is ramification point.
+ To the point $z_0$ corresponds stationary subgroup of the index $n$.
+ Hence there are $N/n$ points with conjugated stationary subgroups.
+ ($N$ is an order of group $H$). Note that the degree of nice fraction $F_H$
+ is equal to $N$.
+We see that for nice fraction there are numbers $\{n_1,n_2,\dots\}$ such that there are
+for every $n_k$ there are $N/n_k$ points of the index $n_k\geq 2$. Then using previous
+identity we come to the relation:
+                   $$
+ \sum_k{N\over n_k}\left(n_k-1\right)=2N-2
+                     $$
+         (Compare with relation (E2)).  Dividing by $N$ we come to
+                       $$
+ \sum_k\left(1-{1\over n_k}\right)=2-{2\over N}
+ \eqno (E^*2)
+                       $$
+This is remarkable identity from Klein book which can be considered as analogue (E2)
+for Kleinian subgroups.
+
+  Solve this diophantine equation.
+  Firs of all note that it follows immediately from
+   ($E^*2$) that there could be only two or three ramification points!
+   Indeed  right hand side is greater than one and
+   smaller than 2. Hence there can be  only two possibilities.
+
+   I. two ramification points:
+                   $$
+      {1\over n_1}+{1\over n_2}={2\over N}
+                   $$
+   II. Three ramification points:
+             $$
+        {1\over n_1}+{1\over n_2}+{1\over n_3}=1+{2\over N}
+             $$
+One can see that the first equation has only solution $n_1=n_2=N$. For every $N$ nice
+fraction has two ramification points of degree $N$. Gauge this points to be
+$[0,\infty]$. We come to the function $z^N$ to diedre.
+
+
+
+
+ \bye

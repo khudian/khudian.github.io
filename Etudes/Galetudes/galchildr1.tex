@@ -1,0 +1,534 @@
+
+       \magnification=1200
+   \baselineskip 17 pt
+
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\F {{\cal F}}
+
+
+   \centerline  {\bf Two words about values of $\sin 18^{\circ}$, $\sin 6^{\circ}$,
+   $\sin 20^{\circ}$ and in general $\sin k^{\circ}$}
+
+ \medskip
+
+                   \centerline {${\cal x}$0. {\it Dieu ex machina}}
+
+           Calculation of $\sin 6^{\circ}$ and $\sin 18^{\circ}$:
+
+   There are different ways of calculation of $\sin 18^{\circ}$.
+   The most beautiful one is
+    considering  triangle with angles $72^{\circ}$, $72^{\circ}$,
+     $36^{\circ}$. We only represent the result
+                       $$
+     \sin 18^{\circ}={\sqrt 5-1\over 4}
+                                  \eqno (0.1)
+                       $$
+       and note that $u=2\sin 18^{\circ}$ is the golden ratio:
+                        $$
+                      u^2+u=1
+                  \eqno (0.2)
+                        $$
+
+  Using this result it is easy to calculate $\sin 6^{\circ}$.
+    Indeed it is evident that
+                              $$
+                 \sin 6^{\circ}\cdot\cos 24^{\circ}={1\over 2}\sin 18^{\circ}+
+                         {1\over 2}\sin 30^{\circ}=
+                         {1\over 2}\sin 18^{\circ}+{1\over 4}
+                                $$
+     On other hand
+                                 $$
+     \cos 24^{\circ}-\sin 6^{\circ}=\cos (30-6)-\sin 6=\cos (30+6)=1-2\sin^2 18.
+                                 $$
+          We come to simultaneous equations:
+                          $$
+                          \cases
+                          {
+\cos 24^{\circ}-\sin 6^{\circ}=1-2\sin^2 18\cr
+                 \sin 6^{\circ}\cdot\cos 24^{\circ}=
+                 {1\over 2}\sin 18^{\circ}+{1\over 4}\cr
+                        }
+                        $$
+This system is quadratic equation on $\sin 6$ and coefficients we know from
+          (0.1).
+
+  Everything alright except how we guess about this anzatz?
+
+  We try to explain it in next  2 sections
+  in the 3 Section we briefly show that $\sin 20$ and $\cos 20$
+  is not expressible in square radicals and
+  in the fourth section we show that
+  angle (and its sinus and cosinus  of angle $k$ are expressible
+  in square radicals if and only if this angle is divisble on $3$).
+
+  We formulate by the way the most beautiful result
+  of geometry about dividing the circle on equal parts
+  using ruler and compass.
+
+
+\bigskip
+
+  \centerline {${\cal x}$1. {\it Model example}}
+
+\medskip
+
+
+     We use in fact Galois theory for pedestrians.
+
+           {\bf Statement.1} $\sin 18^{\circ}$ is a root of quadratic polynomial
+           with integer coefficients.
+
+
+
+       Consider equation
+                         $$
+                       \sin 5\varphi=\sin\varphi_0
+                                      \eqno (1)
+                         $$
+      and obvious identity
+                      $$
+             \sin 5\varphi=16\sin^5\varphi-20\sin\varphi+5\sin\varphi
+                                     \eqno (2)
+                       $$
+          It follows from (1) and (2) that equation
+                        $$
+             16t^5-20 t^3+5t-a=0, |a|\leq 1
+                          \eqno (3)
+                         $$
+      has five real roots (in general not distinct):
+                       $$
+           t_k=\sin(\varphi_0+72^{\circ}k),
+                    \quad k=0,1,2,3,4\,,{\rm where}\,\,
+                    \varphi_0\colon  a=\sin 5\varphi_0
+                                       \eqno (4)
+                         $$
+ because $5\times 72^{\circ}=360^{\circ}$.
+
+  Conisider $a=1$. Then $a=1=\sin (5\cdot 18^{\circ})$ and
+  from (3) it follows that for this case
+  equation (3) has following roots:
+                           $$
+        <\sin 18^{\circ},1,\sin 18^{\circ},\sin 54^{\circ},\sin 54^{\circ} >
+                                     \eqno (5)
+              $$
+
+ Polynomial (3) has one rational root (at least) Hence
+                       $$
+   P_5(t)=16 t^5-20 t^3+5 t-1= (t-1)P_4(t)=(t-1)(16t^4+at^3+bt^2+ct+d)
+                 \eqno (6)
+                       $$
+       where $a,b,c,d$ are {\bf rational numbers}.
+
+       Sure we can calcualte $a,b,c,d$ but at this step
+       {\bf we do not care about their values}. We try
+       to find information as much as possible
+       without bothering about these values!
+
+  Polynomial $P_4(t)$ has four roots but
+  they are not distinct. It is easy to see that from this fact follows
+  that polynomial $P_4(t)$ in (6) is in fact {\bf square of quadratic polynomial
+  with  rational coefficients} Indeed from (5) it follows that
+                       $$
+  P_4(t)=16t^4+at^3+bt^2+ct+d=P_2(t)^2=(4t^2+pt+q)^2
+                           \eqno (7)
+                       $$
+            where  $\sin 18^{\circ}$ and $\sin 54^{\circ}$ are roots
+            of polynomial $P_2(t)$
+            ($P_2(t)=4(t-\sin 18^{\circ})(t-\sin 54^{\circ})$)
+
+ On other hand opening brackets in (4) we see that
+                        $$
+             16t^4+at^3+bt^2+ct+d=
+             16t^4+8pt^3+(p^2+8q)t^2+2pqt+q^2
+             \eqno (8)
+              $$
+    Comparing coefficients at $t^3$ and $t^2$ we see that $p$ and $q$
+    are {\bf rational numbers}.
+
+    This
+     persuades us to find quadratic equation such that $\sin 18^{\circ}$
+     and $\sin 54^{\circ}$ are its roots. (We just proved existence of this equation).
+
+     Now denote $u=\sin 18^{\circ}$. It is easy to see that
+                               $$
+             \sin 54^{\circ}=3t-4t^3=\cos 36^{\circ}=1-2t^2
+                                       \eqno (9)
+                                $$
+   Hence $u$ is a root of equation $3t-4t^3=1-2t^2$, or
+   $4t^3-2t^2-3t+1=0$. This equation has obvious
+    root $1$. Hence
+                            $$
+       4t^3-2t^2-3t+1=4t^3-4t^2+2t^2-2t-t+1=(t-1)(4t^2+2t-1)=0
+       \eqno (10)
+                             $$
+         We came to quadratic polynomial $4t^2+4t+1$
+         such that $\sin 18$ is its root (compare with (0.2)).
+          Thus $u$ is positive root of square equation $4t^2+4t+1=0$
+          Hence
+                              $$
+                           \sin 18^{\circ}={\sqrt 5-1\over 4}
+                                      \eqno (11)
+                                      $$
+
+
+       It is natural to ask me: what for we did
+            all this analysis. We can from beginning
+            to guess right equation (9)
+            (Or even (10)). In this case I have not much
+            to argue with you but
+            in the next section we see how useful becomes
+            arguments before (9) to find $\sin 6^{\circ}$.
+
+            \bigskip
+
+                 \centerline {${\cal x}2$ Calculation of $\sin 6^{\circ}$.}
+
+\medskip
+
+            In this case we even are not sure does there exist
+            good equation to solve it for obtaining $\sin 6^{\circ}$.
+
+          So analysis becomes important in fact.
+
+
+   Note that $5\cdot 6=30$. Hence consider equation (3) with parameter
+   $a=1/2=\sin 30^{\circ}$. From (1), (2) (4) and elementary trigonometry it follows that
+    roots of polynomial (3) in this case are
+          $$
+           <\sin 6^{\circ},\sin 78^{\circ},\sin 150^{\circ},
+           \sin 222^{\circ},\sin 294^{\circ} >=
+           $$
+           $$
+  <\sin 6^{\circ},\cos 12^{\circ},1/2,
+           -\cos 48^{\circ},-\cos 24 ^{\circ} >
+                          \eqno (2.1)
+               $$
+ In the same way noting that one root is rational
+ we come to the fact that there exist four order polynomial
+ $P_4(t)$ with rational coefficients such that
+ $P_5=(t-1/2)P_4$. But here story is more funny
+ because we cannot so simple come to quadratic equations.
+
+But nevertheless again as in the previous Section we
+will try to disclose as much information as possible without
+ considering coefficients of Polynomial $P_4(t)$
+ (only relying on the fact that they are rational!)
+
+ The roots of polynomial $P_4(t)$ are
+                 $$
+   t_0=\sin 6^{\circ}, t_1=\cos 12^{\circ},
+   t_2=-\cos 24^{\circ}t_0=-\cos 48^{\circ}
+   \eqno (2.2)
+    $$
+Note that $\cos 2\varphi=2\cos^2\varphi-1=1-2\sin^2\varphi$.
+Hence  under transformation
+        $$
+        t\rightarrow 1-2t^2
+              \eqno (2.3)
+         $$
+ {\bf root of this polynomial transforms to another root!!! }:
+the
+root $t_0$ transforms to $t_1$,
+$t_1$ transforms to $t_2$, $t_2$ transforms to $t_3$
+and $t_3$ transforms to $t_0$.
+
+Denote transformation (2.3) by the letter $\F$
+It is easy to see that $\F^2 t_0=t_2$,$\F^3 t_1=t_0$  e.t.c.
+
+ We see that all roots of polynomial $P_4(t)$ are rationally expressed
+ via root $t_0$ by the transformations $\F$, $\F^2$
+and $\F^3$.
+
+
+ Now consider {\bf arbitrary combinations of roots $t_0,t_1,t_2,t_3$}.
+ and study at what extent they are invariant under the action
+ of transformations $\F, \F^2,\F^3$.
+ For example $t_0+t_2$ and $t_0\cdot t_2$ are invariant under transformations
+ $\F^2$, $t_0+t_1+t_2+t_3$ are invariant under all transformations.
+
+
+{\bf Statement (Generalized Vieta Theorem)}.
+
+ Every combination of roots
+  obeys to one of the following conditions
+
+  1) is invariant under all transformations $\F$, $\F^2$, $\F^3$
+
+  2) is invariant under transformations $\F^2$
+    but is not invariant under transformation $\F$,
+    hence the action of transformations $\F$, $\F^2$, $\F^3$
+     on every element lead to two distinct elements.
+
+  3) is not invariant under transformation $\F^2$
+
+
+  In the first case this combination
+  is root of linear equation with rational coefficients,
+  i.e. are rational numbers!
+
+  In the second case this combination is a root of quadratic polynomial
+  (with rational coefficients)!
+  (and it is not a rational number)
+
+  In the third case this combination is a root of fourth order equation
+  and it is not the root of third or second order equation!
+
+\bigskip
+
+  From this statement it is easy to see how to find combinations
+    of roots that are roots of quadratic polynomial!
+     It is evident that
+                 $$
+  t_0+t_2=\sin 6^{\circ}-\cos 24^{\circ}\eqno (2.4)
+                          $$
+  and
+                      $$
+             t_0\cdot t_2=-\sin 6^{\circ}\cos 24^{\circ}
+                      $$
+                      are roots of quadratic polynomial
+                      with rational number!!! because
+                   $$
+            t_0+t_2=t_0+\F^2 t_0,\quad t_0\cdot t_2=t_0\cdot\F^2 t_0
+            \eqno (2.4)
+                   $$
+     do not change under transformation $\F^2$ and action of transformation
+     $\F^3$ coincides with action of transformation $\F^2$.
+
+
+  And just these expressions appeared in the first equation in introduction!
+
+
+We explain already the anzats of Introduction.
+
+But we continue to calculate $\sin 6$ using polynomial $P_4(t)$.
+
+  Now encouraging by this remark we understand what is the right anzats for solving equation
+   $P_4(t)=0$
+
+  Performing all our considerations till now we were very lazy to
+   calculate explcitly $P_4(t)$. But now time came to do it because we now that we are on
+   the right way:
+    Equation for $\sin 6$ (see (3)):
+            $$
+            P_5(t)=16t^5-20t^3-5t={1\over 2}
+            $$
+  It is convenient (but not important) to consider variable $t\mapsto 2t$:
+                  $$
+       P_5(t)=t^5-5t+5t-1=0  \quad (t=2\sin 6)
+                   $$
+    Dividing this polynomial on $t-1$ (we change $t$ on $2t$)
+     we come to polynomial
+                  $$
+         t^4+t^3-4t^2-4t+1=0
+                          \eqno (2.6)
+                  $$
+  WE ALREADY ARE READY TO ATTACK THIS EQUATION!
+
+   As was established above transformation $t\mapsto \F t=2-t^2$ transforms root
+   to the root. So if $t$ is a root then
+   $t+\F^2 t$ and $t\cdot\F^2 t$ have to be the root of quadratic polynomial!!!
+   Consider new variables
+                       $$
+       x=t+\F^2 t=t+\left(2-\left(2-t^2\right)^2\right)
+                      \eqno (2.7)
+                       $$
+    and
+                     $$
+                        y=t\cdot\F^2 t=
+                        t\cdot\left(2-\left(2-t^2\right)^2\right)
+                      \eqno (2.8)
+                        $$
+
+     Using (2.6) we open brackets in (2.7) and see that
+                   $$
+                   x=t^3-3t-1,\quad y=-(t^3-3t+1)
+                   $$
+      $x$ and $y$ are roots of quadratic polynomials.
+
+      There are hundred ways to come to this quadratic equation.
+      May be the easiest one is again return to trigomnometry:
+             Remembering that $t=2\sin 6$
+           and $4\cos^3\varphi-3\cos\varphi=\cos 3\varphi$
+       it is very easy to see that $x$ and $y$
+       are just equal to left hand sides of simultaneous equations of Introduction
+      and from ${\cal x}1$ we already now that these numbers are roots of quadratic
+      polynomials.
+ (Up some integer coefficients $x=1-2\sin 18$
+and $y=1+2\sin 18$ (Compare with Introduction)).
+
+
+
+
+ We justified Introduction!!!
+
+
+
+                          \bigskip
+
+                          \centerline {${\cal x} 3$}
+
+ Now very very briefly about $\cos 20^{\circ}$
+
+
+                Consider equation
+                      $$
+                    t^3-3t-1=0
+                    $$
+          It is remarkable cubic equation.
+
+   According formula $4\cos^3\varphi-3\cos\varphi=\cos 3\varphi$
+   and the  first Section it is very easy to see that roots of this equation
+   are
+                      $$
+                      <2\cos 20,-2\cos 40, -2\cos 40>
+                      $$
+           and transformation $\F\colon\quad t\mapsto 2-t^2$
+           transforms root to the root!!!
+
+ In this case there are two not identical transformations:
+ $\F$ and $\F^2$. $\cos 20$ is a root of cubic equation
+ and in fact it cannot be expressed as a root and their combinattions  of quadratic
+ equations.
+
+           Evidently (according to usual Vieta theorem )
+           product of its roots is equal to one.
+
+
+           In the school we proved it using "domino" princip:
+                           $$
+             8\cos 20\cdot\cos 40\cdot \cos 80=
+                            $$
+                            $$
+             {8\sin 20\cdot\cos 20\cdot\cos 40\cdot \cos 80\over\sin 20}=
+              $$
+              $$
+          {4\sin 40\cdot\cos 40\cdot \cos 80\over\sin 20}=
+          $$
+          $$
+          {2\sin 80\cdot \cos 80\over\sin 20}=
+          $$
+          $$
+          {2\sin 160\over\sin 20}=
+          $$
+          $$
+          1
+             $$
+
+
+ Long years I enjoyed this example and only after learning
+  elements of Galois theory understood its real meaning.
+
+
+\bigskip
+\centerline {${\cal x }4$}
+
+
+We see that $\sin 18$ is root of quadratic equation.
+
+$\sin 6$ is not root of quadratic equation,
+but can be expressed via quadratic radicals,
+because it can be expressed as root of quadratic
+with coefficients which are rational
+or roots of quadratic equation.
+
+On the other hand $\cos 20$ cannot be expressed in this way.
+
+In other words we can construct by ruler and compass the
+$\sin 6$, $\cos 6$ and hence angle $6^{\circ}$
+and divide the circle on the 60 parts but we cannot divide the circle on the
+18 paths (360:18=20).
+
+
+Before formulating general result one exercise
+
+{\bf Exercise}
+
+The  number
+                $$
+              2^k+1
+                             \eqno (4.1)
+                  $$
+      is prime. Prove that $k$ is power of $2$ ($k=2^n, n=0,1,2,\dots$)
+
+      The prime numbers which can be represented in the way
+      (4.1) are called Messner prime numbers
+      For example $3=2+1$, $5=2^2+1$ $17=2^4+1$, $257=2^8+1$
+      are Messner prime numbers.
+
+ Now I formulate general result without proof.
+
+
+{\bf Theorem} The circle can be divided on $N$ equal parts with ruler and compass
+ or in other words one can construct
+ $\sin {360/over n}$, $\cos {360/over n}$ and the angle ${360/over n}$
+
+ \centerline {\bf if and only if}
+
+ in the decomposition of the number $N$ on the prime factors
+   all the prime numbers except 2 have power 1 or 0,
+   and these prime numbers are Messner prime numbers:
+                   $$
+          N=2^np_1\cdot\dots\cdot p_n
+                       \eqno (4.2)
+                    $$
+                    where all prime numbers
+           $p_1,\dots,p_n$ are different Messner prime numbers.
+
+
+This theorem has remarkable history:
+
+Ancien Greek studied this problem. For $N=2,3,4,6$
+everything is obvious for $N=5, 15$ solution was known to Ancien Greeks.
+
+Problem for $N=7,9,17$ was open...
+
+Gauss did it for $N=17$. Then it was realized general answer...
+
+Galois Theory gives full answer to this problem.
+
+We do not prove here this Theorem.
+
+Only note that for $N$ obeying to above
+condition we have $2^n-1$ transformations
+transforming roots to the roots
+and step by step we can do calcualtion.
+
+           It is easy to see that
+           $N=60=4\cdot3\cdot 5$ obeys to Theorem
+           and $N=18=2\cdot 3\cdot 3$ does not obey.
+
+
+From theorem follows answer on the following question:
+in what case $\sin k^{\circ}$  for $k$ integer is expressed through quadratic radicals?
+For $k=1$ answer {\bf NO} because $N={360\over 1}=360=8\cdot 3\cdot 3\cdot 5$
+ does not obey
+to Theorem. Analogously for $k=2$ answer {\bf NO} too because
+$N={360\over 2}=180=4\cdot 3\cdot 3\cdot 5$.
+
+But for $k=3$ answer {\bf Yes!!!}  because
+$N={360\over 2}=180=4\cdot 3\cdot 3\cdot 5$
+enjoys the property
+
+Hence for all $k$ that are divisible on $3$ ($k=3n$)
+answer is {\bf yes}:we construct angle $3^{\circ}$ and multiply on $k$.
+
+ON other hand for every angle that is not divisible on $3$
+answer is {\bf No}: If Yes we come to contradiction:
+$3k+p$ (p=1,2) Yes and $3k$ Yes hence subtracting angles
+$p$ Yes too. But for $p=1,2$ answer is {\bf No}. Contradiction.
+
+
+
+
+
+
+\bye

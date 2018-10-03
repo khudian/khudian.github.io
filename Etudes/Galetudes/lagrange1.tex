@@ -1,0 +1,197 @@
+
+
+
+ \magnification=1200
+
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+
+   \centerline {\bf Lagrange Theorem}
+
+
+            $$ $$
+
+
+Let $K_n=K[x_1,x_2,\dots,x_n]$ be a ring of polynomials
+ over field $K$ where $x_1,\dots,x_n$ are free variables
+ (independent indeterminates)
+ and $K(x_1,x_2,\dots,x_n)$ be a corresponding field of fractions.
+
+
+ Let $G_n[x_1,\dots,x_n]$ be a subring of symmetrical polynomials.
+ Consider basic symmetric polynomials
+                   $$
+           t_k=x_1^k+x_2^k+\dots+x_n^k\,,\quad k=1,2,3,\dots,n\,.
+           \eqno (1)
+                    $$
+ All elements of subring $G_n[x_1,\dots,x_n]$ are polynomials
+ on $t_1,\dots,t_n$.
+
+
+  Every polynomial $F$ has its invariance subgroup $H_F\leq S_n$
+  of the symmetric group $S_n$:
+  permutation $\sigma\in S_n$ belongs to $H_F$ iff
+  polynomial $F$ remains invariant under this permutation:
+  $F^\sigma=F$.
+
+\medskip
+
+    {\bf Theorem} (Lagrange): Let $F=F(x_1,\dots,x_n), G=G(x_1,\dots,x_n)$
+     be two polynomials in $K[x_1,\dots,x_n]$
+    such that $H_F$ is a subgroup of $H_G$. Then polynomial $G$
+    can be considered as rational function on symmetric polynomials
+    $t_1,\dots,t_n$  and polynomial $F$.
+    More formally there exists a fraction
+    $P(z,t_1,\dots,t_n)\over Q(z,t_1,\dots,t_n)$
+    such that
+                           $$
+                G(x_1,\dots,x_n)=
+                {P(z,t_1,\dots,t_n)\over Q(z,t_1,\dots,t_n)}
+                  \big\vert_{z=F(x_1,\dots,x_n),t_k=x_1^k+x_2^k+\dots+x_n^k}
+                  \eqno (2)
+                $$
+
+     {\it Proof}:
+
+
+      Expose an explicit formula:
+       Consider the following fraction:
+                            $$
+                   U(z,x_1,\dots,x_n)=
+                   {G(x_1,\dots,x_n)\over z-F(x_1,\dots,x_n)}
+                   \eqno (3)
+                            $$
+     Take the average with respect of an action of all permutations of symmetric group
+     $S_n$ on indeterminates $x_1,x_2,\dots,x_n$:
+                        $$
+             U_{\rm average}(z,x_1,\dots,x_n)=
+              {1\over n!}\sum_{\sigma\in S_n}U^\sigma(z,x_1,\dots,x_n)=
+              {1\over n!}
+              \sum_{\sigma\in S_n}
+              {G^\sigma(x_1,\dots,x_n)\over z-F^\sigma(x_1,\dots,x_n)}
+                          $$
+
+ Because of symmetrization  $U_{\rm average}(z,x_1,\dots,x_n)$
+ is a fraction such that its nominator and denominator
+ can be considered as polynomials over symmetric polynomials
+ $t_1,t_2,\dots,t_n$:
+                   $$
+ U_{\rm average}(z,x_1,\dots,x_n)=
+{P(z,t_1,\dots,t_n)\over Q(z,t_1,\dots,t_n)}
+                  \big\vert_{t_k=x_1^k+\dots+x_n^k}.
+                   \eqno (4)
+                  $$
+            where
+                          $$
+         Q\left(z,t_1,\dots,t_n\right)\big\vert_{t_k=x_1^k+\dots+x_n^k}=
+         \prod_{r=1}^l \left(z-F^{\sigma_r}(x_1,\dots,x_k)\right)\,,
+                       \eqno (5)
+                          $$
+ $\{\sigma_1,\dots\sigma_l\}, (l={n!\over |H_F|})$ are any representatives
+ of left equivalence classes of the group $S_n$ with respect
+  to the subgroup $H_F$
+ \footnote{$^*$}{Transformations $\sigma\in H_F$ do not change denominator
+$z-F(x_1,\dots,x_n)$ of the fraction. Hence for every $g\in S_n$,
+$g=h\sigma_r$, where $h\in GH_F$ and
+ $z-F^{h\sigma_r}=z-F^{\sigma_r}$}.
+
+  One can see that
+                $$
+                G(x_1,\dots,x_n)=
+                 {n!\over |H_F|}Res \left({P(z,t_1,\dots,t_n)\over Q(z,t_1,\dots,t_n)}\right)
+                      \big\vert_{z=F(x_1,\dots,x_n),t_k=x_1^k+x_2^k+\dots+x_n^k}=
+                      \eqno (6)
+                       $$
+                       $$
+ {n!\over |H_F|}\left({P(z,t_1,\dots,t_n)\over Q'(z,t_1,\dots,t_n)}\right)
+  \big\vert_{z=F(x_1,\dots,x_n),t_k=x_1^k+x_2^k+\dots+x_n^k}
+   \eqno (7)
+                         $$
+This is just what we claimed in (2).
+ To prove this relation we note that
+
+
+ 1)
+  every permutation $\sigma\in S_n$
+ preserves polynomial $G$ if it preserves polynomial $F$:
+                   $$
+               F^\sigma=F\Rightarrow  G^\sigma=G,\quad{\rm because}\quad H_F\leq H_G
+                   $$
+
+ 2) Residue of the function $1\over z-F^\sigma$ in the point $z=F$
+ is equal to one if $\sigma\in H_F$ and it is equal to zero if $\sigma\not\in H_F$:
+                 $$
+               Res \left({1\over z-F^\sigma}\right)\big\vert_{z=F}=
+                      \cases
+                      {
+                      1\quad {\rm if} \sigma\in H_F\cr
+                      0\quad
+                       {\rm if} \sigma\not\in H_F\cr
+                      }
+                      $$
+
+  \medskip
+
+ Hence
+                  $$
+                     {n!\over |H_F|}    Res
+                     \left({P(z,t_1,\dots,t_n)\over Q(z,t_1,\dots,t_n)}\right)
+                      \big\vert_{z=F(x_1,\dots,x_n),t_k=x_1^k+x_2^k+\dots+x_n^k}
+               $$
+               $$
+              {1\over |H_F|}Res
+ \left(\sum_{\sigma\in S_n}
+ {G^\sigma(x_1,\dots,x_n)\over z-F^\sigma(x_1,\dots,x_n)}
+    \right)\big\vert_{z=F(x_1,\dots,x_n)}=
+              $$
+              $$
+       {1\over |H_F|}
+        \sum_{\sigma\in H_F}
+       G^\sigma(x_1,\dots,x_n)={1\over |H_F|}
+        \sum_{\sigma\in H_F}
+       G(x_1,\dots,x_n)=
+              G(x_1,\dots,x_n)\hbox{\finish}
+              $$
+
+
+\medskip
+
+{\bf Example}
+
+Consider
+                   $$
+                   F=x_1^2+x_2^2, G=x_3
+                   $$
+
+ Then $H_F=H_G$. Express $G=x_3$ via $F=x_1^2+x_3^2$ and $t_1,t_2,t_3$. According to (2-7):
+                   $$
+    U_{\rm average}={1\over 6}\sum_{\sigma\in S_3}
+            {x_3^\sigma\over z-(x_1^2+x_2^2)^\sigma}=
+            $$
+               $$
+ {1\over 3}\left({x_3\over z-(x_1^2+x_2^2)}+
+ {x_2\over z-(x_1^2+x_3^2)}+{x_1\over z-(x_2^2+x_3^2)}\right)=
+               $$
+
+For simplicity assume that $x_1,x_2,x_3$ are roots of the equation
+$x^3+x-1=0$, i.e. $t_1=x_1+x_2+x_3=0$, $t_2=x_1^2+x_2^2+x_3^2=-2$
+and $t_3=x_1^3+x_2^3+x_3^3=3$
+(In this case we have simplification:
+$x_1^2+x_2^2=-x_3^2-2$ but still calculations are not very quick)
+                 $$
+            U_{\rm average}={1\over 3}
+   \left({x_3\over z+(x_3^2+2)}+
+ {x_2\over z+(x_2^2+2)}+{x_1\over z+(x_1^2+2)}\right)=
+   {-3z-5\over z^3+4z^2+5z+3}
+               $$
+and according to (7)
+             $$
+    x_3=Res \left({-3z-5\over z^3+4z^2+5z+3}\right)\big\vert_{z=x_1^2+x^2_2}=
+             \left({-3z-5\over 3z^2+8z+5}\right)\big\vert_{z=x_1^2+x^2_2}=
+              $$
+              $$
+           {-3(x_1^2+x_2^2)-5\over 3(x_1^2+x_2^2)^2+8(x_1^2+x_2^2)+5}
+              $$
+
+One can see that indeed it is a fact.
+
+  \bye

@@ -1,0 +1,397 @@
+
+       \magnification=1200
+   \baselineskip 17 pt
+
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\F {{\cal F}}
+\def\grad {{^{\circ}}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+
+
+    \centerline {\bf Example of applying Galois theory to elementary problems}
+
+\bigskip
+
+   \centerline  {\bf How to calculate $\sin 6^{\circ}$}
+
+\medskip
+
+
+
+ First of all try to find polynomial (with rational coefficients)
+ such that $\sin 6^{\circ}$ is its root. Note that $6\cdot 5=30$
+ and $\sin 30\grad={1\over 2}$. Hence express $\sin 30\grad$ via $\sin 6\grad$:
+                  $$
+ \sin 5\varphi=\sin 3\varphi\cos2\varphi+\cos 3\varphi\sin 2\varphi=
+          16\sin^5\varphi-20\sin^3\varphi+5\sin\varphi\,.
+          \eqno (1)
+                  $$
+    We come to the polynomial equation
+     for $u=\sin 6\grad$:
+                   $$
+                 16u^5-20u^3+5u=\sin 30\grad={1\over 2}\,.
+                   \eqno (2)
+                   $$
+     We do not hope to solve it in radicals straightforwardly. Try to attack
+     it using elementary tools of Galois theory.  It is evident from (1) and (2) that if $u=\sin\varphi$
+     is root of (2) then $u^\prime=\sin (\varphi+{2\pi\over 5})$
+     is root of this equation too
+     ($\sin 5(\varphi+{2\pi\over 5})=$
+     $\sin (5\varphi+2\pi)=\sin 5\varphi$). Hence it is easy
+     to find all five roots of polynomial (2) using trigonometric
+     functions:
+                           $$
+                           \matrix
+                           {
+                  u_1=\sin 6\grad\cr\cr
+                  u_2=\sin (6\grad+{360\grad\over 5})=\sin 78\grad=\cos 12\grad\,,\cr\cr
+             u_3=\sin (6\grad+2\cdot{360\grad\over 5})=\sin 150\grad=-{1\over 2}\,,\cr\cr
+             u_4=\sin (6\grad+3\cdot {360\grad\over 5})=\sin 222\grad=-\cos 48\grad\,,\cr\cr
+             u_5=\sin (6\grad+4\cdot{360\grad\over 5})=\sin294\grad=-\cos 24\grad\,.\cr
+                                 }
+                                 \eqno (3)
+                                $$
+
+
+One of the roots of this polynomial is rational number, hence polynomial
+$16u^5-20u^3+5u-{1\over 2}$ in (2) is reducible over $\Q$:
+it has linear factor $u-{1\over 2}$.
+
+It is more convenient (for calculations) to consider new variable $t=2u$.
+We rewrite our polynomial as
+                 $$
+  {1\over 2}t^5-{5\over 2}t^3+{5\over 2}t-{1\over 2}\,.
+                     \eqno (4)
+                 $$
+This polynomial has root $t=2u=1$. Thus it contains linear factor $t-1$:
+             $$
+         {1\over 2}t^5-{5\over 2}t^3+{5\over 2}t-{1\over 2}=
+         {1\over 2}(t-1)P_4(t)\,.
+               $$
+It is easy to see that
+                $$
+      P_4(t)=t^4+t^3-4t^2-4t+1\,.
+      \eqno (5)
+                $$
+We come to four order equation:
+                     $$
+         P_4(t)=t^4+t^3-4t^2-4t+1=0\,.
+                   \eqno (5a)
+                     $$
+           for $t=2\sin 6\grad$.
+ It follows from (3) that its roots
+ $t_1,t_2,t_3,t_4$ are
+               $$
+               <2\sin 6\grad, 2\cos 12\grad,-2\cos 24\grad,-2\cos 48\grad>\,.
+               \eqno (6)
+               $$
+It can be very easy straightforwardly checked that polynomial
+$P_4(t)$ is irreducible over $\Q$.
+
+Splitting field of the polynomial $P_4$
+(minimal field that contains all the roots of this polynomial)
+is $\S(P_4)=\Q(\sin 6\grad, \cos 12\grad,\cos 24\grad,\cos 48\grad)$.
+
+Calculate first degree of extension $[\S(P_4):\Q]$.
+Note that $\cos 12\grad=1-2\sin^2 6\grad$,
+   $\cos 24\grad=2\cos^2 12\grad-1$, $\cos 48\grad=2\cos^2 24\grad-1$,
+   $-\sin 6\grad=2\cos^2 48\grad-1$.
+
+   We see that
+ {\bf rational transformation}
+                 $$
+             t\mapsto 2-t^2
+                 \eqno (7)
+                  $$
+ {\bf transforms roots of $P_4$ to another roots}.
+
+  This transformation defines $\Q$-automorphism $\s$ of the field $\S(P_4)$
+  such that:
+                   $$
+    \s(t_1)=t_2,\quad \s(t_2)=t_3,\quad\s(t_3)=t_4,\quad \s(t_4)=t_1,\quad
+                  \eqno (8)
+                   $$
+  From (7), (8) it is evident that all roots belong to field
+  $\Q(t_1)=\Q(\sin 6\grad)$ ($t_3=\s^2(t)=2-(2-t)^2$,
+  $t_4=2-(2-(2-t)^2)^2$). Hence
+                    $$
+              \S(P_4)=\Q(\sin 6\grad)\,.\quad [\Q(\sin 6\grad):\Q]=4\,.
+                                  \eqno (9)
+                    $$
+          We see that splitting field for irreducible polynomial
+          $P_4(t)$ is nothing but simple extension $\Q(\sin 6\grad):\Q$.
+
+ We see that Galois group of polynomial (5) that is group of automorphisms
+of the field $\Q(\sin 6\grad)=\S(P_4(t))$ contains 4 elements:
+                    $$
+           G=\G(\S:\Q)=\{1,\s,\s^2,\s^3\}\,.
+                            \eqno (10)
+                    $$
+  It is abelian cyclic group: $\sigma^4=1$.
+
+ This group contains only one proper subgroup $H$ ($H\not=1$, $H\not=G$):
+                $$
+             H=\{1,\sigma^2\},\quad |H|=2\,.
+                 $$
+
+To subgroup $H$ corresponds intermediate field $M=H^\dagger$:
+$M=H^\dagger$ is maximal subfield in $Q(\sin 6\grad)$ such that its elements
+ are invariant under transformations from $H$, i.e. under transformation $\s^2$:
+               $$
+   \Q\subset M\subset \Q(\sin 6\grad),\quad
+   M=\{a\in \Q(\sin 6\grad)\,\,{\rm such\,\,that}\,\,\s^2(a)=a \}\,,
+               $$
+               $$
+ [\Q(\sin 6\grad):M]=2,\quad [M:\Q]=2\,.
+                     \eqno (11)
+               $$
+   We see that intermediate extensions are quadratic (degree is equal to $2$).
+From formula (11) it follows that every element of field $\Q(\sin 6\grad)$
+  and in particularly $\sin 6\grad$ belongs to the intermediate field $M$
+  or it is a root of {\bf quadratic polynomial with coefficients in} $M$.
+
+   (If $[L:K]=2$ then for arbitrary $a\in L$
+   elements $1,a, a^2$ are linear dependent over field $K$,
+   hence there exist coefficients $p,q,r,\in K$ such that
+   not all are equal to zero and relation $p+qa+ra^2=0$ is obeyed).
+
+   Before studying the content of field $M$ we deliver
+    this quadratic polynomial.
+       Consider elements
+                          $$
+                          \matrix
+                             {
+                         \Q(\sin 6) \ni \alpha=t_1+t_3=t_1+\sigma^2 t_1\cr\cr
+                         \Q(\sin 6) \ni \beta=t_1\cdot t_3=t_1\cdot\sigma^2 t_1\cr
+                             }\,.
+                             \eqno (12)
+                           $$
+     It is evident that these elements belong to intermediate field
+     $M$, because they do not change under the action of automorphism
+     $\s^2$.
+                From (6) and (12) we see that numbers
+                $t_1=2\sin 6\grad$ and $t_3=-2\cos 24\grad$
+   are roots of the following quadratic polynomial
+                    $$
+                P_2(t)=t^2-\alpha t+\beta
+                \eqno (13)
+                $$
+          with coefficients $\alpha$ and $\beta$ in the field $M$.
+
+  Equation $P_2(t)=0$ can be solved elementary in radicals.
+  It remains to calcualte $\alpha$ and $\beta$ which belong
+   to field $M$ which is quadratic extension of $\Q$ ($[M:\Q]=2$). Thus
+   $\alpha$ and $\beta$ are roots of quadratic polynomial
+   with rational coefficients. Find these polynomials.
+
+   It follows from (6), (12) and elementary stuff of trigonometric formulae that
+
+   $M\ni \alpha=t_1+t_3=2\sin 6\grad-2\cos 24\grad=$
+                       $$
+              =     2\sin 6\grad-2\sin 66\grad=
+                   4\sin {6-66\over 2}\cos {6+66\over 2}=-2\cos 36=4\sin^2 18\grad-2
+                   \eqno (14 a)
+                       $$
+             and
+
+$M\ni\beta=t_1\cdot t_3=$
+                       $$
+                       2\sin 6\grad\cdot (-2\cos 24)
+              = -4 (\sin 6\grad\cos 24\grad)=
+                 -2 (\sin 30\grad-\sin 18\grad)=
+                   2\sin 18 \grad-1\,.
+                   \eqno (14 b)
+                      $$
+ We see from these relations that
+                    $$
+           M=\Q(\sin 18\grad)\,,
+                     $$
+  and $\sin 18\grad$ is a root of quadratic polynomila with rational coefficients.
+
+
+ Having this information it is easy to find this polynomial for $\sin 18\grad$.
+  One can see that $\sin 18 \grad$ is a root of polynomial $4t^2+2t-1$:
+                            $$
+                     4\sin^2 18\grad+2\sin 18\grad-1=0\,.
+                     \eqno (15)
+                             $$
+           Hence
+                          $$
+                       \sin 18\grad={\sqrt 5-1\over 4}\,.
+                           $$
+{\bf Remark 1} There are many ways to disclose quadratic relation (15).
+  Not the most beautiful one but right one is the following:
+
+  $0=\cos 36\grad-\sin 54\grad=(1-2\sin^2 18)-(3\sin 18\grad-4\sin ^3 18\grad)=$
+                                $$
+             4\sin^3 18\grad-2\sin^2 18\grad-2\sin 18\grad+1=
+             (\sin 18\grad-1)(4\sin^2 18\grad+2\sin \grad-1)\,.
+                                $$
+
+
+  {\bf Remark 2}. The number $\tau=2\sin 18\grad={\sqrt 5-1\over 2}$
+  is so called "golden ratio". It has many wonderful properties...
+  One of the ways to obtain relation (15) straightforwardly
+  as relation for golden ratio is to consider triangle
+  with angles $(72\grad, 72\grad, 36\grad)$.
+
+
+
+We calculated $\sin 18\grad$, now we calculate $\alpha,\beta\in \Q(\sin\grad 18)$
+by (14)
+and solve quadratic equation (13).
+
+                 $$
+                 \alpha=4\sin^2 18\grad-2=-2\sin 18\grad-1=-{1+\sqrt 5\over 2}\,.
+                         $$
+                             $$
+\beta=2\sin 18\grad-1={\sqrt 5-3\over 2}\eqno (16)\,.
+                          $$.
+
+So  from (13) and (16) we see that
+                $t_1=2\sin 6\grad$ and $t_3=-2\cos 24\grad$,
+   are roots of quadratic equation
+                    $$
+                t^2+ {1+\sqrt 5\over 2}t-{3-\sqrt 5\over 2}=0\,.
+                \eqno (17)
+                $$
+                $$
+              t_{1,2}=
+             {\pm\sqrt{30-6\sqrt{5}}-\sqrt{5}-1\over 4}
+                $$
+Positive root of this equation is equal just to $t_1=2\sin 6\grad$:
+  Finally we obtain that
+                  $$
+            \sin 6\grad=
+             {\sqrt{30-6\sqrt{5}}-\sqrt{5}-1\over 8}
+             \eqno (18)
+                   $$
+We calcualted $\sin 6\grad$!.
+
+\bigskip
+
+   \centerline {\bf Discussions}
+
+\medskip
+
+We see from (18) that $\sin 6\grad$
+(so and $\cos 6\grad$) is expressed through rational numbers
+ with arithmetic operations $(+,-,\times,:)$ and operation
+ of taking square root. It means that we can construct
+ by ruler and compass the angle $6\grad$, i.e.
+ we can divide the circle by ruler and compass on 60 equal arcs.
+
+
+  Now consider the following two questions
+
+  {\bf Question 1} If $\varphi$ is an angle
+  can we construct this angle with compass and ruler
+ and correspondingly $\sin\varphi$ and $\cos \varphi$
+  can be expressed through rational numbers
+ with arithmetic operations $(+,-,\times,:)$ and operation
+ of taking square root?
+
+ {\bf Question 2} If $N$ is positive integer
+ can we divide the circle on $N$ equal arcs with compass and ruler?
+
+In the next sheet I will discuss in details answers on these questions,
+ here only two words about it:
+
+In fact the main reason why for $\varphi=6\grad$  the answer on the first question
+is positive is the following:
+The Galois group for irreducible polynomial $P_4(t)$ in (5)
+(Galois group of the splitting field of this polynomial)
+corresponding to $\sin 6\grad$ has $4=2^2$ elements.
+
+
+   One can prove that the answer on the first question is positive
+    if the Galois group of corresponding
+   irreducible polynomial contains $2^n$ elements.
+ This follows from the following lemma:
+
+{\bf Lemma} If $G$ is arbitrary finite group such that $G$
+contains $2^n$ elements then there is a subsequence
+          of subgroups:
+                 $$
+       G_0\subset G_1\subset G_2\subset\dots\subset G_{n-1}\subset G_n=G
+                      \eqno (2.1)
+                 $$
+    such that every subgroup $G_k$ in (2.1)
+    contains $2^k$ elements and $G_k$ is normal subgroup of
+    $G_{k+1}$.
+
+
+    Indeed according to Lemma and main theorem  of Galois theory if $|G|=2^n$ then
+    we can find the sequence of intermediate fields corresponding to
+    (2.1)
+                      $$
+        \Q=M_0\subset M_1\subset \dots\subset M_n
+                      $$
+          such that $M_k\subset M_{k+1}$ are quadratic normal extension.
+     Hence every root of polynomial is a root of quadratic polynomial
+          with coefficients in $M_{n-1}$, these coefficients
+          are roots of quadratic polynomial with coefficients in $M_{n-2}$
+          and so on.
+
+    One can show that if $\varphi=k^\grad$ where $k$ is integer then
+       answer on first question is positive iff $k$ is divisible on $3$.
+
+ The second question is strictly related with first one.
+  This question  was posed already
+   by ancient Greeks:
+
+   It is evident (we know it from school)
+   that answer on the first question is positive for $N=2,3,4,6,8$ and
+  for $N=2^k$. Little bit more difficult one can obtain that answer is positive for
+  $N=5$ (This was known already to ancient Greeks.).
+
+  Gauss proved that for $N=17$ answer is positive too. This was one of the
+  most impresssive results of 19 century mathematics.
+
+  Now we describe the general answer.
+
+    We call prime number $p$ Messner prime number if $p=2^k+1$.
+
+    {\bf Exercise} Prove that if $p=2^k+1$ is Messner prime number then
+     $k=2^p$.
+
+     For example $3,5,17,257$ are Messner prime numbers.
+
+     {\bf Statement} Circle can be divided on $N$ equal arcs
+           by ruler and compass if and only if the number
+           $N$ obeys to the following condition:
+
+
+
+           {\bf all prime factors that are contained in number $N$
+           if $p$ is a prime number such that $N$ is divisible on $p$
+           then $p=2$ or $p$ is Messner prime number and $N$ is not divisible
+           on $p^2$}
+
+
+It turns out that in this and only in this case the corresponding
+Galois group contains $2^n$ elements.
+
+
+
+We see that for $N=7,9,11,13$ answer is negative.
+
+
+Finally the last question-jock :
+
+{\bf Question 3} Why 50 pence coin has 7 edges?
+Answer: Because  $7$ is the smallest number such that
+answer on the question 2 is negative.
+
+
+\bye

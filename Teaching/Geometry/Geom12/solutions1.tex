@@ -1,0 +1,352 @@
+% I begin this version on 20 january 2007
+%\magnification=1200
+%\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def \z   {{\bf z}}
+
+
+\centerline  {\bf Homework 1. Solutions}
+
+\bigskip
+
+
+{\bf 1} {\it Show that the set of vectors $\{\ac_1,\ac_2\dots,\ac_m\}$ in vector space $V$ is linearly dependent
+if at least one of these vectors is equal to zero.}
+
+
+WLOG suppose that $\ac_1=0$. Then
+                  $$
+          \lambda\ac_1+0\cdot \ac_2+\dots+0\cdot\ac_n=0
+                  $$
+where $\lambda$ is an arbitrary real number.   We see that there
+exists a linear combinations of vectors $\{\ac_1,\ac_2\dots,\ac_m\}$
+which is equal to zero and one of the  coefficients
+$\{\lambda,0,\dots,0\}$ could be  equal to non-zero. Hence vectors
+$\{\ac_1,\ac_2\dots,\ac_m\}$ are linearly dependent.
+
+
+
+\m
+
+{\bf 2}  {\it Show that any three vectors $\{\x_1,\x_2,\x_3\}$ in $\R^2$ are linearly dependent.}
+   We will show it straightforwardly here.
+   \m
+
+    Let three vectors
+               $$
+               \matrix
+                 {
+               \x_1=(a^1,a^2)\cr
+               \x_2=(b^1,b^2)\cr
+               \x_3=(c^1,c^2)\cr
+               }
+               $$
+be linearly independent.
+If vector $\x_1=(a_1,a_2)=0$ then nothing to prove.(See exercise 1). Let $\x_1\not=0$.WLOG suppose $a_1\not=0$.
+Consider
+              $$
+                          \matrix
+                 {
+               \x'_2=\x_2-{b_1\over a_1}\x_1=(b^1,b^2)-{b_1\over a_1}(a_1,a_2)=(0,b'_2)\cr
+                \x'_3=\x_3-{c_1\over a_1}\x_1=(c^1,c^2)-{c_1\over a_1}(a_1,a_2)=(0,c'_2)\cr
+               }
+                 $$
+We see that vectors  $\x'_2,\x'_3$ are proportional---i.e. they are linearly dependent:
+there exist  $\mu_2\not=0$ or $\mu_3\not=0$ such that $\mu_2\x'_2+\mu_3\x'_3=0$
+E.g. we can take $\mu_2=c'_2$, $\mu_3=-b'_2$ if $c'_2\not=0$ or $b'_2\not=0$ (if $c'_2=b'_2\not=0$ then we can take
+coefficients $\mu_1,\mu_2$ any real numbers. )  We have:
+                 $$
+              0=\mu_2\x'_2+\mu_3\x'_3=\mu_2\left(\x_3-{c_1\over a_1}\x_1\right)+
+              \mu_3\left(\x_3-{c_1\over a_1}\x_1\right)=\mu_2\x_2+\mu_3\x_3-
+              \left({\mu_2b_1\over a_1}+{\mu_3c_1\over a_1}\right)\x_1=0,
+                 $$
+where $\mu_2\not=0$ or $\mu_3\not=0$. Hence vectors $\x_1,\x_2,\x_3$ are linearly dependent.\finish
+
+   (Compare with the solution of general statement in the next exercise.)
+
+
+
+
+ {\bf 3}
+ {\it Let $3$ vectors $\{\x_1,\x_2,\x_3\}$ in vector space $V$
+ can be expressed as a linear combination of $2$ vectors
+ $\{\ac,\b\}$ of this vector space, i.e. 3 vectors   $\{\x_1,\x_2,\x_3\}$ belong to the span of 2
+ vectors $\{\ac,\b\}$. Prove that three vectors $\{\x_1,\x_2,\x_3\}$ are linearly dependent.}
+
+ Let
+                $$
+                \cases
+                {
+                \x_1=\lambda_1\ac+\mu_1\b\cr
+                \x_2=\lambda_2\ac+\mu_2\b\cr
+                \x_3=\lambda_3\ac+\mu_3\b\cr
+                }
+                \eqno (1)
+                $$
+If one of vectors is equal to zero then nothing to prove (See previous exercise).
+
+$\x_1\not=0$. WLOG suppose that  $\lambda_1\not=0$. Thus vector $\ac$ can be expressed as a linear combination
+of vectors  $\x_1$ and $\b$: $$
+\ac={1\over \lambda_1}\x_1-{\mu_1\over \lambda_1}\b
+\eqno (2)
+                               $$.
+(If $\lambda_1=0$ then $\mu\not=0$ and we express the vector $b$ as a linearly combination
+of vectors  $\x_1$ and $\ac$).  Then using the relation (2) we
+ express vector $\x_2$ as linear combinations of vectors $\ac$ and $\x_1$:
+                           $$
+                \x_2=\lambda_2\left({1\over \lambda_1}\x_1-{\mu_1\over \lambda_1}\b\right)+
+                \mu_2\b=\lambda'_2\x_1+\mu'_2\b
+                \eqno (3)
+                           $$
+If $\mu'_2=0$ then everything is proved: vectors $\x_1,\x_2$ are linearly dependent, hence
+vectors $\x_1,\x_2,\x_3$ are linearly dependent too.
+If $\mu'_2\not=0$ we express vector $\b$ via vectors $\x_1$ and $\x_2$:
+                    $$
+                \b=-{1\over \mu_1}\x_2-{\lambda'\over\mu'}\x_1
+                \eqno (4)
+                    $$
+and using relations (4) and (2) we express vector $\x_3$ in (1) as a linear combinations of vectors $\x_1$ and $\x_2$,
+thus proving that vectors $\{\x_1,\x_2,\x_3\}$ are linearly dependent.
+                  $$
+     \x_3=\lambda_3\ac+\mu_3\b=\lambda_3\left(-{1\over \lambda_1}\x_1-{\mu_1\over \lambda_1}\b
+\right)+\mu_3\left({1\over \mu_1}\x_2-{\lambda'\over\mu'}\x_1\right)=
+                  $$
+                  $$
+    \lambda_3\left(-{1\over \lambda_1}\x_1-{\mu_1\over \lambda_1}\left({1\over \mu_1}\x_2-{\lambda'\over\mu'}\x_1\right)
+\right)+\mu_3\left({1\over \mu_1}\x_2-{\lambda'\over\mu'}\x_1\right)=
+\lambda_3'' \x_1+\mu_3''\x_2
+                  $$
+Vector $\x_3$ is a linear combination of vectors  $\x_2,\x_3$. Hence vectors $\x_1y,\x_2,\x_3$ are linearly dependent.
+
+ In a similar way one can prove that any $m+1$ vectors are linearly dependent if they belong to the span
+of $m$ vectors
+
+
+\m
+
+{\bf 4} {\it Let $\{\ac,\b\}$ be two vectors in the linear space $V$ such that
+
+    i) these vectors are linearly independent
+
+    ii) for an arbitrary vector $\x\in V$ vectors $\{\ac,\b,\x\}$ are linearly dependent.
+
+  What is a dimension of the vector space $V$?
+
+    Is an ordered set $\{\ac,\b\}$ a basis in the vector space $V$?}
+
+
+\m
+
+   Recall that the dimension of vector space $V$ is equal to $n$ if there exist $n$ linearly independent vectors
+   and any $n+1$ vectors are linearly dependent.
+ Show that the dimension of the vector space under consideration is equal to $2$.
+
+   On one hand there exist two linearly dependent vectors  $\ac$ and $\b$.
+    This means that dimension of $V$ is greater  or equal than 2:
+${\rm dim\,} V\geq 2$.
+
+   To prove that ${\rm dim\,} V= 2$ it remains to prove that any
+three vectors are linearly dependent.
+
+   Show first that arbitrary vector  $\x\in V$ can be expressed
+   via vectors  $\ac, \b$.  Indeed vectors $\{\ac,\b,\x\}$ are linearly dependent, hence
+                 $$
+              \mu_1\ac+\mu_2\b+\mu_3\x=0,
+             \quad
+             \hbox{where  $\mu_1\not=0$, or $\mu_2\not=0$ or $\mu_3\not=0$
+                 }
+                 $$
+   If $\mu_3=0$ then $\mu_1\not=0$, or $\mu_2\not=0$ and  $\mu_1\ac+\mu_2\b=0$, i.e. vectors
+   $\ac,\b$ are linearly dependent. Contradiction. Hence $\mu_3\not=0$, that is a vector $\x$ can be expressed
+   as a linear combination of vectors $\ac,\b$, i.e. it belongs to the span of the vectors $(\ac,\b)$.
+
+
+
+    Let $\{\x_1,\x_2,\x_3\}$ be a set of
+   arbitrary $3$ vectors.
+   We just proved that any of these vectors belong to the span of the vectors $\{\ac,\b\}$.
+    Hence according to previous exercise these three vectors
+     $\{\x_1,\x_2,\x_3\}$ are linearly dependent.  Thus we proved that
+     any three vectors
+     $\{\x_1,\x_2,\x_3\}$ are linearly dependent.
+
+     Hence the dimension of the space $V$ is equal to $2$.
+
+     The vectors $\{\ac,\b\}$ are two linearly independent vectors in $2$-dimensional vector space $V$.
+       Hence it is a basis.
+
+
+     \m
+
+
+
+  {\bf 5}  {\it Let $\{\e_1,\e_2,\e_3\}$ be a basis  in $3$-dimensional vector space $V$.
+  Show that
+
+
+  a) all vectors $\e_1,\e_2,\e_3$ are not equal to zero.
+
+
+  b)  an arbitrary vector $\ac\in V$ can be expressed as a
+  linear combination of the basis vectors $\{\e_1,\e_2,\e_3\}$ in a unique way, i.e. if
+                          $$
+          \ac=a^1\e_1+a^2\e_2+a^3\e_3=a^{1'}\e_1+a^{2'}\e_2+a^{3'}\e_3\,\,\,{\rm then}\,\,\,
+           a^1=a^{1'},\,a^2=a^{2'},\,a^3=a^{3'}\,.
+           \eqno (5)
+                           $$
+}
+ a)  Suppose one of these vectors is equal to zero: $\e_1=0$. Then the vectors
+   $\{\e_1,\e_2,\e_3\}$ are linearly dependent. (See the exercise 1).
+
+   b)
+   First prove the uniqueness of expansion (5) then the existence.
+   Let $\ac$ be an arbitrary vector in $V$.
+   Suppose
+                $$
+     \ac=a^1\e_1+a^2\e_2+a^3\e_3=a^{1'}\e_1+a^{2'}\e_2+a^{3'}\e_3\,.
+                $$
+   Then
+                 $$
+     0=\ac-\ac=(a^1-a{1'})\e_1+(a^2-a^{2'})\e_2+(a^3-a^{3'})\e_3\,.
+                 $$
+   On the other hand vectors $\{\e_1,\e_2,\e_3\}$ are linearly independent.
+   Hence
+  all  coefficients  $(a^1-a^{1'}), (a^2-a^{2'}),(a^3-a^{3'})$
+  are equal to zero:
+                $$
+       a^1-a^{1'}=a^2-a^{2'}=a^3-a^{3'}=0,\,\,
+    {\rm i.e.}\,\, a^1=a^{1'},a^2=a^{2'},a^3=a^{3'}\,.
+                $$
+   According to definition of basis
+   $4$ vectors $\{\e_1,\e_2,\e_3,\ac\}$ are linearly dependent. Hence
+   vector $\ac$ can be expressed via the vectors $\{\e_1,\e_2,\e_3\}$. Indeed
+   there exist coefficients  $\lambda_1,\lambda_2,\lambda_3,\lambda_4$ such that
+              $$
+   \lambda_1\e_1+\lambda_2\e_2+\lambda_3\e_3+\lambda_4\ac=0
+   \eqno (6)
+              $$
+   and at least one of these coefficients is not equal to zero.
+
+   Prove that $\lambda_4\not=0$. Suppose $\lambda_4=0$. Then it follows from
+   (6) that vectors $\{\e_1,\e_2,\e_3\}$ are linearly dependent. Contradiction. Hence
+    $\lambda_4\not=0$
+   and  $\ac$ can be expressed via $\e_1,\e_2,\e_3$:
+                    $$
+       \ac=-{\lambda_1\over \lambda_4}\e_1-{\lambda_2\over \lambda_4}\e_2-
+       {\lambda_3\over \lambda_4}\e_3
+                    $$
+
+
+\m
+
+
+{\bf 6$^{\dagger}$}  {\it Show that the ordered set
+  $\{\e_1,\e_2,\e_3,\e_4,\dots,\e_n\}$
+of vectors is a basis in $\R^n$ in the case if}
+                  $$
+                  \matrix
+                    {
+    \e_1&=(1,&2,&3,&4,\dots,&n)\cr
+    \e_2&=(0, &1,&2,&3,\dots,&n-1)\cr
+    \e_3&=(0, &0, &1,&2,\dots,&n-2)\cr
+        \ldots \cr
+    \e_n&=(0,&0, &0,&0,\dots,&1)\cr
+                    }
+                    $$
+If $\sum\lambda_i\e_i=0$ then one can see that $\lambda_1=0$. This implies
+that $\lambda_2=0$ and so on all coefficeints $\lambda_i$ vanish.
+ We proved that these $n$  vectors in $n$-dimensional space $\R^n$
+are linear independent. Hence
+  $\{\e_1,\e_2,\e_3,\e_4,\dots,\e_n\}$
+is a basis.
+ \m
+{\bf 7}  Let $\{\e_1,\e_2,\e_3\}$ be a basis of $3$-dimensional vector space $V$.
+
+   Is a set of vectors $\{\e'_1,\e'_2,\e'_3\}$ a basis of $V$ in the case if
+
+a) $\e'_1=\e_2$, $\e'_2=\e_1$, $\e'_3=\e_3$;
+
+b)  $\e'_1=\e_1$, $\e'_2=\e_1+3\e_3$, $\e'_3=\e_3$;
+
+
+c) $\e'_1=\e_1-\e_2$, $\e'_2=3\e_1-3\e_2$, $\e'_3=\e_3$;
+
+d) $\e'_1=\e_2$, $\e'_2=\e_1$, $\e'_3=\e_1+\e_2+\lambda \e_3$ (where $\lambda$ is an arbitrary coefficient)?
+
+
+
+To analyse the cases we use the definition of basis:
+3 vectors in $3$-dimensional space form a basis if and only if these vectors
+ are linearly independent.
+
+Case a) Vectors $\e'_1=\e_2, \e_2'=\e_1, \e'_3=\e_3$ are linearly independent, since
+$\{\e_1,\e_2,\e_3\}$ is a basis. Hence $\{\e'_1,\e'_2,\e'_3\}$ is a basis too.
+
+\m
+
+Case b) Vectors  $\e'_1=\e_1, \e_2'=\e_1+3\e_3, \e'_3=\e_3$ are linearly dependent. Indeed
+          $$
+\e'_1-\e'_2+3\e'_3=\e_1-(\e_1+3\e_3)+3\e_3=0\,.
+          $$
+Hence it is not a basis.
+
+
+Case c)  First two vectors  $\e'_1=\e_1-\e_2, \e_2'=3\e_1-3\e_2$
+are already linearly dependent: $\e'_1=3\e_2'$. Hence these three vectors  do not form a basis.
+
+
+
+
+\m
+Case d)  Check are vectors linearly independent or not. Let
+        $c_1 {\e'_1}+c_2 \e'_2+c_3\e'_3=0$, i.e.
+                $$
+c_1 {\e'_1}+c_2 \e'_2+c_3\e'_3=c_1\e_2+c_2\e_1+c_3(\e_1+\e_2+\lambda\e_3)=(c_2+c_3)\e_1+(c_1+c_3)\e_2+c_3\lambda\e_3=0\,.
+                $$
+I-st case $\lambda\not=0$. We have  $c_2+c_3=c_1+c_3=\lambda c_3=0$. Hence $c_3=0,c_1=0,c_2=0$. These three vectors are
+linearly independent. This means that ordered triple $\{\e'_1,\e'_2,\e'_3\}$ is a basis.
+
+
+II-nd case $\lambda=0$. We have  $c_2+c_3=c_1+c_3=0c_3=0$. Hence $c_3$ can be an arbitrary number and
+$c_1=-c_3,c_2=-c_3$. $c_3$  These three vectors are
+linearly dependent. This means that ordered triple $\{\e'_1,\e'_2,\e'_3\}$ is not a basis.
+
+
+\bye

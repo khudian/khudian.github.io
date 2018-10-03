@@ -1,0 +1,413 @@
+\def\A {\bf A}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\F {{\bf F}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\l {\lambda}
+% This file I begin on 17 September 2007. I would like to understand Dwork Theorem
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def \Tr {{\rm Tr}}
+\def\ord {{\rm ord\,}}
+\documentclass[12pt]{article}
+\usepackage{amsmath,amsthm}
+
+\theoremstyle{theorem}
+%\newtheorem{thm}{Khimera}
+
+
+\numberwithin{equation}{section}
+
+
+
+\begin{document}
+
+
+  \centerline {\bf Dwork theorem}
+
+  \centerline {attempts to understand its proof based on works of Dwork, paper of Candelas and my ideas }
+
+
+
+\tableofcontents
+
+\section*{Preliminaries}
+
+Let $P(x_1,\dots,x_n)$ be a polynomial with coefficients in prime
+finite field $\F_p$. This polynomial defines variety $M_P$ in
+$n$-dimensional affine space over the field $\F_p$ or over an algebraic
+extensions $\F_{p^r}$ of this field. Denote by $\nu_r$ the number of distinct
+solutions of equation $P(x_1,\dots,x_n)=0$ considered over the field $\F_{p^r}$
+($r=1,2,3,\dots $), i.e. the number of points of the variety  $M_P$ considered
+in affine space over the field $\F_{p^r}$ and consider the following generating
+function
+          \begin{equation}\label{zetafunctionasgenfunctionofsolut}
+        Z_P(t)=\exp\left(\sum_{r=1}^\infty {\nu_rt^r\over r}\right)
+          \end{equation}
+
+The famous result of B. Dwork is that zeta function $Z_P(t)$ is rational function.
+
+I try in this text to present a proof of Dwork theorem.
+I wrote this text after studying original work of B. Dwork, the text of Candelas
+and the book of Koblitz.
+
+
+
+
+\medskip
+
+{\bf Example 0.1} Let $P(x,y)=x-y$. Then evidently $\nu_r=p^r$ and
+\begin{equation}\label{trivialxampleofzetafunction}
+         Z_P(t)=\exp\left(\sum_{r=1}^\infty {p^rt^r\over r}\right)=
+          \exp\left(\log{1\over 1-pt}\right)={1\over 1-pt}
+          \end{equation}
+
+{\bf Example 0.2} Let $P(x,y)=x^2+y^2-1$ defines circle.
+   To calculate $\nu_r$ consider the  following map
+            $$
+         \tau[u:v]=[1-u^2: 2u: 1+u^2]
+            $$
+which establishes one-one correspondence between
+points of  projective plan and the conic $x^2+y^2=z^2$ in two-dimensional projective space.
+
+This conic has two points more than circle $x^2+y^2=1$ if and only if the equation
+$x^2+y^2=0$ has not-trivial solution in $\F_{p^r}$, i.e. if $\sqrt {-1}\in \F_{p^r}$.
+(Points $[\sqrt{-1}:1:0]$ and $[-\sqrt{-1}:1:0]$ in $\R P^3$)
+
+
+
+
+The number of points on projective line (over $\F_{p^r}$) is equal to $p^r+1$.
+Hence we see that  for the variety $x^2+y^2=1$
+         \begin{equation}\label{numberofpointoncircle}
+    \nu_r=
+     \begin{cases}
+        p^r-1\,\, \hbox {if $p=4k+1$}\\
+         \begin{cases}
+        p^r-1\,\, \hbox {if $r$ is even}\\
+         p^r+1\,\, \hbox {if $r$ is odd}\\
+     \end{cases}\hbox {if $p=4k+3$}
+     \end{cases}
+\end{equation}
+  Hence  for the circle $x^2+y^2=1$
+\begin{equation}\label{zetafunctionforcircleif$p=4k+1$}
+Z(t)=\exp\left(\sum_{r=1}^\infty{(p^r-1)t^r\over r}\right)=\exp\left(\log{1\over 1-pt}-\log{1\over 1-t}\right)=
+     {1-t\over 1-pt}
+\end{equation}
+if $p=4k+1$
+and
+              $$
+Z(t)=\exp\left(\sum_{r\,\,{\rm even}}{(p^r-1)t^r\over r}+\sum_{r\,\,{\rm odd}}{(p^r+1)t^r\over r}\right)=
+\exp\left(\sum_{r=1}^\infty{p^rt^r\over r}-\sum_{r=1}^\infty{(-1)^rt^r\over r}\right)=
+       $$
+\begin{equation}\label{zetafunctionforcircleif$p=4k+3$}
+=\exp\left(\log{1\over 1-pt}-\log (1+t)\right)=
+     {1+t\over 1-pt}
+\end{equation}
+
+\medskip
+
+{\it Another more wise definition of zeta function}
+\def\p {{\bf p}}
+ Let $\p=(x_1,x_2,\dots,x_n)$ be an arbitrary solution of the equation $P(x)=0$ considered over algebraically closed
+ field $\bar \F_p$. Apply Frobenius homomorphism $\sigma\colon \,\,a\mapsto a^p$ . The
+  point $\sigma \p=(\sigma x_1,\dots,\sigma x_n)$ is a solution of thi equation too.
+  Consider the orbit of this solution under Frobenius homomorphism:
+                 \begin{equation}\label{orbitofsolution}
+  \{\p, \sigma\p,\sigma^2\p,\dots,\sigma^{k-1}\p\}
+\end{equation}
+We assume that $\sigma^i \p\not=\p$ for $i\leq k-1$ and $\sigma^k\p=\p$, i.e. all coordinates $(x_1,\dots,x_n)$
+of the point $\p$ belong to the field $\F_{p^k}$ and at least one coordinate does not belong to the smaller subfield.
+We say that the point $\p$ has the orbit of the length $k$.
+
+
+  Denote by $d_n$ number of different orbits on the variety $P(x)=0$ of the length $n$. It is evident now that
+   \begin{equation}\label{relationbetweenorbitandnumberofpoints}
+    \nu_r=\sum_{n\colon n|r} nd_n
+\end{equation}
+ E.g. $\nu_1=d_1$, $\nu_2=d_1+2d_2$, $d_4=d_1+2d_2+4d_4$
+
+Now applying \eqref{relationbetweenorbitandnumberofpoints} to \eqref{zetafunctionasgenfunctionofsolut} we come to
+                 $$
+                Z_P(t)=\exp\left(\sum_{r=1}^\infty {\nu_rt^r\over r}\right)=
+        \exp\left(\sum_{r=1}^\infty {\left(\sum_{n\colon n|r} nd_n\right)\over r}t^r\right)=
+                 $$
+\begin{equation}\label{zetafunctionmorenatural}
+  \exp\left(\sum_{n,s=1}^\infty{nd_nt^{ns}\over ns}\right)=
+  \exp\left(\sum_{n=1}^\infty d_n\left(\sum_{s=1}^\infty{t^{ns}\over s}\right)\right)=
+  \prod_{n=1}^\infty{1\over (1-t^n)^{d_n}}
+\end{equation}
+
+
+This formula serves much more natural definition of Zeta function, it is much more motivated:
+Compare with usual zeta-function.
+This formula explains the special way of choosing of generatig function \eqref{zetafunctionasgenfunctionofsolut}.
+Moreover this formula explains the following fact:
+
+
+  {\bf Proposition 01} Let $Z_M(t)=\sum c_nz^n$ is an expansion of the function in vicinity of the point
+  $0$. (This expansion exists because zeta-function of any surface can me majorated by zeta
+  function in the case $\nu_r=p^rn$)).
+   Then coefficients $c_n$ are integers.
+
+
+\section {Reduced zeta-function}
+
+  Techically much easier to calculate reduces zeta function:
+  \begin{equation}\label{zetafunctionreduced}
+        Z^*_P(t)=\exp\left(\sum_{r=1}^\infty {\nu^*_rt^r\over
+        r}\right),
+          \end{equation}
+where $\nu_r^*$---is number of solutions of equation $P(x_1,x_2,\dots,x_n)=0$ over $\F_{p^r}$ such that all
+coordinates are not equal to zero, $x_1\not=0,x_2\not=0,\dots,x_n\not=0$
+
+Using inclusion exclusion principe it is easy to show that usual zeta function can be rationally expressed
+via reduced zeta-function and vice versa.
+The following example explains everything:
+
+ let $P=P(x,y,z)$ defines variety in $\A^3$. Consider polynomials
+              $$
+        P_1(x,y)=P(0,x,y), P_2(x,y)=P(x,0,y), P_3(x,y)=P(x,y,0),
+              $$
+and
+             $$
+          P_{12}(x)=P(0,0,x),P_{13}(x)=P(0,x,0),P_{23}(x)=P(x,0,0), \,\, {\rm and}\,\, P_{123}=P(0,0,0)
+             $$
+Then using ''exclusion-inclusion'' we see that
+  W e see that
+ \begin{equation}\label{expressionofusualzetaintermsofreduced}
+    Z_P(t)=Z^*_P(t)Z^*_{P_1}Z^*_{P_2}Z^*_{P_3}Z^*_{P_{12}}Z^*_{P_{13}}Z^*_{P_{23}}Z^*_{P_{123}}
+\end{equation}
+and on the other hand using ''exclusion-inclusion'' we see that
+ \begin{equation}\label{expressionofreducedintermsofusual}
+    Z^*_P(t)={Z_P(t)\over Z_{P_1}Z_{P_2}Z_{P_3}}{Z_{P_{12}}Z_{P_{13}}Z_{P_{23}}\over Z_{P_{123}}}
+\end{equation}
+
+Hence it is enough to prove that reduced zeta-function is rational
+
+
+\section{How to calculate number of zeros.}
+
+  For any given $r$ one can write down the formula which counts the number of
+   points  $\nu_r$ or $\nu_r^*$. E.g. if $r=1$ then
+         \begin{equation}\label{numberofpoints}
+    \nu_1={1\over p}\sum_{x_\mu\in \F_p}\exp\left[{2\pi \sqrt{-1}\over p}\left(x_0P(x_1,\dots x_n)\right)\right]
+\end{equation}
+  because
+  \begin{equation}\label{sums}
+ \sum_{x\in \F_p}\exp\left[{2\pi \sqrt{-1}\over p}\left(xy\right)\right]=
+ \begin{cases}0 \,\,{\rm if}\,\,y\not=0\\ p \,\,{\rm if}\,\,y=0\end {cases}
+\end{equation}
+In \eqref{numberofpoints} that $x_\mu=(x_0,x_1,\dots,x_n)$. We assume in \eqref{numberofpoints}
+natural mapping of $\F_p=\{\bar 0, \bar 1,\dots, \bar {p-1}\}$ into integers $\{ 0,  1,\dots,  {p-1}\}$.
+
+In the case if we calculate $\nu_r$ for $r\geq 2$ we have to be more tricky.
+Instead \eqref{sums} we have now
+\begin{equation}\label{sumsextended}
+ \sum_{x\in \F_{p^r}}\exp\left[{2\pi \sqrt{-1}\over p}\Tr \left(xy\right)\right]=
+ \begin{cases}0 \,\,{\rm if}\,\,y\not=0\\ p^r \,\,{\rm if}\,\,y=0\end {cases}
+\end{equation}
+Hence
+         \begin{equation}\label{numberofpointsforbigger r}
+    \nu_r={1\over p^r}\sum_{x_\mu\in \F_{p^r}}\exp\left[{2\pi \sqrt{-1}\over p}{\rm Tr}
+         \left(x_0P(x_1,\dots x_n)\right)\right],
+                \end{equation}
+ where
+                        $$
+                 {\rm Tr}\,a=a+a^p+a^{p^2}+\dots+a^{p^{r-1}}
+                        $$
+
+is a trace of linear operator $L_a\colon \,L_a b=a\cdot b$ in the space $\F_{p^r}$ considered as linear space
+over $\F_p$.  It is useful to note the following: if $a$ is a root of monic irreducible polynomial
+  $p(x)=t^n+a_{n-1}t^{n-1}+\dots$ over $\F_p$   then $\Tr a=-a_{n-1}$.
+
+
+ In the case if we would like to calculate $\nu_r^*$ then one can see that
+ in previous formulae we have make summation not over all the field $\F_{p^r}$
+ but over $\F_{p^r}^*=\F_{p^r}\backslash \{0\}$. One can see that
+        $$
+    \sum_{x_0\in \F_p^r,x_1,\dots,x_n\in \F^*_{p^r}}\exp\left[{2\pi \sqrt{-1}\over p}{\rm Tr}
+         \left(x_0P(x_1,\dots x_n)\right)\right]=p^r\nu_r^*=
+         $$
+                      $$
+\sum_{x_0,x_1,\dots,x_n\in \F^*_{p^r}}\exp\left[{2\pi \sqrt{-1}\over p}{\rm Tr}
+         \left(x_0P(x_1,\dots x_n)\right)\right]+(p^r-1)^n\,.
+                       $$
+Hence
+        \begin{equation}\label{numberofpointsforbiggerreduced}
+    \nu^*_r={1\over p^r}\sum_{x_\mu\in \F^*_{p^r}}\exp\left[{2\pi \sqrt{-1}\over p}{\rm Tr}
+         \left(x_0P(x_1,\dots x_n)\right)\right]+{(p^r-1)^n\over p^r}
+                \end{equation}
+On this step calculation of $\nu_r$ seems to be at least not more difficult than calculations of $\nu_r^*$.
+On the other hand formulae above are not suitable for calculations ensemble for all the fields.
+
+And here comes first of Dwork`s great ideas: {\it to write these formulae in one field}
+
+\subsection {Representations of formulae \eqref{numberofpointoncircle} in $p$-adic numbers}
+ For this formulae consider with B. Dwork the field $Q_p$ of $p$-adic numbers  and its algebraic extensions.
+
+ Begin with simple case, the field $\F_p$.
+
+  $Z_p/pZ_p=\F_p$ where $Z_p$ is  ring of $p$-adic integers. It is evident.
+  What is important that there is a map (Teichmuller map) $T\colon \F_p\to Z_p$:
+  $T(a)$ is a $p$-adic integer such that
+  \begin{equation}\label{Teich1}
+    T(a)^p=T(a)
+\end{equation}
+and $T(a)$ maps to $a$ under canonical projection $Z_p\to Z_p/pZ_p=\F_p$, i.e. the first digit of $T(a)$ in standard
+ $p$-adic expansion $a$. It is easy to see that
+              $$
+           T(a)=\lim_{n\to \infty}a^{p^n}
+              $$
+   (we identifies elements $\{\bar 0,\bar 1,\dots,\bar{p-1}\}$) with integers $\{0,1,2,3,\dots,p-1\}$).
+
+We call integer Teichmuller integer if it obeys the condition \eqref{Teich1}.
+
+Non-zero Teicmuller integers forms regular $p-1$-polygon of $p-1$ roots of unity
+($\vare^{p-1}=1$) in $p$-adic integers.
+
+  One can see that
+  \begin{equation}\label{propertiesofteichmulmap1}
+   T(ab)=T(a)T(b)\,\,{\rm and}\,\, T(a+b)=T(a)+T(b)+\dots
+\end{equation}
+
+Consider Teichmuller image,polynomial $\hat P(x)$ with coefficients in $\Z_p$ of polynomial $P(x_1,\dots,x_n)$:
+ If
+    $$
+  P(x_1,\dots,x_n)=\sum c_{m_1m_2\dots m_n}x_1^{m_1}x_2^{m_2}\dots x_n^{m_n},\,\,c_{m_1m_2\dots m_n}\in \F_p
+    $$
+    then
+\begin{equation}\label{teichmullerimageofpolynomial}
+    \hat P(x_1,\dots,x_n)=\sum T(c_{m_1m_2\dots m_n})x_1^{m_1}x_2^{m_2}\dots x_n^{m_n}
+\end{equation}
+
+Hence due to \eqref{propertiesofteichmulmap1} the formula \eqref{numberofpoints} can be rewritten as
+         \begin{equation}\label{numberofpointsinteichmul}
+    \nu_1={1\over p}\sum_{x_\mu\colon x_\mu^p=x_\mu}\exp
+    \left[{2\pi \sqrt{-1}\over p}\left(x_0\hat P(x_1,\dots x_n)\right)\right]
+\end{equation}
+The summation goes over all sets  ${x_0,x_1,\dots,x_n}$ such that all elements are Teichmuller integers.
+
+The formula for $\nu_1^*$ according to \eqref{numberofpointsforbiggerreduced} looks
+      \begin{equation}\label{numberofpointsinteichmul}
+    \nu_1={1\over p}\sum_{x_\mu\colon x_\mu^{p-1}=1}\exp
+    \left[{2\pi \sqrt{-1}\over p}\left(x_0\hat P(x_1,\dots x_n)\right)\right]+{p-1\over p}
+\end{equation}
+The summation goes over all sets  ${x_0,x_1,\dots,x_n}$ such that all elements are non-zero-Teichmuller integers,
+i.e. belong to $p-1$-regular polygon in $Z_p$.
+
+Teichmuller maps can be generalised on the whole algebraic closure of the field $\F_p$.
+
+We need some technical stuff for algebraic extensions of $p$-adic fields.
+
+ \section {Teichmuller embedding of $F_{p^r}$ in unramified
+ extension}
+
+ Let $K:Q_p$ be finite algebraic extension of $Q_p$. For any $\a$
+  let $p_\a(t)=t^{k}+a_{k-1}t^{k-1} t^{k-1}+\dots+a_1 t+a_0$ be minimum polynomial of $\a$, i.e.
+  $p_\a(t)\in Q_p[t]$, it is irreducible and $\a$ is its root. Then
+  coefficient $a_k$ is equal to the product of $\a$ and its conjugates, it is determinant of
+  linear operator $L_\a\colon L_\a x=\a\cdot x$. Then
+    \begin{equation}\label{norm}
+    |\a|_p=\root k \of {|\det \a|_p}=\root k \of {|a_k|_p}
+\end{equation}
+The norm of element $a_k$ is defined as usual, this is an element
+belongs to $Q_p$.
+
+We define an order of $\a$ $\ord \a$ such that
+\begin{equation}\label{defnitionoforder}
+    {1\over p^{\ord \a}}=|\a|_p
+\end{equation}
+
+E.g. all elements of $\Q_p$ have integer order.
+
+ Consider following two examples:
+
+{\bf Example 1} Consider the extension of $\Q_p$ by polynomial $t^p-1$.
+  Splitting field of this polynomial is extension of degree $p-1$. Indeed it is standard
+  that
+           $$
+t^p-1=(t-1)(t^{p-1}+t^{p-1}+\dots+t+1)
+           $$
+  and polynomial $t^{p-1}+t^{p-1}+\dots+t+1$ is irreducible because
+\begin{equation}\label{irreducibility}
+t^{p-1}+t^{p-1}+\dots+t+1={t^p-1\over t-1}=(t-1)^{p-1}+p(t-1)^{p-2}+{p(p-1)\over2}(t-1)^{p-3}+\dots+\dots+p
+\end{equation}
+where $\tau=t-1$
+We see that $p$ divides all coefficients of this polynomial (except highest) and $p^2$ does not divide the last coefficient,
+i.e. it is irreducible polynomial; the number $\vare=\exp{2\pi\sqrt{-1}\over p}$ generates the field
+extension of degree $p-1$. To see that this is ramified extension note that element
+\begin{equation}\label{numberlambda}
+    \lambda=\exp{2\pi\sqrt{-1}\over p}-1
+\end{equation}
+is a root of the polynomial  $t^{p-1}+pt^{p-2}+{p(p-1)\over2}t^{p-3}+\dots+\dots+p$. Its order
+according to the formula \eqref{defnitionoforder} is equal to $p^{1\over p-1}$.
+
+\medskip
+
+{\bf Example 2} Consider the extension of $\Q_p$ by polynomial $t^{p-1}-p$
+ This is irreducible polynomial
+ (easy to check by Eisenstein Test).
+Following Dwork (or Candelas???)
+denote this number
+ by $\pi$.
+
+  One can see that the order of the number $\pi$ as well as the order of the number $\lambda$ is equal to
+  $p^{1\over p-1}$. In the case if $p=3$ it is easy to see that one can take $\pi=\sqrt {-3}$, then
+  $\gamma=\exp{2\pi\sqrt{-1}\over 3}-1=-{1\over 2}+{\pi\over 2}$ i.e. $\Q_3(\pi)=\Q_3(\gamma)$.
+
+\medskip
+I think that
+{\bf Proposition}
+\begin{equation}\label{proposition1}
+\Q_p(\pi)=\Q_p(\pi)
+\end{equation}
+
+I tried to prove this but my calculations are very annuying, that is why sometimes it seems to me that they are wrong.
+Commencing is very simple: Idea is to do the proof Hensel lemma-like:
+Since $\pi^{p-1}=p$ any element in $\Q_p(\pi)$ can be presented as
+               $$
+               \a_n\pi^n,\,\, \hbox{where $\a_n\in \{o,1,2,3,\dots, p-1\}$}
+               $$
+We try to solve an equation $x^p=1$ using this expansion, but perturbation arguments are not very simple...
+
+
+\medskip
+
+Later we will see that numbers $\lambda$ and $\pi$ play very important role in constructing splitting function.
+
+Now it is a time to return to unramified extensions.
+
+
+
+We say that extension is unramified if all elements have an integer order.
+
+Unramified extension produces by lifting of extension of $\F_p$ to $p$-adic numbers.
+
+
+Consider the polynomial $t^{p^r}-t$. For field $\F_p$ all the roots of this polynomial form the
+field $\F_{p^r}$. So it is not surprising that this polynomial has to be important now.
+Consider the splitting field $\Sigma(t^{p^r}-t)$ of this polynomial over $\Q_p$.
+
+If
+
+
+
+\end{document}

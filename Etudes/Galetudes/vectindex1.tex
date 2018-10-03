@@ -1,0 +1,167 @@
+
+   \magnification=1200
+   \baselineskip 17 pt
+
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\l {\lambda}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \E   {{\bf E}}
+\def \N   {{\bf N}}
+\def\b {{\beta}}
+\def\CP {{\bf CP}}
+
+    On the index of vector field.
+
+    Thinking about Riemann-Horwitz formula I decided to do the following simple
+    exercise:
+
+
+   Consider the vector field
+                $$
+                A=(y-\b y^3)\p_x-x\p_y
+                $$
+and its image under the map   $z\to z^2\colon\,\,\, \CP\to \CP$.
+The push-forward of the field $A$ is well defined under this map because
+$A$ is invariant under transformation $z\to -z$. If $\b=0$ then the special points of the field
+are just ramification points and sum of the indices preserves.
+If $\beta\not=0$ then there are degenerate points $\pm 1/\b$. What is their contribution?
+ I think thee calculations are useful, because they contain the part when one
+ have to calculate an index in so called degenerate case (If vector field is equal zero and
+ linear part is nothing but the sign of determinant of this linear operator)
+
+  Second: Calculation of index will reveal the relation with Riemann-Hourwitz formula...
+
+
+   So begin. The map  $z\to z^2$ is $u=x^2-y^2,v=2xy$. Its jacobian:
+        $$
+        \pmatrix
+        {2x  &-2y\cr
+         2y   &2x\cr
+        }
+    $$
+        We see that
+              $$
+               \pmatrix
+               {2x  &-2y\cr
+         2y   &2x\cr
+               }
+         \pmatrix
+        {y-\b y^3\cr
+         -x\cr
+        }
+        =
+         \pmatrix
+        {4xy-2\b xy^3\cr
+         2y^2-2x^2-2\b y^4 &2x
+        }
+              $$
+
+The vector
+                 $$
+(y-\b y^3)\p_x-x\p_y\,\,\hbox{ at the point $(x,y)$}
+                 $$
+goes to the vector
+               $$
+               (4xy-2\b xy^3)\p_u-\left(2y^2-2x^2-2\b y^4\right)\p_y\,\,
+               \hbox{ at the point $(u=x^2-y^2,v=2xy)$}
+               $$
+Pay attention on the fact that it is well defined: the transformation
+$(x,y)\to (-x,-y)$ which does not change the point    $(u=x^2-y^2,v=2xy$
+it does not change the vector too.
+
+
+\bigskip
+
+  {The index of initial vector field}
+
+  The initial vector field is equal to zero in three points
+  $(0,0)$, $(0,{1\over \sqrt \b})$ and $(0,-{1\over \sqrt \b})$
+The indices of the initial vector in these points is equal
+to $=1,-1,-1$ (It is just calculation of sign of determinant)
+Now calculate the index at infinity. Perform coordinate transformation
+corresponding to $z\to 1/z$:
+                        $$
+     x'={x\over x^2+y^2},y'=-{y\over x^2+y^2}\,,
+     $$
+     $$
+       \pmatrix
+        {x'_x  &x'_y\cr
+         y'_x   &y'_y\cr
+        }=
+\pmatrix
+        { {y^2-x^2\over (x^2+y^2)^2} &{-2xy\over (x^2+y^2)^2}\cr
+          {2xy\over (x^2+y^2)^2}  &{y^2-x^2\over (x^2+y^2)^2}\cr
+        },\quad
+        \det
+        \pmatrix
+        {x'_x  &x'_y\cr
+         y'_x   &y'_y\cr
+        }={1\over (x^2+y^2)^2}
+     $$
+  We see that
+          $$
+                  \pmatrix
+        {x'_x  &x'_y\cr
+         y'_x   &y'_y\cr
+        }
+        \pmatrix
+        {y-\b y^3\cr
+         -x\cr
+        }=
+        {1\over \left({x^2+y^2}\right)^2}
+\pmatrix
+        { y^2-x^2 &-2xy\cr
+          2xy  &y^2-x^2\cr
+        }
+        \pmatrix
+        {y-\b y^3\cr
+         -x\cr
+        }=
+          $$
+          $$
+        {1\over \left({x^2+y^2}\right)^2}
+          \pmatrix
+        { y(x^2+y^2)-\b y^3(y^2-x^2)\cr
+        x(x^2+y^2)-2\b y^3\cdot xy  \cr
+        }
+             $$
+          Thus
+the vector
+                 $$
+(y-\b y^3)\p_x-x\p_y\,\,\hbox{ at the point $(x,y)$}
+                 $$
+goes to the vector
+               $$
+               \left[{y\over x^2+y^2}-\b y^3 {y^2-x^2\over (x^2+y^2)^2}\right]\p_{x'}+
+               \left[{x\over x^2+y^2}-\b y^3 {2xy\over (x^2+y^2)^2}\right]\p_{y'}\,\,
+               $$
+
+           $$\hbox{ at the point $\,\,x'={x\over x^2+y^2},y'={y\over x^2+y^2})$}$$
+
+It means that in coordinates $x',y'$  the vector field has appearance
+                     $$
+                     d
+                     $$
+        Here I stop. In the case $\b=0$ we see that sum of the indices is equal
+        t0 $1+1=2$. I would like to show that index at infinity is equal to $3$.
+        (because sum at the other points was equal to $1+(-1)+(-1)=-1$)
+        but our field is not equal to zero at infinity. 
+\bye

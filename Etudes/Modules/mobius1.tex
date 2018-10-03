@@ -1,0 +1,112 @@
+\magnification=1200
+
+ $$ $$
+\centerline {\bf Projective module of Mobius band global sections}
+
+   \bigskip
+
+ Let $C$ be an algebra of continuous functions on $[0,2\pi]$.
+  Consider the following two subalgebras of $C$
+                          $$
+             \Lambda=\{f\colon\,\, f\in C, f(0)=f(2\pi)\}\,
+                                     \eqno (1)
+                           $$
+ and
+                           $$
+              P=\{f\colon\,\, f\in C, f(0)=-f(2\pi)\}\,
+                                     \eqno (2)
+                           $$
+ $P$ can be considered as module over $\Lambda$
+ This module is projective and it is not free. More precisely:
+                               $$
+                           P\oplus P=\Lambda\oplus \Lambda
+                                         \eqno (3)
+                               $$
+Prove (3).  Equation (3) means that $P$ is projective (by
+definition). From (3) it follows that $P$ is not free. Indeed
+suppose that it is free. Then from embedding (3) it follows
+ that it has one generator $f_0$. From (2) it follows that
+  $f_0$ vanishes in some point $x_0$. Hence $f_0$ generates
+  submodule of $P$. Contradiction.
+
+  Before proving (3) we note that $P$ is nothing but
+  module of global continuous sections on Mobius band.
+ Condition (3) corresponds to condition that
+ Whithney sum of two Mobius bundles is trivial bundle:
+                      $$
+           M\oplus M=R^2\times S^1
+                          \eqno (4)
+                      $$
+The proof follows from the following geometrical realization
+ of (4). Consider in $R^4$ two Mobius bands, bundles
+ over circle:
+                         $$
+                          M_1\colon
+                          \cases
+                          {
+                          x=cos\varphi \cr
+                          y=sin\varphi\cr
+                          z=tcos {\varphi\over 2}\cr
+                          u=tsin {\varphi\over 2}
+                           }\,,\qquad
+                            M_1\colon
+                          \cases
+                          {
+                          x=cos\varphi \cr
+                          y=sin\varphi\cr
+                          z=-\tau sin {\varphi\over 2}\cr
+                          u=\tau cos {\varphi\over 2}
+                           }\,,\quad
+                           0\leq\varphi \leq 2\pi, -\infty<t<\infty,
+                           -\infty<\tau<\infty
+                            \eqno (5)
+                          $$
+   It is evident that this embedding leads to (4). Now from (5)
+   it follows the proof of (3).
+   The isomorphism (3) is given by the formula
+                     $$
+                  \rho \pmatrix {t(\varphi)\cr \tau(\varphi)\cr}=
+                  \hat T_{\varphi\over 2}
+                  \pmatrix {z(\varphi)\cr u(\varphi)\cr}\,,
+                  $$
+       where $\hat T$ is operator of rotation:
+                      $$
+                      \hat T_\varphi
+                        =
+                        \pmatrix
+                          {
+                          \cos \varphi,\sin \varphi\cr
+                          -\sin \varphi,\cos \varphi\cr
+                          }
+                          $$
+        To isomorphism (3) corresponds the following projector
+        in $R^2\times S^1$ on M:
+                         $$
+         \Pi (z,u,\varphi)=\hat T_{\varphi\over 2}\circ
+                \pmatrix
+                          {
+                          1\quad 0\cr
+                          0\quad 0\cr
+                          }\circ
+                          \hat T_{-\varphi\over 2}\,,\quad
+                          1-\Pi (z,u,\varphi)=\hat T_{\varphi\over 2}\circ
+                \pmatrix
+                          {
+                          0\quad 0\cr
+                          0\quad 1\cr
+                          }\circ
+                          \hat T_{-\varphi\over 2}\,
+                          $$
+
+   It is funny to note that this projector has very simple appearance:
+                            $$
+                  \Pi={1\over 2}\left(
+                     1+\pmatrix
+                          {
+                          1\quad 0\cr
+                          0\quad -1\cr
+                          }\hat T_\varphi
+                  \right)
+                      $$
+
+ \bye

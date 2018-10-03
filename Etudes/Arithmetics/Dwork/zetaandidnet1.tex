@@ -1,0 +1,51 @@
+
+  \centerline {\bf From simple identity to zeta-function}
+
+\bigskip
+
+It is always nice to find a meaning of identities.
+
+
+Consider the following identity:
+        $$
+     (1-t)^p(1-t^2)^{p^2-p\over 2}(1-t^3)^{p^3-p\over 3}(1-t^4)^{p^4-p^2\over 4}
+     (1-t^5)^{p^5-p\over 5}(1-t^6)^{p^6-p^3-p^2+p\over 6}(1-t^7)^{p^7-p\over 7}....=1-pt,
+        $$
+where $p$ is prime number.
+You guess now how looks the rule general which governs this infinite
+product?  Yes, you are right. It is:
+
+
+It is following:
+          $$
+       \prod_{n=1}^\infty (1-t^n)^{\sum_{k\colon\, k|n} \mu(k)p^{n\over k}},
+          $$
+where  $$
+   \mu(n)=\cases {1 \,\,{\rm if}\, n=1 \cr (-1)^k \hbox {if $n=p_1p_2\dots p_k$
+is a product of different primes $p_i\not=p_j$} \cr
+=0 \hbox{}\cr}
+      $$ is Mobius function.
+
+Now let me explain where from comes this identity:
+
+Denote by $\nu_k=\#{\bf F}_{p^r}$---cardinality (number of elements) of the field ${\bf F}_{p^r}$----extension
+of degree $r$ of the field ${\bf F}_{p}$.
+Consider Frobenius automorphism  $\sigma\colon \quad s\mapsto s^p$ of the field ${\bf F}_{p^r}$.
+
+For any element $s$ of this field consider the sequence
+              $$
+\{s,\sigma s,\sigma^2 s,\sigma^3 s,\dots, \sigma^{k-1} s\}
+              $$
+such that $s\not=\sigma^i s$  for all $1\leq i\leq k-1$ but $\sigma^{k}s=s$. Thus we assign to any element
+of the field non-negative integer $k(s)$---the length of the sequence.
+E.g. $k(s)=0$ if $s\in {\bf F}_{p}$, $k(s)=2$ if $s\in {\bf F}_{p^2}$
+and $s\not\in k(s)={\bf F}_{p}$.
+
+We see that the set of all elements in $s\in {\bf F}_{p^r}$ can be considered as union of cycles:
+               $$
+             p^r=\sum_{k\colon\,\, k|r} kd_k
+               $$
+E.g. $p=d_1$, $p^2=d_1+2d_2$, $p^3=d_1+3d_3$, $p^4=d_1+2d)2+d_4$,\dots
+
+
+\bye

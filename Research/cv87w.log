@@ -1,0 +1,162 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2017.1.17)  22 OCT 2017 15:29
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**cv87w.tex
+(./cv87w.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, lo
+aded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen103
+\extrarowheight=\dimen104
+\NC@list=\toks14
+\extratabsurround=\skip43
+\backup@length=\skip44
+) (./cv87w.aux)
+\openout1 = `cv87w.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--35
+
+ []
+
+
+Overfull \hbox (13.28845pt too wide) in paragraph at lines 46--48
+\OT1/cmr/m/n/12 E-mail: [] 
+ []
+
+
+Overfull \hbox (38.5854pt too wide) in paragraph at lines 58--66
+\OT1/cmr/m/n/12 1978--1981  [] 
+ []
+
+
+Overfull \hbox (35.4521pt too wide) in paragraph at lines 67--79
+| \OT1/cmr/m/n/12 The-sis: [] 
+ []
+
+
+Overfull \hbox (38.5854pt too wide) in paragraph at lines 67--79
+\OT1/cmr/m/n/12 1975--1978  []
+ []
+
+
+Overfull \hbox (38.5854pt too wide) in paragraph at lines 67--79
+\OT1/cmr/m/n/12 1972--1975  [] 
+ []
+
+[1
+
+{/usr/share/texlive/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (3.07788pt too wide) in paragraph at lines 91--94
+\OT1/cmr/m/n/12 Since Au-gust 2005 Se-nior Lec-turer in Pure Math-e-mat-ics, Un
+i-ver-sity of Manch-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--94
+
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 103.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 103.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 103.
+
+Overfull \hbox (119.16449pt too wide) in paragraph at lines 140--182
+[][] 
+ []
+
+
+Overfull \hbox (65.95668pt too wide) in paragraph at lines 190--203
+[] 
+ []
+
+
+Overfull \hbox (155.72658pt too wide) in paragraph at lines 217--334
+[] 
+ []
+
+[2] [3]
+Overfull \hbox (7.14186pt too wide) in paragraph at lines 351--357
+\OT1/cmr/m/n/12 Invited Lec-turer on FAR/ANSEF-ICTP Sum-mer School in The-o-ret
+-i-cal Physics
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 367--369
+
+ []
+
+[4] [5] [6] [7]
+Overfull \hbox (8.058pt too wide) in paragraph at lines 763--771
+[]\OT1/cmr/m/n/12 21. O.M. Khu-dav-er-dian, D.A. Sa-hakyan. \OT1/cmr/m/it/12 Co
+-ho-mo-log-i-cal As-pects of Noether
+ []
+
+
+Overfull \hbox (3.09564pt too wide) in paragraph at lines 796--800
+[]\OT1/cmr/m/n/12 26. O.M. Khu-dav-er-dian. \OT1/cmr/m/it/12 Evo-lu-tion of os-
+cil-la-tor wave func-tion and Fourier
+ []
+
+[8] [9]
+Overfull \hbox (1.99873pt too wide) in paragraph at lines 1010--1017
+[]\OT1/cmr/m/n/12 50 H.M.Khudaverdian, R.L.Mkrtchyan [pdf, ps, other] ``Dio-pha
+n-tine equa-
+ []
+
+[10] (./cv87w.aux) ) 
+Here is how much of TeX's memory you used:
+ 289 strings out of 495063
+ 3096 string characters out of 3182201
+ 58491 words of memory out of 3000000
+ 3542 multiletter control sequences out of 15000+200000
+ 8410 words of font info for 30 fonts, out of 3000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 22i,7n,19p,136b,123s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
+i12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on cv87w.pdf (10 pages, 95206 bytes).
+PDF statistics:
+ 57 PDF objects out of 1000 (max. 8388607)
+ 39 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

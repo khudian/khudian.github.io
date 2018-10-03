@@ -1,0 +1,1254 @@
+
+
+ %This is file of my planning talk in Bialoveza June--July 2016
+% this is for sheffield I do it on the base of bialoveza.  July 2016
+\documentclass{beamer}
+\usepackage{mathptmx}
+\usepackage{helvet}
+
+\def\vare {\varepsilon}
+\def\A {{\cal A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\F {{\cal F}}
+\def\RR {{\bf R}}
+\def\K {{\bf K}}
+\def\A {{\bf A}}
+\def\B {{\bf B}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+%\def\S {{\Sigma}}
+\def\ss {{\bf s}}
+\def\bs {{\bf s}}
+\def\w {{\omega}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\LL {{\cal L}}
+\def\L {{\Lambda}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\S  {{\bf S}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\M {{\mathfrak M}}
+\def\g {\gamma}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def \G{{\cal G}}
+\def\Ber {{\rm Ber\,}}
+\def\hD {{\hat\Delta}}
+\def\hl {{\hat w}}
+\def\Tr {{\rm Tr\,}}
+\def \spectr {\lambda_1,\dots,\lambda_p;\mu_1,\dots,\mu_q}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def\R {{\rm Res \,}}
+\def\pr {{\,\,'}}
+\def\brho {{\mathbf \rho}}
+\def\srho {{\underbar {\hbox{$\rho$}}}}
+\def\Dv {{{\cal D}\bf v}}
+\mode<presentation>{\usetheme{Montpellier}}
+
+
+\title[ Higher Koszul brackets and thick] 
+% (optional, use only with long paper titles)
+{\textbf{Thick morphisms and higher  Koszul brackets}}
+
+
+
+
+
+
+\author[Hovhannes Khudaverdian] 
+% (optional, use only with lots of authors)
+{Hovhannes Khudaverdian }
+
+
+
+
+\institute[University of Manchester, Manchester, UK] 
+% (optional, but mostly needed)
+{University of Manchester, Manchester, UK}
+
+\date{GAP XIV\\
+  s\'eminaire itin\'erant ``G\'eom\'etrie et Physique''           \\
+ 8 August---12 August, Sheffield, UK \\ 
+
+\medskip
+
+{\sl The talk is based on the work with Ted Voronov}
+
+}
+
+
+ 
+
+  
+
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+\begin{frame}{Contents}%[pausesections]
+  \tableofcontents
+\end{frame}
+
+\begin{frame}{Papers that talk is based on are}
+[1] H.M.Khudaverdian, Th. Voronov {\it Higher Poisson 
+             brackets and differential forms}, 2008a
+ In: Geometric Methods in Physics. AIP Conference Proceedings 1079, 
+American Institute of Physics, Melville, New York, 2008, 203-215.,
+       arXiv: 0808.3406
+\medskip
+
+[2] Th. Voronov, {\it Nonlinear pullback on functions and
+a formal category extending the category of supermanifolds]},
+          arXiv: 1409.6475
+
+\medskip
+
+
+[3] Th. Voronov, {\it Microformal geometry},
+      arXiv: 1411.6720
+
+\end{frame}
+
+
+\section {Abstracts}
+
+
+\begin{frame}{Abstract...}
+            For an arbitrary manifold $M$, we consider supermanifolds 
+$\Pi TM$  and $\Pi T^*M$, where $\Pi$ is the parity reversion functor.
+The space  $\Pi T^*M$ possesses canonical odd Schouten bracket and space 
+$\Pi TM$ posseses canonical de Rham differential $d$.  An arbitrary even 
+function $P$ on $\Pi T^*M$  such that $[P,P]=0$ induces a 
+homotopy Poisson  bracket on $M$, a differential, $d_P$ on $\Pi T^*M$, 
+and higher Koszul brackets on $\Pi TM$. (If $P$ is fiberwise quadratic, 
+then we arrive at standard structures of Poisson
+geometry.)  Using the language of $Q$-manifolds and in particular 
+of Lie algebroids, we study the interplay between canonical
+structures and structures depending on $P$. Then using just 
+recently invented theory of thick morphisms we construct  
+a non-linear map between the $L_{\infty}$ algebra of functions 
+on $\Pi TM$ with higher Koszul brackets and the Lie algebra of functions 
+on $\Pi T^*M$ with the canonical odd Schouten bracket.
+
+
+
+
+
+
+
+\end{frame}
+\begin{frame}
+\end{frame}
+
+\section {Poisson manifold and....}
+\begin{frame}{Poisson manifold}
+
+ Let $M$ be Poisson manifold with Poisson tensor $P=P^{ab}\p_b\wedge \p_a$
+               $$
+\{f,g\}=\{f,g\}_P={\p f\over \p x^a}P^{ab}{\p g\over \p x^b}\,.
+               $$
+               $$
+\{\{f,g\},h\}+\{\{g,h\},f\}+\{\{h,f\},g\}=0\,,
+        $$
+        $$
+      \Updownarrow
+        $$
+        $$
+    P^{ar}\p_r P^{bc}+
+    P^{br}\p_r P^{ca}+
+    P^{cr}\p_r P^{ab}=0\,.
+               $$
+If $P$ is non-degenerate, then $\w=(P^{-1})_{ab}dx^a\wedge dx^b$
+is closed non-degenerate form defining symplectic structure on $M$.
+
+\end{frame}
+\begin{frame}{Differentials}
+$d$---de Rham differential, $d\colon \Omega^k(M)\to \Omega^{k+1}(M)$, 
+          $$
+d^2=0\,, df={\p f\over \p x^a}dx^a\,,\qquad
+  d(\w\wedge\rho)=d\w\wedge \rho+(-1)^{p(\w)}\w\wedge d\rho\,,
+     $$
+$d_P$---Lichnerowicz- Poisson differential,
+  $d_P\colon \mathfrak{A}^k(M)\to \mathfrak{A}^{k+1}(M)$, 
+ 
+         $$
+d_Pf={\p f\over \p x^b}P^{ba}{\p\over \p x^a}\,\,
+   (\hbox{for a function $f=f(x)$})\,,d_P^2=0\,,
+         $$
+         $$
+ d_P P=0\leftrightarrow \hbox {Jacobi identity for odd Poisson bracket 
+$[\,,\,]$}
+         $$
+
+
+\end{frame}
+
+\begin{frame}{Differential forms and multivector fields}
+
+$\mathfrak {A}^*$ space of multivector fields on $M$,\\
+$\Omega^*$ space of differential forms on $M$,
+            $$
+          \begin{matrix}
+     &\mathfrak{A}^k(M)&{\buildrel d_P\over \longrightarrow} 
+       &\mathfrak{A}^{k+1}(M)\cr
+        &\uparrow& &\uparrow\cr 
+     &\Omega^k(M)&{\buildrel d\over \longrightarrow} 
+       &\Omega^{k+1}(M)\cr
+        \end{matrix}
+                  $$
+      \end{frame}
+\begin{frame}{Differential forms and multivector fields}
+
+          $$
+      \begin{matrix}
+\hbox{$\mathfrak {A}^*$--- multivector fields on $M$=
+                     functions on $\Pi T^*M$}\cr
+\hbox{$\Omega^*$--- differential forms on $M$=
+                     functions on $\Pi TM$},\cr
+       \end{matrix}
+         $$
+            $$
+          \begin{matrix}
+     &\mathfrak{A}^k(M)&{\buildrel d_P\over \longrightarrow} 
+       &\mathfrak{A}^{k+1}(M)\cr
+        &\uparrow& &\uparrow\cr 
+     &\Omega^k(M)&{\buildrel d\over \longrightarrow} 
+       &\Omega^{k+1}(M)\cr
+        \end{matrix}
+        \qquad
+           \begin{matrix}
+     &C(\Pi T^*M)&{\buildrel d_P\over \longrightarrow} 
+       &C(\Pi T^*M)\cr
+        &\uparrow& &\uparrow\cr 
+     &C(\Pi TM)&{\buildrel d\over \longrightarrow} 
+       &C(\Pi TM)\cr
+        \end{matrix}
+            $$
+            $$
+d\w(x,\xi)=\xi^a{\p\over \p x^a} \w(x,\xi)\,,
+ d_P F(x,\theta)=\left[P,F\right]_1\,,
+           $$ 
+$\left[P,F\right]_1$-canonical odd Poisson bracket on $\Pi T^*M$. 
+\end{frame}
+\begin{frame}
+$x^a=(x^1,\dots,x^n)$--- coordinates on $M$ 
+
+$(x^a,\xi^b)=(x^1,\dots,x^n;\xi^1,\dots,\xi^n)$, 
+    ---coordinates on $\Pi TM$ 
+          $$
+p(\xi^a)=p(x^a)+1, x^{a'}=x^{a'}(x^a)\to \xi^{a'}=\xi^a{\p x^{a'}\over \p x^a}\,.
+\qquad (dx^a\leftrightarrow \xi^a)\,.
+           $$` 
+  Respectively
+
+$(x^a,\theta_b)=(x^1,\dots,x^n;\theta_1,\dots,\theta_n)$, 
+    ---coordinates on $\Pi T^*M$ 
+          $$
+p(\theta_a)=p(x^a)+1, x^{a'}=x^{a'}(x^a)\to 
+                           \theta_{a'}=
+                           \theta_a{\p x^{a}\over \p x^{a'}}\,.
+\qquad ({\p_a}\leftrightarrow \theta_a)\,.
+           $$` 
+%{\bf Example}
+\begin{example} 
+  $$
+\Omega^*\ni \w=l_adx^a+r_{ab}dx^a\wedge dx^b\leftrightarrow 
+  \w(x,\xi)=l_a\xi^a+r_{ab}\xi^a\xi^b\in C(\Pi TM)
+  $$
+ $$
+\mathfrak{A}^*\ni F=X^a\p_a+M^{ab}\p_a\wedge\p_b 
+    \leftrightarrow 
+  F(x,\theta)=X^a\theta_a+M^{ab}\theta_a\theta_b\in C(\Pi T^*M)\,.
+  $$
+ \end{example}
+\end{frame}
+
+\begin{frame}{Canonical odd Poisson bracket} 
+
+           $$
+         \begin{matrix}
+\hbox{$F,G$ multivector fields}\cr
+ [F,G]\, \hbox{Schouten commutator}\cr 
+  \end{matrix}\,,
+      \qquad
+         \begin{matrix}
+\hbox{$F,G$ functions on $\Pi T^*M$}\cr
+ [F,G]\, \hbox{odd Poisson bracket}\cr 
+  \end{matrix}\,,
+ $$
+       $$
+     \begin{matrix}
+\X=X^a\p_a, [\X, F]=\mathfrak{L}_\X F\cr
+  P=P^{ab}\p_a\wedge \p_b\,,\,
+      [P,F]=d_P F
+      \end{matrix}\,,\qquad
+         \begin{matrix}
+[\X, F]=[X^a\theta_a, F(x,\theta)]\cr
+  d_PF=[P,F]=[P^{ab}\theta_a\theta_b, F(x,\theta)]\cr
+      \end{matrix}
+        $$
+       $$
+  \left[F(x,\theta),G(x,\theta)\right]=
+     {\p F(x,\theta)\over \p x^a}
+     {\p G(x,\theta)\over \p \theta_a}
+         +(-1)^{p(F)}
+     {\p F(x,\theta)\over \p \theta_a}
+     {\p G(x,\theta)\over \p x^a}\,.
+       $$
+               $$
+       \hbox{Names are}\quad
+            \begin{matrix}
+      &\hbox{odd Poisson bracket}\cr
+      &\hbox{Schouten bracket}\cr
+      & \hbox{ Buttin bracket}\cr
+       &\hbox{ anti-bracket}\cr
+           \end{matrix}
+               $$
+      
+\end{frame}
+\begin{frame}{Koszul bracket on differential forms}
+       $$
+      \begin{matrix}
+        \varphi_P\colon \Pi T^*M
+           \rightarrow \Pi TM\cr
+        \varphi_P^*\colon   C(\Pi T^*M)
+                 \leftarrow C(\Pi TM)\cr
+         \end{matrix}\,,
+            \qquad
+      \xi^a=P^{ab}\theta_b\,{\rm or}\,\, dx^a=P^{ab}\p_b
+       $$
+From bracket $[\,,\,]$ on functions  
+to Koszul bracket on diff. forms
+       $$
+     [\w,\s]_P=({\varphi_P^*})^{-1}
+   \left(\left[\varphi_P^*(\w),\varphi_P^*(\s)\right]_P\right)\,.
+       $$
+       $$
+ [f,g]_P=0\,,\,[f,dg]_P=(-1)^{p(f)}\{f,g\}_P\,,\,
+      [df,dg]_P=(-1)^{p(f)}d\left(\{f,g\}_P\right)
+      $$
+ This formula survives the limit if $P$ is degenerate.
+\end{frame}
+
+\begin{frame}{Question}
+       $$
+\hbox{We have}\qquad  \Pi T^*M
+ {\buildrel \varphi_P\over\longrightarrow} \Pi TM
+       $$
+What happens if 
+even function $P={1\over 2}P^{ab}(x,\theta)\theta_a\theta_b$ 
+is replaced by an arbitrary even function
+   $P=P(x,\theta)$ which obeys the 
+master-equation
+          $$
+[P,P]=2{\p P(x,\theta)\over \p x^a}{\p P(x,\theta)\over \p \theta^a}=0\,.
+          $$  
+(In the case $P={1\over 2}P^{ab}(x,\theta)\theta_a\theta_b$
+master-equation is just Jacobi identity for Poisson bracket 
+$\{\,,\,\}_P$
+on $M$.) 
+\end{frame}
+
+\section{Higher brackets}
+\begin{frame}{Master-Hamiltonian $\to$ brackets (I-st case)}
+
+\centerline  {$M$---(super)manifold. (coordinates `$x=x^a$)}
+
+\smallskip
+
+Odd  Hamiltonian $Q(x,p)$ on $ T^*M$, ($p=p_b$ fibre coordinates) 
+\\
+defines homotopy odd Poisson (Schouten)  brackets on $M$---
+   collection 
+$\left\{\{\}_Q, \{\,,\,\}_Q, \{\,,\,,\,\}_Q,\dots\right\}$ 
+of brackets on $M$:
+                  $$
+   \{f\}_Q=(Q,f)\big\vert_{p=0}\,,\quad
+   \{f,g\}_Q=\left(\left(Q,f\right),g\right)\big\vert_{p=0}\,,
+                 $$
+                 $$
+      \{f_1,f_2,\dots,f_n\}_Q=
+\left(\left(\dots(Q,f_1),f_2\right),\dots,f_n\right)
+        \big\vert_{p=0}
+                 $$
+$(\,,\,)$---canonical even Poisson
+bracket on $T^*M$.\\
+$(Q,Q)=0$---Jacobi identity, 
+\medskip
+  
+We come to usual odd Poisson bracket if Hamiltonian is quadratic in
+momenta, $Q=Q^{ab}p_ap_b$.
+
+
+\end{frame}
+\begin{frame}{Master-Hamiltonian $\to$ brackets (II-nd case)}
+
+
+Even  Hamiltonian $H(x,\theta)$ on 
+$\Pi T^*M$, ($\theta=\theta_b$ fibre coordinates) \\ 
+defines  homotopy Poisson brackets on $M$---\\
+  collection 
+$\left\{\{\}_H, \{\,,\,\}_H, \{\,,\,,\,\}_H,\dots\right\}$ 
+of brackets on $M$:
+                 $$
+   \{f\}_H=[H,f]\big\vert_{\theta=0}\,,\quad
+   \{f,g\}_H=\left[\left[H,f\right],g\right]\big\vert_{\theta=0}\,,
+                 $$
+                 $$
+      \{f_1,f_2,\dots,f_n\}_H=\left[\left[\dotsc\left[H,f_1\right],f_2\right],
+\dotsc,f_n\right]\big\vert_{\theta=0}
+                 $$
+$[\,,\,]$---canonical odd Poisson
+bracket on $\Pi T^*M$\\
+$[H,H]=0$--- Jacobi identity              
+
+
+We come to usual even Poisson bracket if Hamiltonian is quadratic in
+momenta, $H=H^{ab}\theta_a\theta_b$.
+
+    
+           \end{frame}
+\begin{frame}{Mackenzie-Xu symplectomorphism}
+   $E\to B$---vector bundle.   Canonical symplectomorphism 
+ (MX-symplectomorphism)
+               $$
+     T^*E\leftrightarrow T^*E^*
+               $$
+Local coordinates  
+               $$
+             \underbrace
+                {
+     \overbrace{x^\mu, u^i}^{\hbox {\footnotesize coord. on}\, E}; 
+           p_\mu, p_j
+                }
+              _{\hbox {\footnotesize coord. on}\, T^*E}\,,
+   \qquad\qquad
+             \underbrace
+                {
+     \overbrace{y^\nu, u_i}^{\hbox {\footnotesize coord. on}\, E^*}; 
+           q_\mu, p^k
+                }
+              _{\hbox {\footnotesize coord. on}\, T^*E^*}\,.
+               $$
+Then $\kappa\colon T^*E\to T^*E^*$ is such that
+           $$
+\kappa^*(y^\mu)=x^\mu\,,\,\,
+\kappa^*(u_i)=p_i\,,\,\,
+\kappa^*(q_\mu)=-p_\mu\,,\,\,
+ \kappa(p^i)=u^i\,. 
+           $$
+\end{frame}
+\begin{frame}{Canonical odd Poisson bracket on $\Pi T^*M$}
+Consider an odd Hamiltonian  $Q=p_a\eta^a$ 
+on tangent bundle $T^*(\Pi T^*M)$ to $\Pi T^*M$.
+                       $$
+ {\rm coordinates}\,\qquad
+  \underbrace {
+    \overbrace{x^a,\theta_b}^{\hbox{ $\Pi T^*M$}}; 
+ p_a,\eta^b 
+       }_{T^*(\Pi T^*M)}
+                       $$
+Odd Hamiltonian $Q=p_a\eta^a$ is quadratic in momenta.
+
+   It generates an odd canonical Poisson bracket $[\,,\,]$ 
+on $\Pi T^*M$:
+        $\,[f,g]=[f,g]_P=\left(\left(Q,f\right),h\right)=$  
+                  $$
+=\left(\eta^a{\p f\over \p x^a}+p_a{\p g\over \p \theta_a} ,g\right)
+={\p f\over \p x^a}{\p g\over \p \theta_a}+
+ {\p g\over \p \theta_a}{\p f\over \p x^a}
+                   $$
+
+$(\,,\,)$ is canonical Poisson bracket on $T^*(\Pi T^*M)$.
+
+\end{frame}
+\begin{frame} Consider MX symplectomorphism
+  $T^*(\Pi T^*M)\leftrightarrow T^*(\Pi TM)$:
+       $$
+   \underbrace {
+    \overbrace{x^a,\theta_b}^{\hbox{ $\Pi T^*M$}}; 
+  p_a,\eta^b 
+       }_{T^*(\Pi T^*M)}
+     \,\leftrightarrow\,
+        \underbrace {
+    \overbrace{x^a,\xi^b}^{\hbox{ $\Pi TM$}}; 
+ q_a,\pi_b 
+       }_{T^*(\Pi TM)}
+       $$
+   $p_a\leftrightarrow -q_a$, $\theta_b\leftrightarrow \pi_\b$,
+   $\eta^a\leftrightarrow \xi^a$, 
+ 
+Odd Hamiltonian $Q=p_a\eta^a$
+$\leftrightarrow$  odd Hamiltonian 
+       $ K=q_a\xi^a$. 
+      $$
+ [\w]=(K,\w)=\xi^a{\p \w\over \p x^a}=d\w\,,(\w(x,\xi)\to \w(x,dx)).
+      $$
+(all higher brackets vanish)
+
+Odd homtopy bracket is nothing but de Rham differential.
+\end{frame}
+
+
+\begin{frame}{Lichnerowicz differential $d_P$}
+For even function $P=P(x,\theta)$ ($[P,P]=0$)
+        $$
+d_P F=[P,F]  \,. (d_P^2=0)
+        $$
+Consider  $$
+Q_P=(P,Q)=(P,p_a\eta^a)=
+p_a{\p P(x,\theta)\over \p \theta_a}+
+\eta^a{\p P(x,\theta)\over \p x^a}
+        $$
+This is Hamiltonian linear in momenta. It produces
+degenerate homotopy bracket---Lichnerowicz differential:. 
+        $$
+[F]=(Q_P,F)=((P,Q),F)=[P,F]=d_P F. 
+       $$ 
+(all higher brackets vanish)
+     \end{frame}
+
+\begin{frame}{Lichnerowic differential $\to$ Higher Koszul brackets}
+  Under MX symplectomorphism, Hamiltonian 
+     $$
+Q_P(x,\theta,p,\eta)=
+p_a{\p P(x,\theta)\over \p \theta_aa}+
+\eta^a{\p P(x,\theta)\over \p x^a}
+\,\,\hbox {on $T^*(\Pi T^*M)$}
+      $$
+ transforms to Hamiltonian
+      $$
+K_P(x,\xi,q,\pi)=
+q_a{\p P(x,\pi)\over \p \pi_aa}+
+\eta^a{\p P(x,\pi)\over \p x^a}
+ \,\, {\rm on}\,  T^*(\Pi TM) \,.   $$
+This Hamiltonian defines homotopy Schouten bracket
+on $\Pi TM$ (Higher Koszul bracket on differential forms)
+\end{frame}
+\begin{frame}{Higher Koszul brackets on $M$}
+ 
+Odd Hamiltonian  $K_P$ on  $T^*(\Pi TM)$ 
+defines  homotopy odd Poisson bracket 
+(higher Koszul bracket) on  $\Pi TM$,
+            $$
+        [F_1,F_2,\dots,F_n]_P=
+  \left[\dotsc\left[K_P,F_1\right],\dots,F_p\right]\big\vert_{\Pi TM}\,,\qquad
+          \big\vert_{\Pi TM}=\big\vert_{p=\pi=0}\,.
+           $$
+           $$
+   F=F(x,\xi)=f(x)+\xi^af_a(x)+\dots,    (df=\xi^a\p_a f)\,,
+                     $$
+              $$
+     [f]_P=0\,,  [f_1,f_2,\dots,f_k]_P=0
+          $$
+          $$
+        [f_1,df_2,\dots,df_n]=\{f_1,f_2,\dots,f_n\}\,,
+           $$
+          $$
+        [df_1,df_2,\dots,df_n]=d\{f_1,f_2,\dots,f_n\}\,,
+           $$
+
+
+In the same way as for classical case ($P=P^{ab}\theta_b\theta_a$)
+       
+\end{frame}
+
+
+\begin{frame}{Recall the classical case $P=P^{ab}\theta_b\theta_a$}
+     
+          $$
+      \begin{matrix}
+\hbox{$\mathfrak {A}^*$--- multivector fields on $M$=
+                     functions on $\Pi T^*M$}\cr
+\hbox{$\Omega^*$--- differential forms on $M$=
+                     functions on $\Pi TM$},\cr
+       \end{matrix}
+         $$
+            $$
+          \begin{matrix}
+     &\mathfrak{A}^k(M)&{\buildrel d_P\over \longrightarrow} 
+       &\mathfrak{A}^{k+1}(M)\cr
+        &\uparrow& &\uparrow\cr 
+     &\Omega^k(M)&{\buildrel d\over \longrightarrow} 
+       &\Omega^{k+1}(M)\cr
+        \end{matrix}
+        \qquad
+           \begin{matrix}
+     &C(\Pi T^*M)&{\buildrel d_P\over \longrightarrow} 
+       &C(\Pi T^*M)\cr
+        &\uparrow& &\uparrow\cr 
+     &C(\Pi TM)&{\buildrel d\over \longrightarrow} 
+       &C(\Pi TM)\cr
+        \end{matrix}
+            $$
+            $$
+\varphi_P\colon \xi^a=P^{ab}\theta_b\,,\quad
+\varphi_P^*\colon C(\Pi TM)\to C(\Pi T^*M)
+           $$ 
+Then     
+       $$
+     \varphi_P^*(d\w)=d_P(\varphi_P^*\w)\,.
+            $$
+This relation survives for an arbitrary  $P=P(x,\theta)$
+($[P,P]=0$.)
+\end{frame}
+\begin{frame}{Two Hamiltonians}
+         $$
+      \varphi_P\,\,\Pi TM\to\Pi T^*M\colon\,\,
+ \xi^a={1\over 2}{\p P(x,\theta)\over \p \theta_a}\,.
+         $$
+         $$
+     \varphi_P^*(d\w)=d_P(\varphi_P^*\w)\,.,\qquad
+(Q_P,\varphi_P^*\w)=\varphi_P^*\left((K,\varphi)\right)\,.
+         $$
+          $$
+       \begin{matrix}
+    T^*(\Pi T^*M) &\longrightarrow & T^*(\Pi TM)\cr
+             Q=p_a\eta^a& \longrightarrow &  K=\eta^aq_a\cr
+        \hbox{canonical odd bracket} &\longrightarrow&
+         \hbox{de Rham differential on $\Pi TM$ }\cr
+     Q_P=(P,Q)& \longrightarrow &  K_P\cr
+        \hbox{Lichnerowicz diff. on $\Pi T^*M$} &\longrightarrow&
+         \hbox{Higher Koszul bracket on $\Pi TM$ }\cr 
+       \end{matrix}
+        $$
+         $$
+         $$
+Map $\varphi_P$ intertwines Lichnerowicz and de Rham differentials,
+i.e. Hamiltonians $Q_P$ and $K$.
+
+
+
+\end{frame}
+\begin{frame}{Question}
+Map $\varphi_P$ intertwines Lichnerowicz and de Rham differentials,
+i.e. Hamiltonians $Q_P$ and $K$.
+
+
+\bigskip
+
+How look a map which intertwines Hamiltonians, $Q$ and $K_P$,
+i.e. a map which intewins canonical Schouten bracket and higher 
+Koszul brackets???
+
+
+\end{frame}
+
+\begin{frame}{Usual Poisson bracket}
+     $P(x,\theta)=P^{ab}(x)\theta_a\theta_b$
+   even function on $\Pi T^*M$ quadratic on $\theta$ defines
+usual Poisson bracket on $M$:
+for $f,g\in C(M)$ 
+                 $$
+\{f,g\}=\{f(x),g(x)\}_P=[[P,f],g]=
+{\p \over \p \theta^b}
+\left({\p P(x,\theta)\over \p \theta^a}{\p f\over \p x^a}\right)
+    {\p g\over \p x^b}=
+               $$
+               $$
+{\p f\over \p x^a}P^{ab}{\p g\over \p x^b}\,.
+                 $$ 
+$$
+\hbox{Jacobi identity}\,
+:0=[P,P]=2{\p P\over \p x^a}{\p P\over \p \theta_a}=
+  4\p_a P^{bc}P^{ad}\theta_b\theta_c\theta_d
+                $$
+i.e.
+                $$
+     P^{da}\p_a P^{bc}+P^{ba}\p_a P^{cd}+P^{ca}\p_a P^{db}=0\,.
+                $$
+\end{frame}
+\begin{frame}{Higher Poisson brackets on $M$}
+Even  (non-quadratic in momenta) Hamiltonian in $\Pi T^*M$,  
+$H=P(x,\theta)$, ( $[P,P]=0$ Jacobi identity)
+defines homotopy Poisson brackets, higher even brackets:
+           $$
+        \{f_1,f_2,\dots,f_n\}_P=
+  \left[\dotsc\left[P,f_1\right],\dots,f_p\right]\big\vert_M\,,\qquad
+          \big\vert_M=\big\vert_{\theta=0}\,.
+           $$
+If   
+       $$
+P=P^a\theta_a+{1\over 2}P^{ab}\theta_b\theta_a+
+     {1\over 6}P^{abc}\theta_c\theta_b\theta_a+\dots
+            $$
+then  
+          $$
+\{x^a\}_P=P^a\,,\,\{x^a,x^b\}=P^{ab}\,,\,\{x^a,x^b,x^c\}=P^{abc}\,\dots\,,
+            $$
+\end{frame}
+
+
+
+
+\begin{frame}{From $\Pi T^*M$ to $\Pi TM$.  }
+\begin{theorem}
+ There is a natural odd linear map
+           $
+       C(\Pi T^*M)\to   C(T^*(\Pi TM)) 
+           $\\ 
+that takes canonical odd Poisson bracket on $\Pi T^*M$ to
+canonical even  Poisson bracket on $T^*(\Pi TM)$ 
+\end{theorem}
+
+\begin{corollary}
+   $$
+ \begin{matrix}
+\hbox{even  Hamiltonian}\cr
+  \hbox{$P=P(x,\theta)$ on $\Pi T^*M$ }\cr
+\hbox{defining higher even}\cr
+  \hbox{ Poisson bracket on $M$}
+\end{matrix}
+   \longrightarrow
+ \begin{matrix}
+\hbox{odd  Hamiltonian}\cr
+ \hbox{$K=K_P(x,\xi;p,\pi)$ on $T^*(\Pi TM)$} \cr
+\hbox{defining higher Koszul}\cr
+  \hbox{bracket on $\Pi T^*M$}
+\end{matrix}
+  $$
+\end{corollary}
+
+
+\end{frame}
+
+\begin{frame}{Recall: Master-Hamiltonian $\to$ homotopy brackets }
+
+
+\centerline  {$M$---(super)manifold. (coordinates $x=x^a$)}
+
+\smallskip
+
+Odd  Hamiltonian $Q(x,p)$ on $ T^*M$, ($p=p_b$ fibre coordinates) 
+\\
+defines homotopy odd Poisson (Schouten)  brackets on $M$---
+   collection 
+$\left\{\{\}_Q, \{\,,\,\}_Q, \{\,,\,,\,\}_Q,\dots\right\}$ 
+of brackets on $M$:
+                  $$
+   \{f\}_Q=(H,f)\big\vert_{p=0}\,,\quad
+   \{f,g\}_H=\left(\left(H,f\right),g\right)\big\vert_{p=0}\,,
+                 $$
+                 $$
+      \{f_1,f_2,\dots,f_n\}_Q=
+(\dots(Q,f_1),f_2),\dots,)\big\vert_{p_b=0}
+                 $$
+$(\,,\,)$---canonical even Poisson
+bracket on $T^*M$.\\
+$(Q,Q)=0$---Jacobi identity, 
+\medskip
+  
+We come to usual odd Poisson bracket if Hamiltonian is quadratic in
+momenta, $Q=Q^{ab}p_ap_b$.
+
+
+\end{frame}
+
+\begin{frame} {Homotopy bracket on $M$ $\to$ $L_\infty$-algebra of functions
+on $M$ $\to$ $Q$-manifold}
+
+\centerline  {$M$ an arbitrary (super)manifold}
+
+\smallskip
+
+ Let $Q=Q(x,p)$ be an odd  
+Hamiltonian in $T^*M$, and Jacobi identity 
+$(Q,Q)=0$ is obeyed.
+
+The odd Hamiltonian $Q$  defines homotopy odd Poisson (homotopy Schouten)
+bracket on $M$.  
+
+iConisder the following Hamilton-Jacobi vector field
+             $$
+\X_Q\colon \,C(T^*M)\ni f\to f+\vare   Q\left(x^a, p_b={\p f(x)
+\over \p x^b}\right)\,,
+          $$
+            $$
+ \X_Q=\int_M dx Q\left(x^a, {\p f(x)
+\over \p x^b}\right){\delta\over \delta f(x)}\,, 
+\X_Q^2={1\over 2}[\X_Q,\X_Q]=0\,.
+            $$
+$\X_Q$ is homological vector field on infinite-dimensional space
+$\M=C(M)$ of functions on manifold $M$.
+
+\end{frame}
+
+\begin{frame}
+           $$
+          \begin{matrix}
+\hbox
+ {Homotopy Schouten structure on functions on $M$}\cr
+       \hbox{defined by odd Hamiltonian $Q$}\cr
+          \end{matrix}
+          $$
+          $$
+         \downarrow
+          $$
+         $$
+       \begin{matrix}
+  \hbox{ $Q$-manifold $(\M, \X_Q)$, $L_\infty$ algebra}\cr
+ \hbox{$\M=C(M)$ and $\X_Q$ is Hamilton Jacobi field of $Q$}\cr
+       \end{matrix}
+         $$
+
+
+
+\end{frame}
+\begin{frame}
+
+\centerline {$P=P(x,\theta)$, $[P,P]=0$.}
+
+                 $$
+              \begin{matrix}
+                     \Pi T^*M-(x^a,\theta_b)\cr
+%\hbox {Homolog.vector field on $\Pi T^*M$}\cr
+ \hbox {Odd Poisson canonical bracket}\cr
+   \hbox {Hamiltonian $Q=p_a\xi^a$}\cr
+        \hbox{on $T(\Pi T^*M)-(x^a,\theta_b; p_a,\xi ^a)$}
+                \end{matrix}
+                      \rightarrow
+                     \begin{matrix}
+                     \Pi TM-(x^a,\xi^b)\cr
+    \hbox{Odd homotopy Koszul bracket}\cr
+    \hbox{Hamiltonian $K_P=\xi^a{\p P\over \p x^a}+
+         p_a{\p P\over \p \theta_a}$}\cr
+\hbox{on $T^*(\Pi TM)-(y^a,\xi^b; p_a,\theta_b)$}   
+                \end{matrix}
+                 $$
+
+   
+%$A\Rrightarrow B$     $A^* \Lleftarrow B^*$
+
+      $$
+      \begin{matrix}
+      \hbox{$Q$-manifold, $L_\infty$ algebra}\cr
+  \M_1=C(\Pi T^*M)\,, \X_1=\X_Q\cr
+             \end{matrix}
+           \qquad
+            \begin{matrix}
+      \hbox{$Q$-manifold, $L_\infty$ algebra}\cr
+      \M_2=C(\Pi TM)\,, \X_2=\X_{K_p}\cr
+                 \end{matrix}
+         $$
+Does there exist $L_\infty$-morphism $(\M_2,\X_2)\to (\M_1,\X_1)$, i.e.
+map $\M_2\to \M_1$ (may be non-linear)
+which intertwines homological vector fields $\X_1,\X_2$?
+
+\begin{theorem}
+   Yes, it does.
+\end{theorem}
+
+
+
+\end{frame}
+\begin{frame} {Special case, $P={1\over 2}P^{ab}\theta_b\theta_a$}  
+
+In this case  the map 
+       $$
+ \Pi T^*M\to \Pi TM\colon\quad  
+\xi^a={\p P\over\p \theta^a}=P^{ab}(x)\theta_b\,,
+       $$
+is linear in fibres.  
+Morphism of $Q$-manifolds
+               $$
+ C(\Pi T^*M)\leftarrow C(\Pi TM)
+           $$ 
+is its pull-back.
+
+These linear maps intertwine differentials $d$ and $d_P$, 
+Hamiltonians $Q$ and $K_P$  and their homological vector fields
+  $\X_Q$ and $\X_{K_p}$
+on infinite-dimensional spaces of functions.
+
+  
+
+
+\end{frame}
+\begin{frame}
+It is more tricky if 
+$P(x,\theta)$ is an arbitrary function 
+(solution of master-equation $[P,P]=0$.
+The map  
+        $$
+ \Pi T^*M\to \Pi TM\colon\quad  
+\xi^a={\p P(x,\theta)\over\p \theta^a}
+       $$
+is in general non-linear map.
+
+
+Does there exist morphism of $Q$-manifolds 
+ $(\M_2,\X_2)=(C(\Pi TM),\X_{K_P})\to 
+  (\M_1,\X_1)=(C(\Pi T^*M), \X_Q)$?
+
+In other words does there exist a  (non-linear) map 
+$C(\Pi TM)\to C(\Pi T^*M)$? which intertwines 
+canonical odd Poisson bracket $[\,,\,]$ on $\Pi T^*M$
+and homotopy Koszul brackets 
+$[\,\,]_P, [\,\,,\,\,]_P, [\,\,,\,\,,\,\,]_P.\dots$ on $\Pi TM$?
+
+\end{frame}
+\begin{frame}{Recall: Two Hamiltonians}
+         $$
+      \varphi_P\,\,\Pi TM\to\Pi T^*M\colon\,\,
+ \xi^a={1\over 2}{\p P(x,\theta)\over \p \theta_a}\,.
+         $$
+         $$
+     \varphi_P^*(d\w)=d_P(\varphi_P^*\w)\,.,\qquad
+(Q_P,\varphi_P^*\w)=\varphi_P^*\left((K,\varphi)\right)\,.
+         $$
+          $$
+       \begin{matrix}
+    T^*(\Pi T^*M) &\longrightarrow & T^*(\Pi TM)\cr
+             Q=p_a\eta^a& \longrightarrow &  K=\eta^aq_a\cr
+        \hbox{canonical odd bracket} &\longrightarrow&
+         \hbox{de Rham differential on $\Pi TM$ }\cr
+     Q_P=(P,Q)& \longrightarrow &  K_P\cr
+        \hbox{Lichnerowicz diff. on $\Pi T^*M$} &\longrightarrow&
+         \hbox{Higher Koszul bracket on $\Pi TM$ }\cr 
+       \end{matrix}
+        $$
+         $$
+         $$
+Map $\varphi_P$ intertwines Lichnerowicz and de Rham differentials,
+i.e. Hamiltonians $Q_P$ and $K$.
+
+
+
+\end{frame}
+\begin{frame}{Recall:Question}
+Map $\varphi_P$ intertwines Lichnerowicz and de Rham differentials,
+i.e. Hamiltonians $Q_P$ and $K$.
+
+
+\bigskip
+
+How look a map which intertwines Hamiltonians $Q$ and $K_P$?\\
+ a map which intertwines canonical Schouten bracket and higher 
+Koszul brackets???
+
+
+\end{frame}
+
+
+\begin{frame} {Answer}
+ 
+         Morphism $\varphi_P\colon\, \Pi T^*M \to \Pi TM$
+   intertwines Hamiltonians $Q_p$ and $K$      
+
+           We try to construct a `morphism', (sort of morphism)
+                             $$
+        \Phi\colon\, \Pi T^*M \to \Pi TM\,,
+                       $$
+   which intertwines Hamiltonians $Q$ and $K_P$\\
+ 
+\medskip
+
+  $\Phi=\phi_P^*$ is {\it thick morphism} which is 
+adjoint to morphism $\varphi_P$.      
+\end{frame}
+
+\section {Thick morphisms}
+
+\begin{frame}{Definition of thick morphism. (T.Voronov)}
+\centerline  {$M_1,M_2$--two (super)manifolds}
+
+ $x^i$--coordinates on $M_1$, $y^a$--coordinates on $M_2$\\
+\medskip
+
+   \centerline {Consider symplectic manifold $T^*M_1\times (-T^*M_2)$}
+   \centerline {equipped with canonical symplectic structure }
+                $$
+   \w=\w_1-\w_2=\underbrace{dp_i\wedge dx^i}_
+        {\hbox{coord. on $T^*M_1$}}-
+        \underbrace{dq_a\wedge dy^a}_
+        {\hbox{coord. on $T^*M_2$}}
+                $$
+    \centerline {function $S=S(x,q)$} \\defines Lagrangian surface  
+$\L_S\subset T^*M_1\times (-T^*M_2)$:
+           $$
+  \L_S=\left\{(x,p,y,q)\colon\quad 
+                     p_i={\p S(x,q)\over \p x^i}\,,
+                     y^b={\p S(x,q)\over \p q_b}\right\}
+           $$
+   
+\end{frame}
+\begin{frame}{Lagrangian surface---canonical relation---thick morphism}
+
+     Lagr. surf. $\L_S$ is canon. relation
+  $\Phi_s$ in $T^*M_1\times (-T^*M_2)$
+         $$
+(x^i,p_j)\sim_S (y^a,q_b)\leftrightarrow\,
+ (x^i,p_j,y^a,q_b)\in \L_S\,,\, (\Phi_S=\sim_S)\,.
+         $$
+        
+                     $$
+ \Phi=\Phi_s \,\hbox{is a thick morphism}\,\,     
+   M_1\Rrightarrow M_2
+                     $$
+   It defines pull-back $\Phi_S^*$ of functions
+                   $$
+\Phi_S^*\colon \, \M_2=C(M_2)\rightarrow \M_1=C(M_1)\,,
+                   $$
+such that for every function $g=g(y)\in \M_2$,
+                   $$
+f=f(x)=(\Phi_S^* g)(x)\colon \L_f=\Phi_S\circ \L_g\,,
+                   $$
+where $\L_f, \L_g$ are Lagrangian surfaces, graphs of
+$df,dg$ in $T^*M_1, T^*M_2$.
+ 
+\end{frame}
+\begin{frame}{Explicit expression}
+      $$
+f(x)=(\Phi_S^* g)(x)=g(y)+S(x,q)-y^aq_a\,
+      $$ 
+where $y^a$ and $q_a$ are defined from the equations
+             $$
+      y^a={\p S(x,q)\over \p q_a}\,,\quad
+      q_a={\p g(y)\over \p y^a}\,
+             $$
+  We see that $\L_f=\Phi_S\circ \L_g$ since
+       $$
+p_i={\p f\over \p x^i}=
+{\p\over \p x^i}
+ \left(g(y)+S(x,q)-y^aq_a\right)={\p S(x,q)\over \p x^i}\,.
+       $$
+\end{frame}
+
+\begin{frame}{Properties of thick morphism}
+\begin{example}
+   Generating function $S=S^a(x)q_a$
+            $$
+    (\Phi_S^*g)(x)=g(y)+S(x,q)-y^aq_a=g(y)+
+   \underbrace{(S^a(x)-y^a)}_{\hbox{vanishes}}q_a=g(S^a(x))
+            $$ 
+  Thick morphism $M_1{\buildrel \Phi_s\over\Rrightarrow} M_2$
+ is usual morphism $M_1{\buildrel y^a=S^a(x)\over \rightarrow}M_2$.
+\end{example}
+In general case if  $S(x,q)=S(x)+S^a(x)q_aq_b+S^{ab}(x)q_aq_b+\dots$
+     $$
+(\Phi_S^* g)(x)=S(x)+\left(g(y)+S^{ab}(x)
+                             {\p g(y)\over \p y^a }
+                             {\p g(y)\over \p y^b}+\dots\right)_
+                           {y^a=S^a(x)}
+     $$
+is non-linear pull-back. 
+  
+\end{frame}
+
+\begin{frame} {Why it is important. Voronov's Theorem and Corollary}
+\begin{theorem}
+
+ Let $\Phi_S\colon M_1\Rrightarrow M_2$ be a thick morphism.\\
+
+   Let $Q_1, Q_2$ be $\Phi_S$ related  Hamilt. on $T^*M_1, T^*M_2$: 
+ :
+             $$
+     Q_1\left(x^i,p_j={\p S(x,q)\over \p x^j}\right)\equiv
+     Q_2\left(y^a={\p S(x,q)\over \p q_a}, q_b\right)\,.
+             $$
+Then Hamilton-Jacobi vector fields $\X_{Q_1}$, $\X_{Q_2}$
+on spaces $\M_1,\M_2$ of functions are 
+related by non-linear pull back 
+$\Phi_S^*$ 
+\end{theorem}
+
+\end{frame}
+\begin{frame}
+\begin{corollary}
+ Let $\Phi_S\colon M_1\Rrightarrow M_2$ be a thick morphism.
+
+If odd Hamiltonians  $Q_1.Q_2$ are $\Phi_S$ related and
+              $$
+(Q_1,Q_1)=(Q_2)=Q_2)=0\,,
+              $$
+then non-linear pull-back
+        $$
+  \Phi_S^* \colon\, \M_2\rightarrow \M_1
+        $$ 
+defines $L_\infty$-morphism of $L_\infty$ algebras $(\M_1, \X_{Q_1})$
+and $(\M_2,\X_{Q_2})$.
+\end{corollary}
+
+
+\end{frame}
+\begin{frame}{Revenons \`a   nos moutons}
+         $$
+      \varphi_P\,\,\Pi TM\to\Pi T^*M\colon\,\,
+ \xi^a={1\over 2}{\p P(x,\theta)\over \p \theta_a}\,.
+         $$
+         $$
+     \varphi_P^*(d\w)=d_P(\varphi_P^*\w)\,.,\qquad
+(Q_P,\varphi_P^*\w)=\varphi_P^*\left((K,\varphi)\right)\,.
+         $$
+          $$
+       \begin{matrix}
+    T^*(\Pi T^*M) &\longrightarrow & T^*(\Pi TM)\cr
+             Q=p_a\eta^a& \longrightarrow &  K=\eta^aq_a\cr
+        \hbox{canonical odd bracket} &\longrightarrow&
+         \hbox{de Rham differential on $\Pi TM$ }\cr
+     Q_P=(P,Q)& \longrightarrow &  K_P\cr
+        \hbox{Lichnerowicz diff. on $\Pi T^*M$} &\longrightarrow&
+         \hbox{Higher Koszul bracket on $\Pi TM$ }\cr 
+       \end{matrix}
+        $$
+         $$
+         $$
+Morphism (usual) $\varphi_P$ intertwines 
+Hamilt. $Q_P$ and $K$\\
+
+??? thick morphism $\phi_S$
+which intertwines Hamilt. $Q$ and $K_P$.
+        $$
+  \hbox{$Q_P$ and $K$ are $\varphi_P$ related}\,,\,
+  \hbox{$Q$ and $K_P$ will be  $\phi_P$ related}
+        $$
+
+
+\end{frame}
+
+\begin{frame}{Thick morphism---generalisation of adjoint}
+              $$
+  \begin{matrix}
+  \hbox{$E\to M$ vector bundle} && \hbox{ $E^*\to M$ its dual}\cr
+\Phi\colon E\Rrightarrow E^* &\leftrightarrow& 
+\Phi^+\colon E\Rrightarrow E^*\cr
+ \hbox{$L=L_S$ Lagr. surf.defining $\Phi$}
+      &\leftrightarrow&    
+ \hbox{$L^*=L_{S^*}$ Lagr. surf.defining $\Phi$}`
+     \end{matrix}
+          $$
+\centerline{
+These Lagrangian surfaces belong to $T^*E\times (-T^*E^*$.}  
+ $$
+  \begin{matrix}
+   T^*E\times (-T^*E^*)
+       \,& {\buildrel 
+  \hbox{MX symplectom.}\over \leftrightarrow}\,& 
+   T^*E\times (-T^*E^*)\cr
+      S &\leftrightarrow&  S^*\cr
+      \L=\L_S &\leftrightarrow& \L^*=\L_{S^*}\cr
+     \end{matrix}
+          $$
+If  $\Phi$ is linear map in fibres, then $\Phi^*$ is just its adjoint.
+\end{frame}
+\begin{frame}{Return again to our case}
+         $$
+      \varphi_P\,\,\Pi TM\to\Pi T^*M\colon\,\,
+ \xi^a={1\over 2}{\p P(x,\theta)\over \p \theta_a}\,.
+         $$
+         $$
+     \varphi_P^*(d\w)=d_P(\varphi_P^*\w)\,.,\qquad
+(Q_P,\varphi_P^*\w)=\varphi_P^*\left((K,\varphi)\right)\,.
+         $$
+        $$
+       \begin{matrix}
+    T^*(\Pi T^*M) &\longrightarrow & T^*(\Pi TM)\cr
+             Q=p_a\eta^a& \longrightarrow &  K=\eta^aq_a\cr
+        \hbox{canonical odd bracket} &\longrightarrow&
+         \hbox{de Rham differential on $\Pi TM$ }\cr
+     Q_P=(P,Q)& \longrightarrow &  K_P\cr
+        \hbox{Lichnerowicz diff. on $\Pi T^*M$} &\longrightarrow&
+         \hbox{Higher Koszul bracket on $\Pi TM$ }\cr 
+       \end{matrix}
+        $$
+         $$
+         $$
+Morphism (usual) $\varphi_P$ intertwines 
+Hamilt. $Q_P$ and $K$\\
+
+??? thick morphism $\phi_S$ ?
+which intertwines Hamilt. $Q$ and $K_P$.
+        $$
+  \hbox{$Q_P$ and $K$ are $\varphi_P$ related}\,,\,
+  \hbox{$Q$ and $K_P$ will be  $\phi_P$ related}
+        $$
+
+
+
+
+\end{frame}
+\begin{frame}{Solution}
+           $$
+      \varphi_P\colon\quad\,\,\Pi TM\to\Pi T^*M\colon\,\,
+ \xi^a={1\over 2}{\p P(x,\theta)\over \p \theta_a}\,.
+         $$
+  
+
+      Let $\phi$ be a thick morphism adjoint to morphism $\varphi_P$.
+
+We know that $\varphi_P$ intertwines $Q_P$ and $K$
+
+We have  that Mackenzie-Xu symplectomorphism transforms:
+             $$
+\begin{matrix}
+   \varphi_P\leftrightarrow \phi\cr
+    K\leftrightarrow Q\cr
+    Q_P\leftrightarrow K_P\cr
+\end{matrix}
+        $$
+  
+  Hence adjoint thick morphism $\phi$ intertwines $Q$ and $K_P$.
+             
+
+The pull-back $\phi^*\colon C(\Pi T^*M)\leftarrow C(\Pi TM)$
+is non-linear map on space of functions which transfors
+homotopy Koszul brcket to canonical Schouten bracket. 
+
+\end{frame}
+
+\begin{frame}
+          $$ $$
+        \centerline { Thank you}
+           $$ $$
+\end{frame}
+
+
+\begin{frame}{Papers that talk is based on}
+[1] H.M.Khudaverdian, Th. Voronov {\it Higher Poisson 
+             brackets and differential forms}, 2008a
+ In: Geometric Methods in Physics. AIP Conference Proceedings 1079, 
+American Institute of Physics, Melville, New York, 2008, 203-215.,
+       arXiv: 0808.3406
+\medskip
+
+[2] Th. Voronov, {\it Nonlinear pullback on functions and
+a formal category extending the category of supermanifolds]},
+          arXiv: 1409.6475
+
+\medskip
+
+
+[3] Th. Voronov, {\it Microformal geometry},
+      arXiv: 1411.6720
+
+\end{frame}
+
+
+
+
+\end{document}
