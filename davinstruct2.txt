@@ -1,0 +1,237 @@
+From khudaverdian@gmail.com Thu Jan  3 15:39:40 2019
+Date: Thu, 3 Jan 2019 15:39:21 +0000
+From: David Khudaverdian <khudaverdian@gmail.com>
+To: Hovhannes Khudaverdian <khudian@manchester.ac.uk>
+Subject: Re: сайт
+
+Сейчас в гугле, когда гуглишь твое имя, то ищется твой старый сайт.У меня в
+люксембургском университете, тоже был сайт http://math.uni.lu/~david
+Я туда в главный файл index.html вставил код, который автоматически
+перенаправляет на david.wf
+
+Попробуй, на своем университетском сайте в главном файле index.html стереть все
+и вставить вот этот текст:
+<script type="text/javascript">
+window.location = "http://khudian.net"
+</script>
+тогда у тебя все автоматически будет перенаправляться на новый сайт.
+
+чт, 3 янв. 2019 г. в 13:50, Hovhannes Khudaverdian <khudian@manchester.ac.uk>:
+
+
+            Privet Davidik,
+      spasibo shto eto skazal.
+      na samom dele u menia sejchas ne 2 a 3!!?? versii
+      homepage.
+      Situatsia s homepage u menia sledujushaja:
+
+          Moj homepage s momenta sozdanija
+      (2007god ) byl na unixovskoj mashine
+      v nashem departmenete i ja imel k nemu priamoj dostup.
+      V chastnosti faily obnovlial v on-line rezhime.
+         Poka shto eto vsjo dejstvujet
+      i moj homepage "www.maths.manchester.ac.uk/khudian"
+      esho sushestvujet,,,,, khotia on uzhe ustarel...
+      V  ljuboj moment  eto konchitsa, konechno
+      faily ostanutsa,  no homepage budet zakryt.
+      Universitet predlozhil nam vsem perevesti nash homepage
+      na CENSTRALJNUJU MASHINU.
+      no pri etom eto uzhe ne unix, i prelesti raboty v
+      terminaljnom rszhime tam net.
+      Fedia perevjol mne homepage
+      na cnetraljnuju mashinu i tam on
+      pod adresom shto-to tipa
+
+      https://personalpages.manchester.ac.uk/staff/khudian
+
+
+
+        do sikh por to li estj to li net
+
+      no fedin adres:
+      https://personalpages.manchester.ac.uk/
+      staff/theodore.voronov/
+      uzhe perevedjon.
+
+
+
+      No rabotatj s etoj novoj homepage ne ochenj legko
+      v terminaljno rezhime.  No estj boleje serjoznqja prihcina;
+      obrati vnimanije : v adres pojavilosj slovo "staff"
+      shto oznahajet, stho
+      POSLE UKHODA S RABOTY STRANICA ZAKRYVAJETSA,,,,,
+
+        Odna iz prihicn shto ja porposil tebia zavesti mne
+      alternativnyj homepage eto ego samostojateljnostj.....
+
+          Site kotoryj ja s tvojej pomoshju
+      zavjol na githube ja khochu
+      sdelatj
+      svojim offitsialjnym adresom. Mozhet bytj v daljnjshem
+      mne eto ne pustiat, posmotrim.
+         No poka shto moj neposredstvennyj nachaljnik
+      (po elektronnoj rabote s studentami),
+      Yurij Bazlov, buduchi hackerom Unixa v istinom
+      smysle etogo slova,
+      predlozhim mne etu optisju, i on obehsajet vo vsekh
+      ssylkakkh na sajt postavitj ssylku na github.
+         U  nas estj spetisaljnaja elektronnaja sistema
+      obshenija s studentami: BLACKBOARD
+      Ja uzhe 7 let izbegaju etoj  sistemy, no krug
+        suzhajetsja i po vidimomu chastichno ja etim budu
+      poljzovatjsa, no vsjo ravno mne
+      khotelosj by svoi letsii
+      i domashnije zadanija vykladyvatj na lichnyj sajt.
+      Bazlov utverzhdajet shto eto mozhno,
+      i  na BLACKBOARD  psotaviat ssylku na
+      etot sait....
+
+          Vot takije dela....
+
+      Mame sejchas luchshe no poka golova kruzhitsia....
+
+
+
+      On Thu, 3 Jan 2019, David Khudaverdian wrote:
+
+      > Я еще заменил везде
+      > "http://www.maths.manchester.ac.uk/~khudian" на
+      > "http://khudian.net"
+      >
+      > https://github.com/khudian/khudian.github.io/commit/bf6d
+      > d3494fe474ca191e0b2180fd5df1abb94620
+      >
+      > чт, 3 янв. 2019 г. в 12:23, Hovhannes Khudaverdian
+      > <khudian@manchester.ac.uk>:
+      >
+      >
+      >              Spasibo, za podrobnjehsuju intsuktisju
+      >            Ja eto pisjmo vkljuchu v direktoriju pod
+      >       nazvanijem
+      >          davinstruct.txt
+      >
+      >
+      >
+      >       On Thu, 3 Jan 2019, David Khudaverdian wrote:
+      >
+      >       > 1) да, я грубо говоря, я заменил menu.html
+      >       на menu.js. И
+      >       > удалил старый index.html и заменил его
+      >       кодом из main.html.
+      >       > Старый index.html создавал два фрейма,
+      >       состоящих из menu.html
+      >       > и main.html.
+      >       > 2) Если тебе захочется создать новый html
+      >       файл (не важно как
+      >       > глубоко он в дереве будет сидеть), тебе
+      >       надо будет в начале
+      >       > этого нового файла добавить две строчки
+      >       > <scripttype="text/javascript" src="http://khudian.net/m
+      >       enu.js"></sc
+      >       > ript>
+      >       >  <div id="menu"></div>
+      >       > ты примеры можешь посмотреть в любом html
+      >       файле у себя на
+      >       > сайте. Я их все поправил.
+      >       > В итоге новый html файл может выглядеть
+      >       как-то так:
+      >       > <html>
+      >       >     <div id="menu"></div>
+      >       >     <script type="text/javascript"
+      >       > src="http://khudian.net/menu.js"></script>
+      >       >
+      >       >
+      >       >     Here you can already place the content
+      >       of the page
+      >       >     ......
+      >       > </html>
+      >       >
+      >       > чт, 3 янв. 2019 г. в 11:21, Hovhannes
+      >       Khudaverdian
+      >       > <khudian@manchester.ac.uk>:
+      >       >
+      >       >
+      >       >           Spasibo, Davidik!
+      >       >
+      >       >           Ty sdelal grandioznoje delo!
+      >       >
+      >       >          Ja toljko shto u sebia na
+      >       kompjutere
+      >       >       сделаl  команду   git pull
+      >       >       и увидел новые файлы.
+      >       >
+      >       >       1) Правильно ли я понимаю,
+      >       >       что  ты поменял  файл   menu.html na
+      >       file
+      >       >       menu.js?
+      >       >
+      >       >
+      >       >       2) Ty napisal:
+      >       >       > и каждый html файл ссылается на это
+      >       меню. В
+      >       >       начале каждого html файла
+      >       >       > я добавил:
+      >       >       > <script type="text/javascript"
+      >       >       >
+      >       src="http://khudian.net/menu.js"></script>
+      >       >       > <div id="menu"></div>
+      >       >       >
+      >       >       > Эта инструкция вставляет текст
+      >       этого меню в
+      >       >       html файл.
+      >       >
+      >       >       esli ja shto nibudj budu delatj mne
+      >       eti
+      >       >       izmenenija nado delatj
+      >       >       toljko na verkhnem urovne ili na
+      >       nizhnikh
+      >       >       urovniakh tozhe?
+      >       >
+      >       >       Ladno esho raz spasibo,
+      >       >       vecherom zadam voprosy.....
+      >       >
+      >       >           Esho raz spasibo!
+      >       >
+      >       >
+      >       >
+      >       >       On Thu, 3 Jan 2019, David
+      >       Khudaverdian wrote:
+      >       >
+      >       >       > Привет, папая уже переделал сайт.
+      >       Теперь там
+      >       >       нету двух фреймов, и
+      >       >       > поэтому можно делиться ссылками,
+      >       как на обычных
+      >       >       сайтах.
+      >       >       > Теперь меню у тебя живет в
+      >       отдельном файле:
+      >       >   
+        >https://github.com/khudian/khudian.github.io/blob/mast
+      >       er/men
+      >       >       u.js
+      >       >       >
+      >       >       > и каждый html файл ссылается на это
+      >       меню. В
+      >       >       начале каждого html файла
+      >       >       > я добавил:
+      >       >       > <script type="text/javascript"
+      >       >       >
+      >       src="http://khudian.net/menu.js"></script>
+      >       >       > <div id="menu"></div>
+      >       >       >
+      >       >       > Эта инструкция вставляет текст
+      >       этого меню в
+      >       >       html файл.
+      >       >       >
+      >       >       > Давид
+      >       >       >
+      >       >       >
+      >       >       >
+      >       >
+      >       >
+      >       >
+      >
+      >
+      >
+
+
