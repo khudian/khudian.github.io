@@ -10,7 +10,5 @@
     string += '</p>';
     string += '<hr>';
 
-    window.onload = function(){
-      document.getElementById("menu").innerHTML = string;
-    }
+    document.getElementById("menu").innerHTML = string;
 
