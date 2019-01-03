@@ -1,0 +1,90 @@
+From khudaverdian@gmail.com Thu Jan  3 10:32:44 2019
+Date: Thu, 3 Jan 2019 10:32:25 +0000
+From: David Khudaverdian <khudaverdian@gmail.com>
+To: Hovhannes Khudaverdian <khudian@manchester.ac.uk>
+Subject: Re: сайт
+
+1) да, я грубо говоря, я заменил menu.html на menu.js. 
+И удалил старый index.html и заменил его кодом из main.html. 
+Старый index.html создавал два фрейма, состоящих 
+из menu.html и main.html.
+2) Если тебе захочется создать новый html файл 
+(не важно как глубоко он в дереве
+будет сидеть), тебе надо будет в начале этого 
+нового файла добавить две строчки
+
+ <script type="text/javascript" src=
+"http://khudian.net/menu.js"></script> 
+ <div id="menu"></div>  
+
+ты примеры можешь посмотреть в любом html файле у 
+себя на сайте. Я их все
+поправил.
+В итоге новый html файл может выглядеть как-то так:
+<html>
+    <div id="menu"></div>
+    <script type="text/javascript" src=
+"http://khudian.net/menu.js"></script>
+      
+
+    Here you can already place the content of the page
+    ......
+</html>
+
+чт, 3 янв. 2019 г. в 11:21, Hovhannes Khudaverdian <khudian@manchester.ac.uk>:
+
+
+          Spasibo, Davidik!
+
+          Ty sdelal grandioznoje delo!
+
+         Ja toljko shto u sebia na kompjutere
+      сделаl  команду   git pull
+      и увидел новые файлы.
+
+      1) Правильно ли я понимаю,
+      что  ты поменял  файл   menu.html na file menu.js?
+
+
+      2) Ty napisal:
+      > и каждый html файл ссылается на это меню. В начале каждого html
+      файла
+      > я добавил:
+      > <script type="text/javascript"
+      > src="http://khudian.net/menu.js"></script>
+      > <div id="menu"></div>
+      >
+      > Эта инструкция вставляет текст этого меню в html файл.
+
+      esli ja shto nibudj budu delatj mne eti izmenenija nado delatj
+      toljko na verkhnem urovne ili na nizhnikh urovniakh tozhe?
+
+      Ladno esho raz spasibo,
+      vecherom zadam voprosy.....
+
+          Esho raz spasibo!
+
+
+
+      On Thu, 3 Jan 2019, David Khudaverdian wrote:
+
+      > Привет, папая уже переделал сайт. Теперь там нету двух фреймов, и
+      > поэтому можно делиться ссылками, как на обычных сайтах.
+      > Теперь меню у тебя живет в отдельном файле:
+      > https://github.com/khudian/khudian.github.io/blob/master/menu.js
+      >
+      > и каждый html файл ссылается на это меню. В начале каждого html
+      файла
+      > я добавил:
+      > <script type="text/javascript"
+      > src="http://khudian.net/menu.js"></script>
+      > <div id="menu"></div>
+      >
+      > Эта инструкция вставляет текст этого меню в html файл.
+      >
+      > Давид
+      >
+      >
+      >
+
+
