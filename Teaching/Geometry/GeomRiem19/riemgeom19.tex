@@ -80,7 +80,7 @@
 
   \centerline {it is a draft of Lecture Notes of H.M. Khudaverdian.}
 
-  \centerline { Manchester, 2  February,  2019}
+  \centerline { Manchester, 6  February,  2019}
 
 
 
@@ -514,46 +514,34 @@ the space of vectors tangent to the manifold at
 the point $M$.
 
 
-We use in all formulae Einstein summation rules.
-
-{\bf Remark} {\it Einstein  summation rules}
-
-
- In our lectures we always use so called {\it Einstein summation convention}.
- it  implies that when an index occurs twice
-in the same expression in upper and in lower postitions, then
- the expression is implicitly summed over all possible values
-for that index.
-  Sometimes it is called dummy indices summation rule.
- 
-   Using Einstein summation rules we avoid to write
-bulky expressions. 
-Later we will see that these notations are really very effective.
-E.g. equation \eqref{transformofvector}
-in `standard' notations will appear as
-         $$
-  \hbox {for every $i'=1,\dots,n$}\,\,
-A^{i'}(x')=\sum_{i=1}^n{\p x^{i'}\over \p x^i}A^i(x)\,.
-         $$ 
-\end{document}
-
+%\end{document}
 % 2 February 2019
 
-Now recall what is $1$-form
- 
-             Consider cotangent space $T^*_\pt M$
+{\it $1$ -form (covector) in a given point}
+
+We defined above  vectors of tangent space $T_\pt M$.
+Now we consider dual obejcts: we consider cotangent space $T^*_\pt M$
 (for every point $\pt$ on manifold $M$)---
-    space of linear functions on tangent vectors, i.e. space of $1$-forms which sometimes are called
+    space of linear functions on tangent vectors, i.e. space 
+of $1$-forms which sometimes are called
               {\it covectors.}:
 
-         One-form (covector) $\w=\w_i(x)dx^i$ 
+
+
+ Linear function, $1$-form  $\w=\w_idx^i$ is a function on tangent vectors:
+               $$
+ T_\pt M\ni\A=A^i{\p \over \ \p x^i}\,, \w\left(\A\right)
+=\w_mdx^m\left(A^i{\p \over \ \p x^i}\right)=\w_mA^i dx^i
+\underbrace{\left({\p\over \p x^m}\right)}_{\delta_i^m}=\w_mA^m\,.
+               $$ 
+If we consider new coordinates $x^{i'}=x^{i'}(x)$, then
+                  $$
+\w=\w_idx^i=\w_i\left({\p x^i\over \p x^{i'}}dx^{i'}\right)=
+           \underbrace{\w_i{\p x^i\over \p x^{i'}}_{\w_{i'}}} dx^{i'}
+                  $$
+                   i.e., nne-form (covector) $\w=\w_i(x)dx^i$ 
 transforms as follows
-            $$
-      \w=\w_m (x)dx^m=\w_m {\p x^m(x')\over \p x^{m'}}
-               dx^{m'}=\w_{m'}(x')dx^{m'}\,.
-        $$
-      Hence
-         \begin{equation}\label{transformofoneform}
+         \begin{equation}\label{transformofcovector}
             \w_{m'}(x')={\p x^{m}(x')\over \p x^{m'}}\w_m(x)\,.
          \end{equation}
 
@@ -576,11 +564,11 @@ of numbers (components) such that under
 changing of local coordinates
 this collection transforms  according to equation
 \eqref{transformofcovector}: 
-         \begin{equation}\label{definitionofvector}
+         \begin{equation}\label{definitionofcovector}
   \begin{matrix}
 &\hbox{{\tt {\footnotesize coordinates}}}
  &            
-&\hbox{{\tt {\footnotesize components of vector}}}\cr
+&\hbox{{\tt {\footnotesize components of covector}}}\cr
 &\{x^i\}   &\rightarrow
      &   \{\w_i\}\cr
  &&&\cr
@@ -591,6 +579,18 @@ this collection transforms  according to equation
 {\p x^{i}(x')\over \p x^{i'}}\big\vert_\pt \w_i \,.  
         \end{equation}
 
+{\bf Remark}  Notice the difference between formulae
+\eqref{transformofvector} and \eqref{transformofcovector}.
+In formulae \eqref{transformofvector}, \eqref{definitionofvector} 
+transformation is performed
+by matrix of derivatives ${\p x^{i'}\p x^i}$ from coordinates
+    $x^i$ to the new coordinates $x^{i'}$, and
+in formula \eqref{transformofcovector} transformation is performed
+by the {\it inverse }matrix, matrix  of derivatives ${\p x^{i}\p x^{i'}}$ 
+from new coordinates
+    $x^{i'}$ to the initial coordinates $x^{i}$.
+
+\m
 
 
           {\it Tensors}:
@@ -630,18 +630,39 @@ We say that  this is
 tensor of valence $\begin{pmatrix} p\cr q\cr\end{pmatrix}$,
 or shorter, 
  tensors of the type  $\begin{pmatrix} p\cr q\cr\end{pmatrix}$}.
+
+{\tt Caution: this tensor possess $n^{p+q}$ components.}
  
+\smallskip
+
+Sometimes it is useful
+to view  
+ $\begin{pmatrix} p\cr q\cr\end{pmatrix}$-tensor as
+       \begin{equation*}
+ Q= Q^{i_1i_2\dots i_p}_{j_1j_2\dots j_q}
+      {\p\over \p x^{i_1}}\otimes
+      {\p\over \p x^{i_2}}\otimes\dots
+      \otimes{\p\over \p x^{i_p}}
+             dx^{j_1}\otimes
+             dx^{j_2}\otimes\dots
+             \otimes dx^{j_q}
+          \end{equation*}       
+
+(Compare with definition of vector: $\A=A^i{\p\over \p x^i}$
+and covector ($1$-form) $\w=\w_idx^i$).
+
+
 
 \centerline {\bf Examples}
+
+\smallskip
 
 
     Note that vector field \eqref{transformofvector} is nothing but
  tensor field of valency 
-$\begin{pmatrix}p \cr q\cr\end{pmatrix}=$
 $\begin{pmatrix}1 \cr 0\cr\end{pmatrix}$,
-and $1$-form \eqref{transformofoneform} is nothing but
+and $1$-form \eqref{transformofcovector} is nothing but
 tensor field of valency 
-$\begin{pmatrix}p \cr q\cr \end{pmatrix}=$
 $\begin{pmatrix}0 \cr 1\cr\end{pmatrix}$,
 
 \medskip
@@ -698,23 +719,8 @@ of rank $2$ then
     A^{i'}_{k'}(x')=        
 {\p x^{i'}(x)\over \p x^{i}}{\p x^k(x')\over \p x^{k'}}A^i_k(x)\,.
              $$
-If $S^m_{ik}$ is a
-tensor of the type $\begin{pmatrix} 1\cr 2\cr\end{pmatrix}$) then
-            \begin{equation}\label{ruleoftransformfor2tensor2}
-                S^{m'}_{i'k'}=
-   {\p x^{m'}\over \p x^m}
-   {\p x^i\over \p x^{i'}}
-   {\p x^k\over \p x^{k'}}
-             S^{m}_{ik}(x)\,.
-          \end{equation}
 
 
-
-
-
-Transformations formulae
-\eqref{transformofvector}---\eqref{ruleoftransformfor2tensor2}  define
-vectors, covectors and in generally any tensor fields in components. 
 
 
 
@@ -728,11 +734,16 @@ in the same expression in upper and in lower postitions, then
 for that index.
   Sometimes it is called dummy indices summation rule.
  
- Looking  on righthand sides of equations 
-\eqref{transformofvector}---\eqref{ruleoftransformfor2tensor2} 
-we see that Einstein rules
-help essentially to write down formulae correctly. 
 
+   Using Einstein summation rules we avoid to write
+bulky expressions. 
+Later we will see that these notations are really very effective.
+E.g. equation \eqref{transformofvector}
+in `standard' notations will appear as
+         $$
+  \hbox {for every $i'=1,\dots,n$}\,\,
+A^{i'}(x')=\sum_{i=1}^n{\p x^{i'}\over \p x^i}A^i(x)\,.
+         $$ 
 
 \subsection {Riemannian manifold}
 
@@ -806,6 +817,7 @@ the metric $G$ we also sometimes denote by $G$.
 %\end{document} %31 January 2015
 
 
+\end{document} %6 February 2019
 
 
 
