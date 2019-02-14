@@ -80,7 +80,7 @@
 
   \centerline {it is a draft of Lecture Notes of H.M. Khudaverdian.}
 
-  \centerline { Manchester, 6  February,  2019}
+  \centerline { Manchester, 14  February,  2019}
 
 
 
@@ -817,7 +817,7 @@ the metric $G$ we also sometimes denote by $G$.
 %\end{document} %31 January 2015
 
 
-\end{document} %6 February 2019
+%\end{document} %6 February 2019
 
 
 
@@ -1147,6 +1147,7 @@ and $\Y$ and find cosinus of the angle between
 these vectors.
 
 \smallskip
+
 We see that matrix of Riemannian metric is
            \begin{equation*}
         ||g_{ik(x)}||=
@@ -1206,7 +1207,142 @@ and
           $$
  This example is related with the notion of so called 
 {\it conformally euclidean metric} 
-(see paragraph\ref{conformally}).
+(see the next paragraph, \ref{conformally}).
+
+
+\subsubsection {Conformally Euclidean metric}\label{conformally}
+
+
+   Let $(M,G)$ be a Riemannian manifold.
+
+\smallskip
+
+  {\bf Definition}  We say that metric 
+$G$ is locally conformally Euclidean 
+in a vicinity of the point $\pt$
+if in a vicinity of this point
+there exist local coordinates $\{x^i\}$
+such that in these coordinates metric has an appearance
+                \begin{equation}\label{conformaleuclideandef}
+                  G=\s(x)\delta_{ik}dx^idx^k=
+\s(x)\left((dx^1)^2+\dots+(dx^n)^2\right)\,,
+                \end{equation}
+i.e. it is proportional to `Euclidean metric'.
+ We call coordinates  $\{x^i\}$ {\it conformall} coordinates
+or {\it isothermic} coordinates  if condition  
+                \eqref{conformaleuclideandef}  holds.  
+
+
+ 
+We say that metric is conformally Euclidean if
+ it is locally conformally 
+Euclidean in the vicinity of every point.
+  We say that Riemannian manifold $(M.G)$ is conformally
+Euclidean if the metric $G$ on it is conformally Euclidean  
+
+\m
+
+%  It is evident that coefficient $\s(x)$ in 
+%\eqref{conformaleuclideandef} has to be positive.
+%  It is convenient sometimes to denote it as $\s(x)=e^{\l(x)}$,
+%                \begin{equation}\label{conformaleuclideandef1}
+%                  G=\s(x)\delta_{ik}
+%dx^idx^k=e^{\l(x)}\delta_{ik}dx^idx^k\,,
+%                \end{equation}
+ 
+ One can see that  if metric is
+ conformally Euclidean in a vicinity of some point $\pt$,
+then
+ the angle between vectors, more precisely the 
+cosinus of the angle between vectors  attached at this point
+(see equation \eqref{lengthandangle1})
+ is the same as for Eucldean metric.
+Indeed, let $G$ be conformally Euclidean metric and let
+ $x^i$ be local coordinates such that the metric has
+an appearance \eqref{conformaleuclideandef} in these coordinates.
+Let $\X,\Y$ be two non-vanishing vectors 
+ $\X=X^m(x){\p \over \p x^m}, \Y=Y^m(x){\p\over \p x^m}$
+  ($|\X|\not=0,|\Y|\not=0$) attached at a same point.
+  Then
+                $$
+ \cos\theta=
+{{\langle \X,\Y\rangle}\over |\X|\cdot|\Y|}=
+{g_{ik}X^iY^k\over \sqrt {g_{ik}(x)X^iX^k}
+    \sqrt {g_{ik}(x)Y^iY^k}}=
+                         $$
+         \begin{equation}\label{scalarproductforconformal}
+{\sigma(x)\delta_{ik}X^iY^k\over \sqrt {\sigma(x)\delta_{ik}(x)X^iX^k}
+    \sqrt {\sigma(x)\delta_{ik}(x)Y^iY^k}}=
+{\sum_kX^kY^k\over \sqrt {\sum_k(x)X^kX^k}
+    \sqrt {\sum_kY^kY^k}}\,.
+                                  \end{equation}
+(Note that coefficient $\sigma$ in equation
+\eqref{conformaleuclideandef}  has to be positive.)
+
+{\bf Remark}  One can show that the condition of 
+`preserving the angles' is not only necessary condition but
+it is also sufficient condition for metric
+to be conformally Euclidean (see the problem 1 in Homework 2).
+
+Now   consider examples.
+
+\smallskip
+  First It is instructive to recall the example    
+considered in previous subsection \ref{lengthandangle}),
+where Riemannian metric in a vicinity of a point
+had an appearance \eqref{exampleofconfeuclid}
+This is example of Riemannian manifold which is
+locally conformally Euclidean in a vicinity of a point
+$\pt$. 
+
+\smallskip
+
+   Another 
+
+{\bf Example}    Consider the surface of cylinder with the metric
+                 \begin{equation}
+           G=a^2d\varphi^2+dh^2
+                  \end{equation}
+(see equation \eqref{domainascylinder2} ).  
+In a vicinity of every point one
+can conisder coordinates $\begin{cases}u=a\varphi\cr v=h\cr\end{cases}$.
+It is evident that in these coordinates 
+$G=du^2+dv^2$, i.e. this Riemannian
+manifold is conformally Euclidean. 
+
+  {\bf Remark}. In fact we proved more: for metric of cylinder in
+coordinates $u,v$, the coefficient $\sigma(x)\equiv 1$, i,e. in these coordinates  metric is  not only {\it locally conformally Euclidean}, 
+but also it is  {\it locally Euclidean}.  
+We will study this question later
+in details. (see  
+paragraph "Locally Euclidean Riemannian manifold" later).
+
+Later we consider also another important examples.
+
+It is important, that 
+the following Theorem takes  a place:
+
+   {\bf Theorem} {(\tt Gauss)}   {\it Every $2$-dimensional 
+Riemannian manifold is locally
+  conformally Euclidean, i.e. for arbitrary $2$-dimensional Riemannian 
+manifold, in a vicinity of arbitrary point, there exist coordinates
+$u',v'$  such that in these coordinates
+ Riemannian metric
+                \begin{equation}\label{gaussconformally}
+     G=A(u,v)du^2+2B(u,v)dudv+C(u,v)dv^2=
+         \sigma(u',v')\left({du'}^2\right)
+                \end{equation}
+
+
+}
+We will not prove this theorem
+footnote{the proof is easy and almost evident for anaylitical manifolds,
+and it is hard for smooth manifolds}, but consider many examples
+of $2$-dimensional Riemannian manifolds, with suitable
+conformall coordinates.
+
+
+%\end{document}  % 8 February 2019
 
 \subsubsection {Length of  curves}
 
@@ -1224,7 +1360,20 @@ the velocity vector (tangent vector)
              \cdot\\
              \dot x^n(t)
          \end{pmatrix}
+        ={dx^i(t)\over dt}{\p\over \p x^i}
 \end{equation*}
+
+{\bf Remark}  Note that $\v(t)$  is a vector; chck transformation rules: 
+          \begin{equation*}
+       {dx^i(t)\over dt}{\p\over \p x^i}=
+       {dx^i(t)\over dt}
+  {\p x^{i'}\over \p x^i}{\p\over \p x^{i'}}=
+{\p x^{i'}\over \p x^i}{dx^i(t)\over dt}
+  {\p\over \p x^{i'}}=
+       {dx^{i'}(t)\over dt}{\p\over \p x^{i'}}\,.
+  \end{equation*}
+        
+
 
 The length of velocity vector $\v\in T_xM$
 (vector $\v$ is tangent to the manifold $M$ at the point $x$)
@@ -1247,7 +1396,12 @@ we often write metric in the following form
 \begin{equation*}\label{metric}
   G=ds^2=g_{ik}dx^idx^k
 \end{equation*}
-For example consider $2$-dimensional Riemannian manifold with metric
+
+\smallskip
+
+
+{\bf Example 1}
+Consider $2$-dimensional Riemannian manifold with metric
                     $$
                  ||g_{ik}(u,v)||=
                      \begin{pmatrix}
@@ -1271,6 +1425,41 @@ $L_\gamma=\int_{t_0}^{t_1} \sqrt {\langle\v,\v\rangle}=
 {g_{22}}\left(u\left(t\right),v\left(t\right)\right)v_t^2}dt\,.
 \end{equation}
 
+\smallskip
+
+
+{\bf Example}   Consider  Lobachevsky
+ (hyperbolic)  plane.  We consider upper-half model of Lobachevsky 
+(hyperbolic) plane:  
+   $$
+G={dx^2+dy^2\over y^2}\,,\quad (y>0)
+   $$  
+Consider in Lobachevsky plane the curve
+     $
+C\colon\quad \begin{cases}x=x_0\cr y=t\end{cases}\,, a<t<b
+     $
+and claculate its length:
+      $$
+      L_C=\int_{a}^{b} \sqrt {\langle\v,\v\rangle}=
+  \int_{a}^{b} \sqrt {g_{ik}(x)\dot x^i \dot x^k}=
+        $$
+       $$
+\int_{a}^{b}
+\sqrt {{g_{11}}\left(x\left(t\right),y\left(t\right)\right)x_t^2
++2{g_{12}}\left(x\left(t\right),y\left(t\right)\right)x_ty_t+
+{g_{22}}\left(x\left(t\right),y\left(t\right)\right)y_t^2}dt=
+      $$
+       $$
+\int_{a}^{b}
+\sqrt {{1\over y^2}\left(x_t^2
++y_t^2\right)}dt=
+\int_{a}^{b}
+\sqrt {{1\over t^2}\left(0
++1\right)}dt=\int_a^b{dt\over t}=
+  \left|\log {a\over b}\right|\,.
+      $$
+
+\m
 
 {\footnotesize
 The length of  curves defined by the
@@ -1361,82 +1550,6 @@ where $c$ is a constant, i.e. it is a usual length up to a multiplier
 }
 
 
-\subsubsection {Conformally Euclidean metric}\label{conformally}
-
-
-   Let $(M,G)$ be a Riemannian manifold.
-
-  {\bf Definition}  We say that metric 
-$G$ is locally conformally Euclidean 
-in a vicinity of the point $\pt$
-if in a vicinity of this point
-there exist local coordinates $\{x^i\}$
-such that in these coordinates metric has an appearance
-                \begin{equation}\label{conformaleuclideandef}
-                  G=\s(x)\delta_{ik}dx^idx^k=
-\s(x)\left((dx^1)^2+\dots+(dx^n)^2\right)\,,
-                \end{equation}
-i.e. it is proportional to `Euclidean metric'.
- We call coordinates  $\{x^i\}$ {\it conformall} coordinates
-or {\it isothermic} coordinates if condition 
-\eqref{conformaleuclideandef}
- holds.  
- 
-We say that metric is conformally Euclidean if
- it is locally conformally 
-Euclidean in the vicinity of every point.
-  We say that Riemannian manifold $(M.G)$ is conformally
-Euclidean if the metric $G$ on it is conformally Euclidean  
-\footnote{ One can show that arbitrary 
-$2$-dimensional 
-Riemannian manifold is conformally Euclidean, i.e. in a vicnitiy
-of arbitrary point there exist conformal coordinates.}. 
-
-  It is evident that coefficient $\s(x)$ in 
-\eqref{conformaleuclideandef} has to be positive.
-  It is convenient sometimes to denote it as $\s(x)=e^{\l(x)}$,
-                \begin{equation}\label{conformaleuclideandef1}
-                  G=\s(x)\delta_{ik}dx^idx^k=e^{\l(x)}\delta_{ik}dx^idx^k\,,
-                \end{equation}
- 
- One can see that  if metric is
- conformally Euclidean in a vicinity of some point $\pt$,
-then
- the angle between vectors, more precisely the 
-cosinus of the angle between vectors  attached at this point
-(see equation \eqref{lengthandangle1})
- is the same as for Eucldean metric.
-Indeed, let $G$ be conformally Euclidean metric and let
- $x^i$ be local coordinates such that the metric has
-an appearance \eqref{conformaleuclideandef} in these coordinates.
-Let $\X,\Y$ be two non-vanishing vectors 
- $\X=X^m(x){\p \over \p x^m}, \Y=Y^m(x){\p\over \p x^m}$
-  ($|\X|\not=0,|\Y|\not=0$) attached at a same point.
-  Then
-                $$
- \cos\theta=
-{{\langle \X,\Y\rangle}\over |\X|\cdot|\Y|}=
-{g_{ik}X^iY^k\over \sqrt {g_{ik}(x)X^iX^k}
-    \sqrt {g_{ik}(x)Y^iY^k}}=
-                         $$
-         \begin{equation}\label{scalarproductforconformal}
-{\l(x)\delta_{ik}X^iY^k\over \sqrt {\l(x)\delta_{ik}(x)X^iX^k}
-    \sqrt {\l(x)\delta_{ik}(x)Y^iY^k}}=
-{\sum_kX^kY^k\over \sqrt {\sum_k(x)X^kX^k}
-    \sqrt {\sum_kY^kY^k}}\,.
-                                  \end{equation}
-
-  It is instructive to recall the example    
-considered in subsection \ref{lengthandangle}),
-where Riemannian metric in a vicinity of a point
-had an appearance \eqref{exampleofconfeuclid}
-This is example of Riemannian manifold which is
-locally conformally Euclidean in a vicnity of a point
-$\pt$. 
-
-
-
-
 %\end{document}  % 6 February 2015
 
 \subsection{Riemannian structure on the surfaces embedded in Euclidean space}
@@ -1482,7 +1595,10 @@ In other words  we say that Riemannian metric on the embedded surface is induced
 \centerline {\it Tangent vectors, coordinate 
 tangent vectors}
 
-Here we recall basic notions from the course of Geometry which we will need here.
+Here we recall basic notions from the course of 
+Geometry which we will need here.
+
+\end{document}  %14 February 2019
 
     Let $\r=\r(u,v)$ be parameterisation 
 of the surface $M$ embedded in the Euclidean space:
@@ -3219,7 +3335,7 @@ It is remarkable formula: area of the segment is a polynomial function of radius
 %\end{document} 28 Bebruary  2018
 
 %\end{document} 26 February   2017
-
+\end{document} % 13 february 2019
 
 
 \section {Covariant differentiaion. Connection. Levi Civita  Connection on Riemannian manifold}
