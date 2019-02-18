@@ -87,7 +87,7 @@
 
   \centerline {it is a draft of lecture notes of H.M. Khudaverdian.}
 
-  \centerline { Manchester, 14 February 2019}
+  \centerline { Manchester, 18 February 2019}
 
 \tableofcontents
 \pagenumbering{roman}
@@ -1620,7 +1620,7 @@ Consider examples.
 
 \m
 
-\end{document} % 13 February 2019
+%\end{document} % 13 February 2019
 
 {\bf Example} (Orientation in two-dimensional space).
  Let $\{\e_x,\e_y\}$ be  arbitrary  two bases in $\R^2$ and let
@@ -1867,7 +1867,7 @@ Two reflections preserve orinetation.
 \subsubsection {Orientation of linear operator}.
 Let $P$ be a linear operator acting in vector space $V$.
 
-\end{document}  %12 February
+%\end{document}  %12 February
 
 Let $\{\e_1,\dots,\e_n\}$ be an arbitrary basis in $V$.
 Linear operator  $P$ transforms this basis to another basis
@@ -2003,52 +2003,83 @@ A^TA=\begin{pmatrix}
 we sometimes use the same letter
 for linear operator and the matrix of this operator in orthonormal basis.
 
+\smallskip
+
+
+ {\bf Remark} Note that condition \eqref{conditionhere} 
+implies that $\det  A=\pm 1$.
+
+\smallskip
 
  We have  $\a^2+\gamma^2=1$, $\a\beta+\gamma\delta=0$ and $\beta^2+\delta^2=1$.
 
   Hence one can choose angles
   $\varphi,\psi \colon 0\leq 2\pi$ such that
-               $\a=\cos\varphi,\,\,\gamma=\sin\varphi,\,\,\,\beta=\sin\psi,\,\,\delta=\cos\psi$.
+               $\a=\cos\varphi,\,\,\gamma=\sin\varphi,\,\,\,
+\beta=\cos\psi,\,\,\delta=\sin\psi$.
  The condition  $\a\beta+\gamma\delta=$ means that
                  $$
-            \cos\varphi\sin\psi+ \sin\varphi\cos\psi=\sin(\varphi+\psi)=0
+            \cos\varphi\cos\psi+ \sin\varphi\sin\psi=\cos(\varphi-\psi)=0
                  $$
-Hence $\sin \varphi=-\sin \psi$, $\cos\varphi=\cos\psi$ ($\varphi+\psi=0$) or
-$\sin \varphi=\sin \psi$, $\cos\varphi=-\cos\psi$ ($\varphi+\psi=\pi$)
+    We have
+                   $$
+      A=\begin{pmatrix}
+          \a & \beta\cr 
+          \gamma & \delta\cr 
+              \end{pmatrix}
+              =
+      \begin{pmatrix}
+          \cos\varphi  & \cos\psi\cr 
+          \sin\varphi & \sin\psi\cr 
+              \end{pmatrix}\,,\quad {\rm with}\,\,
+                  \cos (\varphi-\psi)=0\,.
+                   $$
+Condition $\cos(\varphi-\psi)=0$  means $\psi-\varphi={\pi\over 2}+\pi k$
+($k=0,\pm 1,\pm 2,\dots$)
 
-   Note that condition \eqref{conditionhere} implies that $\det  A=\pm 1$.
+   We have
+                  $$
+               \begin{cases}
+\hbox{I-st case $\psi=\varphi+{\pi\over 2}+\pi m$ ($m=0,\pm 2,\pm 4\dots$),
+hence $\cos\psi=-\sin\varphi$,  $\sin\psi=\cos\varphi$}\cr
+\hbox {II-nd  case $\psi=\varphi+{\pi\over 2}+\pi k $ ($m=\pm 1,\pm 3\dots$),
+hence  $\cos\psi=\sin\varphi$,  $\sin\psi=-\cos\varphi$}\cr
+           \end{cases}
+                 $$
 
-The first case:  $\det A=1$, operator $A$ preserves orientation;
+In the I-st case $\cos\psi=-\sin\varphi$,  $\sin\psi=\cos\psi$, and
+           \begin{equation}\label{orthogonalrotation}
+  A_\varphi=  
+            \begin{pmatrix}
+          \cos\varphi  & \cos\psi\cr 
+          \sin\varphi & \sin\psi\cr 
+              \end{pmatrix}=
+            \begin{pmatrix}
+          \cos\varphi  & -\sin\varphi\cr 
+          \sin\varphi & \cos\varphi\cr 
+              \end{pmatrix}\,,\quad
+\det A_\varphi=1\,.
+           \end{equation}
+i.e. operator $A$ preserves orientation.
 
-  $\sin \varphi=-\sin \psi$, $\cos\varphi=\cos\psi$,
-   \begin{equation}\label{orthogonalrotation}
-    A_\varphi=\begin{pmatrix}
-      \a & \beta \\
-      \gamma & \delta\\
-       \end{pmatrix}=\begin{pmatrix}
-      \cos\varphi & -\sin\varphi \\
-      \sin\varphi & \cos\varphi\\
-       \end{pmatrix}\,\,\, (\det A_\varphi=1)\,.
-\end{equation}\
-
- The second case: $\det A=-1$, operator $A$ changes orientation; 
-
-$\sin \varphi=\sin \psi$, $\cos\varphi=-\cos\psi$,
-   \begin{equation}\label{orthogonalrotation+reflection}
-    \tilde A_\varphi=\begin{pmatrix}
-      \a & \beta \\
-      \gamma & \delta\\
-       \end{pmatrix}=\begin{pmatrix}
-      \cos\varphi & \sin\varphi \\
-      \sin\varphi & -\cos\varphi\\
-       \end{pmatrix}\,\,\, (\det \tilde A_\varphi=-1)
-\end{equation}
+In the II-nd  case $\cos\psi=\sin\varphi$,  $\sin\psi=-\cos\psi$, and
+           \begin{equation}\label{orthogonalrotation+reflection}
+  \tilde A_\varphi=  
+            \begin{pmatrix}
+          \cos\varphi  & \cos\psi\cr 
+          \sin\varphi & \sin\psi\cr 
+              \end{pmatrix}=
+            \begin{pmatrix}
+          \cos\varphi  & \sin\varphi\cr 
+          \sin\varphi & -\cos\varphi\cr 
+              \end{pmatrix}\,,\quad
+\det A_\varphi=-1\,.
+           \end{equation}
+i.e. operator $A$ changes orientation.
 
 
 
-
-
-%18 February
+\end{document}   %18 February  2019
 \m
 
 
@@ -2655,7 +2686,7 @@ We see that
     }
 
 %\end{document}
-%\end{document} % 27 February
+\end{document} % 27 February
 
   \subsection{ Area of parallelogram, volume of parallelepiped,
 and determinant of linear operator}
