@@ -80,7 +80,7 @@
 
   \centerline {it is a draft of Lecture Notes of H.M. Khudaverdian.}
 
-  \centerline { Manchester, 14  February,  2019}
+  \centerline { Manchester, 20  March,  2019}
 
 
 
@@ -1363,7 +1363,7 @@ the velocity vector (tangent vector)
         ={dx^i(t)\over dt}{\p\over \p x^i}
 \end{equation*}
 
-{\bf Remark}  Note that $\v(t)$  is a vector; chck transformation rules: 
+{\bf Remark}  Note that $\v(t)$  is a vector; check transformation rules: 
           \begin{equation*}
        {dx^i(t)\over dt}{\p\over \p x^i}=
        {dx^i(t)\over dt}
@@ -1598,7 +1598,7 @@ tangent vectors}
 Here we recall basic notions from the course of 
 Geometry which we will need here.
 
-\end{document}  %14 February 2019
+%\end{document}  %14 February 2019
 
     Let $\r=\r(u,v)$ be parameterisation 
 of the surface $M$ embedded in the Euclidean space:
@@ -1634,6 +1634,17 @@ in the tangent plane $T_pM$ adjusted to the parameters $u,v$.
                               {\p y(u,v)\over \p u}{\p\over \p y}+
                               {\p z(u,v)\over \p u}{\p\over \p z}
               \end{equation*}
+and            \begin{equation*}
+                \r_v={\p \r(u,v)\over \p v}=\begin{pmatrix}
+                              {\p x(u,v)\over \p v}\cr
+                              {\p y(u,v)\over \p v}\cr
+                              {\p z(u,v)\over \p v}\cr
+                              \end{pmatrix}=
+                              {\p x(u,v)\over \p v}{\p\over \p x}+
+                              {\p y(u,v)\over \p v}{\p\over \p y}+
+                              {\p z(u,v)\over \p v}{\p\over \p z}
+              \end{equation*}
+
 {\bf Definition}  We call basis vectors $\r_u,\r_v$
 adjusted to parameters (coordinates) $u,v$ 
 {\it coordinate basis vectors}
@@ -1647,19 +1658,44 @@ can be expanded over the basis of coordinate basis vectors:
 \end{equation*}
 where $X_u, X_v$ are coefficients, components of the vector $\X$.
 
+
+
 Internal Observer views  the basis 
-vector $\r_u\in T_pM$, as a  velocity vector
-for the curve $u=u_0+t,v=v_0$, where $(u_0,v_0)$ 
-are coordinates of the point $\pt$,
-and Internal Observer denotes this vector $\p_u$. 
+vector $\r_u\in T_pM$ as the vector
+$\p_u$.  Why?
+The vector $\r_u$ attached at the point $\pt$
+is a  velocity vector
+for the curve $\gamma_{\r_u} (t)\colon\, \begin{cases}
+u=u_0+t\cr v=v_0\cr \end{cases}$ starting at the point $\pt$ 
+($(u_0,v_0)$  are coordinates of the point $\pt$).
+If $f=f(u,v)$ is a function on the surface $M$, then
+one can see that directional derivative of this function
+along a vector $\r_u$ is defined by ${\p\over \p u}$:
+                \begin{equation*}
+\p_uf(u,v)\big\vert_\pt=
+{d\over dt} f\left(\gamma_{\r_u}(t)\right)=
+{d\over dt} f\left(u_0+t,v_0\right)\,.
+                \end{equation*}
 Respectively the basis vector $\r_v\in T_pM$ 
 for an Internal Observer, is velocity vector
-for the curve $u=u_0,v=v_0+t$, where $(u_0,v_0)$ 
-are coordinates of the point $\pt$,
-and Internal Observer denotes this vector $\p_v$. 
+for the curve $\gamma_{\r_v} (t)\colon\, \begin{cases}
+u=u_0\cr v=v_0+t\cr \end{cases}$ starting at the point $\pt$   
+and Internal Observer denotes this vector $\p_v$: 
+  \begin{equation*}
+\p_vf(u,v)\big\vert_\pt=
+{d\over dt} f\left(\gamma_{\r_v}(t)\right)=
+{d\over dt} f\left(u_0,v_0+t\right)\,.
+                \end{equation*}
 
 
-\smallskip
+For an  arbitrary vector $\X$ which is tangent to surface $M$ at the point
+$\pt$, ($\X\in T_pM$) 
+               \begin{equation*}
+                \begin {matrix}
+  \hbox{\tt External observer}    & \hbox{\tt Internal observer}\cr
+   \X= a\r_u+b\r_v             &          \X=a\p_u+b\p_v\cr
+              \end{matrix}
+                  \end{equation*}
 
 
 {\bf Example}  Consider sphere of radius $R$ in
@@ -2098,7 +2134,7 @@ calculating by External observer (i.e. using Euclidean metric \eqref{RiemEuclid}
   The square of the length $|\X|$ of this vector calculated by External observer
   (he calculates using the scalar product in $\E^3$) equals to
 \begin{equation}\label{lengthforexternalobserver}
- |\X|^2=\la\X,\X\ra=\la\r_u+b\r_v,a\r_u+b\r_v\ra=a^2\la\r_u,\r_u\ra+
+ |\X|^2=\la\X,\X\ra=\la a\r_u+b\r_v,a\r_u+b\r_v\ra=a^2\la\r_u,\r_u\ra+
    2ab\la\r_u,\r_v\ra+b^2\la\r_v,\r_v\ra
 \end{equation}
 where $\la\,,\,\ra$ is a scalar product in $\E^3$.
@@ -2120,12 +2156,18 @@ The internal observer will calculate the length using Riemannian metric \eqref{f
   g_{11}a^2+2g_{12}ab+g_{22}b^2
 \end{equation}
 
-{\it External observer (person living in ambient space $\E^3$) calculate the length
+
+
+
+
+{\it External observer (person living in ambient space $\E^3$) calculates
+ the length
 of the tangent vector  using formula
 \eqref{lengthforexternalobserver}. An ant living on the surface
-calculate length of this vector in internal coordinates using formula
+calculates length of this vector in internal coordinates using formula
 \eqref{thevalueoffirstquadraticform}. External observer deals
-with external coordinates of the vector, ant on the surface with internal coordinates.
+with external coordinates of the vector, ant on the surface 
+with internal coordinates.
  They come to the same answer.}
 
 
@@ -2538,6 +2580,9 @@ G=(dx^2+dy^2+dz^2)\big\vert_{x=x(u,v),y=y(u,v),z=z(u,v)}=
 {Another beautiful deduction of this formula
 see in Appendices (Inversion)}.
 
+ %\end{document}   % 15 February 2019
+
+
 \m
 % 18  february 2016
 
@@ -2585,10 +2630,9 @@ We considered this example in homework 3
 %            \end{equation*}
 
 
-  Examples of otherquadratic 
+  Examples of other quadratic 
 surfaces see in in Appendix.
 
- 
 
 %\end{document}   %12 February 2015
 %\end{document} %12 February   2018   19 February  2017
@@ -2863,6 +2907,8 @@ these coordinates has an appearance
             \begin{equation}\label{defofisometrytoEuclid}
            G=du^i\delta_{ik}du^k=(du^1)^2+\dots+(du^n)^2\,.
              \end{equation}
+The coordinates $(u^1,\dots,u^n)$  are called
+{\it locally Euclidean coordinates}.
 
 \m
 
@@ -3035,12 +3081,77 @@ in $n$-dimensional Riemannian manifold with metric $G=g_{ik}dx^i
      Note that in the case of $n=1$ volume is just the length, in the case
      if $n=2$ it is area.
 
-Volume form \eqref{volumelement} is invariant with respect 
-to changing of coordinates\footnote{see 
-paragraph \ref{invariance} in Appendices}.
-In the next paragraph we will give motivation of
-this formula.
- 
+{\footnotesize Why this formula for  volume form?
+One can see that  volume form \eqref{volumelement} is invariant with respect 
+to changing of coordinates
+ i.e. if $y^1,\dots,y^n$ are new coordinates:
+    $x^1=x^1(y^1,\dots,y^n), x^2=x^2(y^1,\dots,y^n)...$,
+                      $$
+          x^i=x^i(y^p), i=1,\dots,n\quad, p=1,\dots,n
+                      $$
+and   $\tilde g_{pq}(y)$ matrix of the metric in new coordinates:
+                       \begin{equation}\label{changingofcoord2}
+    \tilde g_{pq}(y)={\p x^i\over \p y^{p}}g_{ik}(x(y))
+             {\p x^k\over \p y^{q}}\,.
+\end{equation}
+Then
+                    \begin{equation}\label{invarianceofvolumeelement}
+ \sqrt {\det g_{ik}(x)}\,dx^1 dx^2 \dots dx^n=
+ \sqrt {\det \tilde g_{pq}(y)}\,dy^1 dy^2 \dots dy^n
+\end{equation}
+This follows from \eqref{changingofcoord2}. Namely
+                             $$
+\sqrt {\det g_{ik}(y)}\,dy^1 dy^2 \dots dy^n=
+\sqrt {\det \left({\p x^i\over \p y^{p}}g_{ik}(x(y))
+             {\p x^k\over \p y^{q}}\right)}\,dy^1 dy^2 \dots dy^n
+                             $$
+Using the fact that $\det (ABC)=\det A\cdot \det B\cdot \det C$
+and  $\det \left({\p x^i\over \p y^{p}}\right)=
+\det \left({\p x^k\over \p y^{q}}\right)$\footnote{determinant of matrix does not change
+if we change the matrix on the adjoint, i.e. change columns on rows.} we see that
+from the formula above follows:
+           $$
+           \sqrt {\det g_{ik}(y)}\,dy^1 dy^2 \dots dy^n=
+\sqrt {\det \left({\p x^i\over \p y^{p}}g_{ik}(x(y))
+             {\p x^k\over \p y^{q}}\right)}
+          dy^1 dy^2 \dots dy^n=
+           $$
+           $$
+\sqrt {\left(\det
+        \left(
+    {\p x^i\over \p y^{p}}
+    \right)\right)^2}
+     \sqrt {\det g_{ik}(x(y))}
+     dy^1 dy^2 \dots dy^n=
+           $$
+\begin{equation}\label{transformofvolumeform4}
+\sqrt {\det g_{ik}(x(y))}
+         \det
+        \left(
+    {\p x^i\over \p y^{p}}
+    \right)
+    dy^1 dy^2 \dots dy^n=
+\end{equation}
+
+
+Now note that   $$
+\det \left({\p x^i\over \p y^{p}}\right)dy^1 dy^2 \dots dy^n=dx^1\dots dx^n
+                $$
+according to the formula for changing coordinates in $n$-dimensional integral
+\footnote{Determinant of the matrix $\left({\p x^i\over \p y^{p}}\right)$ of changing of coordinates
+is called sometimes Jacobian. Here we consider the case if Jacobian is positive.
+If Jacobian is negative then formulae above remain valid just the symbol of modulus appears.}.
+Hence
+\begin{equation}\label{transformofvolumeform5}
+\sqrt {\det g_{ik}(x(y))}\det
+      \left(
+ {\p x^i\over \p y^{p}}
+ \right) dy^1 dy^2 \dots dy^n=
+\sqrt {\det g_{ik}(x(y))}dx^1 dx^2 \dots dx^n
+\end{equation}
+Thus we come to \eqref{invarianceofvolumeelement}.
+
+
 {\footnotesize
 {\bf Remark} 
 Students who know the concept of exterior forms
@@ -3050,7 +3161,13 @@ dx^1\wedge dx^2\wedge \dots \wedge dx^n$
 
 }
 
+ }
+
+
+In the next paragraph we will give another motivation of
+this formula from linear algebra.
  
+
 
 \subsubsection {Motivation: Gram formula for
   volume of parallelepiped}
@@ -3335,7 +3452,7 @@ It is remarkable formula: area of the segment is a polynomial function of radius
 %\end{document} 28 Bebruary  2018
 
 %\end{document} 26 February   2017
-\end{document} % 13 february 2019
+%\end{document} % 13 february 2019
 
 
 \section {Covariant differentiaion. Connection. Levi Civita  Connection on Riemannian manifold}
@@ -3502,7 +3619,8 @@ Let
          $$
       \X=X^i\e_i=X^i{\p\over \p x^i}\,\quad \Y=Y^i\e_i=Y^i{\p\over \p x^i}\,\quad
          $$
-The basis vector fields ${\p\over x^i}$ we denote sometimes by $\p_i$ sometimes by $\e_i$
+The basis vector fields ${\p\over \p x^i}$ we denote sometimes 
+by $\p_i$ sometimes by $\e_i$
 
 
   Using properties above one can see that
@@ -3609,6 +3727,7 @@ then
     {\p^2  x^r\over \p x^{k'}\p x^{m'}}{\p x^{i'}\over \p x^r}
  \end{equation}
 
+
 {\bf Remark}  Christoffel symbols do not transform as tensor.
 If the second term is equal to zero, i.e. transformation of coordinates are linear
 (see the Proposition on flat connections)  then the transformation rule above is the the same as a
@@ -3616,6 +3735,9 @@ transformation rule for tensors of the type $\begin{pmatrix} 1\cr 2\cr\end{pmatr
 (see the formula \eqref{ruleoftransformationofarbitrarytensors}).
  In general case this is not true. Christoffel symbols do not transform as tensor
  under arbitrary non-linear coordinate transformation: see the second term in the formula above.
+
+%\end{document}  % 3 March
+
 
 {\footnotesize
 {\bf Remark} On the other hand note that {\it difference of two arbitrary connections is a tensor}.
@@ -3638,7 +3760,7 @@ T^{i'}_{k'm'}=\Gamma^{i'}_{k'm'}-\tilde\Gamma^{i'}_{k'm'}=
 }
 %28 February (2015)
 
-%\end{document}
+%end{document}  % 3 March
 
 % 4 March (2016)
 
@@ -3824,10 +3946,11 @@ Christoffel symbols.
 \subsection {Connection induced on the surfaces}
 
    Let $M$ be a manifold embedded in 
- Euclidean space\footnote{We know that every $n$-dimensional 
-manifold  can be embedded
-    in $2n+1$-dimensional Euclidean space}.
-    Canonical flat connection on $\E^N$  induces the connection on surface in the following way.
+ Euclidean space%\footnote{We know that every $n$-dimensional 
+%manifold  can be embedded
+ %   in $2n+1$-dimensional Euclidean space}.
+    Canonical flat connection on $\E^N$  induces the 
+connection on surface in the following way.
 
     Let $\X,\Y$ be tangent vector fields to the surface $M$ and $\nabla^{\rm can.flat}$ a canonical flat
     connection in $\E^N$.
@@ -4127,6 +4250,8 @@ if it preserves the scalar product:
 since $\nabla_{\p_i}\p_k=\Gamma_{ik}^m\p_m$.}
 
 \m
+
+%\end {document}   % 11 March
 
 Consider examples.
 
@@ -4577,10 +4702,33 @@ This implies \eqref{paralleltransportorthogonaloperator}.
 
 \subsection {Geodesics}
 
-\subsubsection {Definition.  Geodesic on 
+\subsubsection {Definition.  Geodesics on 
 Riemannian manifold}\label{geodesicsofriem1}
 
+
 %\end{document} % 8 April 2016
+
+%\end{document} % 16 March 2019
+
+    We are going to define geodesics in Riemannian manifold.
+
+        Geodesic is generalisation of straight line.
+
+           Straight line is
+
+   \begin {itemize}
+  
+  \item the shortest
+
+   \item the straightest: i.e. the velocity vector at all the points
+is the 'same'
+
+   \item trajectory of free particle
+  
+ \end {itemize}
+
+Any of these properties may be generalised. We will 
+  focus attention on the second one.
 
 
 Let $M$ be Riemannian manifold equipped with 
@@ -4670,8 +4818,8 @@ One can see that if Riemannian metric $G=G_{ik}du^idv^k$ have constant coefficie
     {d h(t)\over dt}=c \cr
     \end{cases} \Rightarrow
      \begin {cases}
-    {\varphi(t)\over dt}=\varphi_0+\Omega t\cr
-    {d h(t)\over dt}=h_0+tc \cr
+    \varphi(t)=\varphi_0+\Omega t\cr
+    h(t)=h_0+tc \cr
     \end{cases}\,.
        \end{equation}
     In general case we come to helix:
@@ -4708,13 +4856,38 @@ In detail
 \end{equation}
 
   These equations are called {\it Euler-Lagrange equations} 
-of the Lagrangian $L$.
+of the Lagrangian $L$. E.g. for particle in
+external field with potential energy
+ $U=U(\r)$ in Cartesian coordinates in $\E^n$,
+               \begin{equation}\label{LagrangianinCartesiancoordinates}
+         L(\r,\dot \r)=\hbox {kinetic energy}-\hbox{potential energy}
+ ={m\v^2\over 2}-U(\r)\,.
+               \end{equation}\label{LagangianinCartesiancoordinates}
+                
+
+
   We will explain later the variational origin of these equations
-  \footnote{To every mechanical system one can put in correspondence  a Lagrangian on configuration space.
+    
+ {\bf Remark} {\footnotesize To every mechanical system one can put 
+in correspondence  a Lagrangian on configuration space.
       The dynamics of the system is described by Euler-Lagrange equations.
       The advantage of Lagrangian approach is that it works in an arbitrary coordinate system:
       Euler-Lagrange equations are invariant
-      with respect to changing of coordinates since they arise from variational principe.}.
+      with respect to changing of coordinates since 
+they arise from variational principe.  E.g. one can easy to see that
+  Euler-Lagrange equations  
+                \begin{equation}\label{NewtonequationsinCartesiancoordinates}
+  m{d\v(t)\over dt}=-{\p U(\r)\over \p \r_i}
+               \end{equation}\label{LagangianinCartesiancoordinates}
+                  
+ for Lagrangian \eqref{LagrangianinCartesiancoordinates}
+coincide with standard Newton equations
+\eqref{NewtonequationsinCartesiancoordinates}
+ in Cartesian coordinates.
+However Newton equations 
+ \eqref{NewtonequationsinCartesiancoordinates} 
+do not survive under arbitrary coordinate transformations
+contrary to Euler-Lagrange equations\label{ELequations1}.}
 
 \m
 
@@ -4874,7 +5047,7 @@ terms of Christoffel symbols:
  \end{equation}
  (Compare with previous calculations for connection in subsections 2.2.1 and 2.3.4)
 
-
+\end{document} % 20 March 2019
 
 {\footnotesize  We know already and we will prove
 later in a elegant way that geodesics on the sphere are great circles.
@@ -5220,11 +5393,12 @@ these points.}
 }
 \m
 
-  This Theorem makes a bridge between two different approach to geodesic: the shortest disntance and
+  This Theorem makes a bridge between two different 
+approach to geodesic: the shortest distance and
   parallel transport of velocity vector.
 
 
-%\end{document}
+%\end{document} % 1 March 2019
 
 
 \section {Surfaces in $\E^3$. Parallel transport of vectors and 
@@ -5336,7 +5510,7 @@ this Theorem.
 
 
 
-\subsubsection {Weingarten operator on surfaces and Gaussian curvature}
+\subsubsection {Weingarten (shape) operator on surfaces and Gaussian curvature}
 
 %\end{document} % 18 April it remians four last lectures.
 
