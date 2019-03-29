@@ -80,7 +80,7 @@
 
   \centerline {it is a draft of Lecture Notes of H.M. Khudaverdian.}
 
-  \centerline { Manchester, 22  March,  2019}
+  \centerline { Manchester, 29  March,  2019}
 
 
 
@@ -5408,7 +5408,7 @@ approach to geodesic: the shortest distance and
 {\it Theorema Egregium}}
 
 
-\end{document}  %22 March 2019
+%\end{document}  %22 March 2019
 
  Now equipped by the knowledge of Riemannian geometry we 
 consider surfaces in $\E^3$, and formulate the important theorem
@@ -5482,8 +5482,12 @@ any  tangent vector rotates through the angle
 \begin{equation}\label{theoremofrotationonangle}
 \angle\phi=\angle\left({\X, P_C\X}\right)=\int_D K d\sigma\,,
              \end{equation}
-where $K$ is the Gaussian curvature and $d\sigma=\sqrt {\det g}dudv$ is the area element induced by the
-Riemannian metric on the surface $M$, i.e.  $d\sigma=\sqrt {\det g}dudv$.
+where $K$ is the Gaussian curvature and 
+$d\sigma$
+is the area element of induced 
+Riemannian metric on the surface $M$, 
+i.e.  $d\sigma=\sqrt {\det g}dudv$, where
+$g_{\a\beta}=(\r_\a,\r_\beta)$.
 
 
 
@@ -5524,7 +5528,7 @@ and $\n(u,v)$ be a unit normal
    vector field at the points of the surface  $M$.
   
 We define at every point $\pt=\r(u,v)$ the 
-Weingartena (shape) operator $S$ 
+Weingarten (shape) operator $S$ 
 acting on the vector space $T_\pt M$ of 
 vectors tangent to the surface $M$.
 
@@ -5594,7 +5598,7 @@ S(\r_v)=-{\p \n(u,v)\over \p v}=b\r_u+d\r_v\cr
    \end{pmatrix}
       \hbox {in the coordinate basis $\r_u,\r_v$}
 \end{equation}
-(This matrix is the matrix of Weingarted operator in the basis
+(This matrix is the matrix of Weingarten operator in the basis
    $(\r_u,\r_v)$.)
 %Examples of shape operator see
 %in the subsection above (Shape operator, Gaussian and mean 
@@ -5840,7 +5844,7 @@ $S$ at this point: $H=\k_1+\k_2={\rm Tr\,} S$.
 
 
  \subsubsection {Examples of calculation of Weingarten operator,
-curvatures for cylinder and sphere.}
+curvatures for cylinder sphere and for saddle.}
 
 \m
 
@@ -6047,10 +6051,145 @@ We see that for the sphere  Gaussian curvature is not equal to
 zero, whilst for cylinder and cone Gaussian curvature
 equals to zero.
 
+\m
+
+
+{\it Saddle} Consider saddle: $z=kxy$:
+
+  \begin{equation}\label{saddle2}
+     \begin{cases}
+      x=u\cr
+       y=v\cr
+        z=kxy\cr
+      \end{cases}
+       \end{equation}     
+
+ It is ruled surface.
+     For  every point of saddle 
+$\pt\colon \begin{cases}
+      x=u_0\cr
+       y=v_0\cr
+        z=ku_0v_0\cr
+      \end{cases} $
+one can consider two stragit  lines which pass
+ thrOugh this point and 
+belong to the saddle:  
+   \begin{equation*}\label{saddleruledsurface}
+     l_1\colon 
+      \begin{cases}
+      x=u_0\cr
+       y=v_0+t\cr
+        z=ku_0(v_0+t)\cr
+      \end{cases}\,,
+         -\infty<t<\infty\quad
+     l_2\colon 
+      \begin{cases}
+      x=u\cr
+       y=v_0\cr
+        z=k(u_o+t)v_0\cr
+      \end{cases}\,,  -\infty<t<\infty
+       \end{equation*}     
+Calculate the shape operator and Gaussian curvature of
+the saddle at the stationary point 
+ $x=y=z=0$, i.e. $u=v=0$.
+One can see that for the saddle \eqref{saddle2}
+      $$
+\r_u=\begin{pmatrix}
+     1\cr 0\cr kv\cr
+    \end{pmatrix}\,,\quad
+\r_v=\begin{pmatrix}
+     0\cr 1\cr ku\cr
+    \end{pmatrix}\,,
+         $$
+and one can choose normal unit vector field $\n=\n(u,v)$
+as
+                 $$
+      \n(u,v)=
+       {1\over \sqrt {1+ku^2+kv^2}}\begin{pmatrix}
+     kv\cr ku\cr -1\cr
+    \end{pmatrix}\,,
+      $$
+   Indeed it is easy to see that
+   $(\n.n)=1$ and $(\n,\r_u)=(\n,\r_v)=0$,
+i.e. $\n(u,v)$ is unit vector field whic is orthogonal
+to tangent vectors $\r_u$ and $\r_v$.
+
+ 
+Now notice that for the point $u=v=0$
+calculations for 
+${\p\n(u,v)\over \p u}\big\vert_{u=v=0}$ and
+${\p\n(u,v)\over \p v}\big\vert_{u=v=0}$ which lead to
+calculation of shape operator are
+simple:
+      $$
+{\p\n(u,v)\over \p u}\big\vert_{u=v=0}=
+{\p  \left(  
+   {1\over \sqrt {1+ku^2+kv^2}}
+       \begin{pmatrix}
+     kv\cr ku\cr -1\cr
+    \end{pmatrix}
+         \right)
+     \over \p u}\big\vert_{u=v=0}= 
+      \begin{pmatrix}
+      0\cr k\cr 0\cr
+       \end{pmatrix}\,,
+         $$
+and   $$
+{\p\n(u,v)\over \p v}\big\vert_{u=v=0}=
+{\p  \left(  
+   {1\over \sqrt {1+ku^2+kv^2}}
+       \begin{pmatrix}
+     kv\cr ku\cr 1\cr
+    \end{pmatrix}
+         \right)
+     \over \p v}\big\vert_{u=v=0}= 
+      \begin{pmatrix}
+       k\cr 0\cr 0\cr
+       \end{pmatrix}\,,
+         $$
+since
+     ${1\over \sqrt {1+k^2u^2+k^2v^2}}\big\vert_{u=v=0}=1$
+and
+          $$
+{\p\over \p u}\left(
+{1\over \sqrt {1+k^2u^2+k^2v^2}}
+  \right)\big\vert_{u=v=0}=
+{k^2u\over \sqrt {1+k^2u+k^2v}}\big\vert_{u=v=0}
+=0\,,
+     $$
+and        $$
+{\p\over \p v}\left(
+{1\over \sqrt {1+k^2u^2+k^2v^2}}
+  \right)\big\vert_{u=v=0}=
+{k^2v\over \sqrt {1+k^2u+k^2v}}\big\vert_{u=v=0}
+=0\,.
+     $$
+Hence for the shape operator at the point $u=v=0$ we have
+    $$
+S(\r_u)\big\vert_{u=v=0}=
+-{\p\n(u,v)\over \p u}\big\vert_{u=v=0}=
+ -\begin{pmatrix} 0\cr k\cr 0\cr \end{pmatrix}=
+-k\r_v\big\vert_{u=v=0}
+  $$
+and  $$
+S(\r_v)\big\vert_{u=v=0}=
+-{\p\n(u,v)\over \p v}\big\vert_{u=v=0}=
+ -\begin{pmatrix} k\cr 0\cr 0\cr \end{pmatrix}=
+-k\r_u\big\vert_{u=v=0}\,.
+  $$
+Thus at the origin shape operator is
+ $S=\begin{pmatrix} &-k\cr -k & 0\end{pmatrix}$
+and Gaussian curvature at the otigin is equal to
+     $$
+K=\det S=-k^2\,.
+    $$    
+ Saddle has negative curvature at the origin.      
+
+
+\end{document}  % 29 March 2019
 
 
 
-       
 \subsubsection {Theorem of parallel transport over closed curve (detailed formulation)}\label{secondformulation}
 
 
