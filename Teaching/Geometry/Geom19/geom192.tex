@@ -1,3 +1,7 @@
+% On morning 25 March 2019 I also added two lines to the table Resume
+%on the page 77
+% On morning 25 March 2019 I did here little changes on the page
+% 76 (equivalence for hyperbola)
 % I begin this version on February 3 2012
 % on the base of the lecture course of the previous year
 % today 1-st February I am working on the version for 2013 year.
@@ -88,7 +92,7 @@
 
   \centerline {it is a draft of lecture notes of H.M. Khudaverdian.}
 
-  \centerline { Manchester, 18 March 2019}
+  \centerline { Manchester, 1 April 2019}
 
 \tableofcontents
 \pagenumbering{roman}
@@ -4907,7 +4911,7 @@ and the line $l$  is called the {\it directrix of the parabola.}
 
 
 \m
-\end{document} %18 March  2019
+%\end{document} %18 March  2019
 
 {\footnotesize  One can consider directrices for hyperbola
 and ellipse also. See later subsection\ref{theyarethesame}}
@@ -5863,7 +5867,7 @@ size in  $OY$ direction in $b$ times, hence area of changing
  $ab$ times, i.e. area of the ellipse is equal to $\pi ab$.
 
 
-
+%\end{document}  % 19 March 2019
 
 \subsection{Analytical definition of conic sections}
 \label{analyticdefinitions}
@@ -6135,20 +6139,23 @@ We have that
       $$
 Hence
       $$
-\sqrt{(x+c)^2+y^2}=2a-
+\sqrt{(x+c)^2+y^2}=\pm 2a-
 \sqrt{(x-c)^2+y^2}\,.
          $$
-This is just equation \eqref{calcforellipse1}:
-the difference is that for ellipse we had condition
-  $a>c$ (see \eqref{ellipseinequality}); 
-now it is condition $c>a$.
-Hence we come to the equation \eqref{calcforellipse2}
-              $$
-\sqrt{(x+c)^2+y^2}=2a-
+%This is just equation \eqref{calcforellipse1}:
+%the difference is that for ellipse we had condition
+%  $a>c$ (see \eqref{ellipseinequality}); 
+%now it is condition $c>a$.
+%Hence we come to the equation \eqref{calcforellipse2}
+In the same way as we did it for ellpise taking twoice square
+we see that this equation implies equation \eqref{calcforellipse2}:
+             $$
+\sqrt{(x+c)^2+y^2}=\pm 2a-
 \sqrt{(x-c)^2+y^2}\Rightarrow
   (c^2-a^2)x^2-a^2y^2=a^2(c^2-a^2)\,,
            $$  
-Here just $c>a$.
+The difference is that in the case of ellipse $a>c$, and
+ here $c>a$ (see equation \eqref{hyperbolainequality}).
 Dividing on $a^2(c^2-a^2)$ we come to 
     \begin{equation}\label{ellipseanal2}
      {x^2\over a^2}-{y^2\over b^2}=1\,, {\rm where}\quad
@@ -6284,6 +6291,25 @@ and analytically in suitable canonical Cartesian coordinates:
 
 We will call these parameters {\it canonical} parameters
 of conic sections.
+
+\m
+
+{\footnotesize    Add to this table also 
+the following two lines:  the distance between an arbitrary 
+point $K=(x,y)$ on ellipse (hyperbola)
+ and one of the foci of the ellpse (hyperbola)  is equal to  
+       \begin{equation*}
+    d(K,F_{1,2})=\left|{c\over a}x\pm a\right|\,,
+         \end{equation*}
+for ellipse $c>a$ and $|x|\leq a$, and for hyperbola
+    $c<a$ and  $|x|\geq a$, where
+$a,c$ are canonical parameters of ellipse (hyprbola).
+(For parabola $d(K,F)=\left|x+{p\over 2}\right|$.) 
+
+
+
+
+}
 
 \subsubsection {Area of ellipse, again}
 
@@ -6448,7 +6474,7 @@ ellipse''.
 in polar coordinates.
 
 %Tut pererabotatj
-
+%\end{document}   %25 March 2019
 
 \subsubsection {Focal polar coordinates for conics}
   Let $C$ be a conic section. 
@@ -6568,8 +6594,67 @@ and the origin, is a focus of ellipse.
 (The second focus is at the point $(2c,0)$.)
 (See also Solutions of Homework 8.)
 
+It is very useful the following
+\smallskip
+
+{\bf Definition} We call parameter $e={c\over a}$
+{\it eccentricity} parameter.
+
+\smallskip
+
+This parameter evidently measures the difference of ellipse from
+circle: if $e=0$, then ellpise becomes circle.
+What happpens if we take $e=1$ or evern $e>1$ in equation   
+\eqref{ellipseinpolar1}?  One can see that if e=1 then
+we come to curve:
+      \begin{equation}\label{e=1}
+r={p\over 1-\cos\varphi}\Leftrightarrow r=p+r\cos\varphi
+\Leftrightarrow \sqrt {x^2+y^2}=(p+x)^2\,.
+      \end{equation}
+Taking square of last equation we see that this curve
+is a  parabola 
+$y^2=2px+p^2=2p\left(p+{1\over 2}\right)$
+shifted over $Ox$ axis on $p\over 2$ (see in detail
+the subsection \ref{parabolainpolar}).
+Moreover if we will take ecentricity parameter $e>1$
+we will come to hyperbola (see in detail next subsection 
+\ref{hyperbolainpolar}) 
+
+Lookign at the  followig picture:
+  \begin{equation}\label{beautifulpicture}
+\begin{tikzpicture}%[scale=0.8]
+%\draw [help lines] (-10,-1) grid (10,1);
+\draw [  thick, blue] (-10,0)--(8,0); 
+\draw[red,thick] (-8,0) circle (1pt); 
+\node [red,above] at (-8, 0) { $e=0$};
+\node [red,below] at (-8, 0) {\footnotesize circle};
+%\draw[red,thick] (-3,0) circle (1pt); 
+\node [red,above] at (-5.5,0) { $0\leq e <1$};
+\node [red,below] at (-5.5, 0) { ellipse};
+\draw[red,thick] (-3,0) circle (1pt); 
+\node [red,above] at (-3, 0) { $e=1$};
+\node [red,below] at (-3, 0) {\footnotesize parabola};
+%\draw[red,thick] (-8,0) circle (1pt); 
+\node [red,above] at (1, 0) { $e>1$};
+\node [red,below] at (1, 0) {hyperbola};
+\end{tikzpicture}
+\end{equation}
+
+one  can say that eccentricity parameter makes relation
+between conic sections: 
+ellipses, parabolas and hyperbolas (see for details 
+subsection \ref{intersection}0)
+
+
+Later we will
+see that all conic sections appear as intersections of plane
+with conic surface (see for details subsection 
+\ref{intersection})
+
+
 
 \subsubsection{$^*$ Hyperbola in polar coordinates}
+\label{hyperbolainpolar}
 
 {\footnotesize
 
@@ -6684,6 +6769,7 @@ and
 
 
 \subsubsection{ Parabola in polar coordinates}
+\label{parabolainpolar}
 
 
   Let $C$ be a parabola  with a focus at the points $F$
@@ -6751,7 +6837,7 @@ and the line $l\colon x=-p$ is its directrix.
 
 
 \subsubsection { $^*$ Eccentricity parameter and similarity
-between conic sections }
+between conic sections }\label{eccentricityparameter}
 
 {\footnotesize
 
@@ -6864,6 +6950,7 @@ to $1$ for parabola.
 
 
 \subsection {Intersection of plane with conical  surface}
+\label{intersection}
 
 In this lecture we consider intersections of
 planes and surface of cone, conical surface.
@@ -7387,17 +7474,9 @@ $M$ is a focus of the  conic section $C_{\rm proj}$,
 and finally we will show that initial curve
 $C$ is also a conic section. 
 
-
+%\end{document} % 27 March  2019
 
 Now begin the proof.
-  The proof of the fact that $C_\proj$ is a conic section
-will be done in two different ways. 
-We will perform straightforward calculations 
-in Cartesian coordinates then we will come to
-the same result   
-or much shorter in `one-line' caluclations
- in polar coordinates.
-It is useful to see how these two methods work.
 
 
 
@@ -7426,78 +7505,93 @@ C_{\rm proj}\colon \quad
            \end{equation*}      
 First, consider the case $\delta=0$.
 In this case $C_{\rm proj}$ is a parabola:
-       \begin{equation*}
+       \begin{equation}\label{parabolaintheproofofconicsectionstheorem}
 \delta=0\,, \quad
 C_{\rm proj}\colon \quad -{2H^2\over L}x+k^2y^2-H^2=0
 \Leftrightarrow
-             y^2={2H^2\over k^2L}y^2+{H^2\over 2}=
-          {2H^2\over k^2L}\left(x+{L\over 2}\right)\,.
-           \end{equation*}      
-One can reduce this parabola to canonical
-form $y^2=2px$ (see analytical definition of
+             y^2={2H^2\over k^2L}x+{H^2\over k^2}=
+          {2H^2\over k^2L}\left(x+{L\over 2}\right)=
+           \end{equation}
+     \begin{equation*}
+      2L\left(x+{L\over 2}\right)\,,\, 
+\hbox{since $\delta=k^2-{H^2\over L^2}=0$}\,.
+     \end{equation*}
+      It is in canonical
+form $y^2=2px'$ with $p=L$ and $x'=x+{L\over 2}$ (see analytical definition of
 parabola \eqref{analytparabola}).
- Under translation  $x'=x+{L\over 2}$ we come to
-new Cartesian coordinates such that
-        \begin{equation}\label{conditionforparabola}
-C_{\rm proj}\colon 
-      y^2=2px'\,,\quad
-          {\rm where}\,\, p= {H^2\over k^2L}\,,\,
-{\rm if}\, \delta=k^2-{H^2\over L^2}=0\,.
-           \end{equation}  
-Note that condition $\delta=0$ implies that 
-     \begin{equation}\label{noteforparabola1}
-     p= {H^2\over k^2L}={H\over k}=L\,.
-            \end{equation}
-(We suppose that $k>0$.)
-
-We have proved that the curve $C_{\rm proj}$ in $\E^2$
-is a parabola if $\delta=0$.
-
-\m
-
-
-Now consider the case if $\delta\not=0$. In this case:
+Thus we  have proved that the curve $C_{\rm proj}$ in $\E^2$
+is a parabola if $\delta=0$
+It is easy to see that the focus of this parabola is 
+at origin, and the line $x=-L$ is the directrix of 
+this parabola.  Indeed for this parabola we have
   \begin{equation*}
-C_{\rm proj}\colon k^2x^2+k^2y^2-
+\sqrt {x^2+y^2}=
+\sqrt {x^2+2L\left(x+{L\over 2}\right)}=\left|x+L\right|\,.
+\end{equation*}
+
+\smallskip
+
+Now consider the case if $\delta=k^2-{H^2\over L^2}\not=0$. 
+In this case:
+  \begin{equation*}
+C_{\rm proj}\colon\quad k^2x^2+k^2y^2-
    \left(H\left(1+{x\over L}\right)\right)^2=0\Leftrightarrow
    \underbrace{\left(k^2-{H^2\over L^2}\right)}_{\delta\not=0}
          x^2-{2H^2\over L}x+k^2y^2-H^2=0\,.
            \end{equation*}
-Hence we have
+Hence $C_{\rm proj}\colon 
+\delta x^2-{2H^2\over L}x+k^2y^2-H^2=0$, and  
          \begin{equation}\label{lemmacalculations1}
-C_{\rm proj}\colon \delta x^2-{2H^2\over L}x+k^2y^2-H^2=
-  \delta\left(x-{H^2\over L\delta}\right)^2+k^2y^2-
-    H^2\left(1+{H^2\over \delta L^2}\right)=0\,.
+C_{\rm proj}\colon 
+  \delta\left(x-{H^2\over L\delta}\right)^2+k^2y^2=
+    H^2\left(1+{H^2\over \delta L^2}\right)=
+    {H^2\over \delta}
+ \left(\delta+{H^2\over  L^2}\right)=
+      {H^2k^2\over\delta}\,.
            \end{equation}
-We see that in Cartesian coordinates 
+Multiplying this equation on ${\delta\over H^2k^2}$ we come to
+          \begin{equation}\label{conicsectionindeed}
+C_{\rm proj}\colon 
+  {\delta^2\over H^2k^2}\left(x-{H^2\over L\delta}\right)^2+
+    {\delta\over H^2}y^2=
+      1\,.
+          \end{equation}
+This makes almost evident that the curve $C_{\rm proj}$
+is an ellipse if $\delta>0$, and it is hyperbola if $\delta<0$.
+In Cartesian coordinates 
        \begin{equation}\label{cartesiancoordinates2}
         \begin{cases}x'=x-{H^2\over L\delta}\cr y'=y\cr
      \end{cases}
-         \end{equation}
-the curve $C_{\rm proj}$ is ellipse if $\delta>0$
-and it is  hyperbola if $\delta<0$.
-
-
-
+         \end{equation}.
+Simple and easy calculations show that
+an  equation \eqref{conicsectionindeed} becomes
+                \begin{equation*}
+ {x'^2\over a^2}+{y^2\over b^2}=1\,,\quad {\rm with}\,\,
+   a={Hk\over \delta}\,, b={H\sqrt \delta}
+    \end{equation*}
 Indeed in the case if $\delta>0$ we have from
 equation \eqref{lemmacalculations1} that
               \begin{equation*}
-  \delta x'\,^2+k^2y'\,^2=H'^2\Leftrightarrow
+  \delta x'\,^2+k^2y'\,^2={H^2k^2\over\delta}
+          \Leftrightarrow
     \left({x'\over a}\right)^2+\left({y'\over b}\right)^2=1\,, 
               \end{equation*} 
 where $x',y'$ are Cartesian coordinates
 \eqref{cartesiancoordinates2}, and
 we denote
            \begin{equation}\label{notations4}
-          H'=H\sqrt{1+{H^2\over \delta L^2}}\,,\quad
-     a={H'\over \sqrt \delta}\,,\quad
-         b={H'\over k}\,,\, {\rm if}\,\,
-\delta=k^2-{H^2\over L^2}>0\,.
+          a={Hk\over \delta}\,,b={H\over \sqrt \delta}\,.
             \end{equation}
 Note that conditon $a\geq b$ is fullfilled:
 Indeed
 $a={H'\over \sqrt \delta}>{H'\over k }=b$
-since $\delta<k^2$, ($\delta>0$).
+since $\delta<k^2$, ($\delta>0$). Moreover
+one can see that origin is one of the foci of this ellipse:
+      \begin{equation}\label{originisfocus}
+   c=\sqrt{a^2-b^2}=
+  \sqrt{{H^2k^2\over \delta^2}-{H^2\over\delta}}=
+{H^2\over L\delta}\,.   
+        \end{equation}
  
 We have constructed Cartesian coordinates 
 $(x',y')$ such that
@@ -7523,46 +7617,31 @@ We have that in this case  equation
 the curve $C_{\proj}$ has the appearance 
    \begin{equation*}
 C_{\rm proj} \colon\quad \delta x'\,^2+k^2y'\,^2=
-H'\,^2\,,\quad\left( H'^2=
-H^2\left(1+{H^2\over \delta L^2}\right)\,,\delta<0, 
-\delta<0\right)
+{H^2k^2\over\delta}
    \end{equation*}
 in Cartesian coordinates
 $(x',y')$.  Hence 
                      \begin{equation}\label{calculations4}
-        {y'^2\over H'^2/k^2}
-        -{x'^2\over H'^2/|\delta|}=1\,, 
-\delta=k^2-{H^2\over L^2}<0)\,.
+       {x'^2\over H^2k^2/\delta^2}
+-{y^2\over H^2/|\delta|}=1\,.
                     \end{equation}
-Swapping these Cartesian coordinates 
-$x'\leftrightarrow y'$  we will come to 
-Cartesian coordinates   
-     \begin{equation*}
-        \begin{cases}x{''}=y'=y\cr
-        y{''}=x' =x+{H^2\over L\delta}\cr 
-     \end{cases}
-         \end{equation*}
-such that in these Cartesian coordinates
-equation \eqref{calculations4} becomes
- canonical
-equation of hyperbola
-            $$
-      \left({x{''}\over  a}\right)^2
-        -
-    \left( {y{''}\over  b}\right)^2=1\,,
-         $$
-with parameters $a,b$ such that $a,b>0$ and
-        $$
-     a^2={H'^2\over k^2}\,,
-\quad  b^2={H'^2\over -\delta} \,,(\delta<0)\,.
-     $$
 (See equation 
 \eqref{analythyp} in subsection
 \ref{analyticdefinitions}). 
 The curve $C_{\rm proj}$ in $\E^2$
 is a hyperbola.
 
-
+Moreover one can see that origin is one of the foci
+of this hyperbola:
+         $$
+c=\sqrt {a^2+b^2}=
+              \sqrt
+     { 
+       {H^2k^2\over \delta^2}
+             -
+        {H^2\over \delta}
+           }={H^2\over \delta L}\,.
+         $$
 
 }
 
@@ -7570,8 +7649,12 @@ We proved, that the curve $C_{\rm proj}$
 in the horizontal plane defined by equation
  \eqref{projofconicsectionequation1}
 is ellipse or hyperbola or parabola.
+Moreover we checked that the origin is one
+of the foci of this conic section.
 
-  \m
+{\footnotesize
+Much shorter to do the proof in polar coordinates.
+ 
 
 Now prove that a focus of the curve 
 $C_\proj$ is the vertex of the cone.
@@ -7622,8 +7705,9 @@ $\delta=k^2-{H^2\over L^2}<0$)
 in\eqref{calculations4}.
 (We suppose that $k,H,L>0$,)
 
-\m
+}
 
+\m
 
 We proved that projection of the curve
 $C$, the curve $C_\proj$  
@@ -7843,7 +7927,7 @@ $\begin{cases}x'=x-{H^2\over L\delta}\cr y'=y\cr
                  \end{equation*}
 
 
-
+%\end{document} % 27 March 2019
 
 \subsection{Basic elements of Projective Geometry}
 
@@ -7994,7 +8078,7 @@ We have that
 
 \subsubsection {Homogeneous and affine coordinates on $\R\P$}
 
-
+\end{document}  1 April 2019
 
     \begin{tikzpicture}
    \draw       [->] (-8,0)--(0,0)--(8,0); 
@@ -10758,6 +10842,7 @@ and               $$
 {\it Ellipse and circle are affine equivalent, but ellipse, parabola,
 and hyperbola are not affine equivalent, but they are projective equivalen.}
 }
+
 \end{document}
 
 \centerline   {\bf Difference,Ratio and Cross-ratio. Experiment}
