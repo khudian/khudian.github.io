@@ -92,7 +92,7 @@
 
   \centerline {it is a draft of lecture notes of H.M. Khudaverdian.}
 
-  \centerline { Manchester, 12 April 2019}
+  \centerline { Manchester, 8 May 2019}
 
 \tableofcontents
 \pagenumbering{roman}
@@ -8247,7 +8247,6 @@ The affine coordinate of this point is equal to
 
 \subsubsection {Projective transformation of $\R\P$}
 
-\end{document} 12  April 2019
 %\end{document} % 25 April 2018
 
 Recall transformations of usual $\R$
@@ -8529,7 +8528,7 @@ projective transformation $F$ is just an affine transformation.
 \m
 %\end{document}
 
-{\sl Proof}.
+{i\sl Proof}.
 The proof is reduced to straightforward checking:
 
 I.  Proof of the first part of Proposition:
@@ -8911,6 +8910,80 @@ transformation, and this can be checked by simple calculation:
 %Another geometrical proof see after example.
 
 }
+
+ What are the relations between cross-ratio of four points
+if we rearrange them? In other words suppose
+that for four points $A,B,C,D$ on the projective plane
+ $\R\P^1$, we have that $(A,B,C,D)=\lambda$.
+  What is the value of cross-ratio 
+   $(B,A,C,D)$, $(A,B,D,C)$, $(B,A,D,C)$, $(A,C,B,D)$
+   or for any arbitrary permutation of points $A,B,C,D$?
+
+  One can easy to see that 
+      \begin{equation}\label{crossratiopermut1}
+(A,B,C,D)=\lambda\Rightarrow     
+(B,A,C,D)=(A,B,D,C)={1\over \lambda}\,,
+      \end{equation}\,,
+and
+       \begin{equation}\label{crossratiopermut2}
+(A,B,C,D)=\lambda\Rightarrow     
+(A,C,B,D)=1-(A,B,C,D)=1-\lambda\,,
+      \end{equation}\,.
+ These relations can be checked 
+by straightforward calculations:
+              $$
+  (B,A,C,D)={(u_B-u_C)(u_A-u_D)\over
+             (u_B-u_D)(u_A-u_C) }
+              =
+        {1\over {(u_A-u_C)(u_B-u_D)\over
+             (u_A-u_D)(u_B-u_C) }
+                  }={1\over (A,B,C,D)}\,,
+                  $$
+              $$
+  (A,B,D,C)={(u_A-u_D)(u_B-u_C)\over
+             (u_A-u_C)(u_B-u_D) }={1\over (A,B,C,D)}\,,
+             $$             
+and
+        $$
+ (A,C,B,D)+(A,B,C,D)={(u_A-u_B)(u_C-u_D)\over
+             (u_A-u_D)(u_C-u_B) }+
+      {(u_A-u_C)(u_B-u_D)\over
+             (u_A-u_D)(u_B-u_C) }=
+      1\,.
+       $$
+{\footnotesize   These relations define the cross
+ratio of arbitrary permutation of these points.
+ E.g. due to 
+\eqref{crossratiopermut1}
+and \eqref{crossratiopermut2},
+     $$
+(D,A,B,C)={1\over (A,D,B,C)}=
+ {1\over 1-(A,B,D,C)}=
+ {1\over 1-{1\over (A,B,C,D)}}\,.
+      $$
+
+
+} 
+
+
+
+
+
+Finally introduce the notion of so called
+{\it harmonic conjugate} points.
+
+
+{\bf Definition}   Let  $A,B,C,D$ be four points
+on projective line. We say that
+a point $D$ is harmonic conjugate to
+the points $A,B,C$  if the cross ratio $(A,B,C,D)$ 
+is equal to $-1$.
+      \begin{equation}\label{harmonicconjugate}
+(A,B,C,D)=-1\,,
+      \end{equation}
+          
+   Harmonic conjugate points possess many beatiful properties.
+Unfortunately we have not time to do it now.
 
 
 Examples of calculations of the cross-ratio see in Homework9.
