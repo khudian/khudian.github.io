@@ -1,0 +1,80 @@
+
+   Equation $x=kx+1$  has not a root if $k=1$
+and it has just one root if $k\not=1$.
+
+
+
+One can say that 
+equation  $x=kx+1$ has 
+one root  on $\bf RP$ ($x=\infty$)
+if $k=1$ and it has two roots
+     $x_1=\infty, x_2={1\over 1-k}$
+if $k\not=1$.  
+
+   It is diffiuclt to avoid temptation
+to compare it with  quadratic equation:
+         $$
+\hbox{\tt this equation has one root }\Leftrightarrow
+\hbox{\tt if its discriminant vanishes }\,.
+         $$ 
+Make  this vague statement
+exact.
+
+For an arbitrary non-degenerate matrix $K=\pmatrix {A & B\cr C & D\cr}$,
+$\det K=AD-BC\not=0$, consider projective transfromations
+                 $$
+              F(x)={Ax+B\over Cx+D}\,.
+                 $$
+of $\bf RP$\footnote{$^*$}{In homogeneous coordinates:
+              $[x:y]\mapsto [x':y']=
+F\left([x:y]\right)=[Ax+By:Cx+Dy]$.}
+   Equation $x=kx+1$ can be considered as a
+fixed point of projective transformation
+   with matrix  $K=\pmatrix {k & 1\cr 0 & 1\cr}$:
+              $$
+          x=F(x)
+                \eqno (1a)\,.
+              $$ 
+Consider  this eqution in new coordinates: let $u$ be
+a new affine coordinate:
+                  $$
+ u={mx+n\over px+q}\,,
+     x={au+b\over cu+d}\,,    
+            \left(  
+         \pmatrix {a & b\cr c & d}
+      \pmatrix {m & n\cr p & q}
+           =1\
+                \right)
+                $$ 
+      
+
+
+             Then 
+projective transformation $F(x)=kx+1$
+in new coordinate $u$ will have the appearance
+                  $$
+   \tilde F(u)=K\circ F \circ K^{-1}=K\left(k{au+b\over cu+d}+1\right)
+     {mk{au+b\over cu+d}+n\over pk{au+b\over cu+d}+q}={Au+B\over Cu+D}\,.
+                  $$ 
+In the case if $C\not=0$,  then  the 
+number of fixed points of this transformation
+is defined by the discriminant of the equation
+              $$
+     {Au+B\over Cu+D}=u\Leftrightarrow 
+                   Cu^2-(A-D)u-BD=0\,.
+                 $$
+The discriminant of this equation is equal to
+                 $$
+{\cal D}=(A-D)^2+4BC={\rm Tr {\cal F}'\,}^2-4\det {\cal F}'\,.
+                  $$
+
+For initial matrix ${\cal F}=\pmatrix {k & 1\cr 0& 1\cr}$,
+and
+              $$
+k=1\Leftrightarrow {\cal D}=(k-1)^2=0\,.
+              $$
+
+
+\bye
+
+ 

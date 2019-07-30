@@ -1,0 +1,487 @@
+
+
+\magnification=1200
+\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\S  {{\bf S}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\ll {{\bf l}}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\pt {{\bf p}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def \G{{\cal G}}
+\def\w {{\omega}}
+\def \Tr  {{\rm Tr\,}}
+\def\V {{\cal V}}
+% I began this file in October  2018
+
+{\tt 28 October 2018}
+
+{Here I will try to caclulate the continual integral for free aprticle using  some linear algebra stuff}
+
+
+     To calculate the continual integral for free function we deal with
+exponent of the polynomial
+       $$
+F=
+(x_{0}-x_{1})^2
++(x_{1}-x_{2})^2
++(x_{2}-x_{3})^2
++(x_{3}-x_{2})^2+\dots+
+(x_{N-1}-x_{N})^2\,,
+       $$
+where initial and final points are fixed
+    $$
+x_0=a,x_N=b
+    $$
+\footnote{$^*$}{One have to calculate the gaussian integral $e^{iCF}$}.
+
+    Instead doind standard calculations (see the book of Feynman)
+we will present here two calcualtions based on the linear algebra.
+
+
+       {\bf ${\cal x} 1$   Straightforward calculations}
+  The function $F$ is the polynomial of order 
+   $2$ on the $N-1$ variables $x_1,x_2,\dots, x_N$ it is equal to
+       $$
+   F=M_{ik}x^ix^k+L_ix^i+N\,, (i,k=1,\dots, N-1)
+       $$
+where  the $(N-1)\times (N-1)$ matrix  $M_{ik}$  is the symmetrical matrix which is 
+equal to
+     $$
+   M=\pmatrix
+       {
+       2 & -1 & 0 &0 &0 \dots  &0  &0  &0\cr
+       -1 & 2 & -1 &0 &0 \dots  &0  &0  &0\cr
+       0 & -1 &2 &-1 &0 \dots  &0  &0  &0\cr
+       0 & 0  &-1 &2 &-1 \dots  &0  &0  &0\cr
+       0 & 0 &0  &-1 &2 \dots  &0  &0  &0\cr
+       \dots & \dots &\dots  &\dots &\dots \dots  &\dots  &\dots  
+             &\dots\cr
+       0 & 0 &0  &0 &1 \dots  &2  &-1  &0\cr
+       0 & 0 &0  &0 &1 \dots  &-1  &2  &-1\cr
+       0 & 0 &0  &0 &1 \dots  &1  &-1  &2\cr
+       }\,,
+     $$ 
+        the vector $L$ is equal to
+       $$
+         L=(-2a,0,0,0,0,\dots,0,0,-2b)
+         $$
+and the scalar $N$ is equal to
+           $$
+   N=a^2-b^2
+           $$
+The orthogonal transformations make the matrix $M$ the diagonal matrix,
+
+We see that
+       $$
+\int e^{-cF}dx^1dx^2\dots dx^{N-1}=
+\int e^{-c\left(M_{ik}x^ix^k+L_ix^i+N\right))}dx^1dx^2\dots dx^{N-1}\,.       $$
+Now choose the vector $\ac$ such that
+            $2M\ac=-{\bf L}$, i.e.
+       $$
+\ac=-{1\over 2}M^{-1}{\bf L}\,.
+       $$
+ and perform the translation $x^i=a^i+y^i$: we come to 
+       $$
+\int e^{-cF}dx^1dx^2\dots dx^{N-1}=
+\int e^{-c\left(M_{ik}x^ix^k+L_ix^i+N\right)}dx^1dx^2\dots dx^{N-1}=       $$
+  $$
+\int e^{-c
+          \left(
+    M_{ik}(y^i+a^i)(y^k+a^k)+L_i(y^i+a^i)^i+N
+        \right)}dx^1dx^2\dots dx^{N-1}=       
+   $$
+  $$
+\int e^{-c
+          \left(
+    M_{ik}y^iy^k+M_{ik}a^ia^k+L_ia^i+N
+        \right)}dx^1dx^2\dots dx^{N-1}=       
+   $$
+     $$
+\left(\pi\over c\right)^{N-1}{1\over \sqrt {\det M}}
+     e^{-c
+          \left(
+    M_{ik}a^ia^k+L_ia^i+N\,,
+        \right)\quad \hbox {where 
+$\ac=-{1\over 2}M^{-1}{\bf L}$ and $N=b^2-a^2$}}\,.
+    $$
+
+
+\bigskip
+       {\bf ${\cal x} 2$   More sophisticated linear algebra
+calculations}
+
+ Consider linear transformation
+     $$
+       \cases
+     {
+\xi_1=x_1-x_0=x_1-a\cr
+\xi_2=x_2-x_1\cr
+\xi_3=x_3-x_2\cr
+   \dots\cr
+\xi_{N-1}=x_{N-1}-x_N\cr
+    }
+  \Leftrightarrow
+   \cases
+       {
+x_1=\xi_1+a\cr
+x_2=\xi_2+\xi_1+a\cr
+x_3=\xi_3+\xi_2+\xi_1+a\cr
+   \dots\cr
+x_{N-1}=\xi_{N-1}+\dots+\xi_1+a\cr
+       }\,
+     $$
+This is not linear transformation,
+and its ``linear''  part is not 
+orthogonal transformation, but it is unimodular 
+transformation. In the new coordinates
+      $$
+F=\sum_{i,k=1}^{N-1}M_{ik}x^ix^k+\sum_{i=1}^{N-1}L_ix^i+N=
+    \xi_1^2+\xi_2^2+\xi_3^2+\dots+\xi_{N-1}^2+
+   (b-a-\xi_1-\xi_2-\dots-\xi_{N-1})^2\,.
+      $$
+  Find translation which kills  linear terms:
+   $\xi_i=\eta_i+z_i$  such that only sconstants and quadratic terms
+will survive. One can see that
+ this is
+              $$
+\xi_i=\eta_i+{b-a\over N}\,.
+              $$
+Check it:
+         $$
+F=\sum_{i,k=1}^{N-1}M_{ik}x^ix^k+\sum_{i=1}^{N-1}L_ix^i+N=
+    \xi_1^2+\xi_2^2+\xi_3^2+\dots+\xi_{N-1}^2+
+   \left(a-b-\xi_1-\xi_2-\dots-\xi_{N-1}\right)^2=
+            $$
+     $$
+     \left(\eta_1^2+\eta_2^2++\dots+\eta_{N-1}^2\right)+
+     2\left(\eta_1+\dots+\eta_{N-1}\right){b-a\over N}+
+     {(N-1)(b-a)^2\over N^2}+
+             $$
+             $$
+            +
+  \left({a-b\over N}-\eta_1-\eta_2-\dots-\eta_{N-1}\right)^2=
+     $$
+     $$= 
+   2\left(\eta_1^2+\eta_2^2+\dots+\eta_{N-1}^2\right)+
+   2\sum_{i<j}\eta_i\eta_j+
+      {(b-a)^2\over N}\,.
+       $$
+The linear temrs are cancelled, and we have that
+      $$
+F=\tilde M_{ik}u^iu^k+
+      {(b-a)^2\over N}\,,
+     $$
+where
+       $$
+  \tilde M_{ik}=\delta_{ik}+t_it_k\,,\qquad
+   (t_i=(1,\dots,1))\,.
+       $$
+
+Now we can calculate the integral:    
+ $$
+I=
+\int e^{-cF}dx^1dx^2\dots dx^{N-1}=
+\int e^{-c\left(M_{ik}x^ix^k+L_ix^i+N\right)}dx^1dx^2\dots dx^{N-1}=       $$
+    $$
+\int e^{-c\left(
+\sum_{k=1}^{N-1}\xi_k^2+\left(b-a-\sum_{m=1}^{N-1}\xi_m^2 
+\right)^2\right)}
+    \underbrace
+    {
+  \left(\p(x_1,\dots,x_{N-1}\over \p\xi_1,\dots,\xi_{N-1})\right)
+        }_{\hbox {equals to $1$}}
+d\xi_1d\xi_2\dots d\xi_{N-1}=      
+    $$
+      $$
+\int e^{-c\left(
+2\sum_{k=1}^{N-1}\xi_k^2+\left(b-a-\sum_{m=1}^{N-1}\xi_m^2 
+\right)^2\right)}
+d\xi_1d\xi_2\dots d\xi_{N-1}=      
+    $$
+      $$
+\int e^{
+      -c\left(
+2\sum_{i,k=1}^{N-1}\eta_i\eta_k+{(b-a)^2\over N}
+        \right)
+            }
+    \underbrace
+    {
+  \left(
+ \p(\xi_1,\dots,\xi_{N-1}\over \p\eta_1,\dots,\eta_{N-1})
+\right)
+        }_{\hbox {equals to $1$}}
+d\eta_1d\eta_2\dots d\eta_{N-1}=      
+    $$
+      $$
+\int e^{
+      -c\left(
+N_{ik}\eta^i\eta^k+{(b-a)^2\over N}
+        \right)
+            }
+d\eta_1d\eta_2\dots d\eta_{N-1}=      
+    $$
+      $$
+\left(\pi\over c\right)^{N-1\over 2}
+\sqrt {1\over \det (\tilde M)}
+     e^{
+      -c\left(
+{(b-a)^2\over N}
+        \right)
+            }\,.
+        $$
+Notice that  the matrix $\tilde M$ has eigenvector $\bf t$
+with eigenvalue $N$, and all other $N-2$ eigenvectors
+wchih are orthogonal to the vector $\bf t$
+with the eigenvalue $1$. Hence
+   $$
+\det {\tilde M}=N\,,
+  $$
+and we have for integral:
+      $$
+I=\int e^{
+      -c\left(
+N_{ik}\eta^i\eta^k+{(b-a)^2\over N}
+        \right)
+            }
+d\eta_1d\eta_2\dots d\eta_{N-1}=      
+    $$
+      $$
+\sqrt {\pi\over \det (c\tilde M)}
+     e^{
+      -c\left(
+{(b-a)^2\over N}
+        \right)
+            }=
+ \left(\pi\over c\right)^{N-1\over 2}
+   {1\over \sqrt N}
+     e^{
+      -c\left(
+{(b-a)^2\over N}
+        \right)
+            }\,.
+        $$
+
+ 
+\centerline {\bf ${\cal x} 3$  Returning to Quantum mechanics}
+
+Now return to Quantum Mechanics:
+
+ We calculate now the wave function of free 
+particle using continual 
+integral and the classial action.
+
+
+Let particle starts at the point $x_0,t_0$
+and ends at the point $x_1,t_1$
+ Divide  $[t_0,t_1]$ on
+           $$
+  [t_0,t_1,t_2,\dots, t_{N-1},t_N]\,, \qquad (t_N\mapsto t_1)
+           $$
+       and consider the integral     
+      $$
+\int\int\int\dots \int
+e^{{i\over \hbar}S_{\rm free}(x_0,t_0;x_1,t_1)}
+e^{{i\over \hbar}S_{\rm free}(x_1,t_1;x_2,t_2)}
+e^{{i\over \hbar}S_{\rm free}(x_2,t_2;x_3,t_3)}
+ \dots
+    $$
+     $$
+e^{{i\over \hbar}S_{\rm free}(x_{N-2},t_{N-2};x_{N-1},t_{N-1})}
+e^{{i\over \hbar}S_{\rm free}(x_{N-1},t_{N-1};x_N,t_N)}
+   dx^1dx^2 dx^3\dots dx^{N-2}dx^{N-1}= 
+     $$
+       $$
+      \int
+ \prod_{i=1}^{N} \exp \left[
+        {i\over \hbar} 
+S_{\rm free}(x_{i-1},t_{i-1};x_{i},t_{i})
+\right]
+ \prod_{j=1}^{N-1}dx^j\,,
+          $$
+where
+     $$
+   S_{\rm free}(x_0,t_0;x_1,t_1)={m(x_1-x_0)^2\over 2t}
+     $$
+is the classical action.
+
+   This we have for the integral
+     $$
+I=
+ \int \prod_{i=1}^{N} 
+   \exp \left[
+        {i\over \hbar} 
+S_{\rm free}(x_{i-1},t_{i-1};x_{i},t_{i})
+\right]
+ \prod_{j=1}^{N-1}dx^j=
+\int
+\prod_{i=1}^{N} \exp \left[
+        {im\over 2\vare \hbar} 
+      (x_i-x_{i-1})^2
+\right]
+ \prod_{j=1}^{N-1}dx^j\,,
+      $$
+where
+    $$
+\vare={t_N-t_0\over N+1}\,,
+       $$
+We have that according the results of calculations
+in the previous paragraph
+     $$
+G(x_s,t_s,x_f,t_f)=
+\int
+\exp \left[
+        {im\over 2\vare \hbar} 
+      \sum(x_i-x_{i-1})^2
+\right]
+ dx^1dx^2\dots dx^n=
+     $$
+ $$
+\left(\pi\over 2c\right)^{N\over 2}
+     e^{
+      -c\left(
+{(b-a)^2\over N}
+        \right)
+            }\,,\hbox {with  $c={m\over 2\vare \hbar}$}\,,
+        $$
+i.e.     $$
+G(x_s,t_s,x_f,t_f)=
+\left(\pi\over 2c\right)^{N\over 2}
+     e^{
+      -c\left(
+{(b-a)^2\over N}
+        \right)
+            }=
+         $$
+        $$
+\infty
+         $$ 
+\bigskip
+
+
+\centerline {${\cal x} 4$  One linear problem question}
+
+  Making this calculation we in fact calculated the  matrix $$
+   M=\pmatrix
+       {
+       2 & -1 & 0 &0 &0 \dots  &0  &0  &0\cr
+       -1 & 2 & -1 &0 &0 \dots  &0  &0  &0\cr
+       0 & -1 &2 &-1 &0 \dots  &0  &0  &0\cr
+       0 & 0  &-1 &2 &-1 \dots  &0  &0  &0\cr
+       0 & 0 &0  &-1 &2 \dots  &0  &0  &0\cr
+       \dots & \dots &\dots  &\dots &\dots \dots  &\dots  &\dots  
+             &\dots\cr
+       0 & 0 &0  &0 &1 \dots  &2  &-1  &0\cr
+       0 & 0 &0  &0 &1 \dots  &-1  &2  &-1\cr
+       0 & 0 &0  &0 &1 \dots  &1  &-1  &2\cr
+       }\,,
+     $$ 
+Indeed the quadratic form of this matrix is
+      $$
+Q_M=\sum_{i,k=1}^{N-1}M_{k}x^ix^k=(x_1-a)^2+
+\sum_{i=2}^{N-1}(x_k-x_{k-1})^2+(b-x_{N-1})^2+
+      2ax_1-a^2+2bx_{N-1}-b^2\,.
+      $$
+In the new coordinates
+        $$
+       \cases
+     {
+\xi_1=x_1-x_0=x_1\cr
+\xi_2=x_2-x_1\cr
+\xi_3=x_3-x_2\cr
+   \dots\cr
+\xi_{N-1}=x_{N-1}-x_N\cr
+    }
+  \Leftrightarrow
+   \cases
+       {
+x_1=\xi_1\cr
+x_2=\xi_2+\xi_1\cr
+x_3=\xi_3+\xi_2+\xi_1\cr
+   \dots\cr
+x_{N-1}=\xi_{N-1}+\dots+\xi_1\cr
+       }\,
+     $$
+(this is linear unimodular transformation, and it is different from the
+trasforation considered in ${\cal x}2$.)
+we have
+       $$
+ Q_M=\sum_{i,k=1}^{N-1}M_{k}x^ix^k=(x_1-a)^2+
+\sum_{i=2}^{N-1}(x_k-x_{k-1})^2+(b-x_{N-1})^2+
+      2ax_1-a^2+2bx_{N-1}-b^2      =
+       $$
+       $$
+ (\xi_1-a)^2+
+\sum_{i=2}^{N-1}\xi_k^2+(b-\xi_1-\dots-\xi_{N_1})^2+
+      2a\xi_1-a^2+2b(\xi_1+\dots+\xi_{N-1})-b^2=
+        $$
+   $$
+\sum_{i=1}^{N-1}\xi_i^2+\sum_{i,k=1}^{N-1}\xi_i\xi_k=
+ \xi^i\left(\delta_{ik}+t_it_k\right)\xi^k\,,
+     $$
+with
+     $$
+{\bf t}=(1,1,\dots,1)
+      $$
+We have
+     $$
+M=P^* M_{\xi} P
+      $$
+In particular since the transformation is unimodular
+we can calculate the the characteristic polynomial of $M$.
+It   is equal
+to
+   $$
+P_M(\lambda)=\det (M-\l)=
+\det\left(\left(1-\lambda\right)\delta_{ik}+t_it_k\right)\,.
+    $$
+   To  calculate the determinant of 
+this matrix notice
+the vector $\bf t$ is the eigenvector with the
+eigenvalue  $(1-\lambda+(N-1)=\lambda+N$,
+and  all the vectors which are orthogonal
+to the vector $\bf t$  has eigenvalue $1-\l$. Hence 
+ $$
+P_M(\lambda)=\det (M-\l)=
+\det\left(\left(1-\lambda\right)\delta_{ik}+t_it_k\right)=
+  (\lambda+N)(1-\lambda)^{N-2}
+    $$
+
+\bye
+

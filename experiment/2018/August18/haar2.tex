@@ -1,0 +1,257 @@
+
+
+\magnification=1200 
+
+
+\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\S  {{\bf S}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\ll {{\bf l}}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\pt {{\bf p}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def \G{{\cal G}}
+\def\w {{\omega}}
+% I began this file on 18 August 2018
+
+
+\centerline {Statements on Haar measure}
+
+Let  $G$  be a group and let $\mu$ be a left-invariant meausure
+defined by the volume-form----left-invariant $n$-form $\omega$:
+         $$
+ \forall g\in G\,,\quad    L_g \omega=\omega\,,
+         $$
+i.e.
+         $$
+\forall g\in G\,,\quad      
+\omega\left(\left[g^{-1}x(t)\right]\right)=
+     \omega\left(\left[x(t)\right]\right)
+         $$
+
+If
+    $$
+\int_G f\omega=\int f(x)\mu(dx)
+    $$
+then
+         $$
+  \int f L_g\omega=\int f(x)\mu (dx')=\int f(gx)\mu (dx)\,.
+         $$ 
+
+\bigskip
+
+
+   \centerline {${\cal x}2$ {\tt Construction of Haar measure}}
+
+Let $G$  be a group. We assume that it is differentiable manifold.
+   Consider the volume form 
+            $$\w_0=cdy^1\dots dy^n
+            $$  at the unity.
+   Now using left-invariance we define the form at the arbitrary
+  element.   
+
+Let $x=x_0$  be a point of $G$.   We consider a map    
+$$
+L_{x_0^{-1}}\colon \quad y=x_0^{-1}\circ x
+   \eqno (2.1)
+$$
+This map sends a vicinity of the
+ point $x_0$ to a vicinity of  unity.
+
+We define  the form  $\w$ at the point $x_0$ as the pull-back
+of the form $\w_0$:
+            $$
+\w\big\vert_{x_0}=L^*_{x_0^{-1}}\w_0\,,\quad
+        $$
+  For arbitrary $n$ vectors $\t_1,\dots,t_n\in T_{x_0}G$,
+       $$
+\w(x_0,\t_1,\dots,\t_n)=
+\w\left(e,
+   \left(L_{x_0^{-1}}\right)_*\t_1,
+     \dots
+   \left(L_{x_0^{-1}}\right)_*\t_n,
+    \right)
+            $$
+In particular
+
+ $$
+\w\left(x_0, {\p\over \p x^1},\dots,{\p\over \p x^n}\right)=
+\w\left(y(x_0), 
+  {\p y^i\over \p x^1}{\p \over \p y^i},
+       \dots,
+  {\p y^i\over \p x^n}{\p \over \p y^i},
+\right)=
+\det\left({\p y^i\over \p x^j}\right)\big\vert_{x_0}\,,
+  $$
+   where $y=y(x)$ is a map defined by equation (2.1).
+
+{\tt Useful formula} which related apperanace of the form
+at the point $x_0$ and $e$:
+         $$
+  \w=\w(y(x))\det \left({\p y\over \p x}\right)
+  dx^1\wedge \dots \wedge dx^n
+         $$
+
+{\bf Example}   Consider groups
+    $G_1$  of translations of $\R$:
+               $$
+G_1=\{ G_1\ni g=\a\colon g\circ x=\a\circ x=x+\a \}\,,
+               $$
+    $G_2$ of affine transformations of $\R$:
+               $$
+G_2=\{ G_2\ni g=(a,\a)\colon \,,\quad \forall x\in \R\,,\quad
+g\circ x=(a,\a)\circ x=ax+\a \}\,,
+               $$
+and  $G_3$  of projective transformation of  $\R P$:
+               $$
+G_3=\left\{ G_3\ni g=\pmatrix{a & b\cr c & d\cr }\colon \,\quad
+\forall [x:y]\in \R P
+g\circ x=\pmatrix{a & b\cr c & d\cr }\circ [ax+by:cx+dy]\,\right\}\,,
+               $$
+Calculate Haar meausre of these groups.
+
+1) For  $G_1, \mu=d\a$
+
+2)   For $G_2$.    
+
+Considee a form  
+        $$
+\omega_g\colon\quad \omega_g=Ad_g \omega:\quad
+   Ad_g\omega ([x(t)])=
+   \omega (g^{-1}[x(t)]g)\quad
+f\mapsto \int_G f\omega_g=\int f(gxg^{-1})\mu(dx)\,.
+        $$
+This is also left-invariant volume form:
+             $$
+L_h \omega_g=
+L_h \omega \left([x(t)]\right)=
+\omega_g \left([h^{-1}x(t)]\right)=
+\omega \left([g^{-1}h^{-1}x(t)g]\right)=
+\omega \left(hg^{-1}[x(t)g]\right)=
+      $$
+      $$
+\omega \left([x(t)g]\right)=
+\omega \left([g^{-1}x(t)g^{-1}]\right)=
+\omega_g \left([x(t)]\right)\,.
+             $$
+Hence
+      $$
+    \omega_g=\Delta(g)\omega\,.
+      $$
+We see that   $\Delta(g)$  is the determinant of the linear operator
+  $Ad_g$  acting at the unity:
+       $$
+\Delta(g)=\det Ad_g\,.
+       $$
+Hence $\Delta$  is homomorphism of $G$ into subgroup of $\R^*$
+($\R^*=\R\backslash \{0\}$).
+
+
+{\bf Theorem}  If $G$  is compact connected group then  $\Delta\equiv 1$,
+i.e. it is unimodular.
+
+{\tt Proof} Image of $\Delta$ is compact? subgroup of $\R^*$,
+hence it is $\{1\}$.
+
+\bigskip
+
+How to construct right invariant measure?
+  
+
+
+{\bf Statement}  A form
+       $$
+\sigma(x)=\omega(x)\Delta(x^{-1})\,.
+       $$
+  is the right invariant form. 
+
+
+
+
+{\tt Proof}   Show it explicitly using the invariance of the initial
+volume form with respect to the left action:
+             $$
+\omega_R([x(t)g^{-1}])=
+\omega([x(t)]g^{-1})\Delta\left(\left(xg^{-1}\right)^{-1}\right)=
+         $$
+         $$
+\omega\left(g^{-1}\left(\left[x(t)\right]
+g^{-1}\right)g\right)\Delta(x^{-1})=
+           $$
+          $$
+\omega\left(g^{-1}\left[x(t)\right]
+\right)\Delta(x^{-1})=
+  \omega \left(\left[x(t)\right]\right)\Delta(x^{-1})=\omega_R(x)\,.
+            $$
+
+
+
+{\bf Remark}  
+If we define $\Delta(g)\to \Delta(g^{-1})=
+{\omega (gx)\over \omega (x)}$
+then
+       $$
+\omega_R(x)=\omega(x)\Delta(x)\,.
+       $$
+
+
+{\bf Examples}
+
+
+1.  Volume of $GL(n,\R)$
+                   $$
+         \omega=(\det A_{ik})^x \prod_{i,k}dA_{ik}
+                    $$
+ 
+
+{\bf Theorem on meause of the product}
+Let  $G=P\times Q$, and let
+   $\mu_P(dx)$  be Haar meausure on $P$, 
+  and
+   $\mu_Q(dy)$  be Haar meausure on $Q$, 
+   then the Haar measure  on $G$  is defined by
+         $$
+    \int_G f(g)\mu(dg)=
+      \int_{P\times Q}
+      f(xy)\Delta(y)\mu_P(dx)\mu_Q(dy)\,,
+         $$     
+ where $\Delta$  be module of $G$
+
+
+\bye

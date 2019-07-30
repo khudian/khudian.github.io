@@ -1,0 +1,128 @@
+\magnification=1200
+\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\S  {{\bf S}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\ll {{\bf l}}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\pt {{\bf p}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def \G{{\cal G}}
+\def\w {{\omega}}
+\def \Tr  {{\rm Tr\,}}
+\def\V {{\cal V}}
+% I began this file in September  2018
+
+For real case I know it from childhood, but for the complex
+case it is little bit fun: Today I did the proof which
+works for both cases.
+
+         CBH claims that
+       $$
+\langle f, f\rangle 
+\langle g, g\rangle 
+         =
+ ||f||^2 ||g||^2\geq |\langle f,g\rangle|^2
+       $$
+   Consider the following polynomial on $z=x+iy$:
+      $$
+P(z)=||f||^2||zf+g||^2=\langle f,f\rangle 
+\langle zf+g,zf+g\rangle
+      $$
+It is not negative hence we have
+         $$
+0\leq P(z)=||f||^2||fz+g||^2=
+          ||f||^2 
+\left\langle
+   fz+g\,,
+   fz+g
+ \right\rangle
+=
+             $$
+             $$
+    =||f||^2
+\left\langle
+\left\langle
+f,f
+\right\rangle
+    z \bar z+
+z\langle f,g\rangle+
+\langle g,f\rangle \bar z+
+     \langle g,g\rangle
+\right\rangle
+      =
+ ||f||^2
+                \left( 
+   ||f||^2|z|^2 +z\langle f,g\rangle +
+\langle g,f\rangle \bar z+ ||g||^2\right)=
+                $$
+                 $$
+ \left\langle 
+      ||f||^2 z+\left\langle g,f\right\rangle\,,
+      ||f||^2 z+\left\langle g,f\right\rangle
+     \right\rangle
+          +||f||^2||g||^2-\left|\langle f,g\rangle \right|^2\,.
+           \eqno (*)
+            $$
+This implies that
+                 $$
+  ||f||^2||g||^2\geq \left|\langle f,g\rangle \right|^2\,,
+           \eqno (**)
+                          $$
+and
+                              $$
+   ||f||^2||g||^2=\left|\langle f,g\rangle \right|^2 \Leftrightarrow 
+       f || g\,.
+                $$
+  Indeed if $f=0$, then this is obvious.
+ Suppose that $f\not=0$.
+and choose   $z=-{\langle f,g\rangle\over ||f||^2}$.
+Then the inequality (*) implies that
+       $$
+P(z)\big\vert_{z=-{\langle f,g\rangle\over ||f||^2}}=
+  \left\langle 
+      ||f||^2 z+\left\langle g,f\right\rangle\,,
+      ||f||^2 z+\left\langle g,f\right\rangle
+     \right\rangle\big\vert_{z=-{\langle f,g\rangle\over ||f||^2}}
+          +||f||^2||g||^2-\left|\langle f,g\rangle \right|^2=
+          ||f||^2||g||^2-\left|\langle f,g\rangle \right|^2\geq 0\,.
+       $$ 
+We come to $(**)$.
+
+
+\bye

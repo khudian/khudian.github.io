@@ -1,0 +1,282 @@
+ 
+
+\magnification=1200
+\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\C {{\cal C}}
+\def\L {{\cal L}}
+\def\E {{\cal E}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\Z {{\bf Z}}
+\def\R  {{\bf R}}
+\def\l {\lambda}
+\def\ll {{\bf l}}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\pt {{\bf p}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\f{{\bf f}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def\w {{\omega}}
+\def \Tr  {{\rm Tr\,}}
+\def\dim {{\rm dim\,\,}}
+% I wrote this file on 16 January
+\def\t {{\tilde}} 
+\def\dist {{\hbox{\tt "distance"}}}
+
+
+{{\bf  one fact in symplectic linear algebra}{\tt
+Guill.Sternberg} }
+
+Let $V$  be finite dimensional symplectifc vector space.
+
+Let $A$ be linear transformation
+of symplectic space $V$ such that
+  $$
+\langle Au,v\rangle
+      +
+\langle u,Av\rangle=0\,,
+ \eqno (1)
+      $$
+i.e. $A\in sp(V)$.
+Here  $\langle \_,\_\rangle$ is antisymmetric
+non-degenerate bilinear form, the symplectic scalar
+product.
+
+
+One can consider bilinear form:
+       $$
+H(u,v)=P(u,v)
+       $$
+We see that it is symmetric. (This form plays the role
+of Hamiltonian.)
+     
+Conisder generalised eigen spaces of $A$:
+    $$
+V_\lambda=\{\x\in V\colon\quad (A-\lambda)^\infty x=0\}
+     $$
+("Infinity" means the enough big integer. More carefully
+one has to write instead this formula the following
+    $$
+V_\lambda=\{\x\in V\colon\quad 
+\hbox{there exists natural $K$ such that}\,\,
+(A-\lambda)^k x=0\}
+     $$
+$k$ in fact depends on $\x$, however it is less than
+dimension of $V$, hence one can write:
+    $$
+V_\lambda=\{\x\in V\colon\quad 
+(A-\lambda)^N x=0\}\,,\quad {\rm where}\,\, N>{\rm
+dim\,}V 
+$$
+
+
+
+
+Proposition
+
+a) 
+  $$
+V_\lambda=\left(\left(A+\lambda\right)^N
+V\right)^\perp
+       $$
+
+b)
+         $$
+      {\rm dim\,}V_\lambda=
+      {\rm dim\,}V_{-\lambda}\,.
+     $$
+
+\smallskip
+
+
+
+Recall that for an arbitrary operator $P$ in finite
+dimensional space $V$
+      $$
+{\rm dim \,} \left({\rm Im\,}P\right)^\perp=
+{\rm dim \,} \left({\rm ker\,}P\right)
+      $$
+and
+   $$
+ V_\lambda={\rm ker\,}(A-\lambda)^N
+    $$ 
+hence b) follows from a) since
+      $$
+{\rm dim} V_{-\lambda}=
+{\rm dim\,}{\rm ker\,}(A+\lambda)^N=
+{\rm dim\,}\left({\rm Im\,}(A+\lambda)^N\right)^\perp
+{\rm dim} V_{\lambda}\,.
+      $$
+
+Now prove a)
+
+Note that condition (1) implies that
+    $$
+\langle (A-\lambda)u,v\rangle
+=-\langle u, (A+\lambda)v\rangle
+ \eqno (2)
+    $$
+
+   Take an arbitrary $x\in V$. If $x\in V_\lambda$
+then for arbitrary $\y\in {\rm Im}(A+\lambda)$ we have
+          $$
+\langle x,y\rangle =
+\langle x, (A+\lambda)^N v\rangle
+=(-1)^N
+\langle  (A-\lambda)^N x,y\rangle=0\Rightarrow 
+V_\lambda\subseteq 
+\left(\left(A+\lambda\right)^N V\right)^\perp
+          $$
+In its turn  suppose that for an arbitrary $x\in V$, 
+$x\in 
+\left(\left(A+\lambda\right)^N V\right)^\perp$,
+i.e. for an arbitrary $v\in V$
+     $$
+\langle x, (A+\lambda)^N v\rangle=0 
+     $$
+Now using (2) we have that
+    $$
+\langle x, (A+\lambda)^N v\rangle=0=
+(-1)^N 
+\langle (A-\lambda)^N x,v\rangle=0\,.
+     $$     
+Since this equation holds for an arbitrary $v\in V$,
+then non-degeneracy of scalar product on $V$ implies that
+$(A-\lambda)^N x=0$, i.e. $x\in V_\lambda$. Hence
+we have proved that
+$\left(\left(A+\lambda\right)^N V\right)^\perp
+\subseteq V_\lambda$ also.
+Hence we proved proposition.
+
+
+\bigskip
+
+
+{\bf Theorem}. Let $X$ be an arbitrary Lagrangian
+plane  in $V$.
+
+{\it 
+
+a) The set of Lagrangian planes which are transversal to $X$
+is in one-one correspondence with set of ,
+linear operators $P$, such that
+     $$
+(Pu,v)+(u,PV)=(u,v)\,,
+    \eqno (3a)
+     $$
+and
+       $$
+  {\rm ker\,}P=X\,.
+     \eqno (3b)
+       $$
+\m
+
+b) The set of ${\cal L}_X$ of Lagrangian planes which is
+transversal
+to the plane given Lagrangian plane  $X$  is  an affine
+space.
+The vector space associated with the affine space $\L_X$
+is the  vector space of symmetric 
+bilinear forms on the factor space 
+$V\backslash X$.  In particular
+   $$
+{\rm dim\,}\L_X={n{n+1}\over 2}\,,\quad ({\rm dim
+\,}V=2n)\,.
+   $$
+
+
+}
+
+{\bf Remark}  Condition (3a) means that operator
+$P={1\over 2}+A$, where $A$ belongs to $sp(V)$.
+
+\smallskip
+
+{\tt Proof}
+
+Indeed suppose that $Y$ is Lagrangian surface which is
+transversal to $X$. Define 
+   $$
+P\colon\,\, P(u)=P(\x+\y)=\y\,,
+   $$
+where $u=\x+\y$  is the expansion of vector over
+Lagrangian surfaces $X$ and $Y$:
+           $$
+V=X\oplus Y\,,V\ni u=\x+\y\,,\,\, \x\in  X\,,\y\in Y\,.
+           $$
+One can see that condition  (3b) evidently holds.
+Check condition (3a).
+For vectors $u=\x+\y$ and $\v=\x'+\y'$
+      $$
+\langle Pu,v\rangle
++
+\langle Pu,v\rangle=
+\langle \y, \x'+\y'\rangle
+       +
+\langle \x+\y,\y'\rangle=
+\langle \y, \x'\rangle
+       +
+\langle \x,\y'\rangle=
+\langle\x+\y,\x'+\y'\rangle
+    =
+\langle u,v\rangle\,,
+      $$ 
+i.e.  condition (3a) holds also.
+
+\smallskip
+
+Now suppose that $P$ is linear operator which obeys
+conditions (3a) and (3b).
+
+
+ Consider subspace $Y={\rm Im}P$.
+Vectors of  $Y={\rm Im } P$ are eigenvectors with
+eigenvalue $1$: 
+
+
+ $X=V_0$ and $Y=V_1$.
+It is easy to see that equation (3a) implies that $Y$ is
+Lagrnagian. Indeed ${\rm dim} Y=n$ (${\rm dim} V=N=2n$)
+and \footnote{$^{1)}$}{in fact proof follows from Proposition applied
+to the  operator $A=P-{1\over 2}$}:
+       $$
+\langle \y, \y'\rangle=
+\langle P(\y), \y'\rangle+
+\langle \y, P(\y')\rangle=
+ 2\langle \y, \y'\rangle\Rightarrow
+\langle \y, \y'\rangle=0\,.
+       $$
+
+\bigskip
+
+Now study the set $\L_X$.
+It is set of projectors $P$ which obey to conditions
+(3a) and (3b). Condition 3a) means that  $P-{1\over 2}$
+belongs to Lie algebra of the group of linear symplectic
+transfromations. and condition (3b) means that
+the corresponding 'Hamiltonian' is vanished on $X$.
+Hence i
+\bye

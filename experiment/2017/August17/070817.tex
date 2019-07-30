@@ -1,0 +1,459 @@
+
+
+
+
+\magnification=1200 
+
+
+\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\w {\omega}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\L {{\cal L}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\bf H}}
+\def\R  {{\bf R}}
+\def\S  {{\bf S}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\pt {{\bf pt}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def \G{{\cal G}}
+\def\ss  {\sigma_{\rm sph}}
+\def\grad {{\rm grad\,}}
+% I began this file on 31 July 2017
+
+
+\centerline {\bf Calculation for Green 
+function of disc and half-plane.}
+
+
+
+Recall that if $G_U(z_0,z)$ is Green function
+of domain $U$ then 
+the identity
+      $$
+  \int_U \left(u\Delta v-v\Delta v\right)=
+\int_{\p U}\left(u *dv-v *du\right) 
+ \eqno (0.1)
+      $$
+implies that
+         the function
+      $$
+u(\zeta)=\G_U(\zeta,z)f(z)\Omega+
+\int_{\p U} *d_{(z)}G(\zeta,z)\mu\,,\quad
+   (\Omega \hbox{is area form on $z$-plane})
+ \eqno (0.2)
+      $$
+is the solution of boundary problem
+       $$
+\cases{
+   \Delta u=f\cr u\big\vert_{\p U}=\mu\cr
+         }
+   \eqno (0.3)
+       $$
+
+\m
+
+   \centerline {\bf Green function for disc}
+
+     Having a map
+         $$
+z\to w={z-\zeta\over 1-\bar\zeta z }
+         $$
+which maps unic disc onto unit disc and 
+boundary on boundary, and
+the point $\zeta$ on the centre we define
+               $$
+    G(z_0,z)=-{1\over 2\pi}\log
+            \left|
+   {z-z_0\over 1-\bar {z_0}z}
+            \right|
+               $$ 
+  One can see that
+              $$
+  *dG_{z}=\Omega{\cal c}\grad G_{z}=
+rdr\wedge d\varphi{\cal c}
+\left({\p G\over \p r}{\p \over \p r}+
+{1\over r^2}{\p G\over \p \varphi}{\p \over \p \varphi}\right)=
+  r{\p G\over \p r}{\p \over \p r}d\varphi-{1\over r}{\p G\over \p \varphi}dr
+              $$
+($z=x+iy=r\cos\varphi_ir\sin\varphi$, $z_0=R\cos\theta+iR\sin\theta$)
+   We need derivatives of Green function on boundary $r=1$:
+              $$
+  *dG_{z}\big\vert{|z|=1}=-\Omega{\cal c}
+    \grad G_{z}\big\vert{|z|=1}=
+  -r{\p G\over \p r}{\p \over \p r}\big\vert_{r=1}d\varphi=
+              $$
+      $$
+-r{\p\over \p r}\left(
+        -{1\over 2\pi}
+\log \left|r^{i\varphi}-Re^{i\theta}\right|
+        +{1\over 2\pi}
+\log \left|1-Re^{-i\theta}r^{e^{i\varphi}}\right|
+  \right)\big\vert_{r=1}d\varphi=
+      $$
+      $$
+-r{\p\over \p r}\left(
+        -{1\over 2\pi}
+\log \sqrt{R^2-2Rr\cos(\theta-\varphi)r+r^2}
+        +{1\over 2\pi}
+\log \sqrt{1-2Rr\cos(\theta-\varphi)r+R^2r^2}
+       \right)\big\vert_{r=1}d\varphi=
+      $$
+         $$
+      -{1\over 2\pi} 
+{1-R^2\over 1-2R\cos(\theta-\varphi)+R^2}d\varphi
+            $$
+
+{\bf Remark} (Peut etre un problem de sign?)
+
+
+This we have the solution of Dirichle problme for the circle:
+if $W$ harmonic function in the disc $D\colon\,x^2+y^2<1$
+such that $W_{\p D}=\mu(\varphi)$
+($r\to 1$????) then
+         $$
+W(R,\theta)={1\over 2\pi}
+      \int_0^{2\pi}\mu(\varphi)
+{1-R^2\over 1-2R\cos(\theta-\varphi)+R^2}d\varphi\,.
+         $$
+
+Look at this formula.
+It is useful sometimes to write it:
+
+         $$
+W(R,\theta)={1\over 2\pi}
+      \int_0^{2\pi}\mu(\varphi)
+{1-R^2\over (1-Re^{ i(\theta-\varphi)})
+            (1-Re^{-i(\theta-\varphi)})}d\varphi\,.
+         $$
+
+Notice also that 
+If $\mu(\varphi)=C$ then obviously
+          $$
+W(R,\theta)=\cases{C \,\hbox{for $R<1$}\cr 
+{C\over 2}\,\hbox{for $R=1$} }
+          $$
+if $\mu(\varphi)=e^{in\varphi}$, $n\geq 0$ then 
+          $$
+W(R,\theta)=\cases{z^n=R^n e^{in\varphi}\,\hbox{for $R<1$}\cr 
+\,\hbox{for $R=1$} }
+          $$
+ then we come to harmonic polynomials.....
+
+{\bf Remark} {\it In the formula (*) there is a jump,
+so to be more precise we have to write:
+
+         $$
+W(R,\theta)=\lim_{R\to R_-}{1\over 2\pi}
+      \int_0^{2\pi}\mu(\varphi)
+{1-R^2\over (1-Re^{ i(\theta-\varphi)})
+            (1-Re^{-i(\theta-\varphi)})}d\varphi\,.
+         $$
+sure this is important only for $R=1$:
+         $$
+W(1,\theta)=\lim_{R\to 1_-}{1\over 2\pi}
+      \int_0^{2\pi}\mu(\varphi)
+{1-R^2\over (1-Re^{ i(\theta-\varphi)})
+            (1-Re^{-i(\theta-\varphi)})}d\varphi\,.
+         $$
+}
+
+{\bf Remark 2} {\it All this can be done much more easilly 
+using Fourier transform :
+Indeed if $\mu(\varphi=e^{ik\theta})$
+then $W=r^ke^{ik\varphi}$, hence 
+           $$
+W(R,\theta)=\sum\mu_k R^k e^{ik\theta}=
+  {1\over 2\pi}\sum_k\left(
+   \int_0^{2\pi}\mu(\varphi)e^{-ik\varphi}d\varphi\right)
+         R^{|k|} e^{ik\theta}=
+           $$
+      $$
+     {1\over 2\pi}\int_0^{2\pi}
+\left(\sum_{k=-\infty}^{k=\infty}
+   R^{|k|}e^{ik(\theta-\varphi)}\right)
+      d\varphi
+      = {1\over 2\pi}\int_0^{2\pi}
+\left(
+{1\over 1-Re^{i(\theta-\varphi)}}+
+{1\over 1-Re^{-i(\theta-\varphi)}}-1
+\right)
+      d\varphi
+      $$
+}
+
+\m
+
+Sure we can solve Dirichle problem
+just using angle function.
+  Recall shortly the calculation of
+ angle function
+            $$
+       Angle_C(\R)=\int_C{(x-X)dy-(y-Y)dx} 
+             $$
+(compare with $*d\log|z|={xdy-ydx\over (x-X)^2+(y-Y)^2}$).
+Put $x=\cos\varphi, y=\sin\varphi$ we come to
+           $$
+   L(R,\theta,\varphi)d\varphi=
+  {(x-X)dy-(y-Y)dx\over (x-X)^2+(y-Y)^2}
+\big\vert_
+{X=R\cos\theta, Y=R\sin\theta,x=\cos\varphi,y=\sin\varphi}=
+           $$
+       $$
+    {1-R\cos(\theta-\varphi)\over 
+1-2R\cos(\theta-\varphi)+R^2}d\varphi
+       $$
+
+Now we solve Dirichle problem via integral equation.
+
+  Consider the distribution $\nu(\varphi)$ on the circle.
+  It defines thefunction:
+              $$
+     U(R,\theta)=
+\int_0^{2\pi}\nu(\varphi)
+    L(R,\theta,\varphi)d\varphi=
+\int_0^{2\pi}\nu(\varphi)
+    {1-R\cos(\theta-\varphi)\over 
+1-2R\cos(\theta-\varphi)+R^2}d\varphi\,.
+              $$
+This function is harmonic in the interior of the disc
+, in the exterior of the dis, but it has the jump:
+            $$
+    U(R,\theta)\big\vert_{R=1-0_+}=
+    U(R,\theta)\big\vert_{R=1}+\pi\nu(\theta)\,,\quad
+    U(R,\theta)\big\vert_{R=1+0_+}=
+    U(R,\theta)\big\vert_{R=1}-\pi\nu(\theta)\,.
+            $$
+
+In particular we come to the harmonic function
+in the disc such that its values at the boundary are equal to
+        $$
+\mu(\varphi)=
+    U(R,\theta)\big\vert_{R=1-0_+}=
+    U(R,\theta)\big\vert_{R=1}+\pi\nu(\theta)=
+       $$
+       $$
+\int_0^{2\pi}\nu(\varphi)
+    {1-R\cos(\theta-\varphi)\over 
+1-2R\cos(\theta-\varphi)+R^2}\big\vert_{R=1}d\varphi+
+\pi\nu(\theta)=
+   {1\over 2}\int_0^{2\pi}\nu(\varphi)
+    d\varphi+
+\pi\nu(\theta)
+        $$
+This is linear integral equation on the function  
+$\nu(\theta)$:
+       $$
+\mu(\theta)=
+     {1\over 2}\int_0^{2\pi}\nu(\varphi)
+    d\varphi+
+\pi\nu(\theta)\,.
+        $$
+Solving it we come to
+        $$
+\nu(\theta)={\mu(\theta)\over \pi}-{1\over 4\pi^2}
+\int_0^{2\pi}\mu(\varphi)d\varphi\,.
+         $$
+Hence   $$
+     U(R,\theta)=
+\int_0^{2\pi}\nu(\varphi)
+    L(R,\theta,\varphi)d\varphi=
+        $$
+        $$
+\int_0^{2\pi}\left[
+   {\mu(\varphi)\over \pi}-{1\over 4\pi^2}
+\int_0^{2\pi}\mu(\tau)d\tau\right]
+    L(R,\theta,\varphi)d\varphi=
+       $$
+       $$
+\int_0^{2\pi}\mu(\varphi){L(R,\theta,\varphi)\over \pi}-
+\int_0^{2\pi}{L(R,\theta,\varphi\over \pi}d\varphi\cdot
+ {1\over 4\pi^2}\int_0^{2\pi}\mu(\tau)d\tau=
+        $$
+        $$
+\int_0^{2\pi}\mu(\varphi){L(R,\theta,\varphi)\over \pi}-
+2\pi\cdot
+ {1\over 4\pi^2}\int_0^{2\pi}\mu(\varphi)d\varphi=
+{1\over \pi}
+  \int_0^{2\pi}\mu(\varphi)
+  \left(L(R,\theta,\varphi)-{1\over 2}\right)d\varphi=
+              $$
+         $$
+       {1\over \pi}
+  \int_0^{2\pi}\mu(\varphi)
+  \left({1-R\cos(\theta-\varphi)\over 
+1-2R\cos(\theta-\varphi)+R^2}-{1\over 2}\right)d\varphi
+       =
+ {1\over 2\pi}
+  \int_0^{2\pi}\mu(\varphi)
+  \left({1-R^2\over 
+1-2R\cos(\theta-\varphi)+R^2}-{1\over 2}\right)d\varphi
+         $$
+Thus we come to the solutioj of Dirichle problem.
+
+{\bf Remark} {\it Sure using angle function we can reconstruct
+not only $*dG$ but the Green fucntion also.
+We take the ordinary Green function, $G_\infty(z_0,z)$
+and using Dirichle problem solution we will find harmonic
+function $W$ such that $G_\infty+W$ becomes the Green function:
+  this harmonic function is the soluton of
+Dirichle problem $W\big\vert_{boundary}=-
+G_\infty\big\vert_{boundary}$
+}
+
+\bigskip
+
+\centerline{Upper-half plane: Green function, Dirichle problem}
+G
+We know that $w={iz+1\over z+i}$ maps $\H\leftrightarrow D$
+  (in fact this is not arbitrary: see the blog on 10-th August)
+
+taking composition we come to the map:
+        $$
+w=w(\xi,z)={{iz+1\over z+i}-{i\zeta+1\over \zeta+i}
+        \over 
+ 1-{-i\bar\zeta+1\over \bar\zeta-i}{iz+1\over z+i} }
+        $$
+maps upper half plane $H$ on the disc $x^2+y^2<1$
+and a point $\zeta$ on the centre.
+
+Hence Green function for half-plane is
+        $$
+  G(z_0,z)=\log|w(z_0,z)|
+   \eqno (3.1)
+        $$
+{\bf Remark} {this is very stupid way to calculate
+Green function. Much easier another way: see the blog on 10 August!}
+
+ It seems that here it is much easier way to 
+calculate Dirichle problem solution
+straightforwardly, using angle function.
+We will do it, but in tomorrow file you will see that
+it is much easier to calculate straightforwardly Green function
+using reciprocity method.
+   
+Indeed due to
+       $$
+   A_C(\R)=\int_C {(x-X)dy-(y-Y)dx\over (x-X)^2+(y-Y)^2}
+       $$
+Put $x=t,y=0$ we come to
+          $$
+L(\R,t)dt={Ydt\over (t-X)^2+Y^2}=
+d\left(\arctan{t-X\over y}\right)
+          $$
+The potential of double layer with density $\nu(t)$
+(compare with disc) is equal to
+        $$
+U(X,Y)=\int_{-\infty}^{\infty}\nu(t)
+   {Ydt\over (t-X)^2+Y^2}
+      eqno (2.1)
+        $$
+in the same way as for the circle
+          $$
+  U(X,0_+)=\pi\nu(x)+U(X,0),
+          $$
+but for the boundary of half plane this function vanishes:
+the calculations are simpler, we do not need
+to solve the integral equation. The function
+       (2.1)  is the solution of Dirichle problem:
+          $$
+\cases {
+  \Delta W=0\cr
+  W\big\vert=\mu(x)
+}
+  \Rightarrow    W(X,Y)={1\over \pi}
+   \int_{-\infty}^{\infty}\mu(t)
+   {Ydt\over (t-X)^2+Y^2}
+\eqno (2.2) 
+          $$  
+
+{\bf Remark} {\it One can see straightforwardly that
+the function
+           $$
+ F(X)=\lim_{Y\to 0}{Ydt\over (t-X)^2+Y^2}=\pi\delta(t-x)\,.
+           $$
+Indeed   $F(X)=0$ for all  $X\not=t$ and $\int F(X)dX=\pi$
+
+  This implies the boundary condition
+
+}
+
+Calculate Green function using solution of Dirichle problem:
+  Let
+             $$
+G_\H(z_0,z)=G_{\rm classic}(z_0,z)+W=
+          $$
+        $$
+     -{1\over 2\pi}\log|z-z_0|+W=
+     -{1\over 2\pi}\log\sqrt {(x-X)^2+(y-Y)^2}+W(x,y)
+              $$
+The condition that $G_\H$ vanishes at absolute implies that
+        $$
+W(x,y)\big\vert_{y=0}=
+     {1\over 2\pi}\log\sqrt {(x-X)^2+(y-Y)^2}\big\vert_{y=0}=
+     {1\over 2\pi}\log\sqrt {(x-X)^2+Y^2}
+     $$
+thus we have that in Dirichle problem (2.2)
+$\mu(t)={1\over 2\pi}\log\sqrt {(t-X)^2+Y^2}$, thus
+     $$
+W(x,y)={1\over 2\pi^2}
+   \int_{-\infty}^{\infty}\log\sqrt {(t-X)^2+Y^2}
+   {ydt\over (t-x)^2+y^2}
+      $$
+and
+      $$
+G_\H(z_0,z)=
+     -{1\over 2\pi}\log\sqrt {(x-X)^2+(y-Y)^2}+
+       {1\over 2\pi^2}
+   \int_{-\infty}^{\infty}\log\sqrt {(t-X)^2+Y^2}
+   {ydt\over (t-x)^2+y^2}\,.
+      $$
+
+It seems that calculation of the integral here are not  an easy task.
+But instead,  note that the Green function can be immediately
+    obtained using symmetry arguments:
+         $$
+  G_\H(z_0,z)=-{1\over 2\pi}\left(\log|z-z_0|-\log|z-\bar z_0|\right)=
+     -{1\over 2\pi}\log\sqrt {(x-X)^2+(y-Y)^2}+
+    {1\over 2\pi}\log\sqrt {(x-X)^2+(y+Y)^2}+
+            $$
+Thus:
+                      $$      
+   \int_{-\infty}^{\infty}\log\sqrt {(t-X)^2+Y^2}
+   {ydt\over (t-x)^2+y^2}=
+  ...\log|z-\bar z_0|=
+    ...\log\sqrt {(x-X)^2+(y+Y)^2}+
+                     $$
+Beautiful, is not it???
+\bye

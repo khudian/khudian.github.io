@@ -1,0 +1,160 @@
+\magnification=1200
+\def\r {{\bf r}}
+\def\vare {\varepsilon}
+\def\a {\alpha}
+In Lobachevsky space one can embeed Eculdian plane,
+  Euclidean sphere and Lobachevsky plane: e.g.
+if Lobahcevsky space is realised as $\bf H^3$:
+           $$
+   G={dx^2+dy^2+dz^2\over z^2}\,,,,,  z>0
+           $$
+then
+      $$
+   M_a=\{x,y,z\colon x+x_0\}
+      $$  
+is Lobachevsky subspace
+(any equidistant of Lobachevsky plane is also Lobachevsky plane)
+equidistant.
+
+Any sphere $S_a=\{\r\colon d(\r,A)=a\}$
+is Euclidean sphere, and
+ any horysphere
+       $$
+  L=\{\r\colon   z=a\}
+        $$
+         is Euclidean plane.
+
+
+On the other hand one cannot embedd Lobachevsy plane in $\bf E^3$.
+This was proved by Hilbert. Idea of this Theorem is that
+a disc of radius $R$ cannot be the part of the triangle, quadrangle,
+since the area of triangle is less than equal to $\pi$
+and area of the circle grows with $R$.
+
+    Consider the Eucldean circle $x^2+(y-a)^2=R^2$
+with $R<a$. Its hyperbolic area is equal to
+             $$
+S_{\rm hyperbolic}=\int_{x^2+(y-a)^2-R^2\leq 0}{dxdy\over y^2}=
+              $$
+      $$
+\int_{-R}^{R} dx\left(
+  \int
+   ^{a+\sqrt {R^2-x^2}}
+   _{a-\sqrt {R^2-x^2}}
+     {dy\over y^2}
+      \right)
+    =
+     \int_{-R}^{R} dx
+         \left(
+  \left(-{1\over y}\right)\big\vert
+   ^{a+\sqrt {R^2-x^2}}
+   _{a-\sqrt {R^2-x^2}}
+       \right)=
+      $$
+       $$  
+     \int_{-R}^{R} 
+         \left(
+  {1\over a-\sqrt {R^2-x^2}}
+          -
+  {1\over a+\sqrt {R^2-x^2}}
+       \right)dx
+        =
+     4\int_0^R{\sqrt {R^2-x^2}\over a^2-R^2+x^2}dx\,.
+       $$
+
+To caluclate this integral use complex variable.
+
+   Consider contours   $C_{\delta}$ and $C_N$  
+such that $C_\delta$ is closed curve which
+ goes anti-clockwise around points
+  $\pm R$ and this curve is very close to the $OX$ axis,
+and the curve $C_N$ is a curve of very big radius $N$
+around the centre $N$.
+(One can think e.g. that $C_\delta$ is an ellipse:
+                        $$
+   C_\delta\colon\quad {x^2\over (R+\delta)^2}+{y^2\over\delta^2}=1
+                        $$
+with $\delta$ avery small positive number, and 
+          $$
+C_N\colon\quad x^2+y^2=N^2
+                $$
+with $N\to \infty$
+
+ )
+
+
+One can see that for arbitrary rational function
+   $F(p,x)$ where $p=\sqrt {R^2-x^2}$,
+function $F(p,z)$ is meromorphic function on the complex
+plane without interior of the contour $C_\delta$, hence
+               $$
+\int_{-R}^R F(p,x)dx=
+\left({1\over 2}\int_{C_\delta} F(p,z)\right)\big\vert_{\delta\to 0}=
+\left({1\over 2}\int_{C_N} F(p,z)\right)\big\vert_{N\to 0}+
+\hbox {contribution of poles}
+               $$
+One can calculate the last integral easily using residues.
+
+  For example if $F=p^\alpha$ then the left hand side of this expression is
+equal to
+                     $$
+\int_{-R}^R p^\alpha dx=
+2\int_0^R (R^2-x^2)^\alpha dx= 
+2R^{2\a+1}\int_0^1 (1-t^2)^\alpha dt=
+         $$
+and since there are now poles in interior of $C_N\backslash C_\delta$ then
+
+         $$ 
+2R^{2\a+1}\int_0^1 (1-u)^\alpha {du\over 2\sqrt u}=
+   R^{2\a+1}B\left(\a+1,{1\over 2}\right)\,, 
+                     $$
+The same is for
+$\a={1\over 2}$ an for $\a=-{1\over 2}$.
+
+  If $\a={1\over 2}$ then
+              $$
+p^{1\over 2}=\sqrt {R^2-z^2}=iz\sqrt {1-{R^2\over z^2}}=
+iz-{iR^2\over z}+\dots
+              $$
+and integral over $C_N$ is equal to 
+               $$
+\int_{C_N} \sqrt {R^2-z^2}=
+\int_{C_N} \left(
+iz-{iR^2\over z}+\dots
+\right)=2\pi i \cdot (-iR^2)=\pi R^2\,, 
+               $$
+  If $\a=-{1\over 2}$ then
+              $$
+p^{-{1\over 2}}=
+{1\over \sqrt {R^2-z^2}}=
+  {1\over iz}+\dots
+              $$
+and integral over $C_N$ is equal to 
+               $$
+\int_{C_N} \sqrt {R^2-z^2}=
+\int_{C_N} \left(
+{1\over i z}+\dots
+\right)=2\pi i \cdot (-iR^2)=2\pi \,, 
+               $$
+({\tt ici il faut fixer le signe})
+
+ {\it Maintenent revenons aux nos moutons....:}
+  We have
+           $$
+S_{\rm hyperbolic}=\int_{x^2+(y-a)^2-R^2\leq 0}{dxdy\over y^2}=
+       $$
+        $$
+     2\int_{-R}^R{\sqrt {R^2-x^2}\over a^2-R^2+x^2}dx=
+     \int_{C_\delta}{\sqrt {R^2-z^2}\over a^2-R^2+z^2}dx=
+     \int_{C_N}{\sqrt {R^2-z^2}\over a^2-R^2+z^2}dx=
+        $$
+We have that
+         $$
+{\sqrt {R^2-z^2}\over a^2-R^2+z^2}=
+{iz\sqrt {1-{R^2\over z^2}}\over z^2\left(1+{a^2-R^2\over z^2}\right)}+
+\hbox {contribution of poles}
+         $$
+
+
+
+\bye

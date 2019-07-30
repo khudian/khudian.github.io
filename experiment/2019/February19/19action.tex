@@ -1,0 +1,206 @@
+
+
+\magnification=1200
+\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\S  {{\bf S}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\ll {{\bf l}}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\pt {{\bf p}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def \G{{\cal G}}
+\def\w {{\omega}}
+\def \Tr  {{\rm Tr\,}}
+\def\V {{\cal V}}
+% I began this file in October  2018
+
+
+
+   We calculated in October 2018 the action of
+oscillator. Now I will try to calculate it in another way,
+and understand deeper the relation of action with
+canonical transformations....
+
+
+Recall the blog on action:
+
+{\tt
+
+
+{\tt 26 October 2018}
+
+  We considered Lagrangian of harmonic osillator:
+        $$
+  L={m\dot x^2\over 2}-{mw^2x^2\over 2}\,,
+         $$
+and calculated $S(x_1,t_1;x_0,t_0)$:
+        
+First we wrote down the path  $x(t)$
+which obeys the differential equation ${d^2 x\over dt^2}+\w^2 x=0$
+and the boundary condition
+      $x(t_0)=x_0$ and $x(t_1)=x_1$. This is:
+       $$
+x(t)={
+   x_1\sin \w (t-t_0)
+       - 
+  x_0\sin \w (t-t_1)
+    \over
+        \sin \w (t_1-t_0)
+       }\,.
+       $$
+Respectively for velocity  we have
+    $$
+v(t)=\w{
+   x_1\cos \w (t-t_0)
+       - 
+  x_0\cos \w (t-t_1)
+    \over
+        \sin \w (t_1-t_0)
+       }\,.
+       $$
+Thus we have  for Lagrangian
+      $$
+L(t)=
+  \left(
+ {m v^2\over 2}-{mw^2x^2\over 2}
+    \right)_{x=x(t),v=v(t)}=
+     {m\w^2\over 2\sin^2\w(t_1-t_0)}
+      \times
+      $$
+          $$
+       \left[
+     \left(
+        x_1\cos \w (t-t_0)
+       -
+        x_0\cos \w (t-t_1)
+       \right)^2
+          -
+      \left(
+        x_1\sin \w (t-t_0)
+       -
+        x_0\sin \w (t-t_1)
+       \right)^2
+      \right]
+       =
+       $$
+$$
+     {m\w^2\over 2\sin^2\w(t_1-t_0)}
+       \left[
+    x_1^2\cos 2\w (t-t_0)
+    +
+    x_0^2\cos 2\w (t-t_1)
+         -2x_1x_0
+       \cos
+       2\w
+      \left(
+       t-{t_0+t_1\over 2}
+        \right)
+       \right]\,.
+$$
+Finally we have
+that
+       $$
+    S(x_1,t_1;x_0,t_0)=
+       \int_{t_0}^{t_1}
+   \left(
+ {m v^2\over 2}-{mw^2x^2\over 2}
+    \right)_{x=x(t),v=v(t)}         
+       =\int_{t_0}^{t_1}L(t)dt=
+       $$
+ $$
+     {m\w^2\over 2\sin^2\w(t_1-t_0)}
+        \int_{t_0}^{t_1}
+       dt
+       \left[
+    x_1^2\cos 2\w (t-t_0)
+    +
+    x_0^2\cos 2\w (t-t_1)
+         -2x_1x_0
+       \cos
+       2\w
+      \left(
+       t-{t_0+t_1\over 2}
+        \right)
+       \right]=
+$$  
+   $$ 
+     {m\w^2\over 2\sin^2\w(t_1-t_0)}
+       \left[
+    \left(x_1^2+x_0^2\right)
+      {\sin 2\w (t_1-t_0)\over 2\w}
+    -           
+         2x_1x_0
+      {\sin \w (t_1-t_0)\over \w}
+       \right]=
+     $$
+         $$ 
+     {m\w\over 2\sin\w(t_1-t_0)}
+       \left[
+    \left(x_1^2+x_0^2\right)
+      \cos \w (t_1-t_0)
+                -           
+         2x_1x_0
+       \right]\,.
+     $$
+}
+
+   Change now the angle that we look at this problem.
+
+ Instead Lagrnagian $L={1\over 2}\left(\dot q^2-q^2\right)$
+we consider Hamiltonian
+              $$
+      H={1\over 2}\left(p^2+x^2\right)
+               $$     
+
+Previously we calculated action as integral of Lagrangian over time:
+               $$
+   S(x_0,x_1,t)=      
+     {1\over 2\sin t}
+       \left[
+    \left(x_1^2+x_0^2\right)
+      \cos t
+                -           
+         2x_1x_0
+       \right]\,.
+               $$
+     
+It is useful to denote $(x,p)$ initial coordinates and momenta 
+  and by $(y,q)$ after time $T$
+
+\bye
