@@ -1,3 +1,5 @@
+  $( document ).ready(function() 
+  {
     var string = '<div align ="center"><font color="red" size="6"> <b> Hovhannes M. Khudaverdian </b></font></div>';
     string += '<p align="center">';
     string += '  <small>';
@@ -11,4 +13,8 @@
     string += '<hr>';
 
     document.getElementById("menu").innerHTML = string;
+
+  }
+  );
+
 
