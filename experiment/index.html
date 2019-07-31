@@ -11,12 +11,16 @@
       Macros: 
       {
         p: "{\\partial}",
-        t: "{\\bf t}"
+        t: ["{\\tilda #1}",1]
       }    
     },
     tex2jax: 
     {
-      inlineMath: [ ['$','$'], ["\\(","\\)"] ]
+      inlineMath: 
+      [ 
+        ['$','$'], 
+        ["\\(","\\)"]
+      ]
     }
     });
     
@@ -27,7 +31,7 @@
 
 <body>
   <div id="menu"></div>
-  <div class="mainText">
+  <div class="mainText" style="width: 600px; padding-left: 50px;">
  
 
 
@@ -57,12 +61,12 @@ This is standard.
 On the other hand the Clairaut equation (1)
 can be approached in the following way:
 
-\def\t {\tilde}
+
 
 Consider in $3$-dimensional space  $E$ $=(p,x,y)$ ($p=y'$)
 the following transformation
         $$
-(x,p,y)\to (\t x,\t p,\t y)\quad
+(x,p,y)\to (\tilde x,\tilde p,\t y)\quad
 \cases {\t x=p\cr\t p=-x\cr \t y=y-px}
         $$
 This is so called Legendre transformation of contact space
