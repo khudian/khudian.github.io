@@ -3,8 +3,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
-</script>  <script type="text/x-mathjax-config">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+  <script type="text/x-mathjax-config" src="mathJaxConfig.js">
     MathJax.Hub.Config({
     TeX: 
     {
@@ -20,14 +21,11 @@
     {
       inlineMath: 
       [ 
-        ['$','$'], 
-        ["\\(","\\)"]
+        ['$','$'] 
       ]
     }
     });
-    
   </script>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
   <script type="text/javascript" src="menu.js"></script> 
   <script type="text/javascript" src="main.js"></script> 
 </head>
@@ -35,262 +33,259 @@
 <body>
   <div id="menu"></div>
   <div class="mainText">
- 
-
-
- <h2>Symmetries of Clairaut equation</h2>
-
-
-It is well-known that the Clairaut equation
-       $$
- y-xy'=f(y')
-\tag{1} $$
-has the one-parametric family of solutions:
-       $$
-     y=kx+f(k)
-       \tag{2a}
-       $$
-and the special soluction, their envelope: $\varphi(x)$,
-     $$
-\varphi(x)=k(x)x+f(k(x))\colon\quad
-    {\p\varphi\over k}=x+f'(k)=0\,.
-      \tag {2b}
-     $$
-This is standard.
-
-
-On the other hand the Clairaut equation (1)
-can be approached in the following way:
-
-
-
-Consider in $3$-dimensional space  $E$ $=(p,x,y)$ ($p=y'$)
-the following transformation
-        $$
-(x,p,y)\to (\tilde x,\tilde p,\t y)\quad
-\cases {\t x=p\cr\t p=-x\cr \t y=y-px}
-        $$
-This is so called Legendre transformation of contact space
-$E$.  Under this transformation the
-characteristic $1$-form $pdx-dy$ is not changed
-\footnote{}{the transformation (2a)  preserves the 
-distribution of planes defined by
-$1$-form $pdx-dy$, thus it can be applied to an arbitrary
-differential equation $F(x,p,y)=0$ ($p=y'$).},
-and  the Clairaut equation
-transforms to the algebraic equation 
-        $$
-   \t y=f(\t x)
-        $$,
-every solution (2a) 
-is transformed
-to the generalised solution, the line
-   $\cases {\t x=k\cr \t p=\hbox {arbitrary number}\cr
-          \t y=f(k)\cr}$,
-and the special solution (2b), $y=\varphi(x)$
-is transformed to the solution, the curve
-   $\cases {\t x= t \cr 
-            \t p=  f'(t)\cr
-             \t y=f(t)\cr}$,
-
-
-Our aim to find the <i>one-parametric famiily
-  of contact trasnformations which include the Legendre transformation and see how look the image of solutions (2a), (2b)
-under this transformation.</i>
-
-Consider the Hamiltnian $H={p^2\over 2}+{x^2\over 2}$
-of harmonic oscillator.  This Hamiltonian 
-defines the contact vector field
-        $$
-   \X_H={\p H\over \p p}{\p\over \p x}-
-   {\p H\over \p x}{\p\over \p p}+
-   \left(p{\p H\over \p p}-H\right){\p\over \p y}\,,
-        $$
-and it induces
-the contact transformation
-   $$
-  \pmatrix {x\cr p\cr y\cr}\to
-  \pmatrix {\t x_t\cr \t p_t\cr \t y_t\cr}\,,
-  $$
-such that 
-        $$
-\cases {
-{d {\t x}\over dt}={\p H\over \p {\t p}}=\t p\cr
-{d {\t p}\over dt}=-{\p H\over \p {\t x}}=-\t x\cr
-{d {\t y}\over dt}= \left(
-    {{\t p}^2\over 2}
-    -{{\t x}^2\over 2}
-          \right) 
-        \cr
-}
-        $$
-Solving this equation and taking in account the boudnary
-conditions
-     $$
-  \pmatrix {\t x_t\cr \t p_t\cr \t y_t\cr}\big\vert_{t=0}=
-  \pmatrix { x\cr  p\cr  y\cr}
-     $$
-we come to
-     $$
- \cases
-  {
-  x_t=x\cos t+p\sin t\cr
-  p_t=-x\sin t+p\cos t\cr
-  y_t=y+
- {1\over 4}p^2\sin 2t
- -{1\over 4}x^2\sin 2t
- +{1\over 2}px\left(\cos 2t-1\right)\cr
-       }
-       $$
-We see that for $t=0$ this is identity contact transformation,
-and for $t={\pi\over 2}$ this the Legendre trasnformation
- $$
- \cases
-  {
-  x_{\pi\over 2}=p\cr
-  p_{\pi\over 2}=-x\cr
-  y_{\pi\over 2}=y-px\cr
-       }
-       $$
-       
-<h2>Fermat</h2>
-  Few days ago Yurij Bazlov told me about one very beautiful problem
-   were Fermat (small)  Theorem appears.
-
-   The problem is following. 
-
-Calculate the number 
-of subsets of the set $\{1,2,3,\dots, p\}$
-such that the number $p$ divides the sum of elements in this subset. 
-Suppose that $p$ is a prime number.
-
-
- This problem  was given to schoolkids on something like 
-International Olympiad.
-
-In this problem the Fermat (small) theorem is unexpectably appears.
-
-   Yurij solved this problem in a very beautiful way.
-
-I spent the Saturday aolving this problem; as a result I failed
-to produce the coursework in a time, however,
- I solved it {\tt Paris il vaut bien une messe!}.
-
-My solution is the following:
-
-   Consider polynomial
+     <h2>Symmetries of Clairaut equation</h2>
+    
+    
+    It is well-known that the Clairaut equation
            $$
-  P_p(x)=(1+x)(1+x^2)(1+x^3)\dots (1+x^p)
+     y-xy'=f(y')
+    \tag{1} $$
+    has the one-parametric family of solutions:
            $$
-where $x$ is undeterminate, and show that
+         y=kx+f(k)
+           \tag{2a}
            $$
-  P_p(x)=1+C_p{x^{p}-1\over x-1}\,.
-           $$
-       
-
-<h2>Udiviteljnoje riadom</h2>
-
-Yurij Bazlov gave me to solve the following problem:
-
-{\it     For natural number $N$
-consider the set   $\{1,2,3,\dots,N\}$.
-Calculate  the number of subsets of this set such that
-the sum of elements of this subset is divisible on $p$.
-
- }
-
-Thinking about this problem I fomrulated  the following identity:
+    and the special soluction, their envelope: $\varphi(x)$,
+         $$
+    \varphi(x)=k(x)x+f(k(x))\colon\quad
+        {\p\varphi\over k}=x+f'(k)=0\,.
+          \tag {2b}
+         $$
+    This is standard.<br><br>
+    
+    
+    On the other hand the Clairaut equation (1)
+    can be approached in the following way:
+    
+    
+    
+    Consider in $3$-dimensional space  $E$ $=(p,x,y)$ ($p=y'$)
+    the following transformation
             $$
-  (1+x)(1+x^2)\dots(1+x^{p-1})=
-    1+C_p(1+x+\dots+x^{p-1})\,, \,, C_p={2^{p-1}-1\over p} 
+    (x,p,y)\to (\tilde x,\tilde p,\t y)\quad
+    \cases {\t x=p\cr\t p=-x\cr \t y=y-px}
             $$
-which is obeyed if $p$ is prime number and $x^p=1$.
-
-
-This  identity leads to the fact that
-number of subsets where sum  of the elements has given remainder
-if we divide on $p$  is equal to  $2C_p-1$.
-This is for prime $p$.  
-
-I came to
-this identity experimentally.
-   What happens if $N$ is not prime?
-This is true
-identity for the free ring with constraint $x^p=1$, and on
-the other hand  if
-$x$ is primitive root, then left hand
-side is equal to $1$.
-
-    Now I realise what happened:
-     Consider examples:
-  Denote  by
-    $$
-     P_N(x)=(1+x)(1+x^2\dots (1+x^{N-1})
-   $$
-and denote by
+    This is so called Legendre transformation of contact space
+    $E$.  Under this transformation the
+    characteristic $1$-form $pdx-dy$ is not changed
+    \footnote{}{the transformation (2a)  preserves the 
+    distribution of planes defined by
+    $1$-form $pdx-dy$, thus it can be applied to an arbitrary
+    differential equation $F(x,p,y)=0$ ($p=y'$).},
+    and  the Clairaut equation
+    transforms to the algebraic equation 
+            $$
+       \t y=f(\t x)
+            $$,
+    every solution (2a) 
+    is transformed
+    to the generalised solution, the line
+       $\cases {\t x=k\cr \t p=\hbox {arbitrary number}\cr
+              \t y=f(k)\cr}$,
+    and the special solution (2b), $y=\varphi(x)$
+    is transformed to the solution, the curve
+       $\cases {\t x= t \cr 
+                \t p=  f'(t)\cr
+                 \t y=f(t)\cr}$,<br><br>
+    
+    
+    Our aim to find the <i>one-parametric famiily
+      of contact trasnformations which include the Legendre transformation and see how look the image of solutions (2a), (2b)
+    under this transformation.</i>
+    
+    Consider the Hamiltnian $H={p^2\over 2}+{x^2\over 2}$
+    of harmonic oscillator.  This Hamiltonian 
+    defines the contact vector field
+            $$
+       \X_H={\p H\over \p p}{\p\over \p x}-
+       {\p H\over \p x}{\p\over \p p}+
+       \left(p{\p H\over \p p}-H\right){\p\over \p y}\,,
+            $$
+    and it induces
+    the contact transformation
        $$
-T_N(x)=1+x+x^2+\dots+x^{N-1}
-        $$
-We have that if $N=p$  is a prime then $T_N$ is irreducible polynomial
-of $\vare_p=e^{2\pi\sqrt{-1}\over p}$.
-
-
-   We have       
- $$ 
-P_3(x)=1+T_3(x)\,,\quad \hbox {and $P_3(\vare_3)=1$}\,, 
-$$
- $$ 
-P_5(x)=1+3T_5(x)\,,\quad \hbox {and $P_5(\vare_5)=1$}\,, 
-$$
-  \bye
- $$ 
-P_7(x)=1+9T_7(x)\,,\quad \hbox {and $P_7(\vare_7)=1$}\,, 
-$$
- $$ 
-P_{11}(x)=1+93T_{11}(x)\,,\quad \hbox {and $P_{11}(\vare_{11})=1$}\,, 
-$$
- $$ 
-P_{13}(x)=1+315T_{13}(x)\,,\quad \hbox {and $P_{13}(\vare_{13})=1$}\,, 
-$$
-However
-
-
- $$ 
-P_4(x)=2T_4(x)\,,\quad \hbox {and $P_4(\vare_4)=0$}\,, 
-$$
- $$ 
-P_6(x)=5T_5(x)+5(x^3+1)\,,\quad \hbox {and $P_6(\vare_6)=0$}\,, 
-$$
- $$ 
-P_8(x)=5T_5(x)+5(x^3+1)\,,\quad \hbox {and $P_6(\vare_6)=0$}\,, 
-$$
-
-<h2>Music</h2>
-We have :
-    $$
-{3\over 2}=2^x=2^{1\over a_0+{1\over a_1+\dots}}
- \Rightarrow
-\left({3\over 2}\right)^{a_0+{1\over a_1+{1\over a_2+\dots}}}=2\,.
-    $$
-We have that ${3\over 2}<2<{9\over 4}$, hence $a_0=1$.
-
-Thus we have that
+      \pmatrix {x\cr p\cr y\cr}\to
+      \pmatrix {\t x_t\cr \t p_t\cr \t y_t\cr}\,,
+      $$
+    such that 
+            $$
+    \cases {
+    {d {\t x}\over dt}={\p H\over \p {\t p}}=\t p\cr
+    {d {\t p}\over dt}=-{\p H\over \p {\t x}}=-\t x\cr
+    {d {\t y}\over dt}= \left(
+        {{\t p}^2\over 2}
+        -{{\t x}^2\over 2}
+              \right) 
+            \cr
+    }
+            $$
+    Solving this equation and taking in account the boudnary
+    conditions
+         $$
+      \pmatrix {\t x_t\cr \t p_t\cr \t y_t\cr}\big\vert_{t=0}=
+      \pmatrix { x\cr  p\cr  y\cr}
+         $$
+    we come to
+         $$
+     \cases
+      {
+      x_t=x\cos t+p\sin t\cr
+      p_t=-x\sin t+p\cos t\cr
+      y_t=y+
+     {1\over 4}p^2\sin 2t
+     -{1\over 4}x^2\sin 2t
+     +{1\over 2}px\left(\cos 2t-1\right)\cr
+           }
+           $$
+    We see that for $t=0$ this is identity contact transformation,
+    and for $t={\pi\over 2}$ this the Legendre trasnformation
      $$
-{3\over 2}=  2^{1\over 1+{1\over a_1+\dots}}\Rightarrow
-\left({3\over 2}\right)^{1+{1\over a_1+{1\over a_2+\dots}}}=2
-\Rightarrow 
-\left({4\over 3}\right)^{a_1+{1\over a_2+{1\over a_3+\dots}}}=
-{3\over 2}\,.
-$$
-We have that ${4\over 3}<{3\over 2}<\left({4\over 3}\right)^2$, 
-hence $a_1=1$.
-
-       
-
-
-  <br>
-<embed src="2019/May19/3symclairaut.pdf#toolbar=0&navpanes=0&scrollbar=0" width="100%" height="1000px"/>
-
+     \cases
+      {
+      x_{\pi\over 2}=p\cr
+      p_{\pi\over 2}=-x\cr
+      y_{\pi\over 2}=y-px\cr
+           }
+           $$
+           
+    <h2>Fermat</h2>
+      Few days ago Yurij Bazlov told me about one very beautiful problem
+       were Fermat (small)  Theorem appears.
+    
+       The problem is following. 
+    
+    Calculate the number 
+    of subsets of the set $\{1,2,3,\dots, p\}$
+    such that the number $p$ divides the sum of elements in this subset. 
+    Suppose that $p$ is a prime number.
+    
+    
+     This problem  was given to schoolkids on something like 
+    International Olympiad.
+    
+    In this problem the Fermat (small) theorem is unexpectably appears.
+    
+       Yurij solved this problem in a very beautiful way.
+    
+    I spent the Saturday aolving this problem; as a result I failed
+    to produce the coursework in a time, however,
+     I solved it {\tt Paris il vaut bien une messe!}.
+    
+    My solution is the following:
+    
+       Consider polynomial
+               $$
+      P_p(x)=(1+x)(1+x^2)(1+x^3)\dots (1+x^p)
+               $$
+    where $x$ is undeterminate, and show that
+               $$
+      P_p(x)=1+C_p{x^{p}-1\over x-1}\,.
+               $$
+           
+    
+    <h2>Udiviteljnoje riadom</h2>
+    
+    Yurij Bazlov gave me to solve the following problem:
+    
+    {\it     For natural number $N$
+    consider the set   $\{1,2,3,\dots,N\}$.
+    Calculate  the number of subsets of this set such that
+    the sum of elements of this subset is divisible on $p$.
+    
+     }
+    
+    Thinking about this problem I fomrulated  the following identity:
+                $$
+      (1+x)(1+x^2)\dots(1+x^{p-1})=
+        1+C_p(1+x+\dots+x^{p-1})\,, \,, C_p={2^{p-1}-1\over p} 
+                $$
+    which is obeyed if $p$ is prime number and $x^p=1$.
+    
+    
+    This  identity leads to the fact that
+    number of subsets where sum  of the elements has given remainder
+    if we divide on $p$  is equal to  $2C_p-1$.
+    This is for prime $p$.  
+    
+    I came to
+    this identity experimentally.
+       What happens if $N$ is not prime?
+    This is true
+    identity for the free ring with constraint $x^p=1$, and on
+    the other hand  if
+    $x$ is primitive root, then left hand
+    side is equal to $1$.
+    
+        Now I realise what happened:
+         Consider examples:
+      Denote  by
+        $$
+         P_N(x)=(1+x)(1+x^2\dots (1+x^{N-1})
+       $$
+    and denote by
+           $$
+    T_N(x)=1+x+x^2+\dots+x^{N-1}
+            $$
+    We have that if $N=p$  is a prime then $T_N$ is irreducible polynomial
+    of $\vare_p=e^{2\pi\sqrt{-1}\over p}$.
+    
+    
+       We have       
+     $$ 
+    P_3(x)=1+T_3(x)\,,\quad \hbox {and $P_3(\vare_3)=1$}\,, 
+    $$
+     $$ 
+    P_5(x)=1+3T_5(x)\,,\quad \hbox {and $P_5(\vare_5)=1$}\,, 
+    $$
+      \bye
+     $$ 
+    P_7(x)=1+9T_7(x)\,,\quad \hbox {and $P_7(\vare_7)=1$}\,, 
+    $$
+     $$ 
+    P_{11}(x)=1+93T_{11}(x)\,,\quad \hbox {and $P_{11}(\vare_{11})=1$}\,, 
+    $$
+     $$ 
+    P_{13}(x)=1+315T_{13}(x)\,,\quad \hbox {and $P_{13}(\vare_{13})=1$}\,, 
+    $$
+    However
+    
+    
+     $$ 
+    P_4(x)=2T_4(x)\,,\quad \hbox {and $P_4(\vare_4)=0$}\,, 
+    $$
+     $$ 
+    P_6(x)=5T_5(x)+5(x^3+1)\,,\quad \hbox {and $P_6(\vare_6)=0$}\,, 
+    $$
+     $$ 
+    P_8(x)=5T_5(x)+5(x^3+1)\,,\quad \hbox {and $P_6(\vare_6)=0$}\,, 
+    $$
+    
+    <h2>Music</h2>
+    We have :
+        $$
+    {3\over 2}=2^x=2^{1\over a_0+{1\over a_1+\dots}}
+     \Rightarrow
+    \left({3\over 2}\right)^{a_0+{1\over a_1+{1\over a_2+\dots}}}=2\,.
+        $$
+    We have that ${3\over 2}<2<{9\over 4}$, hence $a_0=1$.
+    
+    Thus we have that
+         $$
+    {3\over 2}=  2^{1\over 1+{1\over a_1+\dots}}\Rightarrow
+    \left({3\over 2}\right)^{1+{1\over a_1+{1\over a_2+\dots}}}=2
+    \Rightarrow 
+    \left({4\over 3}\right)^{a_1+{1\over a_2+{1\over a_3+\dots}}}=
+    {3\over 2}\,.
+    $$
+    We have that ${4\over 3}<{3\over 2}<\left({4\over 3}\right)^2$, 
+    hence $a_1=1$.
+    
+           
+    
+    
+      <br>
+    <embed src="2019/May19/3symclairaut.pdf#toolbar=0&navpanes=0&scrollbar=0" width="100%" height="1000px"/>
+    
   </div>
 
  </body>
