@@ -1,3 +1,9 @@
+var links =
+[
+  ["Symmetries of Clairaut equation", "2019/May19/3symclairaut/index.html"]
+]
+
+  
   function populateCSSSettings()
   {
     maxWidth = 800;
@@ -19,12 +25,44 @@
       $(".mainText").css('width', stretchingCoeffPercent);
       $(".mainText").css('padding-left', paddingPercent);
     }
-  }    
+  }   
+
+  function generateArticlesCode(link, name, imageLink)
+  {
+    var HTMLCode = `
+    <a class="panel" href="` + link + `/">
+      <div class="panel">
+        <div class="panelText">` + 
+          name +
+       `</div>
+        <div class="panelImg">
+          <img class="panel" src="` + imageLink + `">` +
+       `</div>
+     </div>
+    </a>
+    `
+    
+    return HTMLCode;
+
+  }
+  
+  function generateArticles()
+  {
+    var htmlCode = "";
+    for (var i in links)
+    {
+      htmlCode += generateArticlesCode(
+        links[i][0], links[i][1], links[i][0]+'/main_thumbnail.jpg');
+    }
+    alert(htmlCode);
+    //$("#panels").html(htmlCode);
+  }
 
   
   $( document ).ready(function() 
   { 
     populateCSSSettings();
+    //generateArticles();
   }
   );
   
