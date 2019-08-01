@@ -1,0 +1,209 @@
+ 
+
+\magnification=1200
+\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\C {{\cal C}}
+\def\L {{\cal L}}
+\def\E {{\bf E}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\Z {{\bf Z}}
+\def\R  {{\bf R}}
+\def\l {\lambda}
+\def\ll {{\bf l}}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\pt {{\bf p}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\f{{\bf f}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def\w {{\omega}}
+\def \Tr  {{\rm Tr\,}}
+\def\dim {{\rm dim\,\,}}
+% I wrote this file on 16 January
+\def\t {{\tilde}} 
+\def\dist {{\hbox{\tt "distance"}}}
+\def  \dim {{\rm dim\,}}
+\def  \Im  {{\rm Im\,}}
+\def  \ker {{\rm ker\,}}
+
+\centerline {\tt Area of sphere (delicate calculations)}
+
+  Denote by $\sigma_n$ the rea of unit sphere
+  $x_1^2+x^2_2+\dots+x_{n+1}^2=1$ in $\E^{n+1}$.
+The standard way to calculate $\sigma_n$ is the
+following:
+     Consider
+     $$
+I_n=\int_{\E^{n+1}} 
+\exp {-\left(x_1^2+x^2_2+\dots+x_{n+1}^2\right)}
+  dx_1dx_2\dots dx_n\,.
+   \eqno (01) 
+    $$
+On  one hand
+       $$
+I_n=\left(\int_\infty^{\infty} 
+\exp {\left(-x^2\right)}dx\right)^{n+1}=
+\left(\sqrt \pi\right)^{n+1\over 2}\,,
+   \eqno (02) 
+       $$
+and on the other hand
+          $$
+I_n=\int_0^\infty 
+\exp {\left(-r^2\right)}
+  \s_n r^{n}dr\,.
+   \eqno (03) 
+          $$
+since the area of the sphere $S^n$ of 
+radius $r$ is equal to
+$r^n\sigma_n$.
+
+Comparing these integrals we come to
+         $$
+I_n=\int_0^\infty 
+\exp {\left(-r^2\right)}
+  \s_n r^{n}dr=
+\sigma_n\int_0^\infty e^{-u} u^{n\over 2}
+{du\over 2\sqrt u}=\s_n{1\over 2}
+\Gamma\left({n+1\over 2}\right)
+=\pi^{n+1\over 2}\,,
+       \eqno (04)
+         $$
+thus:
+    $$
+\sigma_n=
+       {
+   2\pi^{n+1\over 2}
+        \over 
+\Gamma\left({n+1\over 2}\right)\,.
+         }
+      \eqno (05)
+    $$
+Present now more 'delicate considerations'
+to calculate  the area
+
+
+
+
+Let $\omega$ be $n$-form in $\E^{n+1}$ and let $C$
+be an $n$-dimensional  hypersurface  $C=C_F$
+defined by equation $F=0$:
+        $$
+C\colon \,\, \{\x,  F(\x)=0\}\,.
+        $$
+
+\def \w {{\omega}}
+Then
+     $$
+\int_C w=\pm\int \delta (F) dF\wedge \w
+   \eqno (1.1) 
+     $$
+THe right hand side is the $n+1$-form  $dF\wedge \w$ 
+
+
+{\bf Exercise}: Prove this formula
+
+{it Note what happens if you change $F\to gF$???}
+
+
+\bigskip
+
+
+Now consider the following $n$-form in $\E^{n+1}$
+     $$
+\sigma={1\over r}
+        \left(
+   x_1 dx_2\wedge dx_3\wedge \dots\wedge dx_{n+1}
+   -x_2 dx_1\wedge dx_3\wedge \dots\wedge dx_{n+1}+
+   \right.
+         $$
+        $$
+   \left.+x_3 dx_1\wedge dx_2\wedge dx_4\dots\wedge dx_{n+1}
+   +(-1)^nx_{n+1} 
+dx_1\wedge dx_2\wedge dx_3\dots\wedge dx_{n}
+    \right))
+     \eqno (1.2)
+     $$
+E.g. for  $n=2$
+            $$
+\sigma={1\over r}\left(
+     xdy\wedge dz+
+     ydz\wedge dx+
+     zdx\wedge dy+
+         \right)
+            $$
+
+Exercise: Show that for every domain $D$ in sphere
+              $$
+\int_D\sigma=\hbox {Area of this domain}
+              $$
+Idea of solution: first note that the form $\sigma$
+is invariant with respect to group $SO(n+1)$
+and to calculate the coefficient check its value on
+the ``vertical'' tangent plane.
+
+
+{\bf Remark}  Please do not think that there exist
+s a form which gives area of an arbitrary hypersurface.
+
+  Why?
+
+
+Now continue calculations
+
+
+  Consider the sphere of radius $a$:
+               $$
+F(x,y,z)=x_1^2+x_2^2+\dots+x_{n+1}^2=a^2\,.
+               $$
+Use (1.1) we come to
+   $$
+\hbox {Area of sphere in $\E^{n+1}$ is equal to}
+      =
+\int \delta (F-a^2)dF\wedge\sigma 
+    $$
+We have
+    $$
+  dF\wedge \sigma =
+2r(dx_1\wedge dx_2\dots dx_n\wedge dx_{n+1})\,.
+    $$
+Hence  we come to
+        $$
+\sigma_n=2\int\delta (F-1)dv\,.
+     $$
+   where $dv=dx_1\wedge dx_2\dots dx_n\wedge dx_{n+1}$ 
+
+To calculate the last integral, we shake it:
+  Consider
+   $$
+L(t)=
+\sigma_n=\int\delta (F-t)dv\,.
+  $$
+and calculate $\int_{-\infty}^{\infty} L(t)e^{-xt}$
+
+
+
+
+\bye 

@@ -1,0 +1,276 @@
+
+\magnification=1200 
+
+
+\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\w {\omega}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\L {{\cal L}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\S  {{\bf S}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\M {{\cal M}}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\pt {{\bf pt}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\k{{\bf k}}
+\def\l{{\bf l}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def \G{{\cal G}}
+\def\ss  {\sigma_{\rm sph}}
+\def\grad {{\rm grad\,}}
+
+
+{\it 18 January 2018}
+
+
+\centerline {Two formulae for Lie groups}
+
+I will recall here calculations of
+      $$
+   \Sigma_1=e^{-A}Xe^{A}=Ad_A(X)
+          \eqno (1)
+      $$
+and calculation of
+      $$
+   \Sigma_2=e^{-A}e^{A+\vare X}\,,\qquad {\rm for}\,\, \vare^2=0
+          \eqno (2)
+      $$
+Both formulae are very useful.
+(E.g. the second one is inevitable if we would like to perform
+explicit calculations with left invariant vetor fields.)  
+This is standard  to calculate
+these sums using differential equations. Here I will  
+calculate just by brute force
+combinatorial calculations.
+
+\bigskip
+
+ The first formula comes naturally from 
+differential equation:
+to calculate $\Sigma_1$ in (1) consider a function 
+  $$
+  S_X(t)=e^{-tA}Xe^{tA}\,.
+   $$ 
+This function is a solution
+of differential equation
+      $$
+     \cases
+     {{dS\over dt}=-[A,S(t)]=-ad_A S(t)\cr
+    S(t)_{t=0}=X\cr}
+      $$
+Solving this equation we have that
+         $$
+  S(t)=X-\int_0^t [A,S(\tau)]d\tau\,.
+         $$
+Writing this integral recurcsively we come
+to perturbation expansion or to
+     $$
+    S(t)=e^{-t ad_A}X\,.
+     $$
+
+Now combinatorial ({\tt brute force}) solution:
+        $$
+  \Sigma_1=e^{-A}Xe^{A}=\sum_{n,m}{(-1)^n A^n X A^m\over n!m!}=
+  \sum_n\left(\sum_{k=0}^n
+  {(-1)^k A^k X A^{n-k}\over k!(n-k)!}\right)=
+       $$
+       $$
+  \sum_n{1\over n!}
+     \left(\sum_{k=0}^n
+               (-1)^kC^k_n
+        A^k X A^{n-k}\right)\,.
+              $$
+One can see that polynomials 
+      $$
+ {\cal D}_n(A,X)=\sum_{k=0}^n(-1)^kC^k_nA^nXA^{n-k}
+       $$
+belong to Lee algebra ${\cal G}(A,X)$,
+(they are up to a sign so called Dynkin polynomials):
+         $$
+      D_n(A,X)=XA^n-nAXA^{n-1}+\dots+(-1)^nA^nX=
+         $$
+          $$
+      (-1)^n[A,\dots,[A,X
+       \underbrace{]\dots]}_{n \hbox{times}}=
+       ad_A^n X\,.
+    \eqno (Dynkin)
+          $$ 
+        $$
+{\cal D}_1=-AX+XA=-[A,X]\,,
+{\cal D}_2=XA^2-2AXA+A^2X=[A,[A,X]]
+      $$
+     $$
+{\cal D}_3=XA^3-3AXA^2+3A^2XA-A^3X=-[A,[A,[A,X]]]\,\quad\,,
+      $$
+and so on.
+
+We come to
+       $$
+\Sigma_1=  \sum_n{1\over n!}
+     \left(\sum_{k=0}^n
+               (-1)^kC^k_n
+        A^k X A^{n-k}\right)=
+        \sum_n{ (-1)^nad_A^n X\over n!}=
+         e^{-ad_A}X=
+         $$
+    $$
+1-[A,X]+{[A,[A,X]]\over 2}-{[A,[A,[A,X]]]\over 6}+\dots
+     $$
+    \bigskip
+
+\medskip
+
+Much more funny  formula (2):
+
+
+Differential equation. Consider function
+     $$
+   S(t)=e^{-tA}e^{t(A+\vare X)}
+     $$
+it obeys equation:
+       $$  \cases
+     {{dS\over dt}=e^{-tA}\vare X e^{tA} S(t)\cr
+    S(t)_{t=0}=X\cr}
+       $$
+  Brute force calculations:
+         $$
+    \Sigma_2= e^{-A}e^{A+\vare X}=
+        $$
+        $$
+       \sum {(-1)^nA^n\over n!}
+   \left(\sum {A^m\over m!}+
+ \sum
+    \overbrace
+          {
+ {A^{m-1}X+A^{m-2}XA+A^{m-3}XA^2+\dots+XA^{m-1}
+\over m!}
+    }^{\hbox {$m$ terms}}
+\right)=
+         $$
+         $$
+  1+\sum_r\left(\sum_{p+q=r}
+   {(-1)^pA^p\over p!}
+    \overbrace
+       {
+  {A^{r-q-1}X+A^{r-q-2}XA+A^{r-q-3}XA^2+
+   \dots+XA^{r-q-1}\over (r-q)!}
+      }^{\hbox {$(r-q)$ terms}}
+\right)=
+         $$
+     $$
+1+\sum_{m,n}
+\left(
+\sum_{p}{(-1)^pA^p\over p!}
+\right)
+{A^mXA^n\over (m+n+1)!}
+        $$
+Here changing $p+m\to m$ we come to
+         $$
+\Sigma_2=1+\sum_{m,n,p=0,\dots,m}
+{(-1)^pA^mXA^n\over p!((m-p)+n+1)!}=
+\sum_{m,n}
+t_{mn}{A^mXA^n\over (m+n+1)!}\,,
+        $$
+where
+   $$
+   t_{mn}=
+\sum_{p=0}^m{(-1)^p\over p!(m+n+1-p)!}\,.
+   $$
+
+\smallskip {\it Observation}
+       $$
+   t_{mn}=(-1)^mC^m_{m+n}\,.
+       $$
+It follows from this observation that
+from formula ($Dynkin$) for Dynkin polynomials, that
+     $$
+\Sigma_2=1+
+\sum_{m,n}
+t_{mn}{A^mXA^n\over (m+n+1)!}=
+1+\sum_{N}{1\over N+1}
+     \underbrace
+           {
+   \left(
+       \sum_{k=0}^N
+     (-1)^kC^k_N A^kXA^{N-k}
+    \right)
+        }_{\hbox 
+ {Dynkin's polynomial ${\cal D}_N$}}=
+     $$
+      $$
+   1+\sum_{N=0}^\infty{(-1)^N ad_A^N X\over (N+1)!}=
+       $$    $$
+1+X-{1\over 2}[A,X]+
+       {1\over 6}\left[
+    A,\left[A,X\right]
+          \right]-
+       {1\over 24}
+        \left[A,\left[
+    A,\left[A,X\right]
+          \right]\right]- 
+       {1\over 120}
+      \left[A,
+        \left[A,\left[
+    A,\left[A,X\right]
+          \right]\right]
+\right]+\dots=\,.
+    $$
+
+It remains to prove {\tt Observation}.
+
+  {\tt Proof} 
+   We will use Pascal's tree identity:
+            $$
+     C^k_n+C^{k+1}_n=C^{k+1}_{n+1}\,.
+            $$   
+Then    
+$$
+   t_{mn}=
+\sum_{p=0}^m{(-1)^p\over p!(m+n+1-p)!}=
+        $$
+        $$
+  C^0_{m+n+1}-C^1_{m+n+1}+C^2_{m+n+1}-C^3_{m+n+1}+\dots+
+      (-1)^mC^m_{m+n+1}=
+   $$
+    $$
+[C^0_{m+n}]-[C^0_{m+n}+C^1_{m+n}]+[C^1_{m+n}+C^2_{m+n}]
+-[C^2_{m+n}+C^3_{m+n}]+\dots+
+   (-1)^m[C^{m-1}_{m+n}+C^m_{m+n}]=
+           $$
+           $$=(-1)^mC^m_{m+n}
+    \hbox{\finish}$$
+
+  
+\bye

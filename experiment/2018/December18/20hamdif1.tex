@@ -1,0 +1,252 @@
+
+
+
+
+
+\magnification=1200
+\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\S  {{\bf S}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\ll {{\bf l}}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\pt {{\bf p}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def \G{{\cal G}}
+\def\w {{\omega}}
+\def \Tr  {{\rm Tr\,}}
+\def\V {{\cal V}}
+% I began this file in November  2018
+
+    \centerline {one differential equation}
+
+   We consider the solution of the equation
+                   $$
+      S(x,t)\colon\quad       
+                             \cases
+                            {
+      {S_x^2\over 2m}+U(x)+S_t=0\cr
+                   \cr
+                S(x,t)\big\vert_{t=0}=f(x)\cr
+             }
+            \eqno (1)
+                   $$
+Consider coordinates $(t,x)$ in $2$-dimensional space $M$, and 
+ $(p,x,\rho,t)$ in cotangent bundle   $T^*M$
+(coordinate $p$ is conjugate to the coordinate $x$ and)
+coordinate $\rho$ is conjugate to the coordinate $t$.
+
+The initial conditinion:  $S(x,t)\big\vert_{t=0}=f(x)$ define
+the one dimensional curve $B_{S_{0}}$
+                          $$
+              B_{S_{0}}=
+                          $$  
+ 
+
+
+  Let  $S=S(x,t)$ be a solution of equation (1), and
+let  $\Lambda_S={\rm graph} S\subset T^*M$  
+bue Lagrangian surface  corresponding to $S$:
+                         $$
+          \Lambda_S=\{(p,x,\rho,t)\colon {p^2\over 2m}+U(x)+\rho=0\,,\quad
+                 p=S_x\,,
+                 \rho=S_t\}
+                            \}
+                              \eqno (2)
+                         $$
+The boundary condition means that the curve 
+                $$
+    B_{S_{0}}\colon\quad 
+                 \cases 
+                  {
+            p(\xi)=f_\xi (\xi)\cr
+            x(\xi)=\xi\cr
+           \rho(\xi)=-{p^2\over 2m}=-{f_\xi^2\over 2m}\cr
+             t(\xi)=0
+                 }
+\eqno (3)
+                $$
+belongs to the Lagrangian surface $\Lambda_S$.
+
+To construct the surface $\Lambda_S$ iwe do the following:
+emit from the points
+of the curve $B_{S_{0}}$  the Hamiltonian vector field
+                    $$
+      {\bf D}_H=
+ {\p H\over \p p}{\p \over \p x}-
+ {\p H\over \p x}{\p \over \p p}+
+ {\p H\over \p \rho}{\p \over \p t}
+ -{\p H\over \p t}{\p \over \p \rho}\,\quad
+\hbox{of Hamiltonian $H={p^2\over 2m}+U(x)+\rho$}\,.
+ \eqno (4)
+                    $$
+
+We see that   this surface is Lagrangian surface and it
+obeys the equation (2). 
+since $dH({\bf D}_H)=0$. 
+
+
+Do this: 
+                 $$
+\L_S\colon \,\,
+       \pmatrix
+             {
+            p(\xi,\eta)\cr
+            x(\xi,\eta)\cr
+            \rho(\xi,\eta)\cr
+            t(\xi,\eta)\cr
+              }
+\quad
+             \cases
+            {
+              p_\eta=-{\p H\over \p x}=-U_x(x)\cr
+              x_\eta={\p H\over \p p}=p\cr
+              \rho_\eta=-{\p H\over \p t}=0\cr
+              x_\eta={\p H\over \p \rho}=1\cr
+              }
+      \eqno (5a)
+                 $$
+
+with boundary condition (3):
+         $$
+    B_{S_{0}}\subset \Lambda_S\,,{\rm i.e.}\,\,\,
+       \pmatrix
+             {
+            p(\xi,\eta)\cr
+            x(\xi,\eta)\cr
+            \rho(\xi,\eta)\cr
+            t(\xi,\eta)\cr
+              }\big\vert_{\eta=0}=
+               \pmatrix
+             {
+            p(\xi,0)\cr
+            x(\xi,0)\cr
+            \rho(\xi,0)\cr
+            t(\xi,0)\cr
+              }=
+               \pmatrix
+             {
+           f_\xi(\xi)\cr
+            \xi\cr
+            -{f_\xi^2\over 2m}\cr
+            0\cr
+              }
+\eqno (5b)
+                $$
+These are just ODE.
+         
+\medskip
+
+        {\it First case, $U=0$}
+
+  Then $H={p^2\over 2m}+\rho$
+and  solution of equation (5) will be
+                     $$
+      \Lambda_S
+\quad
+             \cases
+            {
+             p(\xi,\eta)=f_\xi(\xi)\cr
+              x(\xi,\eta)=\xi+\eta p= \xi+{\eta\over m} f_\xi(\xi)\cr
+              \rho(\xi,\eta)=    -{f_\xi^2\over 2m}\cr
+              t(\xi,\eta)=\eta\cr
+              }
+      \eqno (6a)
+                     $$
+Consider example $f=c\xi$, then we have
+                      $$
+      \Lambda_S
+\quad
+             \cases
+            {
+             p(\xi,\eta)=c\cr
+              x(\xi,\eta)=\xi+\eta p= \xi+{c\eta p\over m}\cr
+              \rho(\xi,\eta)=    -{c^2\over 2m}\cr
+              t(\xi,\eta)=0\cr
+              }
+      \eqno (7a)
+                     $$
+then we have  that according to (7a)
+             $$
+\cases{
+       \xi=x-pt=x-{cp\over m}t\cr
+      \eta=t\cr
+       }\Rightarrow
+           \cases
+        {
+S_x=p=f_\xi(\xi)=c\cr
+S_t=\rho=-{c^2\over 2m}\cr
+        }
+  \Rightarrow S(x,t)=cx-{c^2\over 2m}t+constant 
+         $$
+Another  example $f={k\xi^2\over 2}$, then
+                      $$
+      \Lambda_S
+\quad
+             \cases
+            {
+             p(\xi,\eta)=k\xi\cr
+              x(\xi,\eta)=\xi+\eta p= \xi+{k\xi \eta\over 2m}\cr
+              \rho(\xi,\eta)=    -{k^2\xi^2\over 2m}\cr
+              t(\xi,\eta)=\eta\cr
+              }
+      \eqno (8a)
+                     $$
+and           $$
+\cases{
+       \xi=x-pt={mx\over m+kt}\cr
+      \eta=t\cr
+       }\Rightarrow
+           \cases
+        {
+S_x=p=f_\xi(\xi)=k\xi={kmx\over m+kt}\cr
+S_t=\rho=-{k^2\xi^2\over 2m}=-{k^2\over 2m}\left(mx\over m+kt\right)^2=
+             -{k^2mx^2\over 2(m+kt)^2}\cr
+        }
+              $$
+Of course the integration condition is obeyed:
+$\left({kmx\over m+kt}\right)_t=  \left(-{k^2mx^2\over 2(m+kt)^2}\right)_x$
+since the surface is Lagrnagian  and we come to the solution
+               $$
+  \Rightarrow S(x,t)={kmx^2\over 2(m+kt)}+constant 
+         $$
+Now consider the interesting example:
+ $f(x)=\delta(x-a)$. Then we come to
+     
+\bye
+

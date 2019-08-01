@@ -1,0 +1,240 @@
+
+
+
+
+\magnification=1200 
+
+
+\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\w {\omega}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\L {{\cal L}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\S  {{\bf S}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\M {{\cal M}}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\pt {{\bf pt}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def \G{{\cal G}}
+\def\ss  {\sigma_{\rm sph}}
+\def\grad {{\rm grad\,}}
+% I began this file on 31 July 2017
+
+\centerline {\bf Taylor series expansion formula}
+
+
+   We calculate here
+      $$
+     \Phi^*(t_1 G_1+\dots+t_n G_n)
+       $$
+
+\bigskip
+
+   Suppose that
+        $$
+  S(x,l)=S(x)+\varphi(x)l+{1\over 2}A(x)l^2+
+{1\over 6}T(x)l^3+\dots
+        $$
+Recall that for an arbitrary $g(y)$
+       $$
+\left[\Phi^*(g)\right](x)=g(y(x))+S(x,l(x))-y(x)l(x)\,,
+       $$    
+where  functions $y(x)=y_g(x), l(x)=l_g(x)$ 
+can be defined from equations
+       $$
+y={\p S(x,l)\over \p l}\,,\quad
+l={\p g(y)\over \p y}\,.
+      $$
+We have that for $g\equiv 0$, $\Phi^*(g)=S(x)$, and
+             $$
+y_0(x)={\p S(x,l)\over \p l}\big\vert
+\big\vert\varphi_{l=0}=\varphi(x)\,.
+             $$
+
+We have also that
+       $$
+\Phi(g+\vare G)=\vare G(y_g(x))\,.
+       $$
+
+\bigskip
+
+   
+ {\bf 1}
+Let $t\colon\quad t^2=0$. Then
+      $$
+\Phi(tG(y))=tG\left(y_0(x)\right)=tG(\varphi(x))\,.
+    \eqno(1)
+      $$
+ 
+\medskip
+
+{\bf 2}
+Calculate 
+$\Phi^*(t_1G_1+t_2G_2$ assuming that for parameters $t_1,t_2$ 
+         $$
+t_1^2=t_2^2=0\,.
+         $$
+     $$
+\Phi^*(t_1G_1+t_2G_2=
+ \Phi^*(t_1G_1)+t_2G_2\left(y_{t_1G_1}(x)\right)\,,
+      $$
+and
+       $$
+y(x)=y_{t_1G_1}(x)=\left(
+\varphi(x)+A(x)l+{1\over 2}T(x)l^2\right)
+\big\vert_{l=t_1G_1(y)}=
+\varphi(x)+t_1A(x)G_1'(y)=
+          $$
+         $$
+\varphi(x)+t_1A(x)G_1'(\varphi(x))\,,\quad
+\hbox {since $t_1^2=0$}\,.
+         $$
+ Hence using (1) we come to 
+     $$
+\Phi^*(t_1G_1+t_2G_2=
+\Phi^*(t_1G_1) +\t_2G_2\left(y_{t_1G_1}(x)\right)=
+t_1G_1(\varphi(x))+
+t_2G_2\left(\varphi(x)+t_1A(x)G_1'(\varphi(x))\right)=
+      $$
+        $$
+t_1G_1(y)+
+t_2G_2(y)+t_2t_1G_2'(y)A(x)G_1'(y)
+\big\vert_{y=\varphi(x)}\,.
+\eqno (2)
+      $$
+      
+
+
+\bigskip
+
+
+{\bf 3}   Now calculate 
+$\Phi^*(t_1G_1+t_2G_2+t_3 G_3)$ assuming that
+          $$
+t_1^2=t_2^2=t_3^2=0\,.
+      (3a)
+          $$
+    $$
+\Phi^*(t_1G_1+t_2G_2+t_3 G_3)=
+\Phi^*(t_1G_1+t_2G_2)+
+ t_3G_3\left(y_{t_1G_1+t_2G_2}\right)\,.
+      $$
+We have  using nilpotency conditions (3a) that
+         $$
+y=y_{t_1 G_1+t_2 G_2}=(\varphi+Al+{1\over 2}Tl^2)
+_{l=t_1G_1'+t_2 G_2'}=
+         $$
+         $$
+\varphi+
+A\left(t_1G'_1(y)+t_2G_2'(y)\right)+
+{1\over 2}T\left(t_1G'_1(y)+t_2G_2'(y)\right)^2=
+         $$
+         $$
+\varphi+
+A\left(t_1G'_1(y=\varphi+\dots)+t_2G_2'(y=\varphi+\dots)
+\right)+
+{1\over 2}T\left(t_1G'_1(\varphi)+t_2G_2'(\varphi)\right)^2
+         $$
+         $$
+y+
+A\left(t_1G'_1(y+At_2G_2'(y))+
+       t_2G_2'(y+At_1G_1'(y))
+\right)+
+      T(x)t_1t_2G_1'(y)G_2'(y)\big\vert_{y=\varphi(x)}=
+         $$
+$$
+y+A(x)(t_1G_1'(y)+t_2G_2'(y))+
+ t_1t_2A^2(x)\left(G_1'(y)G_2(y)'\right)'+
+   T(x)t_1t_2G_1'(y)G_2'(y)
+$$
+and using (2) we come to
+      $$
+\Phi^*(t_1G_1+t_2G_2+t_3 G_3)=
+\Phi^*(t_1G_1+t_2G_2)+
+ t_3G_3\left(y_{t_1G_1+t_2G_2}\right)=
+       $$
+       $$
+  t_1G_1(y)+
+t_2G_2(y)+t_2t_1G_2'(y)A(x)G_1'(y)
+        $$
+      $$
+t_3G_3\left(y+At_1G_1'(y)+t_2G_2'(y))+
+ t_1t_2A^2\left(G_1'(y)G_2(y)'\right)'+
+   Tt_1t_2G_1'(y)G_2'(y)
+\right)
+       $$
+      $$
+  t_1G_1(y)+
+t_2G_2(y)+t_2t_1G_2'(y)A(x)G_1'(y)
+\big\vert_{y=\varphi(x)}+t_3G_3(y)+
+        $$
+       $$
+t_3G_3'\left(At_1G_1'(y)+t_2G_2'(y))+
+ t_1t_2A^2\left(G_1'(y)G_2(y)'\right)'+
+   Tt_1t_2G_1'(y)G_2'(y)\right)+
+         $$
+        $$
+{1\over 2}t_3G_3''
+  \left(At_1G_1'(y)+t_2G_2'(y)\right)^2
+\big\vert_{y=\varphi(x)}\,.
+      $$
+Calculating we come to the answer:
+
+       $$
+\Phi^*(t_1G_1+t_2G_2+t_3 G_3)=
+  t_1G_1(y)+
+t_2G_2(y)+t_3G_3(y)+
+       $$
+       $$
+  A(x)\left(
+t_2t_1G_2'(y)G_1'(y)+
+t_3t_1G_3'(y)G_1'(y)+
+t_3t_2G_3'(y)G_2'(y)
+     \right)
+       +
+        $$
+       $$
+ t_3t_2t_1A^2(x)\left(
+G_1'(y) G_2'(y)G_3'(y)
+     \right)'+T(x)t_3t_2t_1G_1'(y)G_2'(y)G_3(y)'
+\big\vert_{y=\varphi(x)}
+   \eqno (3)
+      $$
+
+ Is it possible to recognize $S(x,l)$ by
+expansion of 
+ $\Phi^*(t_mG_m)$?
+\bye
