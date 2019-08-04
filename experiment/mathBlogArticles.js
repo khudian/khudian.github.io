@@ -7,24 +7,34 @@ var links =
 function generateArticlesCode(link)
 {
   var HTMLCode = '';
-  //alert(link);
 $.get( link, function( data ) {
   HTMLCode = data;
-  alert(data)
 });  
  return HTMLCode;
 
 }
 
-function generateArticles()
+function generateWrapper(id)
+{
+   var result = `
+   <div id="`+id+`"></div><br>
+   `
+   return result;
+}
+
+function generateWrappers()
 {
   var htmlCode = "";
-  for (var i in links)
-  {
-    htmlCode += generateArticlesCode(
-      links[i][0]);
-  }
+  htmlCode += generateWrapper(5);
+  htmlCode += generateWrapper(6);
+  htmlCode += generateWrapper(7);
   $("#articles").html(htmlCode);
+}
+
+function generateArticles()
+{
+  generateWrappers();
+  $( "#5" ).load("2019/May19/3symclairaut/index.html div.mainText" );
 }
 
 $( document ).ready(function() 
