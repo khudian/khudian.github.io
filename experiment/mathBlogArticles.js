@@ -1,5 +1,9 @@
 var links =
 [
+  ["2019/May19/3symclairaut/index.html"],
+  ["2019/May19/3symclairaut/index.html"],
+  ["2019/May19/3symclairaut/index.html"],
+  ["2019/May19/3symclairaut/index.html"],
   ["2019/May19/3symclairaut/index.html"]
 ]
 
@@ -17,7 +21,7 @@ $.get( link, function( data ) {
 function generateWrapper(id)
 {
    var result = `
-   <div id="`+id+`"></div><br>
+   <div class="article" id="`+id+`"></div><br>
    `
    return result;
 }
@@ -25,16 +29,22 @@ function generateWrapper(id)
 function generateWrappers()
 {
   var htmlCode = "";
-  htmlCode += generateWrapper(5);
-  htmlCode += generateWrapper(6);
-  htmlCode += generateWrapper(7);
+  for (var i in links)
+  {
+    htmlCode += generateWrapper(i);
+  }
+  
   $("#articles").html(htmlCode);
 }
 
 function generateArticles()
 {
   generateWrappers();
-  $( "#5" ).load("2019/May19/3symclairaut/index.html div.mainText" );
+  for (var i in links)
+  {
+    $( "#"+i.toString()).load(links[i]);
+  }
+  
 }
 
 $( document ).ready(function() 
