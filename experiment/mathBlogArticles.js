@@ -43,6 +43,7 @@ function generateArticles()
   for (var i in links)
   {
     $( "#"+i.toString()).load(links[i] + " div.article");
+    MathJax.Hub.Queue(["Typeset",MathJax.Hub]); //update MathJax
   }
   
 }
