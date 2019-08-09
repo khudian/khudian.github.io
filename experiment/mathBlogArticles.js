@@ -21,7 +21,7 @@ $.get( link, function( data ) {
 function generateWrapper(id)
 {
    var result = `
-   <div class="article" id="`+id+`"></div><br>
+   <div id="`+id+`"></div><br>
    `
    return result;
 }
@@ -42,7 +42,7 @@ function generateArticles()
   generateWrappers();
   for (var i in links)
   {
-    $( "#"+i.toString()).load(links[i]);
+    $( "#"+i.toString()).load(links[i] + " div.article");
   }
   
 }
