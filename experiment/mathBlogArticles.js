@@ -8,15 +8,6 @@ var links =
 ]
 
 
-function generateArticlesCode(link)
-{
-  var HTMLCode = '';
-$.get( link, function( data ) {
-  HTMLCode = data;
-});  
- return HTMLCode;
-
-}
 
 function generateWrapper(id)
 {
@@ -37,14 +28,28 @@ function generateWrappers()
   $("#articles").html(htmlCode);
 }
 
+function loadArticle(i)
+{
+  var idRef = "#"+i.toString();
+  $(idRef).load(links[i] + " div.article", 
+  function() 
+  {
+    var titleObject = $(idRef).find("h2");
+    var titleHTML = titleObject.html();
+    titleHTML = `<a href="`+ links[i] +`">` + titleHTML + `</a>`;
+    titleObject.html(titleHTML);
+    MathJax.Hub.Queue(["Typeset",MathJax.Hub]); //update MathJax
+  });
+}
+
 function generateArticles()
 {
   generateWrappers();
   for (var i in links)
   {
-    $( "#"+i.toString()).load(links[i] + " div.article");
-    MathJax.Hub.Queue(["Typeset",MathJax.Hub]); //update MathJax
+    loadArticle(i);
   }
+
   
 }
 
