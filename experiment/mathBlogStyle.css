@@ -1,5 +1,9 @@
-div.articles
+div.article
 {
+  background-color: rgb(255, 255, 250);
+  border-radius: 10px;
+  padding: 5%;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
 }
 
 div.mainText
