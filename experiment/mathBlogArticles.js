@@ -4,7 +4,7 @@ var links =
   ["2019/March19/12fermat/index.html"],
   ["2019/March19/10field/index.html"],
   ["2019/March19/07music/index.html"],
-  ["2019/June19/4konspektkrbg1/index.html"],
+  ["2019/June19/4konspektkrbg1/index.html"]/*,
   ["2019/June19/3clairaut/index.html"],
   ["2019/June19/30signconventions/index.html"],
   ["2019/June19/24linlgr2/index.html"],
@@ -142,7 +142,7 @@ var links =
   ["2017/August17/040817/index.html"],
   ["2017/August17/030817/index.html"],
   ["2017/August17/020817/index.html"],
-  ["2017/August17/010817/index.html"]
+  ["2017/August17/010817/index.html"]*/
 ]
 
 
