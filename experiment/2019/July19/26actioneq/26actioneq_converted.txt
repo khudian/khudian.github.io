@@ -1,0 +1,132 @@
+
+
+
+
+\magnification=1200
+\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\C {{\bf C}}
+\def\L {{\cal L}}
+\def\E {{\bf E}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\Z {{\bf Z}}
+\def\R  {{\bf R}}
+\def\l {\lambda}
+\def\ll {{\bf l}}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\pt {{\bf p}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\f{{\bf f}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def\w {{\omega}}
+\def \Tr  {{\rm Tr\,}}
+\def\dim {{\rm dim\,\,}}
+% I wrote this file on 16 January
+\def\t {{\tilde}} 
+\def\dist {{\hbox{\tt "distance"}}}
+\def  \dim {{\rm dim\,}}
+\def  \Im  {{\rm Im\,}}
+\def  \ker {{\rm ker\,}}
+
+
+\def \Cl {\hbox{\tt Cliff}}
+
+\centerline {Action in equation}
+
+Let $L$  be a Lagrangian.
+
+   Denote by $x^i(\tau)$  the solution of Euler-Lagrange equation such
+that
+                $$
+\cases{
+     x^i(0)=0\cr
+     x^i(t)=q^i_{\rm fin}\cr
+}
+                $$
+Let $\tilde {x}^i(\tau)=x^i(\tau)+\vare h^i(\tau)$ be another solution of Euler Lagrange
+equation  such that $h^i(0)=0$.
+      At the moment $\tau=t+\delta t$
+                     $$
+  \tilde x^i(t+\delta t)=x^i(t+\delta t)+\vare h^i(t+\delta t)=
+             x^i(t)+\dot x^i(t)\delta t+\vare h^i(t)\Rightarrow
+     \quad \delta q^i=\dot x^i(t)\delta t+\vare h^i(t)\,.
+                     $$
+    Calculate the changing of the action:
+                  $$
+  S(0;t+\delta t, q+\delta q)=
+\int_0^{t+\delta t}L(x^i+\vare h^i, 
+\dot x+\vare\dot h^i)d\tau=
+             $$
+              $$
+\int_0^{t}L(x^i, 
+\dot x)d\tau+
+\int_t^{t+\delta t}L(x^i, 
+\dot x)d\tau+
+\vare\int_0^{t}
+       \left(
+{\p L\over \p x^i}h^i(\tau)
+          +
+{\p L\over \p \dot x^i}\dot h^i(\tau)
+\right)
+   d\tau=
+                  $$
+               $$
+     S(0,0;t,q)+L(x,\dot x)\delta t+
+              \vare{d\over dt}
+ \left({\p L\over \p \dot x^i}\right)h^i(t)+
+    \vare 
+         \underbrace{
+           \int\left(
+       {\p L\over \p x^i}
+              -{d\over dt}
+ \left({\p L\over \p \dot x^i}\right)
+              \right)
+             }_{\hbox {vanishes}}
+               $$
+Thus we have
+                   $$
+  S(0;t+\delta t, q^i+\delta q^i)=
+  S(0;t+\delta t, q^i+\dot x^i\delta t+\vare h^i)=
+                  $$
+                  $$
+  S(0;t, q)+L(x,\dot x)\delta t+
+              {d\over dt}
+ \left({\p L\over \p \dot x^i}\right)
+ \left(\delta q^i-\dot x^i\delta t\right)
+           $$ 
+This implies that
+                 $$
+  {\p S(0;q,t)\over \p t}=L(x,\dot x)-
+       \dot x^i{d\over dt}
+ \left({\p L\over \p \dot x^i}\right)=-H\,,
+        $$
+and $$
+       {\p S(0;q,t)\over \p q^i}=
+             {d\over dt}
+ \left({\p L\over \p \dot x^i}\right)=p_i\,,
+          $$
+\tt{this was waited hundred years}
+\bye

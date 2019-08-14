@@ -1,0 +1,85 @@
+
+
+
+
+\magnification=1200 
+
+
+\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\w {\omega}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\L {{\cal L}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\S  {{\bf S}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\M {{\cal M}}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\pt {{\bf pt}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\k{{\bf k}}
+\def\l{{\bf l}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def \G{{\cal G}}
+\def\ss  {\sigma_{\rm sph}}
+\def\grad {{\rm grad\,}}
+% I began this file on 31 July 2017
+
+\centerline {\bf One approach}
+
+Denote  by $g_\k(y)$ a function $g=g_\k=\k\cdot \y=k_ay^a$
+
+If $\Phi=\Phi_S$ is a thick morphism, then
+       $$
+  \Phi^*(g_\k)(x)=S(x,\k)
+       $$
+and
+      $$
+   y^a_\k(x)={\p S(x,l)\over \p l^a}\big\vert_{\l=\k}
+      $$
+
+Let $L$ be an arbitrary map such that  
+       $$
+  L(g+tH)-L(G)=tH(y_g(x))
+       $$
+Study the relation between symmetricity of second variation and
+the condition
+         $$
+{\p y^a_\k\over \p k_b}-
+{\p y^b_\k\over \p k_a}=0
+ \eqno (1)
+         $$
+If we show that symmetricity implies (1)
+then we can integrate $y^a_\k$. 
+\bye
+

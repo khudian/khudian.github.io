@@ -1,0 +1,128 @@
+
+ 
+
+\magnification=1200
+\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\C {{\cal C}}
+\def\L {{\cal L}}
+\def\E {{\cal E}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\Z {{\bf Z}}
+\def\R  {{\bf R}}
+\def\l {\lambda}
+\def\ll {{\bf l}}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\pt {{\bf p}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\f{{\bf f}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def\w {{\omega}}
+\def \Tr  {{\rm Tr\,}}
+\def\dim {{\rm dim\,\,}}
+% I wrote this file on 16 January
+\def\t {{\tilde}} 
+\def\dist {{\hbox{\tt "distance"}}}
+
+
+   \centerline {\bf Udiviteljnoje riadom}
+
+Yurij Bazlov gave me to solve the following problem:
+
+{\it     For natural number $N$
+consider the set   $\{1,2,3,\dots,N\}$.
+Calculate  the number of subsets of this set such that
+the sum of elements of this subset is divisible on $p$.
+
+ }
+
+Thinking about this problem I fomrulated  the following identity:
+            $$
+  (1+x)(1+x^2)\dots(1+x^{p-1})=
+    1+C_p(1+x+\dots+x^{p-1})\,, \,, C_p={2^{p-1}-1\over p} 
+            $$
+which is obeyed if $p$ is prime number and $x^p=1$.
+
+
+This  identity leads to the fact that
+number of subsets where sum  of the elements has given remainder
+if we divide on $p$  is equal to  $2C_p-1$.
+This is for prime $p$.  
+
+I came to
+this identity experimentally.
+   What happens if $N$ is not prime?
+This is true
+identity for the free ring with constraint $x^p=1$, and on
+the other hand  if
+$x$ is primitive root, then left hand
+side is equal to $1$.
+
+    Now I realise what happened:
+     Consider examples:
+  Denote  by
+    $$
+     P_N(x)=(1+x)(1+x^2\dots (1+x^{N-1})
+   $$
+and denote by
+       $$
+T_N(x)=1+x+x^2+\dots+x^{N-1}
+        $$
+We have that if $N=p$  is a prime then $T_N$ is irreducible polynomial
+of $\vare_p=e^{2\pi\sqrt{-1}\over p}$.
+
+
+   We have       
+ $$ 
+P_3(x)=1+T_3(x)\,,\quad \hbox {and $P_3(\vare_3)=1$}\,, 
+$$
+ $$ 
+P_5(x)=1+3T_5(x)\,,\quad \hbox {and $P_5(\vare_5)=1$}\,, 
+$$
+  \bye
+ $$ 
+P_7(x)=1+9T_7(x)\,,\quad \hbox {and $P_7(\vare_7)=1$}\,, 
+$$
+ $$ 
+P_{11}(x)=1+93T_{11}(x)\,,\quad \hbox {and $P_{11}(\vare_{11})=1$}\,, 
+$$
+ $$ 
+P_{13}(x)=1+315T_{13}(x)\,,\quad \hbox {and $P_{13}(\vare_{13})=1$}\,, 
+$$
+However
+
+
+ $$ 
+P_4(x)=2T_4(x)\,,\quad \hbox {and $P_4(\vare_4)=0$}\,, 
+$$
+ $$ 
+P_6(x)=5T_5(x)+5(x^3+1)\,,\quad \hbox {and $P_6(\vare_6)=0$}\,, 
+$$
+ $$ 
+P_8(x)=5T_5(x)+5(x^3+1)\,,\quad \hbox {and $P_6(\vare_6)=0$}\,, 
+$$
+
+\bye

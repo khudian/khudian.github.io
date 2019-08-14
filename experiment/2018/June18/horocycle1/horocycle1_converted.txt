@@ -1,0 +1,23 @@
+Today I have began to understand the synthetic definition of 
+{\tt horocycle}:
+
+
+Let $\Pi$ be a pencil of lines which are parallel to each other
+in the sqme direction.
+ Conisder an isometry  $F$ such that it sends every line of this pencil
+to another (maybethe smae?) line of thispencil.
+ Let $l$ be an arbitrary line of the pencil $\Pi$,
+and let $A$ be an arbitrary point on $l$
+Since $F$ is isometry then the line between the point $A$
+and its image the point $A'$ has the SAME ANGLES with lines
+   $l$ and $l'=F(l)$.
+
+Let a line $r$ does not change under this transformation: 
+   $$
+\forall A\in r, F(A)\in r
+   $$
+The line $r$ is called HOROCYCLE
+
+
+
+\bye

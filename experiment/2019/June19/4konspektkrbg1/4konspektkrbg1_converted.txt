@@ -1,0 +1,144 @@
+ 
+
+\magnification=1200
+\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\C {{\cal C}}
+\def\L {{\Lambda}}
+\def\LL {{\cal L}}
+\def\E {{\cal E}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\Z {{\bf Z}}
+\def\R  {{\bf R}}
+\def\l {\lambda}
+\def\ll {{\bf l}}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\pt {{\bf p}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\f{{\bf f}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def\w {{\omega}}
+\def \Tr  {{\rm Tr\,}}
+\def\dim {{\rm dim\,\,}}
+% I wrote this file on 16 January
+\def\t {{\tilde}} 
+\def\dist {{\hbox{\tt "distance"}}}
+\def \div {{\rm div}}
+\def \formal {{\tt formal $\,$}}
+
+
+\centerline{\bf  Konspekt pervoj chasti doklada
+ Karabegova} 
+
+\centerline {\bf po ego lekcijam po Skaipu (kak ja ikh pnimaju)}
+
+  Let $M$ be a  manifold with a point $\pt$ on it.
+
+  Let $\rho=\rho(\nu)$ be a \formal density on manifold $M$
+\footnote{$^{1)}$}
+{
+{\bf Remark}  The \formal density $\rho(\nu)$ obeys also the condition
+that
+            $$
+    \rho=e^{\varphi(\nu)}\rho_0(\nu)\,,\quad
+\hbox {where $\varphi(\nu)=\sum_{k\geq -1}\nu^k\varphi_k$}\,.
+            $$
+I do not know how to codify it without the use of the phase function
+Later I will call density of this type {\it oscillatory} density. 
+}
+and $\sigma=\sigma(\nu)$  be a \formal function on $M$ such that
+                           $$
+               {d\rho(\nu)\over d\nu}=\sigma(\nu)\rho(\nu)\,.
+                          \eqno (1)
+                   $$
+We consider \formal generalised functions
+ $\L(\nu)$  with support at the point
+   $\pt$ 
+                 $$
+  \L(\nu)=\L_0+\nu \L_1+\dots\,,\quad \hbox {and $\L_0(1)\not =0$}\,.
+                       \eqno (2)
+                 $$
+
+\medskip
+
+We say that the generalised \formal function $\L$  is associated
+with the density $\rho$ if 
+                 $$
+\L\left(\p_\v f+f\div_\rho \v\right)=0
+                             \eqno (3)
+                 $$
+where $\v$ is an arbitrary vector field on $M$ (not \formal)
+and $f$ is an arbitrary \formal function on $M$.
+
+\smallskip
+
+We say that the generalised \formal function $\L$  is {\it strongly 
+associated} with the density $\rho$ if
+this function is associanted with the density $\rho$
+and  the following condtion holds also:
+              $$
+{d\over d\nu}\L(f)=-{n\over 2\nu}\L+\L\left({df\over d\nu}+
+                           f\sigma\right)\,.
+                  \eqno (4)
+              $$ 
+where  $n$ is a dimension of manifold $M$, $f=f(\nu)$ is as usual
+an arbitrary \formal function and a function $\sigma$
+is defined by equation (1)
+\footnote{$^{2)}$}
+{Equation (4) becomes natural if we apply
+it to generalised function 
+                  $
+\L_{\rho_0,\varphi}=\nu^{-{n\over 2}}\int f\rho
+                  $,
+where a \formal density $\rho$ is equal to 
+$\rho=e^\varphi \rho_0$, $\rho_0$ is a density (non-vanishing at point
+$\pt$) and  $\varphi$
+is  a \formal function such that
+            $
+\varphi={1\over \nu}\varphi_{-1}+\varphi_0+\nu\varphi_1+\dots
+            $,
+and a function $\varphi_1$ has non-degenerate hessian at the point
+   $\pt$.
+}.
+
+Notice that 
+
+
+a) generalised function  associated with a \formal density
+is defined up to a \formal constant, and
+
+
+b)  generalised function  stronlgly associated with a \formal density
+is defined up to a  constant (not \formal just a complex number).
+
+
+{\bf Theorem} (\tt Karabegov)
+ If a density is 
+an oscillatory density (see the footnote at the first page)
+then the inverse is also true.
+
+
+\bye

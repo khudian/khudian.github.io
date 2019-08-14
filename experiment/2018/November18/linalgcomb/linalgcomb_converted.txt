@@ -1,0 +1,91 @@
+
+
+
+
+
+\magnification=1200
+\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\S  {{\bf S}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\ll {{\bf l}}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\pt {{\bf p}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def \G{{\cal G}}
+\def\w {{\omega}}
+\def \Tr  {{\rm Tr\,}}
+\def\V {{\cal V}}
+% I began this file in November  2018
+
+    \centerline {One combinatorial lemma}
+
+  Let $M$ be $n\times n$ matrix such that all diagonal entries are
+  $0$ and all other entries are $\pm 1$:
+                      $$
+                    M_{ij}=\cases {
+            0 \,\, {\rm if}\,\, i=j\cr
+            \pm 1 \,\, {\rm if}\,\, i\not j\cr
+                             } 
+                      $$
+      Then for characteristic polynomial
+                         $$
+        \det (\lambda+M)=\sum_{k=0}^n a_k\lambda^{n-k}=\lambda^n
+            +a_1\lambda^{n-1}
+            +a_2\lambda^{n-2}
+            \dots
+         +a_{n-1}\lambda+a_n\,
+                          \eqno (2)
+                         $$   
+the following relation holds:
+                        $$
+a_k= C^k_n S_k=C^k_n(k+1) \,\, (mod 2)\,.
+                        $$
+
+{\bf Corollary}   For characteristic polynomial (2)
+                      $$
+\hbox{$C^k_n$ is odd and $k$ is even}\Rightarrow a_k\not=0\,.
+                       $$
+
+  Proof of the lemma is straightforward
+ (it is the corollary that is surprisingly effective!)
+                 $$
+                 $$
+
+\bye
+

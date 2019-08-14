@@ -1,0 +1,216 @@
+
+
+\magnification=1200
+\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\C {{\cal C}}
+\def\L {{\cal L}}
+\def\E {{\cal E}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\Z {{\bf Z}}
+\def\R  {{\bf R}}
+\def\l {\lambda}
+\def\ll {{\bf l}}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\pt {{\bf p}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def\w {{\omega}}
+\def \Tr  {{\rm Tr\,}}
+% I wrote this file on 1-st January  2019
+ 
+
+   \centerline{\bf Geometry of diff.equations}
+
+
+  \centerline 
+{\bf ${\cal x} 1$ Necessary mathematics from Arnold's book}
+
+
+
+{\tt I began to understand the pages in Arnold on diff. equations.....}
+
+
+Here it is:
+
+{\bf Definition}   Let $\w$ be $1$-form on $M$ which does not vanish.
+. We say that it is
+{\it contact} form if 
+       $$
+\hbox{$2$-form $d\w$ is non-degenerate on the plane $\w=0$ in $TM$}
+       $$
+
+Since $d\w$ is not degenerate on $\w=0$ and $\w\not\equiv 0$
+them ${\rm dim}\, M=2k+1$.
+
+{\bf Theorem}  Contact form is defined up to a function
+(Valya had a talk on it!)  If $\w$ is contact form and
+  $f\not=0$ then $f\a$ is contact also.
+
+\m
+
+   Let $\cal K$ be a distributions of $2n$-dimensional planes in $TM$
+such that $\w$ vanishes on these planes.
+
+
+We say that this distribution is a contct structure
+\footnote{$^*$}{One can say  that distribution of hyperplanes
+ defines constant structure if an $1$-form which vanishes this dstribution is non-degenerated on it}
+
+
+
+{\bf Theorem}  Let $N$ be a submanifold of $M$
+which is an integral submanifold 
+(not necessarily maximal)  of contact distribution $\cal K$,
+i.e. for every point on $N$ the tangent  vectors belong to
+this distribution.   Then ${\rm dim}\, N\leq n$,
+where ${\rm dim}\,M \leq 2n+1$ 
+
+{\tt Proof}  Let $\w$ be an arbitrary non-zero 
+form which vanishes at $\cal K$.   
+Since a form $\w$ vanishes on vectors tangent to the manifold
+$N$, the form $d\w$ vanishes on these vectors also:
+               $$
+\iota\colon N\subset M, \qquad
+    d\left(\iota^* \w\big\vert_N\right)=
+     \iota^* dw\big\vert_N=0\,.
+               $$
+Hence two arbitrary vectors are orthogonal to each other with
+respect to this form.  If dimension of tangent plane is bigger
+than $n$ then there exist at least two vectors which are not orthogonal,
+since $d\w$ is not degenerate.
+Now we apply this mathematics to the differential equations.
+
+\m
+
+    \centerline {${\cal x}2\,\,$  
+\bf Geometry of first order equation}
+
+  Let  $J^1M$  be a space of first jets of functions on 
+manifold $M$. Cooridnates on $J^1M$ are $(p_i,q^j,u)$,
+where $q^j$ are coordinates on $M$.  Jet of every function  $u=u(x)$
+has coordinates $\left(p_i={\p u\over \p x q^i},q^i,u\right)$.
+
+Consider  $\C$ , the Cartan 
+ distribution of $2n$-dimensional planes in $J^1M$
+defined by the form $\w=p_idq^i-du$
+                      $$
+\C_\pt\subset T_\pt J^1M=\{
+T_\pt (J^1M)\ni\X\colon\,\,\w(\X)=0 
+                    \}\,,
+                      $$
+Vector field  
+     $$
+M^i{\p\over \p q^i}+
+N_i{\p\over \p p_i}+A{\p\over \p u}\,
+\hbox{belongs to Cartan distribution $\C$ if $A=p_iM^i$}\,.
+      $$
+$\C$ is non-integrable distribution.  It is a 
+{\it contact structure} and
+the form  $\w_C=p_idq^i=du$  is a contact form since
+              $$
+          d\w\big\vert_{\w=0}=dp_i\wedge dq^i
+              $$
+is non-degenerte form.
+Consider differential equation,  
+      $$
+\E\colon       F(p,q,u)=0\,.
+      $$
+Differential equation is sumbmanifold of codimension $1$
+in the space $J^1(M)$.
+
+The Cartan distribution  $\C$ of hyperplanes on $J^1M$ 
+defines distribution  $\C(\E)$ in $T\E$:
+                  $$
+\C(E)=\C\cap T\E\,.
+                   $$
+         $$
+\X=
+M^i{\p\over \p q^i}+
+N_i{\p\over \p p_i}+A{\p\over \p u}\in \C(\E)\,\, {\rm if}\,\,
+ A=p_iM^i \& 
+\left(M^i{\p\over \p q^i}+
+N_i{\p\over \p p_i}+A{\p\over \p u}\right)F(p,q,u)\big\vert_{F=0}=0\,.
+          $$
+
+This distribution is not integrable.
+
+
+The solution of differential equation (1) is the maximal integral
+  of the distribution.
+
+What is the dimension of $N$?
+
+
+The considerations of the first paragraph say
+that 
+    $$
+ \dim N\leq n
+     $$
+
+If $N$ is the $n$-dimensional
+ submanifold in $M$.  
+(We come in this case to the $n$-parametric family of solutions?)
+
+
+
+Let  $N$ be an arbitrary solution, 
+$N$ is the surface of dimension
+  at least $n$. Any tangent plane to $N$  belongs to Cartan distribution
+and is tangent to $\E$.   Consider an arbitrary
+point $\pt \in N$. Let $\a=\a_\pt$  be the tangent plane.  The vectors
+in tangent plane belong to distribution $\C_\E=\C\cap\E$,
+i.e. they are orthogonal to the covector ($1$-form) 
+in $2n+1$-dimensional
+space
+            $$
+  \w_C=(1,0,\dots,0,-p_1,\dots, -p_n)\,,
+  \quad\hbox{ (the vector belongs to Cartan distribution $\C$)} 
+            $$
+and to the covector
+     $$
+dF=
+         \left(
+      F_u,
+  {\p F\over \p q^1}, \dots ,{\p F\over \p q^n};
+  {\p F\over \p p_1}, \dots {\p F\over \p p_n}
+          \right)\,,
+\qquad
+  \hbox {(the vector is tangent to the differential equation $\E=0$)} 
+     $$
+    $$
+\a_\pt\ni\X\Leftrightarrow  \w_C(\X)=dF(\X)=0\,. 
+    $$
+
+{\bf Definition}  The point $\pt$ is not singular point if
+tnhe rank of the matrix $\pmatrix {\w_C\cr  dF\cr}$  is equal to $2$.
+IN this case the dimension of 
+
+
+ \bigskip
+
+
+\bye

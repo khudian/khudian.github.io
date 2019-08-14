@@ -1,2 +1,2 @@
-copyInd.py
+copyTexTxt.py
 pause

@@ -1,0 +1,74 @@
+
+
+
+
+
+\magnification=1200 
+
+
+\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\w {\omega}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\L {{\cal L}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\S  {{\bf S}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\pt {{\bf pt}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def \G{{\cal G}}
+\def\ss  {\sigma_{\rm sph}}
+\def\grad {{\rm grad\,}}
+% I began this file on 31 July 2017
+
+
+\centerline {\bf Ball's identity}
+
+{\it Yesterday I was in Loughborough, on XX-th 
+integrable day. Don Zagier had lecture...His lecgture (about motives whas wondreful...} 
+
+He wrote the identity: if $ad-bc=1$ then
+
+                  $$
+{d^k\over dz^k}\left(f\left(az+b\over cz+d\right)
+       \left(cz+d\right)^{k-1}\right)=
+                f^{[k]}\left({az+b\over cz+d}\right)
+       (cz+d)^{-k-1}\,,\,{\rm where}
+     \,\,
+     f^{[k]}(z)={d^k f(z)\over dz^k}\,.
+                  $$
+
+Gritsenko had lecture. He quoted the platform:
+\bye

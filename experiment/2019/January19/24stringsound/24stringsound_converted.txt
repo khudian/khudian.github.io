@@ -1,0 +1,216 @@
+
+
+\magnification=1200
+\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\C {{\cal C}}
+\def\L {{\cal L}}
+\def\E {{\cal E}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\Z {{\bf Z}}
+\def\R  {{\bf R}}
+\def\l {\lambda}
+\def\ll {{\bf l}}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\pt {{\bf p}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def\w {{\omega}}
+\def \Tr  {{\rm Tr\,}}
+\def\dim {{\rm dim\,\,}}
+% I wrote this file on 16 January
+\def\t {{\tilde}} 
+\def\dist {{\hbox{\tt "distance"}}}
+
+
+
+  We want to model the sound propagation.
+
+
+
+Consider $N$ identical strings which may a big circle.
+      $$
+L=\sum_k {m\dot x_k^2\over 2}+
+   \sum {k(x_k-x_{k+1})^2\over 2}=
+          $$
+          $$
+ {m\dot x_0^2\over 2}+
+ {m\dot x_1^2\over 2}+
+ {m\dot x_2^2\over 2}+\dots
+ {m\dot x_{N-1}^2\over 2}+
+ {m\dot x_N^2\over 2}+
+         $$
+         $$
+   {k(x_1-x_{0})^2\over 2}+
+   {k(x_2-x_{1})^2\over 2}+
+        \dots
+   {k(x_{N-1}-x_N)^2\over 2}+
+   {k(x_N-x_0)^2\over 2}=
+      $$ 
+where summation  gous over the finite ring $Z\backslash NZ$.
+
+One can write it like
+     $$
+L=\sum_k {m\dot x_k^2\over 2}+
+   {k\over 2}\sum M_{km}x^kx^m
+     $$
+where $N\times N$ matrix $M$ is equal to
+           $$
+         M=
+    \pmatrix
+       {
+       2 & -1 & 0 &0 &0 \dots  &0  &0  &-1\cr
+       -1 & 2 & -1 &0 &0 \dots  &0  &0  &0\cr
+       0 & -1 &2 &-1 &0 \dots  &0  &0  &0\cr
+       0 & 0  &-1 &2 &-1 \dots  &0  &0  &0\cr
+       0 & 0 &0  &-1 &2 \dots  &0  &0  &0\cr
+       \dots & \dots &\dots  &\dots &\dots \dots  &
+       \dots  &\dots  
+             &\dots\cr
+       0 & 0 &0  &0 &-1 \dots  &2  &-1  &0\cr
+       0 & 0 &0  &0 &0 \dots  &-1  &2  &-1\cr
+       -1 & 0 &0  &0 &0 \dots  &0  &-1  &2\cr
+       }\,,
+     $$
+(see the blog on 28 October 2019.)
+This is the matrix on the cylinder.
+
+\bigskip
+
+
+   Coordinates on configuration space.
+
+{\bf Remark}
+The dimension of configuartion space is $N+1$,
+however it is natural to embedd this space in the space
+with $N+2$ coordinates
+ $\eta_0,\eta_1,\dots,\eta_N,s$:
+         $$
+\eta_i=x_i-x_{i-1}\,, (\eta_0=x_0-x_N)\quad\,,
+  s={x_0+x_1+x_2+\dots+x_N\over N+1}\,.
+         $$
+the constraint is $\eta_0+\eta_1+\dots+\eta_N=0$.
+
+
+$$ $$
+
+
+We try to do it in other way: we will choose new coordinates
+{\it not  destroying the circle symmetry}: 
+
+Consider new coordinates $\{\xi^0,\xi^2,\dots\xi^N\}$:
+            $$
+\eta_i=x_i-x_{i-1}+s\,, (\eta_0=x_0-x_N)\quad\,,
+         $$
+i.e.
+                $$
+\cases
+  {
+\xi^0=\eta^0+s=x^0-x^{N}+{x^0+x^1+\dots+x^N\over N+1}\cr
+\xi^1=\eta^1+s=x^1-x^{0}+{x^0+x^1+\dots+x^N\over N+1}\cr
+\ldots\cr
+\xi^N=\eta^N+s=x^N-x^{N-1}+{x^0+x^1+\dots+x^N\over N+1}\cr
+}
+                $$
+Notice that these equation are covariant with respect to action of
+rotation of circle:
+             $$
+\xi^i\mapsto \xi^{i+k}\Leftrightarrow x^i\mapsto x^{i+k}
+             $$
+This facilitates the calculations. It suiffice to express $x^0$
+via $\xi$, anf then apply symmetry. 
+Perform not difficult but enjoyable
+calculations\footnote{$^*$}{Intermediate expressions may not 
+respect the rotational symmetry, but final answers will respect} 
+We have that
+             $$
+x_0=x_0\,, 
+x_1=\eta_1+x_0\,,
+x_2=\eta_2+\eta_1+x_0\,,\ldots\,,
+x_N=\eta_N+\dots+\eta_1+x_0
+               $$
+Summing these equations we come to
+              $$
+x^0=-{1\over N+1}\left(N\eta_1+(N-1)\eta_2+\dots+2\eta_{N-1}+\eta_N\right)+s=
+              $$
+              $$
+x^0=
+     -{1\over N+1}\left(N\left(\xi^1-s\right)+
+(N-1)\left(\xi^2-s\right)+\dots+2\left(\xi^{N-1}-s\right)+
+ \left(\xi^N-s\right)\right)+s=
+              $$
+       $$
+     -{1\over N+1}\left(N
+                 \xi^1+
+(N-1)\xi^2+\dots+2\xi^{N-1}+
+ \xi^N\right)+{N+2\over 2}s\,.
+      $$
+Thus since 
+                $$
+s={x_0+\dots+x_N\over N+1}={\xi^0+\dots+\xi^N\over N+1}
+               $$ we come to
+             $$
+x^0={N+2\over 2(N+1)}
+               \times
+                    $$
+                    $$
+         \left(
+          \xi_0
+ +\left(1-{2N\over N+2}\right)\xi^1
+ +\left(1-{2(N-1)\over N+2}\right)\xi^2
+ +\left(1-{2(N-2)\over N+2}\right)\xi^3
+         +\ldots
+ +\left(1-{2\over N+2}\right)\xi^N
+             \right)
+             $$
+To calculate other $x^i$ for $i\not=0$ we use group symmetries.
+We have  that if
+              $$
+   x^0=\a_k\xi^k=
+       \a_0\xi^0+
+       \a_1\xi^1+
+       \a_2\xi^2+\ldots+\a_N\xi^N
+              $$
+then 
+              $$
+        x^i=\a_{k-i}\colon\quad
+              \cases
+                  {
+       x^0=\a_0\xi^0+\a_1\xi^1+\a_2\xi^2+\ldots+\a_N\xi^N\cr
+       x^1=\a_N\xi^0+\a_0\xi^1+\a_1\xi^2+\ldots+\a_{N-1}\xi^N\cr
+       x^2=\a_{N-1}\xi^0+\a_N\xi^1+\a_0\xi^2+\ldots+\a_{N-2}\xi^N\cr
+              \ldots\cr
+       x^N=\a_1\xi^0+\a_2\xi^1+\a_3\xi^2+\ldots+\a_0\xi^N
+                   }
+              $$
+
+Here we usses symmetries, but calculations are still difficult.
+   We try to go in another way choosing orthogonal transformations of coorrdinates (see the next blog)
+
+
+
+\bye
+~   
