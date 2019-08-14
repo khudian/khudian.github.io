@@ -1,2 +1,2 @@
-addTexToIndexFiles.py
+generateLinks.py
 pause
