@@ -20,8 +20,164 @@
   <div class="mainText">
     <div class="article">
       <h2 class="title" date=""></h2>
+<br>
+\magnification=1200
+\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\C {{\cal C}}
+\def\L {{\cal L}}
+\def\E {{\cal E}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\Z {{\bf Z}}
+\def\R  {{\bf R}}
+\def\l {\lambda}
+\def\ll {{\bf l}}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\pt {{\bf p}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\f{{\bf f}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def\w {{\omega}}
+\def \Tr  {{\rm Tr\,}}
+\def\dim {{\rm dim\,\,}}
+% I wrote this file on 16 January
+\def\t {{\tilde}} 
+\def\dist {{\hbox{\tt "distance"}}}
+<br>
+     \centerline {\bf Again about contact vector field}
+<br>
+ Let $\X$ be a vector field which 
+preserves the contact structure:
+    $$
+\X=
+R^m(q,p,u){\p\over \p q^m}+
+T_m(q,p,u){\p\over \p p_m}+
+   F(q,p,u){\p\over \p u}
+ \eqno (1)
+     $$
+such that
+        $$
+\L_\X\a (p_mdq^m-du)=\lambda (p_m,q^m,u)(p_m dq^m-du)\,.
+      \eqno (2)
+ $$
+<br>
+Consider the `Hamiltonian`
+          $$
+      H_\X=\a(\X)=p_mR^m(q,p,u)-F(q,p,u)\,.
+      \eqno (3)
+          $$
+Then it follows from equation (2) that the $1$-form
+      $$
+\L_\X \a= d(\iota_\X \circ\a)+\iota_\X\circ d\a=
+d (H_\X)+\iota_\X\circ (dp_m\wedge dq^m)=
+      $$
+      $$
+   {\p H_\X\over \p p_m}dp_m+
+   {\p H_\X\over \p q^m}dq^m+
+   {\p H_\X\over \p u}du+
+T_mdq^m-R^mdp_m=
+\lambda (p_m,q^m,u)(p_m dq^m-du)\,.
+      $$
+Comparing the left and right hand sides of this equation 
+we come to
+                 $$
+{\p H_\X\over \p p_m}-R^m= 0\,,\quad 
+\lambda=-
+   {\p H_\X\over \p u}\,,
+ {\p H_\X\over \p q^m}+T_m=\lambda p_m=-
+   {\p H_\X\over \p u}p_m\,,
+                 $$
+i.e.
+         $$
+R^m=
+{\p H_\X\over \p p_m}\,,\quad
+T_m=-\left(
+ {\p H_\X\over \p q^m}+
+   {\p H_\X\over \p u}p_m
+\right)\,,\quad
+F=p_mR^m(q,p,u)-H_\X\,.
+         $$
+i.e.
+      $$
+\X=
+{\p H_\X\over \p p_m}{\p \over \p q^m}
+   -
+\left(
+ {\p H_\X\over \p q^m}+
+   {\p H_\X\over \p u}p_m
+ \right)
+{\p \over \p p_m}
+        +\left(p_m{\p H_\X\over \p p_m}-H_\X
+ \right){\p\over \p u}\,.
+   \eqno (4)
+      $$
+We see that if vector field $\X$ preserves contact structure,
+then equation (4) is obeyed.
+<br>
+On the base of these considerations prove the following 
+Theorem.
+<br>
+\def\XX {{\cal X}}
+\def\FF {{\cal F}}
+\def\SS {{\cal S}}
+<br>
+  Let $\XX(M)$  be the space of all vector fields on $M$ 
+<br>
+Consider maps 
+      $$
+\FF\colon\quad \XX(M)\to C(M)\,,\quad
+\SS\colon\quad C(M)\to \XX(M)\,,
+      $$
+such that
+    $$
+\FF(\X)=\iota_\X\circ \a=H_\X\,,\quad
+\SS(H)={\p H\over \p p_m}{\p \over \p q^m}
+   -
+\left(
+ {\p H\over \p q^m}+
+   {\p H\over \p u}p_m
+ \right)
+{\p \over \p p_m}
+        +\left(p_m{\p H\over \p p_m}-H
+ \right){\p\over \p u}\,.
+    $$
+One can see that on the subspace $\XX_{\rm contact}(M)$
+       $$
+\SS\circ\FF={\bf id}\,,\quad {\rm and}\,,
+\FF\circ\SS={\bf id} 
+        $$
+This means that there is one-one correspondence
+between contact vector fields and Hamiltonians.
+<br>
+Segodnia russkaja paskha, a zavtra u menia operatsija.
+<br>
+\bye
+<br><br>
+
     </div>
   </div>
  </body>
 </html>
- 

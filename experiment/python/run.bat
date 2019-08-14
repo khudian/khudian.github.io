@@ -1,2 +1,2 @@
-copyTexTxt.py
+addTexToIndexFiles.py
 pause

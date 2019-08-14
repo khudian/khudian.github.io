@@ -20,8 +20,143 @@
   <div class="mainText">
     <div class="article">
       <h2 class="title" date=""></h2>
+<br>
+\magnification=1200 
+<br>
+\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\w {\omega}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\L {{\cal L}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\S  {{\bf S}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\M {{\cal M}}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\pt {{\bf pt}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\k{{\bf k}}
+\def\l{{\bf l}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def \G{{\cal G}}
+\def\ss  {\sigma_{\rm sph}}
+\def\grad {{\rm grad\,}}
+% I began this file on 31 July 2017
+<br>
+\centerline {\bf Statement}
+<br>
+ Let $L$ be functional from the space of fuctions on linear space $V$
+to the space of functions on the linear space  $U$:
+                   $$
+   L\colon \quad C(V)\ni g(\y)\mapsto L(g)(x)\in C(U)
+                    $$
+($y^a$ are coordinates on $V$ and $x^\mu$ coordinates on U)
+<br>
+Suppose  that for every function $g\in C(V)$,
+there exist functions `coordinates'  $y^a_g(x)$ on $U$ such that
+       $$
+  L(g+tH)-L(G)=tH(y^a_g(x))\,,\quad \hbox{where $t$ is 
+nilpotent such that $t^2=0$}
+         \eqno (1)
+       $$
+<br>
+Consdider functions $g_\k=\k\y=k_ay^a$, and
+coordinate functions  $y^a_\k(x)=y^a_{\k \y}(x)$ 
+(see the previous blog 030118.tex)
+<br>
+{\bf Lemma}
+         $$
+{\p y^a_\k\over \p k_b}-
+{\p y^b_\k\over \p k_a}=0
+ \eqno (2)
+         $$
+Proof. Calculate  $L(\k\y+t_1\k_1\y+t_2\k_2\y )$
+where for nilpotents $t_1,t_2$
+           $$
+             t_1^2=t_2^2=0
+            $$
+Then
+            $$
+ L(\k\y+t_1\k_1\y+t_2\k_2 \y )=
+ L(\k\y+t_1\k_1\y)+t_2\k_2\y\left(y^a_{\k+t_1\k_1}\right)=
+            $$
+            $$
+   L(\k\y)+t_1\k_1\y\left(y^a_{\bf \k}\right)+
+      t_2\k_2\y
+            \left(y^a_\k+
+         \left({\p y^a_\k\over \p \k}t_1\k_1\right)=
+            \right)
+            $$ 
+         $$ 
+   L(\k\y)+
+ t_1k_{1_{a}}y^a_\k+
+ t_2k_{2_{a}}\left(y^a_\k+
+         \left({\p y^a_\k\over \p \k_1}t_1\k_1\right)\right)=
+           $$
+              $$
+   L(\k\y)+
+ t_1k_{1_{a}}y^a_\k+
+ t_2k_{2_{a}}y^a_\k+
+ t_2t_1k_{2_{a}}{\p y^a_\k\over \p k_{1_{b}}}k_{1_{b}}
+              $$
+<br>
+The second variaton of functional is symmetric: in temrs of these nilpotents
+it means that 
+    $$
+L(\k\y+t_1\k_1\y+t_2\k_2 \y )=
+L(\k\y+t_2\k_2\y+t_1\k_1 \y )\,.
+       $$
+Hence
+      $$ 
+ t_2t_1k_{2_{a}}{\p y^a_\k\over \p k_{_{b}}}k_{1_{b}}=
+ t_2t_1k_{1_{a}}{\p y^a_\k\over \p k_{_{b}}}k_{2_{b}}
+          $$      
+<br>
+THus we come to the satement of lemma.
+<br>
+Now based on the lemma consider the function  $S(\x,\k)$ such that
+              $$
+{\p S\over \p k_a}=y^a_\k
+              $$
+and consider the thick morphism $\Phi_S^*$
+<br>
+This thick morphism coincides with functional $L$
+on linear functions.
+<br>
+\bye
+<br>
+
     </div>
   </div>
  </body>
 </html>
- 

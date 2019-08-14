@@ -20,8 +20,99 @@
   <div class="mainText">
     <div class="article">
       <h2 class="title" date=""></h2>
+<br>
+\magnification=1200
+\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\C {{\cal C}}
+\def\L {{\cal L}}
+\def\E {{\cal E}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\Z {{\bf Z}}
+\def\R  {{\bf R}}
+\def\l {\lambda}
+\def\ll {{\bf l}}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\pt {{\bf p}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\f{{\bf f}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def\w {{\omega}}
+\def \Tr  {{\rm Tr\,}}
+\def\dim {{\rm dim\,\,}}
+% I wrote this file on 16 January
+\def\t {{\tilde}} 
+\def\dist {{\hbox{\tt "distance"}}}
+<br>
+\centerline {Again about strings on the circle}
+<br>
+This is third attempt.
+    We have to calculate eigenvalues of the potential energy,
+which is described by the  circulant
+$N+1\times N+1$  matrix matrix  (see the previous blogs)  
+    $$
+U=M_{ik}x^ix^k,  M=\pmatrix
+       {
+       2 & -1 & 0 &0 &0 \dots  &0  &0  &-1\cr
+       -1 & 2 & -1 &0 &0 \dots  &0  &0  &0\cr
+       0 & -1 &2 &-1 &0 \dots  &0  &0  &0\cr
+       0 & 0  &-1 &2 &-1 \dots  &0  &0  &0\cr
+       0 & 0 &0  &-1 &2 \dots  &0  &0  &0\cr
+       \dots & \dots &\dots  &\dots &\dots \dots  &
+       \dots  &\dots  
+             &\dots\cr
+       0 & 0 &0  &0 &-1 \dots  &2  &-1  &0\cr
+       0 & 0 &0  &0 &0 \dots  &-1  &2  &-1\cr
+       -1 & 0 &0  &0 &0 \dots  &0  &-1  &2\cr
+       }\,,
+$$
+This matrix is symmetric, however caclualte
+its complex eigenvalues:
+<br>
+There are $N+1$ eigenvectors  over $\bf C$.
+They are:
+    $$
+\f_i=\pmatrix{1\cr \vare_i\cr \vare_i^2\cr \dots
+\vare_i^N\cr}\,,\quad i=0,1,\dots N\,,
+   $$
+where $\vare_i$ is a root of unity:
+        $$
+     \vare_k= \exp \left(2\pi k i\over N+1\right)\,,
+\quad (i=\sqrt {-1})\,.
+        $$
+<br>
+We see that
+     $$
+M\f_i=(2-\vare_i-\vare_i^{N})\f_i
+     $$
+Notice that eigenvalues are conjugate to each other.
+\bye
+<br>
+
     </div>
   </div>
  </body>
 </html>
- 

@@ -20,8 +20,158 @@
   <div class="mainText">
     <div class="article">
       <h2 class="title" date=""></h2>
+<br>
+\magnification=1200
+\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\C {{\bf C}}
+\def\L {{\cal L}}
+\def\E {{\bf E}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\Z {{\bf Z}}
+\def\R  {{\bf R}}
+\def\l {\lambda}
+\def\ll {{\bf l}}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\pt {{\bf p}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\f{{\bf f}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def\w {{\omega}}
+\def \Tr  {{\rm Tr\,}}
+\def\dim {{\rm dim\,\,}}
+% I wrote this file on 16 January
+\def\t {{\tilde}} 
+\def\dist {{\hbox{\tt "distance"}}}
+\def  \dim {{\rm dim\,}}
+\def  \Im  {{\rm Im\,}}
+\def  \ker {{\rm ker\,}}
+<br>
+\def \Cl {\hbox{\tt Cliff}}
+<br>
+\centerline {Action in gravity}
+<br>
+   Here we will calculate the action in homogeneous gravity field
+   $$
+ L={m{\dot q}^2\over 2}-mgq\,,
+  $$
+ $x(t)=v_0t-{gt^2\over 2}$  and at $t=T$
+         $$
+x=v_0T-{gT^2\over 2}=y\Rightarrow v_0={y\over T}+{gT\over 2}\,.
+         $$
+We assume that at $t=0$  $x=0$.
+  Hence we have
+             $$
+   S_T(0;y)=\int_0^T Ldt=
+{m\over 2}\int_0^T 
+\left({y\over T}+{gT\over 2}-gt\right)^2dt
+                         -
+               {mg}\int_0^T 
+\left({y\over T}t+{gT\over 2}t-{gt^2\over 2}\right)^2dt=
+             $$
+     $$
+{my^2\over 2T}-{mgyT\over 2}-{mg^2T^3\over 24}\,.
+      $$
+One can double checlk that this action 
+obeys Hamilton-Jacobi equation.
+Hamiltonina is equal to $H(p,q)={p^2\over 2m}+mgy$ and
+                 $$
+   {\p S(y,T)\over \p T}+H
+              \left(
+    q,y
+          \right)\big\vert_
+{q={\p S(y,T)\over \p y}}
+           =
+   {\p S(y,T)\over \p T}+
+             {1\over 2m} 
+            \left(
+          {\p S(y,T)\over \p y}
+             \right)^2+mgy=
+        $$
+     $$
+-{my^2\over 2T^2}-{mgy\over 2}-{mg^2T^2\over 8}+
+{1\over 2m}\left({my\over T}-{mgT\over 2}\right)^2
++mgy=0\,.
+      $$
+\def\S {{\cal S}}
+<br>
+Now calculate $\S(q,T)$.
+It is Legendre transform of $S(x,T)$:
+      $$
+\S(q,T)=yq-S(y,T)\,, \, {\rm with}\quad
+     q={\p S\over \p y}=
+{my\over T}-{mgT\over 2}\,, {\rm i.e.}\,\,
+        y={T\over m}\left(q+{mgT\over 2}\right)=
+         {qT\over m}+{gT^2\over 2}\,,
+       $$
+thus
+       $$
+\S(q,T)=\left(yq-S(y,T)\right)\big\vert_
+     {
+y={qT\over m}+{gT^2\over 2}
+      }=
+        $$
+      $$
+   \left(yq-
+{my^2\over 2T}+{mgyT\over 2}+{mg^2T^3\over 24}
+\right)\big\vert_
+     {
+y={qT\over m}+{gT^2\over 2}
+      }
+    =
+{q^2T\over 2m}+{gT^2q\over 2}+{mg^2T^3\over 6}\,.
+       $$ 
+We have that
+       $$
+q={\p S(y,T)\over \p y}\,,\quad
+y={\p \S(q,T)\over \p q}\,
+       $$
+and  $\S(q,t)$  also obeys Hamilton Jacobi
+(its Legendre):
+          $$
+  {\p \S(q,T)\over \p T}+H
+              \left(
+    q,y
+          \right)\big\vert_
+{y={\p \S(q,T)\over \p q}}
+           =
+   {\p S(q,T)\over \p T}+
+             {q^2\over 2m} 
+       +mgy\big\vert_{
+    y={\p \S(q,T)\over \p q}
+           }
+        $$
+     $$
+=0\,.
+      $$
+<br>
+\bye
+<br>
+
     </div>
   </div>
  </body>
 </html>
- 

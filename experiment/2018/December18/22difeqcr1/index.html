@@ -20,8 +20,196 @@
   <div class="mainText">
     <div class="article">
       <h2 class="title" date=""></h2>
+<br>
+\magnification=1200
+\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\S  {{\bf S}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\ll {{\bf l}}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\pt {{\bf p}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def \G{{\cal G}}
+\def\w {{\omega}}
+\def \Tr  {{\rm Tr\,}}
+\def\V {{\cal V}}
+\def\s {{d\over dt}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+<br>
+% I began this file in 24 December  2018
+<br>
+{\tt 22 December 2018}
+\medskip
+<br>
+\centerline {\bf Characteristics}
+<br>
+{\it I am studying Courant Robbins book. Here is my attemt
+to study  ${\cal x} 3$ page 41}
+<br>
+\centerline {\bf First order linear dif.equation}
+<br>
+ Consider equation
+        $$
+  A^i{\p u(x^1,\dots x^n)\over\p x^i}=F(x^1,\dots x^n)\,,
+         \eqno (1)
+          $$
+and
+        $$
+  A^i{\p u(x^1,\dots x^n)\over \p x^i}=0\,.
+         \eqno (1')
+        $$
+its characteristics:  the system of ODE:
+          $$
+{dx^i\over ds}=A^i(x^1,\dots,x^n)\,,\quad i=1,\dots,n\,.
+         \eqno (2)
+         $$
+ The solution of this system:
+         $$
+   x^i=x^i(s,c_a)
+         $$
+ depends on $n$ constants, but one constant is "additive":
+$s\to s+\tau$. In fact it depends on $n-1$, consitants,
+the surface of codimension $1$ which is transversal to the exponent
+of the vector field $\bf A=A^i\p_i$.
+  One can see that
+      $$
+\hbox{$u=u(x^1,\dots,x^n)$ is the solution of (1')}\Leftrightarrow
+   \hbox{Integral of equation (2)}
+      $$
+Indeed let $u=g(x^1,\dots,x^n)$ be solution of (1'), and
+let $x^i(s)=f^i(s)$ be an arbitrary solution of (2). Then
+        $$
+{d\over ds}
+\left(
+g(x^1,\dots,x^n)\big\vert_{x^i=f^i(s)}
+\right)=0\Rightarrow \hbox{the function $g$ is preserved on the solution}
+          $$
+On the other hand if a function $g$ is preserved over 
+an arbitrary solution of ODE (2) then $g$ is the solution
+of equation (1')
+<br>
+Show that (2) indeed has $n-1$ integrals.
+Let $x^i=x^i(s,c_a)$  ($a=1,\dots N$), i.e. $N=n-1$.
+Choose as a new parameter, some $x_i$.
+WLOG suppose that it is  $x_n$:
+            $$
+x^n=x^n(s,c_1,\dots,c_N)\Rightarrow s=s(x^n,c_a)\,,
+            $$
+and
+       $$
+x^\mu=x^\mu\left(
+   s\left(x^n,c_1,\dots,c_N\right),c_1,\dots,c_N
+         \right)\,
+     \,\,\mu=1,\dots,n-1\,.
+       $$
+Thus
+          $$
+x^\mu=x^\mu(c_1,\dots c_N;x_n)\,,\,\,\mu=1,\dots,n-1\,.
+           $$
+We see that $n-1$ variables $x^1,x^3,\dots,x^{n-1}$
+depend on $N$  constants $c_1,c_2,\dots,c_N$,  $N=n-1$.
+<br>
+These $n-1$ variables play the role of initial data, and
+$N=n-1$. 
+<br>
+Expressing $c_a$ as functions of $x^a$  we come to
+$N=n-1$  functions
+$c_a=c_a(x^i)$
+, and solution of (1') is
+       $$
+u=W\left(
+   c_1\left(x^2,\dots,x^n\right),
+   \ldots, c_{N-1}\left(x^2,\dots,x^n\right)
+       \right)\,,
+        $$
+  where $W$ is an arbitrary function on $n-1$ variables.
+<br>
+Now how to solve (1)?    We formaly introduce the new variable
+    $z=x^0$  and consider  instead (1) equation
+<br>
+{\bf Example}
+<br>
+Cosnider equation
+$$
+u(x,y)\colon\, (x+y)u_x+yu_y=y^2
+$$
+and consider its lifting, the equation
+$$
+U(x,y,z)\colon\quad   (x+y)U_x+yU_y-y^2U_z
+$$
+The characteristic euqation for (E2) is
+$$
+\cases
+{
+	x_t=x+y\cr
+		y_t=y\cr
+		z_t=y^2\cr
+}\,\qquad {\rm solution}
+\cases
+{
+	x(t)=x_0e^t+y_0te^t\cr
+		y(t)=y_0e^t\cr
+		z(t)=z_0+y_0^2{e^{2t}-1\over 2}\cr
+}
+$$
+The solution passes throught the point $(x_0,y_0,z_0)$
+at the point $t+0$.  Choose the moment $T$  when it passes trhough
+the plane $y=1$:
+$$
+T\colon\,\,   \cases
+                   {
+	x(T)=x_0e^T+y_0Te^T={x_0\over y_0}-\log y_0\cr
+		      y(T)=y_0e^T=1\cr
+       z(T)=z_0+y_0^2{e^{2T}-1\over 2}=z_0+{1\over 2}-{y_0^2\over 2}\cr
+}
+          $$
+Thus $c_1={x\over y}-\log y$ and $c_2=z-{y^2\over 2}$  are integrals.
+The solution is
+    $$
+U(x,y,z)=W(c_1,c_2)=
+  W\left({x\over y}-\log y,z-{y^2\over 2}\right)\,.
+    $$
+(see also the next text.)
+\bye
+<br>
+
     </div>
   </div>
  </body>
 </html>
- 

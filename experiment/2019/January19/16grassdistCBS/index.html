@@ -20,8 +20,154 @@
   <div class="mainText">
     <div class="article">
       <h2 class="title" date=""></h2>
+<br>
+\magnification=1200
+\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\C {{\cal C}}
+\def\L {{\cal L}}
+\def\E {{\cal E}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\Z {{\bf Z}}
+\def\R  {{\bf R}}
+\def\l {\lambda}
+\def\ll {{\bf l}}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\pt {{\bf p}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def\w {{\omega}}
+\def \Tr  {{\rm Tr\,}}
+\def\dim {{\rm dim\,\,}}
+% I wrote this file on 16 January
+\def\t {{\tilde}} 
+\def\dist {{\hbox{\tt "distance"}}}
+<br>
+\centerline {Again on distance in Grassmanian}
+<br>
+\def\m {{\bf m}}
+\def\n {{\bf n}}
+<br>
+In Septembre we wrote the function $\dist$ in Grassmanian.
+Recall this construction.
+  Let  $M,N$ be two $k$-planes in $\R^N$, i.e. points
+in the Grassmanian $G_{k,N}$.  We suppose that $\R^N$ is equipped
+with a Euclidean structure. Then define the $\dist$ between these
+points in the following way:
+                $$
+\dist(M,N)=
+                     \sqrt 
+                   {
+                     \Tr
+                      \left(
+  \langle \m_i,\m_k\rangle\langle \n_k,\n_j\rangle
+ -\langle \m_i,\n_k\rangle\langle \m_k,\n_j\rangle
+                     \right)
+                 }
+              =
+                   $$
+                   $$
+                     \sqrt 
+                   {
+                     \Tr
+                      \left(
+                         I_{k\times k}
+ -\langle \m_i,\n_k\rangle\langle \m_k,\n_j\rangle
+                     \right)
+                 }=
+                     \sqrt
+                 {
+                      \left(
+                   k
+ -\langle \m_i,\n_k\rangle\langle \m_k,\n_i\rangle
+                     \right)
+                 }\,,
+                  $$ 
+where  $\{\m_i\}$ is an arbitrary orthonormal basis in the plane $M$,
+and $\{\n_i\}$ is an arbitrary orthonormal basis in the plane $N$.
+One can see that the function  $\dist (M,N)$ is well-defined,
+i.e. it does not depend on a choice of the orthonormal bases.
+<br>
+\medskip
+<br>
+ {\tt QUESTION}  What are properties of this function?
+<br>
+\medskip
+<br>
+   For given arbitrary orthonormal bases
+  $\{\m_i\}$ in $M$ and
+  $\{\n_j\}$ in $N$, consider the matrix
+<br>
+                 $$
+        C_{ij}=\langle
+          \m_i,\n_j\rangle\,,e
+                 $$
+and
+consider two vectors $\x,\y\in \R^k$, 
+and the bilinear form
+             $$
+     B(\x,\y)=\langle 
+       x^i\m_i+y^i\n_i,
+       x^k\m_k+y^k\n_k
+            \rangle=
+\x^2+\y^2+2C(\x,\y)=
+                $$
+                $$
+\left(\x+C(\y)\right)^2+
+\left(
+ 1_{k\times k}-C^+C
+\right)_{ij}y^iy^j\,.
+             $$   
+We come to  the following Cachy-Bunyakovsky-Schwarz like inequality:
+<br>
+{\bf Proposition} {\bf CBS inequality for matrices}.
+<br>
+Let  $\{\ac_1,\dots.\ac_k\}$
+and  $\{\b_1,\dots,\b_k\}$ 
+be two sets of vectors in $\E^N$ such that
+         $$
+\langle\ac_i,\ac_j\rangle=\delta_{ij}\,,\quad
+\langle\b_i,\b_j\rangle=\delta_{ij}\,,
+         $$ 
+<br>
+then the matrix 
+             $$
+   B_{ij}=\delta_{ij}-\sum_k 
+ \langle \ac_i,\b_k\rangle
+ \langle \ac_j,\b_k\rangle
+             $$
+is weakly positive definite:
+             $$
+       B_{ij}y^iy^j\geq 0\,.
+             $$
+<br>
+\bye 
+<br><br>
+
     </div>
   </div>
  </body>
 </html>
- 

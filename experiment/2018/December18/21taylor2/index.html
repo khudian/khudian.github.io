@@ -20,8 +20,240 @@
   <div class="mainText">
     <div class="article">
       <h2 class="title" date=""></h2>
+<br>
+\magnification=1200
+\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\S  {{\bf S}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\ll {{\bf l}}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\pt {{\bf p}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def \G{{\cal G}}
+\def\w {{\omega}}
+\def \Tr  {{\rm Tr\,}}
+\def\V {{\cal V}}
+\def\s {{d\over dt}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+<br>
+% I began this file in 22 December  2018
+<br>
+{\tt 22 December 2018}
+\medskip
+<br>
+\centerline {\bf Taylor identity}
+<br>
+{\tt I know this identity "hundred  years". 
+Karabegov's proof makes me to realise that
+this is really effective.}
+<br>
+\medskip
+<br>
+   Let $f=f(x)$ be a smooth function. Then
+          integrating by parts we come to
+                $$
+f(x)=
+f(0)+\int_0^x {d f(t))\over dt}dt=
+f(0)+\underbrace{\int_0^x {d f(t))\over dt}\cdot 1 dt}
+        _{\hbox{I}}=
+         $$
+          $$
+f(0)+\int_0^x \s f(t)\s\left(t-x\right)dt=
+f(0)+\s f(t)(t-x)\big\vert^x_0-
+   \int_0^x {d^2\over dt^2} f(t)\left(t-x\right)dt=
+            $$
+           $$
+f(0)+f'(0)x+
+   \underbrace
+            {
+ \int_0^x {d^2\over dt^2} f(t)\left(x-t\right)dt
+           }_{\hbox{II}}=
+            $$
+            $$
+f(0)+f'(0)x-    {1\over2}\int_0^x {d^2\over dt^2} f(t)
+    \s\left(\left(t-x\right)^2\right)dt
+           =
+           $$
+        $$
+f(0)+f'(0)x
+-   {1\over 2} {d^2\over dt^2} f(t)
+    \left(t-x\right)^2\big\vert^x_0
+   +
+   {1\over 2}\int_0^x {d^3\over dt^3} f(t)
+    \left(t-x\right)^2 dt=
+          $$
+            $$
+f(0)+f'(0)x
++f^{''}(0) {x^2\over 2}  
+   +
+             {1\over 2}
+      \underbrace
+         {
+\int_0^x {d^3\over dt^3} f(t)
+    \left(x-t\right)^2 dt
+        }_{\hbox{III}}=
+          $$
+          $$
+f(0)+f'(0)x
++f^{''}(0){x^2\over 2}
++    {1\over 6 }\int_0^x {d^3\over dt^3} f(t)
+    \s\left(\left(x-t\right)^3\right)dt
+           =
+          $$
+            $$
+f(0)+f'(0)x
++f^{''}(0){x^2\over 2}
++   {1\over 6} {d^3\over dt^3} f(t)
+    \left(t-x\right)^3\big\vert^x_0
+   -
+   {1\over 6}\int_0^x {d^4\over dt^4} f(t)
+    \left(x-t\right)^3 dt=
+          $$
+            $$
+f(0)+f'(0)x
++f^{''}(0) {x^2\over 2}  
++f^{'''}(0) {x^3\over 6}  
+   +
+             {1\over 6}
+      \underbrace
+         {
+\int_0^x {d^4\over dt^4} f(t)
+    \left(x-t\right)^3 dt
+        }_{\hbox{IV}}=
+          $$
+           $$
+f(0)+f'(0)x
++f^{''}(0){x^2\over 2}
++f^{'''}(0){x^3\over 6}
+-    {1\over 24 }\int_0^x {d^4\over dt^4} f(t)
+    \s\left(\left(t-x\right)^4\right)dt
+           =
+          $$
+            $$
+f(0)+f'(0)x
++f^{''}(0){x^2\over 2}
++f^{'''}(0){x^3\over 6}
+-   {1\over 24} {d^4\over dt^4} f(t)
+    \left(t-x\right)^4\big\vert^x_0
+   +
+   {1\over 24}\int_0^x {d^5\over dt^5} f(t)
+    \left(t-x\right)^4 dt=
+          $$
+            $$
+f(0)+f'(0)x
++f^{''}(0) {x^2\over 2}  
++f^{'''}(0) {x^3\over 6}  
++f^{''''}(0) {x^4\over 24}  
+   +
+             {1\over 24}
+      \underbrace
+         {
+\int_0^x {d^5\over dt^5} f(t)
+    \left(x-t\right)^4 dt
+        }_{\hbox{IV}}=
+          $$
+and so on:
+          $$
+\ldots=\sum_{k=1}^n f^{(k)}(0){x^k\over k!}+
+         {1\over n!}\int_0^x 
+{d^{n+1}\over dt^{n+1}}f(t)(x-t)^ndt
+          $$
+This identity is very useful to prove the Sasha Karabegov' 
+question (see Etudes,/Algebra/taylor4.tex)
+<br>
+\centerline {Appendix 1}
+{\tt Here I reproduce the Karabegov's proof
+of the Theorem (3).}.
+<br>
+Shortly speaking his proof is the following:
+if $f(x_0)=0$ then for all $x\leq x_0$,
+ $f(x)=0$ also 
+since $f'(x)\geq 0$ for $x\leq x_0$.  Thus all derivatives
+of the smooth function $f$ vanish at the point $x_0$. Hence
+  it follows from the identity (1) that  for all $x$
+   and for all $n$,
+            $$
+f(x)=
+{1\over n!}\int_{x_0}^x 
+{d^{n+1}\over dt^{n+1}}f(t)(x-t)^ndt\,.
+   \eqno (A1)
+            $$
+for an arbitary $n$.
+Hence for every $x_1$ and for every $n$
+         $$
+\int_{x_0}^{x_1} f(x)dx=
+\int_{x_0}^{x_1} dx\left({1\over n!}\int_{x_0}^x 
+f^{(n+1)}(t)(x-t)^ndt\right)=
+         $$
+         $$
+{1\over n!}\int_{x_0}^{x_1} dt
+\left(
+   \int_{t}^x 
+f^{(n+1)}(t)(x-t)^ndx\right)=
+{1\over (n+1)!}\int_{x_0}^{x_1}
+f^{(n+1)}(t)(x_1-t)^{n+1}\,.
+    \eqno (A2)
+         $$
+Choose an arbitrary $x_1>x_0$. Then
+    $x_1-t<x_1-x_0$.  Thus it follows from equations 
+(A2) and
+(A1) that
+       $$
+{\rm for}\,\, x_1>x_0\,\,
+\int_{x_0}^{x_1} f(x)dx=
+{1\over (n+1)!}\int_{x_0}^{x_1}
+f^{(n+1)}(t)(x_1-t)^{n+1}\leq
+         $$
+        $$
+{x_1-x_0\over n}
+\left(
+ {1\over n!}\int_{x_0}^{x_1}
+f^{(n+1)}(t)(x_1-t)^{n}
+\right)=
+{x_1-x_0\over n}f(x_1)\Rightarrow f(x_1)=0{\hbox{\finish}}
+          $$
+since this unequality holds or arbitrary $n$.
+<br>
+\bye
+<br>
+
     </div>
   </div>
  </body>
 </html>
- 

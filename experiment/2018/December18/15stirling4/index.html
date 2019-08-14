@@ -20,8 +20,261 @@
   <div class="mainText">
     <div class="article">
       <h2 class="title" date=""></h2>
+<br>
+\magnification=1200
+\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\A {{\bf A}}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\V {{\cal V}}
+\def\s {{\sigma}}
+\def\S {{\Sigma}}
+\def\s {{\sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\G {{\Gamma}}
+\def\C {{\bf C}}
+\def\M {{\cal M}}
+\def\Z {{\bf Z}}
+\def\U  {{\cal U}}
+\def\H {{\cal H}}
+\def\R  {{\bf R}}
+\def\S  {{\bf S}}
+\def\E  {{\bf E}}
+\def\l {\lambda}
+\def\ll {{\bf l}}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\pt {{\bf p}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def \G{{\cal G}}
+\def\w {{\omega}}
+\def \Tr  {{\rm Tr\,}}
+\def\V {{\cal V}}
+% I began this file in 15 December  2018
+<br>
+    \centerline {Stirling formula}
+<br>
+{\tt 15 December 2018}
+<br>
+{\it it is more than 40 years ago that I learned the Stirling formula
+using the stationary phase method. It is today that I realised,
+that I did a mistake in calculations.}
+<br>
+\m
+<br>
+Stirling formula is an excellent example of applying stationary phase 
+method:
+     Consider
+     $$
+     \Gamma(x)=\int_0^\infty t^{x-1}e^{-t}tdt\,,\quad n!=\Gamma(n+1)\,.
+     $$
+We have
+    $$
+N!=\Gamma(N+1)=
+\int_0^\infty\exp [-t+N\log t]dt=
+    N
+\int_0^\infty\exp [-Nx+N\log Nx]dx=
+     $$
+     $$
+N^{N+1}\int_0^\infty \exp {F(x)}dx\,,\quad {\rm where}\,\,
+    F(x)=N\log x-Nx
+    \eqno (1)
+    $$
+Then consider Taylor series expansion of the function $F(x)$
+in the vicinity of the stationary point $x_0=1$
+        $$
+  F(x)=
+  F(x_0)+F'(x_0)(x-x_0)+
+   {1\over 2}F^{''}(x_0)(x-x_0)^2+
+   {1\over 6}F^{'''}(x_0)(x-x_0)^3+
+   {1\over 24}F^{''''}(x_0)(x-x_0)^4+
+\dots=
+            $$
+          $$
+  -N-{N\over 2}(x-1)^2+{N\over 3}(x-1)^3-
+  {N\over 4}(x-1)^4+
+\dots
+       =
+      $$ 
+and
+       $$
+N!=
+N^{N+1}\int_0^\infty \exp [F(t)]dt=
+N^{N+1}\int_0^\infty \exp 
+         \left[
+  -N-{N\over 2}(x-1)^2+{N\over 3}(x-1)^3-
+  {N\over 4}(x-1)^4+
+\dots
+       \right]dx
+       $$
+{\tt Zeroth approximmation}
+ $$
+N!
+=
+N^{N+1}\int_0^\infty \exp 
+         \left[
+        -N
+       +\dots\right]dx
+     \approx N\left(N\over e\right)^N\,,
+       $$
+{\tt First  approximmation}
+ $$
+N!
+=
+N^{N+1}\int_0^\infty \exp 
+         \left[
+  -N
+   -{N\over 2}(x-1)^2
+       +\dots\right]dx
+        =
+        $$
+        $$
+   N\left(N\over e\right)^N\int_{-1}^\infty e^{-{Ny^2\over 2}}dy=
+   N\left(N\over e\right)^N{1\over \sqrt N}
+    \int_{-\sqrt N}^\infty 
+  e^{-{u^2\over 2}}du\approx
+         $$
+           $$
+   N\left(N\over e\right)^N{1\over \sqrt N}
+    \int_{-\infty}^\infty 
+  e^{-{u^2\over 2}}du=
+   \sqrt {2\pi N}\left(N\over e\right)^N\,.
+           $$
+ {\tt Second apprximation}
+        $$
+ N!=
+         N^{N+1}
+\int_0^\infty \exp [F(t)]dt
+=
+       N^{N+1}
+\int_0^\infty \exp 
+         \left[
+  -N-
+   {N\over 2}(x-1)^2+
+   {N\over 3}(x-1)^3-
+     \dots
+       \right]dx=
+       $$
+     $$
+N\left(N\over e\right)^N
+     \int_0^\infty
+    \exp
+  \left[
+      -{N\over 2}(x-1)^2
+      +{N\over 3}(x-1)^3+\dots
+      \right]=
+        $$
+        $$
+ N\left(N\over e\right)^N
+          {1\over \sqrt N}
+     \int_{-\sqrt N}^\infty
+       e^{-{u^2\over 2}}
+    \exp
+  \left[
+      {1\over 3\sqrt N}u^3+\dots
+      \right]du\approx
+\sqrt {2\pi N}\left(N\over e\right)^N\,,
+      $$
+since $\int_{-\infty}^\infty e^{-{u^2\over 2}}u^3du=0$.
+<br>
+ {\tt Third apprximation}
+        $$
+ N!=
+         N^{N+1}
+\int_0^\infty \exp [F(t)]dt
+=
+       N^{N+1}
+\int_0^\infty \exp 
+         \left[
+  -N-
+   {N\over 2}(x-1)^2+
+   {N\over 3}(x-1)^3-
+   {N\over 4}(x-1)^4+
+     \dots
+       \right]dx=
+       $$
+     $$
+N\left(N\over e\right)^N
+     \int_0^\infty
+    \exp
+  \left[
+      -{N\over 2}(x-1)^2
+      +{N\over 3}(x-1)^3
+      -{N\over 4}(x-1)^4+
+       \dots
+      \right]dx=
+        $$
+  $$
+ N\left(N\over e\right)^N
+     {1\over \sqrt N}
+     \int_{-\sqrt N}^\infty
+       e^{-{u^2\over 2}}
+    \exp
+  \left[
+      {1\over 3\sqrt N}u^3-
+      {1\over 4 N}u^4+
+            \dots
+      \right]du
+          $$
+           $$
+        \approx
+ \sqrt N\left(N\over e\right)^N
+     \int_{-\infty}^\infty
+       e^{-{u^2\over 2}}
+  \left[
+         1+
+      {1\over 3\sqrt N}u^3-
+      {1\over 4 N}u^4+
+            \dots
+      \right]du
+         \approx
+       $$
+         $$
+ \sqrt N\left(N\over e\right)^N
+        \left[
+         \sqrt {2\pi}+
+     \int_{-\infty}^\infty
+       e^{-{u^2\over 2}}
+              \left(
+      {1\over 3\sqrt N}u^3-
+      {1\over 4 N}u^4
+            \right)du
+      \right]=
+         $$
+         $$
+ \sqrt {2\pi N}\left(N\over e\right)^N
+        \left[
+         1-
+            {1\over 4N}
+     \int_{-\infty}^\infty
+             u^4
+       e^{-{u^2\over 2}}
+           du
+      \right]=
+         $$
+\bye
+<br>
+
     </div>
   </div>
  </body>
 </html>
- 
