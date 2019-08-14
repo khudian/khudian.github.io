@@ -8,7 +8,8 @@ function configureMathJax()
       p: "\\partial",
       t: "\\tilde",
       X: "{\\bf X}",
-      vare: "\\varepsilon"
+      vare: "\\varepsilon",
+      w: "\\omega"
     }    
   },
   tex2jax: 
