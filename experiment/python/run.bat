@@ -1,2 +1,2 @@
-moveFiles.py
+copyInd.py
 pause
