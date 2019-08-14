@@ -1,2 +1,2 @@
-generateLinks.py
+removeBye.py
 pause
