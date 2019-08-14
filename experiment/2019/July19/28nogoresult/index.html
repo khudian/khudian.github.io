@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -91,7 +91,7 @@ then consider  the function
 S(t_1,Q_1; t_2,Q_2)=
      \int_{t_1}^{t_2}
       L(x(\tau), \dot x(\tau))d\tau\,,
-    \eqno (1)
+    \tag{1}
        $$
 where  $x^i(\tau)$ obeys Euler Lagrange equations and
 boundary conditions:
@@ -106,13 +106,13 @@ boundary conditions:
 x^i(t_1)=Q_1\cr
 x^i(t_2)=Q_2\cr
 } 
-\eqno (1a)
+\tag{1a}
      $$
 One can consider momentum and Hamiltonian:
                $$
 p_i={\p L\over \p \dot x^i}\,,\quad
    H(p,Q,t)=p_i\dot  Q^i-L(Q,\dot Q,t)
-\eqno (2)  
+\tag{2}  
                $$
 ($H$ is Legendre transform, in particular
  on eq. of motions it does not depend on $\dot Q$.)
@@ -120,17 +120,17 @@ p_i={\p L\over \p \dot x^i}\,,\quad
    This is the text-book fact that 
       $$
 {\p S \over \p Q_2^i}=p_i\,,
-   \eqno (3a)
+   \tag{3a}
       $$
       $$
 {\p S \over \p Q_1^i}=-p_i\,,
-    \eqno (3b)
+    \tag{3b}
       $$
      $$
 {\p S \over \p t_1}=
 -{\p S \over \p t_2}=
   -H\,.
- \eqno (3c)
+ \tag{3c}
      $$
 This can be calculated straightfowardly, by brute force,
 and I am happy that I did  these caluclations.
@@ -160,7 +160,7 @@ H\left({\p S_t(x,y)\over \p y}, y\right)=0\cr
 \hbox {boundary conditions}\quad
 e^{{i\over \hbar} S_t(x,y)}\approx \delta (x-y)\cr 
     }\,,
-   \eqno (0a)
+   \tag{0a}
         $$
         $$
 \S_t(x,q)\colon \cases 
@@ -173,7 +173,7 @@ H\left(q, {\p \S_t(x,y)\over \p q}, y\right)=0\cr
 {\rm i.e.}\,\, e^{{i\over \hbar} \S_t(x,q)}\approx \hbox
 {Fourrier of $\delta$}\cr 
     }\,,
-         \eqno (0b)
+         \tag{0b}
         $$
 <br>
 \def \tS {{\tilde \Sigma}}
@@ -190,7 +190,7 @@ and  at the moment $\tau=t$ it ends at the point
 $q$:
       $$
 y=y(q,t)
-  \eqno (1)
+  \tag{1}
        $$
 <br>
 {\tt  TEMPTATION}  $\tS=\S$. THIS IS WRONG!!!!
@@ -278,7 +278,7 @@ Thus
        h^i(\tau)
         \right)d\tau=
  {\p L\over \p \dot x^i} \delta Q_2^i(\tau)\,.
-    \eqno (4)
+    \tag{4}
     $$
 <br>
 This proves (3a).
@@ -296,7 +296,7 @@ under this variation $\delta Q_1$ and $\delta Q_2$
 vanish:
      $$
 \delta Q_1=\delta Q_2=0\,.
-    \eqno (i5a)
+    \tag{i5a}
       $$
 <br>
  however just repeat the calculations
@@ -379,7 +379,7 @@ Thus
      \right)
        h^i(\tau)
         \right)d\tau=
-    \eqno (5)
+    \tag{5}
     $$
     $$
     L(x(t_2),x(t_2))\delta t_2
