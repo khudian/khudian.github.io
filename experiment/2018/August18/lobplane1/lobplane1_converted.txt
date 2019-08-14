@@ -1,8 +1,6 @@
-
-
+<br>
 \magnification=1200 
-
-
+<br>
 \baselineskip=14pt
 \def\vare {\varepsilon}
 \def\A {{\bf A}}
@@ -47,24 +45,21 @@
 \def \x   {{\bf x}}
 \def \y   {{\bf y}}
 \def \G{{\cal G}}
-
+<br>
 % I began this file on 15 August 2018
-
-
+<br>
 \centerline {Some amasing formulas}
-
+<br>
  {\it These  days I study Hilbnert Theorem of non-immersion of Lobachevsky plane  in $\E^3$. To my surprise it has so many mathphysical applications.
    Here I just give some very preliminary results. (see the file in 
 Etudes/Geometry/Lobachevsky)}
-
+<br>
 Consider on $\R^2$  Riemannian metric
                   $$
     G=dx^2+2cos\Theta(x,y)dxdy+dy^2
                   $$
 This metric naturally appears in the proof of Hilbert Theorem.
-
-
-
+<br>
    Performing  routine  calculations we come to
                        $$
 \Gamma_{xx}^x=\Theta_x{\rm cotan\,}\Theta\,,\quad 
@@ -81,7 +76,7 @@ and
 \Gamma^y_{xy}
 \Gamma^y_{yx}=0
                $$
-
+<br>
 and  
                 $$
    K={R\over 2}={R_{1212}\det g}={-\Theta_{xy}sin\Theta\over 1-\cos^2\Theta}=
@@ -94,9 +89,10 @@ and in particular
                    $$
 means that this manifold is (whole?)  Lobachesky plane
   (this function has to exist)
-
+<br>
 E.g. function
                 $$
      \theta={arctan }Ce^(x+y)
                 $$
 \bye
+<br>

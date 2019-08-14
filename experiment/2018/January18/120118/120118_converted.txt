@@ -1,8 +1,7 @@
 i
-
+<br>
 \magnification=1200 
-
-
+<br>
 \baselineskip=14pt
 \def\vare {\varepsilon}
 \def\A {{\bf A}}
@@ -52,19 +51,18 @@ i
 \def\ss  {\sigma_{\rm sph}}
 \def\grad {{\rm grad\,}}
 % I began this file on 31 July 2017
-
+<br>
 \centerline {\bf Chebyshef polynomials}
-
+<br>
 {\it I cannot avoid temptation to explain this}
-
-
+<br>
 Consider polynomials
      $$
    P_n(x)=\cos n\arccos x 
      $$
-
+<br>
 Fix  $n$.
-
+<br>
 {\bf Lemma}
 Let $P(x)$ be an arbitrary polynomial such that
        a polynomial $P(x)-T_n(x)$ is a polynomial
@@ -76,13 +74,12 @@ such that
 i.e.
  every polynomial which has the same leading term as polynomial
  $P_n(x)$ has norm greater than $1$.
-  
+<br>
   We suppose that
         $$
    ||P||=\max_{x\in [-1,1]}|P(x)|\,.
       $$
-
-
+<br>
 This lemma implies that Chebysev polynomials have minimum norm:
  i.e. in the space of $V_n$ of polynomials
             $$
@@ -105,9 +102,9 @@ We suppose that
        $$
    ||P||=\max_{x\in [-1,1]}|P(x)|\,.
       $$
-
+<br>
 {\tt Proof of the lemma}
-
+<br>
 Let $P(x)$ be an arbitrary polynomial such that
 $P(x)-T_n(x)$ has order less than $n$. Show that this implies
 that its norm is greater than $1$.  Suppose that
@@ -133,3 +130,4 @@ the polynomial $P(x)$ has at least $n$ roots.
 On the other hand $P(x)-P_n(x)$ has order $\leq n-1$.
 Contradiction.
 \bye
+<br>

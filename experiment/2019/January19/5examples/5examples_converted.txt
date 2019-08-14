@@ -1,4 +1,4 @@
-
+<br>
 \magnification=1200
 \baselineskip=14pt
 \def\vare {\varepsilon}
@@ -42,11 +42,10 @@
 \def\dim {{\rm dim\,\,}}
 % I wrote this file on 1-st January  2019
 \def\t {{\tilde}} 
-
+<br>
    \centerline{\bf Examples of calculations}
 \m
-
-
+<br>
 {\bf Example}   Consider dfferential equation
        $$
    u_x^2+u_y^2=1\,, \quad F(u,p,q,x,y)=p^2+q^2-1\,.
@@ -119,6 +118,6 @@ We have
     -y_\xi & x_\xi\cr
           }
          $$ 
-
+<br>
 \bye
-
+<br><br>

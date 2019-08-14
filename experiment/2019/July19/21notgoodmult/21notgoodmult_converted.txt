@@ -1,7 +1,4 @@
-
-
-
-
+<br>
 \magnification=1200
 \baselineskip=14pt
 \def\vare {\varepsilon}
@@ -50,19 +47,18 @@
 \def  \dim {{\rm dim\,}}
 \def  \Im  {{\rm Im\,}}
 \def  \ker {{\rm ker\,}}
-
-
+<br>
 \def \Cl {\hbox{\tt Cliff}}
-
+<br>
 \centerline   {\bf An attempt to multiply the vectors}
-
+<br>
 Let $V$ be Euclidean vector space with scalar product $(x,y)$.
       Consider Clifford algebra over $V$ with quadratic form
                   $Q(\x)=-(\x,\x)$.
-
+<br>
      Let us try to mimic the multiplication,
 then we will criticise the construction:
- 
+<br>
     To every vector $\x\in V$ assign rotation
 $L_\x$, which is rotation  around axis directed along $\x$ 
 on the angle $\pi$.
@@ -78,17 +74,15 @@ we assing the element of orthogonal group
  L_{\x_{n-1}}
  L_{\x_{n}}
               $$       
-
+<br>
 It seems that we reconstruct in this way the Clifford algebra? NO!
-
+<br>
 a) this is a map on image of group $pin$ in orthogonal group
 (see the blog on 18 July)
-
-
+<br>
 b) this map destroys parity (see the blog 21isitmistake.pdf)
-
+<br>
 c)we cannont consider summation??
-
-
+<br>
  \bye 
-
+<br><br>

@@ -1,4 +1,4 @@
-
+<br>
    The map:
         $$
     w={z-\zeta\over 1-\bar\zeta z}
@@ -6,8 +6,7 @@
         $$
 maps disc $|z|<1$ onto itself, and the point
   $\zeta$ on the point $0$.
-
-
+<br>
 We take Green function  $G(0; w)=-{1\over 2\pi}\log |w|$
 for $w_0=0$ we come to
            $$
@@ -41,14 +40,15 @@ the points of the circle is equal to
 On the other hand this Green function possesses
 the information about the map
 (1).
-
+<br>
     $$ $$
-
+<br>
 the map
-
+<br>
       $$
 w={iz+1\over i+z}
       $$
-
+<br>
 maps hlapf plane onto the disc
 \bye
+<br>

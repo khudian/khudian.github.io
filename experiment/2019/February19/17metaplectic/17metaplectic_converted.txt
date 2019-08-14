@@ -1,8 +1,4 @@
-
-
-
-
-
+<br>
 \magnification=1200
 \baselineskip=14pt
 \def\vare {\varepsilon}
@@ -52,14 +48,13 @@
 \def \Tr  {{\rm Tr\,}}
 \def\V {{\cal V}}
 % I began this file in November  2018
-
+<br>
 {\tt 
 I will define metaplectic in a way similar to spinor group.
-
-
+<br>
 Consider the vector space $V\oplus V^*$  with canonical 
 symplectic form $<\,\,,\,\,>$.
-
+<br>
  Let $\hat a=\hat a_\X$  be a linear operator which is canonically
 assigned to the vector $\R$, such that
        $$
@@ -70,7 +65,7 @@ assigned to the vector $\R$, such that
 <\x,\Y>\,.
   \eqno (1)
        $$
-
+<br>
 We consider transformations on the space  of functions on $V$
 such that  for an arbitrary $\X\in V\oplus V^*$,
       $$
@@ -84,10 +79,10 @@ One can see that  for an arbitrary vectors $\X,\Y\in V\oplus V^*$,
 Thus we define  the group of transformations of space of the
 functions on $V$, metaplectic group,
 and its epimorphsim on symplectic group.
-
+<br>
   Now instead  $V$  consider the space $C^n$, and assign to  
 every vector $\X$, the matrix $M_\X=X^m\gamma_m$.
-
+<br>
 We have instead equation (1) the following relation:
         $$
 \left[
@@ -99,7 +94,7 @@ M_\Y
        $$
 where $[\,\,,\,\,]_+$ is the anticommutator,
 and $<\,\,,\,\,>$ now is the scalar product.
-
+<br>
 Now instead equation (2) we come to 
  consider transformations $O$ on the space  matrices
 such that  for an arbitrary $\X\in C^n$
@@ -114,7 +109,8 @@ One can see that  for an arbitrary vectors $\X,\Y$,
 Thus we define  the group ofpinor transformations
  and its epimorphsim on orthogonal  group.
 }
-
+<br>
 THis I already know
- 
+<br>
 \bye
+<br>

@@ -1,7 +1,4 @@
-
-
-
-
+<br>
 \magnification=1200
 \baselineskip=14pt
 \def\vare {\varepsilon}
@@ -50,12 +47,11 @@
 \def  \dim {{\rm dim\,}}
 \def  \Im  {{\rm Im\,}}
 \def  \ker {{\rm ker\,}}
-
-
+<br>
 \def \Cl {\hbox{\tt Cliff}}
-
+<br>
 \centerline {Action in gravity}
-
+<br>
    Here we will calculate the action in homogeneous gravity field
    $$
  L={m{\dot q}^2\over 2}-mgq\,,
@@ -99,7 +95,7 @@ Hamiltonina is equal to $H(p,q)={p^2\over 2m}+mgy$ and
 +mgy=0\,.
       $$
 \def\S {{\cal S}}
-
+<br>
 Now calculate $\S(q,T)$.
 It is Legendre transform of $S(x,T)$:
       $$
@@ -149,6 +145,6 @@ and  $\S(q,t)$  also obeys Hamilton Jacobi
      $$
 =0\,.
       $$
-
-
+<br>
 \bye
+<br>

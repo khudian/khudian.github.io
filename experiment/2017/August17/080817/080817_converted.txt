@@ -1,12 +1,6 @@
-
-
-
-
-
-
+<br>
 \magnification=1200 
-
-
+<br>
 \baselineskip=14pt
 \def\vare {\varepsilon}
 \def\A {{\bf A}}
@@ -53,10 +47,9 @@
 \def\ss  {\sigma_{\rm sph}}
 \def\grad {{\rm grad\,}}
 % I began this file on 31 July 2017
-
-
+<br>
 \centerline {\bf Calculation for half-plane.}
-
+<br>
   Yesterday we did difficutl caclulations for
 half-plane. On the other hand it is obvious that
      $$
@@ -67,5 +60,6 @@ This imeediately gives answer
 for $*dG$ on the absolute and implies
 many identities!
  inncluding the relation for the integral (see the end of yesterday file.)
-
+<br>
 \bye
+<br>

@@ -1,5 +1,4 @@
-
-
+<br>
 \magnification=1200
 \baselineskip=14pt
 \def\vare {\varepsilon}
@@ -50,20 +49,20 @@
 \def\V {{\cal V}}
 \def\s {{d\over dt}}
 \def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
-
+<br>
 % I began this file in 22 December  2018
-
+<br>
 {\tt 22 December 2018}
 \medskip
-
+<br>
 \centerline {\bf Taylor identity}
-
+<br>
 {\tt I know this identity "hundred  years". 
 Karabegov's proof makes me to realise that
 this is really effective.}
-
+<br>
 \medskip
-
+<br>
    Let $f=f(x)$ be a smooth function. Then
           integrating by parts we come to
                 $$
@@ -175,12 +174,11 @@ and so on:
           $$
 This identity is very useful to prove the Sasha Karabegov' 
 question (see Etudes,/Algebra/taylor4.tex)
-
-
+<br>
 \centerline {Appendix 1}
 {\tt Here I reproduce the Karabegov's proof
 of the Theorem (3).}.
-
+<br>
 Shortly speaking his proof is the following:
 if $f(x_0)=0$ then for all $x\leq x_0$,
  $f(x)=0$ also 
@@ -229,5 +227,6 @@ f^{(n+1)}(t)(x_1-t)^{n}
 {x_1-x_0\over n}f(x_1)\Rightarrow f(x_1)=0{\hbox{\finish}}
           $$
 since this unequality holds or arbitrary $n$.
-
+<br>
 \bye
+<br>

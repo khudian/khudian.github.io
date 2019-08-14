@@ -1,19 +1,14 @@
-
-
-
-
+<br>
 \magnification=1200
-
+<br>
 \def\p {\partial}
 \def\a {\alpha}
-
+<br>
     Returning to very  beatiful story of  telephone calls with 
   David in 90..
-
-
+<br>
     Волчья квинта----Wolf inteval
-
-
+<br>
    We know that fifth $={3\over 2}$ and on the piano
  it is equal to ${3\over 2} $
 if we have 12 fifths it will take 7 octaves we come to:
@@ -24,7 +19,7 @@ if we have 12 fifths it will take 7 octaves we come to:
               $$
 About thirty years  ago we played with David phoning to 
 people to $531441$ and $524288$ 
-
+<br>
 In fact this is related with continuous fraction for `quinta':
 Let $\alpha$ be a number such that
       $$
@@ -126,7 +121,7 @@ i.e.
          $$
 Indeed if $M_4=2$ then $3^5=243<2^8=256$, but
 if  $M_4=3$ then $3^7=729\times 3=2187>2^11=1024\times 2=2048$. 
-
+<br>
   Continue:
  $\a=M_1+{1\over M_2+{1\over M_3+{1\over M_4+{1\over M_5+\dots}}}}=
        1+{1\over 1+{1\over 1+{1\over 2+{1\over M_5+\dots}}}} $, 
@@ -177,13 +172,13 @@ if  $M_5=3$ then
             $$
    2^{27}=134217728>3^{17}=129140163
             $$
-
+<br>
 Calculate next?  Let us try:
-
+<br>
 Repeat recurrently:
-
+<br>
 We already have:
-
+<br>
  $\a=M_1+{1\over M_2+{1\over M_3+{1\over M_4+{1\over M_5+
    {1\over M_6+\dots}}}}}=
        1+{1\over 1+{1\over 1+{1\over 2+
@@ -256,14 +251,11 @@ Indeed if  $M_6=3$ then
             $$
  3^{17}=129140163<2^{27}=134217728\,,
             $$
-
-
-
+<br>
 Repeat recurrently:
-
-
+<br>
    The rules for the fraction:
-
+<br>
           $$
 \matrix        {
             3^{M_2}<2^{M_2}\cr
@@ -274,34 +266,31 @@ Repeat recurrently:
                 \dots\cr     
                      }
             $$
-
+<br>
       Aproximations:
-
+<br>
       $$
 \log_2 3=[1,1,1,2,2,\dots]=1+{1\over 1+{1\over 1+{1\over 2+
 {1\over 2+\dots}}}}
       $$
- 
+<br>
   1) $\log_2 3\approx 1$
-  
+<br>
 There are two note in octave.
-
+<br>
   2) $\log_2 3\approx 1+{1\over 1}=2$
-  
+<br>
   3) $\log_2 3\approx 1+{1\over 1+{1\over 1}}={3\over 2}$
-  
+<br>
 There are two notes: C and G.
-
-
+<br>
   4) $\log_2 3\approx 1+{1\over 1+{1\over 1+{1\over 2}}}=
 {8\over 5}$
-  
+<br>
 There are 5 notes, the third is quinta
-
-
+<br>
  5) $\log_2 3\approx 1+{1\over 1+{1\over 1+{1\over 2+{1\over 2}}}}=
 {19\over 12}$
-
-
-
+<br>
 \bye 
+<br>

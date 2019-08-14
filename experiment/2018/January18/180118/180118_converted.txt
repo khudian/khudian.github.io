@@ -1,7 +1,6 @@
-
+<br>
 \magnification=1200 
-
-
+<br>
 \baselineskip=14pt
 \def\vare {\varepsilon}
 \def\A {{\bf A}}
@@ -50,13 +49,11 @@
 \def \G{{\cal G}}
 \def\ss  {\sigma_{\rm sph}}
 \def\grad {{\rm grad\,}}
-
-
+<br>
 {\it 18 January 2018}
-
-
+<br>
 \centerline {Two formulae for Lie groups}
-
+<br>
 I will recall here calculations of
       $$
    \Sigma_1=e^{-A}Xe^{A}=Ad_A(X)
@@ -74,9 +71,9 @@ This is standard  to calculate
 these sums using differential equations. Here I will  
 calculate just by brute force
 combinatorial calculations.
-
+<br>
 \bigskip
-
+<br>
  The first formula comes naturally from 
 differential equation:
 to calculate $\Sigma_1$ in (1) consider a function 
@@ -99,7 +96,7 @@ to perturbation expansion or to
      $$
     S(t)=e^{-t ad_A}X\,.
      $$
-
+<br>
 Now combinatorial ({\tt brute force}) solution:
         $$
   \Sigma_1=e^{-A}Xe^{A}=\sum_{n,m}{(-1)^n A^n X A^m\over n!m!}=
@@ -135,7 +132,7 @@ belong to Lee algebra ${\cal G}(A,X)$,
 {\cal D}_3=XA^3-3AXA^2+3A^2XA-A^3X=-[A,[A,[A,X]]]\,\quad\,,
       $$
 and so on.
-
+<br>
 We come to
        $$
 \Sigma_1=  \sum_n{1\over n!}
@@ -149,12 +146,11 @@ We come to
 1-[A,X]+{[A,[A,X]]\over 2}-{[A,[A,[A,X]]]\over 6}+\dots
      $$
     \bigskip
-
+<br>
 \medskip
-
+<br>
 Much more funny  formula (2):
-
-
+<br>
 Differential equation. Consider function
      $$
    S(t)=e^{-tA}e^{t(A+\vare X)}
@@ -208,7 +204,7 @@ where
    t_{mn}=
 \sum_{p=0}^m{(-1)^p\over p!(m+n+1-p)!}\,.
    $$
-
+<br>
 \smallskip {\it Observation}
        $$
    t_{mn}=(-1)^mC^m_{m+n}\,.
@@ -247,9 +243,9 @@ t_{mn}{A^mXA^n\over (m+n+1)!}=
           \right]\right]
 \right]+\dots=\,.
     $$
-
+<br>
 It remains to prove {\tt Observation}.
-
+<br>
   {\tt Proof} 
    We will use Pascal's tree identity:
             $$
@@ -271,6 +267,6 @@ $$
            $$
            $$=(-1)^mC^m_{m+n}
     \hbox{\finish}$$
-
-  
+<br>
 \bye
+<br>

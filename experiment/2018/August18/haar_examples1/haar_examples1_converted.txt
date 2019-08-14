@@ -1,10 +1,6 @@
-
-
-
-
+<br>
 \magnification=1200 
-
-
+<br>
 \baselineskip=14pt
 \def\vare {\varepsilon}
 \def\A {{\bf A}}
@@ -49,17 +45,15 @@
 \def \x   {{\bf x}}
 \def \y   {{\bf y}}
 \def \G{{\cal G}}
-
+<br>
 % I began this file on 20 August 2018
-
-
+<br>
 \centerline {Examples of  Haar measure}
-
-
+<br>
 {\bf Examples}
-
+<br>
 Group of affine transformations of $\R$:
-
+<br>
                $$
   (a,b)| x>=ax+b
             $$
@@ -76,7 +70,7 @@ Haar meausure
                   $$
 \mu(db,d\beta)=\omega= \omega(b,\beta)db\wedge d\beta
                   $$
-
+<br>
 Left-invariance means that  for an arbitrary element
     $(a,\a)$
          $$
@@ -92,12 +86,9 @@ and
      $$
 \Phi(f)=\int f(b,\beta){dad\beta\over b^2}\,.
      $$
-
-
+<br>
 \bye
-
-
-
+<br>
 2.  Volume of $GL(n,\R)$
                    $$
          \omega=(\det A_{ik})^{-n} \prod_{i,k}dA_{ik}
@@ -107,3 +98,4 @@ and
    \Phi(f)=\int f\left(A_{ik}\right)\left|\det A)^{-n}\right|
     \prod_{i,k}dA_{ik}\,.
               $$
+<br>

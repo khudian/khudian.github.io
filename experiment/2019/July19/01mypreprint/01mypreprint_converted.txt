@@ -1,5 +1,4 @@
- 
-
+<br>
 \magnification=1200
 \baselineskip=14pt
 \def\vare {\varepsilon}
@@ -48,13 +47,13 @@
 \def  \dim {{\rm dim\,}}
 \def  \Im  {{\rm Im\,}}
 \def  \ker {{\rm ker\,}}
-
+<br>
 \centerline {\tt Formulae of unpublished preprint}
     $$
 H={P^2+W^2(q)\over 2}+\theta_1\theta_2W'(q)\,,
     $$
 whre $W(q)$ is suprepotential.
-
+<br>
 This Hamiltonian may be replaced by
       $$
     \bar {H}=Q_1\,,
@@ -76,7 +75,7 @@ Poisson bracket:
     $$
     \dot f=\{f,H\}=[f,H]\,.
     $$ 
-
+<br>
 In the special case If $W=q$. then $[]'$ 
 takes the canonical form $[]'=[]$,
 where
@@ -106,4 +105,4 @@ where
  \bar {Q}_2=i(2F-H)
         $$
 \bye
-
+<br><br>

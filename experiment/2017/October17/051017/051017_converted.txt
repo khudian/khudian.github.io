@@ -1,9 +1,6 @@
-
-
-
+<br>
 \magnification=1200 
-
-
+<br>
 \baselineskip=14pt
 \def\vare {\varepsilon}
 \def\A {{\bf A}}
@@ -55,11 +52,9 @@
 \def\p {{\bf p}}
 \def\q {{\bf q}}
 % I began this file on  5 October  2017
-
-
-
+<br>
 \centerline {Linear algebra of thick morphisms}
-
+<br>
   let $X,Y$ be finite-dimensional vector spaces, and
 let $S\colon X\to Y$ be a linear map.
   We come to linear map 
@@ -79,7 +74,7 @@ p_i=S^\mu_iq_\mu\,,
    S(\x,\q)=S^\mu_ix^iq_\mu\,.
           \eqno (3)
            $$
-
+<br>
 The object $S$ defines 
  the Lagrangian surface  $\Lambda_S$ in the space
    $T^*X\times (-T^*Y)$
@@ -94,3 +89,4 @@ if we define symplectic structure in the space
        $$
 The $\Lambda_S$ Lagrangian surface 
 \bye
+<br>

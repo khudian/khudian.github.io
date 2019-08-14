@@ -1,5 +1,4 @@
-
-
+<br>
 \magnification=1200
 \baselineskip=14pt
 \def\vare {\varepsilon}
@@ -44,12 +43,12 @@
 % I wrote this file on 16 January
 \def\t {{\tilde}} 
 \def\dist {{\hbox{\tt "distance"}}}
-
+<br>
 \centerline {Again on distance in Grassmanian}
-
+<br>
 \def\m {{\bf m}}
 \def\n {{\bf n}}
-
+<br>
 In Septembre we wrote the function $\dist$ in Grassmanian.
 Recall this construction.
   Let  $M,N$ be two $k$-planes in $\R^N$, i.e. points
@@ -89,19 +88,17 @@ where  $\{\m_i\}$ is an arbitrary orthonormal basis in the plane $M$,
 and $\{\n_i\}$ is an arbitrary orthonormal basis in the plane $N$.
 One can see that the function  $\dist (M,N)$ is well-defined,
 i.e. it does not depend on a choice of the orthonormal bases.
-
+<br>
 \medskip
-
-
+<br>
  {\tt QUESTION}  What are properties of this function?
-
+<br>
 \medskip
-
-
+<br>
    For given arbitrary orthonormal bases
   $\{\m_i\}$ in $M$ and
   $\{\n_j\}$ in $N$, consider the matrix
-
+<br>
                  $$
         C_{ij}=\langle
           \m_i,\n_j\rangle\,,e
@@ -123,10 +120,9 @@ and the bilinear form
 \right)_{ij}y^iy^j\,.
              $$   
 We come to  the following Cachy-Bunyakovsky-Schwarz like inequality:
- 
-
+<br>
 {\bf Proposition} {\bf CBS inequality for matrices}.
-
+<br>
 Let  $\{\ac_1,\dots.\ac_k\}$
 and  $\{\b_1,\dots,\b_k\}$ 
 be two sets of vectors in $\E^N$ such that
@@ -134,7 +130,7 @@ be two sets of vectors in $\E^N$ such that
 \langle\ac_i,\ac_j\rangle=\delta_{ij}\,,\quad
 \langle\b_i,\b_j\rangle=\delta_{ij}\,,
          $$ 
- 
+<br>
 then the matrix 
              $$
    B_{ij}=\delta_{ij}-\sum_k 
@@ -145,6 +141,6 @@ is weakly positive definite:
              $$
        B_{ij}y^iy^j\geq 0\,.
              $$
- 
+<br>
 \bye 
-
+<br><br>

@@ -1,9 +1,9 @@
-
+<br>
   Let  $\rho(dx)$ be left-invariant measure on the group $G$:
                     $$
         \int f(g^{-1}x)\rho(dx)=\int f(x)\rho(dx)\,.
                     $$
-
+<br>
 For an arbitrary $g\in G$ consider the new measure $\rho_g(dx)$ such
 that
               $$
@@ -32,3 +32,4 @@ nd consider also new function $f_h=(h^{-1} x h)$. We have that
    \Delta(g)\int f_h(x)\rho (dx)
                   $$         
 \bye
+<br>

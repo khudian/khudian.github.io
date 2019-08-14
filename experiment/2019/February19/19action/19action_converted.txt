@@ -1,5 +1,4 @@
-
-
+<br>
 \magnification=1200
 \baselineskip=14pt
 \def\vare {\varepsilon}
@@ -49,28 +48,24 @@
 \def \Tr  {{\rm Tr\,}}
 \def\V {{\cal V}}
 % I began this file in October  2018
-
-
-
+<br>
    We calculated in October 2018 the action of
 oscillator. Now I will try to calculate it in another way,
 and understand deeper the relation of action with
 canonical transformations....
-
-
+<br>
 Recall the blog on action:
-
+<br>
 {\tt
-
-
+<br>
 {\tt 26 October 2018}
-
+<br>
   We considered Lagrangian of harmonic osillator:
         $$
   L={m\dot x^2\over 2}-{mw^2x^2\over 2}\,,
          $$
 and calculated $S(x_1,t_1;x_0,t_0)$:
-        
+<br>
 First we wrote down the path  $x(t)$
 which obeys the differential equation ${d^2 x\over dt^2}+\w^2 x=0$
 and the boundary condition
@@ -179,15 +174,15 @@ $$
        \right]\,.
      $$
 }
-
+<br>
    Change now the angle that we look at this problem.
-
+<br>
  Instead Lagrnagian $L={1\over 2}\left(\dot q^2-q^2\right)$
 we consider Hamiltonian
               $$
       H={1\over 2}\left(p^2+x^2\right)
                $$     
-
+<br>
 Previously we calculated action as integral of Lagrangian over time:
                $$
    S(x_0,x_1,t)=      
@@ -199,8 +194,9 @@ Previously we calculated action as integral of Lagrangian over time:
          2x_1x_0
        \right]\,.
                $$
-     
+<br>
 It is useful to denote $(x,p)$ initial coordinates and momenta 
   and by $(y,q)$ after time $T$
-
+<br>
 \bye
+<br>

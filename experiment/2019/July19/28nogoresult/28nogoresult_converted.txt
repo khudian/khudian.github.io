@@ -1,5 +1,4 @@
-
-
+<br>
 \magnification=1200
 \baselineskip=14pt
 \def\vare {\varepsilon}
@@ -48,13 +47,11 @@
 \def  \dim {{\rm dim\,}}
 \def  \Im  {{\rm Im\,}}
 \def  \ker {{\rm ker\,}}
-
-
+<br>
 \def \Cl {\hbox{\tt Cliff}}
-
+<br>
 \centerline {\bf No go result?}
-
-
+<br>
 {\it Two days ago I was very happy to calculate
 straightforwadly that gradient of action is momentum.
  (see the text on 26-th Juky and also the Appendix to
@@ -65,7 +62,7 @@ however I realised that this hypothese is wrong:
 Finally I realised that one my hypothese is wrong:
 see abouve TEMPTATION OF WRONG DEFINITION
 }
-
+<br>
 In fact let $L=L(x,\dot x,t)$  be Lagrangian of theory,
 then consider  the function
      $$
@@ -97,8 +94,7 @@ p_i={\p L\over \p \dot x^i}\,,\quad
                $$
 ($H$ is Legendre transform, in particular
  on eq. of motions it does not depend on $\dot Q$.)
-
-
+<br>
    This is the text-book fact that 
       $$
 {\p S \over \p Q_2^i}=p_i\,,
@@ -118,7 +114,7 @@ This can be calculated straightfowardly, by brute force,
 and I am happy that I did  these caluclations.
 (see my `blog'  on 26 July of this month  or calculations in
 {\tt Appendix}.
-
+<br>
 One can consider Legendre transform of this action:
 We will denote the action above by
 $S(t_1,x,t_2,y)$    
@@ -129,10 +125,10 @@ and we will consider  its Legendre transform
    e^{{i\over \hbar} \S_t(x,q)} \approx
    e^{{i\over \hbar} S_t(x,y)}\,. 
       $$
-
+<br>
 It is funnny to write down differential equations for
 these both actions.
-
+<br>
         $$
 S_t(x,y)\colon \cases 
    {
@@ -157,10 +153,7 @@ H\left(q, {\p \S_t(x,y)\over \p q}, y\right)=0\cr
     }\,,
          \eqno (0b)
         $$
-
-
-
-
+<br>
 \def \tS {{\tilde \Sigma}}
        Define
         $
@@ -177,31 +170,27 @@ $q$:
 y=y(q,t)
   \eqno (1)
        $$
-
+<br>
 {\tt  TEMPTATION}  $\tS=\S$. THIS IS WRONG!!!!
-
+<br>
 \bigskip
-
-
+<br>
   {\bf RIGHT STATEMENT} $\S_t(x,q)=qy(q,t)-\tS\,$,
 where a function $y=y(q,t)$ is defined by (1).
-
+<br>
 One can say that due to (3) equation (1)
 reveals Legendre....
-
-
-
+<br>
 \centerline {\bf Appendix}
-  
+<br>
  I will recall the  calculations.
 (3). 
-
+<br>
 Let $x^i(\tau)$ is an arbitrary solution of
 Euler-Lagrange equations which begins at $Q_1$ and
 ends at $Q$, (see (1)).  Let
 $h^i(\tau)$  be its arbitrary variation.
-
-
+<br>
 First prove (3a),
  Consider solution of Euler-Lagrange equaion $\tilde
 x(\tau)=x(\tau)+h(\tau)$  which is infinitesimally close
@@ -269,14 +258,14 @@ Thus
  {\p L\over \p \dot x^i} \delta Q_2^i(\tau)\,.
     \eqno (4)
     $$
-
+<br>
 This proves (3a).
 We  prove (3b) analogously just choosing $h^i(t)$
 such that $h^i(t_2)=0$.
-
+<br>
 Now prove (3c).  
 We do it little bit more carefully.
-
+<br>
 Consider again arbitrary new solution
 $\tilde x^i(\tau)=x^i(\tau)+h^i(t)$
 which is infinitesimally close to the initial solution
@@ -287,7 +276,7 @@ vanish:
 \delta Q_1=\delta Q_2=0\,.
     \eqno (i5a)
       $$
-
+<br>
  however just repeat the calculations
 of (4) for an {it arbitrary infnitesimal
 transformation}, and temprorarly we
@@ -295,9 +284,9 @@ will forget about condition  (5a)
 On the otehr hand during calculations we will use 
 that  $\delta t_1$, $\delta t_2$  and $h(t)$
 are nilpotents.
-
+<br>
    So let us begin:
- 
+<br>
  $$
 S(t_1+\delta t_1, Q'_1; t_2+\delta t_2Q'_2)=
     S(t_1+\delta t_1,
@@ -418,3 +407,4 @@ and
        $$
 This finishes the proof of euations (3)\finish
 \bye
+<br>

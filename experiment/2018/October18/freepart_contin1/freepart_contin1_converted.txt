@@ -1,5 +1,4 @@
-
-
+<br>
 \magnification=1200
 \baselineskip=14pt
 \def\vare {\varepsilon}
@@ -49,11 +48,11 @@
 \def \Tr  {{\rm Tr\,}}
 \def\V {{\cal V}}
 % I began this file in October  2018
-
+<br>
 {\tt 28 October 2018}
-
+<br>
 {\it We calculate here the wave function of free particle using continual integral and the classial action}
-
+<br>
 Let particle starts at the point $x_0,t_0$
 and ends at the point $x_1,t_1$
  Divide  $[t_0,t_1]$ on
@@ -86,7 +85,7 @@ where
    S_{\rm free}(x_0,t_0;x_1,t_1)={m(x_1-x_0)^2\over 2t}
      $$
 is the classical action.
-
+<br>
    This we have for the integral
      $$
 I=
@@ -107,7 +106,7 @@ where
     $$
 \vare={t_N-t_0\over N+1}\,.
        $$
-
+<br>
 {\it Proposition}
   Consider the function
       $$
@@ -136,7 +135,7 @@ F=(x_0-x_1)^2+(x_1-x_2)^2+\dots=
    2\left(x_1-{x_0+x_2\over 2}\right)^2+
      {3\over 2}\left(x_2-{x_0+2x_3\over 3}\right)^2
         $$
-
+<br>
 Now consider any integral.  We see that
 for two consecutive exponents,
         $$
@@ -183,10 +182,10 @@ for two consecutive exponents,
 \int e^{iau^2}du=\sqrt {\pi\over a}e^{i\pi\over 4}\,.
       $$
 Using this fact continue the calculations:
-
+<br>
   $$
 I=
    $$
-
+<br>
 \bye  
-
+<br><br>

@@ -1,16 +1,11 @@
 Две ночи бессоницы перед поездкой в Ереван, и стал
 понимать как приходим конформному Лапласиану.
-
-
+<br>
 \centerline {Pencil of self-conjugate operators and
      conformal Laplacian}
- 
-
-
-
+<br>
 \magnification=1200 
-
-
+<br>
 \baselineskip=14pt
 \def\vare {\varepsilon}
 \def\A {{\bf A}}
@@ -62,8 +57,7 @@
 % I began this file on 18 August 2017
 % on the way to Yerevan in the lounge of Vienna aeroport.
 % no eto to shto sdelano poslednije dva dnia....
-
-
+<br>
   Consider pencil of Beltrami Laplace operators
        of weight $\d$,
                 $$
@@ -77,9 +71,7 @@
 We concetrate later  on the case $\d={2\over n}$,
 when principal symbol is invariant of conformal symmetries,
 but for BV it will be interesting to see the general....             
-   
-
-
+<br>
            $$
 \{\Delta_\mu\}\,, 
    \Delta_\mu\colon \F_{\mu}\mapsto \F_{\mu+{2\over n}}\,,
@@ -88,7 +80,7 @@ but for BV it will be interesting to see the general....
 \left(\Delta_{L.B.}\left({\bf \bs\over \rho^\mu}\right)\right)
                $$
 where  $\Delta_{L.B}$ is usual Laplace-Beltrami oeprator on functions
-
+<br>
 Now according general scheme, thake the singular point
 of this penci. 
   We come to Laplacian
@@ -113,14 +105,14 @@ According the general scheme, this Laplacian has the form:
            +U(x)\right]\,,
 {\rm where}\,\,\rho=\sqrt{\det G}|Dx|\,.
                  $$
-               
+<br>
   {\bf Theorem??} 
            Consider cocyle
                $$
    C(\tilde g, g)=\Delta(\tilde g)-\Delta(g)\,,
                $$     
 where $\tilde g=e^{\s}g$ is Weyl transformation of Riemannian metric
-
+<br>
 This cocycle takes values in scalar densities, and it is coboundary
 if $n>1$. 
               $$
@@ -131,8 +123,8 @@ if $n>1$.
   \rho(\tilde g)R(\tilde g)-\rho(g)R(g)
 \right)\,. \qquad (c=4???)
                 $$
-
-
+<br>
 In the case if $n=1$ we come to Schwarzian deriddvative.
-
+<br>
 \bye 
+<br>

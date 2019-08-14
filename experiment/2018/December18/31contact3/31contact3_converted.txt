@@ -1,5 +1,4 @@
-
-
+<br>
 \magnification=1200
 \baselineskip=14pt
 \def\vare {\varepsilon}
@@ -41,13 +40,13 @@
 \def\w {{\omega}}
 \def \Tr  {{\rm Tr\,}}
 % I began this file in 31 December  2018
-
+<br>
     \centerline {Contact vector field III}
   Let  $J^1M$  be a space of first jets of functions on 
 manifold $M$. Cooridnates on $J^1M$ are $(p_i,q^j,u)$,
 where $q^j$ are coordinates on $M$.  Jet of every function  $u=u(x)$
 has coordinates $\left(p_i={\p u\over \p x q^i},q^i,u\right)$.
-
+<br>
 Consider  $\C$ , the Cartan 
  distribution of $2n$-dimensional planes in $J^1M$
 defined by the form $\w=p_idq^i-du$
@@ -63,16 +62,13 @@ N_i{\p\over \p p_i}+A{\p\over \p u}\,
 \hbox{belongs to Cartan distribution $\C$ if $A=p_iM^i$}\,.
       $$
 $\C$ is non-integrable distribution.                
-
-
-
+<br>
 Consider differential equation,  
       $$
 \E\colon       F(p,q,u)=0\,.
       $$
 Differential equation is sumbmanifold of codimension $1$.
-
-
+<br>
 The Cartan distribution  $\C$ of hyperplanes on $J^1M$ 
 defines distribution  $\C(\E)$ in $T\E$:
                   $$
@@ -86,8 +82,7 @@ N_i{\p\over \p p_i}+A{\p\over \p u}\in \C(\E)\,\, {\rm if}\,\,
 \left(M^i{\p\over \p q^i}+
 N_i{\p\over \p p_i}+A{\p\over \p u}\right)F(p,q,u)\big\vert_{F=0}=0\,.
           $$
-
-
+<br>
 {\bf Definition 1}
 The vector field $\K$  in $2n+1$ is {\it is an infinitesiaml symmetry} 
 of differential equation $\E=0$  if it belongs to $\C(\E)$:
@@ -98,9 +93,7 @@ of differential equation $\E=0$  if it belongs to $\C(\E)$:
 In what follows we consider here mostly an empty differential 
 equation.
  (We focus the attention on the equation in the next  file tomorrow.)
-
-
-
+<br>
 {\bf Definition 2}
 The vector field $\K$  in $2n+1$ is called {\it contact vector field}
 if it is an infinitesimal symmetry of empty differential equation, 
@@ -109,7 +102,7 @@ i.e. if it preserves the Cartan distribution $\C$
   \L_\X  \C=0
        \eqno (2 b)
             $$
-
+<br>
 {\bf Theorem}  {\it There is one-one 
 corrspondence between functions on
 $M$ and contact vector fields:
@@ -132,28 +125,25 @@ p_m{\p F\over \p p_m}- F
           \right)
        {\p\over \p u}
          $$
-
+<br>
 }
-
-
+<br>
 The proof of the Theorem follows from the 
-
+<br>
 {\bf Lemma}   If $\X$ is contact vector field and $\w(\X)\equiv 0$
 then $\X\equiv 0$.
-
-
+<br>
   This lemma implies that for every function $F$ there exists at most
 one contact vector field $\X_F$  such that $\w(\X_F)=F$.
-
+<br>
 On the other hand the vecot field (3)  
-
+<br>
 i) is defined for an arbitrary smooth function $F$
-
+<br>
 ii) it evidently obyes the condition $\w(\X_F)=F$
-
+<br>
 iii) is contact vector field
-
-
+<br>
 Conditions ii) and iii) hold evidently. 
 may be checked
 by direct calculations:
@@ -196,9 +186,9 @@ d\left( \w\left(\X_F\right)\right)+
 \left(du-p_mdq^m\right)=F_u\w\,,
     $$
 i.e. $\X_F$ preserves the Cartan distribution $\C$.
-
+<br>
 It remians to prove the lemma.
-
+<br>
     Suppose that   the vector field 
 $\X=M^i{\p\over \p q^i}+
 N_i{\p\over \p p_i}+A{\p\over \p u}$  is contact vector field
@@ -224,14 +214,12 @@ d\left( \w\left(\X\right)\right)+
          $$
 Thus $\l\equiv 0$,  and $M^m\equiv 0$, $N_m\equiv 0$
 and due to equation (3b), $A\equiv 0$. Hence $\X\equiv 0$\finish.
-
+<br>
 \medskip
 \centerline {\bf Poisson brackets on $J^1M$}
-
+<br>
 \qquad\qquad\qquad                A larchik prosto otkryvalsia.......
-
-
-
+<br>
 Using the bijection $F\leftrightarrow X_F$  between functions
 and vector fields one can consider bracket
       $$
@@ -320,6 +308,6 @@ F^m\p_m-\left(F_m+p_mF_u\right)\p^m
     \right)
        \hbox{\finish}
       $$
-
+<br>
 \bye
-
+<br><br>

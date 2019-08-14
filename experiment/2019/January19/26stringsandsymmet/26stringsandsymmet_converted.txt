@@ -1,5 +1,4 @@
-
-
+<br>
 \magnification=1200
 \baselineskip=14pt
 \def\vare {\varepsilon}
@@ -44,19 +43,18 @@
 % I wrote this file on 16 January
 \def\t {{\tilde}} 
 \def\dist {{\hbox{\tt "distance"}}}
-
-
+<br>
 {\it This is my may be last blog before beginning the Spring semester.
 Here I use one construction of orthogonal matrices, to
 diaognalise $N+1=2^k$ interacting oscyllators. The idea is taken
 from $Z_2$ addition which I "rediscovered"  about 30 years ago.}
-
+<br>
 $$ $$
-
+<br>
 Here I will continue to try to find
 good coordinates for  $N+1$  strings which are joined to the ring,
 but now I will try to do it in more clever way.
-
+<br>
    Consider again the  Lagrangian  of $N+1$
 particles which are joind in the ring:
       $$
@@ -112,8 +110,7 @@ $u^0,u^1,u^2,\dots,u^N$ such that
  {u^0\cr u^1\cr \dots\cr u^N\cr}
 =
       $$
-
-
+<br>
 such that
  in these coordinates
 Lagrangian splits on two Lagrangians: Lagrangian of free particle
@@ -192,11 +189,11 @@ p_{0N} &p_{1N} \dots &p_{NN}\cr
        }
          $$
 \centerline {\bf Orthogonal matrices}
-
+<br>
 The problem is to find the orthonormal basis, such
 that one of the vectors go along the vector $\sim_i\e_i$
 and this basis "respects symmetry"
-
+<br>
 It turns out that the question becomes easy for
 $N+1=2^k$. In this case one can  construct orthogonal matrix
 which contains only $\pm$, and the idea of this comes from the
@@ -205,8 +202,7 @@ find solution of problem: there are $n$ positive integeres,
 $a_1,a_2,\dots,a_n$.  Every player can take any number $a_i$ 
 and transform it to the humber that is less $a_i\mapsto a_i-k$.
 The winner is who do the last step.}
-
-
+<br>
 One can easy to find orthogonal matirices which diagonalise the matrix
 of potential energy in the case
 Now calculate eigenvalues.
@@ -353,9 +349,8 @@ and so on....
    }  \cr
                  }\,.
     $$
-
+<br>
 One can calulcate eigenvalues using rows of the matirx $P$.
-
- 
-
+<br>
 \bye 
+<br>

@@ -1,7 +1,6 @@
-
+<br>
 \magnification=1200 
-
-
+<br>
 \baselineskip=14pt
 \def\vare {\varepsilon}
 \def\A {{\bf A}}
@@ -49,9 +48,9 @@
 \def\ss  {\sigma_{\rm sph}}
 \def\grad {{\rm grad\,}}
 % I began this file on 31 July 2017
-
+<br>
 \centerline {\bf On one triple}
-
+<br>
 Let $M$ be a (super)manifold, 
 and $\M=C^\infty(M)$
 be an algebra of functions on this manifold.
@@ -65,7 +64,7 @@ on $C^\infty(M)$}\rightarrow
 on $C^\infty(M)$}
        $$ 
 {\it Where it comes from?:}
-
+<br>
 Let $H$ be an arbitrary even Hamiltonian
 on $\Pi T^*M$ (arbitrary odd Hamiltonian 
 on $T^*M$). It defines homotopy even 
@@ -88,7 +87,7 @@ we come to homotopy odd Poisson bracket
         $$
 where  $(\,,,\,,)$ is canonical even
  Poisson bracket on $\Pi T^*M$.)
-
+<br>
 The Jacobi identity for the series of
 homotopy even Poisson brackets 
 (2a) is provided with master-equation
@@ -111,7 +110,7 @@ is an arbitrary function we come to
      homotopy Poisson bracket, and
 if $H$ is the linear over fibers we come to
 vector field.
-
+<br>
 We see that usual Poisson bracket and vector field
 are related with each other being the special
 cases of homotopy Poisson bracket.
@@ -119,7 +118,7 @@ All three structures are represented
 by homological vector field on
 infinite-dimensional
 manifold $\M=C^\infty(M)$
-
+<br>
 $$
 f\mapsto f+
 \tau 
@@ -138,15 +137,12 @@ vector field
 x^i\mapsto x^i+\tau K^i\longrightarrow
 f\mapsto f(x^i+\tau K^i)
          $$
-
+<br>
 \bigskip
-
-
-
-
+<br>
 {\tt I cannot avoid the temptation to compare this triple
 whith another triple:
-
+<br>
 Many years ago I learned from the book of 
 Polia about the triple
        $$
@@ -154,19 +150,15 @@ Polia about the triple
 \hbox{polygon}\rightarrow \hbox{trianlge}
        $$
 it can be used for the very elegant proof of Pythagorean Theorem:
-
+<br>
    Let  $\triangle ACB$ be rectangular triangle,
  $\angle C={\pi\over 2}$. 
 We denote $a=|BC|,b=|AC|,c=|AB|$
-
-
-
- 
-
+<br>
 Consider the  following  three statements
-
+<br>
 \medskip
-     
+<br>
 I.  Let
 $\alpha_4,\beta_4,\gamma_4$
 be three squares such that
@@ -188,11 +180,9 @@ which is nothing but the statement
 =\hbox{Area of the square $\gamma_4$}
                     \eqno (*)
         $$
-
-
+<br>
 \medskip
-
-
+<br>
 II.  Consider three similar n-gones,
 (polygones with $n$ sides),
 $\alpha_n,\beta_n,\gamma_n$,
@@ -204,7 +194,7 @@ polygon  $\beta_n$ is equal to $b$
 and
 the corresponding side of the similar 
 polygon  $\gamma_n$ is equal to $c$.
-
+<br>
 Then 
         $$
 \hbox{Area of the polygon $\alpha_n$}+
@@ -212,9 +202,9 @@ Then
 =\hbox{Area of the polygon$\gamma_n$}
                     \eqno (**)
         $$
-
+<br>
 \medskip
-
+<br>
 III.   Consider three similar
 rectangular $\alpha_3$,
 $\beta_3$ and $\gamma_3$,
@@ -234,7 +224,7 @@ then
 \hbox{Area of $\triangle\beta_n$}
 =\hbox{Area of $\triangle\gamma_3$}\eqno (***)
              $$ 
-
+<br>
 The statements I, II and III are equivalent.
 since
 Area of every polygon is proportional to
@@ -242,10 +232,10 @@ the square of the side.
 This means that prove the Pythagoeran Teorem
 it suffices to prove just one of these statements.
 Prove the statement (***).
-
+<br>
   Let $CD$ be the height of the triangle $ACB$,
  $CD\perp AB$ and $D\in AB$.
-
+<br>
 Triangles $ACD$ and $BCD$
 are rectangular triangles, 
 they are similar to the triangle $ABC$.
@@ -259,12 +249,12 @@ We have that
 {\rm Area}(\triangle ACB)
     $$ 
 This proves (***). This proves Pythagorean Theorem.
-
+<br>
 To prove this theorem we first generalise the 
 statement from suqre to arbitrary polygon, then
 specify the special type of polygon---
 rectangular triangle.
 }
-
-
+<br>
 \bye
+<br>

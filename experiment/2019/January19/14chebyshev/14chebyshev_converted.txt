@@ -1,5 +1,4 @@
-
-
+<br>
 \magnification=1200
 \baselineskip=14pt
 \def\vare {\varepsilon}
@@ -43,9 +42,9 @@
 \def\dim {{\rm dim\,\,}}
 % I wrote this file on 1-st January  2019
 \def\t {{\tilde}} 
-
+<br>
 I can formulate the Chebyshev inequality in the following  sentence
-
+<br>
   The measure of the set where the positive function $F$  is greater than
    the positive number $a$ is less or equal to the integral of $F$ over 
 the whole set
@@ -55,7 +54,6 @@ divided on $a$
 \int_{x\colon\, F(x)\geq a}{F(x)\over a}dx\leq
 {1\over a}\int^\infty_{-\infty} F(x)dx\,.
            $$
-
-
-
+<br>
 \bye 
+<br>

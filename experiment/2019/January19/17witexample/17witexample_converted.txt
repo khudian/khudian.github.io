@@ -1,12 +1,4 @@
-
-
-
-
-
-
-
-
-
+<br>
 \magnification=1200
 \baselineskip=14pt
 \def\vare {\varepsilon}
@@ -51,18 +43,18 @@
 % I wrote this file on 17 January
 \def\t {{\tilde}} 
 \def\dist {{\hbox{\tt "distance"}}}
-
+<br>
 \centerline {One example of integral}
-
+<br>
 \def\m {{\bf m}}
 \def\n {{\bf n}}
-
+<br>
 We consider
                  $$
 \int_{-\infty}^\infty \exp\left[-{x^4\over 4}+{x\over \nu}\right]dx\,.
                  $$
 (this integral is from witten paper....)
-
+<br>
 We have for the exponent:
           $$
 F(x)=-{x^4\over 4}+{x\over \nu}\,, \,\,
@@ -108,7 +100,7 @@ Doing translation we will come to
 {1\over 4}x^4
 \right]dx
 $$
-
+<br>
 On the other hand we know that
          $$
 \int \exp\left[-{x^2\over h}\right]f(x)dx=
@@ -143,5 +135,6 @@ prove this formula and calculate $C_h$.  Consider
               }x^{2n}=
    \sqrt h\exp\left[{h\over 4}{d^2\over dx^2}\right]x^{2n}\big\vert_{x=0}
              $$
-
+<br>
 \bye
+<br>

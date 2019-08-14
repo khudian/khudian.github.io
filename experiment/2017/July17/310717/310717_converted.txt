@@ -1,8 +1,6 @@
-
-
+<br>
 \magnification=1200 
-
-
+<br>
 \baselineskip=14pt
 \def\vare {\varepsilon}
 \def\A {{\bf A}}
@@ -49,19 +47,16 @@
 \def\ss  {\sigma_{\rm sph}}
 \def\grad {{\rm grad\,}}
 % I began this file on 31 July 2017
-
-
-
+<br>
       Study conformal mapings, Dirichle problem (Lavrentiev book)
-      
+<br>
             Изучаю.
-
-
+<br>
        Метод сглаживания:
-
+<br>
    Let $C$ be a curve with pieces (arcs) $C_\a$.
   (e.g. polygon)
-   
+<br>
   Let $f=f(t)$ be a function on $C$, 
 which has jumps.
 Let $D_i$ be internal points
@@ -76,11 +71,11 @@ the jump $$
 \varphi_\a^{(+)}-
 \varphi_\a^{(-)}\,.
     $$
- 
+<br>
       Let  $F(z)$ be function with jumpes $h_k$
 at the points $D_k$, where curve is smooth and
   with jumps $H_\a$ at the vertices $A_\a$
-
+<br>
 Consider (with Lavrentiev-Shabad) the new 
 function
           $$
@@ -90,5 +85,6 @@ function
 \arg(z-A_\a )
           $$
 This function has no jumps!!!
-
+<br>
 \bye
+<br>

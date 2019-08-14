@@ -1,10 +1,6 @@
- 
-
-
-
+<br>
 \magnification=1200 
-
-
+<br>
 \baselineskip=14pt
 \def\vare {\varepsilon}
 \def\A {{\bf A}}
@@ -53,22 +49,22 @@
 \def\grad {{\rm grad\,}}
 % I began this file on 18 August 2017
 % on the way to Yerevan in the lounge of Vienna aeroport.
-
+<br>
 \centerline{Normal gauge and combinatorial problem}
-
+<br>
 Это было сто лет тому назад, когда я 
 прочел в Петрове, калибровку:
       $$
 g_{ij}(x)=\delta_{IJ}+{1\over 3}R_{ipjq}x^px^q
        $$      
    Сколько сил я на это потрартил и до сих пор плохо понимаю....
-
+<br>
    В связи с тем, что стал понимать, 
 что такое конформный лапласиан 
 возвратился к этой калибровке. 
    Сейчас я сформулирую убойную скучную комбинаторную
 задачу, связанную с этой формулой.
-
+<br>
    Look in the different way an this formula:
 Let $C_{ipjq}$ be a tensor such that
        $$
@@ -135,11 +131,8 @@ doing some simple calculations  we come to
 This cray notion is:
 in the first tensor wel alternate the first and the fourth
 indices, then 3-rd and 4-th.
-
+<br>
 We come to the object which obey all the conditions....
-
-
+<br>
 \bye 
-
-
-
+<br><br>

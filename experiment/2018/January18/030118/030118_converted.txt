@@ -1,10 +1,6 @@
-
-
-
-
+<br>
 \magnification=1200 
-
-
+<br>
 \baselineskip=14pt
 \def\vare {\varepsilon}
 \def\A {{\bf A}}
@@ -54,11 +50,11 @@
 \def\ss  {\sigma_{\rm sph}}
 \def\grad {{\rm grad\,}}
 % I began this file on 31 July 2017
-
+<br>
 \centerline {\bf One approach}
-
+<br>
 Denote  by $g_\k(y)$ a function $g=g_\k=\k\cdot \y=k_ay^a$
-
+<br>
 If $\Phi=\Phi_S$ is a thick morphism, then
        $$
   \Phi^*(g_\k)(x)=S(x,\k)
@@ -67,7 +63,7 @@ and
       $$
    y^a_\k(x)={\p S(x,l)\over \p l^a}\big\vert_{\l=\k}
       $$
-
+<br>
 Let $L$ be an arbitrary map such that  
        $$
   L(g+tH)-L(G)=tH(y_g(x))
@@ -82,4 +78,4 @@ the condition
 If we show that symmetricity implies (1)
 then we can integrate $y^a_\k$. 
 \bye
-
+<br><br>

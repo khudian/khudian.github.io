@@ -1,5 +1,4 @@
- 
-
+<br>
 \magnification=1200
 \baselineskip=14pt
 \def\vare {\varepsilon}
@@ -45,11 +44,9 @@
 % I wrote this file on 16 January
 \def\t {{\tilde}} 
 \def\dist {{\hbox{\tt "distance"}}}
-
-
+<br>
 {\bf Symmetries of Clairaut equation}
-
-
+<br>
 It is well-known that the Clairaut equation
        $$
  y-xy'=f(y')
@@ -67,13 +64,12 @@ and the special soluction, their envelope: $\varphi(x)$,
       \eqno (2b) 
      $$
 This is standard.
-
-
+<br>
 On the other hand the Clairaut equation (1)
 can be approached in the following way:
-
+<br>
 \def\t {\tilde}
-
+<br>
 Consider in $3$-dimensional space  $E$ $=(p,x,y)$ ($p=y'$)
 the following transformation
         $$
@@ -102,12 +98,11 @@ is transformed to the solution, the curve
    $\cases {\t x= t \cr 
             \t p=  f'(t)\cr
              \t y=f(t)\cr}$,
-
-
+<br>
 Our aim to find the {\it one-parametric famiily
   of contact trasnformations which include the Legendre transformation and see how look the image of solutions (2a), (2b)
 under this transformation.}
-
+<br>
 Consider the Hamiltnian $H={p^2\over 2}+{x^2\over 2}$
 of harmonic oscillator.  This Hamiltonian 
 defines the contact vector field
@@ -163,5 +158,4 @@ and for $t={\pi\over 2}$ this the Legendre trasnformation
        }
        $$
 \bye
-
-
+<br><br>

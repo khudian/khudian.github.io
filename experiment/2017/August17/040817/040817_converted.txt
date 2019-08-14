@@ -1,15 +1,15 @@
-
+<br>
 %\def\arctan {ee}
      Why the function multivalued function
 $\arctan {y\over x}$
 appeared often in calculations?
-
+<br>
 Because this function is conjugate to
 $\log \sqrt {x^2+y^2}$:
            $$
 \log z=\log (x+iy)\log \sqrt {x^2+y^2}
 +\arctan {y\over x}
            $$
-
-
+<br>
 \bye  
+<br>

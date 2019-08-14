@@ -1,6 +1,4 @@
-
- 
-
+<br>
 \magnification=1200
 \baselineskip=14pt
 \def\vare {\varepsilon}
@@ -46,10 +44,9 @@
 % I wrote this file on 16 January
 \def\t {{\tilde}} 
 \def\dist {{\hbox{\tt "distance"}}}
-
-
+<br>
 Let $H=H(x,p)$  be a function on $T^*M$, Hamiltonian.
-
+<br>
 Let $S=S(x,q,t)$  be a solution of equation
              $$
              \cases
@@ -76,8 +73,8 @@ Then for thick morphism $\Phi_{S_t}$,
           $$
      \Phi_{S_t}^*(g(y))=A(x,t)
          $$
-
-
+<br>
 Konechno dlia harmonicheskogo oscillatora,
 eto Legendre trnasformation=quasiclassic of Forrier transformation       
 \bye
+<br>

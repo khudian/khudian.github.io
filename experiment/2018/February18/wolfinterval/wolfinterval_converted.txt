@@ -1,9 +1,7 @@
 \magnification=1200
-
-
+<br>
     Волчья квинта----Wolf inteval
-
-
+<br>
    We know that fifth $={3\over 2}$ and on the piano
  it is equal to ${3\over 2} $
 if we have 12 fifths it will take 7 octaves we come to:
@@ -15,3 +13,4 @@ if we have 12 fifths it will take 7 octaves we come to:
 About thirty years  ago we played with David phoning to 
 people to $531441$ and $524288$ 
 \bye
+<br>

@@ -1,4 +1,4 @@
-
+<br>
 \magnification=1200
 \baselineskip=14pt
 \def\vare {\varepsilon}
@@ -49,18 +49,18 @@
 \def\V {{\cal V}}
 \def\s {{d\over dt}}
 \def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
-
+<br>
 % I began this file in 24 December  2018
-
+<br>
 {\tt 22 December 2018}
 \medskip
-
-
+<br>
    In fact
        $$
     \int
 \exp\left[{\over \hbar}(x-y)^2\right] f(ydy)=
 \exp\left[{\over \hbar}{\p^2\over \p x^2}\right] f(x)\,.
         $$
-
+<br>
 \bye
+<br>

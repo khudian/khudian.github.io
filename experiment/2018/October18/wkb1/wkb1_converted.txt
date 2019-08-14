@@ -1,5 +1,4 @@
-
-
+<br>
 \magnification=1200
 \baselineskip=14pt
 \def\vare {\varepsilon}
@@ -49,10 +48,10 @@
 \def \Tr  {{\rm Tr\,}}
 \def\V {{\cal V}}
 % I began this file in October  2018
-
+<br>
     \centerline {\bf The simple way to explain the transport equation for
   amplitude}
-
+<br>
 Consider continuity equation
        $$
 {\p \rho(x,t)\over \p t}+ {\rm div }\rho{\bf v}=0
@@ -94,3 +93,4 @@ Thus continuity equation is nothing that
 {\p C\over \p t}+{\cal L}_\v C=0\,.
          $$
 \bye
+<br>

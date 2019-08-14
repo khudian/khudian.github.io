@@ -1,9 +1,6 @@
-
-
-
+<br>
 \magnification=1200 
-
-
+<br>
 \baselineskip=14pt
 \def\vare {\varepsilon}
 \def\A {{\bf A}}
@@ -55,13 +52,12 @@
 \def\ss  {\sigma_{\rm sph}}
 \def\grad {{\rm grad\,}}
 \def \k {{\hat k}}
-
-
+<br>
 {\it beginning of June, Moscow?}
-
+<br>
 Consider an angle $\angle \varphi$ with  vertex $A$
 at the origin.
-
+<br>
 Put the road of the length $1$.  We come to the triangle
 $ABC$ with 
        $$
@@ -74,5 +70,6 @@ AB=t\,, \quad AC=\cases {
         }
        $$
  $AB=AC$
-
+<br>
 \bye
+<br>

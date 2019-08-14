@@ -1,5 +1,4 @@
-
-
+<br>
 \magnification=1200
 \baselineskip=14pt
 \def\vare {\varepsilon}
@@ -45,7 +44,7 @@
 % I wrote this file on 16 January
 \def\t {{\tilde}} 
 \def\dist {{\hbox{\tt "distance"}}}
-
+<br>
 The questions which I discuss in the Blog last few days arised out
 of the discussion with Grisha (Vekstein)  He asked me the question:why momentum propagates in the string if every point makes just vertical oscillations.
 The answer is that  there are densities oscillations which move along; this is easy to see for the string : see below. Instead answering in this way the 
@@ -55,7 +54,7 @@ a string as circular  ring of BIG radius and using circulant matrices
 however the linear algebra which appear is interesting (Hadamard matrices,
  eigenvectors in $\bf C$ of circulant matrices) and I will retunr to this 
 question.  However consider the simplest case:
-
+<br>
  Let  string osillates :
                  $$
      {d^2x\over dt^2}+{k\over m}x=0\,, {\rm then}\quad
@@ -68,6 +67,7 @@ Why momentum propagates?  What is the velocity? Physisist will say that
              v_{\rm soun}=L\w\,.
                          $$
 Why and how $L$ appears.
-
+<br>
   Consider the density $\rho(x)$ which is depending on time,
 \bye
+<br>

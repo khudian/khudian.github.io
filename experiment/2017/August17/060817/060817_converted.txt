@@ -1,8 +1,6 @@
-
-
+<br>
 \magnification=1200 
-
-
+<br>
 \baselineskip=14pt
 \def\vare {\varepsilon}
 \def\A {{\bf A}}
@@ -49,29 +47,24 @@
 \def\ss  {\sigma_{\rm sph}}
 \def\grad {{\rm grad\,}}
 % I began this file on 31 July 2017
-
-
-
-
+<br>
 I know well angle function and its relation
 with Green function:
-
-
+<br>
 In fact Green function generalises this concept.
-
+<br>
    recall sketchly :
  Let $G_U==G(z_0,z)$  be a Green  function of 
 the domain $U$, i.e. the function such that
- 
+<br>
 1) $G\approx \log(z-z_0)$ in a vicnity of the point
 $z_0$,
-
+<br>
 2) it is harmonic elswhere in $U$ except 
 a point $z_0$
-
+<br>
 3) it vanishes at boundary $\p U$
-  
-
+<br>
     Using the identity:
         $$
 \int_U  u\Delta v-\int_U v\Delta u=
@@ -89,15 +82,14 @@ $$
 where $\circ$ is convolution.
 (this is called Dirichle problem 
 if $f\equiv 0$.)
-
-
+<br>
 On the other hand one can come
 to the Green function
 $G_U$  trhough
-
+<br>
   1)   Green function $G_\infty(z_0,z)=
 -{1\over 2\pi}\log(z-z_0)$
-
+<br>
 2) and the ``angle function''
   defined on the boundary
 solving (with Arsenin) the integral equation.
@@ -108,7 +100,7 @@ which is equal to the angle
 that we look at  this curve
 \footnote{$^*$}{another name: 
 double layer potential}.
-
+<br>
 {\bf Remark}  {\it 
 We wrote identity (ident.)
 in a way to emphasize as much as possible
@@ -153,14 +145,13 @@ $d^{-1}(*du)$ is conjugate function:
 it is how angle function relates with 
 normal derivative of Green function.
 }
-
-
+<br>
 \bigskip
-
+<br>
  Thus on the space $C(\p U)$ 
 of functions on boundary we 
 have to linear operators:
-
+<br>
   First operator:
     $$
   C(\p U)\ni \nu\mapsto   \mu\in C(\p U)\colon
@@ -195,19 +186,16 @@ such that
 \pi\nu+\int_{\p U} L(t,t')\nu(t')dt'=\mu(t)
           $$
  then we reconstruct $W$ in terms of $\nu$.
-
-
-
+<br>
 $$ $$
-
+<br>
  {\bf Example}
-
-
+<br>
   Tro to recontruct
     harmonic function
 $W$ in the disc $x^2+y^2<1$
 using different methods.
-
+<br>
 First: Green function:
        $$
 W=\int_{x^2+y^2=1} *d G
@@ -223,10 +211,8 @@ G(z_0,z)=-{1\over 2\pi}\log
    {z-z_0\over 1-\bar {z_0}z}
             \right|
      $$
-
+<br>
 Another way to calculate:
- 
-
-
-
+<br>
 \bye
+<br>

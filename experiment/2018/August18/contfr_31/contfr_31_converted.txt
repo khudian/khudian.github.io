@@ -6,13 +6,12 @@
 \def\f {{\bf f}}
 \def \E {{\bf E}}
  \centerline {Continuous fractions: review}
-
+<br>
 4 August 18
-
+<br>
    Let  $\e,\f$  be standard basis in  ${\bf R}^2$.
 $\e=(1,0)$, and $\f=(0,1)$.
-
-
+<br>
    Let   $\a$  be an arbitrary 
 non-negative real number and 
   let  $[a_0,a_1,\dots,]$ be its continuous fraction;
@@ -23,24 +22,24 @@ corresponding to this fraction:
           \eqno (2b)
             $$
 (We assume that $p_k,q_k$ are coprime)
-
+<br>
 Consider vectors $\{\E_{-2},\E_{-1},\E_0.\E_1,\dots\}$
 in $\Z^2$   defined by real number $\a$ in the following way:
             $$
 \E_{-2}=\e,\quad  \E_{-1}=\f\,,
      \eqno (3)
             $$
-
+<br>
 {\bf Proposition} {``metod vytiagivanie nosov''}:  
 for arbitrary $k$:
         $$
 \E_{k+1}=\E_{k-1}+a_{k+1}\E_k\,. (k=-1,0,1,2,\dots)
         \eqno (Prop)
         $$
-
+<br>
 This Proposition immediately implies
  the statement about good approximmation
-
+<br>
 {\bf Corollary}
  Area of parallelgrom $\Pi_{\E_k \E_{k+1}}$ is 
 equal to $1$:
@@ -61,19 +60,15 @@ Indeed  by definition of these vectors
 \omega(\E_{k-1},\E_{k-1})\,,
     $$
 thus we come by induction to the statement.
-
-   
+<br>
 (Compare wth proofs in the previous files)
-
-
+<br>
 \bigskip
-
-
+<br>
 \centerline {$\cal x 2$ Convex span for continuous fraction.}
-
+<br>
 The following remarkable property is obeyed.
-
-
+<br>
 {\it Convex span of vectors $\{\E_2,\E_0,\E_2,\dots\}$
 in the quadrant $x>0,y>0$
 is the set $\Pi_-(\a)$,
@@ -81,7 +76,7 @@ and
 Convex span of vectors $\{\E_1,\E_1,\E_3,\dots\}$
 in the quadrant $x>0,y>0$
 is the set $\Pi_+(\a)$.}
-
+<br>
   As usuall we
  define  $\Pi_-$ as the set of all points in the quadrant
    $x>0,y>0$  which have integer coordinates and they
@@ -96,8 +91,6 @@ are over  the line $y=\a x$, respectively:
 \Pi_+=\{(m,n)\colon m,n\in\Z\,,\quad 0\leq n\a\leq m\}\,.
            $$ 
 (As usual we suppose that number $\a$ is not negative.)
-
-
-
-
+<br>
 \bye
+<br>

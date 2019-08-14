@@ -1,10 +1,6 @@
-
-
-
-
+<br>
 \magnification=1200 
-
-
+<br>
 \baselineskip=14pt
 \def\vare {\varepsilon}
 \def\A {{\bf A}}
@@ -52,17 +48,16 @@
 \def\ss  {\sigma_{\rm sph}}
 \def\grad {{\rm grad\,}}
 % I began this file on 31 July 2017
-
+<br>
 \centerline {\bf Taylor series expansion formula}
-
-
+<br>
    We calculate here
       $$
      \Phi^*(t_1 G_1+\dots+t_n G_n)
        $$
-
+<br>
 \bigskip
-
+<br>
    Suppose that
         $$
   S(x,l)=S(x)+\varphi(x)l+{1\over 2}A(x)l^2+
@@ -83,24 +78,23 @@ We have that for $g\equiv 0$, $\Phi^*(g)=S(x)$, and
 y_0(x)={\p S(x,l)\over \p l}\big\vert
 \big\vert\varphi_{l=0}=\varphi(x)\,.
              $$
-
+<br>
 We have also that
        $$
 \Phi(g+\vare G)=\vare G(y_g(x))\,.
        $$
-
+<br>
 \bigskip
-
-   
+<br>
  {\bf 1}
 Let $t\colon\quad t^2=0$. Then
       $$
 \Phi(tG(y))=tG\left(y_0(x)\right)=tG(\varphi(x))\,.
     \eqno(1)
       $$
- 
+<br>
 \medskip
-
+<br>
 {\bf 2}
 Calculate 
 $\Phi^*(t_1G_1+t_2G_2$ assuming that for parameters $t_1,t_2$ 
@@ -135,12 +129,9 @@ t_2G_2(y)+t_2t_1G_2'(y)A(x)G_1'(y)
 \big\vert_{y=\varphi(x)}\,.
 \eqno (2)
       $$
-      
-
-
+<br>
 \bigskip
-
-
+<br>
 {\bf 3}   Now calculate 
 $\Phi^*(t_1G_1+t_2G_2+t_3 G_3)$ assuming that
           $$
@@ -212,7 +203,7 @@ t_3G_3'\left(At_1G_1'(y)+t_2G_2'(y))+
 \big\vert_{y=\varphi(x)}\,.
       $$
 Calculating we come to the answer:
-
+<br>
        $$
 \Phi^*(t_1G_1+t_2G_2+t_3 G_3)=
   t_1G_1(y)+
@@ -233,8 +224,9 @@ G_1'(y) G_2'(y)G_3'(y)
 \big\vert_{y=\varphi(x)}
    \eqno (3)
       $$
-
+<br>
  Is it possible to recognize $S(x,l)$ by
 expansion of 
  $\Phi^*(t_mG_m)$?
 \bye
+<br>

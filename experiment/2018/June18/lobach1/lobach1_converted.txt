@@ -1,11 +1,10 @@
-
+<br>
     Учу геометрию Лобачевского по книге Ефимова.
      В каком то смысле возврат по спирали в детство.
         The function:
       $\Pi (x)$--- the acute angle between parallel and
 perpendicular  for the point which is at the distance $x$,
 is the central conception.
-
-
-
+<br>
 \bye
+<br>

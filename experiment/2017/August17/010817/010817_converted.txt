@@ -1,13 +1,12 @@
-
+<br>
 How look linear factional maps which send
  disc $x^2+y^2=1$ onto itself:
 this is representation of the group
   $SL(2,R)/??$ in Poincare disc.
-
+<br>
 (Linear fractional bijections of upper-half plane onto itself
 are $SL(2,R)/Z_2$?)
-
-
+<br>
   If $$
  w={Az+B\over Cz+D}
         $$ 
@@ -33,7 +32,7 @@ This means that  $g$  up to dilation
 preserves hermitian
 scalar product with signature $(1.1)$,
 we come to the group $SU(1,1)/\{1.-1\}$.
-
+<br>
 Indeed
   Let
     $g=\pmatrix{A & B\cr C & D\cr}$ 
@@ -75,3 +74,4 @@ SU(1.1)=\left\{  g=
           \right\}\,.
       $$
 \bye
+<br>

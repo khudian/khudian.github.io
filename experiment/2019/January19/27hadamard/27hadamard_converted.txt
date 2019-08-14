@@ -1,5 +1,4 @@
-
-
+<br>
 \magnification=1200
 \baselineskip=14pt
 \def\vare {\varepsilon}
@@ -45,16 +44,14 @@
 % I wrote this file on 16 January
 \def\t {{\tilde}} 
 \def\dist {{\hbox{\tt "distance"}}}
-
-
+<br>
      THIS DOES NOT WORK.
-
+<br>
 HADAMARD MATRIX DOES NOT DIAGONALISE $L$
-
-
+<br>
 \centerline {Hadamard matrices and interacting strings
 diagonalisation}
-
+<br>
 The matrices that I wrote in the yesterday blog
 were Hadamard matrices.
    When diagonalising potential energy
@@ -100,13 +97,13 @@ Thus we see that calculations become elegant if the orthogonal matrix
 $P$ contains $\pm 1$.  Thus we come to Hadamard matrices.
  There is the simple examples of Hadamard matrices which appear in
 dimensions $N+1=2^k$ ($N+1$ is number of particles)
-
+<br>
    There are two questions.
-
+<br>
 1) Why Hadamard matrices lead to the answer?
-
+<br>
 2) Calculate the eigenvalues of the matrix $M$ of potential energy.
-
+<br>
 Here we produce claculations for $N+1=8$ particles.
 The circulatn matrix $M$ of potential energy has the form
      $$
@@ -170,13 +167,13 @@ diagonalisation has the form
     $$
 Here instead $\pm$ you have to put $\pm 1$ (see 
 the yesterday blog.)
-
+<br>
 The rows of these matrix for the vectors 
       $\{\f_0,\f_1,\f_2,\f_3,\f_4,\f_5,\f_6,\f_7\}$
 of the new orthonormal basis which diaognalises the Lagrangian.
-
+<br>
  THIS DOES NOT WORK: MISTAKE!!!
-
+<br>
 We have that
        $$
 M\f_0=M\pmatrix{1\cr 1\cr 1\cr 1\cr 1\cr 1\cr 1\cr 1\cr}=0\,,
@@ -212,13 +209,12 @@ M\f_7=
 \pmatrix{1\cr -1\cr -1\cr 1\cr -1\cr 1\cr 1\cr -1\cr}=
 \pmatrix{-4\cr -2\cr -2\cr 4\cr -4\cr 2\cr 2\cr -4\cr}\not =2\f_6\,,
       $$
-
+<br>
 We see that $\{\f_0,\f_1,\f_2,\f_3\}$ are eigenvectors, however
 $\{\f_4,\f_5,\f_6,\f_7\}$ are not...
-
-
+<br>
   TRISTE....
-
+<br>
 However
      $$
 M\f_4=\f_4-\f_7\,,\quad
@@ -226,6 +222,6 @@ M\f_5=3\f_5-\f_6\,,\quad
 M\f_6=\f_6-\f_5\,\quad
 M\f_7=\f_7-\f_4-2\f_5-2\f_6\,.
      $$
-
-
+<br>
 \bye
+<br>

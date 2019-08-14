@@ -1,8 +1,6 @@
-
-
+<br>
 \def\w\omega
-
- 
+<br>
 Let $\xi$ be a point in the unit disc,
 then the trasformation
      $$
@@ -10,8 +8,9 @@ w=w(z)={z=\xi\over 1-\bar \xi z \}
      $$
 trasfnroms disc onto disc and the point $\xi$
 on the centre.
-
+<br>
   Mы знали какбы с детства (инверсия),  
 но все таки приятно:
-
+<br>
 \bye   
+<br>

@@ -1,7 +1,6 @@
-
+<br>
 \magnification=1200 
-
-
+<br>
 \baselineskip=14pt
 \def\vare {\varepsilon}
 \def\A {{\bf A}}
@@ -51,10 +50,9 @@
 \def\ss  {\sigma_{\rm sph}}
 \def\grad {{\rm grad\,}}
 % I began this file on 31 July 2017
-
+<br>
 \centerline {\bf Killing metric and Killing  }
-
-
+<br>
   Killing form on algebra $\G$ is
             $$
 K(X,Y)= {\rm Tr} (ad_X ad_Y)
@@ -70,36 +68,29 @@ a form $(\,,\,)$ such that for an arbitrary vector $Z\in \G$
   (ad_Z X,Y)=-(X,ad_Z Y)
   \eqno (2)
       $$  
-
+<br>
 Killing form obeys condition (2) and for semisimple Lie algebra
 a Killing metric is proportional to Killing form.
-
+<br>
    On Lie groj $G$ left invarint vector fields define canonical flat
 connection, but it si not symmetric connection.
    What about Levi-Civita for Killing metric?
-
+<br>
   Killing metric (arbitrary) on Lie algebra $\G$ define 
 (pseudo)Riemannian metric on group via left-invariant vector fields:
              $$
      <L_X,L_Y>=(X,Y)
              $$
-
+<br>
 \medskip
-
-
+<br>
 How to define connection compatible with this metric?
-
+<br>
    Answer: connection  $\nabla$ such that
            $$
    \nabla_{L_X} L_Y={1\over 2}L_[X,Y]
            $$   
 is Levi-Civita connection of Killing metric.
-
-
-
-
-
-
-
-
+<br>
 \bye
+<br>

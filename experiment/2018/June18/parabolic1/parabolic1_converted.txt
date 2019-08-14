@@ -1,16 +1,14 @@
-
+<br>
    Equation $x=kx+1$  has not a root if $k=1$
 and it has just one root if $k\not=1$.
-
-
-
+<br>
 One can say that 
 equation  $x=kx+1$ has 
 one root  on $\bf RP$ ($x=\infty$)
 if $k=1$ and it has two roots
      $x_1=\infty, x_2={1\over 1-k}$
 if $k\not=1$.  
-
+<br>
    It is diffiuclt to avoid temptation
 to compare it with  quadratic equation:
          $$
@@ -19,7 +17,7 @@ to compare it with  quadratic equation:
          $$ 
 Make  this vague statement
 exact.
-
+<br>
 For an arbitrary non-degenerate matrix $K=\pmatrix {A & B\cr C & D\cr}$,
 $\det K=AD-BC\not=0$, consider projective transfromations
                  $$
@@ -46,9 +44,7 @@ a new affine coordinate:
            =1\
                 \right)
                 $$ 
-      
-
-
+<br>
              Then 
 projective transformation $F(x)=kx+1$
 in new coordinate $u$ will have the appearance
@@ -67,14 +63,12 @@ The discriminant of this equation is equal to
                  $$
 {\cal D}=(A-D)^2+4BC={\rm Tr {\cal F}'\,}^2-4\det {\cal F}'\,.
                   $$
-
+<br>
 For initial matrix ${\cal F}=\pmatrix {k & 1\cr 0& 1\cr}$,
 and
               $$
 k=1\Leftrightarrow {\cal D}=(k-1)^2=0\,.
               $$
-
-
+<br>
 \bye
-
- 
+<br><br>

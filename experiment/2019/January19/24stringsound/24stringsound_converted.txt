@@ -1,5 +1,4 @@
-
-
+<br>
 \magnification=1200
 \baselineskip=14pt
 \def\vare {\varepsilon}
@@ -44,13 +43,9 @@
 % I wrote this file on 16 January
 \def\t {{\tilde}} 
 \def\dist {{\hbox{\tt "distance"}}}
-
-
-
+<br>
   We want to model the sound propagation.
-
-
-
+<br>
 Consider $N$ identical strings which may a big circle.
       $$
 L=\sum_k {m\dot x_k^2\over 2}+
@@ -71,7 +66,7 @@ L=\sum_k {m\dot x_k^2\over 2}+
    {k(x_N-x_0)^2\over 2}=
       $$ 
 where summation  gous over the finite ring $Z\backslash NZ$.
-
+<br>
 One can write it like
      $$
 L=\sum_k {m\dot x_k^2\over 2}+
@@ -97,12 +92,11 @@ where $N\times N$ matrix $M$ is equal to
      $$
 (see the blog on 28 October 2019.)
 This is the matrix on the cylinder.
-
+<br>
 \bigskip
-
-
+<br>
    Coordinates on configuration space.
-
+<br>
 {\bf Remark}
 The dimension of configuartion space is $N+1$,
 however it is natural to embedd this space in the space
@@ -113,14 +107,12 @@ with $N+2$ coordinates
   s={x_0+x_1+x_2+\dots+x_N\over N+1}\,.
          $$
 the constraint is $\eta_0+\eta_1+\dots+\eta_N=0$.
-
-
+<br>
 $$ $$
-
-
+<br>
 We try to do it in other way: we will choose new coordinates
 {\it not  destroying the circle symmetry}: 
-
+<br>
 Consider new coordinates $\{\xi^0,\xi^2,\dots\xi^N\}$:
             $$
 \eta_i=x_i-x_{i-1}+s\,, (\eta_0=x_0-x_N)\quad\,,
@@ -206,11 +198,10 @@ then
        x^N=\a_1\xi^0+\a_2\xi^1+\a_3\xi^2+\ldots+\a_0\xi^N
                    }
               $$
-
+<br>
 Here we usses symmetries, but calculations are still difficult.
    We try to go in another way choosing orthogonal transformations of coorrdinates (see the next blog)
-
-
-
+<br>
 \bye
 ~   
+<br>

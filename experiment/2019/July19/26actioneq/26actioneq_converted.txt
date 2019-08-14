@@ -1,7 +1,4 @@
-
-
-
-
+<br>
 \magnification=1200
 \baselineskip=14pt
 \def\vare {\varepsilon}
@@ -50,14 +47,13 @@
 \def  \dim {{\rm dim\,}}
 \def  \Im  {{\rm Im\,}}
 \def  \ker {{\rm ker\,}}
-
-
+<br>
 \def \Cl {\hbox{\tt Cliff}}
-
+<br>
 \centerline {Action in equation}
-
+<br>
 Let $L$  be a Lagrangian.
-
+<br>
    Denote by $x^i(\tau)$  the solution of Euler-Lagrange equation such
 that
                 $$
@@ -130,3 +126,4 @@ and $$
           $$
 \tt{this was waited hundred years}
 \bye
+<br>

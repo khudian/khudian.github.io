@@ -1,4 +1,4 @@
-
+<br>
 \magnification=1200
 \baselineskip=14pt
 \def\vare {\varepsilon}
@@ -49,10 +49,9 @@
 \def\V {{\cal V}}
 \def\S {{\cal S}}
 % I began this file in October  2018
-
+<br>
 {\tt 31 October 2018}
-
-
+<br>
    We calculate here the free action for particle in homogeneous field:
                $$
 L={mv^2\over 2}-U=
@@ -94,6 +93,6 @@ Now find $S(x,t)$ which is the Legendre transform of $\S$:
 ({\tt it is interesting here to look the special case $g\to 0$} 
 (free particle case)),
 i.e.
-                 
-                
+<br>
 \bye
+<br>

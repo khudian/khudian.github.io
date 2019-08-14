@@ -1,5 +1,4 @@
-
-
+<br>
 \magnification=1200
 \baselineskip=14pt
 \def\vare {\varepsilon}
@@ -44,26 +43,27 @@
 % I wrote this file on 21 January
 \def\t {{\tilde}} 
 \def\dist {{\hbox{\tt "distance"}}}
-
+<br>
 \centerline {Esho raz ob etom}
-
+<br>
 Let $M$ be (super)manifold. Consider $\Pi^\vare(T^*M)$,
 $\vare=0,1$; 
 if $\vare=0$ this is just $T^*M$, and
 if $\vare=1$ this is just $\Pi T^*M$.
-
+<br>
   There is canonical Poisson $\vare$-bracket $[\_,\_]_\vare$ on $\Pi^\vare T^*M$
 this is just canonical {\it even } Poisson  bracket  on $T^*M$
 and  this is just canonical {\it odd } Poisson  bracket
 (antibracket, Buttin bracket) on $\Pi T^*M$.
-
+<br>
 Let $H$ be an arbitrary function of parity  $p$ on $\Pi^\vare T^*M$
 which obeys classical master equation
                                $$
                                $$ 
 Notice that in the case if $p=\vare+1$
-
+<br>
 \def\m {{\bf m}}
 \def\n {{\bf n}}
-
+<br>
 \bye
+<br>

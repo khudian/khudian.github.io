@@ -1,5 +1,4 @@
-
-
+<br>
 \magnification=1200
 \baselineskip=14pt
 \def\vare {\varepsilon}
@@ -43,8 +42,7 @@
 \def\dim {{\rm dim\,\,}}
 % I wrote this file on 1-st January  2019
 \def\t {{\tilde}} 
-
-
+<br>
 Chebysghev inequality claims the following:
    Let   $F$  be non-negative function, and
       $$
@@ -57,14 +55,13 @@ where $a>0$. Then one can see that
 {1\over a}\int_{M_a} F(x)dx\leq
 {1\over a}\int^\infty _{-\infty} F(x)dx\leq
        $$
-
+<br>
 (we asssume that all integrals exist.)
-
-
+<br>
 This inequality seems to be one almost evidnet and highly effective.
-
+<br>
   Corollary.
-
+<br>
    Let  random variable $\xi$ has average $\mu$, 
 and dispersion $\sigma$:  
               $$
@@ -77,10 +74,11 @@ Then
 P\left(|\xi-\mu|>a\right)\leq {\sigma^2\over a^2}\,.
       $$
 {\tt Proof}
-
+<br>
       $$
 P\left(|\xi-\mu|>a\right)\leq \int 
 {\left(x-\mu\right)^2\over a^2}\rho(x)dx={\sigma^2\over a^2} \,.
       $$
-
+<br>
 \bye
+<br>

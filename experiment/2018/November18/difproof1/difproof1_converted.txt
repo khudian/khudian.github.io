@@ -1,5 +1,4 @@
-
-
+<br>
 \magnification=1200
 \baselineskip=14pt
 \def\vare {\varepsilon}
@@ -49,7 +48,7 @@
 \def \Tr  {{\rm Tr\,}}
 \def\V {{\cal V}}
 % I began this file in 28 November  2018
-
+<br>
 Let
    $S(x,q)=S^a(x)q_a+\dots$, then for arbitrary function $g(y)$, the
 inverse image under the thick morphsim $\Phi_S$, 
@@ -161,8 +160,8 @@ Thus
 Here  we have to be carefull with "concurrence"
 between small $\vare$ and big $1\over \hbar$.
 We hae to care about the cobntribution of amplitudes...
-
+<br>
 Hovik   28 November 2018.
-
-
+<br>
 \bye
+<br>

@@ -1,5 +1,4 @@
- 
-
+<br>
 \magnification=1200
 \baselineskip=14pt
 \def\vare {\varepsilon}
@@ -48,12 +47,11 @@
 \def  \dim {{\rm dim\,}}
 \def  \Im  {{\rm Im\,}}
 \def  \ker {{\rm ker\,}}
-
+<br>
 \centerline {{\tt Again and again} sign conventions}
-
-
+<br>
       {\bf Lie algebra of parity $\vare$}
-
+<br>
     $L=L_0+L_1$ with operation $[u,v]$
 which is bilinear:
             $$
@@ -61,15 +59,13 @@ which is bilinear:
      [ u,v\lambda]=[u,v]\lambda\,,
             $$
 (no sign for arbitrary $\vare=0,1$!)
-
-
-
+<br>
   Operation ${u,v}$ such that $p([u,v])=p(u+v+\vare)$
-
+<br>
       $$
  [u,v]=-[v,u](-1)^{(u+\vare)(v+\vare)}
       $$
-
+<br>
 Jacobi identity:
          $$
 [u,[v,w]]=[[u,v],w]+(-1)^{(u+\vare)(v+\vare)}[v,[u,w]]\,.
@@ -82,7 +78,7 @@ with
    \Pi \left[ u, v\right]\,.
          $$
 No extra sign!
-
+<br>
 The Jacobi identity has clear meaning in terms of
 differentials. Namely we can rewrite it in the following
 way:
@@ -91,17 +87,15 @@ way:
    (-1)^{(u+\vare)(v+\vare)}v\circ D_u w\,.
     $$
    $$
- 
-
-
+<br>
 \bigskip
-
+<br>
    {\bf Poisson algebra}
-
+<br>
 It is Lie algebra with associative multiplication:
                $$
    \{f,gh\}=\{f,g\}h+h\{f,g\}(-1)^{(a+1)b}
                $$
 (Irrelevant of sign?)
 \bye
-
+<br><br>

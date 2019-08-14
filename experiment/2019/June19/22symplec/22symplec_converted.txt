@@ -1,5 +1,4 @@
- 
-
+<br>
 \magnification=1200
 \baselineskip=14pt
 \def\vare {\varepsilon}
@@ -45,13 +44,12 @@
 % I wrote this file on 16 January
 \def\t {{\tilde}} 
 \def\dist {{\hbox{\tt "distance"}}}
-
-
+<br>
 {{\bf  one fact in symplectic linear algebra}{\tt
 Guill.Sternberg} }
-
+<br>
 Let $V$  be finite dimensional symplectifc vector space.
-
+<br>
 Let $A$ be linear transformation
 of symplectic space $V$ such that
   $$
@@ -64,15 +62,14 @@ i.e. $A\in sp(V)$.
 Here  $\langle \_,\_\rangle$ is antisymmetric
 non-degenerate bilinear form, the symplectic scalar
 product.
-
-
+<br>
 One can consider bilinear form:
        $$
 H(u,v)=P(u,v)
        $$
 We see that it is symmetric. (This form plays the role
 of Hamiltonian.)
-     
+<br>
 Conisder generalised eigen spaces of $A$:
     $$
 V_\lambda=\{\x\in V\colon\quad (A-\lambda)^\infty x=0\}
@@ -91,28 +88,23 @@ V_\lambda=\{\x\in V\colon\quad
 (A-\lambda)^N x=0\}\,,\quad {\rm where}\,\, N>{\rm
 dim\,}V 
 $$
-
-
-
-
+<br>
 Proposition
-
+<br>
 a) 
   $$
 V_\lambda=\left(\left(A+\lambda\right)^N
 V\right)^\perp
        $$
-
+<br>
 b)
          $$
       {\rm dim\,}V_\lambda=
       {\rm dim\,}V_{-\lambda}\,.
      $$
-
+<br>
 \smallskip
-
-
-
+<br>
 Recall that for an arbitrary operator $P$ in finite
 dimensional space $V$
       $$
@@ -130,16 +122,16 @@ hence b) follows from a) since
 {\rm dim\,}\left({\rm Im\,}(A+\lambda)^N\right)^\perp
 {\rm dim} V_{\lambda}\,.
       $$
-
+<br>
 Now prove a)
-
+<br>
 Note that condition (1) implies that
     $$
 \langle (A-\lambda)u,v\rangle
 =-\langle u, (A+\lambda)v\rangle
  \eqno (2)
     $$
-
+<br>
    Take an arbitrary $x\in V$. If $x\in V_\lambda$
 then for arbitrary $\y\in {\rm Im}(A+\lambda)$ we have
           $$
@@ -170,16 +162,14 @@ we have proved that
 $\left(\left(A+\lambda\right)^N V\right)^\perp
 \subseteq V_\lambda$ also.
 Hence we proved proposition.
-
-
+<br>
 \bigskip
-
-
+<br>
 {\bf Theorem}. Let $X$ be an arbitrary Lagrangian
 plane  in $V$.
-
+<br>
 {\it 
-
+<br>
 a) The set of Lagrangian planes which are transversal to $X$
 is in one-one correspondence with set of ,
 linear operators $P$, such that
@@ -193,7 +183,7 @@ and
      \eqno (3b)
        $$
 \m
-
+<br>
 b) The set of ${\cal L}_X$ of Lagrangian planes which is
 transversal
 to the plane given Lagrangian plane  $X$  is  an affine
@@ -206,17 +196,16 @@ $V\backslash X$.  In particular
 {\rm dim\,}\L_X={n{n+1}\over 2}\,,\quad ({\rm dim
 \,}V=2n)\,.
    $$
-
-
+<br>
 }
-
+<br>
 {\bf Remark}  Condition (3a) means that operator
 $P={1\over 2}+A$, where $A$ belongs to $sp(V)$.
-
+<br>
 \smallskip
-
+<br>
 {\tt Proof}
-
+<br>
 Indeed suppose that $Y$ is Lagrangian surface which is
 transversal to $X$. Define 
    $$
@@ -245,18 +234,16 @@ For vectors $u=\x+\y$ and $\v=\x'+\y'$
 \langle u,v\rangle\,,
       $$ 
 i.e.  condition (3a) holds also.
-
+<br>
 \smallskip
-
+<br>
 Now suppose that $P$ is linear operator which obeys
 conditions (3a) and (3b).
-
-
+<br>
  Consider subspace $Y={\rm Im}P$.
 Vectors of  $Y={\rm Im } P$ are eigenvectors with
 eigenvalue $1$: 
-
-
+<br>
  $X=V_0$ and $Y=V_1$.
 It is easy to see that equation (3a) implies that $Y$ is
 Lagrnagian. Indeed ${\rm dim} Y=n$ (${\rm dim} V=N=2n$)
@@ -269,9 +256,9 @@ to the  operator $A=P-{1\over 2}$}:
  2\langle \y, \y'\rangle\Rightarrow
 \langle \y, \y'\rangle=0\,.
        $$
-
+<br>
 \bigskip
-
+<br>
 Now study the set $\L_X$.
 It is set of projectors $P$ which obey to conditions
 (3a) and (3b). Condition 3a) means that  $P-{1\over 2}$
@@ -280,3 +267,4 @@ transfromations. and condition (3b) means that
 the corresponding 'Hamiltonian' is vanished on $X$.
 Hence i
 \bye
+<br>

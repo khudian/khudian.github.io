@@ -1,9 +1,6 @@
-
-
-
+<br>
 \magnification=1200 
-
-
+<br>
 \baselineskip=14pt
 \def\vare {\varepsilon}
 \def\A {{\bf A}}
@@ -56,15 +53,13 @@
 \def\grad {{\rm grad\,}}
 \def \k {{\hat k}}
 \def \tan {{\rm tan\,}}
-  
+<br>
 end of  June 2018
-
-
+<br>
 \centerline  {\bf Distance in Lobachevsky geometry}
-
-
+<br>
           \centerline {${\cal x}\,0$}
-
+<br>
 Let $z=x_1+ix_2,w=x_2+iy_2$ be two points 
 in the upper half plane of the complex 
 plane $\C $, ($y_1,y_2>0$.) 
@@ -77,18 +72,17 @@ d(z,w)={\rm arccosh\,}\left(
      \right)\,.
         \eqno (0.0)
        $$
-
+<br>
    Recall that upper half plane of $\C$ with metric
        $$
       G={dx^2+dy^2\over y^2}
 \eqno (0.1)
        $$
 is a model of Lobachevsky plane.
-
+<br>
 Geodesics in this model are vertical lines and
 upper half-circles with centre on the  axis $OX$.
-
-
+<br>
 In the special case if
 the points $A,B$ are on the same vertical line,  
 $A=z=x_1+iy_1$ and $B=w=x_2+iy_2$ with  $x_1=x_2$
@@ -106,7 +100,7 @@ between these points:
        \eqno (0.2)  
        $$ 
 (Compare with (0.0)).
-
+<br>
 In the general case if points  $z,w$ 
 have not the same ordinate, then the arc of geodesic
 between these points is the arc of the 
@@ -137,39 +131,32 @@ and
       $$
 One can write the
  explicit formula for arbitrary points   using
-
-
+<br>
 \m
-
+<br>
 a) equation (0.3): One has to express  `polar coordinates'
 in terms of Cartesian
-
+<br>
 \m
-
+<br>
 b)  using formula (0.1) and invariance of distance
 with respect to Mobius transformations
-
-
-
-
+<br>
 \m
 c)  express the length in terms of cross-ratio,
 which is Mobius invariant.
-
-
-
-
+<br>
 In the first paragraph we will come to formula (0.0)
 using the invariance of distance.
-
+<br>
 Then we will suggest another  calculation using the explicit
 expression (0.3) and at the end we will consider the calculation
 using cross-ratio.
-
+<br>
 \bigskip
-
+<br>
 \centerline {${\cal x}\, 1$\bf Calculation using invariance}
-
+<br>
 First we consider the case if a point $B=w=i$.
 Mobius  Transformation
       $$
@@ -230,7 +217,7 @@ transforms an arbitrary point $z=x+iy$  with $y\not =0$
 to the point on the axis $OY$.
 (we choose the root with $'+'$, the second root is for the points
 on $OX$ but we are not interested in these points.)
-
+<br>
 In Cartesian coordinates we have
        $$
 z'=iy'={1+x^2-y^2+S(x,y)+2xyi\over 
@@ -248,17 +235,17 @@ in equation (1.3) is on $OY$ axis, i.e.
            $$
 (1+x^2-y^2+S+2ixy)(1+x^2+y^2-S)=2xy^2(1+S-x^2-y^2)\,.
            $$
-
+<br>
 Now we ``play'' with formula (1.2).
 Use the following simple fact:
- 
+<br>
 {\tt Fact}
 If $z'=iy'={a+bi\over c-di}$, i.e.   $ac=bd$, then
        $$
 z'=iy'={a+bi\over c-di}={i(b-ia)\over c-di}=i{b\over c}=i{a\over d}
     \eqno (1.4)
        $$
-
+<br>
 According to this identity return to formula (1.2):
              $$
 z'=iy'= {1+z^2+\sqrt {1+|z|^4+z^2+\bar z^2}
@@ -277,7 +264,7 @@ z'=iy'= {1+z^2+\sqrt {1+|z|^4+z^2+\bar z^2}
      {1+x^2-y^2+S\over y(1-x^2-y^2+S)}i=
      {2y\over 1+x^2+y^2-S}i\,,
          $$
-
+<br>
 We see that
             $$
 y'=
@@ -304,7 +291,7 @@ y'=
           }
 \eqno (1.5)
            $$
-
+<br>
 Note that
         $$
    ch\left(  a
@@ -330,8 +317,7 @@ i.e.
 {S^2(x,y)-(1+x^2-y^2)(1-x^2-y^2)\over 2x^2y}=
 {1+(x^2+y^2)^2+2x^2-2y^2-(1-y^2)^2+x^4\over 2x^2y}=
      $$
-
-
+<br>
         $$
 {x^2+y^2+1\over 2y}\,.
          $$
@@ -371,14 +357,12 @@ we come to the final formula:
 2y_1y_2}\right)\,.
        $$
 This is just what we wanted (see (0.0)).
-
-
-
+<br>
 We calculated using invariance properties,
 but our calculations still are brute force calculations.
 Try to do it in another way:
 \bigskip
-
+<br>
 \centerline {${\cal x}\, 2\,$
 \bf Straightforward calculations using formula (0.2)}
 Let $A=z_1=x_1+iy_1$,
@@ -422,20 +406,18 @@ x_1-{x_1+x_2\over 2}-
           $$
 Thus we can calculate $\varphi_1,\varphi_2$ and we will come to
 the formula for the distance....
-
-
-
+<br>
 \bigskip
-
+<br>
 \centerline {${\cal x}\, 3\,$
 \bf Cross-ratio and distance}
-
+<br>
   For two arbitrary points $A,B$, 
 the distance is the length of 
 of the arc of geodesic 
 (the half-circle with centre on $OX$ axis) passing
 through these points.
-
+<br>
    Consider points
 $P_\infty, Q_{0}$ such that these points
 are ending  and beginning  points
@@ -491,11 +473,10 @@ l=
        \log {y_2\over y_1}
         \right|\,.
        $$
-
-
+<br>
 To  perform the calculations in equation (2.1)
 we have to use calculations (2.1) in the previous paragraph.
-
+<br>
 If 
    $z_A=x_1+iy_1$,
    $z_B=x_2+iy_2$,
@@ -534,6 +515,6 @@ and
         $$
 P_\infty=a-R, \,,  Q_0=a+R\,.
        $$
-
-
+<br>
 \bye
+<br>

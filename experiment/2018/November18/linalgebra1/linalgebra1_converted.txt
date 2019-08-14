@@ -49,10 +49,9 @@
 \def\V {{\cal V}}
 \def\S {{\cal S}}
 {\tt 11 November 2018}
-
-
+<br>
 {\bf Lemma 1}   
-
+<br>
  Let  $S_k$ be the number of permutations
 of $k$ numbers such that no number is preserved:
        $$
@@ -60,20 +59,17 @@ S_k= \hbox {number of permutations
 $[\sigma_1\sigma_2\sigma_3\dots\sigma_k$ such that
       i\not=\sigma_i}
        $$
-
-
+<br>
 Then $S_k$ is odd if $k$ is even, and
 $S_k$ is even if $k$ is odd.
- 
+<br>
 In fat $S_k$ can be easily calculated based on
 the equation $\sum C^k_nS_k=0$
 (see the etude ndrunk.tex)
 but here we need only its oddness.
-
-
+<br>
 \medskip
-
-
+<br>
 {\bf Lemma 2} Let 
     $M$ be $2k+1\times 2k+1$ matrix such that
          $$
@@ -84,9 +80,6 @@ Then for the polynomial
 P_M(z)=\det (z+M)
      $$
 all coefficients for odd degrees of $z$ are not equal to zero.
-
-
-
-
+<br>
 \bye
-
+<br><br>

@@ -3,9 +3,9 @@
 \def\a {\alpha}
 \def\Z {{\bf Z}}
  \centerline {Facts about continuous fractions}
-
+<br>
 {\bf Fact 1}
-
+<br>
 Let $\a$ be a real number,
 and let $\a=[a_0,a_1,a_2,\dots]$  be a continuous 
 fraction of this munber:
@@ -30,8 +30,7 @@ $n\leq x<n+1$}\,.
 Later we will suppose that a number $\a$ is positive
 and irrational number, thus all  
 $a_i$ are positive integers.
-
-
+<br>
    Let $(p_k,q_k)$  be a pair of 
 coprime integeres such that
 the rational number $p_k/q_k$ is the $k$-th
@@ -45,31 +44,28 @@ It is evident that
  {r\over s}=[a_1,\dots,a_k]\,,
         \eqno (1.1)
      $$
- 
-
+<br>
 let 
-
+<br>
 In the case if the rational number 
 $[a_1,]{r\over s}$
-
+<br>
        $$
 {p_k\over q_k}=a_0+{r\over s}
        $$
-
-
-
+<br>
 {\bf Proposition} {\it Let $\a$ be positive irrational
 number  and $\a=[a_0,a_1,\dots,a_n,\dots]$.
-
+<br>
 Consider 
       $$
 {p_k\over q_k}=[a_0,\dots,a_{k}]\,,\quad
    k=0,1,2,3,
       $$
 be rational number. We suppose that $p_k,q_k$ be comprime.
-
+<br>
 Then  for an arbitrary $k=0,1,\dots$,
-
+<br>
   1)
     `  $$
     {p_{2k}\over q_{2k}}<\a< {p_{2k+1}\over q_{2k+1}}\,,
@@ -80,11 +76,11 @@ and
    {p_{k}\over q_{k}}={1\over q_{k+1}q_k}.
      \eqno {Prop2}
            $$
-
+<br>
 }
 The first statement is evident, the second statement
 can be easily proved by induction. For $k=0$ it is true.
-   
+<br>
 Let  $\left\{{p_k\over q_k}\right\}$ be 
 series of approximation of real number 
 $\a=[a_0,a_1,\dots,a_n,\dots]$
@@ -151,12 +147,11 @@ the right hand side is equal to
         $$
 During the School in Ratmino Sasha Vweselov explained
 me that this property can be formlised in the following way:
-
-
+<br>
 {\bf Theorem} ({\tt F.Klein})
-
+<br>
 \centerline {\bf Convex span and continuous fraction}
-
+<br>
 Let  $\a$  be a number.
          Consider on the lattice $Z\times Z$ two sets
        $$
@@ -166,7 +161,7 @@ Let  $\a$  be a number.
 Let 
 such that its continuus fraction is equal to
   $\a=[a_0,a_1,a_2,\dots]$.
-
+<br>
   Consider the points  $A_k$ corresponding
 to approximmation of $\a$ by continuous fraction
 of $\a=[a_0,\dots,a_n,\dots]$:
@@ -195,5 +190,6 @@ $B_{2k+1}A_{2k+1}A_{2k+3}B_{2k+3}$}\,,
 where $B_{2k}=(q_{2k},0)$ are the points on the axis
 $OX$ and $B_{2k+1}={q_{2k+1},\infty}$ are the points 
 at infinity.
-
+<br>
 \bye
+<br>

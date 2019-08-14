@@ -1,5 +1,4 @@
-
-
+<br>
 \magnification=1200
 \baselineskip=14pt
 \def\vare {\varepsilon}
@@ -49,31 +48,27 @@
 \def \Tr  {{\rm Tr\,}}
 \def\V {{\cal V}}
 % I began this file in October  2018
-
-
-
-
-
+<br>
    {\bf Action for harmonic osillator: Misprint in Feynman book?}
-
+<br>
 {\tt 26 October 2018}
-
+<br>
   Consider Lagrangian of harmonic osillator:
         $$
   L={m\dot x^2\over 2}-{mw^2x^2\over 2}\,,
          $$
 and calculate $S(x_1,t_1;x_0,t_0)$
-        
+<br>
 First write down the path  $x(t)$
 which
-
+<br>
 i) obeys the differential equation ${d^2 x\over dt^2}+\w^x=0$
-
+<br>
 ii) and it obeys the boundary condition
       $x(t_0)=x_0$ and $x(t_1)=x_1$.
-
+<br>
 One can see that this path is 
-
+<br>
        $$
 x(t)={
    x_1\sin \w (t-t_0)
@@ -179,3 +174,4 @@ $$
      $$
 Comparing with the book of Feynman we see the typos???
 \bye
+<br>

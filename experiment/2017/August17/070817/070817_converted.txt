@@ -1,10 +1,6 @@
-
-
-
-
+<br>
 \magnification=1200 
-
-
+<br>
 \baselineskip=14pt
 \def\vare {\varepsilon}
 \def\A {{\bf A}}
@@ -51,13 +47,10 @@
 \def\ss  {\sigma_{\rm sph}}
 \def\grad {{\rm grad\,}}
 % I began this file on 31 July 2017
-
-
+<br>
 \centerline {\bf Calculation for Green 
 function of disc and half-plane.}
-
-
-
+<br>
 Recall that if $G_U(z_0,z)$ is Green function
 of domain $U$ then 
 the identity
@@ -81,11 +74,11 @@ is the solution of boundary problem
          }
    \eqno (0.3)
        $$
-
+<br>
 \m
-
+<br>
    \centerline {\bf Green function for disc}
-
+<br>
      Having a map
          $$
 z\to w={z-\zeta\over 1-\bar\zeta z }
@@ -134,10 +127,9 @@ rdr\wedge d\varphi{\cal c}
       -{1\over 2\pi} 
 {1-R^2\over 1-2R\cos(\theta-\varphi)+R^2}d\varphi
             $$
-
+<br>
 {\bf Remark} (Peut etre un problem de sign?)
-
-
+<br>
 This we have the solution of Dirichle problme for the circle:
 if $W$ harmonic function in the disc $D\colon\,x^2+y^2<1$
 such that $W_{\p D}=\mu(\varphi)$
@@ -147,17 +139,17 @@ W(R,\theta)={1\over 2\pi}
       \int_0^{2\pi}\mu(\varphi)
 {1-R^2\over 1-2R\cos(\theta-\varphi)+R^2}d\varphi\,.
          $$
-
+<br>
 Look at this formula.
 It is useful sometimes to write it:
-
+<br>
          $$
 W(R,\theta)={1\over 2\pi}
       \int_0^{2\pi}\mu(\varphi)
 {1-R^2\over (1-Re^{ i(\theta-\varphi)})
             (1-Re^{-i(\theta-\varphi)})}d\varphi\,.
          $$
-
+<br>
 Notice also that 
 If $\mu(\varphi)=C$ then obviously
           $$
@@ -170,10 +162,10 @@ W(R,\theta)=\cases{z^n=R^n e^{in\varphi}\,\hbox{for $R<1$}\cr
 \,\hbox{for $R=1$} }
           $$
  then we come to harmonic polynomials.....
-
+<br>
 {\bf Remark} {\it In the formula (*) there is a jump,
 so to be more precise we have to write:
-
+<br>
          $$
 W(R,\theta)=\lim_{R\to R_-}{1\over 2\pi}
       \int_0^{2\pi}\mu(\varphi)
@@ -188,7 +180,7 @@ W(1,\theta)=\lim_{R\to 1_-}{1\over 2\pi}
             (1-Re^{-i(\theta-\varphi)})}d\varphi\,.
          $$
 }
-
+<br>
 {\bf Remark 2} {\it All this can be done much more easilly 
 using Fourier transform :
 Indeed if $\mu(\varphi=e^{ik\theta})$
@@ -212,9 +204,9 @@ W(R,\theta)=\sum\mu_k R^k e^{ik\theta}=
       d\varphi
       $$
 }
-
+<br>
 \m
-
+<br>
 Sure we can solve Dirichle problem
 just using angle function.
   Recall shortly the calculation of
@@ -234,9 +226,9 @@ Put $x=\cos\varphi, y=\sin\varphi$ we come to
     {1-R\cos(\theta-\varphi)\over 
 1-2R\cos(\theta-\varphi)+R^2}d\varphi
        $$
-
+<br>
 Now we solve Dirichle problem via integral equation.
-
+<br>
   Consider the distribution $\nu(\varphi)$ on the circle.
   It defines thefunction:
               $$
@@ -255,7 +247,7 @@ This function is harmonic in the interior of the disc
     U(R,\theta)\big\vert_{R=1+0_+}=
     U(R,\theta)\big\vert_{R=1}-\pi\nu(\theta)\,.
             $$
-
+<br>
 In particular we come to the harmonic function
 in the disc such that its values at the boundary are equal to
         $$
@@ -321,7 +313,7 @@ Hence   $$
 1-2R\cos(\theta-\varphi)+R^2}-{1\over 2}\right)d\varphi
          $$
 Thus we come to the solutioj of Dirichle problem.
-
+<br>
 {\bf Remark} {\it Sure using angle function we can reconstruct
 not only $*dG$ but the Green fucntion also.
 We take the ordinary Green function, $G_\infty(z_0,z)$
@@ -331,14 +323,14 @@ function $W$ such that $G_\infty+W$ becomes the Green function:
 Dirichle problem $W\big\vert_{boundary}=-
 G_\infty\big\vert_{boundary}$
 }
-
+<br>
 \bigskip
-
+<br>
 \centerline{Upper-half plane: Green function, Dirichle problem}
 G
 We know that $w={iz+1\over z+i}$ maps $\H\leftrightarrow D$
   (in fact this is not arbitrary: see the blog on 10-th August)
-
+<br>
 taking composition we come to the map:
         $$
 w=w(\xi,z)={{iz+1\over z+i}-{i\zeta+1\over \zeta+i}
@@ -347,7 +339,7 @@ w=w(\xi,z)={{iz+1\over z+i}-{i\zeta+1\over \zeta+i}
         $$
 maps upper half plane $H$ on the disc $x^2+y^2<1$
 and a point $\zeta$ on the centre.
-
+<br>
 Hence Green function for half-plane is
         $$
   G(z_0,z)=\log|w(z_0,z)|
@@ -355,14 +347,14 @@ Hence Green function for half-plane is
         $$
 {\bf Remark} {this is very stupid way to calculate
 Green function. Much easier another way: see the blog on 10 August!}
-
+<br>
  It seems that here it is much easier way to 
 calculate Dirichle problem solution
 straightforwardly, using angle function.
 We will do it, but in tomorrow file you will see that
 it is much easier to calculate straightforwardly Green function
 using reciprocity method.
-   
+<br>
 Indeed due to
        $$
    A_C(\R)=\int_C {(x-X)dy-(y-Y)dx\over (x-X)^2+(y-Y)^2}
@@ -397,18 +389,18 @@ to solve the integral equation. The function
    {Ydt\over (t-X)^2+Y^2}
 \eqno (2.2) 
           $$  
-
+<br>
 {\bf Remark} {\it One can see straightforwardly that
 the function
            $$
  F(X)=\lim_{Y\to 0}{Ydt\over (t-X)^2+Y^2}=\pi\delta(t-x)\,.
            $$
 Indeed   $F(X)=0$ for all  $X\not=t$ and $\int F(X)dX=\pi$
-
+<br>
   This implies the boundary condition
-
+<br>
 }
-
+<br>
 Calculate Green function using solution of Dirichle problem:
   Let
              $$
@@ -439,7 +431,7 @@ G_\H(z_0,z)=
    \int_{-\infty}^{\infty}\log\sqrt {(t-X)^2+Y^2}
    {ydt\over (t-x)^2+y^2}\,.
       $$
-
+<br>
 It seems that calculation of the integral here are not  an easy task.
 But instead,  note that the Green function can be immediately
     obtained using symmetry arguments:
@@ -457,3 +449,4 @@ Thus:
                      $$
 Beautiful, is not it???
 \bye
+<br>

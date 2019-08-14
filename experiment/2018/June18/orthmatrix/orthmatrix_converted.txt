@@ -1,9 +1,6 @@
-
-
-
+<br>
 \magnification=1200 
-
-
+<br>
 \baselineskip=14pt
 \def\vare {\varepsilon}
 \def\A {{\bf A}}
@@ -55,12 +52,12 @@
 \def\ss  {\sigma_{\rm sph}}
 \def\grad {{\rm grad\,}}
 \def \k {{\hat k}}
-
+<br>
 8 June
-
-
+<br>
 Let $A$ be $b\times n$ orthogonal matrix, such that all its columns
 have unit length. Then determinant of this matrix ----volume of parallelepiped--- is less than equal to $1$ and it is equal to $1$
 inf and only if matrix $P$ is orthogonal.
-
+<br>
 \bye
+<br>

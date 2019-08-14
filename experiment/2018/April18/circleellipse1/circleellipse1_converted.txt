@@ -1,7 +1,6 @@
-
+<br>
 \magnification=1200 
-
-
+<br>
 \baselineskip=14pt
 \def\vare {\varepsilon}
 \def\A {{\bf A}}
@@ -53,11 +52,11 @@
 \def\ss  {\sigma_{\rm sph}}
 \def\grad {{\rm grad\,}}
 \def \k {{\hat k}}
-
+<br>
 Let $\ac,\b$ be two arbitrary non-proportional 
 unit vectors in $\E^2$,
 and let $\{\e,\f\}$ be an arbitrary orthonormal basis in $\E^2$.
-
+<br>
   Consider bilinear form:
            $$
 B_P(\x,\y)=\langle P^{-1}\x, P^{-1}\y\rangle_{\E^2}
@@ -68,8 +67,9 @@ and consider an ellipse
          $$
 This is the image of circle under  affine transformation.
   Its main directions will be eigenvectors of $P$.
-
+<br>
 Under rotation and affine transformation 
 $x\mapsto ax, y\mapsto by$
 it becomes the circle.
 \bye
+<br>

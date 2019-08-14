@@ -1,7 +1,4 @@
-
-
- 
-
+<br>
 \magnification=1200
 \baselineskip=14pt
 \def\vare {\varepsilon}
@@ -47,29 +44,27 @@
 % I wrote this file on 16 January
 \def\t {{\tilde}} 
 \def\dist {{\hbox{\tt "distance"}}}
-
-
+<br>
 \centerline{\bf From bad: non-local degenerate,...... to
 good: local invrtible, good}
-
-
+<br>
     Last days I, Sasha and Ted we disussion a question:
 If the structre is `bad' (non-degenerate), we add ghosts, and in
 elarged space it becomes good
   Examples:
-
+<br>
     Lagrangian surface in $T^*M$ is graph of function
 in  $T^*\left( M\times\R^d \right)$ plus the condition 
   $\zeta_a=0$ ($\eta$ are momenta of additional
 variables)
-
-
+<br>
 Yesterday with Sasha we came to the example:
-
+<br>
 Let $A$  be an arbitrary matrix, then the matrix
       $$
 \pmatrix {A & 1\cr 1 & 0\cr}
       $$
 in extended space is non-degenerate!
-
+<br>
 \bye
+<br>

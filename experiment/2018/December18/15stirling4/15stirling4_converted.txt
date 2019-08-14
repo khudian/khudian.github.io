@@ -1,5 +1,4 @@
-
-
+<br>
 \magnification=1200
 \baselineskip=14pt
 \def\vare {\varepsilon}
@@ -49,19 +48,17 @@
 \def \Tr  {{\rm Tr\,}}
 \def\V {{\cal V}}
 % I began this file in 15 December  2018
-
+<br>
     \centerline {Stirling formula}
-
-
+<br>
 {\tt 15 December 2018}
-
- 
+<br>
 {\it it is more than 40 years ago that I learned the Stirling formula
 using the stationary phase method. It is today that I realised,
 that I did a mistake in calculations.}
-
+<br>
 \m
-
+<br>
 Stirling formula is an excellent example of applying stationary phase 
 method:
      Consider
@@ -176,7 +173,7 @@ N\left(N\over e\right)^N
 \sqrt {2\pi N}\left(N\over e\right)^N\,,
       $$
 since $\int_{-\infty}^\infty e^{-{u^2\over 2}}u^3du=0$.
-
+<br>
  {\tt Third apprximation}
         $$
  N!=
@@ -253,3 +250,4 @@ N\left(N\over e\right)^N
       \right]=
          $$
 \bye
+<br>

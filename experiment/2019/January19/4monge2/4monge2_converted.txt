@@ -1,5 +1,4 @@
-
-
+<br>
 \magnification=1200
 \baselineskip=14pt
 \def\vare {\varepsilon}
@@ -43,10 +42,10 @@
 \def\dim {{\rm dim\,\,}}
 % I wrote this file on 1-st January  2019
 \def\t {{\tilde}} 
-
+<br>
    \centerline{\bf Geometry of diff.equations and Monge cone}
 \m
-
+<br>
 Consider $2n+1$-dimension space $J^1(M)$  of first jets of
 $n$-dimensional manifold $M$.
 Let  
@@ -54,11 +53,11 @@ Let
 \E\colon\quad F(u,p_i,q^j)=0
     $$
 be hypersurface in $J^1(M)$, the differential equation.
-
+<br>
 Suppose that points of $\E$ are regular.
-
+<br>
 \m
-
+<br>
 {\bf DEFINITION}
    A point $\pt\in\E$ is called {\it non- characteristic}
 if tangent hyperplane $T_\pt M$ and
@@ -78,27 +77,23 @@ and  this is  is equivalent to the condition
 that contact form $\w$ and the form $dF$ are not collinear
 at the point $\pt$ \footnote{$^*$}{One can easy to check this choosing
 covectors $\w$ and $dF$ as elemnets of basis.}.
-
-
+<br>
 \m
-
+<br>
 {\bf DEFINITION}
 The intersection of contact and  tangent planes is
 called {\it characteristic plane.} 
-
+<br>
 \m
-
-
-
+<br>
 We denote  characteristic plane by $\C(\E)_\pt$
-
-     
+<br>
 The form $dp_1\wedge dq^1+\dots+dp_n\wedge dq^n$  
 is non-degenerate on contact hyperplane $\C_\pt$, and
 on $2n-1$-dimensional plane $\Pi_\pt\subset \C_\pt$.
 It  defines the  characteristic direction, the direction that
 is symplectoorthogonal  to all the vectors of the plane $\Pi_\pt$.
-
+<br>
      One can see that this direction can be defined by the
 infinitesimal contact symmetry:
      $$
@@ -113,16 +108,16 @@ p_i{\p F\over \p p_i}{\p\over \p u}
               -
 F{\p\over \p u}
       $$
-  
+<br>
 The contact distribution $\C$,  (the distribution of contact planes)
 defines 
-
+<br>
 Now return to differential equation defined
 by non-charateristic hypersurface $\E$.
-
+<br>
 Solution of this equation is maximal integral manifold
 of distribution $\C(\E)$
-
+<br>
 Let $N$ be $n$-dimensional manifold s graph of function
    $u=\varphi(x)$ such that it is  
 the solution of differential equation defined by the surface $\E$,
@@ -135,16 +130,16 @@ of  $N$  belong to the $T\E$ and to contact plane\footnote
 matical since every vector tangent to {\tt manifold}
 belongs to contact plane}.
 Of course one may consider also generalised solutions......
-
+<br>
 {\tt Boundary condition}: Take the $n-1$-dimensional surface,and
 $\G$ on $\E$.  Emit from the points of this surface the 
 $n-1$-parametric family of curves which go in characteristic direction. 
 We come locally in the vicinity of the surface $\G$ to $n$-dimensional
 surface, it will be solution.
-
+<br>
 See the example in the file 5examples.tex
-
+<br>
 \m
-
-
+<br>
 \bye
+<br>

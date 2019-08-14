@@ -1,9 +1,6 @@
-
-
-
+<br>
 \magnification=1200 
-
-
+<br>
 \baselineskip=14pt
 \def\vare {\varepsilon}
 \def\A {{\bf A}}
@@ -53,8 +50,7 @@
 \def\ss  {\sigma_{\rm sph}}
 \def\grad {{\rm grad\,}}
 % I began this file on 24 August 2017
-
-
+<br>
 I began to reread Sfarevitch-Nikilin
  about set of locally euclidean geometries.
 The following lemma: let $AB, A'B'$ are two segments of
@@ -63,7 +59,7 @@ $F$ such that
 $A'=F(A),B'=F(B)$. 
 In the special cases the solution is obvious.  
 (E.g. if $A=A'$ then this is just rotation of the segment)
-
+<br>
 This is why
 it is interesting to see 
 how solution changes under the transformation
@@ -71,57 +67,50 @@ how solution changes under the transformation
  A\mapsto A+\x, \qquad B\mapsto B+\x
     \eqno (1)
        $$
-
+<br>
 and less obvious under the transformation
       $$
 A\mapsto B,  B\mapsto A
               \eqno (2) 
       $$
- 
+<br>
 The second is not trivial, e.g. if $AB$, $A'B'$ are paralell,
 then the parallel transport   $F$ transforms $AB$ into $A'B'$,
 however if we replace $A'\leftrightarrow B'$ then we have
 to do the rotation on the angle $\pi$ around the 
 vertex  $D$ , where $D$ is the centre of the parallelogram
   $ABA'B'$
- 
-
+<br>
 Choose an arbitrary linear structure in the plane.
-
+<br>
   Let $L$ be a point where segments $AB$ and $A'B'$ intersect.
-
-
+<br>
 **************************************
   This is childish exercise, but......
-
-  
+<br>
 Let  $A,B$ be two points, 
 and  $A',B'$ be another two points. Does there exist
 a rotation $F$ such that $F\colon F(A)=A',  F(B)=B'$?
-
+<br>
 This is evident that 
      $$
    |AB|=|A'B'|\,.
      $$
 is necessary condition. Is it sufficient. Yes, it is.
-
-
+<br>
 This is not absolutely obvious in the case if 
  directions $AB, A'B'$ are not the
 'same', e.g. if  $A=(1,0), B=(2,0), A'=(0,2), B'=(0,1)$.
-
-
+<br>
 One can clear the question
  geometrically, but let us try to do it using 
 {\it brute force.}
-
-
-
+<br>
 WLOG suppose that $A=(0,0), B=(1,0)$, and
   let  $A',B'$ be two points, $A'=(a_1,a_2), B'=(b_1,b_2)$.
     Let  $O=(x,y)$ is the centre of rotation $F$ on the angle
   $\varphi$.
-
+<br>
 Then
            $$
         \cases
@@ -167,8 +156,7 @@ i.e. if $\varphi\not =0,\pi$ then
 b_1=a_1+\cos\varphi, b_2=a_2+\sin\varphi
       $$                
 THus we define the angle.
-
-
+<br>
 $$
    \pmatrix{x\cr y\cr}=
       {1\over 2}
@@ -180,6 +168,6 @@ $$
         {\rm cotan\,}{\varphi\over 2} & 1\cr}
 \pmatrix{b_1-\cos\varphi\cr b_2\cr}
                 $$
-
-
+<br>
 \bye
+<br>

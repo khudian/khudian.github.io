@@ -1,11 +1,6 @@
-
-
-
-
-
+<br>
 \magnification=1200 
-
-
+<br>
 \baselineskip=14pt
 \def\vare {\varepsilon}
 \def\A {{\bf A}}
@@ -57,30 +52,26 @@
 \def\e {{\bf e}}
 \def\f {{\bf f}}
 % I began this file on  11 September  2017
-
+<br>
   \centerline  {\bf Basis of AKSZ construction}
-
-
+<br>
  Лучше позже, чем никогда.
-
+<br>
   I had to learn it many many years ago, at least 20 years ago!, but
-
-
-
+<br>
    Let $M,N$ be to (super)manifold)
 such that $M$ is equipped with measure $d\mu$ and $N$ is equipped 
 with symplectic
 structure.   Let  $Q_M$ and $Q_N$ be homological vector fields on $M$
 and $N$ respectively such that
-  
+<br>
   1) measure $d\mu$ on $M$ is invariant with respect to $Q_M$
-  
+<br>
  2) symplectic structure  on $N$ is invariant with respect to $Q_N$
-     
-
+<br>
   Then on the space  $N^M$ of mapls from $M$ to $N$ 
    one can define:
-
+<br>
   symplectic structure $\Omega$ THis sympelctic structyure may  have opposite
 parity to sumplectic structure of $N$  and homological vector
 $\tilde Q_N-\tilde Q_M$, and the Hamiltonian $\cal S$ of this 
@@ -94,5 +85,6 @@ where
  \X_{\cal S}\colon \quad       
 \Omega \left(\X_{\cal S}\,,\_\right)=d\S\left(\_\right)\,.
                 $$
-
+<br>
 \bye
+<br>

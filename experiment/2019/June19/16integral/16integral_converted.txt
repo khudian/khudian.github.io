@@ -1,5 +1,4 @@
- 
-
+<br>
 \magnification=1200
 \baselineskip=14pt
 \def\vare {\varepsilon}
@@ -45,10 +44,9 @@
 % I wrote this file on 16 January
 \def\t {{\tilde}} 
 \def\dist {{\hbox{\tt "distance"}}}
-
-
+<br>
 {\bf  One identity}
-
+<br>
    Sasha says that 
           $$
  e^{{i\over \hbar}g^{ij}\p_i\p_j}P(x)\big\vert_{x=0}\sim
@@ -60,3 +58,4 @@ this
 \int e^{-{N\over 2}x^2}x^{2k}dx
       $$
 \bye
+<br>

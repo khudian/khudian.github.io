@@ -1,5 +1,4 @@
-
-
+<br>
 \magnification=1200
 \baselineskip=14pt
 \def\vare {\varepsilon}
@@ -45,9 +44,9 @@
 % I wrote this file on 16 January
 \def\t {{\tilde}} 
 \def\dist {{\hbox{\tt "distance"}}}
-
+<br>
 \centerline {Again about strings on the circle}
-
+<br>
 This is third attempt.
     We have to calculate eigenvalues of the potential energy,
 which is described by the  circulant
@@ -70,8 +69,7 @@ U=M_{ik}x^ix^k,  M=\pmatrix
 $$
 This matrix is symmetric, however caclualte
 its complex eigenvalues:
- 
-
+<br>
 There are $N+1$ eigenvectors  over $\bf C$.
 They are:
     $$
@@ -83,10 +81,11 @@ where $\vare_i$ is a root of unity:
      \vare_k= \exp \left(2\pi k i\over N+1\right)\,,
 \quad (i=\sqrt {-1})\,.
         $$
-
+<br>
 We see that
      $$
 M\f_i=(2-\vare_i-\vare_i^{N})\f_i
      $$
 Notice that eigenvalues are conjugate to each other.
 \bye
+<br>

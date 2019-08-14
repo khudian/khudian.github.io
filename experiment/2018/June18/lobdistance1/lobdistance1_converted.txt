@@ -1,9 +1,6 @@
-
-
-
+<br>
 \magnification=1200 
-
-
+<br>
 \baselineskip=14pt
 \def\vare {\varepsilon}
 \def\A {{\bf A}}
@@ -55,17 +52,16 @@
 \def\ss  {\sigma_{\rm sph}}
 \def\grad {{\rm grad\,}}
 \def \k {{\hat k}}
-
+<br>
   22 June 2018
-
-
+<br>
 \centerline  {Disntance in Lobachevsky geometry}
-
+<br>
 Let  $z_1=x_1+iy_1$,  $z_2x_2+iy_2$  be two points in
 Lobachevsky plane (we consider upper-half plane model).
-
+<br>
 \m
-
+<br>
 First consider the case if $z=x+iy$, $w=i$.
   Transformation
       $$
@@ -119,7 +115,7 @@ transforms an arbitrary point $z=x+iy$  with $y\not =0$
 to the point on the axis $OY$.
 (we choose the root with $'+'$, the second root is for the points
 on $OX$ but we are not interested in these points.)
-
+<br>
 In other words numerator of the fraction is
 proportional to denominator multiplied on imaginary 
   number:
@@ -139,7 +135,7 @@ i.e.
    \over
  x\left(1-\sqrt{1+|z|^4+z^2+\bar z^2}+|z|^2\right)}
           $$
-
+<br>
 Proverka: $z=1+i$, i.e. $x=y=1$, then
  $$
 {1+x^2-y^2+\sqrt{1+|z|^4+z^2+\bar z^2}\over 2xy}=
@@ -149,7 +145,7 @@ Proverka: $z=1+i$, i.e. $x=y=1$, then
  x\left(1-\sqrt{1+|z|^4+z^2+\bar z^2}+|z|^2\right)}=
   {\sqrt 5-1\over 3-\sqrt 5}\,.
           $$
-
+<br>
 Proverka v obshem sluchae:
 We have to check that
      $$
@@ -195,15 +191,13 @@ $$
 \left( y\left(1+\sqrt{1+|z|^4+z^2+\bar z^2}-|z|^2\right)\right)
  =B
      $$
-
+<br>
 Thus we checked that the expression is right.
-
-
+<br>
 \bigskip
-
-
+<br>
 {\it Resum\'e}  
-
+<br>
 Let $ac=bd$, then
        $$
 z'=iy'={a+bi\over c-di}={i(b-ia)\over c-di}=i{b\over c}=i{a\over d}
@@ -230,7 +224,7 @@ where
       $$
 S=\sqrt {1+x^4+2x^2y^2+y^4+2x^2-2y^2}\,.
      $$
-
+<br>
 Now play with the last formula:
             $$
 y'=
@@ -269,7 +263,7 @@ Quickly:
     {\rm arcsh\,}{1-x^2-y^2\over 2x}
 \right)={x^2+y^2+1\over 2y}\,.
          $$
-
+<br>
 Hence  we come to
         $$
    d(z,w)=d(x_1+iy_1,x_2+iy_2)=
@@ -292,10 +286,8 @@ Hence  we come to
 2y_1y_2}\right)\,.
        $$
 This is what we wnated.
-
-
+<br>
     Here we stop brute force calculations.
-
-
-
+<br>
 \bye
+<br>

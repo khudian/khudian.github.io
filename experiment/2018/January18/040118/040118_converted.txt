@@ -1,17 +1,6 @@
-
-
-
-
-
-
-
-
-
-
-
+<br>
 \magnification=1200 
-
-
+<br>
 \baselineskip=14pt
 \def\vare {\varepsilon}
 \def\A {{\bf A}}
@@ -61,17 +50,16 @@
 \def\ss  {\sigma_{\rm sph}}
 \def\grad {{\rm grad\,}}
 % I began this file on 31 July 2017
-
+<br>
 \centerline {\bf Statement}
-
+<br>
  Let $L$ be functional from the space of fuctions on linear space $V$
 to the space of functions on the linear space  $U$:
                    $$
    L\colon \quad C(V)\ni g(\y)\mapsto L(g)(x)\in C(U)
                     $$
 ($y^a$ are coordinates on $V$ and $x^\mu$ coordinates on U)
-
-
+<br>
 Suppose  that for every function $g\in C(V)$,
 there exist functions `coordinates'  $y^a_g(x)$ on $U$ such that
        $$
@@ -79,11 +67,11 @@ there exist functions `coordinates'  $y^a_g(x)$ on $U$ such that
 nilpotent such that $t^2=0$}
          \eqno (1)
        $$
-
+<br>
 Consdider functions $g_\k=\k\y=k_ay^a$, and
 coordinate functions  $y^a_\k(x)=y^a_{\k \y}(x)$ 
 (see the previous blog 030118.tex)
-
+<br>
 {\bf Lemma}
          $$
 {\p y^a_\k\over \p k_b}-
@@ -119,7 +107,7 @@ Then
  t_2k_{2_{a}}y^a_\k+
  t_2t_1k_{2_{a}}{\p y^a_\k\over \p k_{1_{b}}}k_{1_{b}}
               $$
-
+<br>
 The second variaton of functional is symmetric: in temrs of these nilpotents
 it means that 
     $$
@@ -131,16 +119,17 @@ Hence
  t_2t_1k_{2_{a}}{\p y^a_\k\over \p k_{_{b}}}k_{1_{b}}=
  t_2t_1k_{1_{a}}{\p y^a_\k\over \p k_{_{b}}}k_{2_{b}}
           $$      
-
+<br>
 THus we come to the satement of lemma.
-
+<br>
 Now based on the lemma consider the function  $S(\x,\k)$ such that
               $$
 {\p S\over \p k_a}=y^a_\k
               $$
 and consider the thick morphism $\Phi_S^*$
-
+<br>
 This thick morphism coincides with functional $L$
 on linear functions.
-
+<br>
 \bye
+<br>

@@ -1,5 +1,4 @@
- 
-
+<br>
 \magnification=1200
 \baselineskip=14pt
 \def\vare {\varepsilon}
@@ -48,15 +47,14 @@
 \def\dist {{\hbox{\tt "distance"}}}
 \def \div {{\rm div}}
 \def \formal {{\tt formal $\,$}}
-
-
+<br>
 \centerline{\bf  Konspekt pervoj chasti doklada
  Karabegova} 
-
+<br>
 \centerline {\bf po ego lekcijam po Skaipu (kak ja ikh pnimaju)}
-
+<br>
   Let $M$ be a  manifold with a point $\pt$ on it.
-
+<br>
   Let $\rho=\rho(\nu)$ be a \formal density on manifold $M$
 \footnote{$^{1)}$}
 {
@@ -81,9 +79,9 @@ We consider \formal generalised functions
   \L(\nu)=\L_0+\nu \L_1+\dots\,,\quad \hbox {and $\L_0(1)\not =0$}\,.
                        \eqno (2)
                  $$
-
+<br>
 \medskip
-
+<br>
 We say that the generalised \formal function $\L$  is associated
 with the density $\rho$ if 
                  $$
@@ -92,9 +90,9 @@ with the density $\rho$ if
                  $$
 where $\v$ is an arbitrary vector field on $M$ (not \formal)
 and $f$ is an arbitrary \formal function on $M$.
-
+<br>
 \smallskip
-
+<br>
 We say that the generalised \formal function $\L$  is {\it strongly 
 associated} with the density $\rho$ if
 this function is associanted with the density $\rho$
@@ -123,22 +121,19 @@ is  a \formal function such that
 and a function $\varphi_1$ has non-degenerate hessian at the point
    $\pt$.
 }.
-
+<br>
 Notice that 
-
-
+<br>
 a) generalised function  associated with a \formal density
 is defined up to a \formal constant, and
-
-
+<br>
 b)  generalised function  stronlgly associated with a \formal density
 is defined up to a  constant (not \formal just a complex number).
-
-
+<br>
 {\bf Theorem} (\tt Karabegov)
  If a density is 
 an oscillatory density (see the footnote at the first page)
 then the inverse is also true.
-
-
+<br>
 \bye
+<br>

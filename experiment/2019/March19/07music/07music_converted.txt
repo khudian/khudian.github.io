@@ -1,6 +1,4 @@
-
- 
-
+<br>
 \magnification=1200
 \baselineskip=14pt
 \def\vare {\varepsilon}
@@ -46,7 +44,7 @@
 % I wrote this file on 16 January
 \def\t {{\tilde}} 
 \def\dist {{\hbox{\tt "distance"}}}
-
+<br>
 We have :
     $$
 {3\over 2}=2^x=2^{1\over a_0+{1\over a_1+\dots}}
@@ -54,7 +52,7 @@ We have :
 \left({3\over 2}\right)^{a_0+{1\over a_1+{1\over a_2+\dots}}}=2\,.
     $$
 We have that ${3\over 2}<2<{9\over 4}$, hence $a_0=1$.
-
+<br>
 Thus we have that
      $$
 {3\over 2}=  2^{1\over 1+{1\over a_1+\dots}}\Rightarrow
@@ -65,5 +63,6 @@ Thus we have that
 $$
 We have that ${4\over 3}<{3\over 2}<\left({4\over 3}\right)^2$, 
 hence $a_1=1$.
-
+<br>
 \bye
+<br>

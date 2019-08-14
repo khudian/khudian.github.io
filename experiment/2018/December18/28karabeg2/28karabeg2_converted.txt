@@ -1,5 +1,4 @@
-
-
+<br>
 \magnification=1200
 \baselineskip=14pt
 \def\vare {\varepsilon}
@@ -49,7 +48,7 @@
 \def \Tr  {{\rm Tr\,}}
 \def\V {{\cal V}}
 % I began this file in 28 December  2018
-
+<br>
     \centerline {Weyl-Moyal multiplication formula}
 Let  $V$  be $2n$-dimensional symplectic vector space.
 Then for arbitrary two (smooth) functions on $V$
@@ -65,3 +64,4 @@ This is famous Weyl formula for multiplication of Weyl symbols.
 This was the first formula that Sasha explained me yesterday
 when he began to give me the course on Fedosov quantisation
            \bye
+<br>

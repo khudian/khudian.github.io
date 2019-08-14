@@ -1,5 +1,4 @@
-
-
+<br>
 \magnification=1200
 \baselineskip=14pt
 \def\vare {\varepsilon}
@@ -43,53 +42,46 @@
 \def\dim {{\rm dim\,\,}}
 % I wrote this file on 1-st January  2019
 \def\t {{\tilde}} 
-
+<br>
    \centerline{\bf Geometry of diff.equations}
-
-
+<br>
   \centerline 
 {\bf ${\cal x} 1$ Necessary mathematics from Arnold's book}
-
-
-
+<br>
 {\tt I began to understand the pages in Arnold on diff. equations.....}
-
-
+<br>
 Here it is:
-
+<br>
 {\bf Definition}   Let $\w$ be $1$-form on $M$ which does not vanish.
 . We say that it is
 {\it contact} form if 
        $$
 \hbox{$2$-form $d\w$ is non-degenerate on the plane $\w=0$ in $TM$}
        $$
-
+<br>
 Since $d\w$ is not degenerate on $\w=0$ and $\w\not\equiv 0$
 them ${\rm dim}\, M=2k+1$.
-
+<br>
 {\bf Theorem}  Contact form is defined up to a function
 (Valya had a talk on it!)  If $\w$ is contact form and
   $f\not=0$ then $f\a$ is contact also.
-
+<br>
 \m
-
+<br>
    Let $\cal K$ be a distributions of $2n$-dimensional planes in $TM$
 such that $\w$ vanishes on these planes.
-
-
+<br>
 We say that this distribution is a contct structure
 \footnote{$^*$}{One can say  that distribution of hyperplanes
  defines constant structure if an $1$-form which vanishes this dstribution is non-degenerated on it}
-
-
-
+<br>
 {\bf Theorem}  Let $N$ be a submanifold of $M$
 which is an integral submanifold 
 (not necessarily maximal)  of contact distribution $\cal K$,
 i.e. for every point on $N$ the tangent  vectors belong to
 this distribution.   Then ${\rm dim}\, N\leq n$,
 where ${\rm dim}\,M \leq 2n+1$ 
-
+<br>
 {\tt Proof}  Let $\w$ be an arbitrary non-zero 
 form which vanishes at $\cal K$.   
 Since a form $\w$ vanishes on vectors tangent to the manifold
@@ -104,17 +96,17 @@ respect to this form.  If dimension of tangent plane is bigger
 than $n$ then there exist at least two vectors which are not orthogonal,
 since $d\w$ is not degenerate.
 Now we apply this mathematics to the differential equations.
-
+<br>
 \m
-
+<br>
     \centerline {${\cal x}2\,\,$  
 \bf Geometry of first order equation}
-
+<br>
   Let  $J^1M$  be a space of first jets of functions on 
 manifold $M$. Cooridnates on $J^1M$ are $(p_i,q^j,u)$,
 where $q^j$ are coordinates on $M$.  Jet of every function  $u=u(x)$
 has coordinates $\left(p_i={\p u\over \p x q^i},q^i,u\right)$.
-
+<br>
 Consider  $\C$ , the Cartan 
  distribution of $2n$-dimensional planes in $J^1M$
 defined by the form $\w=p_idq^i-du$
@@ -142,7 +134,7 @@ Consider differential equation,
       $$
 Differential equation is sumbmanifold of codimension $1$
 in the space $J^1(M)$.
-
+<br>
 The Cartan distribution  $\C$ of hyperplanes on $J^1M$ 
 defines distribution  $\C(\E)$ in $T\E$:
                   $$
@@ -156,21 +148,20 @@ N_i{\p\over \p p_i}+A{\p\over \p u}\in \C(\E)\,\, {\rm if}\,\,
 \left(M^i{\p\over \p q^i}+
 N_i{\p\over \p p_i}+A{\p\over \p u}\right)F(p,q,u)\big\vert_{F=0}=0\,.
           $$
-
+<br>
 This distribution is not integrable.
-
-
+<br>
 The solution of differential equation (1) is the maximal integral
   of the distribution.
-
+<br>
 What is the dimension of $N$?
-
+<br>
 Let  $N$ be an arbitrary solution.   Calculate its dimension.
 Any tangent plane to $N$  belongs to Cartan distribution
 and is tangent to $\E$.   Consider an arbitrary
 point $\pt \in N$, and consider the plane
 $\a=\a_P= T_\pt N$. Calculate $\dim T_\pt N$.
-
+<br>
 {\bf Fact}   $\dim T_\pt N\leq n$.  We proved it above, but
 we repeat the considerations again.   Consider the form $\w_C$
 on and its differential the form $d\w_C$ on $TN$.
@@ -190,10 +181,10 @@ This contradicts to the condition $d\w_C\big\vert_N\equiv 0$
 on $N$.
 (In the case if dimension $N$  is maximal possible 
 it is Lagrangian)           
-
+<br>
 Now we consider some properties of hypersurfces,
 (recall that  hypersurface is differential equation)
-
+<br>
 {\bf DEFINITION}   Let $\E$  be an arbitrary hypersurface
   in $M$: $\dim \E=2n$). (Hypersurface  $\E$
 may define  differential equation $F(q,u,p)=0$ ($\E\colon F=0$))  
@@ -206,25 +197,25 @@ are transversal:
 \C_\pt\oplus T_pt M'=T_\pt M\Leftrightarrow
     \dim (\C_\pt\cap M'\pt)=2n-1\,.
         $$
-
+<br>
 \medskip
-
+<br>
 {\bf DEFINITION}   Let   $\E$ be an 
 arbitrary non-characteristic hypersurface in $J^1(M)$.
-
+<br>
  For an arbitrary point $\pt\in E$ consider the
 $2n-1$ dimensional subspace $\Pi_\pt$ of 
 tangent vectors which belong to contact space:
             $$
 \Pi_\pt=\C_\pt\cap T_\pt E\,,\qquad \,,\dim \Pi_\pt=2n-1
             $$
- 
+<br>
 \medskip
-
+<br>
   Thus we define the distribution of $2n-1$-dimensional planes
 on non-characteristic differential  equation $F=0$ (this equation
 defines the surface $\E$: $\E\colon\,\, F=0$).
-
+<br>
 Now: {\tt VERY IMPORTANT STEP:} 
 On every characteristic plane
 $\Pi_\pt=\C_\pt\cap T_\pt E$, $d\w_C=
@@ -232,8 +223,7 @@ $\Pi_\pt=\C_\pt\cap T_\pt E$, $d\w_C=
 and since the dimension of $\Pi_\pt$ is equal to $2n-1$
 then one can define the direction, such that $dw$ vanishes
 along this direction, and it is unique!
-
-
+<br>
 {\sl Problem}  Let  $\s in V^*$ 
 be  covector in $V^*$ and let
 $M_\s$, me hyperplane in $V$ which is
@@ -241,16 +231,12 @@ orthogonal to the covector $\ac$:
    $$
 M_\ac=\{\x\in V\colon\quad \s(\x)=0\}
    $$
-
+<br>
 {\bf Proposition} {\it  Subspaces $M_{\s_1}$
 and  $M_{s_2}$ are transversal if and only if vectors
 $\s_1,\s_2$  qre linearly independent, (not proportional
 to each other)
-
-
-
-
-
+<br>
 {\bf Theorem} Let $F=F(u,p_i,q^i)=0$ defines
 hypersurface $\E=\E_F$, differential equation.
 Let  covector $dF$ defined by equation, and
@@ -258,27 +244,20 @@ covector  $\w_C$ of contact distribution,
 are not proportional\footnote{$^*$}{
 this condition does not depend on choice of function $F$
 defining the surface $\E$}  Then 
-
+<br>
 a) hypersurface $F=0$  is non-charcteristical
-
+<br>
 b) the charcteristic direction $l$  is defined by the vector
    $\X_F$
-
-
-
-
+<br>
 {\bf Remark} If we change $F\to \lambda F$ where 
 a function $\l$ is not-degenerate on the surface $F=0$,
 then the condition of linear (in)dependence of covectors
    $dF$ and $\w_C$, and the characteristic 
 direction $\X_F$  will not change.
-
-
-
-
+<br>
 \bye
-
-
+<br>
 The vectors
 in tangent plane belong to distribution $\C_\E=\C\cap\E$,
 i.e. they are orthogonal to the covector ($1$-form) 
@@ -302,10 +281,8 @@ dF=
     $$
 \a_\pt\ni\X\Leftrightarrow  \w_C(\X)=dF(\X)=0\,. 
     $$
-
+<br>
 {\bf Definition}  The point $\pt$ is not singular point if
 tnhe rank of the matrix $\pmatrix {\w_C\cr  dF\cr}$  is equal to $2$.
 IN this case the dimension of 
-
-
-
+<br><br>

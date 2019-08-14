@@ -1,5 +1,4 @@
- 
-
+<br>
 \magnification=1200
 \baselineskip=14pt
 \def\vare {\varepsilon}
@@ -48,9 +47,9 @@
 \def  \dim {{\rm dim\,}}
 \def  \Im  {{\rm Im\,}}
 \def  \ker {{\rm ker\,}}
-
+<br>
 \centerline {\tt Area of sphere (delicate calculations)}
-
+<br>
   Denote by $\sigma_n$ the rea of unit sphere
   $x_1^2+x^2_2+\dots+x_{n+1}^2=1$ in $\E^{n+1}$.
 The standard way to calculate $\sigma_n$ is the
@@ -79,7 +78,7 @@ I_n=\int_0^\infty
 since the area of the sphere $S^n$ of 
 radius $r$ is equal to
 $r^n\sigma_n$.
-
+<br>
 Comparing these integrals we come to
          $$
 I_n=\int_0^\infty 
@@ -103,17 +102,14 @@ thus:
     $$
 Present now more 'delicate considerations'
 to calculate  the area
-
-
-
-
+<br>
 Let $\omega$ be $n$-form in $\E^{n+1}$ and let $C$
 be an $n$-dimensional  hypersurface  $C=C_F$
 defined by equation $F=0$:
         $$
 C\colon \,\, \{\x,  F(\x)=0\}\,.
         $$
-
+<br>
 \def \w {{\omega}}
 Then
      $$
@@ -121,16 +117,13 @@ Then
    \eqno (1.1) 
      $$
 THe right hand side is the $n+1$-form  $dF\wedge \w$ 
-
-
+<br>
 {\bf Exercise}: Prove this formula
-
+<br>
 {it Note what happens if you change $F\to gF$???}
-
-
+<br>
 \bigskip
-
-
+<br>
 Now consider the following $n$-form in $\E^{n+1}$
      $$
 \sigma={1\over r}
@@ -154,7 +147,7 @@ E.g. for  $n=2$
      zdx\wedge dy+
          \right)
             $$
-
+<br>
 Exercise: Show that for every domain $D$ in sphere
               $$
 \int_D\sigma=\hbox {Area of this domain}
@@ -163,17 +156,14 @@ Idea of solution: first note that the form $\sigma$
 is invariant with respect to group $SO(n+1)$
 and to calculate the coefficient check its value on
 the ``vertical'' tangent plane.
-
-
+<br>
 {\bf Remark}  Please do not think that there exist
 s a form which gives area of an arbitrary hypersurface.
-
+<br>
   Why?
-
-
+<br>
 Now continue calculations
-
-
+<br>
   Consider the sphere of radius $a$:
                $$
 F(x,y,z)=x_1^2+x_2^2+\dots+x_{n+1}^2=a^2\,.
@@ -194,7 +184,7 @@ Hence  we come to
 \sigma_n=2\int\delta (F-1)dv\,.
      $$
    where $dv=dx_1\wedge dx_2\dots dx_n\wedge dx_{n+1}$ 
-
+<br>
 To calculate the last integral, we shake it:
   Consider
    $$
@@ -202,8 +192,6 @@ L(t)=
 \sigma_n=\int\delta (F-t)dv\,.
   $$
 and calculate $\int_{-\infty}^{\infty} L(t)e^{-xt}$
-
-
-
-
+<br>
 \bye 
+<br>

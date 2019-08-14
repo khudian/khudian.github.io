@@ -1,6 +1,4 @@
-
- 
-
+<br>
 \magnification=1200
 \baselineskip=14pt
 \def\vare {\varepsilon}
@@ -46,10 +44,9 @@
 % I wrote this file on 16 January
 \def\t {{\tilde}} 
 \def\dist {{\hbox{\tt "distance"}}}
-
-
+<br>
      \centerline {\bf Again about contact vector field}
-
+<br>
  Let $\X$ be a vector field which 
 preserves the contact structure:
     $$
@@ -64,7 +61,7 @@ such that
 \L_\X\a (p_mdq^m-du)=\lambda (p_m,q^m,u)(p_m dq^m-du)\,.
       \eqno (2)
  $$
-
+<br>
 Consider the `Hamiltonian`
           $$
       H_\X=\a(\X)=p_mR^m(q,p,u)-F(q,p,u)\,.
@@ -117,18 +114,16 @@ i.e.
       $$
 We see that if vector field $\X$ preserves contact structure,
 then equation (4) is obeyed.
-
+<br>
 On the base of these considerations prove the following 
 Theorem.
-
+<br>
 \def\XX {{\cal X}}
 \def\FF {{\cal F}}
 \def\SS {{\cal S}}
-
-
+<br>
   Let $\XX(M)$  be the space of all vector fields on $M$ 
-
-
+<br>
 Consider maps 
       $$
 \FF\colon\quad \XX(M)\to C(M)\,,\quad
@@ -154,8 +149,8 @@ One can see that on the subspace $\XX_{\rm contact}(M)$
         $$
 This means that there is one-one correspondence
 between contact vector fields and Hamiltonians.
-
+<br>
 Segodnia russkaja paskha, a zavtra u menia operatsija.
-
+<br>
 \bye
-
+<br><br>

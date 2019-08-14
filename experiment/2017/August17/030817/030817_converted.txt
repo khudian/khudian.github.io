@@ -1,9 +1,8 @@
-
-
+<br>
 Let $u=u(x,y)$ be harmonic function
 in the disc,
 and let $z_0$ be its singulr point.
-
+<br>
 Consider conjugaate function $v$:
        $$
 v_x=-u_y\,,v_y=-u_x
@@ -44,8 +43,7 @@ This is ONE-VALUED! holomorphic function:
    \exp{{2\pi\over \Pi}\left(F(z)+i\Pi\right)}=G(z)\,.
          $$
 (here ther are slight inconveniences.....)
-
- 
+<br>
   This is holomorphic function in the disc.
 Consider function
            $$
@@ -53,6 +51,6 @@ Consider function
            $$
    Почти элементарно, но так приятно,
 и все это есть в Лаврентьеве!
-
-
+<br>
 \bye 
+<br>

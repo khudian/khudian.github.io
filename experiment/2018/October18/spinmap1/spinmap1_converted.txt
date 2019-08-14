@@ -1,9 +1,5 @@
 i
-
-
-
-
-
+<br>
 \magnification=1200
 \baselineskip=14pt
 \def\vare {\varepsilon}
@@ -53,11 +49,11 @@ i
 \def \Tr  {{\rm Tr\,}}
 \def\V {{\cal V}}
 % I began this file in October  2018
-
+<br>
     \centerline {$[SU(2), CP]=[SO(3), E^3]$}
-
+<br>
 {\it I know this hundred year but still I enjoy this}
-
+<br>
 Let $\Psi=\pmatrix {c_+\cr c_-\cr}$ be spinor in $C^2$. 
 It defines the vector
               $$
@@ -102,7 +98,7 @@ s_y={1\over 2}\pmatrix {0 & -i\cr i & 0\cr}\,,\quad
 s_z={1\over 2}\pmatrix {1 & 0\cr 0 & -1\cr}\,,\quad
       $$
 are Pauli matrices.
-
+<br>
 This map is nothing but stereographic projection:
   If
       $$
@@ -161,8 +157,7 @@ then
                   {}\cr
               u^2+v^2-1\cr
                  }$$
-
+<br>
 This is just standard formula for stereographic projection.
 \bye
-
-
+<br><br>

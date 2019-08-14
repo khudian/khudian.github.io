@@ -1,9 +1,6 @@
-
-
-
+<br>
 \magnification=1200 
-
-
+<br>
 \baselineskip=14pt
 \def\vare {\varepsilon}
 \def\A {{\bf A}}
@@ -55,11 +52,9 @@
 \def\ss  {\sigma_{\rm sph}}
 \def\grad {{\rm grad\,}}
 \def \k {{\hat k}}
-
-
+<br>
 {\it Middle of June, 2018}
-
-
+<br>
 I just finished marking. E.Winberg has excellent
 lecture: spherical $\mapsto$ hyperbolic geometry, i.e.
 $1\mapsto i$.
@@ -73,11 +68,8 @@ rotation $P_1\circ P_2$,
 where $P_1$ is a rotation around axis $OX$ on the angle $\varphi$
 and where $P_2$ is a rotation around axis $Oy$ on the same
 ngle $\varphi$
-        
-
+<br>
 Two years ago it was coursework question: there is a bueautiful
 point related with the fact that one has to consider expansion of 
 the function  $\rm arcsin$ not $\rm arccos$.
-
-
-
+<br><br>

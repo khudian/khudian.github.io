@@ -1,8 +1,6 @@
-
-
+<br>
 \magnification=1200 
-
-
+<br>
 \baselineskip=14pt
 \def\vare {\varepsilon}
 \def\A {{\bf A}}
@@ -47,15 +45,14 @@
 \def \x   {{\bf x}}
 \def \y   {{\bf y}}
 \def \G{{\cal G}}
-
+<br>
 % I began this file on 18 August 2018
-
-
+<br>
 \centerline {On one definition of rank of matrix}
-
+<br>
 {\it Sasha Borovik told me about one extremely helpful definition of the
 rank of the matrix. Here I will reproduce it.}
-
+<br>
 Let  $M=M_{m\times n}$  be $m\times n$  matrix.
      Then
 {\it rank} of $M$ is the minimal positive number $r$ such that
@@ -67,6 +64,6 @@ and
             $$
 We suppose  that ${\rm rank\,} M=0$ if all the entries of this 
 matrix vanish.
-
-
+<br>
 \bye
+<br>

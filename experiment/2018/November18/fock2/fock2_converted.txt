@@ -1,18 +1,4 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<br>
 \magnification=1200
 \baselineskip=14pt
 \def\vare {\varepsilon}
@@ -62,8 +48,7 @@
 \def \Tr  {{\rm Tr\,}}
 \def\V {{\cal V}}
 % I began this file in 28 November  2018
-
-
+<br>
 Let $\Psi=\Psi(x,t,x_0)$  be the solution of Shrodinger equation
        $$
 i\hbar {\p \Psi\over \p t}=\hat H\Psi
@@ -76,7 +61,7 @@ In quasiclassical approximation
        $$
 \Psi(x,t;x_0)=A(x,t)e^{{i\over h}S(x,t,x_0)}
         $$
-
+<br>
 Consider the  condition that norm is 
 preserved in quasiclassical approximation  $\hbar\to 0$:
         $$
@@ -128,3 +113,4 @@ A=
 These are calculations of Fock "naoborot"!
 \bye
 rm
+<br>

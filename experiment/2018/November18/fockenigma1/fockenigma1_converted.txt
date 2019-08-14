@@ -1,4 +1,4 @@
-
+<br>
 \magnification=1200
 \baselineskip=14pt
 \def\vare {\varepsilon}
@@ -50,7 +50,7 @@
 \def\V {{\cal V}}
 \def\S {{\cal S}}
 {\tt 3 November 2018}
-
+<br>
 {\it It is long time that I know about Fock remark to Dicrak book.
 I make different attempt to understand the Fock quasiclassical
 soltion :
@@ -65,10 +65,9 @@ soltion :
        $$
 more precisely the amplitude of this solution, and cannot.
 Here I try another attempt.
-
-
+<br>
 }
-
+<br>
 We have
      $$
 i\hbar {\p \Psi(x,t)\over \p t}=\hat H\Psi\,,
@@ -85,7 +84,7 @@ H={p^2\over 2m}+U(x)\,,
    $$
 We find first quasiclassical solution in Energy coordinates,
 then do their Legendre transformation to time picture.
-
+<br>
  We consider
     $$
 \Psi (x_0,t_0;x,t)=
@@ -115,9 +114,9 @@ S(x,t)=\S(x,E)-Et\,, \quad {\rm with}\,\, E\colon t={\p \S\over \p E}\,.
 The dependence on $x_0$ is due to initial conditions;
 $H$ does not depend on time, it is why $\S$  deos not depend 
 on $E_0$.
-
+<br>
 The Shrodinger equation becomes
-     
+<br>
    $$
 i\h {\p \Psi\over \p t}=
 i\h 
@@ -219,13 +218,10 @@ this is nothing but Hamilton-Jacobi equation
 in time ($E$)-representation.
 They are related with
 Legendre transform.
-
-
-
-
+<br>
 In the first approximation $E$-representation
 is simpler than $t$-representation.
-
+<br>
 In the first approximation  in  $E$ we have
      $$
      {1\over 2}\Delta \S(x,E)+
@@ -240,15 +236,12 @@ this is the equation on the semidensity, it can be rewritten
           \sqrt {Dx}\qquad
    \hbox {for }\,\, {\bf V}={\rm grad} \S\,.
       $$
-
+<br>
 In time representation it will be
-
-
-
+<br>
 The equation for semidensity in $E$ representation is simpler
 than in time representation.
-
-
+<br>
 I can easy to solve this equation at least in one-dimensiona case:
       Then
      $$
@@ -259,17 +252,17 @@ and
  $$
 {1\over 2}\S_{xx}+s_x^2=0, i.e.  s(x)\sim {1\sqrt p(x)}
       $$
-
+<br>
 In general case it is usefule to express done the solution
 of the transport euquation, the amplitude
   $\sigma(x,t)$  in terms of the amplitude $s(x,E)$.
 Instea doing Legendre transform it is much more
 illiminating to do the quasiclassi stationary method:
-
+<br>
 W
-
+<br>
   We have in the first approximation
-
+<br>
        $$
 e^{{i\over \h}  S_\h(x,t)}=
   \int 
@@ -285,5 +278,6 @@ e^{{i\over \h}
 \right)dE=
 A_E(x,E(t)){1\over\sqrt {\det {\p E\over \p t}}}
        $$
- 
+<br>
 \bye
+<br>

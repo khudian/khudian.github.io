@@ -47,21 +47,18 @@
 \def \Tr  {{\rm Tr\,}}
 \def\V {{\cal V}}
 % I began this file in September  2018
-
-
+<br>
 \centerline {\bf Linear algebra and volume element of $G_{k,n}$}
-
-
+<br>
 \centerline {\tt We are  working
  together on this text, H.Kh. $\&$ Thomas Honey}
-
-
+<br>
       \centerline {  $\cal x$ 1
 {\bf Grassmanian}}
 \bigskip
-
+<br>
    Let $V_{k,N}$ be a space of $k\times N$ real marices.
-
+<br>
 We consider the Euclidean metric 
 in $V_{k,N}$ induced by the norm
                  $$
@@ -89,12 +86,10 @@ over the Grassmanian
             }\,.
                        $$
 One can consider $\V_{k,N}$ as a set of frames.
-
+<br>
 In components $[M]$ is the set 
 of matrices $M_{ia}=\lambda_{ik}M_{ka}$.
-
-
-
+<br>
 Consider an arbitrary matrix $M\in \V_{k,n}$.
 For an arbitrary matrix $N$ consider the matrix
         $$
@@ -111,19 +106,17 @@ d(N,[M])=\min_{\lambda\in GL(k)}||N-\lambda M||=
    ||N-NM^+(MM^+)^{-1}M||\,,
              $$
              where $M$ is an arbitrary matrix in $[M]$.
-
+<br>
 {\bf Remark} Minimum value may be attained
 for the matrix $\lambda\not\in GL(k)$.
  To be more precise we have
 to write
-
+<br>
              $$
 d(N,[M])=\inf_{\lambda\in GL(k)}||N-\lambda M||=
    ||N-NM^+(MM^+)^{-1}M||\,,
              $$
-
-
-
+<br>
 is "heavily" orthogonal to the 
 plane $[M]$:
                    $$
@@ -131,7 +124,7 @@ plane $[M]$:
                    $$
  This is more than just to be orthogonal:
 $\langle N'M\rangle=0$.
-
+<br>
 Matrix $N'=N-NM^+(MM^+)^{-1}M$ 
 which is {\tt heavily  orthogonal} to the plane $[M]$,
 in particular it does not depend on the choice
@@ -139,8 +132,7 @@ of the frame in the plane $[M]$:
         $$
    N'_{N,\lambda M}=N'_{N,M}.
         $$
-
-
+<br>
  Using this condition of heavily {\tt orthogonality}
 we come to 
           $$
@@ -181,13 +173,13 @@ d(N,[M])=
       \right]
   }\,.
           $$ 
-
+<br>
       \centerline {  $\cal x$ 2
 {\bf Calculation of ``distance''}}
-
+<br>
 Now we want to define the ``distance''  between
 arbitrary  two planes $[M],[N]\in G_{k,N}$.
-
+<br>
 For arbitrary frame $N$ in the plane $[N]$
 the distance   $d(N,[M])$ is well defined above.
 Under the changing of the frame $N\mapsto N$
@@ -222,8 +214,7 @@ d(\lambda \circ N,[M])=
   }
                $$
 with  $d(N,[M])$.
-            
-         
+<br>
 We are ready to define the ``distance''
  between two planes,
                       $$
@@ -268,11 +259,11 @@ We are ready to define the ``distance''
  \right]
 }
        $$
-
+<br>
 Is it good???
-
+<br>
 It is almost evident that
-
+<br>
  1)  it is well-defined function:
         $$
    d([\lambda_1 M], [\lambda_2 N])=d([M],[N])
@@ -281,11 +272,10 @@ It is almost evident that
     $$
 d([M],[N])=d([N],[M])
      $$
-    
+<br>
 One can prove that it is positive definite.
 I believe (????) that triangle law is obeyed.....
-   
-
+<br>
 To see the geometrical meaning consider for these planes
 orthonormal bases: i.e.  $M,N$ are such that
         $MM^+=NN^+=1$, in these bases the functionhas very 
@@ -332,23 +322,21 @@ They both form orthonormal bases and
 {\bf Remark} if it is indeed positive, then it is 
 the version of Cauchy-Bunyakovski inequality.....???!.
 (see the blog for January 2019)
-
-
-
+<br>
   $$ $$
-
+<br>
       \centerline {  $\cal x$ 3
 {\bf Calculation of metric}}
-
+<br>
 We still do not know is it a distance, but
 we can consider its infinitesimal version:
   $N=N=\delta n$.  We come to bilinear form on tangent
 vectors, and
 we will see that it iwill be positive definite, e.t.c.,
 thus we will define the metric.
-
+<br>
   \smallskip
-
+<br>
    Let 
       $$
      N=M=\delta m,   N_{ia}=M+\delta m_{ia}
@@ -424,10 +412,10 @@ m^+
         \right]^{-1}
       \right]\,.
       $$
-
+<br>
 For metric we can ignore infinitesiamls of order $\geq 3$.
 We come to 
-
+<br>
 {\bf Proposition}
 Metric on tangent vectors is defined by
           $$
@@ -445,10 +433,10 @@ m^+
         \right]^{-1}
       \right]\,.
           $$
-
+<br>
 One has to prove thqt this is positive-definite.
 (We will see it doing straightforward calcilations.)
-
+<br>
 To wrk with this formula go to local affine coordinates:
        $$
 M_{ia}\colon  M_{ij}=\delta_{ij}\,,, 
@@ -487,17 +475,15 @@ m^+
       {\bf 1}+WW^+
         \right]^{-1}_{ki}
      $$
-
-
+<br>
 $$ $$
-
+<br>
       \centerline {  $\cal x$ 4
 {\bf Calculation of the determinant of the metric}}
-
-
+<br>
    Calculate the determinant of the metric.
    We have (see the last formula above) that
-               
+<br>
                $$
     ds^2=\delta m G \delta m=
 \delta m_{i\a}G_{ij;\a\beta}\delta m_{j\beta}\,,
@@ -532,8 +518,7 @@ G_{ij;ab}= K_{ij}L_{ab}\,,\quad
       \right]_{\a\beta}\,,
           $$
 ($i,j=1,\dots,k$, $\a,\beta=k+1,\dots,n-k$).
-
-
+<br>
     We have that
        $$
 \det G=
@@ -547,7 +532,7 @@ G_{ij;ab}= K_{ij}L_{ab}\,,\quad
          }
        \left(\det L\right)^k\,.
        $$ 
-
+<br>
 For operator $L$ one can see that
           $$
 \det L=  {1\over 
@@ -642,10 +627,10 @@ Hence
 {1\over  {\det ({\bf 1}+WW^+) }}
        \right)^{n}\,.
                  $$
-
+<br>
       \centerline {  $\cal x$ 5
 {\bf Formula for volume of the Grassmanian}}
-
+<br>
   Now we have that
        $$
 \hbox {Volume of $G_{k,N}$}=
@@ -758,8 +743,7 @@ we come to
             }
     \prod_{r=1,b=1}^{k,N}  dz_{rb}\,.
         $$
-
-
+<br>
 {\bf Example. Volume of $G_{1,N}=\R P^{N-1}$}
            $$\hbox {Volume of $G_{1,N}$}=
      \int {dw_1\dots dw_{N-1}\over 
@@ -792,9 +776,9 @@ we come to
               }
              dz_1\dots dz_N\,.
            $$
-
+<br>
 First calculate explicitly the second integral (this is much easier to do):
-
+<br>
 We have:
          $$\hbox {Volume of $G_{k,N}$}=
     {1\over \sqrt \pi }
@@ -830,7 +814,7 @@ We have:
         dr
   = {\sigma_{N-1}\over 2}
                  $$
-
+<br>
 We come to answer which is not etonnant:
                   $$
   \hbox{ Volume of $\R P^n$}=
@@ -840,11 +824,11 @@ We come to answer which is not etonnant:
 (Here we introduced
            $r^2=z_1^2+\dots+z_N^2$
 and  $\sigma_k=$ areaq of unit $k$-sphere (in $\E^{k+1}$).
-
+<br>
 )
-
+<br>
 \medskip
-
+<br>
 Now caclulate explicitly the first integral (and see that the 
 answer is the same?)
                $$\hbox {Volume of $G_{k,N}$}=
@@ -879,13 +863,13 @@ $du={dt\over (1-t)^2}$ and
        \Gamma(y)}\,.
      $$              
 }.
-
+<br>
              $$
        \sigma_{N-2}
                 \int_0^{\infty} 
 {u^{N-2\over 2}\over (1+u)^{N\over 2}}
            {du\over 2\sqrt u }=
              $$
-
-
+<br>
 \bye      
+<br>

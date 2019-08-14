@@ -1,11 +1,6 @@
-
-
-
-
-
+<br>
 \magnification=1200 
-
-
+<br>
 \baselineskip=14pt
 \def\vare {\varepsilon}
 \def\A {{\bf A}}
@@ -52,15 +47,14 @@
 \def\ss  {\sigma_{\rm sph}}
 \def\grad {{\rm grad\,}}
 % I began this file on 31 July 2017
-
-
+<br>
 \centerline {\bf Ball's identity}
-
+<br>
 {\it Yesterday I was in Loughborough, on XX-th 
 integrable day. Don Zagier had lecture...His lecgture (about motives whas wondreful...} 
-
+<br>
 He wrote the identity: if $ad-bc=1$ then
-
+<br>
                   $$
 {d^k\over dz^k}\left(f\left(az+b\over cz+d\right)
        \left(cz+d\right)^{k-1}\right)=
@@ -69,6 +63,7 @@ He wrote the identity: if $ad-bc=1$ then
      \,\,
      f^{[k]}(z)={d^k f(z)\over dz^k}\,.
                   $$
-
+<br>
 Gritsenko had lecture. He quoted the platform:
 \bye
+<br>

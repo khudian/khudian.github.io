@@ -1,5 +1,4 @@
- 
-
+<br>
 \magnification=1200
 \baselineskip=14pt
 \def\vare {\varepsilon}
@@ -48,15 +47,14 @@
 \def  \dim {{\rm dim\,}}
 \def  \Im  {{\rm Im\,}}
 \def  \ker {{\rm ker\,}}
-
-
+<br>
 \centerline {\bf One fact from linear algbera of Lagrangian
 surfaces}
-
+<br>
 Today is 85 years to Albert Solomonovitch Schwarz...
-
+<br>
 \m
-
+<br>
 Let $V$ be finite-dimensional symplectic vector space,
 i.e. $V$ is equipped with non-degenerate antisymmetric
 bilinear form $\langle u,v\rangle= \w (u,v)$:
@@ -66,8 +64,7 @@ bilinear form $\langle u,v\rangle= \w (u,v)$:
 \langle \x, V\rangle=0\Rightarrow \x=0\,.
        \eqno (1a)
            $$
-
-
+<br>
 Let $X$ be a Lagrangian plane  in finite-dimensional
 symplectiv vector space $V$, i.e. scalar product
 vanishes on $X$   
@@ -88,9 +85,9 @@ which is orthogonal to $X$ belongs to $X$:
 In particular this means that Lagrangian plane
 is half-dimensional in symplectic vector space:
  $\dim X={\dim V\over 2}=n$.
-
+<br>
 \smallskip
-
+<br>
 We want to study Lagrangian planes which are transversal
 to $X$.  Denote a space of such Lagrangian planes
 $\L_X$:
@@ -99,10 +96,10 @@ $\L_X$:
 and}\,\, X\cap Y=0\}\,.
     \eqno (2a)
         $$
-
+<br>
 {\bf Theorem}
 {\it 
-
+<br>
 i) The set $\L_X$ of Lagrangian planes which are transversal to 
 Lagrangian plane $X$, $X$
 is in one-one correspondence with a set of ,
@@ -127,7 +124,7 @@ transversal Lagrangian
 planes $X$ and $Y$, $\x\in X$, $\y\in Y$. 
 Operator $P=P_Y$ in (4a)  evidently 
 obeys conditions (3a) and (3b).
-
+<br>
  Conversely
  every operator $P$  which obeys equations (3a) and (3b)
 defines Lagrangian plane
@@ -135,11 +132,11 @@ defines Lagrangian plane
   Y=Y_P=\Im P\,,
         \eqno (4b)
              $$
-
+<br>
   which is transversal to plane $X$.
-
+<br>
 The correspondence 
-
+<br>
 $$
 \hbox {Transversal Lagrangian
 planes}\leftrightarrow \hbox {linear operator $P$
@@ -148,8 +145,7 @@ is reciprocal:
      $$
   P_{Y_P}=P\,,  Y_{P_Y}=Y\,.
         $$
-
-
+<br>
 ii) The set of ${\cal L}_X$ of Lagrangian planes which is
 transversal
 to the plane given Lagrangian plane  $X$  is  an affine
@@ -162,16 +158,16 @@ $V\backslash X$.  In particular
 \,}V=2n)\,.
   \eqno (3c)
    $$
-
+<br>
 }
-
+<br>
 \m
-
+<br>
 {\bf Remark}  Note that for Lagrangian plane $X$ condition (3b)  
 may be weaken (is
 equivalent) to
 condition  $P\big\vert X=0$, i.e. $X\subseteq \ker P$.
-
+<br>
   Indeed suppose that $X$ is Lagrangian and operator $P$
 vanishes on $X$. Show that this implies that $X=\ker P$.
   Let $\y$ be a vector such that $\y \in \ker P$, 
@@ -186,18 +182,18 @@ then we have that for every
 \eqno (5)
       $$
 This proves that $X=\ker P$.
-
+<br>
 Now prove (4b),  that $Y=\Im P$  
 is Lagrangian plane transversal to $X$
 if conditions (3a,3b) are obeyed.
- 
+<br>
 It follows from the following statement.
          $$
 \ker P=\Im (P-I)\,.
     \eqno (6)
          $$
 \smallskip
-
+<br>
 Indeed condition $X=\ker P$ in (3b) implies that
   $\dim \Im P=n$.  we have that $\dim \ker P=\dim (P-I)=n$
 also.   According equation (6) 
@@ -243,11 +239,11 @@ then due to (3a) for an arbitrary $\x\in X$ we have that
          $$
 Thus we proved that $Y=\Im P$ is Lagrangian plane
 transversal to the Lagrangian plane $X$.
-
+<br>
 \bigskip
-
+<br>
 Now prove the second part of Theorem.
-
+<br>
 Operator $P$ obeying conditions (3a)  can be codified
   by symmetric bilinear form
          $$
@@ -265,8 +261,7 @@ plane $\Y$ then we come to:
 where $\x+\y$ is an expansion over planes $X,Y$.
 Thus we see that operator $P$ obeying to equations 
 (3a) and (3b) is codified by bilinear form on $Y$.
-
-
+<br>
 {\bf Example}  Consider $V=T^*{\bf R}^n$
 with basis $\p_i,\p^j$:
         $$
@@ -288,8 +283,7 @@ Any symmetric bilinear form $Q^{mn}$  codifies operator
       $$
 P(\p_i)=0\,,  P(\p^k)=\p^k+Q^{km}\p_m
        $$ 
-
-
+<br>
 Let $Q_{mn}$ be
 \bye
-
+<br><br>

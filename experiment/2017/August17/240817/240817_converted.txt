@@ -1,9 +1,6 @@
-
-
-
+<br>
 \magnification=1200 
-
-
+<br>
 \baselineskip=14pt
 \def\vare {\varepsilon}
 \def\A {{\bf A}}
@@ -53,10 +50,9 @@
 \def\ss  {\sigma_{\rm sph}}
 \def\grad {{\rm grad\,}}
 % I began this file on 24 August 2017
-
-
+<br>
    \centerline { Integration of cocycles}
-
+<br>
   Let  $c(K)$ be cocycle on algebra of
 vector fields on $\R$.   How to take its integral.
 I still did not calculate the role of being cocycle, e,t,x,,
@@ -72,7 +68,7 @@ i.e.
 {\p \Phi(z)\over t}=
     c(K=z_t) \,\, \hbox{at the point $z$}\,,
      $$ 
-
+<br>
 Example.  Consider cocycle 
            $$
          c(K)=K_{xx}|dx|
@@ -99,11 +95,10 @@ Then we have
 sure here we suppose that a function $z(x)$
 is ubcluded in the exponent $z(t,x)$.
   (il faut formuler plus exactement.....)
-
-
+<br>
    \bigskip
-
+<br>
     Schwarzian:  $c(K)=K_{xxx}|dx|^2$
-
-
+<br>
 \bye
+<br>

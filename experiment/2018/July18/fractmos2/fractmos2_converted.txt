@@ -6,20 +6,19 @@
 \def\f {{\bf f}}
 \def \E {{\bf E}}
  \centerline {Algorithm "nosov" continuous fractions}
-
+<br>
 Here we reproduce the algorithm "vytiagivanija nosov", 
 which I learnt in  the book of Arnold.
-
-
+<br>
    Let  $\e,\f$  be standard basis in  ${\bf R}^2$.
 $\e=(1,0)$, and $\f=(0,1)$.
-
+<br>
 It is useful also consider the module $\Z^2=\Z\otimes \Z$
 over vectors $\e,\f$:
          $$
 \Z^2=\{(m,n)=m\e+n\f\,\quad m,n\in\Z\}\,.
          $$
-
+<br>
 We assign to an arbitrary rational number  $p\over q$
 the vector 
          $$
@@ -27,7 +26,7 @@ the vector
          $$
 which belongs also to $\Z\otimes \Z$.
 (We assume that $p,q$ are coprime)
-
+<br>
    Let   $\a$  be non-negative real number and 
   let  $[a_0,a_1,\dots,]$ be its continuous fraction,
 and  ${p_k\over q_k}$  be its $k$-th approximation:
@@ -35,24 +34,24 @@ and  ${p_k\over q_k}$  be its $k$-th approximation:
   [a_0,\dots,a_k]={p_k\over q_k}
             $$
 (We assume that $p_k,q_k$ are coprime)
-
+<br>
 Consider vectors $\{\E_{-2},\E_{-1},\E_0.\E_1,\dots\}$
 in $\Z^2$   defined by real number $\a$ in the following way:
             $$
 \E_{-2}=\e,\quad  \E_{-1}=\f\,,
             $$
-
+<br>
 {\bf Proposition} {vytiagivanie nosov}:  for arbitrary $k$:
         $$
 \E_{k+1}=\E_{k-1}+a_{k+1}\E_k\,.
         \eqno (Prop)
         $$
-
+<br>
 Proof:
-
+<br>
 Instead Proposition we will prove the statement that
 equation (Prop) survives up to collinearity:
-
+<br>
   for arbitrary $k$:
         $$
 [\E_{k+1}]=[\E_{k-1}+a_{k+1}\E_k]\,,
@@ -60,42 +59,33 @@ equation (Prop) survives up to collinearity:
         $$
 where  we  denote by $[{\bf t} ]$
 the class of vectors collinear to the vector $\bf t$.
-
-
+<br>
 This statement seems to be weaker, but 
 it implies the 
 Proposition. Prove first that statement ($Statement$)
 implies Proposition ($Prop$),
 then we will prove statement ($Statement$)
-
+<br>
 \smallskip
-
-
+<br>
 Equation ($Statement$) implies that
               $$
 \E_{k+1}=\lambda \left(\E_{k-1}+a_{k+1}\E_k\right)
               $$
-
-
-
+<br>
 \medskip
-
-
+<br>
 Now prove the statement.
-
-
+<br>
 Consider first small $k$
-
+<br>
 For $k=-1$:
 $\E_0=q_0\e+p_0\f=\e+a_0\f$ and
          $$
 [\E_0]=[\E_{-2}+a_0\E_{-1}]=[\e+a_0\f]\,.
          $$
 This is true.
-
-
-
-
+<br>
 For $k=0$:
        $$
 [\E_1]=[q_1\e+p_1\f]=
@@ -107,9 +97,9 @@ For $k=0$:
 \left[\E_0+{1\over a_1}\E_{-1}]=[a_1\E_0+\E_{-1}\right]\,.
          $$
 This is true.
-
+<br>
 \medskip
-
+<br>
 For $k=1$:
        $$
 [\E_2]=[q_2\e+p_2\f]=
@@ -128,17 +118,16 @@ For $k=1$:
 \left[a_2\E_1+\E_0\right]\,.
          $$
 This is true.
-
+<br>
 and so on:
-
-
+<br>
 %For the continuous fraction $\a=[a_0,a_1,a_2,\dots]$
 %denote  by 
 %               $$
 %            a'_k=a_k+{1\over a_{k+1}}
 %             $$
 %In general $a'_k\not\in\Z$.
-
+<br>
      $$
 [\E_{m}]=[q_{m}\e+p_{m}\f]=
 \left[\e+\left[a_0,\dots,a_m\right]\f\right]=
@@ -219,5 +208,6 @@ and so on:
  \left[ \E_{m-1}+{1\over a_m}\E_{m-2}\right]=
  \left[a_m \E_{m-1}+\E_{m-2}\right]\,.
       $$
-
+<br>
 \bye
+<br>

@@ -1,4 +1,4 @@
-
+<br>
 \magnification=1200
 \baselineskip=14pt
 \def\vare {\varepsilon}
@@ -49,21 +49,19 @@
 \def\V {{\cal V}}
 \def\s {{d\over dt}}
 \def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
-
+<br>
 % I began this file in 24 December  2018
-
+<br>
 {\tt 22 December 2018}
 \medskip
-
+<br>
 \centerline {\bf Characteristics}
-
+<br>
 {\it I am studying Courant Robbins book. Here is my attemt
 to study  ${\cal x} 3$ page 41}
-
-
+<br>
 \centerline {\bf First order linear dif.equation}
- 
-
+<br>
  Consider equation
         $$
   A^i{\p u(x^1,\dots x^n)\over\p x^i}=F(x^1,\dots x^n)\,,
@@ -103,7 +101,7 @@ g(x^1,\dots,x^n)\big\vert_{x^i=f^i(s)}
 On the other hand if a function $g$ is preserved over 
 an arbitrary solution of ODE (2) then $g$ is the solution
 of equation (1')
-
+<br>
 Show that (2) indeed has $n-1$ integrals.
 Let $x^i=x^i(s,c_a)$  ($a=1,\dots N$), i.e. $N=n-1$.
 Choose as a new parameter, some $x_i$.
@@ -124,10 +122,10 @@ x^\mu=x^\mu(c_1,\dots c_N;x_n)\,,\,\,\mu=1,\dots,n-1\,.
            $$
 We see that $n-1$ variables $x^1,x^3,\dots,x^{n-1}$
 depend on $N$  constants $c_1,c_2,\dots,c_N$,  $N=n-1$.
-
+<br>
 These $n-1$ variables play the role of initial data, and
 $N=n-1$. 
-
+<br>
 Expressing $c_a$ as functions of $x^a$  we come to
 $N=n-1$  functions
 $c_a=c_a(x^i)$
@@ -139,12 +137,12 @@ u=W\left(
        \right)\,,
         $$
   where $W$ is an arbitrary function on $n-1$ variables.
-
+<br>
 Now how to solve (1)?    We formaly introduce the new variable
     $z=x^0$  and consider  instead (1) equation
-
+<br>
 {\bf Example}
-
+<br>
 Cosnider equation
 $$
 u(x,y)\colon\, (x+y)u_x+yu_y=y^2
@@ -187,3 +185,4 @@ U(x,y,z)=W(c_1,c_2)=
     $$
 (see also the next text.)
 \bye
+<br>

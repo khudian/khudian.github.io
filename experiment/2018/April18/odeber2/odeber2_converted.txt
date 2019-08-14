@@ -1,7 +1,6 @@
-
+<br>
 \magnification=1200 
-
-
+<br>
 \baselineskip=14pt
 \def\vare {\varepsilon}
 \def\A {{\bf A}}
@@ -51,7 +50,7 @@
 \def\ss  {\sigma_{\rm sph}}
 \def\grad {{\rm grad\,}}
 \def \k {{\hat k}}
-
+<br>
 Consider ODE
       $$
    P(\hat k)y(x)=\Psi (x)
@@ -59,13 +58,11 @@ Consider ODE
       $$
 where $P(\k)=\sum a_n \k^n$ is polynomial on
 variable $\k={d\over dx}$.
-
+<br>
 The following statments are almost evident.
-
+<br>
 Operator $P^{-1}(\k)$ is well-defined on the space of polynomials
 if $p_0\not=0$.
-
-
-
-
+<br>
 \bye
+<br>

@@ -1,5 +1,4 @@
-
-
+<br>
 \magnification=1200
 \baselineskip=14pt
 \def\vare {\varepsilon}
@@ -41,14 +40,14 @@
 \def\w {{\omega}}
 \def \Tr  {{\rm Tr\,}}
 % I began this file in 29 December  2018
-
+<br>
     \centerline {Geometry of first order equation}
-
+<br>
   Let  $J^1M$  be a space of first jets of functions on 
 manifold $M$. Cooridnates on $J^1M$ are $(p_i,q^j,u)$,
 where $q^j$ are coordinates on $M$.  Jet of every function  $u=u(x)$
 has coordinates $\left(p_i={\p u\over \p x q^i},q^i,u\right)$.
-
+<br>
 Consider  $\C$ , the Cartan 
  distribution of $2n$-dimensional planes in $J^1M$
 defined by the form $\w=p_idq^i-du$
@@ -64,16 +63,14 @@ N_i{\p\over \p p_i}+A{\p\over \p u}\,
 \hbox{belongs to Cartan distribution $\C$ if $A=p_iM^i$}\,.
       $$
 $\C$ is non-integrable distribution.                
-
-
-
+<br>
 Consider differential equation,  
       $$
 \E\colon       F(p,q,u)=0\,.
       $$
 Differential equation is sumbmanifold of codimension $1$
 in the space $J^1(M)$.
-
+<br>
 The Cartan distribution  $\C$ of hyperplanes on $J^1M$ 
 defines distribution  $\C(\E)$ in $T\E$:
                   $$
@@ -87,18 +84,15 @@ N_i{\p\over \p p_i}+A{\p\over \p u}\in \C(\E)\,\, {\rm if}\,\,
 \left(M^i{\p\over \p q^i}+
 N_i{\p\over \p p_i}+A{\p\over \p u}\right)F(p,q,u)\big\vert_{F=0}=0\,.
           $$
-
-
-
+<br>
 The solution of differential equation (1) is the maximal integral
   of the distribution
 $\C(\E)$, which is the $n$-dimensional
  submanifold in $M$.  
 (We come to the $n$-parametric family of solutions?)
-
-
+<br>
 {\tt  Quesion:    Why}
-
+<br>
 Let  $N$ be an arbitrary solution, 
 $N$ is the surface of dimension
   $n$ and any tangent plane to $N$  belongs to Cartan distribution
@@ -126,13 +120,12 @@ dF=
     $$
 \a_\pt\ni\X\Leftrightarrow  \w_C(\X)=dF(\X)=0\,. 
     $$
-
+<br>
 {\bf Definition}  The point $\pt$ is not singular point if
 tnhe rank of the matrix $\pmatrix {\w_C\cr  dF\cr}$  is equal to $2$.
 IN this case the dimension of 
-
+<br>
 {\tt I continue this file the first day of the New Year.....}
-
+<br>
 \bye
-
-
+<br><br>

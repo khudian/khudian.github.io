@@ -1,10 +1,6 @@
-
-
-
-
+<br>
 David, yesterday told me that
-
-
+<br>
 \magnification=1200
 \baselineskip=14pt
 \def\vare {\varepsilon}
@@ -46,9 +42,9 @@ David, yesterday told me that
 \def\w {{\omega}}
 \def \Tr  {{\rm Tr\,}}
 % I wrote this file the first thing that I did on 1-st January  2019
-
+<br>
     $$$$
-
+<br>
          $$
 2019-1^4+2^4+3^4+5^4+6^4\,.
      $$
@@ -56,7 +52,6 @@ Indeed
 $1^4+2^4+3^4+5^4+6^4=1+16+81+625+6\cdot 216=
  98+625+1296=723+1296=2019$
 \finish
-
-
-
+<br>
 \bye
+<br>

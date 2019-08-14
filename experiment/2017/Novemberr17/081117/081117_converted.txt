@@ -1,7 +1,6 @@
-
+<br>
 \magnification=1200 
-
-
+<br>
 \baselineskip=14pt
 \def\vare {\varepsilon}
 \def\A {{\bf A}}
@@ -53,13 +52,12 @@
 \def\e {{\bf e}}
 \def\f {{\bf f}}
 % I began this file on  11 September  2017
-
+<br>
 \centerline {\bf Another proof on infinity of prime numbers.}
-
+<br>
 {\it David Nauhgthen from Manchester grammair school did talk
 on pirme numbers....}
-
-
+<br>
   The existence of infinite set of
 pairwise coprime numbers implies the existence of 
 infinite set of prime numbers.  
@@ -68,24 +66,23 @@ Indeed let
   ($n_i\not=n_j$ and $(n_i,n_j)=1$). Let 
 $p_i$ be an arbitrary divisor of $n_i$. Then 
 all $p_i$ are distinct,
-
+<br>
 How to form the infinite sequence of coprime numbers.
-
+<br>
    Two examples:
-
-
+<br>
 I
      $$
    n_k=2^{2^k}+1\,, k=1,2,3,\dots
       $$
 This is the famous example of coprime nimbers
-
+<br>
 Another example:  $n_1$ is an arbitrary number $n_1>1$ and
        $$
    n_{k+1}=\prod_{i=1}^k n_i+1\,.
        $$
-
-
+<br>
 This proof seems to be "fresh"
-
+<br>
 \bye
+<br>

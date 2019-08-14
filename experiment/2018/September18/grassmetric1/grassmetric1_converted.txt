@@ -47,42 +47,37 @@
 \def \Tr  {{\rm Tr\,}}
 \def\V {{\cal V}}
 % I began this file in September  2018
-
-
+<br>
 \centerline {\bf Linear algebra and volume element of $G_{k,n}$}
-
-
+<br>
 \centerline {We are  writting together this file I+ T.Honey}
-
-
+<br>
 \bigskip
-
+<br>
    Let $V_{k,n}$ be a space of $k\times n$ real marices.
-
+<br>
  We consider the Euclidean metric in $V_{k,n}$ induced by the norm
                  $$
               ||M||=\Tr (MM^+)\,,\qquad
 \hbox{the scalar product is}\,, \langle M,N\rangle=\Tr (MN^+)\,.
                  $$
-
+<br>
 Denote by $[M]$ the subspace in $V_{k,n}$ spanned by the left action
 of $GL(k,\R)$ on matrix $M$:
                        $$
   [M]=\{gM,\, g\in GL(k,\R)\}\,. 
                        $$
 In components $[M]$ is the set of matrices $M_{ia}=\lambda_{ik}M_{ka}$.
-
-
+<br>
 We denote by $\V_{k,n}$ the open set of non-degenerate matrices in $V$.
-          
+<br>
 Every matrix $M$ in $\V$ defines $k^2$-dimensional subspace $[M]$ 
 in $V_{k,n}$.
 (One can see this subspace as the open set of frames in the plane 
 defined by )
-
- 
+<br>
 Consider an arbitrary matrix $M\in \V_{k,n}$.
-
+<br>
 For an arbitrary matrix $N$ consider the matrix
         $$
          N'_{(N.M)}=N-\lambda M
@@ -91,9 +86,9 @@ For an arbitrary matrix $N$ consider the matrix
              $$
          N'_{(N.M)}=N-NM^+(MM^+)^{-1}M\,.
              $$ 
-
+<br>
 {\bf Remark} Minimum value may be for $\lambda\not\in GL(k)$.
-
+<br>
    We see that
              $$
 d(N,[M])=\min_{\lambda\in GL(k)}||N-\lambda M||=
@@ -106,10 +101,7 @@ plane $[M]$, more:
             N'M=0\,.
                    $$
    (This is more than $\langle N'M\rangle=0$.)
-
-
-
-
+<br>
  One can see that  for arbitrary matrix $N$,
              $$
 d(N,[M])=||N'||=\min_{\lambda\in GL(k)}||N-\lambda M||=
@@ -122,9 +114,7 @@ plane $[M]$, more:
             N'M=0\,.
                    $$
    (This is more than $\langle N'M\rangle=0$.)
-
-
-
+<br>
 One can see that
                  $$
   d(N,[\lambda M])=d(N, [M])\,,
@@ -153,11 +143,11 @@ to speak more carefully {\it the function
  \right)
 }
       $$
-
+<br>
 Is it good???
-
+<br>
 ****************************************************
-
+<br>
 $$
 {d\left(N,[M]\right)\over \sqrt {\det (MM^+)}}
 =
@@ -174,8 +164,7 @@ we come to the answer
 {\sqrt {\Tr \left(NN^+-NM^+(MM^+)^{-1}MN^+\right)}
 \over \sqrt {\det (MM^+)}}
                $$
-
-
+<br>
 In particular for infinitesimal tangent vectors  $N=M+m$ we have
                $$
     ds^2=
@@ -192,7 +181,7 @@ In particular for infinitesimal tangent vectors  $N=M+m$ we have
            \right)m_{jb}
             \over \det (MM^+) }\,.
                $$
-
+<br>
 Now go to non-homogeneous (affine) coordinates  in the space of planes
               $$
      M_{ia}=\left(\delta_{ij}, W_{i\a}\right)\,,
@@ -215,9 +204,7 @@ We see that in these affine coordinates
            \right)m_{j\beta}
             \over \det ({\bf 1}+WW^+) }\,.
                $$
-
-
-
+<br>
    Calculate the determinant of the metric.
 First calculate the determinant of operator
                   $$
@@ -232,7 +219,7 @@ to the image of this operator:
              $$
 $L({\bf t})={\bf t}$, i.e. it  is the eigenvector of operator $L$
 with eigenvalue $1$.
-
+<br>
 On the other hand 
 for arbitrary vector which belongs to the image of this operator
                  $$
@@ -281,3 +268,4 @@ Hence
        \right)^{{n(n-k)\over 2}+k???}
                  $$
 \bye
+<br>

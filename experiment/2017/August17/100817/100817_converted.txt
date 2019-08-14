@@ -1,10 +1,6 @@
-  
-
-
-
+<br>
 \magnification=1200 
-
-
+<br>
 \baselineskip=14pt
 \def\vare {\varepsilon}
 \def\A {{\bf A}}
@@ -51,38 +47,36 @@
 \def\ss  {\sigma_{\rm sph}}
 \def\grad {{\rm grad\,}}
 % I began this file on 10 August 2017
-
-
-
+<br>
    {\bf Conformal map and
 in terms of Green function}
-
+<br>
   This is the topic why I began to read the Lavrentiev inspired
 by French book. Now it is alright.
    If we know the Green function $G_U(z_0,z)$  
  then it defines in  $U\backslash \{z_0\}$ holomorphic function
 $\hat G=G+iU$ where $U$ 
 is defined up to period  $\Pi=\oint...$
-
+<br>
 Thus we come to  the map $e^{...G\over \Pi}$.
-
+<br>
 \m
-
+<br>
   (comment ca marche: the question of bijection????)
-
+<br>
 \m
-
+<br>
   {\bf Example}  How to construct $\H\to D$
 We know that
              $$
   G_\H=...\left(\log|z-z_0|-\log|z-\bar z_0|\right)
              $$
 (coefficient $-{1\over 2\pi}$)
-
+<br>
   Hence  $G(z_0,z)=\approx {z-z_0\over z-\bar z_0}$
-
+<br>
 is it unique? Yes up to the coefficient $e^{i\varphi}$. 
-
+<br>
  In  the blog on 7 August
 we considered function
        $$
@@ -91,11 +85,11 @@ G(z_0,z)}
        $$
 Thus we see that this function is equal to
       $z-\zeta\over z-\bar\zeta$ up to a coefficient.
-
+<br>
 {\bf Remark} {\it We used here that every $F$ holomorphic map
 of Disc $|z|<1$ onto itself such that $F(\zeta)=0$ 
 is nothing but
 ${z-\zeta\over 1-\bar\zeta z}e^{i\varphi}$ }
-
-
+<br>
 \bye
+<br>

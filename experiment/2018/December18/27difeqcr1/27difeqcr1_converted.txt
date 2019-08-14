@@ -1,7 +1,6 @@
-
+<br>
 27 December 2018
-
- 
+<br>
 \magnification=1200
 \baselineskip=14pt
 \def\vare {\varepsilon}
@@ -52,13 +51,13 @@
 \def\V {{\cal V}}
 \def\s {{d\over dt}}
 \def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
-
+<br>
 % I began this file in 24 December  2018
-
+<br>
    {\tt Fact}
-
+<br>
 Cosnider differential equations
-
+<br>
    There is one-one correspondence between solutions
    $u=\varphi(x^1,\dots,x^n)$
 of the differential equation
@@ -95,4 +94,4 @@ of functions ($c\in \R$)  such that all these functions
 are solutions of the equation (1).   Then a function
    $c=c(x,u)$  is the solution of the equation (2).
 \bye
-
+<br><br>

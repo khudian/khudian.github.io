@@ -1,6 +1,4 @@
-
- 
-
+<br>
 \magnification=1200
 \baselineskip=14pt
 \def\vare {\varepsilon}
@@ -46,9 +44,9 @@
 % I wrote this file on 16 January
 \def\t {{\tilde}} 
 \def\dist {{\hbox{\tt "distance"}}}
-
+<br>
   \centerline {\bf Upper half plane is not euquivalent to plane}
-
+<br>
    Consider upeer half-plane: $\bf H\colon \{(x,y), y>0\}$
 and all the plane $\bf C$.   They are not holomorphically equivalent,
 i.e. it does not exist analytical 
@@ -59,7 +57,8 @@ This implies that disc is eequivalent to $\bf C$.
 Let $F\colon {\bf C}\leftrightarrow \bf H$. 
 Then $F$  is analytical bounded function on $\bf C$,
 and due to Lioville Theorem  $F$  maps $\bf C$  to the point.
-
+<br>
 {\tt Really crazy effective application of Lioville theorem!!!}
-
+<br>
 \bye
+<br>

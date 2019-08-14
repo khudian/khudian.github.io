@@ -1,8 +1,4 @@
-
-
-
-
-
+<br>
 \magnification=1200
 \baselineskip=14pt
 \def\vare {\varepsilon}
@@ -52,9 +48,9 @@
 \def \Tr  {{\rm Tr\,}}
 \def\V {{\cal V}}
 % I began this file in November  2018
-
+<br>
     \centerline {one differential equation}
-
+<br>
    We consider the solution of the equation
                    $$
       S(x,t)\colon\quad       
@@ -70,15 +66,13 @@ Consider coordinates $(t,x)$ in $2$-dimensional space $M$, and
  $(p,x,\rho,t)$ in cotangent bundle   $T^*M$
 (coordinate $p$ is conjugate to the coordinate $x$ and)
 coordinate $\rho$ is conjugate to the coordinate $t$.
-
+<br>
 The initial conditinion:  $S(x,t)\big\vert_{t=0}=f(x)$ define
 the one dimensional curve $B_{S_{0}}$
                           $$
               B_{S_{0}}=
                           $$  
- 
-
-
+<br>
   Let  $S=S(x,t)$ be a solution of equation (1), and
 let  $\Lambda_S={\rm graph} S\subset T^*M$  
 bue Lagrangian surface  corresponding to $S$:
@@ -102,7 +96,7 @@ The boundary condition means that the curve
 \eqno (3)
                 $$
 belongs to the Lagrangian surface $\Lambda_S$.
-
+<br>
 To construct the surface $\Lambda_S$ iwe do the following:
 emit from the points
 of the curve $B_{S_{0}}$  the Hamiltonian vector field
@@ -115,12 +109,11 @@ of the curve $B_{S_{0}}$  the Hamiltonian vector field
 \hbox{of Hamiltonian $H={p^2\over 2m}+U(x)+\rho$}\,.
  \eqno (4)
                     $$
-
+<br>
 We see that   this surface is Lagrangian surface and it
 obeys the equation (2). 
 since $dH({\bf D}_H)=0$. 
-
-
+<br>
 Do this: 
                  $$
 \L_S\colon \,\,
@@ -141,7 +134,7 @@ Do this:
               }
       \eqno (5a)
                  $$
-
+<br>
 with boundary condition (3):
          $$
     B_{S_{0}}\subset \Lambda_S\,,{\rm i.e.}\,\,\,
@@ -169,11 +162,11 @@ with boundary condition (3):
 \eqno (5b)
                 $$
 These are just ODE.
-         
+<br>
 \medskip
-
+<br>
         {\it First case, $U=0$}
-
+<br>
   Then $H={p^2\over 2m}+\rho$
 and  solution of equation (5) will be
                      $$
@@ -247,6 +240,6 @@ since the surface is Lagrnagian  and we come to the solution
          $$
 Now consider the interesting example:
  $f(x)=\delta(x-a)$. Then we come to
-     
+<br>
 \bye
-
+<br><br>

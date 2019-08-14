@@ -1,7 +1,4 @@
-
-
-
-
+<br>
 \magnification=1200
 \baselineskip=14pt
 \def\vare {\varepsilon}
@@ -45,7 +42,7 @@
 \def\dim {{\rm dim\,\,}}
 % I wrote this file on 1-st January  2019
 \def\t {{\tilde}} 
-
+<br>
 Segodnia ja obdumyval  
   formulu (2), ja nakonets to ejo smog vyvesti i 
 dazhe ponial shto  levaja chastj v
@@ -58,12 +55,11 @@ v tserkovj na prazdnik Armianskogo rozhdestva.
 Vecherom ja prishjol domoj, i my reshili s Gajej poprobovatj
 pojekhatj zavtra, tak shto u menia dazhe net vremeni 
 sejchas tolkom vsjo eto proveritj Izvini pishu na letu... 
-
+<br>
 Posmotri,
-
+<br>
 esli vsjo budet v poriadke, to do piatnitsy.....
-
-
+<br>
    \centerline{\bf Geometry of diff.equations and Monge cone}
 \m
 Sasha yesterday I asked you  a question about 
@@ -90,8 +86,7 @@ i pod integralom funkctija Grina:
 {1\over \sqrt t} e^{-{(x-y)^2\over t}}
          $$   
 and  $\Delta G=\delta(x-y)$.
-
-
+<br>
 "Fizik" by skazal shto eta  funktsija poluhaetjsa iz continualjnogo
 integrala, no dlia svobodnoj chastitsy eto prosto krasivyje slova,
 tak kak continualjnyj integral sovpadaet s 
@@ -106,12 +101,13 @@ G(t,x,y)=N\int e^{i\int_0^t {\dot q^2\over 2}dt}
               {\cal D}q(t)=
 {1\over \sqrt t} e^{iS_{class}}
       $$
-
+<br>
 Sasha, ja utverzhdaju, shto formula (2)
 eto tvoja modeljnaja formula v odnomerii
 (zameni $\nu$  v (1) na $t$ i poluchish formulu
  (2))
-
+<br>
 Konechno eto trivialjnostj, no
-
+<br>
 \bye
+<br>

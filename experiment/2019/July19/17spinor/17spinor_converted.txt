@@ -1,5 +1,4 @@
- 
-
+<br>
 \magnification=1200
 \baselineskip=14pt
 \def\vare {\varepsilon}
@@ -48,10 +47,9 @@
 \def  \dim {{\rm dim\,}}
 \def  \Im  {{\rm Im\,}}
 \def  \ker {{\rm ker\,}}
-
-
+<br>
 \def \Cl {\hbox{\tt Cliff}}
-
+<br>
  Even In most refined representation of   
 Clifford algebra, it is difficutl to bury the traces 
 of supermathematics, i.e.
@@ -71,7 +69,7 @@ to vector space $V$ equipped with bilinear form $Q$,
 and $\hat\otimes$ is $Z_2$ graded tensor product,
 (not usual!)!
 It is very important for the classification theorem
-
+<br>
 {\it Clifford algebra $\Cl(Q,V)$ is isomorphic to
 wedge product of 
 $p$ algberas of doube numbers
@@ -92,10 +90,9 @@ Q=x_1^2+\dots+x_p^2-x_{p+1}^2-\dots x_r^2
           $$
 in some linear coordinates
 }
-
+<br>
 This lemma reveals $Z_2$ grading.
-
-
+<br>
 When proving this lemma we use that
     element $\x\oplus \y$ 
   goes to the element $\x\otimes 1+1\otimes \y$
@@ -116,4 +113,4 @@ hence
 +(1\otimes \y)^2\,.
       $$
 \bye 
-
+<br><br>

@@ -1,5 +1,4 @@
- 
-
+<br>
 \magnification=1200
 \baselineskip=14pt
 \def\vare {\varepsilon}
@@ -45,14 +44,11 @@
 % I wrote this file on 16 January
 \def\t {{\tilde}} 
 \def\dist {{\hbox{\tt "distance"}}}
-
-
-
-
+<br>
  Let $H=H(x^i,p_j)$  be a function on $T^*M$,
 where $(x^i,p_j)$ standard local coordinates on cotangent bundle
 ($x^i=x^1,\dots, x^n$ local coordinates on $n$-dimensional manifold $M$).
-
+<br>
     This function defines a vector field
 $\X_H$  on the infinite-dimnensional space $C^\infty(M)$ of functions:
             $$
@@ -76,7 +72,7 @@ of Hamilton-Jacobi  differential equation:
 This little bit peculiar point of view on
   the standard Hamilton Jacobi equation
 induces the following consequences. 
-
+<br>
   Let $M$ be supermanifold, and let $H$ be an odd function
 on $T^*M$ such that it is quadratic on
 fibers:
@@ -90,7 +86,7 @@ and it obeys equation
                      \eqno (2b)     
                 $$
 where $(\_,\_)$ canonical Poisson bracket on $M$ and $H$.
-
+<br>
  Then this Hamiltonian  via mechanis of {\it derived bracket}
  induces  odd Poisson bracket, Schouten bracket on $M$:
                      $$
@@ -109,7 +105,7 @@ bracket on $M$  via derived bracket construction if condition
  $[H,H]=0$ is satisfied.}.  Note that
   for even Hamiltonian $H$ in equation (1) condition (2b)
 is obtained automatically.   
-
+<br>
 In the case if
   Hamiltonian $H$ is an arbitrary odd function on momenta, i.e. only
 condition (2b) is obeyed, and condition
@@ -130,57 +126,44 @@ by quadratic Hamiltonians)
 What is a generalisation of Poisson map,
 i.e. map preserving Poisson brackets for the case
 of homotopy Poisson brackets.
-
+<br>
   In the work [1] we attempted to answer this question
 for special case. Then Ted Voronov developed the notion of
 thick morphism (see [3.4]) which provides the  answer on
 this question.
-
-
+<br>
      The construction which we studied  
 has very 
-
+<br>
    The answer is the following:
   Let  $M$  $N$ be two (super)manifolds, 
 and $H_M, H_N$ be an odd function on $T^*M$  and $T^*N$ 
 which generate  homotopy Scouten bracket on $M$  and $N$ respectively.
-   
-
-
-
+<br>
 1.  H.M. Khudaverdian, T.Voronov. {\it Higher Poisson brackets and
 differential forms.} In: Geometric Methods in Physics. AIP
 Conference Proceedings 1079, American Institute of Physics,
 Melville, New York, 2009, 203-215. arXiv:0808.3406v2 [math-ph].
-
-
-
-
+<br>
 2.   H.M.Khudaverdian, T.Voronov
 {\it Thick  morphisms, higher Koszul brackets, and $L_\infty$-algebroids},
 math-arXiv:180810049
-
-
-
+<br>
 3. T.Voronov {\it ``Nonnlinear pullbacks''
 of functions and $L_\infty$-morphisms
 for homotopy Poisson structures.}
 J. Geom. Phys. 111 (2017), 94-110. arXiv:1409.6475
-
+<br>
 \m
-
+<br>
 4. T.Voronov  {\it Microformal
 geometry and homotopy algebras.}
  Proc. Steklov Inst. Math. 302 (2018),
 in press. arXiv:1411.6720 [math.DG]
-
-
-
+<br>
 5. {\it Thick morphisms of supermanifolds
 and oscillatory integral operators. }
 Russian Math. Surveys 71 (4) (2016), 784-786. arXiv:1506.02417
-
-
-
-
+<br>
 \bye
+<br>
