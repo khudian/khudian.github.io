@@ -9,7 +9,9 @@ function configureMathJax()
       t: "\\tilde",
       X: "{\\bf X}",
       vare: "\\varepsilon",
-      w: "\\omega"
+      grad: "{\\rm grad\\,}",
+      w: "\\omega",
+      A: "{\\bf A}"
     }    
   },
   tex2jax: 
