@@ -63,29 +63,29 @@ then do their Legendre transformation to time picture.
 \Psi (x_0,t_0;x,t)=
 \exp \left[{i\over \hbar}S_\hbar(x_0,t_0;x,t)\right]\,,
 \qquad
-\Phi (x_0,x,E)=\exp \left[{i\over \hbar}\S_\hbar(x_0x,E)\right]\,,
+\Phi (x_0,x,E)=\exp \left[{i\over \hbar}\Sigma_\hbar(x_0x,E)\right]\,,
   $$
-where $S_\h, \S_\h$  are formal  polynomials on $\h$ of inifnite degrees: 
+where $S_\h, \Sigma_\h$  are formal  polynomials on $\h$ of inifnite degrees: 
         $$
      S_\hbar(x_0,t_0;x,t)=
     S(x_0,t_0;x,t)+
    {\hbar\over i}
        \sigma(x_0,t_0,x,t)+\dots
 \qquad
-     \S_\hbar(x,E)=
-    \S(x,E)+
+     \Sigma_\hbar(x,E)=
+    \Sigma(x,E)+
    {\hbar\over i}
        s(x,E)+\dots
   $$
-Here $S$  ($\S$ ) is the classical action 
+Here $S$  ($\Sigma$ ) is the classical action 
 in time representation ($E$)-representation
- ($S$ and $\S$ are reciprocal Legendre transforms):
+ ($S$ and $\Sigma$ are reciprocal Legendre transforms):
       $$
-S(x,t)=\S(x,E)-Et\,, \quad {\rm with}\,\, E\colon t={\p \S\over \p E}\,.
+S(x,t)=\Sigma(x,E)-Et\,, \quad {\rm with}\,\, E\colon t={\p \Sigma\over \p E}\,.
        $$
   The term $\sigma$ ($s$) is responcible for the amplitude.
 The dependence on $x_0$ is due to initial conditions;
-$H$ does not depend on time, it is why $\S$  deos not depend 
+$H$ does not depend on time, it is why $\Sigma$  deos not depend 
 on $E_0$.
 <br>
 The Shrodinger equation becomes
@@ -95,17 +95,17 @@ i\h {\p \Psi\over \p t}=
 i\h 
 {\p\over \p t} 
 e^{
-    {i\over \hbar}\S_\hbar (x,t)
+    {i\over \hbar}\Sigma_\hbar (x,t)
   }
         =
   \hat H
   e^{
-    {i\over \hbar}\S_\hbar (x,t)
+    {i\over \hbar}\Sigma_\hbar (x,t)
       }=\,,\quad
 \quad
      E\Phi(x,E)=
  E e^{
-    {i\over \hbar}\S_\hbar (x,E)
+    {i\over \hbar}\Sigma_\hbar (x,E)
         }=
 \hat H \Psi (x,E)=
        $$
@@ -118,7 +118,7 @@ e^{
          + U(x)
        \right]
        e^{
-   {i\over \hbar}\S_\hbar (x,t)
+   {i\over \hbar}\Sigma_\hbar (x,t)
        }=
        \quad
  \left[
@@ -129,7 +129,7 @@ e^{
          + U(x)
        \right]
        e^{
-   {i\over \hbar}\S_\hbar (x,E)
+   {i\over \hbar}\Sigma_\hbar (x,E)
        }=
              $$
              $$
@@ -138,14 +138,14 @@ e^{
     {1\over 2m}\Delta S_\hbar+{1\over 2m}
     \left({\rm grad} S_\hbar \right)^2+U(x)
             \right]
-      e^{{i\over \hbar}\S_\hbar (x,t)}\,,
+      e^{{i\over \hbar}\Sigma_\hbar (x,t)}\,,
           \qquad
             \left[
       {\hbar\over i}
-    {1\over 2m}\Delta \S_\hbar+{1\over 2m}
-    \left({\rm grad} \S_\hbar \right)^2+U(x)
+    {1\over 2m}\Delta \Sigma_\hbar+{1\over 2m}
+    \left({\rm grad} \Sigma_\hbar \right)^2+U(x)
             \right]
-      e^{{i\over \hbar}\S_\hbar (x,E)}\,,
+      e^{{i\over \hbar}\Sigma_\hbar (x,E)}\,,
         $$
 i.e.
            $$
@@ -153,34 +153,34 @@ i.e.
                {
      {\hbar\over i}{1\over 2m}\Delta S_\hbar(x,t)&
             +{1\over 2m}
-    \left({\rm grad} \S_\hbar \left(x,t\right)\right)^2\,,
+    \left({\rm grad} \Sigma_\hbar \left(x,t\right)\right)^2\,,
       \quad
-     {\hbar\over i}{1\over 2m}\Delta \S_\hbar(x,E)&
+     {\hbar\over i}{1\over 2m}\Delta \Sigma_\hbar(x,E)&
              +{1\over 2m}
-    \left({\rm grad} \S_\hbar \left(x,E\right)\right)^2\cr
-          &+U=-{\p S\over \p t}  \quad +U=E\S\cr
+    \left({\rm grad} \Sigma_\hbar \left(x,E\right)\right)^2\cr
+          &+U=-{\p S\over \p t}  \quad +U=E\Sigma\cr
             }
            $$
 We have
         $$
- \Delta \S_\hbar=\Delta S(x,E)+{\hbar\over i} 
+ \Delta \Sigma_\hbar=\Delta S(x,E)+{\hbar\over i} 
         s(x,E)+\dots\,,
         $$
       $$
-      \left({\rm grad} \S_\hbar {x,E}\right)^2=
-      \left({\rm grad} \S \right)^2
+      \left({\rm grad} \Sigma_\hbar {x,E}\right)^2=
+      \left({\rm grad} \Sigma \right)^2
     +2\left({\hbar \over i}\right)
-      {\rm grad} \S\cdot
+      {\rm grad} \Sigma\cdot
       {\rm grad}  s
    +\dots
         $$
 The  zeroth approximmation is
          $$
           {1\over 2m}
-    \left({\rm grad} \S \left(x,t\right)\right)^2+U(x)+S_t=0\,,
+    \left({\rm grad} \Sigma \left(x,t\right)\right)^2+U(x)+S_t=0\,,
          \quad
           {1\over 2m}
-    \left({\rm grad} \S \left(x,E\right)\right)^2+U(x)=E\,,
+    \left({\rm grad} \Sigma \left(x,E\right)\right)^2+U(x)=E\,,
          $$
 this is nothing but Hamilton-Jacobi equation 
       $$
@@ -197,8 +197,8 @@ is simpler than $t$-representation.
 <br>
 In the first approximation  in  $E$ we have
      $$
-     {1\over 2}\Delta \S(x,E)+
-          {\rm grad} \S \left(x,E\right)
+     {1\over 2}\Delta \Sigma(x,E)+
+          {\rm grad} \Sigma \left(x,E\right)
           {\rm grad}  s\left(x,E\right)
         =0\,,
        $$
@@ -207,7 +207,7 @@ this is the equation on the semidensity, it can be rewritten
 {\cal L}_{\bf V}\left( s\sqrt {Dx}\right)=
       V^i{\p s\over \ p x^i}+{1\over 2}{\p V^i\over \p x^i}
           \sqrt {Dx}\qquad
-   \hbox {for }\,\, {\bf V}={\rm grad} \S\,.
+   \hbox {for }\,\, {\bf V}={\rm grad} \Sigma\,.
       $$
 <br>
 In time representation it will be
@@ -218,12 +218,12 @@ than in time representation.
 I can easy to solve this equation at least in one-dimensiona case:
       Then
      $$
-{1\over 2m}\S_x^2+U\S=ES\Rightarrow
-\S(x,E)=\int_{x_0}^x p(y)dy\,,\quad p(y)=\sqrt{2mE-U(x)}\,,
+{1\over 2m}\Sigma_x^2+U\Sigma=ES\Rightarrow
+\Sigma(x,E)=\int_{x_0}^x p(y)dy\,,\quad p(y)=\sqrt{2mE-U(x)}\,,
     $$     
 and
  $$
-{1\over 2}\S_{xx}+s_x^2=0, i.e.  s(x)\sim {1\sqrt p(x)}
+{1\over 2}\Sigma_{xx}+s_x^2=0, i.e.  s(x)\sim {1\sqrt p(x)}
       $$
 <br>
 In general case it is usefule to express done the solution
