@@ -171,9 +171,8 @@ function getPageId()
   return 0;
 }
 
-function getMinMaxPageIds()
+function getMinMaxPageIds(pageId)
 {
-  var pageId = getPageId();
   const numArticlesPerPage = 5;
   var minArticleNumber = pageId * numArticlesPerPage;
   var maxArticleNumber = (pageId + 1) * numArticlesPerPage - 1;
@@ -181,10 +180,41 @@ function getMinMaxPageIds()
   return [minArticleNumber, maxArticleNumber];
 }
 
+function isPageIdValid(pageId)
+{
+  [min, max] = getMinMaxPageIds(pageId);
+  return (pageId >= 0) && (min <= max);
+}
+
+function generateNavigatinLink(pageId, caption)
+{
+  return `<a href="index.html?page=` + pageId + `">` + 
+  caption + `</a>`
+}
+function generateNavigationLinks()
+{
+  var currentPageId = getPageId();
+  var prevPageId = currentPageId - 1;
+  var nextPageId = currentPageId + 1;
+  result = "";
+  if (isPageIdValid(prevPageId))
+  {
+    result += generateNavigatinLink(prevPageId, "Prev ");
+  }
+  if (isPageIdValid(nextPageId))
+  {
+    result += generateNavigatinLink(nextPageId, "Next");
+  }
+  return result;
+}
+
+
 function generateWrappers()
 {
   var htmlCode = "";
-  [minArticleNumber, maxArticleNumber] = getMinMaxPageIds();
+  var pageId = getPageId();
+  [minArticleNumber, maxArticleNumber] = getMinMaxPageIds(pageId);
+  htmlCode += generateNavigationLinks()
   for (var i = minArticleNumber; i <= maxArticleNumber; i++)
   {
     htmlCode += generateWrapper(i);
@@ -214,7 +244,8 @@ function loadArticle(i, link)
 function generateArticles()
 {
   generateWrappers();
-  [minArticleNumber, maxArticleNumber] = getMinMaxPageIds();
+  var pageId = getPageId();
+  [minArticleNumber, maxArticleNumber] = getMinMaxPageIds(pageId);
   
   for (var i = minArticleNumber; i <= maxArticleNumber; i++)
   {
