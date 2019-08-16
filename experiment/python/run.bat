@@ -1,2 +1,2 @@
-removeBye.py
+generatePageHtmls.py
 pause
