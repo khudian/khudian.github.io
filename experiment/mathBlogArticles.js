@@ -190,6 +190,10 @@ function loadArticle(i, link)
   {
     var titleObject = $(idRef).find("h2");
     var titleHTML = titleObject.html();
+    if (titleHTML == "")
+    {
+      titleHTML = "No title"
+    }
     titleHTML = `<a href="`+ link +`">` + titleHTML + `</a>`;
     titleObject.html(titleHTML);
     MathJax.Hub.Queue(["Typeset",MathJax.Hub]); //update MathJax
