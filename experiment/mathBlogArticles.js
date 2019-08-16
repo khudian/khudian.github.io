@@ -157,7 +157,18 @@ function generateWrapper(id)
 
 function getPageId()
 {
-  return parseInt($("#articles").attr('pageId'));
+  var url = window.location.toString();
+  var urlSplitted = url.split('=');
+  if (urlSplitted.length > 1)
+  {
+    var pageId = parseInt(urlSplitted[1]);
+    if (!isNaN(pageId))
+    {
+     return pageId;
+    }
+  }
+  
+  return 0;
 }
 
 function getMinMaxPageIds()
@@ -204,11 +215,10 @@ function generateArticles()
 {
   generateWrappers();
   [minArticleNumber, maxArticleNumber] = getMinMaxPageIds();
-  var adjustLink = getPageId() > 0 ? "../" : "";
   
   for (var i = minArticleNumber; i <= maxArticleNumber; i++)
   {
-    loadArticle(i, adjustLink + links[i]);
+    loadArticle(i, links[i]);
   }
 
   
