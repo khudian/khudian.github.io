@@ -155,32 +155,42 @@ function generateWrapper(id)
    return result;
 }
 
-
-function generateWrappers()
+function getPageId()
 {
-  var htmlCode = "";
-  var pageId = parseInt($("#articles").attr('pageId'));
+  return parseInt($("#articles").attr('pageId'));
+}
+
+function getMinMaxPageIds()
+{
+  var pageId = getPageId();
   const numArticlesPerPage = 5;
   var minArticleNumber = pageId * numArticlesPerPage;
   var maxArticleNumber = (pageId + 1) * numArticlesPerPage - 1;
   maxArticleNumber = Math.min(maxArticleNumber, links.length - 1);
- for (var i = minArticleNumber; i <= maxArticleNumber; i++)
- {
-   htmlCode += generateWrapper(i);
- }
+  return [minArticleNumber, maxArticleNumber];
+}
+
+function generateWrappers()
+{
+  var htmlCode = "";
+  [minArticleNumber, maxArticleNumber] = getMinMaxPageIds();
+  for (var i = minArticleNumber; i <= maxArticleNumber; i++)
+  {
+    htmlCode += generateWrapper(i);
+  }
   
   $("#articles").html(htmlCode);
 }
 
-function loadArticle(i)
+function loadArticle(i, link)
 {
   var idRef = "#"+i.toString();
-  $(idRef).load(links[i] + " div.article", 
+  $(idRef).load(link + " div.article", 
   function() 
   {
     var titleObject = $(idRef).find("h2");
     var titleHTML = titleObject.html();
-    titleHTML = `<a href="`+ links[i] +`">` + titleHTML + `</a>`;
+    titleHTML = `<a href="`+ link +`">` + titleHTML + `</a>`;
     titleObject.html(titleHTML);
     MathJax.Hub.Queue(["Typeset",MathJax.Hub]); //update MathJax
   });
@@ -189,9 +199,12 @@ function loadArticle(i)
 function generateArticles()
 {
   generateWrappers();
-  for (var i in links)
+  [minArticleNumber, maxArticleNumber] = getMinMaxPageIds();
+  var adjustLink = getPageId() > 0 ? "../" : "";
+  
+  for (var i = minArticleNumber; i <= maxArticleNumber; i++)
   {
-    loadArticle(i);
+    loadArticle(i, adjustLink + links[i]);
   }
 
   
