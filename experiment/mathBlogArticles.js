@@ -189,7 +189,7 @@ function isPageIdValid(pageId)
 function generateNavigatinLink(pageId, caption)
 {
   return `<a href="index.html?page=` + pageId + `">` + 
-  caption + `</a>`
+  caption + `</a> `;
 }
 function generateNavigationLinks()
 {
@@ -199,7 +199,7 @@ function generateNavigationLinks()
   result = "";
   if (isPageIdValid(prevPageId))
   {
-    result += generateNavigatinLink(prevPageId, "Prev ");
+    result += generateNavigatinLink(prevPageId, "Prev");
   }
   if (isPageIdValid(nextPageId))
   {
