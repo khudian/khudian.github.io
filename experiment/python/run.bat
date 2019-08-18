@@ -1,2 +1,2 @@
-generatePageHtmls.py
+replaceItToHtml.py
 pause
