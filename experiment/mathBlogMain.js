@@ -14,6 +14,7 @@ function configureMathJax()
       v: "{\\bf v}",
       f: "{\\bf f}",
       g: "{\\bf g}",
+      C: "{\\bf C}",
       vare: "\\varepsilon",
       grad: "{\\rm grad\\,}",
       w: "\\omega",
