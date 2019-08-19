@@ -7,9 +7,13 @@ function configureMathJax()
     {
       p: "\\partial",
       t: "\\tilde",
+      a: "\\alpha",
       x: "{\\bf x}",
       X: "{\\bf X}",
       y: "{\\bf y}",
+      v: "{\\bf v}",
+      f: "{\\bf f}",
+      g: "{\\bf g}",
       vare: "\\varepsilon",
       grad: "{\\rm grad\\,}",
       w: "\\omega",
