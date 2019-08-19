@@ -187,7 +187,7 @@ function isPageIdValid(pageId)
 
 function generateNavigatinLink(pageId, caption)
 {
-  return `<a href="index.html?page=` + pageId + `">` + 
+  return `<a style="font-size:20px; color: black;" href="index.html?page=` + pageId + `">` + 
   caption + `</a> `;
 }
 function generateNavigationLinks()
@@ -200,10 +200,12 @@ function generateNavigationLinks()
   {
     result += generateNavigatinLink(prevPageId, "Prev");
   }
+  result += `&nbsp&nbsp`;
   if (isPageIdValid(nextPageId))
   {
     result += generateNavigatinLink(nextPageId, "Next");
   }
+  result += `<br><br>`
   return result;
 }
 
@@ -218,6 +220,7 @@ function generateWrappers()
   {
     htmlCode += generateWrapper(i);
   }
+  htmlCode += generateNavigationLinks()
   
   $("#articles").html(htmlCode);
 }
