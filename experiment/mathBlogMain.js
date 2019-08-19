@@ -11,6 +11,7 @@ function configureMathJax()
       E: "{\\bf E}",
       FF: "{\\cal F}",
       G: "\\Gamma",
+      K: "{\\bf K}",
       L: "{\\cal L}",
       R: "{\\bf R}",
       SS: "{\\cal S}",
