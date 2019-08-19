@@ -9,6 +9,7 @@ function configureMathJax()
       C: "{\\bf C}",
       Cl: "{\\tt \\hbox{Cliff}}",
       E: "{\\bf E}",
+      L: "{\\cal L}",
       X: "{\\bf X}",
 
       a: "\\alpha",
@@ -17,8 +18,10 @@ function configureMathJax()
       g: "{\\bf g}",
       grad: "{\\rm grad\\,}",
       p: "\\partial",
+      pt: "{\\bf pt}",
       t: "\\tilde",
       tS: "{\\tilde \\Sigma}",
+      s: "\\sigma",
       v: "{\\bf v}",
       vare: "\\varepsilon",
       x: "{\\bf x}",
