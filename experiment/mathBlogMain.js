@@ -5,24 +5,25 @@ function configureMathJax()
   {
     Macros: 
     {
-      p: "\\partial",
-      t: "\\tilde",
-      a: "\\alpha",
-      x: "{\\bf x}",
-      X: "{\\bf X}",
-      y: "{\\bf y}",
-      v: "{\\bf v}",
-      f: "{\\bf f}",
-      g: "{\\bf g}",
-      C: "{\\bf C}",
-      vare: "\\varepsilon",
-      grad: "{\\rm grad\\,}",
-      w: "\\omega",
       A: "{\\bf A}",
+      C: "{\\bf C}",
       Cl: "{\\tt \\hbox{Cliff}}",
       E: "{\\bf E}",
+      X: "{\\bf X}",
+
+      a: "\\alpha",
       e: "{\\bf e}",
-      tS: "{\\tilde \\Sigma}"
+      f: "{\\bf f}",
+      g: "{\\bf g}",
+      grad: "{\\rm grad\\,}",
+      p: "\\partial",
+      t: "\\tilde",
+      tS: "{\\tilde \\Sigma}",
+      v: "{\\bf v}",
+      vare: "\\varepsilon",
+      x: "{\\bf x}",
+      y: "{\\bf y}",
+      w: "\\omega"
     }    
   },
   tex2jax: 
