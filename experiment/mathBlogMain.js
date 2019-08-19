@@ -14,7 +14,9 @@ function configureMathJax()
       grad: "{\\rm grad\\,}",
       w: "\\omega",
       A: "{\\bf A}",
-      E: "{\\bf E}"
+      Cl: "{\\tt \\hbox{Cliff}}",
+      E: "{\\bf E}",
+      e: "{\\bf e}"
     }    
   },
   tex2jax: 
