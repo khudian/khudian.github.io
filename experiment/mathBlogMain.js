@@ -9,8 +9,12 @@ function configureMathJax()
       C: "{\\bf C}",
       Cl: "{\\tt \\hbox{Cliff}}",
       E: "{\\bf E}",
+      FF: "{\\cal F}",
       L: "{\\cal L}",
+      R: "{\\bf R}",
+      SS: "{\\cal S}",
       X: "{\\bf X}",
+      XX: "{\\cal X}",
 
       a: "\\alpha",
       e: "{\\bf e}",

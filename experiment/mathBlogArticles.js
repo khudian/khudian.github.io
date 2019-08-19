@@ -24,7 +24,6 @@ var links =
   ["2019/March19/12fermat/index.html"],
   ["2019/March19/10field/index.html"],
   ["2019/March19/07music/index.html"],
-  ["2019/February19/test1/index.html"],
   ["2019/February19/27legendretransfdifeq/index.html"],
   ["2019/February19/19action/index.html"],
   ["2019/February19/18hamiltjacobi/index.html"],
