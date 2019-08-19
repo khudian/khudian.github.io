@@ -9,6 +9,7 @@ function configureMathJax()
       t: "\\tilde",
       x: "{\\bf x}",
       X: "{\\bf X}",
+      y: "{\\bf y}",
       vare: "\\varepsilon",
       grad: "{\\rm grad\\,}",
       w: "\\omega",
