@@ -13,7 +13,8 @@ function configureMathJax()
       vare: "\\varepsilon",
       grad: "{\\rm grad\\,}",
       w: "\\omega",
-      A: "{\\bf A}"
+      A: "{\\bf A}",
+      E: "{\\bf E}"
     }    
   },
   tex2jax: 
