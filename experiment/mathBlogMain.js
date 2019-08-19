@@ -16,7 +16,8 @@ function configureMathJax()
       A: "{\\bf A}",
       Cl: "{\\tt \\hbox{Cliff}}",
       E: "{\\bf E}",
-      e: "{\\bf e}"
+      e: "{\\bf e}",
+      tS: "{\\tilde \\Sigma}"
     }    
   },
   tex2jax: 
