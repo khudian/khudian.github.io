@@ -87,8 +87,6 @@ var links =
   ["2018/July18/lobandeuclid1/index.html"],
   ["2018/July18/haar1/index.html"],
   ["2018/July18/fractmos3/index.html"],
-  ["2018/July18/fractmos2/index.html"],
-  ["2018/July18/fractmos1/index.html"],
   ["2018/July18/decompos1/index.html"],
   ["2018/July18/cont_frac1/index.html"],
   ["2018/July18/axioms_equat1/index.html"],
