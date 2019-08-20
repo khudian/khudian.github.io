@@ -74,8 +74,6 @@ var links =
   ["2018/October18/boundary1/index.html"],
   ["2018/October18/actionforparticleinhomfield1/index.html"],
   ["2018/September18/grassmetric3/index.html"],
-  ["2018/September18/grassmetric2/index.html"],
-  ["2018/September18/grassmetric1/index.html"],
   ["2018/September18/cbs_compl1/index.html"],
   ["2018/August18/rank1/index.html"],
   ["2018/August18/noethproj1/index.html"],
