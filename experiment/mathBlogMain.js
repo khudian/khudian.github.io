@@ -16,6 +16,7 @@ function configureMathJax()
       R: "{\\bf R}",
       SS: "{\\cal S}",
       Tr: "{\\rm Tr\\,}",
+      V: "{\\cal V}",
       X: "{\\bf X}",
       XX: "{\\cal X}",
       Y: "{\\bf Y}",
