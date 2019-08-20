@@ -96,7 +96,6 @@ var links =
   ["2018/June18/orthmatrix/index.html"],
   ["2018/June18/matricevol1/index.html"],
   ["2018/June18/lobdistance2/index.html"],
-  ["2018/June18/lobdistance1/index.html"],
   ["2018/June18/lobach1/index.html"],
   ["2018/June18/horocycle1/index.html"],
   ["2018/April18/odeber2/index.html"],
