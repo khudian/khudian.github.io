@@ -133,7 +133,7 @@ var links =
   ["2017/August17/050817/index.html"],
   ["2017/August17/040817/index.html"],
   ["2017/August17/030817/index.html"],
-  //["2017/August17/020817/index.html"], pdf is not generated, and tex file is not compiling
+  ["2017/August17/020817/index.html"], 
   ["2017/August17/010817/index.html"],
   ["2017/July17/310717/index.html"],
   ["2017/July17/300717/index.html"]
