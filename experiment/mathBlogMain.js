@@ -33,7 +33,7 @@ function configureMathJax()
       finish: "\\blacksquare",
       g: "{\\bf g}",
       grad: "{\\rm grad\\,}",
-      l: "\\lambda",
+      l: "{\\bf l}",
       m: "{\\bf m}",
       n: "{\\bf n}",
       p: "\\partial",
