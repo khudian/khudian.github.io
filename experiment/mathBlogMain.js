@@ -37,6 +37,7 @@ function configureMathJax()
       m: "{\\bf m}",
       n: "{\\bf n}",
       p: "\\partial",
+      pb: "{\\bf p}",
       q: "{\\bf q}",
       pt: "{\\bf pt}",
       t: "\\tilde",
