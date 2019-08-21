@@ -41,6 +41,7 @@ function configureMathJax()
       pb: "{\\bf p}",
       pt: "{\\bf pt}",
       q: "{\\bf q}",
+      r: "{\\bf r}",
       s: "\\sigma",
       t: "{\\bf t}",
       tS: "{\\tilde \\Sigma}",
