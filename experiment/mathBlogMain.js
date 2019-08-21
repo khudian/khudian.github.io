@@ -23,6 +23,7 @@ function configureMathJax()
       X: "{\\bf X}",
       XX: "{\\cal X}",
       Y: "{\\bf Y}",
+      Z: "{\\bf Z}",
 
       a: "\\alpha",
       ac: "{\\bf a}",
