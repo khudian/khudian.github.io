@@ -43,10 +43,10 @@ def searchKey(text, key):
 
 rootDir = "../"
 #rootDir = "sandbox"
-key = r"\\def\ *\\E.*bf"
-keyConflict = r"\\def\ *\\E.*cal"
-beforeConflict = r"\E"
-afterConflict = r"\EE"
+key = r"\\def\ *\\G.*Gamma"
+keyConflict = r"\\def\ *\\G.*cal"
+beforeConflict = r"\G"
+afterConflict = r"\GG"
 
 def isWordCharacter(char):
   return (
@@ -81,7 +81,10 @@ def updateIndexFileIfNecessary(texFile, indexFile):
   foundKeyConflict = searchKey(texString, keyConflict)
   
   if foundKey[0] and foundKeyConflict[0]:
-    raise Exception("Two conflict defs found")
+    print("!!!!!CONFLICT!!!!")
+    if foundKey[1].span()[0] > foundKeyConflict[1].span()[0]:
+      return
+    #raise Exception("Two conflict defs found " + texFile)
   
   if foundKeyConflict[0]:
     print(foundKeyConflict[1])
