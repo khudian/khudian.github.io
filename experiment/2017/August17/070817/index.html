@@ -20,58 +20,8 @@
   <div class="mainText">
     <div class="article">
       <h2 class="title" date=""></h2>
-<br>
-\magnification=1200 
-<br>
-\baselineskip=14pt
-\def\vare {\varepsilon}
-\def\A {{\bf A}}
-\def\t {\tilde}
-\def\a {\alpha}
-\def\K {{\bf K}}
-\def\N {{\bf N}}
-\def\w {\omega}
-\def\s {{\sigma}}
-\def\S {{\Sigma}}
-\def\s {{\sigma}}
-\def\p{\partial}
-\def\vare{{\varepsilon}}
-\def\Q {{\bf Q}}
-\def\D {{\cal D}}
-\def\G {{\Gamma}}
-\def\C {{\bf C}}
-\def\L {{\cal L}}
-\def\Z {{\bf Z}}
-\def\U  {{\cal U}}
-\def\H {{\bf H}}
-\def\R  {{\bf R}}
-\def\S  {{\bf S}}
-\def\E  {{\bf E}}
-\def\l {\lambda}
-\def\degree {{\bf {\rm degree}\,\,}}
-\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
-\def \m {\medskip}
-\def\p {\partial}
-\def\r {{\bf r}}
-\def\pt {{\bf pt}}
-\def\v {{\bf v}}
-\def\n {{\bf n}}
-\def\t {{\bf t}}
-\def\b {{\bf b}}
-\def\c {{\bf c }}
-\def\e{{\bf e}}
-\def\ac {{\bf a}}
-\def \X   {{\bf X}}
-\def \Y   {{\bf Y}}
-\def \x   {{\bf x}}
-\def \y   {{\bf y}}
-\def \G{{\cal G}}
-\def\ss  {\sigma_{\rm sph}}
-\def\grad {{\rm grad\,}}
-% I began this file on 31 July 2017
-<br>
-\centerline {\bf Calculation for Green 
-function of disc and half-plane.}
+
+<h3> Calculation for Green function of disc and half-plane.</h3>
 <br>
 Recall that if $G_U(z_0,z)$ is Green function
 of domain $U$ then 
@@ -84,7 +34,7 @@ the identity
 implies that
          the function
       $$
-u(\zeta)=\G_U(\zeta,z)f(z)\Omega+
+u(\zeta)=\GG_U(\zeta,z)f(z)\Omega+
 \int_{\p U} *d_{(z)}G(\zeta,z)\mu\,,\quad
    (\Omega \hbox{is area form on $z$-plane})
  \tag{0.2}
@@ -97,9 +47,8 @@ is the solution of boundary problem
    \tag{0.3}
        $$
 <br>
-\m
 <br>
-   \centerline {\bf Green function for disc}
+   <h3> Green function for disc</h3>
 <br>
      Having a map
          $$
@@ -150,7 +99,7 @@ rdr\wedge d\varphi{\rfloor}
 {1-R^2\over 1-2R\cos(\theta-\varphi)+R^2}d\varphi
             $$
 <br>
-{\bf Remark} (Peut etre un problem de sign?)
+<b> Remark</b> (Peut etre un problem de sign?)
 <br>
 This we have the solution of Dirichle problme for the circle:
 if $W$ harmonic function in the disc $D\colon\,x^2+y^2<1$
@@ -185,7 +134,7 @@ W(R,\theta)=\cases{z^n=R^n e^{in\varphi}\,\hbox{for $R<1$}\cr
           $$
  then we come to harmonic polynomials.....
 <br>
-{\bf Remark} {\it In the formula (*) there is a jump,
+<b> Remark</b> <i> In the formula (*) there is a jump,
 so to be more precise we have to write:
 <br>
          $$
@@ -201,9 +150,9 @@ W(1,\theta)=\lim_{R\to 1_-}{1\over 2\pi}
 {1-R^2\over (1-Re^{ i(\theta-\varphi)})
             (1-Re^{-i(\theta-\varphi)})}d\varphi\,.
          $$
-}
+</i>
 <br>
-{\bf Remark 2} {\it All this can be done much more easilly 
+<b> Remark 2</b> <i> All this can be done much more easilly 
 using Fourier transform :
 Indeed if $\mu(\varphi=e^{ik\theta})$
 then $W=r^ke^{ik\varphi}$, hence 
@@ -225,9 +174,8 @@ W(R,\theta)=\sum\mu_k R^k e^{ik\theta}=
 \right)
       d\varphi
       $$
-}
+</i>
 <br>
-\m
 <br>
 Sure we can solve Dirichle problem
 just using angle function.
@@ -336,7 +284,7 @@ Hence   $$
          $$
 Thus we come to the solutioj of Dirichle problem.
 <br>
-{\bf Remark} {\it Sure using angle function we can reconstruct
+<b> Remark</b> <i> Sure using angle function we can reconstruct
 not only $*dG$ but the Green fucntion also.
 We take the ordinary Green function, $G_\infty(z_0,z)$
 and using Dirichle problem solution we will find harmonic
@@ -344,11 +292,11 @@ function $W$ such that $G_\infty+W$ becomes the Green function:
   this harmonic function is the soluton of
 Dirichle problem $W\big\vert_{boundary}=-
 G_\infty\big\vert_{boundary}$
-}
+</i>
 <br>
-\bigskip
+ <br>
 <br>
-\centerline{Upper-half plane: Green function, Dirichle problem}
+<h3>Upper-half plane: Green function, Dirichle problem</h3>
 G
 We know that $w={iz+1\over z+i}$ maps $\H\leftrightarrow D$
   (in fact this is not arbitrary: see the blog on 10-th August)
@@ -367,7 +315,7 @@ Hence Green function for half-plane is
   G(z_0,z)=\log|w(z_0,z)|
    \tag{3.1}
         $$
-{\bf Remark} {this is very stupid way to calculate
+<b> Remark</b> {this is very stupid way to calculate
 Green function. Much easier another way: see the blog on 10 August!}
 <br>
  It seems that here it is much easier way to 
@@ -412,7 +360,7 @@ to solve the integral equation. The function
 \tag{2.2} 
           $$  
 <br>
-{\bf Remark} {\it One can see straightforwardly that
+<b> Remark</b> <i> One can see straightforwardly that
 the function
            $$
  F(X)=\lim_{Y\to 0}{Ydt\over (t-X)^2+Y^2}=\pi\delta(t-x)\,.
@@ -421,7 +369,7 @@ Indeed   $F(X)=0$ for all  $X\not=t$ and $\int F(X)dX=\pi$
 <br>
   This implies the boundary condition
 <br>
-}
+</i>
 <br>
 Calculate Green function using solution of Dirichle problem:
   Let

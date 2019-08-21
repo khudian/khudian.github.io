@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,101 +20,57 @@
   <div class="mainText">
     <div class="article">
       <h2 class="title" date=""></h2>
-<br>
-\magnification=1200
-\baselineskip=14pt
-\def\vare {\varepsilon}
-\def\t {\tilde}
-\def\a {\alpha}
-\def\K {{\bf K}}
-\def\N {{\bf N}}
-\def\C {{\cal C}}
-\def\L {{\cal L}}
-\def\E {{\cal E}}
-\def\s {{\sigma}}
-\def\S {{\Sigma}}
-\def\p{\partial}
-\def\vare{{\varepsilon}}
-\def\Q {{\bf Q}}
-\def\D {{\cal D}}
-\def\G {{\Gamma}}
-\def\Z {{\bf Z}}
-\def\R  {{\bf R}}
-\def\l {\lambda}
-\def\ll {{\bf l}}
-\def\degree {{\bf {\rm degree}\,\,}}
-\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
-\def \m {\medskip}
-\def\p {\partial}
-\def\r {{\bf r}}
-\def\pt {{\bf p}}
-\def\v {{\bf v}}
-\def\n {{\bf n}}
-\def\t {{\bf t}}
-\def\b {{\bf b}}
-\def\c {{\bf c }}
-\def\e{{\bf e}}
-\def\ac {{\bf a}}
-\def \X   {{\bf X}}
-\def \Y   {{\bf Y}}
-\def \x   {{\bf x}}
-\def \y   {{\bf y}}
-\def\w {{\omega}}
-\def \Tr  {{\rm Tr\,}}
-\def\dim {{\rm dim\,\,}}
-% I wrote this file on 1-st January  2019
-\def\t {{\tilde}} 
-<br>
-   \centerline{\bf Geometry of diff.equations and Monge cone}
-\m
+
+   <h3> Geometry of diff.equations and Monge cone</h3>
+
 <br>
 Consider $2n+1$-dimension space $J^1(M)$  of first jets of
 $n$-dimensional manifold $M$.
 Let  
     $$
-\E\colon\quad F(u,p_i,q^j)=0
+\EE\colon\quad F(u,p_i,q^j)=0
     $$
 be hypersurface in $J^1(M)$, the differential equation.
 <br>
-Suppose that points of $\E$ are regular.
+Suppose that points of $\EE$ are regular.
 <br>
-\m
+
 <br>
-{\bf DEFINITION}
-   A point $\pt\in\E$ is called {\it non- characteristic}
-if tangent hyperplane $T_\pt M$ and
- the {\it contact hyperplane} $\C_\pt$  
+<b> DEFINITION</b>
+   A point $\pb\in\EE$ is called <i> non- characteristic</i>
+if tangent hyperplane $T_\pb M$ and
+ the <i> contact hyperplane</i> $\CC_\pb$  
 (contact hyperplane consists of vectors
 which are vanished by 
 the contact $1$-form $\w=p_idq^i-du$)
 are transversal to each other, i.e. tangent vectors
-to $\E$ at the point $\pt$ and vectors in contact plane
+to $\EE$ at the point $\pb$ and vectors in contact plane
 span all the tangent space:
             $$
-     T_\pt \E\oplus \C_\pt=T_\pt (J^1(M))
+     T_\pb \EE\oplus \CC_\pb=T_\pb (J^1(M))
             \Leftrightarrow
-\dim \C_\pt\cap T_\pt\E=2n-1\,.
+\dim \CC_\pb\cap T_\pb\EE=2n-1\,.
         $$
 and  this is  is equivalent to the condition
 that contact form $\w$ and the form $dF$ are not collinear
-at the point $\pt$ \footnote{$^*$}{One can easy to check this choosing
+at the point $\pb$ \footnote{$^*$}{One can easy to check this choosing
 covectors $\w$ and $dF$ as elemnets of basis.}.
 <br>
-\m
+
 <br>
-{\bf DEFINITION}
+<b> DEFINITION</b>
 The intersection of contact and  tangent planes is
-called {\it characteristic plane.} 
+called <i> characteristic plane.</i> 
 <br>
-\m
+
 <br>
-We denote  characteristic plane by $\C(\E)_\pt$
+We denote  characteristic plane by $\CC(\EE)_\pb$
 <br>
 The form $dp_1\wedge dq^1+\dots+dp_n\wedge dq^n$  
-is non-degenerate on contact hyperplane $\C_\pt$, and
-on $2n-1$-dimensional plane $\Pi_\pt\subset \C_\pt$.
+is non-degenerate on contact hyperplane $\CC_\pb$, and
+on $2n-1$-dimensional plane $\Pi_\pb\subset \CC_\pb$.
 It  defines the  characteristic direction, the direction that
-is symplectoorthogonal  to all the vectors of the plane $\Pi_\pt$.
+is symplectoorthogonal  to all the vectors of the plane $\Pi_\pb$.
 <br>
      One can see that this direction can be defined by the
 infinitesimal contact symmetry:
@@ -131,37 +87,37 @@ p_i{\p F\over \p p_i}{\p\over \p u}
 F{\p\over \p u}
       $$
 <br>
-The contact distribution $\C$,  (the distribution of contact planes)
+The contact distribution $\CC$,  (the distribution of contact planes)
 defines 
 <br>
 Now return to differential equation defined
-by non-charateristic hypersurface $\E$.
+by non-charateristic hypersurface $\EE$.
 <br>
 Solution of this equation is maximal integral manifold
-of distribution $\C(\E)$
+of distribution $\CC(\EE)$
 <br>
 Let $N$ be $n$-dimensional manifold s graph of function
    $u=\varphi(x)$ such that it is  
-the solution of differential equation defined by the surface $\E$,
-i.e. $N\subset \E$ ,and for every point $\pt\in N$, 
-tangent space $T_\pt N$ belongs
-to the characteristic plane $\C(\E)_\pt$: all pints of $N$
-belongs to $\E$ and all tangent vectors
-of  $N$  belong to the $T\E$ and to contact plane\footnote
+the solution of differential equation defined by the surface $\EE$,
+i.e. $N\subset \EE$ ,and for every point $\pb\in N$, 
+tangent space $T_\pb N$ belongs
+to the characteristic plane $\CC(\EE)_\pb$: all pints of $N$
+belongs to $\EE$ and all tangent vectors
+of  $N$  belong to the $T\EE$ and to contact plane\footnote
 {$^{**}$}{Belonging to contact distribution is auto  
-matical since every vector tangent to {\tt manifold}
+matical since every vector tangent to <tt> manifold</tt>
 belongs to contact plane}.
 Of course one may consider also generalised solutions......
 <br>
-{\tt Boundary condition}: Take the $n-1$-dimensional surface,and
-$\G$ on $\E$.  Emit from the points of this surface the 
+<tt> Boundary condition</tt>: Take the $n-1$-dimensional surface,and
+$\G$ on $\EE$.  Emit from the points of this surface the 
 $n-1$-parametric family of curves which go in characteristic direction. 
 We come locally in the vicinity of the surface $\G$ to $n$-dimensional
 surface, it will be solution.
 <br>
 See the example in the file 5examples.tex
 <br>
-\m
+
 <br>
 </div>
   </div>

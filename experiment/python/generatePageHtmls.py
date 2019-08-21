@@ -1,4 +1,10 @@
-<!DOCTYPE html>
+import io
+import shutil
+import os
+import codecs
+    
+def getPageContent(i):
+  strBegin = """<!DOCTYPE html>
 <html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,11 +24,39 @@
 <body>
   <div id="menu"></div>
   <div class="mainText">
-    <div id="articles" pageId="1">
+    <div id="articles" pageId=\""""
+  
+  strEnd ="""\">
     </div>       
   </div>
 
  </body>
 
-</html>
- 
+</html>"""
+  return strBegin + str(i) + strEnd
+  
+def updateFileContent(file, text):
+  #print("file: " + file)
+  #print("text: " + text)
+  with open(file, 'w', encoding='utf8') as f:
+    f.write(text)
+
+  
+
+
+rootDir = "../pages"
+for i in range(50, 101):
+  print(i)
+  updateFileContent(rootDir + "/page"+str(i)+".html", getPageContent(i))
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

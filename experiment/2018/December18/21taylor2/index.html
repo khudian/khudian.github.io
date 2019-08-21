@@ -20,70 +20,15 @@
   <div class="mainText">
     <div class="article">
       <h2 class="title" date=""></h2>
+
+<tt> 22 December 2018</tt>
+ 
 <br>
-\magnification=1200
-\baselineskip=14pt
-\def\vare {\varepsilon}
-\def\A {{\bf A}}
-\def\t {\tilde}
-\def\a {\alpha}
-\def\K {{\bf K}}
-\def\N {{\bf N}}
-\def\V {{\cal V}}
-\def\s {{\sigma}}
-\def\S {{\Sigma}}
-\def\s {{\sigma}}
-\def\p{\partial}
-\def\vare{{\varepsilon}}
-\def\Q {{\bf Q}}
-\def\D {{\cal D}}
-\def\G {{\Gamma}}
-\def\C {{\bf C}}
-\def\M {{\cal M}}
-\def\Z {{\bf Z}}
-\def\U  {{\cal U}}
-\def\H {{\cal H}}
-\def\R  {{\bf R}}
-\def\S  {{\bf S}}
-\def\E  {{\bf E}}
-\def\l {\lambda}
-\def\ll {{\bf l}}
-\def\degree {{\bf {\rm degree}\,\,}}
-\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
-\def \m {\medskip}
-\def\p {\partial}
-\def\r {{\bf r}}
-\def\pt {{\bf p}}
-\def\v {{\bf v}}
-\def\n {{\bf n}}
-\def\t {{\bf t}}
-\def\b {{\bf b}}
-\def\c {{\bf c }}
-\def\e{{\bf e}}
-\def\ac {{\bf a}}
-\def \X   {{\bf X}}
-\def \Y   {{\bf Y}}
-\def \x   {{\bf x}}
-\def \y   {{\bf y}}
-\def \G{{\cal G}}
-\def\w {{\omega}}
-\def \Tr  {{\rm Tr\,}}
-\def\V {{\cal V}}
-\def\s {{d\over dt}}
-\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+<h3> Taylor identity</h3>
 <br>
-% I began this file in 22 December  2018
+<tt> I know this identity "hundred  years". Karabegov's proof makes me to realise that this is really effective.</tt>
 <br>
-{\tt 22 December 2018}
-\medskip
-<br>
-\centerline {\bf Taylor identity}
-<br>
-{\tt I know this identity "hundred  years". 
-Karabegov's proof makes me to realise that
-this is really effective.}
-<br>
-\medskip
+ 
 <br>
    Let $f=f(x)$ be a smooth function. Then
           integrating by parts we come to
@@ -94,8 +39,8 @@ f(0)+\underbrace{\int_0^x {d f(t))\over dt}\cdot 1 dt}
         _{\hbox{I}}=
          $$
           $$
-f(0)+\int_0^x \s f(t)\s\left(t-x\right)dt=
-f(0)+\s f(t)(t-x)\big\vert^x_0-
+f(0)+\int_0^x {d\over dt} f(t){d\over dt}\left(t-x\right)dt=
+f(0)+{d\over dt} f(t)(t-x)\big\vert^x_0-
    \int_0^x {d^2\over dt^2} f(t)\left(t-x\right)dt=
             $$
            $$
@@ -107,7 +52,7 @@ f(0)+f'(0)x+
             $$
             $$
 f(0)+f'(0)x-    {1\over2}\int_0^x {d^2\over dt^2} f(t)
-    \s\left(\left(t-x\right)^2\right)dt
+    {d\over dt}\left(\left(t-x\right)^2\right)dt
            =
            $$
         $$
@@ -133,7 +78,7 @@ f(0)+f'(0)x
 f(0)+f'(0)x
 +f^{''}(0){x^2\over 2}
 +    {1\over 6 }\int_0^x {d^3\over dt^3} f(t)
-    \s\left(\left(x-t\right)^3\right)dt
+    {d\over dt}\left(\left(x-t\right)^3\right)dt
            =
           $$
             $$
@@ -162,7 +107,7 @@ f(0)+f'(0)x
 +f^{''}(0){x^2\over 2}
 +f^{'''}(0){x^3\over 6}
 -    {1\over 24 }\int_0^x {d^4\over dt^4} f(t)
-    \s\left(\left(t-x\right)^4\right)dt
+    {d\over dt}\left(\left(t-x\right)^4\right)dt
            =
           $$
             $$
@@ -197,9 +142,8 @@ and so on:
 This identity is very useful to prove the Sasha Karabegov' 
 question (see Etudes,/Algebra/taylor4.tex)
 <br>
-\centerline {Appendix 1}
-{\tt Here I reproduce the Karabegov's proof
-of the Theorem (3).}.
+<h3>Appendix 1</h3>
+<tt> Here I reproduce the Karabegov's proof of the Theorem (3).</tt>.
 <br>
 Shortly speaking his proof is the following:
 if $f(x_0)=0$ then for all $x\leq x_0$,
@@ -231,7 +175,7 @@ f^{(n+1)}(t)(x_1-t)^{n+1}\,.
     \tag{A2}
          $$
 Choose an arbitrary $x_1>x_0$. Then
-    $x_1-t<x_1-x_0$.  Thus it follows from equations 
+    $x_1-t< x_1-x_0$.  Thus it follows from equations 
 (A2) and
 (A1) that
        $$
@@ -246,7 +190,7 @@ f^{(n+1)}(t)(x_1-t)^{n+1}\leq
  {1\over n!}\int_{x_0}^{x_1}
 f^{(n+1)}(t)(x_1-t)^{n}
 \right)=
-{x_1-x_0\over n}f(x_1)\Rightarrow f(x_1)=0{\hbox{\finish}}
+{x_1-x_0\over n}f(x_1)\Rightarrow f(x_1)=0 \finish
           $$
 since this unequality holds or arbitrary $n$.
 <br>

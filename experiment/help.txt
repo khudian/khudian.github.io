@@ -1,0 +1,9 @@
+This is the page with the general information about writing tex articles in html
+
+which commands are not working:
+
+\eqno (1a) => \tag{1a}
+\cal c => \rfloor
+\cal x => \S
+Don't define \S as \Sigma, since it would conflict with the "paragraph sign" \S = § 
+blackbox \finish works only inside the formula $\finish$: no need to write $\hbox{\finish}$
