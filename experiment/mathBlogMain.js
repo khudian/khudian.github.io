@@ -6,6 +6,7 @@ function configureMathJax()
     Macros: 
     {
       Sb: "{\\bf S}",
+      SS: "{\\cal S}",
       
       p: "\\partial",
       t: "\\tilde",
