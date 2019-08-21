@@ -43,10 +43,10 @@ def searchKey(text, key):
 
 rootDir = "../"
 #rootDir = "sandbox"
-key = r"\\def\ *\\pt.*bf"
-keyConflict = r"\\def\ *\\pt.*p"
-beforeConflict = r"\pt"
-afterConflict = r"\pb"
+key = r"\\def\ *\\t.*bf"
+keyConflict = r"\\def\ *\\t.*tilde"
+beforeConflict = r"\t"
+afterConflict = r"\td"
 
 def isWordCharacter(char):
   return (
