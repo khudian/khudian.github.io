@@ -5,8 +5,9 @@ function configureMathJax()
   {
     Macros: 
     {
-      A: "{\\bf A}",
+      A: "{\\bf A}", 
       C: "{\\bf C}",
+      CC: "{\\cal C}",
       Cl: "{\\tt \\hbox{Cliff}}",
       E: "{\\bf E}",
       FF: "{\\cal F}",

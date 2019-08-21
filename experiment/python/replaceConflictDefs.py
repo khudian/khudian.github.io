@@ -41,10 +41,10 @@ def searchKey(text, key):
     return [True, foundItem]
 
 
-#rootDir = "../"
-rootDir = "sandbox"
-key = r"\\def\\C\ *{{\\bf C}}"
-keyConflict = r"\\def\\C\ *{{\\cal C}}"
+rootDir = "../"
+#rootDir = "sandbox"
+key = r"\\def\\C.*bf"
+keyConflict = r"\\def\\C.*cal"
 beforeConflict = r"\C"
 afterConflict = r"\CC"
 
