@@ -11,6 +11,7 @@ function configureMathJax()
       Cl: "{\\tt \\hbox{Cliff}}",
       E: "{\\bf E}",
       EE: "{\\cal E}",
+      F: "{\\cal F}",
       FF: "{\\cal F}",
       G: "\\Gamma",
       GG: "{\\cal G}",
