@@ -15,6 +15,7 @@ function configureMathJax()
       FF: "{\\cal F}",
       G: "\\Gamma",
       GG: "{\\cal G}",
+      H: "{\\bf H}",
       K: "{\\bf K}",
       L: "{\\cal L}",
       M: "{\\cal M}",
