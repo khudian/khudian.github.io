@@ -35,6 +35,7 @@ function configureMathJax()
       finish: "\\blacksquare",
       g: "{\\bf g}",
       grad: "{\\rm grad\\,}",
+      h: "\\hbar",
       l: "{\\bf l}",
       m: "{\\bf m}",
       n: "{\\bf n}",
