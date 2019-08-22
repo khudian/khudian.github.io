@@ -36,6 +36,7 @@ function configureMathJax()
       g: "{\\bf g}",
       grad: "{\\rm grad\\,}",
       h: "\\hbar",
+      k: "{\\bf k}",
       l: "{\\bf l}",
       m: "{\\bf m}",
       n: "{\\bf n}",
