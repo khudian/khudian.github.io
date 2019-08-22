@@ -31,6 +31,7 @@ function configureMathJax()
       a: "\\alpha",
       ac: "{\\bf a}",
       b: "{\\bf b}",
+      d: "\\delta",
       dist: "{\\tt \\hbox{distance}}",
       e: "{\\bf e}",
       f: "{\\bf f}",
