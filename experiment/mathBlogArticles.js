@@ -226,14 +226,11 @@ function loadArticle(i, link)
   $(idRef).load(link + " div.article", 
   function() 
   {
-    var titleObject = $(idRef).find("h2");
-    var titleHTML = titleObject.html();
-    if (titleHTML == "")
-    {
-      titleHTML = "No title"
-    }
-    titleHTML = `<a href="`+ link +`">` + titleHTML + `</a>`;
-    titleObject.html(titleHTML);
+    articleObject = $(idRef).find("div.article");
+    titleHTML = `<a style="float: right; color: black;" href="`+ link +`">link</a>`;
+    articleHtml = articleObject.html();
+    articleHtml = titleHTML + articleHtml;
+    articleObject.html(articleHtml);
     MathJax.Hub.Queue(["Typeset",MathJax.Hub]); //update MathJax
   });
 }
