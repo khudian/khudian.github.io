@@ -3,15 +3,17 @@ This is the page with the general information about writing tex articles in html
 which commands are not working:
 
 For latex formulas:
-1) \eqno (1a)     =>    \tag{1a} (for formulas numbering)
-2) \cal c         =>    \rfloor (for ⌋)
-3) \cal x         =>    \S (for §) don't define \S as \Sigma, 
-since it would conflict with the "paragraph sign" \S = § 
+1) $\eqno (1a)$     =>    $\tag{1a}$ (for formulas numbering)
+2) $\cal c$         =>    $\rfloor$ (for ⌋)
+3) $\cal x$         =>    $\S$ (for §) don't redefine $\S$, 
+since it would conflict with the "paragraph sign" §.
 
 For the text formating outside of latex formulas:
-1) {\bf example}  =>    <b>example</b>
-2) {\it example}  =>    <i>example</i>
-3) {\tt example}  =>    <tt>example</tt>
+1) {\bf example}    =>    <b>example</b>
+2) {\it example}    =>    <i>example</i>
+3) {\tt example}    =>    <tt>example</tt>
 4) blackbox \finish works only inside the formula $\finish$: no need to write $\hbox{\finish}$
-5) a ---- b       =>    a &mdash; b
-6) \medskip       =>    <br><br>
+5) a ---- b         =>    a &mdash; b
+6) "break line"     =>    <br>
+7) \medskip         =>    <br><br>
+8) \bigskip         =>    <br><br><br>
