@@ -166,7 +166,7 @@ function getPageId()
 
 function getMinMaxPageIds(pageId)
 {
-  const numArticlesPerPage = 5;
+  const numArticlesPerPage = 100;
   var minArticleNumber = pageId * numArticlesPerPage;
   var maxArticleNumber = (pageId + 1) * numArticlesPerPage - 1;
   maxArticleNumber = Math.min(maxArticleNumber, links.length - 1);
