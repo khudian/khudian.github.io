@@ -43,7 +43,6 @@ var links =
   ["2019/January19/21q/index.html"],
   ["2019/January19/21againgdifeq/index.html"],
   ["2019/January19/1january/index.html"],
-  ["2019/January19/1contact/index.html"],
   ["2019/January19/17witexample/index.html"],
   ["2019/January19/16grassdistCBS/index.html"],
   ["2019/January19/14chebyshev/index.html"],
