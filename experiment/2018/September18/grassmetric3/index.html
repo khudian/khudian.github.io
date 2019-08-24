@@ -510,84 +510,85 @@ For operator $L$ one can see that
        \right)
          }\,.
            $$
-This can be done using 
-the elementary linear algebra
-\footnote{$^*$}
-{Indeed consider
-                  $$
- L_{\a\beta}=
-  \delta_{\a\beta}-\left(W^+({\bf 1}+WW^+)^{-1}W\right)_{\a\beta}
-                  $$
-Matrix $W$ defines the operator 
-which maps $\R^k$  to $\R^{n-k}$
-Notice that  arbitrary vector which is orthogonal 
-to the image of this operator:
-             $
-{\bf t}\colon W_{i\a}t_\a=0
-             $, we have that
-$L({\bf t})={\bf t}$, i.e. it  
-is the eigenvector of operator $L$
-with eigenvalue $1$.
-On the other hand 
-for arbitrary vector which belongs to 
-the image of this operator
-                $
-{\bf l}\colon \quad l_\a=l_k W_{k\a}$
-(linear compbination of rows)
-we have that
-                     $$
-L{\bf l}_\a=
- \left 
-(\delta_{\a\beta}-\left(W^+\left({\bf 1}+WW^+\right)^{-1}W\right)_{\a\beta}
-\right)l_k W_{k\beta}=l_k W_{k\a}-
-                      $$
-                       $$
-  -W_{i \a}\left({\bf 1}+WW^+\right)^{-1}_{ij}W_{j\beta}l_k W_{k\beta}
-    l_k W_{k\a}               =
-  -W_{i \a}\left(\left({\bf 1}+WW^+\right)^{-1}
-               WW^+\right)_{ik}l_k 
-                     $$
-i.e.
-                  $$
-(L{\bf l})_\a=\tilde l_k W_{k\a}\,,\,\,
-{\rm where}\,\,
-        \tilde l_k=
-    l_k-  \left(\left({\bf 1}+WW^+\right)^{-1}
-\left(WW^+\right)\right)_{kn}l_n\,.
-                  $$
-This means that $\det L$ is equal to the product of
-$1$ (the determinant of this operator restricted on vectors orthogonal
-to the image of $W$) on the determinant of the operator
-     ${\bf 1}-\left(\left({\bf 1}+WW^+\right)^{-1}
-\left(WW^+\right)\right)$. Hence we see that
-                  $$
-\det L=1\cdot 
-            \det
-                \left(
-       {\bf 1}-\left(
- \left({\bf 1}+WW^+\right)^{-1}
-\left(WW^+\right)\right)
-              \right)
-     ={1\over \det(\left({\bf 1}+WW^+\right)}
+<div class="footnote-head">
+  This can be done using the elementary linear algebra
+</div>
+<div class="footnote-body">
+  Indeed consider
                     $$
-The last relation follows from the fact  that in
-the case if the operator $WW^+$ has diagonal representation,
-  $WW^+={\rm diag}[\lambda_1,\dots,\lambda_n]$ then
-           $$
-\det L=      \det
-                \left(
-       {\bf 1}-\left(
- \left({\bf 1}+WW^+\right)^{-1}
-\left(WW^+\right)\right)
-              \right)=
-\prod_{i=1}^n
-        \left(
-       1-{\lambda_1\over 1+\lambda_i}
-          \right)
-         =
-      {1\over \prod_{i=1}^n \left(1+\lambda_i\right)}
-           $$
-}.
+   L_{\a\beta}=
+    \delta_{\a\beta}-\left(W^+({\bf 1}+WW^+)^{-1}W\right)_{\a\beta}
+                    $$
+  Matrix $W$ defines the operator 
+  which maps $\R^k$  to $\R^{n-k}$
+  Notice that  arbitrary vector which is orthogonal 
+  to the image of this operator:
+               $
+  {\bf t}\colon W_{i\a}t_\a=0
+               $, we have that
+  $L({\bf t})={\bf t}$, i.e. it  
+  is the eigenvector of operator $L$
+  with eigenvalue $1$.
+  On the other hand 
+  for arbitrary vector which belongs to 
+  the image of this operator
+                  $
+  {\bf l}\colon \quad l_\a=l_k W_{k\a}$
+  (linear compbination of rows)
+  we have that
+                       $$
+  L{\bf l}_\a=
+   \left 
+  (\delta_{\a\beta}-\left(W^+\left({\bf 1}+WW^+\right)^{-1}W\right)_{\a\beta}
+  \right)l_k W_{k\beta}=l_k W_{k\a}-
+                        $$
+                         $$
+    -W_{i \a}\left({\bf 1}+WW^+\right)^{-1}_{ij}W_{j\beta}l_k W_{k\beta}
+      l_k W_{k\a}               =
+    -W_{i \a}\left(\left({\bf 1}+WW^+\right)^{-1}
+                 WW^+\right)_{ik}l_k 
+                       $$
+  i.e.
+                    $$
+  (L{\bf l})_\a=\tilde l_k W_{k\a}\,,\,\,
+  {\rm where}\,\,
+          \tilde l_k=
+      l_k-  \left(\left({\bf 1}+WW^+\right)^{-1}
+  \left(WW^+\right)\right)_{kn}l_n\,.
+                    $$
+  This means that $\det L$ is equal to the product of
+  $1$ (the determinant of this operator restricted on vectors orthogonal
+  to the image of $W$) on the determinant of the operator
+       ${\bf 1}-\left(\left({\bf 1}+WW^+\right)^{-1}
+  \left(WW^+\right)\right)$. Hence we see that
+                    $$
+  \det L=1\cdot 
+              \det
+                  \left(
+         {\bf 1}-\left(
+   \left({\bf 1}+WW^+\right)^{-1}
+  \left(WW^+\right)\right)
+                \right)
+       ={1\over \det(\left({\bf 1}+WW^+\right)}
+                      $$
+  The last relation follows from the fact  that in
+  the case if the operator $WW^+$ has diagonal representation,
+    $WW^+={\rm diag}[\lambda_1,\dots,\lambda_n]$ then
+             $$
+  \det L=      \det
+                  \left(
+         {\bf 1}-\left(
+   \left({\bf 1}+WW^+\right)^{-1}
+  \left(WW^+\right)\right)
+                \right)=
+  \prod_{i=1}^n
+          \left(
+         1-{\lambda_1\over 1+\lambda_i}
+            \right)
+           =
+        {1\over \prod_{i=1}^n \left(1+\lambda_i\right)}
+             $$
+</div>
 Hence
               $$
 \det G=

@@ -96,11 +96,18 @@ function populateCSSSettings()
   }
 }   
 
-
+function linkFootnotes()
+{
+  $('.footnote-head').click(function(){
+      $(this).next().slideToggle('normal');
+  })
+  $('.footnote-body').hide();
+}
 
 $( document ).ready(function() 
 { 
   populateCSSSettings();
+  linkFootnotes();
 }
 );
 
@@ -108,3 +115,4 @@ $( window ).resize(function()
 {
   populateCSSSettings();
 });
+

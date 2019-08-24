@@ -9,3 +9,21 @@ div.article
 div.mainText
 {
 }
+
+.footnote-head
+{
+  text-decoration: underline;
+  text-decoration-color: cornflowerBlue;
+  //display: inline-block;
+}
+.footnote-head:before
+{
+  color: cornflowerBlue;
+  content: "\25B6\ ";
+}
+
+.footnote-body
+{
+  padding: 10px 10px 10px 10px;
+  background-color: lightCyan ;
+}

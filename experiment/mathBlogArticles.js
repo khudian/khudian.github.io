@@ -231,6 +231,7 @@ function loadArticle(i, link)
     articleHtml = articleObject.html();
     articleHtml = titleHTML + articleHtml;
     articleObject.html(articleHtml);
+    linkFootnotes();
     MathJax.Hub.Queue(["Typeset",MathJax.Hub]); //update MathJax
   });
 }
