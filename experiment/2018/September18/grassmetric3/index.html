@@ -814,23 +814,26 @@ To calculate this  integral we use the fact that
                   $$
   F(x,y)=\int_0^\infty {u^x\over (1+u)^y}=B(x,y-x-1)=
                   $$
-One can easy check this formula using substitution
-$t={u\over 1+u}$\footnote{$^{**}$}
-{Indeed we see that
-   $u={t\over 1-t}$, $1+u={1\over 1-t}$,
-$du={dt\over (1-t)^2}$ and
-     $$
-  F(x,y)=\int_0^\infty  {u^x\over (1+u)^y}du=
-                   $$
-                    $$
-   \int_0^1 \left(t\over 1-t\right)^x
-              \left(1-t\right)^y {dt\over (1-t)^2}=
-   \int_0^1 t^x (1-t)^{y-x-2}=B(x+1,y-x-1)=
-       {\Gamma(x+1)
-       \Gamma(y-x-1)\over
-       \Gamma(y)}\,.
-     $$              
-}.
+<div class="footnote-head">
+    One can easy check this formula using substitution
+    $t={u\over 1+u}$
+</div>
+<div class="footnote-body">
+    Indeed we see that
+    $u={t\over 1-t}$, $1+u={1\over 1-t}$,
+    $du={dt\over (1-t)^2}$ and
+    $$
+    F(x,y)=\int_0^\infty  {u^x\over (1+u)^y}du=
+    $$
+    $$
+    \int_0^1 \left(t\over 1-t\right)^x
+    \left(1-t\right)^y {dt\over (1-t)^2}=
+    \int_0^1 t^x (1-t)^{y-x-2}=B(x+1,y-x-1)=
+    {\Gamma(x+1)
+    \Gamma(y-x-1)\over
+    \Gamma(y)}\,.
+    $$
+</div>
 <br>
              $$
        \sigma_{N-2}

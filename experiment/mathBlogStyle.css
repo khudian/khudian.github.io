@@ -14,7 +14,7 @@ div.mainText
 {
   text-decoration: underline;
   text-decoration-color: cornflowerBlue;
-  //display: inline-block;
+  display: inline-block;
 }
 .footnote-head:before
 {
