@@ -99,6 +99,8 @@ function populateCSSSettings()
 
 function linkFootnotes()
 {
+  $('.footnote-head').unbind()
+
   $('.footnote-head').click(function(){
       $(this).next().slideToggle('normal');
   })
