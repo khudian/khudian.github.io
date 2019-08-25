@@ -76,7 +76,7 @@ function configureMathJax()
   
 function populateCSSSettings()
 {
-  maxWidth = 1800;
+  maxWidth = 800;
   stretchingCoeff = 0.97;
 
   var width = $(window).width();
