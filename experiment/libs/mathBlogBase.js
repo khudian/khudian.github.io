@@ -34,7 +34,6 @@ function linkFootnotes()
 $( document ).ready(function() 
 { 
   populateCSSSettings();
-  linkFootnotes();
 }
 );
 
