@@ -84,10 +84,11 @@ function loadArticle(i, link)
   function() 
   {
     articleObject = $(idRef).find("div.article");
-    titleHTML = `<a style="float: right; color: black;" href="`+ link +`">link</a>`;
-    articleHtml = articleObject.html();
-    articleHtml = titleHTML + articleHtml;
-    articleObject.html(articleHtml);
+    htmlDate = getArticleDateHTML(idRef)
+    articleObject.prepend(html);
+
+    htmlLink = `<a class="articleLink" href="`+ link +`">link</a>`;
+    articleObject.prepend(htmlLink);
     linkFootnotes();
     MathJax.Hub.Queue(["Typeset",MathJax.Hub]); //update MathJax
   });

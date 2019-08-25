@@ -31,6 +31,28 @@ function linkFootnotes()
   $('.footnote-body').hide();
 }
 
+function getArticleDate(idRef)
+{
+  if (idRef=='')
+  {
+    date = $('div.article').attr('date');
+    return date;
+  }
+  else
+  {
+    articleObject = $(idRef).find("div.article");
+    date = articleObject.attr('date');
+    return date;
+  }  
+}
+
+function getArticleDateHTML(idRef)
+{
+  date = getArticleDate(idRef);
+  html = `<div class="date"><b>` + date + `</b></div`;
+  return html;
+}
+
 $( document ).ready(function() 
 { 
   populateCSSSettings();

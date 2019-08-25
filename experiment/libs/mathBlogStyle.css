@@ -28,6 +28,20 @@ div.mainText
   background-color: lightCyan;
 }
 
+div.date
+{
+  position: relative;
+  padding-bottom: 10px;
+  color: Grey;
+}
+
+a.articleLink
+{
+  position: relative;
+  float: right; 
+  color: black;
+}
+
 h1
 {
   text-align: center;
