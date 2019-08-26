@@ -41,10 +41,14 @@ function isPageIdValid(pageId)
   return (pageId >= 0) && (min <= max);
 }
 
-function generateNavigatinLink(pageId, caption)
+function generateNavigatinLink(pageId, name)
 {
-  return `<a style="font-size:20px; color: black;" href="index.html?page=` + pageId + `">` + 
-  caption + `</a> `;
+  return `
+  <div class="`+ name + `">
+    <a class="navigation" href="index.html?page=` + pageId + `">` + 
+    name + `</a> 
+  </div>
+  `;
 }
 function generateNavigationLinks()
 {
