@@ -33,6 +33,7 @@ div.date
   position: relative;
   padding-bottom: 10px;
   color: Grey;
+  display: inline-block;
 }
 
 a.articleLink
