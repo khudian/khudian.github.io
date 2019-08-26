@@ -5,8 +5,10 @@ which commands are not working:
 For latex formulas:
 1) $\eqno (1a)$     =>    $\tag{1a}$ (for formulas numbering)
 2) $\cal c$         =>    $\rfloor$ (for ⌋)
-3) $\cal x$         =>    $\S$ (for §) don't redefine $\S$, 
-since it would conflict with the "paragraph sign" §.
+3) $\cal x$         =>    $\S$ (for §) 
+4) Don't redefine $\S$ as ${\cal S}$ or anything else, since it $\S$ is used for the "paragraph sign" §.
+5) $a<b$            =>    $a < b$ or $a< b$ (Mathjax would not render the formula if there is the "<" sign 
+                          which is glued with the next character
 
 For the text formating outside of latex formulas:
 1) {\bf example}    =>    <b>example</b>
