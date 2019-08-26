@@ -49,7 +49,7 @@ function getArticleDate(idRef)
 function getArticleDateHTML(idRef)
 {
   date = getArticleDate(idRef);
-  html = `<div class="date"><b>` + date + `</b></div`;
+  html = `<div class="date"><b>` + date + `</b></div><br>`;
   return html;
 }
 
