@@ -31,6 +31,14 @@ a.navigation
   color: white;"
 }
 
+a.articleLink
+{
+  position: relative;
+  float: right; 
+  font-weight: bold;
+  color: Grey;
+}
+
 div.mainText
 {
 }
@@ -59,13 +67,6 @@ div.date
   padding-bottom: 10px;
   color: Grey;
   display: inline-block;
-}
-
-a.articleLink
-{
-  position: relative;
-  float: right; 
-  color: black;
 }
 
 h1

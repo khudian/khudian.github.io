@@ -59,8 +59,8 @@ function generateNavigationLinks()
   if (isPageIdValid(prevPageId))
   {
     result += generateNavigatinLink(prevPageId, "Prev");
+    result += `&nbsp&nbsp`;
   }
-  result += `&nbsp&nbsp`;
   if (isPageIdValid(nextPageId))
   {
     result += generateNavigatinLink(nextPageId, "Next");
