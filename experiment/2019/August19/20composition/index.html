@@ -20,7 +20,249 @@
   <div id="menu"></div>
 
   <div class="mainText">
-    <div class="article" date="">
+    <div class="article" date="20 August 2019">
+<h3>Composition of  morphisms</h3>
+
+
+Let $S_1=S_1(x,p)$ be action of thick morphism $M\to N$
+and  $S_2(y,t)$  be the action of thick morphism from
+$N\to R$, and let $S_{13}=S_{13}(x,t)$ be the action of
+composition of these morphisms. Let $h$ be a function on
+$R$, $g(y)=\Phi^*_{23}h$ and $f(x)=\Phi^*_{12}g$ and
+          $$
+     e^{{i\over \hbar}f(x)}=
+\int e^{{i\over \hbar}(S_{13}(x,t)-zt+h(z))}DtDz=
+\int e^{{i\over \hbar}(S_{12}(x,q)-yq+g(y))}DqDy\,,
+          $$
+and
+          $$
+     e^{{i\over \hbar}g(y)}=
+\int e^{{i\over \hbar}(S_{23}(y,t)-zt+h(z))}DtDz=
+          $$
+hence
+
+          $$
+     e^{{i\over \hbar}f(x)}=
+\int e^{{i\over \hbar}(S_{13}(x,t)-zt+h(z))}DtDz=
+\int e^{{i\over \hbar}(S_{12}(x,q)-yq+g(y))}DqDy=
+        $$
+        $$
+\int e^{{i\over \hbar}(S_{12}(x,q)-yq+
+  S_{23}(y,t)-zt+h(z))}DtDzDqDy\,,
+          $$
+Thus we see that
+    $$
+ e^{{i\over \hbar}S_{13}(x,t}=
+ \int e^{{i\over
+\hbar}(S_{12}(x,q)+S_{23}(y,t)-yq}DyDq\,,
+    \tag{1}
+    $$
+i.e. for classical case 
+       $$
+S_{13}(x,t)=S_{12}(x,q)+S_{23}(y,t)-yq\,. 
+      $$
+and it does not depend on  $y$, $q$, i.e.
+       $$
+{\p S_{12}(x,q)\over \p q}-y=
+{\p S_{23}(y,t)\over \p y}-q=0\,.
+       $$
+
+For quantum morphisms we have to consider the integral
+ (1).<br>
+
+Consider the special cases<br>
+
+ 1) $S_{23}(y,t)=g(y)t$, i.e. the second morphism is
+usual one.<br>
+
+  In this case
+         $$
+  S_{13}(x,t)=S_{12}(x,y)+g(y)q-yq
+         $$
+and one can see that
+       $$
+     \Phi_{13}^*(z)=\Phi_{12}^*g
+       $$
+
+2)  First and second morphisms are quadratic.  Then
+
+    $$
+ e^{{i\over \hbar}S_{13}(x,t}=
+ \int e^{{i\over
+\hbar}(S_{12}(x,q)+S_{23}(y,t)-yq}DyDq=
+    $$
+         $$
+             \int e^{
+           {i\over \hbar}
+             \left(
+   {1\over 2}x^a a_{ab}x^b+x^a\A_a^iq_i+
+     {1\over 2}A^{ij}q_iq_j +
+    {1\over 2}y^ib_{ij}y^j+
+  y^i\B_i^\a t_\a+
+ {1\over 2}B^{\a\beta}t_\a t_\beta 
+                  -y^iq_i
+            \right)
+                   }
+      DyDq\,,
+\tag{3}
+    $$
+Classicaly
+    $$
+   \cases
+       {
+ y^i=\A^i_a x^a+A^{ij}q_j\cr
+ q_i= \B_i^\a t_\a+b_{ij}y^j\cr
+      }
+    \Rightarrow
+     \cases
+       {
+y=(1-Ab)^{-1}(\A x+A\B t)\cr
+q=(1-bA)^{-1}(\B t+ b\A x)\cr        
+      }
+    $$
+
+      $$
+S_{13}(x,t)=S_{12}(x,q)+S_{23}(y,t)-yq
+\quad  (y=\dots, q=\dots)\,.
+      $$
+
+
+For quantum case we have to calculate (3).
+Rewrite it (we change little bit notations)
+            $$
+ e^{{i\over \hbar}S_{13}(x,t}=
+ \int e^{{i\over
+\hbar}
+     (S_{12}(x,q)+S_{23}(y,t)-yq}DyDq=
+    $$
+         $$
+             \int e^{
+           {i\over \hbar}
+            \left(
+  {1\over 2} x^a a_{ab}x^b+x^a\A_a^iq_i+
+    {1\over 2}A^{ij}q_iq_j +
+    {1\over 2}
+ y^ib_{ij}y^j+
+  y^i\B_i^\a t_\a+
+  {1\over 2}B^{\a\beta}t_\a t_\beta 
+                  -y^iq_i
+             \right)
+                   }
+      DyDq=
+    $$
+          $$
+             \int 
+            \exp
+          {
+           {i\over \hbar}
+            \left(
+  {1\over 2} x^a a_{ab}x^b+x^a\A_a^i \tilde {q_i}+
+    {1\over 2}A^{ij}\tilde {q_i}
+       \tilde {q_j} +
+    {1\over 2}
+ \tilde {y^i}b_{ij}\tilde {y^j}+
+  \tilde {y^i}\B_i^\a t_\a+
+  {1\over 2}B^{\a\beta}t_\a t_\beta 
+                  -\tilde {y^i}\tilde {q_i}
+             \right)
+                   }
+      D\tilde yD\tilde q=
+    $$     
+
+Now we change $\tilde q=q+\beta$, $\tilde y=y+\a$
+     $$
+ \int DqDp \exp{i\over \hbar}
+     \left(  \right.
+           $$
+           $$
+       \left.
+  {1\over 2} x ax+x\A  (q+\beta)+
+    {1\over 2}A (q+\beta)(q+\beta)
+               +
+    {1\over 2}
+ (y+\a)b (y+\a)+
+  (y+\a)\B t+
+  {1\over 2}Bt t 
+                  -(y+\a) (q+\beta)
+             \right)
+    $$
+      $$
+ =\int DqDp \exp{i\over \hbar}
+     \left(  \right.
+           $$
+Now we choose  $\a$ and $\beta$ such that
+       $$
+    \cases
+ {
+   \A x+A\beta=\a\cr
+          v\a+\B t=\beta\cr  
+ }
+ \Rightarrow
+ \cases
+ {
+   \a=(1-Ab)^{-1}(\A x+ A \B t)\cr
+  \beta=(1-bA)^{-1}(\B t+ b\A x)\cr  
+ }
+       $$
+In this way we will eliminate all the terms which are
+linear by $q$ and $y$. We will come to
+      $$
+ =\int DqDp \exp{i\over \hbar}
+     \left(  \right.
+           $$
+       $$
+       \left.
+  {1\over 2} x^a a_{ab} x^b+
+    {1\over 2}A^{ij} q_iq_j+
+    {1\over 2}
+        b_{ij}y^iy^j-y^iq_i+
+    {1\over 2}B^{\a\beta}t_{\a}t_\beta
+       +\right.
+         $$
+         $$
+      \left.
+         +
+  \A^i_a x^a\beta_i+
+{1\over 2}A^{ij}
+\beta_i\beta_j+
+{1\over 2}b_{ij}
+\a^i\a^j+
+  \B^\a_i \a^i t_\a-\a^i\beta_i
+             \right)=
+    $$
+    $$
+     {C\over 
+       \sqrt
+        {
+        \det
+       \left(
+      {1\over 2} 
+        \pmatrix
+         {
+      b_{ij} & -1\cr
+      -1 &    A^{ij}\cr
+         }
+           \right)
+       }
+      }
+ \exp {i\over \hbar}
+    \left(
+  {1\over 2} x^a a_{ab} x^b+
+    {1\over 2}B^{\a\beta}t_{\a}t_\beta
+       +\right)
+     $$
+      $$
+ \exp {i\over \hbar}
+ \left(
+  \A^i_a x^a\beta_i+
+{1\over 2}A^{ij}
+\beta_i\beta_j+
+{1\over 2}b_{ij}
+\a^i\a^j+
+  \B^\a_i \a^i t_\a-\a^i\beta_i
+\right)\,,
+      $$
+ where $\a^i$ and $\beta_j$ are defined above.   
     
     </div>
   </div>
