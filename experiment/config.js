@@ -169,6 +169,7 @@ function configureMathJax()
     Macros: 
     {
       A: "{\\bf A}", 
+      B: "{\\cal B}",
       C: "{\\bf C}",
       CC: "{\\cal C}",
       Cl: "{\\tt \\hbox{Cliff}}",
