@@ -1,7 +1,11 @@
 function generateWrapper(id)
 {
    var result = `
-   <div id="`+id+`"></div><br>
+   <div id="`+id+`">
+   <div class="article">
+     Loading...
+   </div>
+   </div><br>
    `
    return result;
 }
