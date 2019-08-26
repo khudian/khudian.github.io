@@ -19,3 +19,11 @@ For the text formating outside of latex formulas:
 6) "break line"     =>    <br>
 7) \medskip         =>    <br><br>
 8) \bigskip         =>    <br><br><br>
+
+9) \footnote        =>    <div class="footnote-head">
+                            This is footnote head
+                          </div>
+                          <div class="footnote-body">
+                            This is footnote body
+                          </div>
+
