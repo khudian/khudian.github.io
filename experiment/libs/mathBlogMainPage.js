@@ -85,6 +85,15 @@ function generateWrappers()
   $("#articles").html(htmlCode);
 }
 
+function getArticleLinkHTML(link)
+{
+  return `
+  <div class="articleLink">
+    <a class="articleLink" href="`+ link +`">link</a>
+  </div>  
+    `
+}
+
 function loadArticle(i, link)
 {
   var idRef = "#"+i.toString();
@@ -95,7 +104,7 @@ function loadArticle(i, link)
     htmlDate = getArticleDateHTML(idRef)
     articleObject.prepend(html);
 
-    htmlLink = `<a class="articleLink" href="`+ link +`">link</a>`;
+    htmlLink = getArticleLinkHTML(link);
     articleObject.prepend(htmlLink);
     linkFootnotes();
     MathJax.Hub.Queue(["Typeset",MathJax.Hub]); //update MathJax
