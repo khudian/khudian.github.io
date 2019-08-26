@@ -21,6 +21,151 @@
 
   <div class="mainText">
     <div class="article" date="06 August 2019">
+<h3>Very important example</h3>
+
+In thick morphisms very important role  play the
+case when thick morphism is just usual  morphism.
+In this case
+      $$
+S(x,q)=\varphi^i(x)q_i
+      $$
+and the Hamiltonian is linear function.
+ 
+In some sence it is degenerate case.
+
+  There is also the following (may be not less
+important?) example:{\tt free particle}.
+
+Consider the free particle. Its action is
+      $$
+S_t(x,y)={m(y-x)^2\over 2t}
+      $$
+and 
+      $$
+S_t(x,q)=x^iq_i+{q^2t\over 2m}
+       $$
+
+The LHS is the action, but it is in
+$(x,q)$-representation, it is  the Legendre
+transfomr of the classical action 
+(see the texts for July):
+        $$
+   \SS_t(x,q)= y^i q_i-S_t(x,y)\,\, \hbox {with}\,\,
+       q_i={\p S_t(x,y)\over \p y^i}\,.
+        $$
+It is easy to see that in this case one can easy to
+calculate  the quantum case properly 
+(ot just in stationary limit!)
+
+The classical case is
+        $$
+f(x)=(\Phi^* g)(x)=g(x)+x^iq_i+
+{q^2t\over 2m}-y^iq_i \,\, \hbox
+{with}\,\,y^i={\p S_t(x,q)\over \p q_i}=x^i+{q^i t\over m}\,,
+q_i={\p g(y)\over \p y^i},   
+        $$
+i.e.
+      $$
+f(x)=
+g\left(x^i+{t\over m}q^i\right)
+=
+g\left(x^i+{t\over m}\left(x^i+{t\over m}q^i\right)\right)
+=
+          $$
+          $$
+g\left(x^i+{t\over m}\left(x^i+{t\over m}
+\left(x^i+{t\over m}q^i\right)
+\right)\right)
+    =\dots=
+	$$
+           $$
+    \lim_{N\to \infty
+}g\left(x^i+{t\over m}\left(x^i+{t\over m}
+\left(x^i+\dots\right)
+\dots
+\right)\right)\,,
+\hbox {where $N$ is `number' of brackets}\,.
+	$$
+  This iteration procedure  has simple integral
+representation since 
+it can be described properly using quantum case:
+           $$
+\exp{\left({i\over \hbar}f\left(x\right)\right)}
+      =
+\int\exp{\left({i\over \hbar}\left(
+    g\left(y\right)+S_t(x,q)-y^iq_i
+      \right)\right)}
+   {\cal D}q         
+   {\cal D}y=         
+           $$
+        $$
+\int\exp{\left({i\over \hbar}\left(
+    g\left(y\right)+x^iq_i+
+    {q^2t\over 2m}-y^iq_i
+      \right)\right)}
+   {\cal D}q         
+   {\cal D}y        $$
+For free particle one can calculate this itnegral  for
+an arbitrary
+  $\hbar$  (If $\hbar\to 0$ then this integral is \'a la
+Legendre transform, andn this case it describes the pull
+back in classical case).
+
+We have
+            $$
+\exp{\left({i\over \hbar}f\left(x\right)\right)}
+      =
+\int \exp{\left({i\over \hbar}\left(
+    g\left(y\right)+x^iq_i+{q^2t\over 2m}-y^iq_i
+      \right)\right)}
+   {\cal D}q         
+   {\cal D}y=         
+           $$
+      $$
+   \int 
+     \exp{
+      \left(
+  {i\over \hbar}
+       \left(
+     g\left(y\right)
+      \right)
+    \right)
+        }
+          K_t(x,y)     
+   {\cal D}y\,,
+      $$
+whee $K_t(x,y)$ is Green function of heat equation:
+        $$
+      K_t(x,y)=
+ \int \exp{\left({i\over \hbar}
+        \left(
+   x^iq_i+{q^2t\over 2m}-y^iq_i
+      \right)\right)}
+   {\cal D}q         
+ =     
+       $$
+         $$
+      \int \exp{\left({i\over \hbar}\left(
+     x^iq_i+{t\over 2m}
+   \left(q^i-{m\over t}\left(y^i-x^i\right)
+         \right)^2
+      -{m\left(y-x\right)^2\over 2t}
+      \right)\right)}
+   {\cal D}q
+     =
+          $$
+           $$
+    {C\over \sqrt t}         
+           \exp
+            {\left(
+        {i\over \hbar}
+           \left(
+      -{m\left(y-x\right)^2\over 2t}
+           \right)
+            \right)
+              }
+             $$
+
     
     </div>
   </div>
