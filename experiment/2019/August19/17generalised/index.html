@@ -20,7 +20,149 @@
   <div id="menu"></div>
 
   <div class="mainText">
-    <div class="article" date="">
+    <div class="article" date="17 August 2017">
+<h3>Generalised functions and operators</h3>
+
+  We have that operator $a(f)$ acting on $N$ particles
+state $\Psi=K_N(x_1,\dots,x_N)$ sends it to $N-1$
+particle state
+        $$
+K'_{N_1}(x_1,\dots,x_{N-1})=\sqrt N\int
+K_N(x_1,\dots,x_{N-1},y)f(y)dy\,.
+       $$
+On the other hand it can be written as
+           $$
+K'_{N-1}(x_1,\dots,x_{N-1})=
+      \int
+L(x_1,\dots,x_{N-1};
+y_1,\dots,y_N;\xi)
+f(\xi)K_N(y_1,\dots,y_N)d\xi dy_1\dots dy_N\,.
+           $$
+     Comparing these formulae we see that
+  kernel of the annilihation operator
+can be written as
+         $$
+L_{\rm anilih.}(x_1,\dots,x_{N-1};
+y_1,\dots,y_N;\xi)=
+\sqrt {N}
+  \delta(x_1-y_1)
+   \dots
+  \delta (x_{N-1}-y_{N-1})
+   \delta (y_N-\xi)\,.
+           $$
+Thus we see that
+        $$
+L_{\rm anilih.}(x_{\emptyset};
+y_1;\xi)=
+   \delta (y_1-\xi)\,,\quad
+L_{\rm anilih.}(x_1;
+y_1,y_2;\xi)=
+\sqrt {2}
+  \delta (x_1-y_1)
+   \delta (y_2-\xi)\,,
+       $$
+   $$
+L_{\rm anilih.}(x_1,x_2;
+y_1,y_2,y_3;\xi)=
+\sqrt {3}
+  \delta (x_1-y_1)
+  \delta (x_2-y_2)
+   \delta (y_3-\xi)\,,   
+  $$
+   $$
+L_{\rm anilih.}(x_1,x_2,x_3;
+y_1,y_2,y_3,y_4;\xi)=
+\sqrt {3}
+  \delta (x_1-y_1)
+  \delta (x_2-y_2)
+  \delta (x_3-y_3)
+   \delta (y_4-\xi)\,,   
+  $$
+and so on.
+
+Note that the kernel of the operator $a_B(f)$ and $a_F(f)$
+looks the same as for the operator $a(f)$.
+
+<br><br><br>
+
+<tt> Now for creation operators:</tt><br>
+
+
+
+  We have that operator $a^*(f)$ acting on $N$ particles
+state $\Psi=K_N(x_1,\dots,x_N)$ sends it to $N+1$
+particle state
+        $$
+\tilde K_{N+1}(x_1,\dots,x_{N},x_{N+1})=\sqrt {N+1}
+K_N(x_1,\dots,x_{N})f(x_{N+1})\,.
+       $$
+It can be written as
+           $$
+\tilde K_{N+1}(x_1,\dots,x_{N+1})=
+      \int
+L_{\rm creation}(x_1,\dots,x_{N+1};
+y_1,\dots,y_N;\xi)
+f(\xi)K_N(y_1,\dots,y_N)d\xi dy_1\dots dy_N\,.
+           $$
+     Comparing these formulae we see that
+           $$
+L_{\rm creation}(x_1,\dots,x_{N+1};
+y_1,\dots,y_N;\xi)=
+\sqrt {N+1}
+  \delta(x_1-y_1)
+   \dots
+  \delta (x_{N}-y_{N})
+   \delta (x_{N+1}-\xi)\,.
+           $$
+Thus we see that
+        $$
+L_{\rm creation}(x_1; y_{\emptyset};\xi)=L(y_1,\xi)=
+   \delta (x_1-\xi)\,,\quad
+L_{\rm creation}(x_1,x_2;
+y_1;\xi)=
+\sqrt {2}
+  \delta (x_1-y_1)
+   \delta (x_2-\xi)\,,
+       $$
+  $$
+L_{\rm creation}(x_1,x_2,x_3;
+y_1,y_2;\xi)=
+\sqrt {3}
+  \delta (x_1-y_1)
+  \delta (x_2-y_2)
+   \delta (x_3-\xi)\,,
+      $$
+      $$
+ L_{\rm creation}(x_1,x_2,x_3,x_4;
+y_1,y_2,y_3;\xi)=
+2
+  \delta (x_1-y_1)
+  \delta (x_2-y_2)
+  \delta (x_3-y_3)
+   \delta (x_4-\xi)\,,
+  $$
+and so on.<br>
+
+To write the formulae for space of symmetric and
+antisymmtric
+functions we need to do the symmetrisation. Hence
+                     $$
+L_{\hbox {creat. of bosons}}(x_1,\dots,x_{N+1};
+y_1,\dots,y_N;\xi)=
+P_B
+L_{\hbox {creat. of bosons}}(x_1,\dots,x_{N+1};
+y_1,\dots,y_N;\xi)=
+    {1\over N+1}
+  \left(
+\sqrt {N+1}
+  \delta(x_1-y_1)
+   \dots
+  \delta (x_{N}-y_{N})
+   \delta (x_{N+1}-\xi)
+ +\hbox {symmetrisation}
+     \right)=
+          $$
+
     
     </div>
   </div>
