@@ -42,7 +42,7 @@ function getMinMaxArticleIds(pageId)
   return [minArticleNumber, maxArticleNumber];
 }
 
-function isPageIdValid(pageId)
+function isValidPageId(pageId)
 {
   maxPageId = calculateMaxPageId()
   return (pageId >= 1) && (pageId <= maxPageId)
@@ -63,17 +63,17 @@ function generateNavigationLinks()
   var prevPageId = currentPageId - 1;
   var nextPageId = currentPageId + 1;
   result = "";
-  if (!isPageIdValid(currentPageId))
+  if (!isValidPageId(currentPageId))
   {
     return result;
   }
 
-  if (isPageIdValid(prevPageId))
+  if (isValidPageId(prevPageId))
   {
     result += generateNavigatinLink(prevPageId, "Prev");
     result += `&nbsp&nbsp`;
   }
-  if (isPageIdValid(nextPageId))
+  if (isValidPageId(nextPageId))
   {
     result += generateNavigatinLink(nextPageId, "Next");
   }
@@ -87,7 +87,7 @@ function generateWrappers()
   var htmlCode = "";
   var pageId = getPageId();
   
-  if (!isPageIdValid(pageId))
+  if (!isValidPageId(pageId))
   {
     return;
   }
