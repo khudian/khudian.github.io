@@ -24,13 +24,17 @@ div.Next
 
 a.navigation
 {
-  padding: 8px 30px 8px 30px;
+  font-weight: bold;
+  color: white;
   display: block;
   -webkit-tap-highlight-color: rgba(0,0,0,0);  
-  font-weight: bold;
   text-decoration: none;
-  font-size:20px; 
-  color: white;"
+  padding: 3px 15px 3px 15px;
+}
+
+a.navigation:hover
+{
+  text-decoration: underline;
 }
 
 a.articleLink
@@ -43,12 +47,40 @@ a.articleLink
   padding: 3px 15px 3px 15px;
 }
 
+a.articleLink:hover
+{
+  text-decoration: underline;
+}
+
+
 div.articleLink
 {
   position: relative;
   float: right; 
   background-color: rgb(55, 194, 225);
   border-radius: 20px;
+}
+
+a.mathBlogButton
+{
+  font-weight: bold;
+  color: white;
+  display: block;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);  
+  text-decoration: none;
+  padding: 3px 15px 3px 15px;
+}
+
+a.mathBlogButton:hover
+{
+  text-decoration: underline;
+}
+
+div.mathBlogButton
+{
+  display: inline-block;
+  background-color: Red;
+  border-radius: 20px
 }
 
 
