@@ -28,10 +28,15 @@ function getPageId()
 
 const cNumArticlesPerPage = 5;
 
+function mod(a, b)
+{
+  return (a - a % b) / b;
+}
+
 function calculateMaxPageId()
 {
   var idxMax = links.length - 1;
-  return 1 + (idxMax - idxMax % cNumArticlesPerPage) / cNumArticlesPerPage
+  return mod(idxMax, cNumArticlesPerPage) + 1
 }
 
 function getMinMaxArticleIds(pageId)
@@ -48,7 +53,40 @@ function isValidPageId(pageId)
   return (pageId >= 1) && (pageId <= maxPageId)
 }
 
-function generateNavigatinLink(pageId, name)
+function getMinMaxAdjacentPageIds(pageId)
+{
+  const cMaxNumAdjacents = 10;
+  leftElementsCount = mod(cMaxNumAdjacents, 2);
+  rightElementsCount = cMaxNumAdjacents - leftElementsCount - 1;
+  if(!isValidPageId(pageId))
+  {
+    return[1, 1];
+  }
+
+  min = pageId - leftElementsCount;
+  max = pageId + rightElementsCount;
+
+  if (min < 1)
+  {
+    max = max - (min - 1);
+    min = 1;
+  }
+
+  maxPageId = calculateMaxPageId();
+
+  if (max > maxPageId)
+  {
+    min = min - (max - maxPageId)
+    max = maxPageId;
+  }
+
+  min = Math.max(1, min);
+  max = Math.min(maxPageId, max);
+  return [min, max];
+}
+
+
+function generateNavigationLink(pageId, name)
 {
   return `
   <div class="`+ name + `">
@@ -62,6 +100,7 @@ function generateNavigationLinks()
   var currentPageId = getPageId();
   var prevPageId = currentPageId - 1;
   var nextPageId = currentPageId + 1;
+  adjacentPageIds = getMinMaxAdjacentPageIds(currentPageId)
   result = "";
   if (!isValidPageId(currentPageId))
   {
@@ -70,12 +109,12 @@ function generateNavigationLinks()
 
   if (isValidPageId(prevPageId))
   {
-    result += generateNavigatinLink(prevPageId, "Prev");
+    result += generateNavigationLink(prevPageId, "Prev");
     result += `&nbsp&nbsp`;
   }
   if (isValidPageId(nextPageId))
   {
-    result += generateNavigatinLink(nextPageId, "Next");
+    result += generateNavigationLink(nextPageId, "Next");
   }
   result += `<br><br>`
   return result;
