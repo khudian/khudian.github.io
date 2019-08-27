@@ -26,7 +26,7 @@ function getPageId()
   return 1;
 }
 
-function getMinMaxPageIds(pageId)
+function getMinMaxArticleIds(pageId)
 {
   const numArticlesPerPage = 5;
   var minArticleNumber = (pageId - 1) * numArticlesPerPage;
@@ -37,7 +37,7 @@ function getMinMaxPageIds(pageId)
 
 function isPageIdValid(pageId)
 {
-  [min, max] = getMinMaxPageIds(pageId);
+  [min, max] = getMinMaxArticleIds(pageId);
   return (pageId >= 1) && (min <= max);
 }
 
@@ -85,7 +85,7 @@ function generateWrappers()
     return;
   }
   
-  [minArticleNumber, maxArticleNumber] = getMinMaxPageIds(pageId);
+  [minArticleNumber, maxArticleNumber] = getMinMaxArticleIds(pageId);
   htmlCode += generateNavigationLinks()
   for (var i = minArticleNumber; i <= maxArticleNumber; i++)
   {
@@ -130,7 +130,7 @@ function generateArticles()
 {
   generateWrappers();
   var pageId = getPageId();
-  [minArticleNumber, maxArticleNumber] = getMinMaxPageIds(pageId);
+  [minArticleNumber, maxArticleNumber] = getMinMaxArticleIds(pageId);
   
   for (var i = minArticleNumber; i <= maxArticleNumber; i++)
   {
