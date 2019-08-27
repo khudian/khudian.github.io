@@ -58,10 +58,6 @@ function getMinMaxAdjacentPageIds(pageId)
   const cMaxNumAdjacents = 10;
   leftElementsCount = mod(cMaxNumAdjacents, 2);
   rightElementsCount = cMaxNumAdjacents - leftElementsCount - 1;
-  if(!isValidPageId(pageId))
-  {
-    return[1, 1];
-  }
 
   min = pageId - leftElementsCount;
   max = pageId + rightElementsCount;
@@ -85,16 +81,33 @@ function getMinMaxAdjacentPageIds(pageId)
   return [min, max];
 }
 
+function generatePageIdLink(pageId)
+{
+ return `index.html?page=` + pageId;
+}
 
 function generateNavigationLink(pageId, name)
 {
   return `
   <div class="`+ name + `">
-    <a class="navigation" href="index.html?page=` + pageId + `">` + 
+    <a class="navigation" href="` + generatePageIdLink(pageId) + `">` + 
     name + `</a> 
   </div>
   `;
 }
+
+function generateAdjacentPagesLinks(pageId, min, max)
+{
+   result = '';
+   for (var i = min; i <= max; i++)
+   {
+     linkClassName = (i == pageId) ? "pageLinkCurrent" : "pageLink";
+     result += `<a class="` + linkClassName + `" href="` + 
+     generatePageIdLink(i) + `">` + i + `</a> `
+   }
+   return result;
+}
+
 function generateNavigationLinks()
 {
   var currentPageId = getPageId();
@@ -110,8 +123,8 @@ function generateNavigationLinks()
   if (isValidPageId(prevPageId))
   {
     result += generateNavigationLink(prevPageId, "Prev");
-    result += `&nbsp&nbsp`;
   }
+  result += generateAdjacentPagesLinks(currentPageId, min, max)
   if (isValidPageId(nextPageId))
   {
     result += generateNavigationLink(nextPageId, "Next");
