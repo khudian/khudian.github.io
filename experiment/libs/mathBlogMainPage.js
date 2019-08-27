@@ -79,6 +79,10 @@ function generateWrappers()
   for (var i = minArticleNumber; i <= maxArticleNumber; i++)
   {
     htmlCode += generateWrapper(i);
+    if (i < maxArticleNumber)
+    {
+      htmlCode += `<br><br>`;
+    }      
   }
   htmlCode += generateNavigationLinks()
   
