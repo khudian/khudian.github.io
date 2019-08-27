@@ -26,19 +26,26 @@ function getPageId()
   return 1;
 }
 
+const cNumArticlesPerPage = 5;
+
+function calculateMaxPageId()
+{
+  var idxMax = links.length - 1;
+  return 1 + (idxMax - idxMax % cNumArticlesPerPage) / cNumArticlesPerPage
+}
+
 function getMinMaxArticleIds(pageId)
 {
-  const numArticlesPerPage = 5;
-  var minArticleNumber = (pageId - 1) * numArticlesPerPage;
-  var maxArticleNumber = pageId * numArticlesPerPage - 1;
+  var minArticleNumber = (pageId - 1) * cNumArticlesPerPage;
+  var maxArticleNumber = pageId * cNumArticlesPerPage - 1;
   maxArticleNumber = Math.min(maxArticleNumber, links.length - 1);
   return [minArticleNumber, maxArticleNumber];
 }
 
 function isPageIdValid(pageId)
 {
-  [min, max] = getMinMaxArticleIds(pageId);
-  return (pageId >= 1) && (min <= max);
+  maxPageId = calculateMaxPageId()
+  return (pageId >= 1) && (pageId <= maxPageId)
 }
 
 function generateNavigatinLink(pageId, name)
