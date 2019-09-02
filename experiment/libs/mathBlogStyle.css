@@ -63,11 +63,6 @@ a.pageLinkCurrent
   text-decoration: none;
 }
 
-a:hover
-{
-  text-decoration: underline;
-}
-
 
 a.mathBlogButton
 {
@@ -130,4 +125,9 @@ h2
 h3
 {
   text-align: center;
+}
+
+a:hover
+{
+  text-decoration: underline;
 }
