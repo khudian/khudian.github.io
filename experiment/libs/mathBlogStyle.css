@@ -9,14 +9,14 @@ div.article
 div.Prev
 {
   display: inline-block;
-  background-color: Red;
+  background-color: rgb(234, 67, 53); /*red*/
   border-radius: 20px 0px 0px 20px;
 }
 
 div.Next
 {
   display: inline-block;
-  background-color: Red;
+  background-color: rgb(234, 67, 53); /*red*/
   border-radius: 0px 20px 20px 0px;
 }
 
@@ -45,14 +45,14 @@ div.articleLink
 {
   position: relative;
   float: right; 
-  background-color: rgb(55, 194, 225);
+  background-color: rgb(27, 116, 232); /*blue*/
   border-radius: 20px;
 }
 
 a.pageLink
 {
   font-weight: bold;
-  color: royalblue;
+  color: rgb(66, 133, 244); /*blue*/
   text-decoration: none;
 }
 
@@ -77,7 +77,7 @@ a.mathBlogButton
 div.mathBlogButton
 {
   display: inline-block;
-  background-color: Red;
+  background-color: rgb(234, 67, 53); /*red*/
   border-radius: 20px
 }
 
