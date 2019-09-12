@@ -6,7 +6,7 @@ For latex formulas:
 1) $\eqno (1a)$     =>    $\tag{1a}$ (for formulas numbering)
 2) $\cal c$         =>    $\rfloor$ (for ⌋)
 3) $\cal x$         =>    $\S$ (for §) 
-4) Don't redefine $\S$ as ${\cal S}$ or anything else, since it $\S$ is used for the "paragraph sign" §.
+4) Don't redefine $\S$ as ${\cal S}$ or as anything else, since $\S$ is used for the "paragraph sign" §.
 5) $a<b$            =>    $a < b$ or $a< b$ (Mathjax would not render the formula if there is the "<" sign 
                           which is glued with the next character
 
