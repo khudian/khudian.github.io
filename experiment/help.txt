@@ -1,6 +1,18 @@
 This is the page with the general information about writing tex articles in html
 
-which commands are not working:
+The engine which is rendering the formulas is called MathJax. 
+In the beginning of every file you have something like:
+
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+
+Which means that each time you load the html with latex formulas, it downloads the scripts from that source. This script runs on your browser
+and converts the latex formulas to the 'real' formulas which you see on the screen. 
+Mathjax is very powerful and supports even latex 'defs'. The configuration for them
+can be found in the file config.js. Note the latex 'defs' which are placed in config.js are applied globally to all the articles. So it 
+is important to be consistent in using 'defs' throughout the articles.  
+
+
+Which commands are not working in MathJax:
 
 For latex formulas:
 1) $\eqno (1a)$     =>    $\tag{1a}$ (for formulas numbering)
