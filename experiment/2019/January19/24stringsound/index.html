@@ -3,11 +3,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-  <link rel="stylesheet" type="text/css" href="../../../mathBlogStyle.css">
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
 
-  <script type="text/javascript" src="../../../jquery_3.4.1.js"></script>
-  <script type="text/javascript" src="../../../menu.js"></script> 
-  <script type="text/javascript" src="../../../mathBlogMain.js"></script> 
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
   <script type="text/x-mathjax-config">
     configureMathJax();
   </script>
@@ -18,8 +20,8 @@
   <div id="menu"></div>
 
   <div class="mainText">
-    <div class="article">
-      <h2 class="title" date=""></h2>
+    <div class="article" date="24 January 2019">
+      
 
   We want to model the sound propagation.
 <br>
@@ -84,9 +86,7 @@ with $N+2$ coordinates
   s={x_0+x_1+x_2+\dots+x_N\over N+1}\,.
          $$
 the constraint is $\eta_0+\eta_1+\dots+\eta_N=0$.
-<br>
 $$ $$
-<br>
 We try to do it in other way: we will choose new coordinates
 <i> not  destroying the circle symmetry</i>: 
 <br>
@@ -110,10 +110,14 @@ rotation of circle:
 \xi^i\mapsto \xi^{i+k}\Leftrightarrow x^i\mapsto x^{i+k}
              $$
 This facilitates the calculations. It suiffice to express $x^0$
-via $\xi$, anf then apply symmetry. 
-Perform not difficult but enjoyable
-calculations\footnote{$^*$}{Intermediate expressions may not 
-respect the rotational symmetry, but final answers will respect} 
+via $\xi$, and then apply symmetry. 
+<div class="footnote-head">
+    Perform not difficult but enjoyable
+    calculations
+</div><div class="footnote-body">
+    Intermediate expressions may not
+    respect the rotational symmetry, but final answers will respect
+</div>
 We have that
              $$
 x_0=x_0\,, 
@@ -175,7 +179,6 @@ then
        x^N=\a_1\xi^0+\a_2\xi^1+\a_3\xi^2+\ldots+\a_0\xi^N
                    }
               $$
-<br>
 Here we usses symmetries, but calculations are still difficult.
    We try to go in another way choosing orthogonal transformations of coorrdinates (see the next blog)
 <br>

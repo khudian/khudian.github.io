@@ -3,11 +3,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-  <link rel="stylesheet" type="text/css" href="../../../mathBlogStyle.css">
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
 
-  <script type="text/javascript" src="../../../jquery_3.4.1.js"></script>
-  <script type="text/javascript" src="../../../menu.js"></script> 
-  <script type="text/javascript" src="../../../mathBlogMain.js"></script> 
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
   <script type="text/x-mathjax-config">
     configureMathJax();
   </script>
@@ -18,8 +20,8 @@
   <div id="menu"></div>
 
   <div class="mainText">
-    <div class="article">
-      <h2 class="title" date=""></h2>
+    <div class="article" date="3 February 2019">
+      
 
  Let $H=H(x^i,p_j)$  be a function on $T^*M$,
 where $(x^i,p_j)$ standard local coordinates on cotangent bundle
@@ -70,15 +72,17 @@ where $(\_,\_)$ canonical Poisson bracket on $M$ and $H$.
 \{f,g\}_H={1\over 2}\left(\left(f,H\right),g\right)\,,
                              (2c)
                      $$ 
-and condition (2a) provides Jacobi identities\footnote{$^*$}
-{respectively if we consider instead cotangent bundle,
-the cotangent bundle $\Pi T^*M$ with reversed parity of fibers
-  ($\Pi$ is parity reversing functor), then instead canonical Poisson bracket
-$(\_,\_)$ on $T^*M$ we come to canonical odd Poisson bracket (Schouten bracket)
-on $[\_,\_]$ $\Pi T^*M$. Then  the even quadratic Hamiltonian
-   $P=P^{ik}\pi_i\pi_k$ ($p(\pi_i)=p(x^i)+1$) defines usual even Poisson
-bracket on $M$  via derived bracket construction if condition
- $[H,H]=0$ is satisfied.}.  Note that
+<div class="footnote-head">and condition (2a) provides Jacobi identities.</div>
+<div class="footnote-body">
+    respectively if we consider instead cotangent bundle,
+    the cotangent bundle $\Pi T^*M$ with reversed parity of fibers
+    ($\Pi$ is parity reversing functor), then instead canonical Poisson bracket
+    $(\_,\_)$ on $T^*M$ we come to canonical odd Poisson bracket (Schouten bracket)
+    on $[\_,\_]$ $\Pi T^*M$. Then  the even quadratic Hamiltonian
+    $P=P^{ik}\pi_i\pi_k$ ($p(\pi_i)=p(x^i)+1$) defines usual even Poisson
+    bracket on $M$  via derived bracket construction if condition
+    $[H,H]=0$ is satisfied.
+</div>  Note that
   for even Hamiltonian $H$ in equation (1) condition (2b)
 is obtained automatically.   
 <br>

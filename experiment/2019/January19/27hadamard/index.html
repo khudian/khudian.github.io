@@ -3,11 +3,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-  <link rel="stylesheet" type="text/css" href="../../../mathBlogStyle.css">
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
 
-  <script type="text/javascript" src="../../../jquery_3.4.1.js"></script>
-  <script type="text/javascript" src="../../../menu.js"></script> 
-  <script type="text/javascript" src="../../../mathBlogMain.js"></script> 
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
   <script type="text/x-mathjax-config">
     configureMathJax();
   </script>
@@ -18,15 +20,13 @@
   <div id="menu"></div>
 
   <div class="mainText">
-    <div class="article">
-      <h2 class="title" date=""></h2>
+    <div class="article" date="27 January 2019">
+      
 
      THIS DOES NOT WORK.
 <br>
 HADAMARD MATRIX DOES NOT DIAGONALISE $L$
-<br>
 <h3>Hadamard matrices and interacting strings diagonalisation</h3>
-<br>
 The matrices that I wrote in the yesterday blog
 were Hadamard matrices.
    When diagonalising potential energy
@@ -184,7 +184,6 @@ M\f_7=
 \pmatrix{1\cr -1\cr -1\cr 1\cr -1\cr 1\cr 1\cr -1\cr}=
 \pmatrix{-4\cr -2\cr -2\cr 4\cr -4\cr 2\cr 2\cr -4\cr}\not =2\f_6\,,
       $$
-<br>
 We see that $\{\f_0,\f_1,\f_2,\f_3\}$ are eigenvectors, however
 $\{\f_4,\f_5,\f_6,\f_7\}$ are not...
 <br>
@@ -197,7 +196,6 @@ M\f_5=3\f_5-\f_6\,,\quad
 M\f_6=\f_6-\f_5\,\quad
 M\f_7=\f_7-\f_4-2\f_5-2\f_6\,.
      $$
-<br>
 </div>
   </div>
  </body>

@@ -3,11 +3,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-  <link rel="stylesheet" type="text/css" href="../../../mathBlogStyle.css">
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
 
-  <script type="text/javascript" src="../../../jquery_3.4.1.js"></script>
-  <script type="text/javascript" src="../../../menu.js"></script> 
-  <script type="text/javascript" src="../../../mathBlogMain.js"></script> 
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
   <script type="text/x-mathjax-config">
     configureMathJax();
   </script>
@@ -18,11 +20,10 @@
   <div id="menu"></div>
 
   <div class="mainText">
-    <div class="article">
-      <h2 class="title" date=""></h2>
+    <div class="article" date="24 June 2019">
+      
 
 <h3> One fact from linear algbera of Lagrangian surfaces</h3>
-<br>
 Today is 85 years to Albert Solomonovitch Schwarz...
 <br>
 
@@ -36,7 +37,6 @@ bilinear form $\langle u,v\rangle= \w (u,v)$:
 \langle \x, V\rangle=0\Rightarrow \x=0\,.
        \tag{1a}
            $$
-<br>
 Let $X$ be a Lagrangian plane  in finite-dimensional
 symplectiv vector space $V$, i.e. scalar product
 vanishes on $X$   
@@ -68,7 +68,6 @@ $\L_X$:
 and}\,\, X\cap Y=0\}\,.
     \tag{2a}
         $$
-<br>
 <b> Theorem</b>
 <i> 
 <br>
@@ -104,11 +103,9 @@ defines Lagrangian plane
   Y=Y_P=\Im P\,,
         \tag{4b}
              $$
-<br>
   which is transversal to plane $X$.
 <br>
 The correspondence 
-<br>
 $$
 \hbox {Transversal Lagrangian
 planes}\leftrightarrow \hbox {linear operator $P$
@@ -117,7 +114,6 @@ is reciprocal:
      $$
   P_{Y_P}=P\,,  Y_{P_Y}=Y\,.
         $$
-<br>
 ii) The set of ${\cal L}_X$ of Lagrangian planes which is
 transversal
 to the plane given Lagrangian plane  $X$  is  an affine
@@ -130,7 +126,6 @@ $V\backslash X$.  In particular
 \,}V=2n)\,.
   \tag{3c}
    $$
-<br>
 </i>
 <br>
 
@@ -164,8 +159,6 @@ It follows from the following statement.
 \ker P=\Im (P-I)\,.
     \tag{6}
          $$
-
-<br>
 Indeed condition $X=\ker P$ in (3b) implies that
   $\dim \Im P=n$.  we have that $\dim \ker P=\dim (P-I)=n$
 also.   According equation (6) 
@@ -184,15 +177,15 @@ are orthogonal to each other:
            $$ 
 It remains to prove equation (6)
 Sure it can be proved using results of
-previous blog on 22-nd June
-\footnote{$^{1)}$}{Note that in the case if only
+previous blog on 22-nd June,<div class="footnote-head"></div>
+<div class="footnote-body">Note that in the case if only
 condition (3a) is obeyed, then operator
 $A=P-{1\over 2}I$ belongs to $sp(2)$
 and we come to the fact that 
         $$
   \ker P=\left(\Im\left(P-I\right)\right)^\perp
         $$
- (see blog on 22-nd June of this month.)},
+ (see blog on 22-nd June of this month.)</div>
 however do it independently:
 For every $\x\ker P=X$,
       $$
@@ -254,8 +247,7 @@ Any symmetric bilinear form $Q^{mn}$  codifies operator
    $P$ such that
       $$
 P(\p_i)=0\,,  P(\p^k)=\p^k+Q^{km}\p_m
-       $$ 
-<br>
+       $$
 Let $Q_{mn}$ be
 </div>
   </div>

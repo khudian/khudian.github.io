@@ -3,11 +3,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-  <link rel="stylesheet" type="text/css" href="../../../mathBlogStyle.css">
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
 
-  <script type="text/javascript" src="../../../jquery_3.4.1.js"></script>
-  <script type="text/javascript" src="../../../menu.js"></script> 
-  <script type="text/javascript" src="../../../mathBlogMain.js"></script> 
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
   <script type="text/x-mathjax-config">
     configureMathJax();
   </script>
@@ -18,11 +20,10 @@
   <div id="menu"></div>
 
   <div class="mainText">
-    <div class="article">
-      <h2 class="title" date=""></h2>
+    <div class="article" date="November 2018">
+      
 
     <h3>One combinatorial lemma</h3>
-<br>
   Let $M$ be $n\times n$ matrix such that all diagonal entries are
   $0$ and all other entries are $\pm 1$:
                       $$
@@ -44,17 +45,14 @@ the following relation holds:
                         $$
 a_k= C^k_n S_k=C^k_n(k+1) \,\, (mod 2)\,.
                         $$
-<br>
 <b> Corollary</b>   For characteristic polynomial (2)
                       $$
 \hbox{$C^k_n$ is odd and $k$ is even}\Rightarrow a_k\not=0\,.
                        $$
-<br>
   Proof of the lemma is straightforward
  (it is the corollary that is surprisingly effective!)
                  $$
                  $$
-<br>
 </div>
   </div>
  </body>

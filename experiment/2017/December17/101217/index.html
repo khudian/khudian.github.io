@@ -3,11 +3,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-  <link rel="stylesheet" type="text/css" href="../../../mathBlogStyle.css">
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
 
-  <script type="text/javascript" src="../../../jquery_3.4.1.js"></script>
-  <script type="text/javascript" src="../../../menu.js"></script> 
-  <script type="text/javascript" src="../../../mathBlogMain.js"></script> 
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
   <script type="text/x-mathjax-config">
     configureMathJax();
   </script>
@@ -18,11 +20,10 @@
   <div id="menu"></div>
 
   <div class="mainText">
-    <div class="article">
-      <h2 class="title" date=""></h2>
+    <div class="article" date="10 December 2017">
+      
 
 <h3> On one triple</h3>
-<br>
 Let $M$ be a (super)manifold, 
 and $\M=C^\infty(M)$
 be an algebra of functions on this manifold.
@@ -90,7 +91,6 @@ All three structures are represented
 by homological vector field on
 infinite-dimensional
 manifold $\M=C^\infty(M)$
-<br>
 $$
 f\mapsto f+
 \tau 
@@ -109,9 +109,6 @@ vector field
 x^i\mapsto x^i+\tau K^i\longrightarrow
 f\mapsto f(x^i+\tau K^i)
          $$
-<br>
- <br>
-<br>
 <tt> I cannot avoid the temptation to compare this triple
 whith another triple:
 <br>
@@ -152,9 +149,6 @@ which is nothing but the statement
 =\hbox{Area of the square $\gamma_4$}
                     \tag{*}
         $$
-<br>
- 
-<br>
 II.  Consider three similar n-gones,
 (polygones with $n$ sides),
 $\alpha_n,\beta_n,\gamma_n$,
@@ -174,9 +168,6 @@ Then
 =\hbox{Area of the polygon$\gamma_n$}
                     \tag{**}
         $$
-<br>
- 
-<br>
 III.   Consider three similar
 rectangular $\alpha_3$,
 $\beta_3$ and $\gamma_3$,
@@ -195,8 +186,7 @@ then
 \hbox{Area of   $\triangle\alpha_3$}+
 \hbox{Area of $\triangle\beta_n$}
 =\hbox{Area of $\triangle\gamma_3$}\tag{***}
-             $$ 
-<br>
+             $$
 The statements I, II and III are equivalent.
 since
 Area of every polygon is proportional to

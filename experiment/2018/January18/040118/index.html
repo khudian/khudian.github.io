@@ -3,11 +3,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-  <link rel="stylesheet" type="text/css" href="../../../mathBlogStyle.css">
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
 
-  <script type="text/javascript" src="../../../jquery_3.4.1.js"></script>
-  <script type="text/javascript" src="../../../menu.js"></script> 
-  <script type="text/javascript" src="../../../mathBlogMain.js"></script> 
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
   <script type="text/x-mathjax-config">
     configureMathJax();
   </script>
@@ -18,11 +20,10 @@
   <div id="menu"></div>
 
   <div class="mainText">
-    <div class="article">
-      <h2 class="title" date=""></h2>
+    <div class="article" date="4 January 2018">
+      
 
 <h3> Statement</h3>
-<br>
  Let $L$ be functional from the space of fuctions on linear space $V$
 to the space of functions on the linear space  $U$:
                    $$
@@ -37,7 +38,6 @@ there exist functions `coordinates'  $y^a_g(x)$ on $U$ such that
 nilpotent such that $t^2=0$}
          \tag{1}
        $$
-<br>
 Consdider functions $g_\k=\k\y=k_ay^a$, and
 coordinate functions  $y^a_\k(x)=y^a_{\k \y}(x)$ 
 (see the previous blog 030118.tex)
@@ -77,7 +77,6 @@ Then
  t_2k_{2_{a}}y^a_\k+
  t_2t_1k_{2_{a}}{\p y^a_\k\over \p k_{1_{b}}}k_{1_{b}}
               $$
-<br>
 The second variaton of functional is symmetric: in temrs of these nilpotents
 it means that 
     $$
@@ -88,8 +87,7 @@ Hence
       $$ 
  t_2t_1k_{2_{a}}{\p y^a_\k\over \p k_{_{b}}}k_{1_{b}}=
  t_2t_1k_{1_{a}}{\p y^a_\k\over \p k_{_{b}}}k_{2_{b}}
-          $$      
-<br>
+          $$
 THus we come to the satement of lemma.
 <br>
 Now based on the lemma consider the function  $S(\x,\k)$ such that

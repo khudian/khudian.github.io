@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="25 August 2019">
+<h3>Composition of  morphisms</h3>
+
+For Lagrangian $L=L(x,\dot x)$
+we know that
+ $$
+{\p \SS(x,y,t)\over \p y}=q\,
+ $$
+and this implies that
+ $$
+{\p \SS(x,y,t)\p x}=-p\,
+ $$
+One can see it reversing the time.    More carefully 
+this means the following:
+       $$
+\SS(t,x,y)=\int_0^td\tau L(x(\tau),\dot x(\tau))d\tau\,,
+       $$
+where $x(\tau)$ solution of equations of motion,
+ $x(\tau=0)=x$, $x(\tau=t)=y$.
+(We suppose that $L$ does not depend on time)
+      We have that   $$
+\SS(t+\delta t,x+\delta x,y+\delta y)=
+\int_0^{t+\delta t}d\tau 
+           L\left(
+ x\left(\tau\right)+\vare h\left(\tau\right),
+\dot x\left(\tau\right)+\vare \dot h\left(\tau\right))
+       \right)d\tau\,,
+        $$
+where 
+      $$
+h(0)=\delta x\,,
+    $$
+and
+  $$
+   x(t+\delta t)+\vare h(t+\delta t)=y(t)+\delta y\,,\rm
+  {i.e.\,}\,\,
+\dot x(t)+\vare h(t)=\delta y
+      $$
+
+
+      $$
+ {\p S(q,t)\over \p t}`=
+H\left({\p S\over \p q},q\right)=
+H\left({x,\p S\over \p x}\right)\,.
+      $$
+    
+    </div>
+  </div>
+ </body>
+</html>

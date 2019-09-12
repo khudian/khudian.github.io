@@ -1,0 +1,299 @@
+﻿<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="12 August 2019">
+<h3>Action and Hamiltonian</h3>
+
+
+Let $H=H(x,p)$  Hamiltonian , and
+   $S_t(x,q)$  be its action:
+        $$
+S_0(x,q)=x^iq_i\,\,,\quad 
+{\p S_t(x,q)\over \p t}=
+  H\left(
+{\p S_t(x,q)\over \p q},q
+\right)\,,
+     \tag{0a}
+        $$
+i.e. $S_t(x,q)$ is its P-exponent.
+We know (see also the previous blogs)  that
+      $$
+ p_a={\p S_t(x,q)\over \p x^a}\,,
+ \quad
+y^a={\p S_t(x,q)\over \p q_a}\,,
+      $$
+where $(x,p)$ are initial momenta and coordinates
+and $(y,q)$--momenta and coordinates at the time $t$:
+        $$
+    \pmatrix {x\cr p\cr}\Rightarrow 
+    \pmatrix {y\cr q\cr}\colon\quad
+        \cases
+      {
+y=y(t,x,p)\cr
+q=q(t,x,p)\cr
+      } \,\,
+    \hbox {canonical transformation induced by $H$ in
+time $t$}\,\,.
+         \tag{0b}
+      $$
+         $$
+ {\p y^a(t,x,p)\over \p t}={\p H(y,q)\over \p q_q}\,\,
+ {\p q_a(t,x,p)\over \p t}=-{\p H(y,q)\over \p y^q}\,\,
+         $$
+One can see that
+the following differential equations are obeyed
+
+      $$
+{\p p_a\over \p p_b}=\delta_a^b\,\,\,\quad {\rm
+i.e.}\,\,\quad
+{\p^2 S_t(x,q)\over \p x^a \p q_c}{\p q_c(t,x,p)\over \p
+p_b}
+=\delta_a^b\,,
+  \tag{1a}
+      $$
+      $$
+{\p p_a\over \p x^b}=0\,\,\,\quad {\rm
+i.e.}\,\,\quad
+{\p^2 S_t(x,q)\over \p x^a \p x^b}
++
+{\p^2 S_t(x,q)\over \p x_a \p q_c}{\p q_c(t,x,p)
+\over \p x^b}
+=0\,,
+  \tag{1b}
+      $$
+      $$
+{\p p_a\over \p t}=0\,\,\,\quad {\rm
+i.e.}\,\,\quad
+{\p^2 S_t(x,q)\over \p x^a \p t}+
+{\p S^2_t(x,q)\over \p x_a \p q_c}{\p q_c(t,x,p)
+\over \p t}=
+{\p^2 S_t(x,q)\over \p x_a \p t}-
+{\p S^2_t(x,q)\over \p x_a \p q_c}
+{\p H(y,q) \over \p y^c}=
+0\,,
+  \tag{1c}
+      $$
+      $$
+{\p y^a\over \p t}=
+ {\p H(y,q)\over \p q_a}=
+{\p^2 S_t(x,q)\over \p q_a \p t}
+                          +
+{\p^2 S_t(x,q)\over \p q_a \p q_c}{\p q_c(t,x,p)
+\over \p t}=
+{\p^2 S_t(x,q)\over \p q_a \p t}
+                          -
+{\p^2 S_t(x,q)\over \p q_a \p q_c}{\p H(y,q)
+\over \p y^c}\,,
+  \tag{1d}
+      $$
+      $$
+{\p y^a\over \p x^b}=
+{\p^2 S_t(x,q)\over \p q_a \p x^b}
+                          +
+{\p^2 S_t(x,q)\over \p q_a \p q_c}{\p q_c(t,x,p)
+\over \p x^b}\,,
+  \tag{1e}
+      $$
+      $$
+{\p y^a\over \p p_b}=
+{\p^2 S_t(x,q)\over \p q_a \p q_c}{\p q_c(t,x,p)
+\over \p p_b}\,.
+  \tag{1e}
+      $$
+    $$
+     $$
+
+<b> Claim</b><br>  
+
+ Let $H$ be quadratic. Then 
+ canonical transformtions (0b) are linear
+and $S(x,q)$ is quadratic.
+
+
+<br><br><br>
+
+<b>Example</b>. <tt> Harmonic oscillator</tt>
+<br>
+Let
+     $$
+H={1\over 2}(y^2+q^2)
+      $$
+Then action
+       $$
+S_t(x,q)={xq\over \cos t}+
+    \left(
+ {x^2\over 2}
++{q^2\over 2}
+  \right){\rm tg\,}t
+\tag{2}
+       $$
+
+ action for oscillator defines the group?
+
+<br><br>
+Let 
+       $$
+H=H(p,q)=U_{ik}x^ix^k+L_i^kx^ip_k+T^{ik}p_ip_k
+\tag{3}     
+ $$
+be quadratic Hamiltonian.<br>
+&nbsp; Our aim is to define its action  $S(x,q)$.<br>
+&nbsp; <tt> The claim says that it is quadratic also</tt><br>
+&nbsp; One can see it just straightforwardly<br>
+&nbsp; First return to oscilator:<br>
+
+Look for 
+  $$
+S_t(x,q)=A(t)xq+
+{1\over 2}B(t)x^2+
+{1\over 2}C(t)q^2+
+  $$
+then  Hamilton-Jacobi equation
+(0) give that
+    $$
+y={\p S\over \p q}=A(t)x+C(t)q
+     $$
+and
+     $$
+{\p S_t(x,q)\over \p t}=
+{dA(t)\over dt}xq+
+{1\over 2}{dB(t)\over dt}x^2+
+{1\over 2}{dC(t)\over dt}q^2=
+H\left(
+{\p S_t(x,q)\over \p q},q
+\right)=
+      $$ 
+        $$
+{1\over 2}\left(
+A(t)x+C(t)q\right)^2+q^2=
+ A(t)C(t)xq+{1\over 2}A^2(t)x^2+
+{1\over 2}\left(C^2+1\right)q^2\,,
+        $$
+thus we come to differential equations
+      $$
+ \cases
+   {
+ {dC(t)\over dt}
+=1+C^2\cr
+ {dA(t)\over dt}=A(t)C(t)\cr
+ {dB(t)\over dt}=A^2(t)\cr
+    }\,\,\hbox{with bundary conditions}\,\quad
+\cases
+   {
+C(t)\big\vert_{t=0}=0\cr
+A(t)\big\vert_{t=0}=1\cr
+B(t)\big\vert_{t=0}=0\cr
+}
+      $$
+ thus  we come to  solution
+        $$
+     \cases
+       {
+   C(t)={\rm tg\,}(t+C)\cr
+     A(t)={1\cos (t+C)}\cr
+   B(t)={\rm tg\,}(t+C)\cr
+        }
+        $$ 
+       This is the answer (compare with example (2))   
+
+Now consider the general quadratic case
+
+<br><br>
+
+
+Now retunr to general case (3)
+       $$
+H=H(p,q)={1\over 2}U_{ik}x^ix^k+L_i^kx^ip_k+
+{1\over 2}T^{ik}p_ip_k
+ $$
+
+  Look for
+    $$
+S(x,q)=q_iA^i_k(t)x^k+{1\over 2}B_{ik}(t)x^ix^k+
+ {1\over 2}C^{ik}(t)(t)q_iq_k\,,\quad {\rm with}\,\,
+\cases
+  {     
+ A^i_k(t)\big\vert_{t=0}=\delta^i_k\cr
+ B_{ik}(t)\big\vert_{t=0}=0\cr
+ C^{ik}(t)\big\vert_{t=0}=0\cr
+       }\,.
+    \tag{5}
+    $$
+One can find $S(x,a)$ in (5) just solving equation (0):
+       $$
+y^i={\p S\over \p q_i}=
+A^i_k(t)x^k+
+ C^{ik}(t)(t)q_k\,,
+$$
+and
+          $$
+{\p S\over \p t}=
+        q_i{dA^i_k(t)\over dt}x^k+
+     {1\over 2}{dB_{ik}(t)\over dt}x^ix^k+
+ {1\over 2}{dC^{ik}(t)(t)\over dt}q_iq_k=
+          $$
+         $$
+            \left(
+{1\over 2}U_{ik}y^iy^k+L_i^ky^iq_k+
+{1\over 2}T^{ik}q_iq_k
+    \right)
+     \big\vert_
+  {y^i={\p S\over \p q_i}=
+A^i_k(t)x^k+
+ C^{ik}(t)(t)q_k}=
+         $$
+           $$
+{1\over 2}U_{ij}
+       \left(
+A^i_k(t)x^k+
+ C^{ik}(t)(t)q_k
+         \right)
+       \left(
+A^j_r(t)x^r+
+ C^{jr}(t)(t)q_r
+         \right)
+        +
+      L_i^k
+        \left(
+A^i_k(t)x^k+
+ C^{ik}(t)(t)q_k
+         \right)
+q_k+
+{1\over 2}T^{ik}q_iq_k
+        $$
+Comparing tensors with coefficients
+$x^ix^k$, $x^iq_k$ and $q_iq_k$
+we come to first order differential equations. E.g. for
+$x^ix^k$ we have  equation
+     $$
+{dB(t)\over dt}=A^+(t)UA(t)\,,\quad
+B(t)\big\vert_{t=0}=0\,.
+      $$
+Another way to do it, 
+ it is solve equations (1) just step
+by step, and in this case we will  also  find the
+linear canonical transformations.
+    
+    </div>
+  </div>
+ </body>
+</html>

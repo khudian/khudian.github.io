@@ -3,11 +3,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-  <link rel="stylesheet" type="text/css" href="../../../mathBlogStyle.css">
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
 
-  <script type="text/javascript" src="../../../jquery_3.4.1.js"></script>
-  <script type="text/javascript" src="../../../menu.js"></script> 
-  <script type="text/javascript" src="../../../mathBlogMain.js"></script> 
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script>
   <script type="text/x-mathjax-config">
     configureMathJax();
   </script>
@@ -18,9 +20,9 @@
   <div id="menu"></div>
 
   <div class="mainText">
-    <div class="article">
+    <div class="article" date="May 2019">
       
-      <h2 class="title" date=""></h2>
+      
 
       <h3>Symmetries of Clairaut equation</h3>
   
@@ -52,11 +54,11 @@
               $$
       This is so called Legendre transformation of contact space
       $E$.  Under this transformation the
-      characteristic $1$-form $pdx-dy$ is not changed
-      \footnote{}{the transformation (2a)  preserves the 
+      characteristic $1$-form $pdx-dy$ is <div class="footnote-head">not changed,</div>
+      <div class="footnote-body">the transformation (2a)  preserves the 
       distribution of planes defined by
       $1$-form $pdx-dy$, thus it can be applied to an arbitrary
-      differential equation $F(x,p,y)=0$ ($p=y'$).},
+      differential equation $F(x,p,y)=0$ ($p=y'$).</div>
       and  the Clairaut equation
       transforms to the algebraic equation 
               $$

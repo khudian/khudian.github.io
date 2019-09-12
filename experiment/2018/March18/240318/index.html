@@ -3,11 +3,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-  <link rel="stylesheet" type="text/css" href="../../../mathBlogStyle.css">
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
 
-  <script type="text/javascript" src="../../../jquery_3.4.1.js"></script>
-  <script type="text/javascript" src="../../../menu.js"></script> 
-  <script type="text/javascript" src="../../../mathBlogMain.js"></script> 
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
   <script type="text/x-mathjax-config">
     configureMathJax();
   </script>
@@ -18,8 +20,8 @@
   <div id="menu"></div>
 
   <div class="mainText">
-    <div class="article">
-      <h2 class="title" date=""></h2>
+    <div class="article" date="24 March 2018">
+      
 
    Consider differential equation
     $$
@@ -33,7 +35,6 @@ on derivative,  $f,g$ polynomials on $x$.
   \left({d\over dx}+\lambda\right)^{-1}G(x)=
      G\left(x+{d\over d\lambda}\right){1\over \lambda}\,.
       $$
-<br>
 It follows from this lemma that the solutions of 
 differential equation
          $$
@@ -44,7 +45,6 @@ is the polynomial
    F(x)=G\left(x+\sum_i {d\over d\lambda_i}\right)
       {1\over \lambda_1\lambda_2\dots \lambda_n}\,.
         $$
-<br>
 <tt> Proof of the lemma</tt>
 <br>
 We have that the commutator

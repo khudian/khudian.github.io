@@ -3,11 +3,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-  <link rel="stylesheet" type="text/css" href="../../../mathBlogStyle.css">
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
 
-  <script type="text/javascript" src="../../../jquery_3.4.1.js"></script>
-  <script type="text/javascript" src="../../../menu.js"></script> 
-  <script type="text/javascript" src="../../../mathBlogMain.js"></script> 
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
   <script type="text/x-mathjax-config">
     configureMathJax();
   </script>
@@ -18,11 +20,10 @@
   <div id="menu"></div>
 
   <div class="mainText">
-    <div class="article">
-      <h2 class="title" date=""></h2>
+    <div class="article" date="28 January 2019">
+      
 
 <h3>Again about strings on the circle</h3>
-<br>
 This is third attempt.
     We have to calculate eigenvalues of the potential energy,
 which is described by the  circulant
@@ -57,7 +58,6 @@ where $\vare_i$ is a root of unity:
      \vare_k= \exp \left(2\pi k i\over N+1\right)\,,
 \quad (i=\sqrt {-1})\,.
         $$
-<br>
 We see that
      $$
 M\f_i=(2-\vare_i-\vare_i^{N})\f_i

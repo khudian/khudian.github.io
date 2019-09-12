@@ -3,11 +3,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-  <link rel="stylesheet" type="text/css" href="../../../mathBlogStyle.css">
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
 
-  <script type="text/javascript" src="../../../jquery_3.4.1.js"></script>
-  <script type="text/javascript" src="../../../menu.js"></script> 
-  <script type="text/javascript" src="../../../mathBlogMain.js"></script> 
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
   <script type="text/x-mathjax-config">
     configureMathJax();
   </script>
@@ -18,8 +20,8 @@
   <div id="menu"></div>
 
   <div class="mainText">
-    <div class="article">
-      <h2 class="title" date=""></h2>
+    <div class="article" date="June 2018">
+      
 <br>
    Equation $x=kx+1$  has not a root if $k=1$
 and it has just one root if $k\not=1$.
@@ -45,9 +47,11 @@ $\det K=AD-BC\not=0$, consider projective transfromations
                  $$
               F(x)={Ax+B\over Cx+D}\,.
                  $$
-of $\bf RP$\footnote{$^*$}{In homogeneous coordinates:
-              $[x:y]\mapsto [x':y']=
-F\left([x:y]\right)=[Ax+By:Cx+Dy]$.}
+<div class="footnote-head">of $\bf RP$</div><div class="footnote-body">
+    In homogeneous coordinates:
+    $[x:y]\mapsto [x':y']=
+    F\left([x:y]\right)=[Ax+By:Cx+Dy]$.
+</div>
    Equation $x=kx+1$ can be considered as a
 fixed point of projective transformation
    with matrix  $K=\pmatrix {k & 1\cr 0 & 1\cr}$:
@@ -65,8 +69,7 @@ a new affine coordinate:
       \pmatrix {m & n\cr p & q}
            =1\
                 \right)
-                $$ 
-<br>
+                $$
              Then 
 projective transformation $F(x)=kx+1$
 in new coordinate $u$ will have the appearance
@@ -85,13 +88,11 @@ The discriminant of this equation is equal to
                  $$
 {\cal D}=(A-D)^2+4BC={\rm Tr {\cal F}'\,}^2-4\det {\cal F}'\,.
                   $$
-<br>
 For initial matrix ${\cal F}=\pmatrix {k & 1\cr 0& 1\cr}$,
 and
               $$
 k=1\Leftrightarrow {\cal D}=(k-1)^2=0\,.
               $$
-<br>
 </div>
   </div>
  </body>

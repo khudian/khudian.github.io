@@ -3,11 +3,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-  <link rel="stylesheet" type="text/css" href="../../../mathBlogStyle.css">
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
 
-  <script type="text/javascript" src="../../../jquery_3.4.1.js"></script>
-  <script type="text/javascript" src="../../../menu.js"></script> 
-  <script type="text/javascript" src="../../../mathBlogMain.js"></script> 
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
   <script type="text/x-mathjax-config">
     configureMathJax();
   </script>
@@ -18,8 +20,8 @@
   <div id="menu"></div>
 
   <div class="mainText">
-    <div class="article">
-      <h2 class="title" date=""></h2>
+    <div class="article" date="20 July 2019">
+      
 
 <h3> Example of two spinors--rotation</h3>
 <i> orthogonal transformation corresponding to vectors
@@ -43,17 +45,17 @@ Clifford algebra.
 <br>
 The transformation $L_\v$ has axis directed along vector $\v$
 and all the vectors orthogonal to $\v$ it rotates on the
-angle $\pi$ \footnote{} 
-{These elements form subspace in the orthogonal group
- (see Etude about fantom peines....) 
-}
+angle $\pi$.<div class="footnote-head"></div>
+             <div class="footnote-body">
+                 These elements form subspace in the orthogonal group
+                 (see Etude about fantom peines....)
+             </div>
 <br>
 Consider the action of two rotations of this type:
 let $\v_1,\v_2$ be two unit vectors, we calculate
         $$
  \v_1\v_2 x\v_2^{-1}\v_1^{-1}=P(\x)
         $$
-<br>
 Consider how looks operator $P$ first in $\E^3$
 <br>
 <b> Theorem</b>   The rotation
@@ -150,8 +152,7 @@ f is finished.
 <br>
   In the case of arbitrary $\E^n$
 the transformation look :
-<br>
-    $$ \cases
+$$ \cases
     {
 P(\e)=
 L_{\v_1}L_{\v_2}(\e)=
@@ -187,7 +188,6 @@ in the basis $\{\e,\f.\g_1,\g_2,\dots,\g_{n-2}\}$  is
      0 & 0 & 0   & 0  &\dots &1\cr
         } 
      $$
-<br>
 </div>
   </div>
  </body>

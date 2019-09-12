@@ -3,11 +3,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-  <link rel="stylesheet" type="text/css" href="../../../mathBlogStyle.css">
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
 
-  <script type="text/javascript" src="../../../jquery_3.4.1.js"></script>
-  <script type="text/javascript" src="../../../menu.js"></script> 
-  <script type="text/javascript" src="../../../mathBlogMain.js"></script> 
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
   <script type="text/x-mathjax-config">
     configureMathJax();
   </script>
@@ -18,8 +20,8 @@
   <div id="menu"></div>
 
   <div class="mainText">
-    <div class="article">
-      <h2 class="title" date=""></h2>
+    <div class="article" date="November 2018">
+      
 <tt>3 November 2018</tt>
 <br>
 <i>It is long time that I know about Fock remark to Dicrak book.
@@ -87,8 +89,7 @@ $H$ does not depend on time, it is why $\SS$  deos not depend
 on $E_0$.
 <br>
 The Shrodinger equation becomes
-<br>
-   $$
+$$
 i\h {\p \Psi\over \p t}=
 i\h 
 {\p\over \p t} 
@@ -207,7 +208,6 @@ this is the equation on the semidensity, it can be rewritten
           \sqrt {Dx}\qquad
    \hbox {for }\,\, {\bf V}={\rm grad} \SS\,.
       $$
-<br>
 In time representation it will be
 <br>
 The equation for semidensity in $E$ representation is simpler
@@ -223,7 +223,6 @@ and
  $$
 {1\over 2}\SS_{xx}+s_x^2=0, i.e.  s(x)\sim {1\sqrt p(x)}
       $$
-<br>
 In general case it is usefule to express done the solution
 of the transport euquation, the amplitude
   $\sigma(x,t)$  in terms of the amplitude $s(x,E)$.
@@ -233,8 +232,7 @@ illiminating to do the quasiclassi stationary method:
 W
 <br>
   We have in the first approximation
-<br>
-       $$
+$$
 e^{{i\over \h}  S_\h(x,t)}=
   \int 
 \left(
@@ -249,7 +247,6 @@ e^{{i\over \h}
 \right)dE=
 A_E(x,E(t)){1\over\sqrt {\det {\p E\over \p t}}}
        $$
-<br>
 </div>
   </div>
  </body>

@@ -3,11 +3,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-  <link rel="stylesheet" type="text/css" href="../../../mathBlogStyle.css">
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
 
-  <script type="text/javascript" src="../../../jquery_3.4.1.js"></script>
-  <script type="text/javascript" src="../../../menu.js"></script> 
-  <script type="text/javascript" src="../../../mathBlogMain.js"></script> 
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
   <script type="text/x-mathjax-config">
     configureMathJax();
   </script>
@@ -18,54 +20,48 @@
   <div id="menu"></div>
 
   <div class="mainText">
-    <div class="article">
-      <h2 class="title" date=""></h2>
+    <div class="article" date="June 2019">
+      
 
-<h3>  Konspekt pervoj chasti doklada Karabegova</h3> 
-<br>
+<h3>  Konspekt pervoj chasti doklada Karabegova</h3>
 <h3> po ego lekcijam po Skaipu (kak ja ikh pnimaju)</h3>
-<br>
   Let $M$ be a  manifold with a point $\pb$ on it.
 <br>
-  Let $\rho=\rho(\nu)$ be a \formal density on manifold $M$
-\footnote{$^{1)}$}
-{
-<b> Remark</b>  The \formal density $\rho(\nu)$ obeys also the condition
-that
-            $$
+<div class="footnote-head">Let $\rho=\rho(\nu)$ be a <tt>formal</tt> density on manifold $M$</div>
+<div class="footnote-body">
+    <b> Remark</b>  The <tt>formal</tt> density $\rho(\nu)$ obeys also the condition
+    that
+    $$
     \rho=e^{\varphi(\nu)}\rho_0(\nu)\,,\quad
-\hbox {where $\varphi(\nu)=\sum_{k\geq -1}\nu^k\varphi_k$}\,.
-            $$
-I do not know how to codify it without the use of the phase function
-Later I will call density of this type <i> oscillatory</i> density. 
-}
-and $\sigma=\sigma(\nu)$  be a \formal function on $M$ such that
+    \hbox {where $\varphi(\nu)=\sum_{k\geq -1}\nu^k\varphi_k$}\,.
+    $$
+    I do not know how to codify it without the use of the phase function
+    Later I will call density of this type <i> oscillatory</i> density.
+</div>
+and $\sigma=\sigma(\nu)$  be a <tt>formal</tt> function on $M$ such that
                            $$
                {d\rho(\nu)\over d\nu}=\sigma(\nu)\rho(\nu)\,.
                           \tag{1}
                    $$
-We consider \formal generalised functions
+We consider <tt>formal</tt> generalised functions
  $\Lambda(\nu)$  with support at the point
    $\pb$ 
                  $$
   \Lambda(\nu)=\Lambda_0+\nu \Lambda_1+\dots\,,\quad \hbox {and $\Lambda_0(1)\not =0$}\,.
                        \tag{2}
                  $$
-<br>
- 
-<br>
-We say that the generalised \formal function $\Lambda$  is associated
+We say that the generalised <tt>formal</tt> function $\Lambda$  is associated
 with the density $\rho$ if 
                  $$
 \Lambda\left(\p_\v f+f\div_\rho \v\right)=0
                              \tag{3}
                  $$
-where $\v$ is an arbitrary vector field on $M$ (not \formal)
-and $f$ is an arbitrary \formal function on $M$.
+where $\v$ is an arbitrary vector field on $M$ (not <tt>formal</tt>)
+and $f$ is an arbitrary <tt>formal</tt> function on $M$.
 <br>
 
 <br>
-We say that the generalised \formal function $\Lambda$  is <i> strongly 
+We say that the generalised <tt>formal</tt> function $\Lambda$  is <i> strongly 
 associated</i> with the density $\rho$ if
 this function is associanted with the density $\rho$
 and  the following condtion holds also:
@@ -75,32 +71,33 @@ and  the following condtion holds also:
                   \tag{4}
               $$ 
 where  $n$ is a dimension of manifold $M$, $f=f(\nu)$ is as usual
-an arbitrary \formal function and a function $\sigma$
+an arbitrary <tt>formal</tt> function and a function $\sigma$
 is defined by equation (1)
-\footnote{$^{2)}$}
-{Equation (4) becomes natural if we apply
-it to generalised function 
-                  $
-\Lambda_{\rho_0,\varphi}=\nu^{-{n\over 2}}\int f\rho
-                  $,
-where a \formal density $\rho$ is equal to 
-$\rho=e^\varphi \rho_0$, $\rho_0$ is a density (non-vanishing at point
-$\pb$) and  $\varphi$
-is  a \formal function such that
-            $
-\varphi={1\over \nu}\varphi_{-1}+\varphi_0+\nu\varphi_1+\dots
-            $,
-and a function $\varphi_1$ has non-degenerate hessian at the point
-   $\pb$.
-}.
+<div class="footnote-head"></div>
+<div class="footnote-body">
+    Equation (4) becomes natural if we apply
+    it to generalised function
+    $
+    \Lambda_{\rho_0,\varphi}=\nu^{-{n\over 2}}\int f\rho
+    $,
+    where a <tt>formal</tt> density $\rho$ is equal to
+    $\rho=e^\varphi \rho_0$, $\rho_0$ is a density (non-vanishing at point
+    $\pb$) and  $\varphi$
+    is  a <tt>formal</tt> function such that
+    $
+    \varphi={1\over \nu}\varphi_{-1}+\varphi_0+\nu\varphi_1+\dots
+    $,
+    and a function $\varphi_1$ has non-degenerate hessian at the point
+    $\pb$.
+</div>
 <br>
 Notice that 
 <br>
-a) generalised function  associated with a \formal density
-is defined up to a \formal constant, and
+a) generalised function  associated with a <tt>formal</tt> density
+is defined up to a <tt>formal</tt> constant, and
 <br>
-b)  generalised function  stronlgly associated with a \formal density
-is defined up to a  constant (not \formal just a complex number).
+b)  generalised function  stronlgly associated with a <tt>formal</tt> density
+is defined up to a  constant (not <tt>formal</tt> just a complex number).
 <br>
 <b> Theorem</b> (<tt>Karabegov</tt>)
  If a density is 

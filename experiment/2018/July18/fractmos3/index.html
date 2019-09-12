@@ -3,11 +3,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-  <link rel="stylesheet" type="text/css" href="../../../mathBlogStyle.css">
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
 
-  <script type="text/javascript" src="../../../jquery_3.4.1.js"></script>
-  <script type="text/javascript" src="../../../menu.js"></script> 
-  <script type="text/javascript" src="../../../mathBlogMain.js"></script> 
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
   <script type="text/x-mathjax-config">
     configureMathJax();
   </script>
@@ -18,11 +20,10 @@
   <div id="menu"></div>
 
   <div class="mainText">
-    <div class="article">
-      <h2 class="title" date=""></h2>
+    <div class="article" date="July 2018">
+      
 
  <h3>Algorithm "nosov" continuous fractions</h3>
-<br>
 Here we reproduce the algorithm "vytiagivanija nosov", 
 which I learnt in  the book of Arnold.
 <br>
@@ -35,7 +36,6 @@ over vectors $\e,\f$:
 \Z^2=\{(m,n)=m\e+n\f\,\quad m,n\in\Z\}\,.
        \tag{1}
          $$
-<br>
 We assign to an arbitrary rational number  $p\over q$
 the vector 
          $$
@@ -60,14 +60,12 @@ in $\Z^2$   defined by real number $\a$ in the following way:
 \E_{-2}=\e,\quad  \E_{-1}=\f\,,
      \tag{3}
             $$
-<br>
 <b> Proposition</b> {``vytiagivanie nosov''}:  
 for arbitrary $k$:
         $$
 \E_{k+1}=\E_{k-1}+a_{k+1}\E_k\,. (k=-1,0,1,2,\dots)
         \tag{Prop}
         $$
-<br>
 Proof:
 <br>
 Instead Proposition we will prove the statement that
@@ -104,12 +102,10 @@ p_0=a_0,q_0=1,\quad
   q_1=a_1,p_1=a_0a_1+1\,,\quad
   q_2=a_1a_2+1,p_2=a_0a_1a_2+a_0+a_2\,, 
       $$
-<br>
 Equation ($Statement$) implies that
               $$
 \E_{k+1}=\lambda \left(\E_{k-1}+a_{k+1}\E_k\right)
               $$
-<br>
 One can eassy to check that
    $\lambda =1$ for $k=-1$.
 Assume by induction that this holds
@@ -166,10 +162,7 @@ For $k=1$:
 This is true.
 <br>
 and so on:
-<br>
-
-<br>
-     $$
+$$
 [\E_{m}]=[q_{m}\e+p_{m}\f]=
 \left[\e+\left[a_0,\dots,a_m\right]\f\right]=
 \left[\e+\left(a_0+
@@ -249,7 +242,6 @@ and so on:
  \left[ \E_{m-1}+{1\over a_m}\E_{m-2}\right]=
  \left[a_m \E_{m-1}+\E_{m-2}\right]\,.
       $$
-<br>
 </div>
   </div>
  </body>

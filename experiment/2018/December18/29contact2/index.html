@@ -3,11 +3,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-  <link rel="stylesheet" type="text/css" href="../../../mathBlogStyle.css">
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
 
-  <script type="text/javascript" src="../../../jquery_3.4.1.js"></script>
-  <script type="text/javascript" src="../../../menu.js"></script> 
-  <script type="text/javascript" src="../../../mathBlogMain.js"></script> 
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
   <script type="text/x-mathjax-config">
     configureMathJax();
   </script>
@@ -18,11 +20,10 @@
   <div id="menu"></div>
 
   <div class="mainText">
-    <div class="article">
-      <h2 class="title" date=""></h2>
+    <div class="article" date="29 December 2018">
+      
 
     <h3>Geometry of first order equation</h3>
-<br>
   Let  $J^1M$  be a space of first jets of functions on 
 manifold $M$. Cooridnates on $J^1M$ are $(p_i,q^j,u)$,
 where $q^j$ are coordinates on $M$.  Jet of every function  $u=u(x)$
@@ -64,7 +65,6 @@ N_i{\p\over \p p_i}+A{\p\over \p u}\in \CC(\EE)\,\, {\rm if}\,\,
 \left(M^i{\p\over \p q^i}+
 N_i{\p\over \p p_i}+A{\p\over \p u}\right)F(p,q,u)\big\vert_{F=0}=0\,.
           $$
-<br>
 The solution of differential equation (1) is the maximal integral
   of the distribution
 $\CC(\EE)$, which is the $n$-dimensional
@@ -100,7 +100,6 @@ dF=
     $$
 \a_\pb\ni\X\Leftrightarrow  \w_C(\X)=dF(\X)=0\,. 
     $$
-<br>
 <b> Definition</b>  The point $\pb$ is not singular point if
 tnhe rank of the matrix $\pmatrix {\w_C\cr  dF\cr}$  is equal to $2$.
 IN this case the dimension of 

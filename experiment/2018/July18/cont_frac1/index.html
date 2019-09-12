@@ -3,11 +3,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-  <link rel="stylesheet" type="text/css" href="../../../mathBlogStyle.css">
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
 
-  <script type="text/javascript" src="../../../jquery_3.4.1.js"></script>
-  <script type="text/javascript" src="../../../menu.js"></script> 
-  <script type="text/javascript" src="../../../mathBlogMain.js"></script> 
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
   <script type="text/x-mathjax-config">
     configureMathJax();
   </script>
@@ -18,11 +20,10 @@
   <div id="menu"></div>
 
   <div class="mainText">
-    <div class="article">
-      <h2 class="title" date=""></h2>
+    <div class="article" date="July 2018">
+      
 
  <h3>Facts about continuous fractions</h3>
-<br>
 <b> Fact 1</b>
 <br>
 Let $\a$ be a real number,
@@ -63,16 +64,13 @@ It is evident that
  {r\over s}=[a_1,\dots,a_k]\,,
         \tag{1.1}
      $$
-<br>
 let 
 <br>
 In the case if the rational number 
 $[a_1,]{r\over s}$
-<br>
-       $$
+$$
 {p_k\over q_k}=a_0+{r\over s}
        $$
-<br>
 <b> Proposition</b> <i> Let $\a$ be positive irrational
 number  and $\a=[a_0,a_1,\dots,a_n,\dots]$.
 <br>
@@ -95,7 +93,6 @@ and
    {p_{k}\over q_{k}}={1\over q_{k+1}q_k}.
      \tag {Prop2}
            $$
-<br>
 </i>
 The first statement is evident, the second statement
 can be easily proved by induction. For $k=0$ it is true.
@@ -168,9 +165,7 @@ During the School in Ratmino Sasha Vweselov explained
 me that this property can be formlised in the following way:
 <br>
 <b> Theorem</b> (<tt> F.Klein</tt>)
-<br>
 <h3> Convex span and continuous fraction</h3>
-<br>
 Let  $\a$  be a number.
          Consider on the lattice $Z\times Z$ two sets
        $$

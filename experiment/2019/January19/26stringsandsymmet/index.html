@@ -3,11 +3,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-  <link rel="stylesheet" type="text/css" href="../../../mathBlogStyle.css">
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
 
-  <script type="text/javascript" src="../../../jquery_3.4.1.js"></script>
-  <script type="text/javascript" src="../../../menu.js"></script> 
-  <script type="text/javascript" src="../../../mathBlogMain.js"></script> 
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
   <script type="text/x-mathjax-config">
     configureMathJax();
   </script>
@@ -18,16 +20,14 @@
   <div id="menu"></div>
 
   <div class="mainText">
-    <div class="article">
-      <h2 class="title" date=""></h2>
+    <div class="article" date="26 January 2019">
+      
 
 <i> This is my may be last blog before beginning the Spring semester.
 Here I use one construction of orthogonal matrices, to
 diaognalise $N+1=2^k$ interacting oscyllators. The idea is taken
 from $Z_2$ addition which I "rediscovered"  about 30 years ago.</i>
-<br>
 $$ $$
-<br>
 Here I will continue to try to find
 good coordinates for  $N+1$  strings which are joined to the ring,
 but now I will try to do it in more clever way.
@@ -87,7 +87,6 @@ $u^0,u^1,u^2,\dots,u^N$ such that
  {u^0\cr u^1\cr \dots\cr u^N\cr}
 =
       $$
-<br>
 such that
  in these coordinates
 Lagrangian splits on two Lagrangians: Lagrangian of free particle
@@ -166,19 +165,22 @@ p_{0N} &p_{1N} \dots &p_{NN}\cr
        }
          $$
 <h3> Orthogonal matrices</h3>
-<br>
 The problem is to find the orthonormal basis, such
 that one of the vectors go along the vector $\sim_i\e_i$
 and this basis "respects symmetry"
 <br>
 It turns out that the question becomes easy for
 $N+1=2^k$. In this case one can  construct orthogonal matrix
-which contains only $\pm$, and the idea of this comes from the
-quesstion that I was solving in 1990\footnote{$^*$}{trying to 
-find solution of problem: there are $n$ positive integeres, 
-$a_1,a_2,\dots,a_n$.  Every player can take any number $a_i$ 
-and transform it to the humber that is less $a_i\mapsto a_i-k$.
-The winner is who do the last step.}
+which contains only $\pm$, and <div class="footnote-head">
+    the idea of this comes from the
+    question that I was solving in 1990
+</div><div class="footnote-body">
+    trying to
+    find solution of problem: there are $n$ positive integeres,
+    $a_1,a_2,\dots,a_n$.  Every player can take any number $a_i$
+    and transform it to the humber that is less $a_i\mapsto a_i-k$.
+    The winner is who do the last step.
+</div>
 <br>
 One can easy to find orthogonal matirices which diagonalise the matrix
 of potential energy in the case
@@ -326,7 +328,6 @@ and so on....
    }  \cr
                  }\,.
     $$
-<br>
 One can calulcate eigenvalues using rows of the matirx $P$.
 <br>
 </div>

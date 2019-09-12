@@ -3,11 +3,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-  <link rel="stylesheet" type="text/css" href="../../../mathBlogStyle.css">
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
 
-  <script type="text/javascript" src="../../../jquery_3.4.1.js"></script>
-  <script type="text/javascript" src="../../../menu.js"></script> 
-  <script type="text/javascript" src="../../../mathBlogMain.js"></script> 
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
   <script type="text/x-mathjax-config">
     configureMathJax();
   </script>
@@ -18,11 +20,10 @@
   <div id="menu"></div>
 
   <div class="mainText">
-    <div class="article">
-      <h2 class="title" date=""></h2>
+    <div class="article" date="21 July 2019">
+      
 
 <h3> An attempt to multiply the vectors</h3>
-<br>
 Let $V$ be Euclidean vector space with scalar product $(x,y)$.
       Consider Clifford algebra over $V$ with quadratic form
                   $Q(\x)=-(\x,\x)$.
@@ -44,8 +45,7 @@ we assing the element of orthogonal group
  L_{\x_2}\dots
  L_{\x_{n-1}}
  L_{\x_{n}}
-              $$       
-<br>
+              $$
 It seems that we reconstruct in this way the Clifford algebra? NO!
 <br>
 a) this is a map on image of group $pin$ in orthogonal group

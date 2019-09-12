@@ -3,11 +3,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-  <link rel="stylesheet" type="text/css" href="../../../mathBlogStyle.css">
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
 
-  <script type="text/javascript" src="../../../jquery_3.4.1.js"></script>
-  <script type="text/javascript" src="../../../menu.js"></script> 
-  <script type="text/javascript" src="../../../mathBlogMain.js"></script> 
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
   <script type="text/x-mathjax-config">
     configureMathJax();
   </script>
@@ -18,8 +20,8 @@
   <div id="menu"></div>
 
   <div class="mainText">
-    <div class="article">
-      <h2 class="title" date=""></h2>
+    <div class="article" date="19 February 2019">
+      
 
    We calculated in October 2018 the action of
 oscillator. Now I will try to calculate it in another way,
@@ -143,16 +145,13 @@ $$
          2x_1x_0
        \right]\,.
      $$
-}
-<br>
    Change now the angle that we look at this problem.
 <br>
  Instead Lagrnagian $L={1\over 2}\left(\dot q^2-q^2\right)$
 we consider Hamiltonian
               $$
       H={1\over 2}\left(p^2+x^2\right)
-               $$     
-<br>
+               $$
 Previously we calculated action as integral of Lagrangian over time:
                $$
    S(x_0,x_1,t)=      
@@ -164,7 +163,6 @@ Previously we calculated action as integral of Lagrangian over time:
          2x_1x_0
        \right]\,.
                $$
-<br>
 It is useful to denote $(x,p)$ initial coordinates and momenta 
   and by $(y,q)$ after time $T$
 <br>

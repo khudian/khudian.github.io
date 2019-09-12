@@ -1,12 +1,26 @@
 This is the page with the general information about writing tex articles in html
 
-which commands are not working:
+The engine which is rendering the formulas is called MathJax. 
+In the beginning of every file you have something like:
+
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+
+Which means that each time you load the html with latex formulas, it downloads the scripts from that source. This script runs on your browser
+and converts the latex formulas to the 'real' formulas which you see on the screen. 
+Mathjax is very powerful and supports even latex 'defs'. The configuration for them
+can be found in the file config.js. Note the latex 'defs' which are placed in config.js are applied globally to all the articles. So it 
+is important to be consistent in using 'defs' throughout the articles.  
+
+
+Which commands are not working in MathJax:
 
 For latex formulas:
 1) $\eqno (1a)$     =>    $\tag{1a}$ (for formulas numbering)
 2) $\cal c$         =>    $\rfloor$ (for ⌋)
-3) $\cal x$         =>    $\S$ (for §) don't redefine $\S$, 
-since it would conflict with the "paragraph sign" §.
+3) $\cal x$         =>    $\S$ (for §) 
+4) Don't redefine $\S$ as ${\cal S}$ or as anything else, since $\S$ is used for the "paragraph sign" §.
+5) $a<b$            =>    $a < b$ or $a< b$ (Mathjax would not render a formula if the "<" sign 
+                          there is glued with the next character)
 
 For the text formating outside of latex formulas:
 1) {\bf example}    =>    <b>example</b>
@@ -17,3 +31,11 @@ For the text formating outside of latex formulas:
 6) "break line"     =>    <br>
 7) \medskip         =>    <br><br>
 8) \bigskip         =>    <br><br><br>
+
+9) \footnote        =>    <div class="footnote-head">
+                            This is footnote head
+                          </div>
+                          <div class="footnote-body">
+                            This is footnote body
+                          </div>
+

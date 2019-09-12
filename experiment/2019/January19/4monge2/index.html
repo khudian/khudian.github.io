@@ -3,11 +3,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-  <link rel="stylesheet" type="text/css" href="../../../mathBlogStyle.css">
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
 
-  <script type="text/javascript" src="../../../jquery_3.4.1.js"></script>
-  <script type="text/javascript" src="../../../menu.js"></script> 
-  <script type="text/javascript" src="../../../mathBlogMain.js"></script> 
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
   <script type="text/x-mathjax-config">
     configureMathJax();
   </script>
@@ -18,12 +20,10 @@
   <div id="menu"></div>
 
   <div class="mainText">
-    <div class="article">
-      <h2 class="title" date=""></h2>
+    <div class="article" date="January 2019">
+      
 
    <h3> Geometry of diff.equations and Monge cone</h3>
-
-<br>
 Consider $2n+1$-dimension space $J^1(M)$  of first jets of
 $n$-dimensional manifold $M$.
 Let  
@@ -52,9 +52,13 @@ span all the tangent space:
 \dim \CC_\pb\cap T_\pb\EE=2n-1\,.
         $$
 and  this is  is equivalent to the condition
-that contact form $\w$ and the form $dF$ are not collinear
-at the point $\pb$ \footnote{$^*$}{One can easy to check this choosing
-covectors $\w$ and $dF$ as elemnets of basis.}.
+that <div class="footnote-head">
+    contact form $\w$ and the form $dF$ are not collinear
+    at the point $\pb$.
+</div><div class="footnote-body">
+    One can easy to check this choosing
+    covectors $\w$ and $dF$ as elemnets of basis.
+</div>
 <br>
 
 <br>
@@ -86,7 +90,6 @@ p_i{\p F\over \p p_i}{\p\over \p u}
               -
 F{\p\over \p u}
       $$
-<br>
 The contact distribution $\CC$,  (the distribution of contact planes)
 defines 
 <br>
@@ -101,12 +104,11 @@ Let $N$ be $n$-dimensional manifold s graph of function
 the solution of differential equation defined by the surface $\EE$,
 i.e. $N\subset \EE$ ,and for every point $\pb\in N$, 
 tangent space $T_\pb N$ belongs
-to the characteristic plane $\CC(\EE)_\pb$: all pints of $N$
+to the characteristic plane $\CC(\EE)_\pb$: all points of $N$
 belongs to $\EE$ and all tangent vectors
-of  $N$  belong to the $T\EE$ and to contact plane\footnote
-{$^{**}$}{Belonging to contact distribution is auto  
-matical since every vector tangent to <tt> manifold</tt>
-belongs to contact plane}.
+of  $N$  belong to the $T\EE$ and to contact plane<div class="footnote-head"></div>
+<div class="footnote-body">Belonging to contact distribution is automatical since every vector tangent to <tt> manifold</tt>
+belongs to contact plane.</div>
 Of course one may consider also generalised solutions......
 <br>
 <tt> Boundary condition</tt>: Take the $n-1$-dimensional surface,and

@@ -3,11 +3,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-  <link rel="stylesheet" type="text/css" href="../../../mathBlogStyle.css">
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
 
-  <script type="text/javascript" src="../../../jquery_3.4.1.js"></script>
-  <script type="text/javascript" src="../../../menu.js"></script> 
-  <script type="text/javascript" src="../../../mathBlogMain.js"></script> 
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
   <script type="text/x-mathjax-config">
     configureMathJax();
   </script>
@@ -18,11 +20,10 @@
   <div id="menu"></div>
 
   <div class="mainText">
-    <div class="article">
-      <h2 class="title" date=""></h2>
+    <div class="article" date="7 August 2017">
+      
 
 <h3> Calculation for Green function of disc and half-plane.</h3>
-<br>
 Recall that if $G_U(z_0,z)$ is Green function
 of domain $U$ then 
 the identity
@@ -46,10 +47,7 @@ is the solution of boundary problem
          }
    \tag{0.3}
        $$
-<br>
-<br>
-   <h3> Green function for disc</h3>
-<br>
+<h3> Green function for disc</h3>
      Having a map
          $$
 z\to w={z-\zeta\over 1-\bar\zeta z }
@@ -98,7 +96,6 @@ rdr\wedge d\varphi{\rfloor}
       -{1\over 2\pi} 
 {1-R^2\over 1-2R\cos(\theta-\varphi)+R^2}d\varphi
             $$
-<br>
 <b> Remark</b> (Peut etre un problem de sign?)
 <br>
 This we have the solution of Dirichle problme for the circle:
@@ -110,17 +107,14 @@ W(R,\theta)={1\over 2\pi}
       \int_0^{2\pi}\mu(\varphi)
 {1-R^2\over 1-2R\cos(\theta-\varphi)+R^2}d\varphi\,.
          $$
-<br>
 Look at this formula.
 It is useful sometimes to write it:
-<br>
-         $$
+$$
 W(R,\theta)={1\over 2\pi}
       \int_0^{2\pi}\mu(\varphi)
 {1-R^2\over (1-Re^{ i(\theta-\varphi)})
             (1-Re^{-i(\theta-\varphi)})}d\varphi\,.
          $$
-<br>
 Notice also that 
 If $\mu(\varphi)=C$ then obviously
           $$
@@ -136,8 +130,7 @@ W(R,\theta)=\cases{z^n=R^n e^{in\varphi}\,\hbox{for $R<1$}\cr
 <br>
 <b> Remark</b> <i> In the formula (*) there is a jump,
 so to be more precise we have to write:
-<br>
-         $$
+$$
 W(R,\theta)=\lim_{R\to R_-}{1\over 2\pi}
       \int_0^{2\pi}\mu(\varphi)
 {1-R^2\over (1-Re^{ i(\theta-\varphi)})
@@ -196,7 +189,6 @@ Put $x=\cos\varphi, y=\sin\varphi$ we come to
     {1-R\cos(\theta-\varphi)\over 
 1-2R\cos(\theta-\varphi)+R^2}d\varphi
        $$
-<br>
 Now we solve Dirichle problem via integral equation.
 <br>
   Consider the distribution $\nu(\varphi)$ on the circle.
@@ -217,7 +209,6 @@ This function is harmonic in the interior of the disc
     U(R,\theta)\big\vert_{R=1+0_+}=
     U(R,\theta)\big\vert_{R=1}-\pi\nu(\theta)\,.
             $$
-<br>
 In particular we come to the harmonic function
 in the disc such that its values at the boundary are equal to
         $$
@@ -293,9 +284,6 @@ function $W$ such that $G_\infty+W$ becomes the Green function:
 Dirichle problem $W\big\vert_{boundary}=-
 G_\infty\big\vert_{boundary}$
 </i>
-<br>
- <br>
-<br>
 <h3>Upper-half plane: Green function, Dirichle problem</h3>
 G
 We know that $w={iz+1\over z+i}$ maps $\H\leftrightarrow D$
@@ -315,8 +303,8 @@ Hence Green function for half-plane is
   G(z_0,z)=\log|w(z_0,z)|
    \tag{3.1}
         $$
-<b> Remark</b> {this is very stupid way to calculate
-Green function. Much easier another way: see the blog on 10 August!}
+<b> Remark</b> this is very stupid way to calculate
+Green function. Much easier another way: see the blog on 10 August!
 <br>
  It seems that here it is much easier way to 
 calculate Dirichle problem solution
@@ -358,8 +346,7 @@ to solve the integral equation. The function
    \int_{-\infty}^{\infty}\mu(t)
    {Ydt\over (t-X)^2+Y^2}
 \tag{2.2} 
-          $$  
-<br>
+          $$
 <b> Remark</b> <i> One can see straightforwardly that
 the function
            $$
@@ -401,7 +388,6 @@ G_\H(z_0,z)=
    \int_{-\infty}^{\infty}\log\sqrt {(t-X)^2+Y^2}
    {ydt\over (t-x)^2+y^2}\,.
       $$
-<br>
 It seems that calculation of the integral here are not  an easy task.
 But instead,  note that the Green function can be immediately
     obtained using symmetry arguments:

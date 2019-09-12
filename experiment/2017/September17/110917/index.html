@@ -3,11 +3,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-  <link rel="stylesheet" type="text/css" href="../../../mathBlogStyle.css">
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
 
-  <script type="text/javascript" src="../../../jquery_3.4.1.js"></script>
-  <script type="text/javascript" src="../../../menu.js"></script> 
-  <script type="text/javascript" src="../../../mathBlogMain.js"></script> 
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
   <script type="text/x-mathjax-config">
     configureMathJax();
   </script>
@@ -18,11 +20,10 @@
   <div id="menu"></div>
 
   <div class="mainText">
-    <div class="article">
-      <h2 class="title" date=""></h2>
+    <div class="article" date="11 September 2017">
+      
 
 <h3>Chasles'  Theorem</h3>
-<br>
 Sure it has hudnred idfferent proofs. 17 years ago I did something
 around it (see screw.tex in Etudes.)
   Today I realised that one can shorter the orthogonal operators
@@ -74,7 +75,6 @@ For arbitrary vector $\ac$,
    \tilde A(\ac_{||})=\ac_{||}\,\,\,
    \tilde A(\ac_\perp)=-\ac_\perp\,\,\,
                   $$
-<br>
 Now we are ready to formulate the Theorem:
 <br>
   <b> Theorem</b>  Let  $F$ be an isometry of $\E^2$. 
@@ -86,7 +86,6 @@ it is translation or rotation or  Chasles.
             $$
    F(\x)=A(\x)+\b\,.
             $$
-<br>
 If $A=1$, then $F$ is translation.
 <br>
 Let $A\not=1$, but  $\det A=1$, then one can choose $\r$ such that
@@ -103,9 +102,7 @@ for $\x\to \x+\r$.
        {\b_\perp\over 2}+\x_{||}+\c_{||},
               $$
 i.e. $F$ is Shall.
-<br>
-         $$ $$
-<br>
+$$ $$
 This can be doe much shorter.
    Let  $A$ be orthogonal operator with $\det  A=-1$.
 <br>

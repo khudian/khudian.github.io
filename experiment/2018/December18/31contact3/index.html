@@ -3,11 +3,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-  <link rel="stylesheet" type="text/css" href="../../../mathBlogStyle.css">
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
 
-  <script type="text/javascript" src="../../../jquery_3.4.1.js"></script>
-  <script type="text/javascript" src="../../../menu.js"></script> 
-  <script type="text/javascript" src="../../../mathBlogMain.js"></script> 
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
   <script type="text/x-mathjax-config">
     configureMathJax();
   </script>
@@ -18,8 +20,8 @@
   <div id="menu"></div>
 
   <div class="mainText">
-    <div class="article">
-      <h2 class="title" date=""></h2>
+    <div class="article" date="31 December 2018">
+      
 
     <h3>Contact vector field III</h3>
   Let  $J^1M$  be a space of first jets of functions on 
@@ -62,7 +64,6 @@ N_i{\p\over \p p_i}+A{\p\over \p u}\in \CC(\EE)\,\, {\rm if}\,\,
 \left(M^i{\p\over \p q^i}+
 N_i{\p\over \p p_i}+A{\p\over \p u}\right)F(p,q,u)\big\vert_{F=0}=0\,.
           $$
-<br>
 <b> Definition 1</b>
 The vector field $\K$  in $2n+1$ is <i> is an infinitesiaml symmetry</i> 
 of differential equation $\EE=0$  if it belongs to $\CC(\EE)$:
@@ -82,7 +83,6 @@ i.e. if it preserves the Cartan distribution $\CC$
   \L_\X  \CC=0
        \tag{2 b}
             $$
-<br>
 <b> Theorem</b>  <i> There is one-one 
 corrspondence between functions on
 $M$ and contact vector fields:
@@ -105,7 +105,6 @@ p_m{\p F\over \p p_m}- F
           \right)
        {\p\over \p u}
          $$
-<br>
 </i>
 <br>
 The proof of the Theorem follows from the 
@@ -194,12 +193,8 @@ d\left( \w\left(\X\right)\right)+
          $$
 Thus $\l\equiv 0$,  and $M^m\equiv 0$, $N_m\equiv 0$
 and due to equation (3b), $A\equiv 0$. Hence $\X\equiv 0$ $\finish$.
-<br>
- 
 <h3> Poisson brackets on $J^1M$</h3>
-<br>
-\qquad\qquad\qquad                A larchik prosto otkryvalsia.......
-<br>
+<pre>                A larchik prosto otkryvalsia.......</pre>
 Using the bijection $F\leftrightarrow X_F$  between functions
 and vector fields one can consider bracket
       $$
@@ -288,7 +283,6 @@ F^m\p_m-\left(F_m+p_mF_u\right)\p^m
     \right)
        {\finish}
       $$
-<br>
 </div>
   </div>
  </body>

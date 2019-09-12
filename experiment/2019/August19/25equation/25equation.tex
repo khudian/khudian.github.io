@@ -1,0 +1,109 @@
+
+
+
+
+
+\magnification=1200
+\baselineskip=14pt
+\def\vare {\varepsilon}
+\def\t {\tilde}
+\def\a {\alpha}
+\def\K {{\bf K}}
+\def\N {{\bf N}}
+\def\C {{\bf C}}
+\def\L {{\cal L}}
+\def\E {{\bf E}}
+\def\s {{\sigma}}
+\def\S {{\cal S}}
+\def\SS {{\Sigma}}
+\def\p{\partial}
+\def\vare{{\varepsilon}}
+\def\Q {{\bf Q}}
+\def\D {{\cal D}}
+\def\A {{\cal A}}
+\def\B {{\cal B}}
+\def\G {{\Gamma}}
+\def\Z {{\bf Z}}
+\def\R  {{\bf R}}
+\def\l {\lambda}
+\def\ll {{\bf l}}
+\def\degree {{\bf {\rm degree}\,\,}}
+\def \finish {${\,\,\vrule height1mm depth2mm width 8pt}$}
+\def \m {\medskip}
+\def\p {\partial}
+\def\r {{\bf r}}
+\def\pt {{\bf p}}
+\def\v {{\bf v}}
+\def\n {{\bf n}}
+\def\t {{\bf t}}
+\def\b {{\bf b}}
+\def\c {{\bf c }}
+\def\e{{\bf e}}
+\def\f{{\bf f}}
+\def\ac {{\bf a}}
+\def \X   {{\bf X}}
+\def \Y   {{\bf Y}}
+\def \x   {{\bf x}}
+\def \y   {{\bf y}}
+\def\w {{\omega}}
+\def \Tr  {{\rm Tr\,}}
+\def\dim {{\rm dim\,\,}}
+% I wrote this file on 16 January
+\def\t {{\tilde}} 
+\def\dist {{\hbox{\tt "distance"}}}
+\def  \dim {{\rm dim\,}}
+\def  \Im  {{\rm Im\,}}
+\def  \ker {{\rm ker\,}}
+
+
+\def \Cl {\hbox{\tt Cliff}}
+\def\F {\cal F}
+
+\centerline {\bf Composition of  morphisms}
+
+\def \SS {{\cal S}}
+For Lagrangian $L=L(x,\dot x)$
+we know that
+ $$
+{\p \SS(x,y,t)\over \p y}=q\,
+ $$
+and this implies that
+ $$
+{\p \SS(x,y,t)\p x}=-p\,
+ $$
+One can see it reversing the time.    More carefully 
+this means the following:
+       $$
+\SS(t,x,y)=\int_0^td\tau L(x(\tau),\dot x(\tau))d\tau\,,
+       $$
+where $x(\tau)$ solution of equations of motion,
+ $x(\tau=0)=x$, $x(\tau=t)=y$.
+(We suppose that $L$ does not depend on time)
+      We have that   $$
+\SS(t+\delta t,x+\delta x,y+\delta y)=
+\int_0^{t+\delta t}d\tau 
+           L\left(
+ x\left(\tau\right)+\vare h\left(\tau\right),
+\dot x\left(\tau\right+\vare \dot h\left(\tau\right))
+       \right)d\tau\,,
+        $$
+where 
+      $$
+h(0)=\delta x\,,
+    $$
+and
+  $$
+   x(t+\delta t)+\vare h(t+\delta t)=y(t)+\delta y\,,\rm
+  {i.e.\,}\,\,
+\dot x(t)+\vare h(t)=\delta y
+      $$
+
+
+      $$
+ {\p S(q,t)\over \p t}`=
+H\left({\p S\over \p q},q\right)=
+H\left({x,\p S\over \p x}\right)\,.
+      $$
+
+\bye
+

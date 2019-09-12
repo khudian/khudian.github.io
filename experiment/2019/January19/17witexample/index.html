@@ -3,11 +3,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-  <link rel="stylesheet" type="text/css" href="../../../mathBlogStyle.css">
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
 
-  <script type="text/javascript" src="../../../jquery_3.4.1.js"></script>
-  <script type="text/javascript" src="../../../menu.js"></script> 
-  <script type="text/javascript" src="../../../mathBlogMain.js"></script> 
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
   <script type="text/x-mathjax-config">
     configureMathJax();
   </script>
@@ -18,13 +20,10 @@
   <div id="menu"></div>
 
   <div class="mainText">
-    <div class="article">
-      <h2 class="title" date=""></h2>
+    <div class="article" date="17 January 2019">
+      
 
 <h3>One example of integral</h3>
-<br>
-
-<br>
 We consider
                  $$
 \int_{-\infty}^\infty \exp\left[-{x^4\over 4}+{x\over \nu}\right]dx\,.
@@ -76,7 +75,6 @@ Doing translation we will come to
 {1\over 4}x^4
 \right]dx
 $$
-<br>
 On the other hand we know that
          $$
 \int \exp\left[-{x^2\over h}\right]f(x)dx=
@@ -111,7 +109,6 @@ prove this formula and calculate $C_h$.  Consider
               }x^{2n}=
    \sqrt h\exp\left[{h\over 4}{d^2\over dx^2}\right]x^{2n}\big\vert_{x=0}
              $$
-<br>
 </div>
   </div>
  </body>

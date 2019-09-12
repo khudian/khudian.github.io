@@ -3,11 +3,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-  <link rel="stylesheet" type="text/css" href="../../../mathBlogStyle.css">
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
 
-  <script type="text/javascript" src="../../../jquery_3.4.1.js"></script>
-  <script type="text/javascript" src="../../../menu.js"></script> 
-  <script type="text/javascript" src="../../../mathBlogMain.js"></script> 
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
   <script type="text/x-mathjax-config">
     configureMathJax();
   </script>
@@ -18,8 +20,8 @@
   <div id="menu"></div>
 
   <div class="mainText">
-    <div class="article">
-      <h2 class="title" date=""></h2>
+    <div class="article" date="27 December 2018">
+      
 <br>
 27 December 2018
 
@@ -50,8 +52,8 @@ be the solution of the equation  (2).  Then
        $$
 u=\varphi_c(x)\colon W(x,u)\big\vert_{u=\varphi_c(x)}
        $$
-is the solution of equation\footnote{$^*$}
-{we suppose that $\Phi_u\not=0$} (1):
+<div class="footnote-head">is the solution of equation</div>
+<div class="footnote-body">we suppose that $\Phi_u\not=0$</div> (1):
       $$
 \forall c\in {\bf R}\,,\,
 A^i(x^j){\p u(x)\over\p x^i}\big\vert_{u(x=\varphi_c(x))}

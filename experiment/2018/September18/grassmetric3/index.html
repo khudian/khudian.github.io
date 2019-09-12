@@ -3,11 +3,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-  <link rel="stylesheet" type="text/css" href="../../../mathBlogStyle.css">
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
 
-  <script type="text/javascript" src="../../../jquery_3.4.1.js"></script>
-  <script type="text/javascript" src="../../../menu.js"></script> 
-  <script type="text/javascript" src="../../../mathBlogMain.js"></script> 
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
   <script type="text/x-mathjax-config">
     configureMathJax();
   </script>
@@ -18,16 +20,12 @@
   <div id="menu"></div>
 
   <div class="mainText">
-    <div class="article">
-      <h2 class="title" date=""></h2>
+    <div class="article" date="September 2018">
+      
 
-<br>
 <h3> Linear algebra and volume element of $G_{k,n}$<br>
 <tt> We are  working together on this text, H.Kh. $\&$ Thomas Honey</tt></h3>
-<br>
       <h3>  $\S$ 1<b> Grassmanian</b></h3>
- <br>
-<br>
    Let $V_{k,N}$ be a space of $k\times N$ real marices.
 <br>
 We consider the Euclidean metric 
@@ -82,12 +80,10 @@ d(N,[M])=\min_{\lambda\in GL(k)}||N-\lambda M||=
 for the matrix $\lambda\not\in GL(k)$.
  To be more precise we have
 to write
-<br>
-             $$
+$$
 d(N,[M])=\inf_{\lambda\in GL(k)}||N-\lambda M||=
    ||N-NM^+(MM^+)^{-1}M||\,,
              $$
-<br>
 is "heavily" orthogonal to the 
 plane $[M]$:
                    $$
@@ -103,7 +99,6 @@ of the frame in the plane $[M]$:
         $$
    N'_{N,\lambda M}=N'_{N,M}.
         $$
-<br>
  Using this condition of heavily <tt> orthogonality</tt>
 we come to 
           $$
@@ -144,9 +139,7 @@ d(N,[M])=
       \right]
   }\,.
           $$ 
-<br>
-      <h3>  $\S$ 2<b> Calculation of ``distance''</b></h3>
-<br>
+<h3>  $\S$ 2<b> Calculation of ``distance''</b></h3>
 Now we want to define the ``distance''  between
 arbitrary  two planes $[M],[N]\in G_{k,N}$.
 <br>
@@ -229,7 +222,6 @@ We are ready to define the ``distance''
  \right]
 }
        $$
-<br>
 Is it good???
 <br>
 It is almost evident that
@@ -242,7 +234,6 @@ It is almost evident that
     $$
 d([M],[N])=d([N],[M])
      $$
-<br>
 One can prove that it is positive definite.
 I believe (????) that triangle law is obeyed.....
 <br>
@@ -292,11 +283,8 @@ They both form orthonormal bases and
 <b> Remark</b> if it is indeed positive, then it is 
 the version of Cauchy-Bunyakovski inequality.....???!.
 (see the blog for January 2019)
-<br>
-  $$ $$
-<br>
-      <h3>  $\S$ 3<b> Calculation of metric</b></h3>
-<br>
+$$ $$
+<h3>  $\S$ 3<b> Calculation of metric</b></h3>
 We still do not know is it a distance, but
 we can consider its infinitesimal version:
   $N=N=\delta n$.  We come to bilinear form on tangent
@@ -381,7 +369,6 @@ m^+
         \right]^{-1}
       \right]\,.
       $$
-<br>
 For metric we can ignore infinitesiamls of order $\geq 3$.
 We come to 
 <br>
@@ -402,7 +389,6 @@ m^+
         \right]^{-1}
       \right]\,.
           $$
-<br>
 One has to prove thqt this is positive-definite.
 (We will see it doing straightforward calcilations.)
 <br>
@@ -444,15 +430,11 @@ m^+
       {\bf 1}+WW^+
         \right]^{-1}_{ki}
      $$
-<br>
 $$ $$
-<br>
-      <h3>  $\S$ 4<b> Calculation of the determinant of the metric</b></h3>
-<br>
+<h3>  $\S$ 4<b> Calculation of the determinant of the metric</b></h3>
    Calculate the determinant of the metric.
    We have (see the last formula above) that
-<br>
-               $$
+$$
     ds^2=\delta m G \delta m=
 \delta m_{i\a}G_{ij;\a\beta}\delta m_{j\beta}\,,
                $$
@@ -499,8 +481,7 @@ G_{ij;ab}= K_{ij}L_{ab}\,,\quad
        \right)^{n-k}
          }
        \left(\det L\right)^k\,.
-       $$ 
-<br>
+       $$
 For operator $L$ one can see that
           $$
 \det L=  {1\over 
@@ -510,84 +491,85 @@ For operator $L$ one can see that
        \right)
          }\,.
            $$
-This can be done using 
-the elementary linear algebra
-\footnote{$^*$}
-{Indeed consider
-                  $$
- L_{\a\beta}=
-  \delta_{\a\beta}-\left(W^+({\bf 1}+WW^+)^{-1}W\right)_{\a\beta}
-                  $$
-Matrix $W$ defines the operator 
-which maps $\R^k$  to $\R^{n-k}$
-Notice that  arbitrary vector which is orthogonal 
-to the image of this operator:
-             $
-{\bf t}\colon W_{i\a}t_\a=0
-             $, we have that
-$L({\bf t})={\bf t}$, i.e. it  
-is the eigenvector of operator $L$
-with eigenvalue $1$.
-On the other hand 
-for arbitrary vector which belongs to 
-the image of this operator
-                $
-{\bf l}\colon \quad l_\a=l_k W_{k\a}$
-(linear compbination of rows)
-we have that
-                     $$
-L{\bf l}_\a=
- \left 
-(\delta_{\a\beta}-\left(W^+\left({\bf 1}+WW^+\right)^{-1}W\right)_{\a\beta}
-\right)l_k W_{k\beta}=l_k W_{k\a}-
-                      $$
-                       $$
-  -W_{i \a}\left({\bf 1}+WW^+\right)^{-1}_{ij}W_{j\beta}l_k W_{k\beta}
-    l_k W_{k\a}               =
-  -W_{i \a}\left(\left({\bf 1}+WW^+\right)^{-1}
-               WW^+\right)_{ik}l_k 
-                     $$
-i.e.
-                  $$
-(L{\bf l})_\a=\tilde l_k W_{k\a}\,,\,\,
-{\rm where}\,\,
-        \tilde l_k=
-    l_k-  \left(\left({\bf 1}+WW^+\right)^{-1}
-\left(WW^+\right)\right)_{kn}l_n\,.
-                  $$
-This means that $\det L$ is equal to the product of
-$1$ (the determinant of this operator restricted on vectors orthogonal
-to the image of $W$) on the determinant of the operator
-     ${\bf 1}-\left(\left({\bf 1}+WW^+\right)^{-1}
-\left(WW^+\right)\right)$. Hence we see that
-                  $$
-\det L=1\cdot 
-            \det
-                \left(
-       {\bf 1}-\left(
- \left({\bf 1}+WW^+\right)^{-1}
-\left(WW^+\right)\right)
-              \right)
-     ={1\over \det(\left({\bf 1}+WW^+\right)}
+<div class="footnote-head">
+  This can be done using the elementary linear algebra
+</div>
+<div class="footnote-body">
+  Indeed consider
                     $$
-The last relation follows from the fact  that in
-the case if the operator $WW^+$ has diagonal representation,
-  $WW^+={\rm diag}[\lambda_1,\dots,\lambda_n]$ then
-           $$
-\det L=      \det
-                \left(
-       {\bf 1}-\left(
- \left({\bf 1}+WW^+\right)^{-1}
-\left(WW^+\right)\right)
-              \right)=
-\prod_{i=1}^n
-        \left(
-       1-{\lambda_1\over 1+\lambda_i}
-          \right)
-         =
-      {1\over \prod_{i=1}^n \left(1+\lambda_i\right)}
-           $$
-}.
+   L_{\a\beta}=
+    \delta_{\a\beta}-\left(W^+({\bf 1}+WW^+)^{-1}W\right)_{\a\beta}
+                    $$
+  Matrix $W$ defines the operator 
+  which maps $\R^k$  to $\R^{n-k}$
+  Notice that  arbitrary vector which is orthogonal 
+  to the image of this operator:
+               $
+  {\bf t}\colon W_{i\a}t_\a=0
+               $, we have that
+  $L({\bf t})={\bf t}$, i.e. it  
+  is the eigenvector of operator $L$
+  with eigenvalue $1$.
+  On the other hand 
+  for arbitrary vector which belongs to 
+  the image of this operator
+                  $
+  {\bf l}\colon \quad l_\a=l_k W_{k\a}$
+  (linear compbination of rows)
+  we have that
+                       $$
+  L{\bf l}_\a=
+   \left 
+  (\delta_{\a\beta}-\left(W^+\left({\bf 1}+WW^+\right)^{-1}W\right)_{\a\beta}
+  \right)l_k W_{k\beta}=l_k W_{k\a}-
+                        $$
+                         $$
+    -W_{i \a}\left({\bf 1}+WW^+\right)^{-1}_{ij}W_{j\beta}l_k W_{k\beta}
+      l_k W_{k\a}               =
+    -W_{i \a}\left(\left({\bf 1}+WW^+\right)^{-1}
+                 WW^+\right)_{ik}l_k 
+                       $$
+  i.e.
+                    $$
+  (L{\bf l})_\a=\tilde l_k W_{k\a}\,,\,\,
+  {\rm where}\,\,
+          \tilde l_k=
+      l_k-  \left(\left({\bf 1}+WW^+\right)^{-1}
+  \left(WW^+\right)\right)_{kn}l_n\,.
+                    $$
+  This means that $\det L$ is equal to the product of
+  $1$ (the determinant of this operator restricted on vectors orthogonal
+  to the image of $W$) on the determinant of the operator
+       ${\bf 1}-\left(\left({\bf 1}+WW^+\right)^{-1}
+  \left(WW^+\right)\right)$. Hence we see that
+                    $$
+  \det L=1\cdot 
+              \det
+                  \left(
+         {\bf 1}-\left(
+   \left({\bf 1}+WW^+\right)^{-1}
+  \left(WW^+\right)\right)
+                \right)
+       ={1\over \det(\left({\bf 1}+WW^+\right)}
+                      $$
+  The last relation follows from the fact  that in
+  the case if the operator $WW^+$ has diagonal representation,
+    $WW^+={\rm diag}[\lambda_1,\dots,\lambda_n]$ then
+             $$
+  \det L=      \det
+                  \left(
+         {\bf 1}-\left(
+   \left({\bf 1}+WW^+\right)^{-1}
+  \left(WW^+\right)\right)
+                \right)=
+  \prod_{i=1}^n
+          \left(
+         1-{\lambda_1\over 1+\lambda_i}
+            \right)
+           =
+        {1\over \prod_{i=1}^n \left(1+\lambda_i\right)}
+             $$
+</div>
 Hence
               $$
 \det G=
@@ -595,9 +577,7 @@ Hence
 {1\over  {\det ({\bf 1}+WW^+) }}
        \right)^{n}\,.
                  $$
-<br>
-      <h3>  $\S$ 5<b> Formula for volume of the Grassmanian</b></h3>
-<br>
+<h3>  $\S$ 5<b> Formula for volume of the Grassmanian</b></h3>
   Now we have that
        $$
 \hbox {Volume of $G_{k,N}$}=
@@ -710,7 +690,6 @@ we come to
             }
     \prod_{r=1,b=1}^{k,N}  dz_{rb}\,.
         $$
-<br>
 <b> Example. Volume of $G_{1,N}=\R P^{N-1}$</b>
            $$\hbox {Volume of $G_{1,N}$}=
      \int {dw_1\dots dw_{N-1}\over 
@@ -743,7 +722,6 @@ we come to
               }
              dz_1\dots dz_N\,.
            $$
-<br>
 First calculate explicitly the second integral (this is much easier to do):
 <br>
 We have:
@@ -781,7 +759,6 @@ We have:
         dr
   = {\sigma_{N-1}\over 2}
                  $$
-<br>
 We come to answer which is not etonnant:
                   $$
   \hbox{ Volume of $\R P^n$}=
@@ -813,31 +790,32 @@ To calculate this  integral we use the fact that
                   $$
   F(x,y)=\int_0^\infty {u^x\over (1+u)^y}=B(x,y-x-1)=
                   $$
-One can easy check this formula using substitution
-$t={u\over 1+u}$\footnote{$^{**}$}
-{Indeed we see that
-   $u={t\over 1-t}$, $1+u={1\over 1-t}$,
-$du={dt\over (1-t)^2}$ and
-     $$
-  F(x,y)=\int_0^\infty  {u^x\over (1+u)^y}du=
-                   $$
-                    $$
-   \int_0^1 \left(t\over 1-t\right)^x
-              \left(1-t\right)^y {dt\over (1-t)^2}=
-   \int_0^1 t^x (1-t)^{y-x-2}=B(x+1,y-x-1)=
-       {\Gamma(x+1)
-       \Gamma(y-x-1)\over
-       \Gamma(y)}\,.
-     $$              
-}.
-<br>
-             $$
+<div class="footnote-head">
+    One can easy check this formula using substitution
+    $t={u\over 1+u}$
+</div>
+<div class="footnote-body">
+    Indeed we see that
+    $u={t\over 1-t}$, $1+u={1\over 1-t}$,
+    $du={dt\over (1-t)^2}$ and
+    $$
+    F(x,y)=\int_0^\infty  {u^x\over (1+u)^y}du=
+    $$
+    $$
+    \int_0^1 \left(t\over 1-t\right)^x
+    \left(1-t\right)^y {dt\over (1-t)^2}=
+    \int_0^1 t^x (1-t)^{y-x-2}=B(x+1,y-x-1)=
+    {\Gamma(x+1)
+    \Gamma(y-x-1)\over
+    \Gamma(y)}\,.
+    $$
+</div>
+$$
        \sigma_{N-2}
                 \int_0^{\infty} 
 {u^{N-2\over 2}\over (1+u)^{N\over 2}}
            {du\over 2\sqrt u }=
              $$
-<br>
 </div>
   </div>
  </body>

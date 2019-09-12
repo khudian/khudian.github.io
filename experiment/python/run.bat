@@ -1,2 +1,0 @@
-replaceConflictDefs.py
-pause

@@ -3,11 +3,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-  <link rel="stylesheet" type="text/css" href="../../../mathBlogStyle.css">
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
 
-  <script type="text/javascript" src="../../../jquery_3.4.1.js"></script>
-  <script type="text/javascript" src="../../../menu.js"></script> 
-  <script type="text/javascript" src="../../../mathBlogMain.js"></script> 
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
   <script type="text/x-mathjax-config">
     configureMathJax();
   </script>
@@ -18,11 +20,10 @@
   <div id="menu"></div>
 
   <div class="mainText">
-    <div class="article">
-      <h2 class="title" date=""></h2>
+    <div class="article" date="24 July 2019">
+      
 
 <h3>Action in gravity</h3>
-<br>
    Here we will calculate the action in homogeneous gravity field
    $$
  L={m{\dot q}^2\over 2}-mgq\,,
@@ -65,8 +66,6 @@ Hamiltonina is equal to $H(p,q)={p^2\over 2m}+mgy$ and
 {1\over 2m}\left({my\over T}-{mgT\over 2}\right)^2
 +mgy=0\,.
       $$
-
-<br>
 Now calculate $\SS(q,T)$.
 It is Legendre transform of $S(x,T)$:
       $$
@@ -116,7 +115,6 @@ and  $\SS(q,t)$  also obeys Hamilton Jacobi
      $$
 =0\,.
       $$
-<br>
 </div>
   </div>
  </body>

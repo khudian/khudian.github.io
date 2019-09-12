@@ -3,11 +3,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-  <link rel="stylesheet" type="text/css" href="../../../mathBlogStyle.css">
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
 
-  <script type="text/javascript" src="../../../jquery_3.4.1.js"></script>
-  <script type="text/javascript" src="../../../menu.js"></script> 
-  <script type="text/javascript" src="../../../mathBlogMain.js"></script> 
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
   <script type="text/x-mathjax-config">
     configureMathJax();
   </script>
@@ -18,13 +20,11 @@
   <div id="menu"></div>
 
   <div class="mainText">
-    <div class="article">
-      <h2 class="title" date=""></h2>
+    <div class="article" date="August 2018">
+      
 
  
-<br>
 <h3>Some amasing formulas</h3>
-<br>
  <i> These  days I study Hilbnert Theorem of non-immersion of Lobachevsky plane  in $\E^3$. To my surprise it has so many mathphysical applications.
    Here I just give some very preliminary results. (see the file in 
 Etudes/Geometry/Lobachevsky)</i>
@@ -51,7 +51,6 @@ and
 \Gamma^y_{xy}
 \Gamma^y_{yx}=0
                $$
-<br>
 and  
                 $$
    K={R\over 2}={R_{1212}\det g}={-\Theta_{xy}sin\Theta\over 1-\cos^2\Theta}=

@@ -3,11 +3,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-  <link rel="stylesheet" type="text/css" href="../../../mathBlogStyle.css">
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
 
-  <script type="text/javascript" src="../../../jquery_3.4.1.js"></script>
-  <script type="text/javascript" src="../../../menu.js"></script> 
-  <script type="text/javascript" src="../../../mathBlogMain.js"></script> 
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
   <script type="text/x-mathjax-config">
     configureMathJax();
   </script>
@@ -18,8 +20,8 @@
   <div id="menu"></div>
 
   <div class="mainText">
-    <div class="article">
-      <h2 class="title" date=""></h2>
+    <div class="article" date="July 2018">
+      
 
 In Lobachevsky space one can embeed Eculdian plane,
   Euclidean sphere and Lobachevsky plane: e.g.
@@ -50,7 +52,7 @@ since the area of triangle is less than equal to $\pi$
 and area of the circle grows with $R$.
 <br>
     Consider the Eucldean circle $x^2+(y-a)^2=R^2$
-with $R<a$. Its hyperbolic area is equal to
+with $R< a$. Its hyperbolic area is equal to
              $$
 S_{\rm hyperbolic}=\int_{x^2+(y-a)^2-R^2\leq 0}{dxdy\over y^2}=
               $$
@@ -79,7 +81,6 @@ S_{\rm hyperbolic}=\int_{x^2+(y-a)^2-R^2\leq 0}{dxdy\over y^2}=
         =
      4\int_0^R{\sqrt {R^2-x^2}\over a^2-R^2+x^2}dx\,.
        $$
-<br>
 To caluclate this integral use complex variable.
 <br>
    Consider contours   $C_{\delta}$ and $C_N$  
@@ -120,8 +121,7 @@ equal to
 2R^{2\a+1}\int_0^1 (1-t^2)^\alpha dt=
          $$
 and since there are now poles in interior of $C_N\backslash C_\delta$ then
-<br>
-         $$ 
+$$ 
 2R^{2\a+1}\int_0^1 (1-u)^\alpha {du\over 2\sqrt u}=
    R^{2\a+1}B\left(\a+1,{1\over 2}\right)\,, 
                      $$
@@ -171,7 +171,6 @@ We have that
 {iz\sqrt {1-{R^2\over z^2}}\over z^2\left(1+{a^2-R^2\over z^2}\right)}+
 \hbox {contribution of poles}
          $$
-<br>
 </div>
   </div>
  </body>

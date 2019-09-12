@@ -3,11 +3,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-  <link rel="stylesheet" type="text/css" href="../../../mathBlogStyle.css">
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
 
-  <script type="text/javascript" src="../../../jquery_3.4.1.js"></script>
-  <script type="text/javascript" src="../../../menu.js"></script> 
-  <script type="text/javascript" src="../../../mathBlogMain.js"></script> 
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
   <script type="text/x-mathjax-config">
     configureMathJax();
   </script>
@@ -18,8 +20,8 @@
   <div id="menu"></div>
 
   <div class="mainText">
-    <div class="article">
-      <h2 class="title" date=""></h2>
+    <div class="article" date="22 June 2019">
+      
 
 {<b>  one fact in symplectic linear algebra</b><tt> Guill.Sternberg</tt> }
 <br>
@@ -63,7 +65,6 @@ V_\lambda=\{\x\in V\colon\quad
 (A-\lambda)^N x=0\}\,,\quad {\rm where}\,\, N>{\rm
 dim\,}V 
 $$
-<br>
 Proposition
 <br>
 a) 
@@ -71,15 +72,11 @@ a)
 V_\lambda=\left(\left(A+\lambda\right)^N
 V\right)^\perp
        $$
-<br>
 b)
          $$
       {\rm dim\,}V_\lambda=
       {\rm dim\,}V_{-\lambda}\,.
      $$
-<br>
-
-<br>
 Recall that for an arbitrary operator $P$ in finite
 dimensional space $V$
       $$
@@ -97,7 +94,6 @@ hence b) follows from a) since
 {\rm dim\,}\left({\rm Im\,}(A+\lambda)^N\right)^\perp
 {\rm dim} V_{\lambda}\,.
       $$
-<br>
 Now prove a)
 <br>
 Note that condition (1) implies that
@@ -106,7 +102,6 @@ Note that condition (1) implies that
 =-\langle u, (A+\lambda)v\rangle
  \tag{2}
     $$
-<br>
    Take an arbitrary $x\in V$. If $x\in V_\lambda$
 then for arbitrary $\y\in {\rm Im}(A+\lambda)$ we have
           $$
@@ -157,8 +152,6 @@ and
   {\rm ker\,}P=X\,.
      \tag{3b}
        $$
-
-<br>
 b) The set of ${\cal L}_X$ of Lagrangian planes which is
 transversal
 to the plane given Lagrangian plane  $X$  is  an affine
@@ -171,7 +164,6 @@ $V\backslash X$.  In particular
 {\rm dim\,}\L_X={n{n+1}\over 2}\,,\quad ({\rm dim
 \,}V=2n)\,.
    $$
-<br>
 </i>
 <br>
 <b> Remark</b>  Condition (3a) means that operator
@@ -221,9 +213,13 @@ eigenvalue $1$:
 <br>
  $X=V_0$ and $Y=V_1$.
 It is easy to see that equation (3a) implies that $Y$ is
-Lagrnagian. Indeed ${\rm dim} Y=n$ (${\rm dim} V=N=2n$)
-and \footnote{$^{1)}$}{in fact proof follows from Proposition applied
-to the  operator $A=P-{1\over 2}$}:
+Lagrnagian. <div class="footnote-head">
+    Indeed ${\rm dim} Y=n$ (${\rm dim} V=N=2n$)
+    and:
+</div> <div class="footnote-body">
+    in fact proof follows from Proposition applied
+    to the  operator $A=P-{1\over 2}$
+</div>
        $$
 \langle \y, \y'\rangle=
 \langle P(\y), \y'\rangle+
@@ -231,9 +227,6 @@ to the  operator $A=P-{1\over 2}$}:
  2\langle \y, \y'\rangle\Rightarrow
 \langle \y, \y'\rangle=0\,.
        $$
-<br>
- <br>
-<br>
 Now study the set $\L_X$.
 It is set of projectors $P$ which obey to conditions
 (3a) and (3b). Condition 3a) means that  $P-{1\over 2}$

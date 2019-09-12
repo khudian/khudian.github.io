@@ -3,11 +3,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-  <link rel="stylesheet" type="text/css" href="../../../mathBlogStyle.css">
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
 
-  <script type="text/javascript" src="../../../jquery_3.4.1.js"></script>
-  <script type="text/javascript" src="../../../menu.js"></script> 
-  <script type="text/javascript" src="../../../mathBlogMain.js"></script> 
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
   <script type="text/x-mathjax-config">
     configureMathJax();
   </script>
@@ -18,11 +20,10 @@
   <div id="menu"></div>
 
   <div class="mainText">
-    <div class="article">
-      <h2 class="title" date=""></h2>
+    <div class="article" date="17 August 2017">
+      
 Две ночи бессоницы перед поездкой в Ереван, и стал
 понимать как приходим конформному Лапласиану.
-<br>
 <h3>Pencil of self-conjugate operators and conformal Laplacian</h3>
 
   Consider pencil of Beltrami Laplace operators
@@ -38,8 +39,7 @@
 We concetrate later  on the case $\d={2\over n}$,
 when principal symbol is invariant of conformal symmetries,
 but for BV it will be interesting to see the general....             
-<br>
-           $$
+$$
 \{\Delta_\mu\}\,, 
    \Delta_\mu\colon \F_{\mu}\mapsto \F_{\mu+{2\over n}}\,,
 \hbox{for an arbitrary $\bs\in \F_\mu$}\,, 
@@ -72,7 +72,6 @@ According the general scheme, this Laplacian has the form:
            +U(x)\right]\,,
 {\rm where}\,\,\rho=\sqrt{\det G}|Dx|\,.
                  $$
-<br>
   <b> Theorem??</b> 
            Consider cocyle
                $$
@@ -90,7 +89,6 @@ if $n>1$.
   \rho(\tilde g)R(\tilde g)-\rho(g)R(g)
 \right)\,. \qquad (c=4???)
                 $$
-<br>
 In the case if $n=1$ we come to Schwarzian deriddvative.
 <br>
 </div>

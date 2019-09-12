@@ -3,11 +3,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-  <link rel="stylesheet" type="text/css" href="../../../mathBlogStyle.css">
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
 
-  <script type="text/javascript" src="../../../jquery_3.4.1.js"></script>
-  <script type="text/javascript" src="../../../menu.js"></script> 
-  <script type="text/javascript" src="../../../mathBlogMain.js"></script> 
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
   <script type="text/x-mathjax-config">
     configureMathJax();
   </script>
@@ -18,11 +20,10 @@
   <div id="menu"></div>
 
   <div class="mainText">
-    <div class="article">
-      <h2 class="title" date=""></h2>
+    <div class="article" date="August 2018">
+      
 
 <h3>Statements on Haar measure</h3>
-<br>
 Let  $G$  be a group and let $\mu$ be a left-invariant meausure
 defined by the volume-form &mdash; left-invariant $n$-form $\omega$:
          $$
@@ -34,7 +35,6 @@ i.e.
 \omega\left(\left[g^{-1}x(t)\right]\right)=
      \omega\left(\left[x(t)\right]\right)
          $$
-<br>
 If
     $$
 \int_G f\omega=\int f(x)\mu(dx)
@@ -43,11 +43,7 @@ then
          $$
   \int f L_g\omega=\int f(x)\mu (dx')=\int f(gx)\mu (dx)\,.
          $$ 
-<br>
- <br>
-<br>
-   <h3>${\S}2$ <tt> Construction of Haar measure</tt></h3>
-<br>
+<h3>${\S}2$ <tt> Construction of Haar measure</tt></h3>
 Let $G$  be a group. We assume that it is differentiable manifold.
    Consider the volume form 
             $$\w_0=cdy^1\dots dy^n
@@ -78,8 +74,7 @@ of the form $\w_0$:
     \right)
             $$
 In particular
-<br>
- $$
+$$
 \w\left(x_0, {\p\over \p x^1},\dots,{\p\over \p x^n}\right)=
 \w\left(y(x_0), 
   {\p y^i\over \p x^1}{\p \over \p y^i},
@@ -96,7 +91,6 @@ at the point $x_0$ and $e$:
   \w=\w(y(x))\det \left({\p y\over \p x}\right)
   dx^1\wedge \dots \wedge dx^n
          $$
-<br>
 <b> Example</b>   Consider groups
     $G_1$  of translations of $\R$:
                $$
@@ -182,7 +176,6 @@ g^{-1}\right)g\right)\Delta(x^{-1})=
 \right)\Delta(x^{-1})=
   \omega \left(\left[x(t)\right]\right)\Delta(x^{-1})=\omega_R(x)\,.
             $$
-<br>
 <b> Remark</b>  
 If we define $\Delta(g)\to \Delta(g^{-1})=
 {\omega (gx)\over \omega (x)}$
@@ -190,14 +183,12 @@ then
        $$
 \omega_R(x)=\omega(x)\Delta(x)\,.
        $$
-<br>
 <b> Examples</b>
 <br>
 1.  Volume of $GL(n,\R)$
                    $$
          \omega=(\det A_{ik})^x \prod_{i,k}dA_{ik}
                     $$
-<br>
 <b> Theorem on meause of the product</b>
 Let  $G=P\times Q$, and let
    $\mu_P(dx)$  be Haar meausure on $P$, 

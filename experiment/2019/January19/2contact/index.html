@@ -3,11 +3,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-  <link rel="stylesheet" type="text/css" href="../../../mathBlogStyle.css">
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
 
-  <script type="text/javascript" src="../../../jquery_3.4.1.js"></script>
-  <script type="text/javascript" src="../../../menu.js"></script> 
-  <script type="text/javascript" src="../../../mathBlogMain.js"></script> 
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
   <script type="text/x-mathjax-config">
     configureMathJax();
   </script>
@@ -18,13 +20,11 @@
   <div id="menu"></div>
 
   <div class="mainText">
-    <div class="article">
-      <h2 class="title" date=""></h2>
+    <div class="article" date="January 2019">
+      
 
    <h3> Geometry of diff.equations</h3>
-<br>
   <h3> ${\S} 1$ Necessary mathematics from Arnold's book</h3>
-<br>
 <tt> I began to understand the pages in Arnold on diff. equations.....</tt>
 <br>
 Here it is:
@@ -35,7 +35,6 @@ Here it is:
        $$
 \hbox{$2$-form $d\w$ is non-degenerate on the plane $\w=0$ in $TM$}
        $$
-<br>
 Since $d\w$ is not degenerate on $\w=0$ and $\w\not\equiv 0$
 them ${\rm dim}\, M=2k+1$.
 <br>
@@ -48,9 +47,11 @@ them ${\rm dim}\, M=2k+1$.
    Let $\cal K$ be a distributions of $2n$-dimensional planes in $TM$
 such that $\w$ vanishes on these planes.
 <br>
-We say that this distribution is a contct structure
-\footnote{$^*$}{One can say  that distribution of hyperplanes
- defines constant structure if an $1$-form which vanishes this dstribution is non-degenerated on it}
+<div class="footnote-head">We say that this distribution is a contact structure</div>
+<div class="footnote-body">
+    One can say  that distribution of hyperplanes
+    defines constant structure if an $1$-form which vanishes this dstribution is non-degenerated on it
+</div>
 <br>
 <b> Theorem</b>  Let $N$ be a submanifold of $M$
 which is an integral submanifold 
@@ -73,11 +74,7 @@ respect to this form.  If dimension of tangent plane is bigger
 than $n$ then there exist at least two vectors which are not orthogonal,
 since $d\w$ is not degenerate.
 Now we apply this mathematics to the differential equations.
-<br>
-
-<br>
-    <h3>${\S}2\,\,$  Geometry of first order equation</h3>
-<br>
+<h3>${\S}2\,\,$  Geometry of first order equation</h3>
   Let  $J^1M$  be a space of first jets of functions on 
 manifold $M$. Cooridnates on $J^1M$ are $(p_i,q^j,u)$,
 where $q^j$ are coordinates on $M$.  Jet of every function  $u=u(x)$
@@ -124,7 +121,6 @@ N_i{\p\over \p p_i}+A{\p\over \p u}\in \CC(\EE)\,\, {\rm if}\,\,
 \left(M^i{\p\over \p q^i}+
 N_i{\p\over \p p_i}+A{\p\over \p u}\right)F(p,q,u)\big\vert_{F=0}=0\,.
           $$
-<br>
 This distribution is not integrable.
 <br>
 The solution of differential equation (1) is the maximal integral
@@ -173,9 +169,6 @@ are transversal:
 \CC_\pb\oplus T_pt M'=T_\pb M\Leftrightarrow
     \dim (\CC_\pb\cap M'\pb)=2n-1\,.
         $$
-<br>
- 
-<br>
 <b> DEFINITION</b>   Let   $\EE$ be an 
 arbitrary non-characteristic hypersurface in $J^1(M)$.
 <br>
@@ -185,9 +178,6 @@ tangent vectors which belong to contact space:
             $$
 \Pi_\pb=\CC_\pb\cap T_\pb E\,,\qquad \,,\dim \Pi_\pb=2n-1
             $$
-<br>
- 
-<br>
   Thus we define the distribution of $2n-1$-dimensional planes
 on non-characteristic differential  equation $F=0$ (this equation
 defines the surface $\EE$: $\EE\colon\,\, F=0$).
@@ -207,7 +197,6 @@ orthogonal to the covector $\ac$:
    $$
 M_\ac=\{\x\in V\colon\quad \s(\x)=0\}
    $$
-<br>
 <b> Proposition</b> <i>  Subspaces $M_{\s_1}$
 and  $M_{s_2}$ are transversal if and only if vectors
 $\s_1,\s_2$  qre linearly independent, (not proportional
@@ -217,9 +206,10 @@ to each other)
 hypersurface $\EE=\EE_F$, differential equation.
 Let  covector $dF$ defined by equation, and
 covector  $\w_C$ of contact distribution,
-are not proportional\footnote{$^*$}{
-this condition does not depend on choice of function $F$
-defining the surface $\EE$}  Then 
+<div class="footnote-head">are not proportional</div><div class="footnote-body">
+    this condition does not depend on choice of function $F$
+    defining the surface $\EE$
+</div>  Then 
 <br>
 a) hypersurface $F=0$  is non-charcteristical
 <br>
