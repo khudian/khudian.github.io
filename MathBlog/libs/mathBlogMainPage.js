@@ -99,12 +99,24 @@ function generateNavigationLink(pageId, name)
 function generateAdjacentPagesLinks(pageId, min, max)
 {
    result = '';
+   if (min > 1)
+   {
+     result += '... ';
+   }
+
    for (var i = min; i <= max; i++)
    {
      linkClassName = (i == pageId) ? "pageLinkCurrent" : "pageLink";
      result += `<a class="` + linkClassName + `" href="` + 
      generatePageIdLink(i) + `">` + i + `</a> `
    }
+
+   maxPageId = calculateMaxPageId();
+   if (max < maxPageId)
+   {
+       result += '...';
+   }
+
    return result;
 }
 
@@ -113,7 +125,7 @@ function generateNavigationLinks()
   var currentPageId = getPageId();
   var prevPageId = currentPageId - 1;
   var nextPageId = currentPageId + 1;
-  adjacentPageIds = getMinMaxAdjacentPageIds(currentPageId)
+  [min, max] = getMinMaxAdjacentPageIds(currentPageId)
   result = "";
   if (!isValidPageId(currentPageId))
   {
