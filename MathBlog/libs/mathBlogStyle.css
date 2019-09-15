@@ -49,7 +49,7 @@ div.articleLink
   border-radius: 20px;
 }
 
-a.pageLink
+.pageLink
 {
   font-weight: bold;
   color: rgb(66, 133, 244); /*blue*/

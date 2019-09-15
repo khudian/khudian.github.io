@@ -101,7 +101,7 @@ function generateAdjacentPagesLinks(pageId, min, max)
    result = '';
    if (min > 1)
    {
-     result += '... ';
+     result += `<span class="pageLink">... </span>`;
    }
 
    for (var i = min; i <= max; i++)
@@ -114,7 +114,7 @@ function generateAdjacentPagesLinks(pageId, min, max)
    maxPageId = calculateMaxPageId();
    if (max < maxPageId)
    {
-       result += '...';
+       result += `<span class="pageLink">... </span>`;
    }
 
    return result;
