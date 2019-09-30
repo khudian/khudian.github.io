@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="3 September 2019">
+<h3>Thick morphisms and Green function</h3>
+
+
+Fact:  action $\cal{S}=\cal{S}(x,y)$ is classics of Green function
+
+
+Let a function  $S=S(x,q)$  defines classical 
+thick morphism and
+  $S_\hbar=S_\hbar(x,q)$  defines 
+corresponding quantum  thick morphism then
+   $$
+G(t,x,y)=\int dq e^{{i\over \hbar}S(x,q)-yq}
+   \tag{1}
+  $$
+  defines Green function such that
+       $$
+\p_tG+\Delta G=0?
+      \tag{1a}
+       $$
+The classical analog of formula (1) is  the formula
+     $$
+W(t,x,y)=S(x,q)-yq \quad {\rm at} \,\, y=S_q\,.
+     $$
+It is just classical action.
+
+
+One can ask the question: how to calculate (1a)
+To do it  we  use fantastic formula from de Witt:
+$W(t,x,y)=\sigma (t,x,y)$  is the length of geodesic
+  One can see that $\sigma$ and  $\p_\mu \sigma$
+tend to zero if $y\to x$. This implies that
+             $$
+{\p^2\sigma(x,y)\p x^u\p x^v}\big\vert_{x\to
+y}=g_{\mu\nu}
+             $$
+  and so on (see de Witt)
+    
+    </div>
+  </div>
+ </body>
+</html>
