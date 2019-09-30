@@ -1,0 +1,355 @@
+﻿<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="26 September 2019">
+<h3>One way to define thick morphisms</h3>
+
+  Let $M=\R^m$, $N=\R^n$ be two linear spaces.
+ Consider a function $S(x,q)$ where $x\in M$ and $q\in
+T^*N$ such that
+      $$
+S(x,q)=S_0(x)+\varphi^i(x)q_i+S_+(x,q)
+      $$
+where $S_+$ possesses terms of order by $q$
+higher or equal than $2$:
+        $$
+S_+(x,q)={1\over 2}\Pi^{ij}(x)q_iq_j+
+{1\over 6}\Pi^{ijk}(x)q_iq_jq_k+\dots
+        $$
+Define the action of (quantum) thick morphism   
+  We have
+      $$
+      \Phi_S^*(w(y))=\Psi(x)=
+    \int
+e^{
+{i\over \hbar}
+    \left(S(x,q)-y^iq_i\right)}
+      w(y)
+      dydq=
+     \int 
+      e^{
+{i\over \hbar}
+    S(x,q)}
+      \bar w(q)
+        dq\,,
+          $$
+where $\bar w(q)$ is Fourrier image of function $w(y)$:
+        $$
+\bar w(q)=\int w(y)e^{-{i\over \hbar}qy}dy\,\quad {\rm
+and} \quad
+ w(y)=\int \bar w(q)e^{{i\over \hbar}qy}dq,,
+\hbox {(up to multiplier)}\,.
+        $$
+Now use the standard identity that up to multiplier
+            $$
+         f(q)
+      \bar w(q)=
+       \int   
+       \left[
+    f\left({\hbar\over i}{\p\over \p y}\right)w(y)
+    \right]
+      e^{-{i\over \hbar}qy}dy\,.
+           $$
+Indeed
+            $$
+         f(q)
+      \bar w(q)=
+      \int
+       f(k)
+      \bar w(k)\delta (k-q)dk= 
+      \int
+         f(k)
+      \bar w(k) e^{{i\over \hbar}(k-q)y}dkdy= 
+       $$
+        $$
+      \int
+        \left[
+     f\left(
+  {\hbar\over i}{\p\over \p y}
+       \right)   
+       e^{{i\over \hbar}ky}\bar w(k)
+         \right]   
+    e^{-{i\over \hbar}qy}dkdy=   
+      \int
+        \left[
+     f\left(
+  {\hbar\over i}{\p\over \p y}
+       \right)   
+w(y)         
+\right]   
+    e^{-{i\over \hbar}qy}dy\,.
+   $$ 
+Hence
+            $$
+  \Phi_S^*(w(y))=\Psi(x)=
+    \int
+e^{
+{i\over \hbar}
+    \left(S(x,q)-y^iq_i\right)}
+      w(y)
+      dydq=
+     \int 
+      e^{
+{i\over \hbar}
+    S(x,q)}
+      \bar w(q)
+        dq=
+         $$
+         $$
+        \int
+     \left( 
+       e^{
+{i\over \hbar}
+    S(\left(x,{\hbar\over i}{\p\over \p y}\right)}
+      w(y)
+      \right)
+        e^{-iqy}
+        dydq=
+        $$
+        $$
+      \left( 
+       e^{
+{i\over \hbar}
+    S(\left(x,{\hbar\over i}{\p\over \p y}\right)}
+      w(y)
+      \right)
+       \delta(y)
+       dy
+        =
+     \left( 
+       e^{
+{i\over \hbar}
+    S(\left(x,{\hbar\over i}{\p\over \p y}\right)}
+      w(y)
+      \right)
+       \big\vert_{y=0}
+       $$
+       $$
+      \left( 
+       e^{
+{i\over \hbar}
+     \left(
+         S_0(x)
+                +
+          \varphi(x){\hbar\over i}{\p\over \p y}
+            +
+    S_+\left(x,{\hbar\over i}{\p\over \p y}\right)
+     \right)
+      }
+      w(y)
+      \right)
+       \big\vert_{y=0}
+        =
+          e^{{i\over \hbar}S_0(x)}
+      \left(
+        e^{\varphi(x){\p\over \p y}} 
+       e^{
+{i\over \hbar}
+    S_+\left(x,{\hbar\over i}{\p\over \p y}\right)
+      }
+      w(y)
+      \right)
+       \big\vert_{y=0}
+        =
+        $$
+$$ 
+\left( 
+       e^{
+{i\over \hbar}
+   S_+\left(x,{\hbar\over i}{\p\over \p y}\right)
+      }
+      w(y)
+      \right)
+       \big\vert_{y=\varphi(x)}\,.
+ \tag{1}
+$$
+We suppose here that $S_0(x)\equiv 0$.
+
+
+One can consider the one-parametric family $L^*_\hbar$
+
+          $$
+  L^*_\hbar (g(y))=f(x)\,, \hbox {such that}\,\,
+      \Psi(x)=e^{{i\over \hbar}f(x)}=
+    \Phi_S^*\left(
+e^{{i\over \hbar}g(y)}
+        \right)\,,
+     \tag{2}
+          $$
+and its limit
+          $$
+       L^*_{S \rm classic.}(g(y))=\lim_{\hbar\to 0}
+  L^*_\hbar (g(y))\,.
+  \tag{2a}
+          $$
+One can see that this is a la `Legendre':
+            $$
+       L^*_{\rm classic.}(g(y))=
+        S(x,q)+g(y)-y^iq_i\,,
+           $$
+where
+             $$
+           y^i={\p S(x,q)\over \p q_i}=
+    \varphi^i(x)+\Pi^{ij}(x)q_j
+        +\Pi^{ijk}(x)q_j+\dots\,\,\hbox {such that}\,\,
+       q_i={\p g(y)\over \p y^i}\,,.
+            $$ 
+
+Here we have to be carefull taking limits.
+
+    Calculate (2):
+ $$
+  L^*_\hbar (g(y))=
+      f(x)=
+       {\hbar\over i} 
+     \log
+      \left(\Psi(x)\right)= 
+      {\hbar\over i} 
+     \log
+      \left( \Phi_S^*\left(
+e^{{i\over \hbar}g(y)}
+        \right)
+         \right)=
+             $$
+              $$
+      {\hbar\over i} 
+     \log
+      \left( 
+ e^{{i\over \hbar}S_+\left(x, {\hbar\over i}{\p\over \p y}\right)}
+\left(
+e^{{i\over \hbar}g(y)}
+        \right)
+         \right)\big\vert_{y=\varphi(x)}=
+                $$
+              $$
+      {\hbar\over i} 
+     \log
+         \left[
+ e^{{i\over \hbar}g(y)}
+         \left\{
+ e^{-{i\over \hbar}g(y)}
+      \left( 
+ e^{{i\over \hbar}S_+\left(x, {\hbar\over i}{\p\over \p y}\right)}
+\left(
+e^{{i\over \hbar}g(y)}
+        \right)
+         \right)
+         \right\}
+\right]
+ \big\vert_{y=\varphi(x)}=
+                $$
+     $$
+      {\hbar\over i} 
+         \left[
+   { {i\over \hbar}g(y)}
+          +\log
+         \left\{
+ e^{-{i\over \hbar}g(y)}
+      \left( 
+ e^{{i\over \hbar}S_+\left(x, {\hbar\over i}{\p\over \p y}\right)}
+\left(
+e^{{i\over \hbar}g(y)}
+        \right)
+         \right)
+         \right\}
+\right]
+ \big\vert_{y=\varphi(x)}=
+                $$
+     $$
+         \left[
+               g(y)
+          +{\hbar\over i}
+           \log
+         \left\{
+ e^{-{i\over \hbar}g(y)}
+      \left( 
+ e^{{i\over \hbar}S_+\left(x, {\hbar\over i}{\p\over \p y}\right)}
+\left(
+e^{{i\over \hbar}g(y)}
+        \right)
+         \right)
+         \right\}
+\right]
+ \big\vert_{y=\varphi(x)}=
+                $$
+                 $$
+         \left[
+               g(y)
+          +{\hbar\over i}
+           \log
+         \left\{
+ e^{-{i\over \hbar}g(y)}
+      \left( 
+ e^{{i\over \hbar}S_+\left(x, {\hbar\over i}{\p\over \p y}\right)}
+\left(
+e^{{i\over \hbar}g(y)}
+        \right)
+         \right)
+         \right\}
+\right]
+ \big\vert_{y=\varphi(x)}=
+                $$
+                   $$
+         \left[
+               g(y)
+          +{\hbar\over i}
+           \log
+         \left\{
+   e^{{i\over \hbar}S_+\left(x, {\p g\over \p y}\right)}
+   +\dots
+         \right\}
+\right]
+ \big\vert_{y=\varphi(x)}\,,
+                \tag{3}
+                $$
+where we denote by dots the terms of 
+order equal or higher than zero by $\hbar$.
+
+Ochenj khochetsia zakljuchitj iz etoj formuly shto
+ for classical thick morphisms
+         $$
+  \Phi_S(g(y))= f(x)=\lim_{\hbar\to 0} f_\hbar(x)=
+       \lim_{\hbar\to 0}  \left[
+               g(y)
+          +{\hbar\over i}
+           \log
+         \left\{
+   e^{{i\over \hbar}S_+\left(x, {\p g\over \p y}\right)}
+   +O(1)
+         \right\}
+\right]
+ \big\vert_{y=\varphi(x)} = 
+\tag{3a}
+      $$
+                    $$
+   \left(g(y)+S_+\left(x, {\p g\over \p y}\right)\right)
+\big\vert_{y=\varphi(x)}\,.
+          $$
+
+No eto zhe ne tak!
+
+We have to  look on (3) more carefully
+    
+    </div>
+  </div>
+ </body>
+</html>

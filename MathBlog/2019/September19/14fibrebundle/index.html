@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="14 September 2019">
+<h3>Recalling on fibre bundles</h3>
+
+Let $P\to B$ be principal fibre bundle, with sturcture
+group $G$. Let $V$ be a space where group $G$ acts.
+ We consider associated bundle $P\times_G V$
+of pairs
+          $$
+   P\times_G V=\{(p,\v)\colon\quad 
+    (pg,\v)=(p,\rho(g)\v)\}
+          $$
+Many years ago I learned the fact, that  sections
+of the associated fibre bundle $P\times_G V$ are in
+one-one corresondence with equivariant maps
+from $P$ to $V$:
+<br>
+<b> Theorem</b>
+         $$
+Hom_G(P,V)\approx\quad \Gamma \left(P\times_G V\right)
+         $$
+Indeed let $f=f(p)$  be an equivariant map from $P$ to
+$V$:
+   $f(pg)=\rho(g)f(p)$.
+
+One can assign to this map the section
+$\sigma(b)=(p,f(p))$,
+where $p$ is an arbitrary element which projects to $b$.
+
+On the other hand let $\sigma(b)=(p(b),\v(b))$
+be an arbitrary section of the fibre bundle  
+$P\times_GV$.  It defines the equivariant map
+such that the value of this map on arbitrary $p'=pg$
+($\pi (p'=\pi (p))=b$) is equal to
+         $$
+f(p')=f(pg)=\rho (g)\v(b)\,.
+         $$
+
+
+ I spent the considerable time to recover this textbook
+result...
+    
+    </div>
+  </div>
+ </body>
+</html>

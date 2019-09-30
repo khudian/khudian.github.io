@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="22 September 2019">
+<h3>One beautiful way to calculate one
+action</h3>
+
+
+<i> To calculate the action of particle
+in homogeneous field: $H={p^2\over 2m}-mgx$ 
+is not difficult, however calculations are not too
+enjoyable.
+We will calculate here this action using just
+symmetires.</i>
+
+
+   Let
+     $$
+    W(t_1,x_1;t_2,x_2)
+     $$
+be an action of the theory.
+   It obeys the following property:
+        $$
+    W(t_1,x_1;t_2,x_2)=-
+    W(t_2,x_2;t_1,x_1)\,.
+        \tag{1}
+        $$
+We calculated this action straightforwardly
+(see the blog on July 2019).  
+Calculate here this action using just this symmetry,
+Hamilton-Jacobi equation
+ and some physical intuition.
+              
+Recall that for free particle
+    $$
+W_{\rm free}={m(x_2-x_1)^2\over 2(t_2-t_1)}\,.
+    $$
+Hence
+for  a particle  in homogeneous field,  
+        $$
+W=W_{free}(t_1,x_1;t_2,x_2)+gW'(t_1,x_1;t_2,x_2)\,,
+        $$
+where $g$ is acceleration.
+
+We use the following fact: Let  a function has dimension
+("razmernostj") of action and 
+ $$
+F=mg^\alpha(x_1+x_2)^\beta(x_2-x_1)^\gamma
+t^\delta\,.
+       $$
+Tehn
+       $$ 
+[F]=[mght]=kg\cdot
+{m\over sec^2}\cdot m\cdot { sec}\,.
+ \tag{2}
+ $$
+The condition (1) implies that
+        $$
+\gamma+\delta=2k+1
+         $$
+and condition (2) implies that
+         $$
+[F]=kg\cdot m^{\a+\beta+\gamma} \cdot sec^{\delta-2\a}=
+kg\cdot m^2 \cdot sec^{-1}\,,
+         $$
+thus we see that
+              $$
+\cases{
+\gamma+\delta=2k+1\cr
+   \a+\beta+\gamma=2\cr
+\delta-2\a=-1
+     }
+          $$
+Using this we look for the action of particle in
+homogeneous filed as
+     $$
+W=\underbrace {
+{m(x_2-x_1)^2\over2(t_2-t_1)}
+     }
+_{\hbox{free particle}}+
+   c_1mg(x_1+x_2)(t_2-t_1)+c_2mg^2(t_2-t_1)^3\,.
+     $$
+(This expression transforms in a right way and has right
+dimension.)
+
+<br><br>
+
+Calculate the constants $c_1$ and $c_2$.
+Use that  $W$ obeys
+Hamilton-Jacobi equation for Hamiltonian $H={p^2\over
+2m}-mgx$:
+         $$
+        0=
+{ \p W(x_1,t_1;t_2,x_2)\over \p t_2}+
+      \left(
+               {
+             \left(
+{ \p W(x_1,t_1;t_2,x_2)\over \p x_2}
+    \right)^2
+     \over
+        2m}-mgx_2
+      \right)=
+         $$
+         $$
+-{m(x_2-x_1)^2\over2(t_2-t_1)^2}
+   +c_1mg(x_1+x_2)+3c_2mg^2t^2+
+        {\left(
+     {m(x_2-x_1)\over (t_2-t_1)}+
+    c_1mg(t_2-t_1)      
+    \right)^2
+       \over 2m}
+   -mgx_2=
+         $$
+          $$
+  =2c_1mgx_2-mgx_2+\left(3c_2+{c_1^2\over
+2}\right)mg^2(t_2-t_1)^2=0\,.
+          $$
+Thus
+        $$
+c_1={1\over 2}\,,\quad
+      c_2=-{1\over 24}
+     $$
+  and
+       $$
+W=W=\underbrace {
+{m(x_2-x_1)^2\over2(t_2-t_1)}
+     }
+_{\hbox{free particle}}+
+   {1\over 2}mg(x_1+x_2)(t_2-t_1)-{1\over 24}mg^2(t_2-t_1)^3\,.
+      $$
+    
+    </div>
+  </div>
+ </body>
+</html>

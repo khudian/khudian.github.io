@@ -1,0 +1,249 @@
+﻿<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="28 September 2019">
+<h3> Another way to calculate  way thick morphisms</h3>
+
+
+Let $M=\R^m$, $N=\R^n$ and 
+ $S(x,q)=\varphi(x)q+{1\over 2}q^2$, then
+   we know that 
+        $$
+\Phi_S^{\rm q.}(w(y))=
+\left(
+ \exp\left[{i\over \hbar} a \left(\hbar\over
+i\right)^2{d^2\over dy^2}\right]w(y)
+ \right)_{y=\varphi(x)}\,.
+ \tag{1}
+     $$
+ (see mathblog on 26-th September 2019.)
+
+Choose $w(y)=\exp({i\over \hbar}g(y))$
+We have that
+     $$
+f_\hbar(x)=L_\hbar (g)=
+     {\hbar\over i} \log\left(
+ \exp\left[{i\over \hbar} a \left(\hbar\over
+i\right)^2{d^2\over dy^2}\right] 
+e^{{i\over \hbar}g(y)}
+ \right)_{y=\varphi(x)}\,.
+ \tag{2}
+     $$
+
+In the previous mathblog we came to the answer that
+       $$
+f_\hbar(x)=g(y)+
+{\hbar\over i}
+       \log
+       \left(
+ \exp\left[{i\over \hbar} a 
+   \left({d g\over dy}\right)^2
+        \right] 
+         +0(1)
+ \right)_{y=\varphi(x)}
+    \tag{3}
+       $$
+Now perform calculation of (2) in another way
+         $$
+{\hbar\over i}\log
+\left[
+      \sum_{n=0}^\infty
+        \left(\hbar\over i\right)^n
+         a^n
+       {d^{2n}\over dy^{2n}}
+         \left(
+          e^{{i\over \hbar}g(y)}
+        \right)
+  \right]=
+        $$
+        $$
+ {\hbar\over i}\log
+\left[
+ e^{{i\over \hbar}g(y)}
+       +   
+  \left(\hbar\over i\right)
+         a
+       {d^{2}\over dy^{2}}
+         \left(
+          e^{{i\over \hbar}g(y)}
+        \right)
+              +
+  \left(\hbar\over i\right)^2
+         a^2
+       {d^{4}\over dy^{4}}
+         \left(
+          e^{{i\over \hbar}g(y)}
+        \right)
+        +
+  \left(\hbar\over i\right)^3
+         a^3
+       {d^{6}\over dy^{6}}
+         \left(
+          e^{{i\over \hbar}g(y)}
+        \right)
++\dots   \right]=
+         $$
+       $$
+g(y)+{\hbar\over i}
+       \log\left[
+1+   
+e^{-{i\over \hbar}g(y)}
+    \left(\hbar\over i\right)
+         a
+       {d^{2}\over dy^{2}}
+         \left(
+          e^{{i\over \hbar}g(y)}
+        \right)
+              +
+e^{-{i\over \hbar}g(y)}
+  \left(\hbar\over i\right)^2
+         a^2
+       {d^{4}\over dy^{4}}
+         \left(
+          e^{{i\over \hbar}g(y)}
+        \right)
+        +
+\dots   \right]=  
+       $$
+      $$
+g(y)+{\hbar\over i}
+       \log\left[
+1+   
+e^{-{i\over \hbar}g(y)}
+         a
+       {d\over dy}
+         \left(
+           g'(y)
+          e^{{i\over \hbar}g(y)}
+        \right)
+              +
+e^{-{i\over \hbar}g(y)}
+  \left(\hbar\over i\right)
+         a^2
+       {d^{3}\over dy^{3}}
+         \left(
+             g'(y)
+          e^{{i\over \hbar}g(y)}
+        \right)
+        +
+\dots   \right]=  
+       $$   $$
+g(y)+{\hbar\over i}
+      \log \left[
+1+ 
+      ag^{''}(y)+
+       {i\over \hbar}
+       \left(g'(y)\right)^2
+              +
+e^{-{i\over \hbar}g(y)}
+  \left(\hbar\over i\right)
+         a^2
+       {d^{2}\over dy^{2}}
+         \left(
+             g^{''}(y)
+          e^{{i\over \hbar}g(y)}
+              +
+       {i\over \hbar}
+             (g'(y))^2
+          e^{{i\over \hbar}g(y)}
+        \right)
+        +
+\dots   \right]=  
+       $$ 
+          $$
+g(y)+{\hbar\over i}\times
+        $$
+         $$
+      \log \left[
+1+ 
+      ag^{''}(y)+
+       {i\over \hbar}
+       \left(g'(y)\right)^2
+              +
+e^{-{i\over \hbar}g(y)}
+  \left(\hbar\over i\right)
+         a^2
+       {d\over dy}
+         \left(
+             g^{'''}(y)
+          e^{{i\over \hbar}g(y)}
+              +
+                3
+       {i\over \hbar}
+                g'g^{ii}
+          e^{{i\over \hbar}g(y)}
+              +
+       \left(i\over \hbar\right)^2
+                  (g')^3
+          e^{{i\over \hbar}g(y)}   \right)
+        +
+\dots   \right]=  
+       $$ 
+          $$
+g(y)+{\hbar\over i}\times
+        $$
+         $$
+      \log \left[
+1+ 
+      ag^{''}(y)+
+       {i\over \hbar}
+       \left(g'(y)\right)^2
+              +
+e^{-{i\over \hbar}g(y)}
+  \left(\hbar\over i\right)
+         a^2
+       {d\over dy}
+         \left(
+             g^{'''}(y)
+          e^{{i\over \hbar}g(y)}
+              +
+                3
+       {i\over \hbar}
+                g'g^{ii}
+          e^{{i\over \hbar}g(y)}
+              +
+       \left(i\over \hbar\right)^2
+                  (g')^3
+          e^{{i\over \hbar}g(y)}   \right)
+        +
+\dots   \right]=  
+       $$ 
+       $$
+     g(y)+{\hbar\over i}
+    \log \left[
+      1+ag^{''}
+          +{i\over \hbar}g'^2
+          +{\hbar\over i}a^2g^{''''}
+         +4a^2g^{'''}g'+3a^2
+       \left(g^{''} \right)^2      
+     +6{i\over \hbar}g'^2g^{''}+
+     \left(
+   {i\over \hbar}
+    \right)^2 
+      g'^4      
+\right]
+      $$
+    
+    </div>
+  </div>
+ </body>
+</html>
