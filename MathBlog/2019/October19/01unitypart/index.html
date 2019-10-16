@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="1 October 2019">
+<h3>Partition of unity snd identities</h3>
+
+Consider $S^1$ in stereographic coordinates:
+        $$
+2\pi=
+\int_\infty^\infty {dt\over 1+t^2}
+=
+\int_\infty^\infty {(\rho_+(t)+\rho_-{t})dt\over
+1+t^2}\,,
+        $$
+where $(\rho_+(t),\rho_(t))$ is partition of unity for
+$S^1$. 
+         $$
+2\pi=
+\int_\infty^\infty {(\rho_+(t)+\rho_-{t})dt\over
+1+t^2}=
+\int_\infty^\infty {\rho_+(t)dt\over
+1+t^2}+
+\int_\infty^\infty {\rho_-(t))dt\over
+1+t^2}\,,
+         $$
+where $\rho_+(t)=f(t)$ is an arbitrary function which
+vanishes at infinity and $\rho_{t}=1-\rho_+(t)$.
+(We suppose also that $0<\rho,1$.)
+Consider new coordinate $s={1\over t}$, then
+         $$
+2\pi=
+\int_\infty^\infty {\rho_+(t)dt\over
+1+t^2}+
+\int_\infty^\infty {\rho_-(t)dt\over
+1+t^2}=
+\int_\infty^\infty {\rho_+(t)dt\over
+1+t^2}+
+\int_\infty^\infty {\rho_-\left({1\over s}\right)ds\over
+1+s^2}=
+         $$
+   $$
+\int_\infty^\infty {
+\left(
+\rho_+
+\left(t\right)
++
+\rho_-\left({1\over t}\right)
+\right)dt\over
+1+t^2}\,.
+         $$
+We come to the identity:
+           $$
+\int_\infty^\infty 
+      {
+f
+\left(t\right)
+-
+f\left({1\over t}\right)
+ \over 1+t^2
+}dt=0
+          $$
+for an arbitrary function $f(t)$.
+
+
+    </div>
+  </div>
+ </body>
+</html>

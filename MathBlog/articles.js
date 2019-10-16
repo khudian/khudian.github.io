@@ -1,5 +1,9 @@
 var links =
 [
+  ["2019/October19/12localisation/index.html"],
+  ["2019/October19/02stirlfedor/index.html"],
+  ["2019/October19/01unitypart/index.html"],
+
   ["2019/September19/28againcalcul/index.html"],
   ["2019/September19/26thickalternat/index.html"],
   ["2019/September19/22actionsym/index.html"],

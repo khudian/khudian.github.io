@@ -1,0 +1,378 @@
+
+
+
+    
+
+\magnification=1200
+\baselineskip=14pt
+
+\def\A {{\bf A}} 
+\def\B {{\cal B}}
+\def\C {{\bf C}}
+\def\CC {{\cal C}}
+\def\Cl {{\tt \hbox{Cliff}}}
+\def\E {{\bf E}}
+\def\EE {{\cal E}}
+\def\F {{\cal F}}
+\def\FF {{\cal F}}
+\def\G {\Gamma}
+\def\GG {{\cal G}}
+\def\H {{\bf H}}
+\def\K {{\bf K}}
+\def\L {{\cal L}}
+\def\M {{\cal M}}
+\def\N {{\bf N}}
+\def\R {{\bf R}}
+\def\Sb {{\bf S}}
+\def\SS {{\cal S}}
+\def\Tr {{\rm Tr\,}}
+\def\V {{\cal V}}
+\def\X {{\bf X}}
+\def\XX {{\cal X}}
+\def\Y {{\bf Y}}
+\def\Z {{\bf Z}}
+
+\def\a {\alpha}
+\def\ac {{\bf a}}
+\def\b {{\bf b}}
+\def\bs {{\bf s}}
+\def\c {{\bf c}}
+\def\d {\delta}
+\def\dist {{\tt \hbox{distance}}}
+\def\e {{\bf e}}
+\def\f {{\bf f}}
+\def\finish {\blacksquare}
+\def\g {{\bf g}}
+\def\grad {{\rm grad\,}}
+\def\h {\hbar}
+\def\k {{\bf k}}
+\def\l {{\bf l}}
+\def\m {{\bf m}}
+\def\n {{\bf n}}
+\def\p {\partial}
+\def\pb {{\bf p}}
+\def\pt {{\bf pt}}
+\def\q {{\bf q}}
+\def\r {{\bf r}}
+\def\s {\sigma}
+\def\t {{\bf t}}
+\def\tS {{\tilde \Sigma}}
+\def\td {\tilde}
+\def\v {{\bf v}}
+\def\vare {\varepsilon}
+\def\x {{\bf x}}
+\def\y {{\bf y}}
+\def\w {\omega}
+
+\centerline {\bf Minimal formulation of localisation
+principle}
+
+ {\tt 10 October,   Cyprus---12 October David's
+birthday.}
+
+{\it 
+   Here I try to formulate the statement on localisation
+which seems to be very "rational". It is 
+based on my notes in 2013, and these notes are based
+on understanding of Belavin calculations based
+on the classic paper of Schwarz}
+
+  Let $F(x)=e^{iH(x)}$ be 
+an arbitrary (non-zero valued)
+function in  symplectic manifold  
+$(M\,,\Omega)$.  Consider the integral
+        $$
+    \int_M e^{iH} dp dq\,,
+      \eqno (1)
+         $$
+where $dpdq$ is Lioville measure in $M$:
+        $$
+  dpdq =\underbrace
+     {
+  \Omega\wedge\dots\wedge \Omega}
+          _
+      {\hbox{$n$-times}}\,,\quad \hbox
+      {$2n$=dimension of $M$}\,.
+         $$
+
+{\bf Statement} The integral (1) can be localised
+if there exist $D_{\bf H}$-invariant 
+$1$-form $\omega$ which produces
+symplectic structure on $M$
+(i.e. $\tilde\Omega=d\omega$ is non-degenerate
+$2$-form).
+
+We denote by  ${\bf D}_H=K$ 
+Hamiltonian vector field of Hamiltonian
+$H$
+       $$
+   \Omega {\cal c}{\bf K}+dH\left(\bf K\right)=0\,,
+\,, ({\bf K}=D_{H})\,,\quad
+ {\L_\K}\omega=0\,.
+        $$
+In the case if $\{x_i\}$ are points where vector field
+   ${\bf K}=D_{\bf H}$ vanishes,then
+this vector field defines at every point the
+linear operator $dK_i$\footnote{$^{*}$}
+{the action of operator $dK_i$ on
+an arbitrary tangent vector $\v\in T_{x_i}M$
+can be defined by an equation
+           $
+          dK_i(\v)=[\tilde\v,K]
+           $,
+where $\tilde \v$ is an arbitrary vector field such that
+its value at the point $x_i$ is equal to $\v$,
+and $[\,,\,]$ is the commutator of vector fields.
+The vanishing of ector $K$ at the point $x_i$ provides
+the correctness of this definition.}
+This localised integral is equal (up to coefficients
+containing
+ $\pi$) to
+         $$
+{1\over n!}\sum_{x_i}{e^{iH(x_i)}\over \sqrt {\det d K(x_i)}}
+     \eqno (1a)
+         $$
+\medskip
+
+
+Namely following Belavin \footnote{$^{**}$}
+{I did the slight but important modification of his
+calculations} consider a function
+            $$
+      Z(t)=
+   \int_{\Pi TM} 
+e^{i
+      \left(
+  {H+\Omega}+
+ t \sqrt {\L_{\bf K}\omega} 
+    \right)}dpdq d\xi
+       =\int_{\Pi TM} e^{i
+      \left(
+  H+\Omega+
+ t \left(h+\tilde \Omega\right) 
+    \right)}dpdqd\xi\,,
+        \eqno (2)
+             $$
+where  $\Pi TM$ is tangent bundle with reversed parity
+of fibres,$dpdqd\xi$ is canonical measure 
+on $\Pi TM$, 
+$h$ is an `artifical' Hamiltonian   
+defined by the new symplectic structure;
+  this new artificial Hamiltonian
+ produces the same Hamiltonian vector fied:
+   $D_h=D_H=\bf K$.
+        $$
+h=\tilde\Omega {\cal c} {\bf K}\,,
+\quad \tilde \Omega=d\omega\,.
+          $$
+We use notation $\sqrt {\L_\K}$
+for equivariant differential:
+        $$
+\sqrt{\L_{\bf K}}\omega=
+d_K \omega=d\omega+
+\omega {\cal c} {\bf K}\,.
+        $$
+{\bf Remark} 
+We denote by the same 
+letter differential form
+and the function on $\Pi TM$ 
+corresponding to this form.
+    
+
+\medskip
+
+{\bf Lemma} A function (2) {\tt does not depend} on $t$:
+
+
+
+We use this lemma to reduce the calculation
+of initial integral $Z(0)$
+to the integral $Z(T)$, which for big $t$
+can be expressed in terms of artificial HHamiltonian
+   $h$.
+  Lemma implies 
+ that the initial integral
+can be calculated in terms of an artificial hamiltonian,
+and this integral may be caluclated using the stationary
+phase method:
+         $$
+    \int e^{iH} dp dq=Z(0)=Z(\infty)\,.
+         $$
+i.e.
+        $$
+    \int_M e^{iH} dp dq
+         =
+\int_M e^{iH}\underbrace
+     {
+  \Omega\wedge\dots\wedge \Omega}
+          _
+      {\hbox{$n$-times}}=
+       \int_{\Pi TM}
+        e^{i\left(H+\Omega\right)}
+       dpdqd\xi=
+        $$
+        $$
+  \lim_{T\to \infty}
+ \int_{\Pi TM} 
+e^{i
+      \left(
+  {H+\Omega}+
+ T \sqrt {\L_{\bf K}\omega} 
+    \right)}dpdqd\xi
+  =
+    \lim_{T\to \infty}
+       \int_{\Pi TM} e^{i
+      \left(
+  H+\Omega+
+ T \left(h+\tilde \Omega\right) 
+    \right)}dpdqd\xi\,,
+   \eqno (3)
+       $$
+Now notice that for every $T$
+ $$       
+ \int_{\Pi TM} e^{i
+      \left(
+  H+\Omega+
+ T \left(h+\tilde \Omega\right) 
+    \right)}dpdqd\xi=
+  \int_{M} e^{i
+      \left(
+ H+Th \right)}\sum_{k=0}^n 
+{
+T^k\tilde \Omega^k
+   \wedge
+\Omega^{n-k}
+\over k!(n-k)!}
+  $$ and for every term
+$ \int_{\Pi TM} e^{i
+      \left(
+  H+\Omega+
+ T \left(h+\tilde \Omega\right) 
+    \right)}dpdqd\xi=
+  \int_{M} e^{i
+      \left(
+ H+Th \right)}\sum_{k=0}^n 
+{
+\tilde \Omega^k
+   \wedge
+\Omega^{n-k}}
+  $
+    the integral is proportional to $t^{k-n}$,
+i.e. it is tending to zero if $T\to \infty$ and $k\not
+=n$. Hence  we have that in equation (3)
+      $$
+Z(0)=Z(\infty)=
+\lim_{T\to \infty}       
+ \int_{\Pi TM} e^{i
+      \left(
+  H+\Omega+
+ T \left(h+\tilde \Omega\right) 
+    \right)}dpdqd\xi=
+\lim_{T\to \infty}       
+  \int_{M} e^{i
+      \left(
+ H+Th \right)} 
+{
+T^n\tilde \Omega^n
+\over n!}\,.
+      $$ 
+
+Notice that at the points $\{x_i\}$
+ where vector field $\bf K$ vanishes,
+artificial Hamiltonian 
+$h=\omega {\cal c}\K$ and its first derivatives
+vanish also:
+    $$
+     h\big\vert_{x=x_i}=
+\omega_i K^i\big\vert_{x=x_i}=0\,, 
+  {\p h\over \p x^k}\big\vert_{x=x_i}=
+\tilde\Omega_{km}K^m\big\vert_{x=x_i}=0\,.
+   \eqno (4)
+    $$
+Hence
+calculating  the last integral using the stationary phase
+method we come to
+       $$
+\lim_{T\to \infty}       
+ \left[
+         {T^n\over n!}
+     \sum_{x_i}
+         e^{iH(x_i)}  
+\int_{M} e^{iT
+      \left(
+ h_{pq}(x_i)(x^p-x_i^p)(x^q-x_i^q)+
+\dots\right)} 
+\tilde \Omega^n
+\right]=
+       $$
+       $$
+     {1\over n!}
+ \sum_{x_i}
+         e^{iH(x_i)}
+         {  
+\sqrt
+  {
+\det \tilde \Omega
+     \over
+ \det 
+Hessian \,\,{\rm of}\,\,h
+    }
+   }
+ \big\vert_{x_i}\,.
+    \eqno (5)
+$$
+Using equation (4) we see that
+for Hessian  of $h$ at stationary points
+     $$
+  {\p^2 h\over \p x^p \p x^q}\big\vert_{x_i}=
+  \tilde \Omega_{pr}{\p K^r\over \p
+x^q}\big\vert_{x_i}\,,
+       $$
+thus at stationary points ${x_i}$
+    $$      
+ \det 
+Hessian \,\,{\rm of}\,\,h
+\big\vert_{x_i}
+ =
+\det\tilde\Omega\cdot \det dK_i.
+      $$
+THis means that  equation (5) implies the statement
+(1a).
+
+
+Finally we prove the lemma.
+
+{\tt Proof of the lemma}
+     $$
+ {d Z(t)\over dt}=
+ \int_{\Pi TM} it \sqrt {\L_{\bf K}}
+      \omega
+           e^{i
+      \left(
+  {H+\Omega}+
+ t \sqrt {\L_{\bf K}\omega} 
+    \right)}
+    dpdqd\xi\,, 
+            $$
+and due to the $\bf K$ invariance of the form $\omega$
+it is equal to 
+$$
+ {d Z(t)\over dt}=
+ \int_{\Pi TM} it\sqrt {\L_{\bf K}}
+    \left(
+      \omega
+           e^{i
+      \left(
+  {H+\Omega}+
+ t \sqrt {\L_{\bf K}\omega} 
+    \right)}
+     \right)dpdqd\xi\,, 
+       $$
+One can see that the last integral vanishes
+since $\sqrt {\L_\K}\sigma=d\sigma+\sigma 
+{\cal c}\bf K$
+Lemma is proved.
+
+\medskip
+
+\bye

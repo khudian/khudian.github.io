@@ -1,0 +1,333 @@
+﻿<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="12 October 2019">
+<h3>Minimal formulation of localisation
+principle</h3>
+
+ <tt> 10 October,   Cyprus &mdash; 12 October David's
+birthday.</tt><br>
+
+<i>
+   Here I try to formulate the statement on localisation
+which seems to be very "rational". It is 
+based on my notes in 2013, and these notes are based
+on understanding of Belavin calculations based
+on the classic paper of Schwarz</i>
+<br><br>
+  Let $F(x)=e^{iH(x)}$ be 
+an arbitrary (non-zero valued)
+function in  symplectic manifold  
+$(M\,,\Omega)$.  Consider the integral
+        $$
+    \int_M e^{iH} dp dq\,,
+      \tag{1}
+         $$
+where $dpdq$ is Lioville measure in $M$:
+        $$
+  dpdq =\underbrace
+     {
+  \Omega\wedge\dots\wedge \Omega}
+          _
+      {\hbox{$n$-times}}\,,\quad \hbox
+      {$2n$=dimension of $M$}\,.
+         $$
+
+<b>Statement</b> The integral (1) can be localised
+if there exist $D_{\bf H}$-invariant 
+$1$-form $\omega$ which produces
+symplectic structure on $M$
+(i.e. $\tilde\Omega=d\omega$ is non-degenerate
+$2$-form).
+<br><br>
+We denote by  ${\bf D}_H=K$ 
+Hamiltonian vector field of Hamiltonian
+$H$
+       $$
+   \Omega {\cal c}{\bf K}+dH\left(\bf K\right)=0\,,
+\,, ({\bf K}=D_{H})\,,\quad
+ {\L_\K}\omega=0\,.
+        $$
+In the case if $\{x_i\}$ are points where vector field
+   ${\bf K}=D_{\bf H}$ vanishes,then
+this vector field defines at every point the
+<div class="footnote-head">linear operator $dK_i$</div>
+<div class="footnote-body">the action of operator $dK_i$ on
+an arbitrary tangent vector $\v\in T_{x_i}M$
+can be defined by an equation
+           $
+          dK_i(\v)=[\tilde\v,K]
+           $,
+where $\tilde \v$ is an arbitrary vector field such that
+its value at the point $x_i$ is equal to $\v$,
+and $[\,,\,]$ is the commutator of vector fields.
+The vanishing of ector $K$ at the point $x_i$ provides
+the correctness of this definition.</div>
+This localised integral is equal (up to coefficients
+containing
+ $\pi$) to
+         $$
+{1\over n!}\sum_{x_i}{e^{iH(x_i)}\over \sqrt {\det d K(x_i)}}
+     \tag{1a}
+         $$
+<br><br>
+
+<div class="footnote-head">Namely following Belavin</div>
+<div class="footnote-body">I did the slight but important modification of his
+calculations</div> consider a function
+            $$
+      Z(t)=
+   \int_{\Pi TM} 
+e^{i
+      \left(
+  {H+\Omega}+
+ t \sqrt {\L_{\bf K}\omega} 
+    \right)}dpdq d\xi
+       =\int_{\Pi TM} e^{i
+      \left(
+  H+\Omega+
+ t \left(h+\tilde \Omega\right) 
+    \right)}dpdqd\xi\,,
+        \tag{2}
+             $$
+where  $\Pi TM$ is tangent bundle with reversed parity
+of fibres,$dpdqd\xi$ is canonical measure 
+on $\Pi TM$, 
+$h$ is an `artifical' Hamiltonian   
+defined by the new symplectic structure;
+  this new artificial Hamiltonian
+ produces the same Hamiltonian vector fied:
+   $D_h=D_H=\bf K$.
+        $$
+h=\tilde\Omega {\cal c} {\bf K}\,,
+\quad \tilde \Omega=d\omega\,.
+          $$
+We use notation $\sqrt {\L_\K}$
+for equivariant differential:
+        $$
+\sqrt{\L_{\bf K}}\omega=
+d_K \omega=d\omega+
+\omega {\cal c} {\bf K}\,.
+        $$
+<b>Remark</b> 
+We denote by the same 
+letter differential form
+and the function on $\Pi TM$ 
+corresponding to this form.
+<br><br>    
+
+<b>Lemma</b> A function (2) <tt>does not depend</tt> on $t$:
+<br><br>
+
+
+We use this lemma to reduce the calculation
+of initial integral $Z(0)$
+to the integral $Z(T)$, which for big $t$
+can be expressed in terms of artificial HHamiltonian
+   $h$.
+  Lemma implies 
+ that the initial integral
+can be calculated in terms of an artificial hamiltonian,
+and this integral may be caluclated using the stationary
+phase method:
+         $$
+    \int e^{iH} dp dq=Z(0)=Z(\infty)\,.
+         $$
+i.e.
+        $$
+    \int_M e^{iH} dp dq
+         =
+\int_M e^{iH}\underbrace
+     {
+  \Omega\wedge\dots\wedge \Omega}
+          _
+      {\hbox{$n$-times}}=
+       \int_{\Pi TM}
+        e^{i\left(H+\Omega\right)}
+       dpdqd\xi=
+        $$
+        $$
+  \lim_{T\to \infty}
+ \int_{\Pi TM} 
+e^{i
+      \left(
+  {H+\Omega}+
+ T \sqrt {\L_{\bf K}\omega} 
+    \right)}dpdqd\xi
+  =
+    \lim_{T\to \infty}
+       \int_{\Pi TM} e^{i
+      \left(
+  H+\Omega+
+ T \left(h+\tilde \Omega\right) 
+    \right)}dpdqd\xi\,,
+   \tag{3}
+       $$
+Now notice that for every $T$
+ $$       
+ \int_{\Pi TM} e^{i
+      \left(
+  H+\Omega+
+ T \left(h+\tilde \Omega\right) 
+    \right)}dpdqd\xi=
+  \int_{M} e^{i
+      \left(
+ H+Th \right)}\sum_{k=0}^n 
+{
+T^k\tilde \Omega^k
+   \wedge
+\Omega^{n-k}
+\over k!(n-k)!}
+  $$ and for every term
+$ \int_{\Pi TM} e^{i
+      \left(
+  H+\Omega+
+ T \left(h+\tilde \Omega\right) 
+    \right)}dpdqd\xi=
+  \int_{M} e^{i
+      \left(
+ H+Th \right)}\sum_{k=0}^n 
+{
+\tilde \Omega^k
+   \wedge
+\Omega^{n-k}}
+  $
+    the integral is proportional to $t^{k-n}$,
+i.e. it is tending to zero if $T\to \infty$ and $k\not
+=n$. Hence  we have that in equation (3)
+      $$
+Z(0)=Z(\infty)=
+\lim_{T\to \infty}       
+ \int_{\Pi TM} e^{i
+      \left(
+  H+\Omega+
+ T \left(h+\tilde \Omega\right) 
+    \right)}dpdqd\xi=
+\lim_{T\to \infty}       
+  \int_{M} e^{i
+      \left(
+ H+Th \right)} 
+{
+T^n\tilde \Omega^n
+\over n!}\,.
+      $$ 
+
+Notice that at the points $\{x_i\}$
+ where vector field $\bf K$ vanishes,
+artificial Hamiltonian 
+$h=\omega {\cal c}\K$ and its first derivatives
+vanish also:
+    $$
+     h\big\vert_{x=x_i}=
+\omega_i K^i\big\vert_{x=x_i}=0\,, 
+  {\p h\over \p x^k}\big\vert_{x=x_i}=
+\tilde\Omega_{km}K^m\big\vert_{x=x_i}=0\,.
+   \tag{4}
+    $$
+Hence
+calculating  the last integral using the stationary phase
+method we come to
+       $$
+\lim_{T\to \infty}       
+ \left[
+         {T^n\over n!}
+     \sum_{x_i}
+         e^{iH(x_i)}  
+\int_{M} e^{iT
+      \left(
+ h_{pq}(x_i)(x^p-x_i^p)(x^q-x_i^q)+
+\dots\right)} 
+\tilde \Omega^n
+\right]=
+       $$
+       $$
+     {1\over n!}
+ \sum_{x_i}
+         e^{iH(x_i)}
+         {  
+\sqrt
+  {
+\det \tilde \Omega
+     \over
+ \det 
+Hessian \,\,{\rm of}\,\,h
+    }
+   }
+ \big\vert_{x_i}\,.
+    \tag{5}
+$$
+Using equation (4) we see that
+for Hessian  of $h$ at stationary points
+     $$
+  {\p^2 h\over \p x^p \p x^q}\big\vert_{x_i}=
+  \tilde \Omega_{pr}{\p K^r\over \p
+x^q}\big\vert_{x_i}\,,
+       $$
+thus at stationary points ${x_i}$
+    $$      
+ \det 
+Hessian \,\,{\rm of}\,\,h
+\big\vert_{x_i}
+ =
+\det\tilde\Omega\cdot \det dK_i.
+      $$
+THis means that  equation (5) implies the statement
+(1a).
+<br><br>
+
+Finally we prove the lemma.
+<br><br>
+<tt>Proof of the lemma</tt>
+     $$
+ {d Z(t)\over dt}=
+ \int_{\Pi TM} it \sqrt {\L_{\bf K}}
+      \omega
+           e^{i
+      \left(
+  {H+\Omega}+
+ t \sqrt {\L_{\bf K}\omega} 
+    \right)}
+    dpdqd\xi\,, 
+            $$
+and due to the $\bf K$ invariance of the form $\omega$
+it is equal to 
+$$
+ {d Z(t)\over dt}=
+ \int_{\Pi TM} it\sqrt {\L_{\bf K}}
+    \left(
+      \omega
+           e^{i
+      \left(
+  {H+\Omega}+
+ t \sqrt {\L_{\bf K}\omega} 
+    \right)}
+     \right)dpdqd\xi\,, 
+       $$
+One can see that the last integral vanishes
+since $\sqrt {\L_\K}\sigma=d\sigma+\sigma 
+{\cal c}\bf K$
+Lemma is proved.
+
+    </div>
+  </div>
+ </body>
+</html>
