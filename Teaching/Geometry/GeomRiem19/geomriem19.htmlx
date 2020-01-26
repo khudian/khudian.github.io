@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head><title>MATH31082 Riemannian  Geometry 2018/19</title></head>
+<body>
+    <div id="menu"></div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+<script type="text/javascript" src="https://khudian.net/menu.js"></script>
+
+<h1>MATH31082 Riemannian Geometry Geometry 2018/19</h1>
+<p>
+<b>Welcome</b> to the Riemannian Geometry course. This course
+is an introduction to the notions of Riemannian geometry,
+and to some basic notions of Differentiable Manifolds and Topology.
+If you have any questions, do not hesitate to contact me, Dr Hovhannes Khudaverdian, in Alan Turing building 1.118 or via khudian@manchester.ac.uk.
+<p>
+<b>Where to find course information:</b>
+<ul>
+<li>Learning outcomes can be found <a href="iloriem1.pdf">here</a>.
+
+<li>Assessment and feedback information is <a href="assessment.pdf">here</a>.
+
+<li>Lecture notes and example sheets are below.
+</ul>
+
+<h2>Example classes</h2>
+
+
+
+
+</li><li><a href="problems0.pdf">Homework 0 </a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+<a href="solutions0.pdf">Solutions  of the Homework 0</a>
+
+
+
+<!--<a href="comments0.html">Information</a>
+
+
+<p> During tutorials of second week we will consider problems 
+4,5,6 ad 7 of Homework 0.-->
+
+
+
+
+</li><li><a href="problems1.pdf">Homework 1</a>
+
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="solutions1.pdf">Solutions of Homework 1</a>
+
+
+<!--
+
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="remark1.pdF">Remark</a>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+-->
+
+
+
+</li><li><a href="problems2.pdf">Homework 2</a>
+
+
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="solutions2.pdf">Solutions of Homework 2</a>
+
+<!--</li><li>-->
+
+
+<!--Dear students,  I have included in the lecture notes also 
+the paragraph 1.3.3 (Induced Riemannian metrics. Examples). 
+I suppose that the content  of this subsection will be useful to solve
+the problems 3, 4 and 5 of Homework 2.--> 
+
+
+
+
+</li><li><a href="problems3.pdf">Homework 3</a>
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="solutions3.pdf">Solutions of Homework 3</a>
+
+
+
+
+
+
+
+
+</li><li><a href="problems4.pdf">Homework 4</a>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+
+
+<a href="solutions4a.pdf">Solutions of Homework 4 </a>
+
+
+
+
+</li><li><a href="problems5.pdf">Homework 5</a>
+
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<!--<a href="solutions5_beforecw.pdf">
+Solutions of Homework 5</a>-->
+
+<a href="solutions5.pdf">Solutions of Homework 5</a>
+
+
+
+
+
+</li><li><a href="problems6.pdf">Homework 6</a>
+
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+<a href="solutions6.pdf">Solutions of Homework 6</a>
+
+<!--<a href="solutions6_beforecw.pdf">
+Solutions of Homework 6 </a>-->
+
+
+
+<!--&nbsp; &nbsp;<a href="comments3.html">(Solutions of problem 1 (revisited))
+</a>-->
+
+
+
+</li><li><a href="problems7.pdf">Homework 7</a>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+<a href="solutions7.pdf">Solutions of Homework 7</a>
+
+
+
+
+
+</li><li><a href="problems8.pdf">Homework 8</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+
+<a href="solutions8.pdf">Solutions of Homework 8</aa
+
+
+
+
+</li><li><a href="problems9.pdf">Homework 9</a>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+
+<a href="solutions9.pdf">Solutions of Homework 9</a>
+
+
+<!--
+
+
+
+<p>
+
+</li><li><a href="time1.html">When you can see me in the office </a>
+
+
+
+<p>
+
+ 
+
+
+</li>
+-->
+
+<Li>
+
+<a href="comments1.html"><h2>Lecture Notes </h2>  </a>
+
+</li>
+
+<Li>
+
+<a href="comments2.html"><h2>Coursework</h2></a>
+
+
+<p>
+
+<a href="cwrm19disc.pdf"><h2>Discussion of 
+solution of Coursework</h2></a>
+
+
+
+
+<!--
+
+<a href="comments3.html"><h2>Appendices to Lectures</h2>  </a>
+
+
+<p>
+
+</li><Li>
+<a href="exgmdisc151web.pdf"><h2>Feedback on exam </h2>  </a>
+
+
+<p>
+
+<a href="comments2.html"><h2>Coursework</h2></a>
+
+<a href="cwgm18disc.pdf"><h2>Discussion of solutions of Coursework
+</h2></a>
+
+<p> <a href="exgm101.pdf"><h2>Exam papers for 2010</h2></a>
+
+
+<a href="discusofformex1.pdf"><h2>Comments on last year Exam</h2></a>
+
+
+<a href="comments4.html"><h2>Feedback on last year exams</h2></a>
+
+
+-->
+<p>
+
+<a href="exrgmdisc19.pdf"><h2>Feedback on this year exams</h2></a>
+
+
+<p>
+
+<a href="exrgmdisc18.pdf"><h2>Feedback on last year exams</h2></a>
+
+
+<p>
+
+<a href="exrgmdisc17.pdf"><h2>Feedback on last but one year exams</h2></a>
+
+<p>
+
+<li><h3><a href="aunt4.pdf">A Tale on Differential Geometry.
+</a></li></h3>
+
+
+<!--
+
+
+<a href="qans.html">Questions and answers</a>
+
+
+<p>
+
+
+<a href="exgmdisc18.pdf"><h2>Feedback on this  year exams</h2></a>
+
+<a href="ueqgm18.pdf"><h2>Responce to UEQ comments</h2></a>
+
+<p>
+
+<li><h3><a href="aunt4.pdf">A Tale on Differential Geometry.
+</a></li></h3>
+
+
+<p> <a href="http://khudian.net">Back to the main page...</a>
+
+</p><p> </p><hr> <div align="center"> <small>
+<a href="http://khudian.net">
+<code>http://khudian.net</code></a>
+</small></div>
+-->
+
+<p><small> <i><a href="mailto:khudian@manchester.ac.uk">Hovhannes Khudaverdian</a>.
+
+February 2019</i> </small>
+
+</p></li>
+</body></html> 
