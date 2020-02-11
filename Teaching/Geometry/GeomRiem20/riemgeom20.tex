@@ -51,7 +51,9 @@
 \def\e{{\bf e}}
 \def\f{{\bf f}}
 \def\ac {{\bf a}}
+\def \x   {{\bf x}}
 \def \X   {{\bf X}}
+\def \y   {{\bf y}}
 \def \Y   {{\bf Y}}
 \def\diag {\rm diag\,\,}
 \def\pt {{\bf p}}
@@ -81,7 +83,7 @@
 
   \centerline {it is a draft of Lecture Notes of H.M. Khudaverdian.}
 
-  \centerline { Manchester, 03 February,  2020}
+  \centerline { Manchester, 10 February,  2020}
 
 
 
@@ -691,8 +693,6 @@ T^{i'_1i'_2\dots i'_p}(x')={\p x^{i'_1}\over \p x^{i_1}}
                      T^{i_1i_2\dots i_p}(x)\,.
                          \end{equation}
 
-\medskip
-
 One can consider {\it covariant} tensors  of the rank $q$
                    $$
              S=  S_{j_1j_2\dots j_q}dx^{j_1}\otimes
@@ -718,14 +718,99 @@ of rank $2$ then
    {\p x^k(x')\over \p x^{k'}}
              S_{ik}(x)\,.
             \end{equation}
- If $A^i_k$ is a tensor of rank $\begin{pmatrix} 1\cr 1\cr\end{pmatrix}$ 
-(linear operator on $T_\pt M$)
- then
 
-             $$
-    A^{i'}_{k'}(x')=        
-{\p x^{i'}(x)\over \p x^{i}}{\p x^k(x')\over \p x^{k'}}A^i_k(x)\,.
-             $$
+
+\medskip
+
+{[\bf Example] \it linear operator and bilinear form}
+
+  Consider in Linear space $V$ the following two geometrical objects
+
+  \begin{itemize}
+
+	  \item
+		  
+		  Bilinear form $B(\x,\y)$
+    $$
+B(\lambda \x+\mu \x',\y)=
+\lambda B(\x,\y)+
+\mu B( \x',\y)\,.
+   $$
+
+		  In an arbitrary  basis 
+	$\{\e_i\}$ the bilinear form is presented by the matrrix
+		    $$
+		    B_{ik}=
+		    B(e_i,\e_k)
+		    $$
+	  
+	    \item Linear operator 
+		    
+		    $A\colon V\to V$,
+
+		    $$
+A(\lambda \x+\mu \x')=
+\lambda A(\x)+
+\mu A( \x')\,.
+		    $$
+		  
+		  In an arbitrary  basis 
+	$\{\e_i\}$ the linear operator  $A$
+		  is presented by the matrrix
+		    $$
+		    P^k_i
+		    P(\e_i)=P_i^k\e_k
+		    $$
+ 
+These both objexts, bilinear form and linear operator,
+		  are both presented in an arbitrary basis 
+		  by $2\times 2$ marices. However they are 
+		  {\tt different} objects!
+
+		 Consider  an arbitrary linear changing of coordinates
+		  from coordinates $\{x^i\}$ to new linear
+		  coordinates $\{x^{i'}\}$:
+		  \begin{equation}\label{operatorandform}
+			  x^{i'}=Q^{i'}_kx^k\,,\hbox {respectively}
+			  x^i=P^i_{i'}x^{i'}\,,
+			  \end{equation}
+		  (matrix $Q^{i'}_i$ is inverse to the matrix 
+		$P^i_{i'}$: $Q^{i'}_kP^k_{j'}=
+		  \delta^{i'}_{j'} $).
+
+   Bilinear form $B$ transforms as
+		      $$
+		      B_{i'k'}=
+		      {\p x^i\over \p x^{i'}}
+		      {\p x^k\over \p x^{k'}}=
+		      P^i_{i'} P^{k}_{k'}B_{ik}
+		      $$
+  Bilinear form is the covariant tensor of  the valency
+		  $\begin{pmatrix} 0\cr 2\cr \end{pmatrix}$.
+Under the  same linear changing of coordinates 
+			  \eqref{operatorandform} 
+   linear operator  $A$ transforms as
+		      $$
+		      A^{i'}_{k'}=
+		      {\p x^{i'}\over \p x^{i}}
+		      {\p x^k\over \p x^{k'}}A^i_k=
+		      Q^{i'}_{i} P^{k}_{k'}A^i_k\,.
+		      $$
+  Linear operator is the  tensor of the of the valency
+		  $\begin{pmatrix} 1\cr 1\cr \end{pmatrix}$.
+
+\end{itemize}
+
+ 
+			  {\footnotesize	
+			  {\bf Remark}
+One can  calulate determinant of the linear operator, however
+the determinant of bilinear form is not well-defined.
+In its turn one can consider symmetric bilinear form, which is 
+represented by symmetrical matrix, however one cannot consider
+symmetric linear operator in linear space: it is ill-defined notion}
+
+
 
 
 
@@ -754,7 +839,7 @@ A^{i'}(x')=\sum_{i=1}^n{\p x^{i'}\over \p x^i}A^i(x)\,.
 
 \subsection {Riemannian manifold}
 
-\end{document}
+%\end{document}
 
 % 3 February 2020
 
@@ -938,7 +1023,8 @@ and write a metric just as
 
 
    \begin{itemize}
-\item
+
+	   \item
 
 
    $\R^n$ with canonical coordinates $\{x^i\}$ and with metric
@@ -994,9 +1080,10 @@ have the following appearance:
       \begin{pmatrix}1 &0\cr 0 &r^2\end{pmatrix}}_ {\hbox{in polar coordinates}}
              \end{equation*}
 
-
-
-    \item   Circle
+		  %\end {itemize}
+  % \end{document} % 8 February
+   % end {itemize} has to be changed!!!
+    \item   {\tt Circle (without a point)}
 
      Interval $[0,2\pi)$ in the line $0\leq x< 2\pi$ with Riemannian  metric
            \begin{equation}\label{circle1}
@@ -1004,7 +1091,7 @@ have the following appearance:
            \end{equation}
 Renaming $x\mapsto \varphi $ we come to habitual formula for
 metric
-for circle of the radius $a$: $x^2+y^2=a^2$ embedded in
+for circle without a point of the radius $a$: $x^2+y^2=a^2$ embedded in
 the Euclidean space $\E^2$:
            \begin{equation}\label{circle2}
           G= a^2d\varphi^2\qquad
@@ -1015,7 +1102,9 @@ the Euclidean space $\E^2$:
           0< \varphi <2\pi,
 \quad {\rm or}\,\, -\pi<\varphi<\pi\,.
            \end{equation}
-  Rewrite this metric in stereographic coordinate
+
+
+  {\footnotesize Rewrite this metric in stereographic coordinate
    $t$:
                 \begin{equation}\label{circlestereograph} 
              G=a^2d\varphi^2=4a^4dt^2(a^2+t^2)^2\,,
@@ -1025,12 +1114,12 @@ the Euclidean space $\E^2$:
 \tan\left({\pi\over 4}+{\varphi\over 2}\right)\,.
                   \end{equation}
   (See \eqref{stereogrcoordoncircle} and Homeworks 0 and 2.)
-
+}
 %\item Domain in $\R^2$ with metric $G=du^2+u^2dv^2$
 % (Compare with $\E^2$ with polar coordinates).
 
 
-    \item Cylinder surface
+   \item {\tt Cylinder surface (without a line)}
 
     Consider domain in $\R^2$,
  $D=\{(x,y)\colon,\,\, 0\leq x< 2\pi$ with Riemannian  metric
@@ -1039,7 +1128,8 @@ the Euclidean space $\E^2$:
            \end{equation}
 We see that renaming variables $x\mapsto \varphi $, $y\mapsto h$ we come to habitual, familiar formulae for
 metric in standard polar coordinates
-for cylinder surface of the radius $a$ embedded in the Euclidean space $\E^3$:
+for cylinder surface of the radius $a$ without a line
+embedded in the Euclidean space $\E^3$:
            \begin{equation}\label{domainascylinder2}
           G= a^2d\varphi^2+dh^2\qquad
           \begin{cases}
@@ -1052,7 +1142,9 @@ for cylinder surface of the radius $a$ embedded in the Euclidean space $\E^3$:
 (Coordinate  $\varphi$ is well defined for $-\pi<\varphi<\pi$
 also.)
 
- \item  Sphere
+
+{\footnotesize
+ \item  {\tt Sphere without...}
 
    Consider domain in $\R^2$,  $0<x<2\pi$, $0<y<\pi$ 
 with metric $G=dy^2+\sin^2 y dx^2$
@@ -1071,8 +1163,10 @@ for sphere $x^2+y^2+z^2=a^2$ of the radius $a$ embedded in the Euclidean space $
           0< \varphi <2\pi\,.
            \end{equation}
 
+}
 \end{itemize}
-(See examples also in the Homeworks.)
+
+		   (See examples also in the Homeworks.)
 
 
 {\footnotesize If we omit the
@@ -1411,6 +1505,8 @@ we often write metric in the following form
 
 \smallskip
 
+\end{document}
+% 11 February 2020
 
 {\bf Example 1}
 Consider $2$-dimensional Riemannian manifold with metric
