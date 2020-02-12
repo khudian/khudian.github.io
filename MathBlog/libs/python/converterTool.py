@@ -1,5 +1,6 @@
 import os
 from pathlib import Path
+from shutil import copyfile
 
 gBlogDir = R"C:\Users\khuda\Desktop\Blog"
 gDestinationDir = R"C:\Users\khuda\Desktop\khudian.github.io\MathBlog"
@@ -41,6 +42,13 @@ def getMonthAndYearNum(month, year):
 def validateMonthAndYear(month, year):
   return (year == 2019) and (month > 6) or (year > 2019) 
 
+def convert(inFile, targetFile):
+  print("converting: " + inFile)
+  print("destination:" + targetFile)
+  #copyfile(inFile, targetFile)
+  #copyfile(inFile, targetFile)
+  print("")
+
 for subdir, dirs, files in os.walk(gBlogDir):
   for file in files:
     if file.endswith("tex"):
@@ -51,6 +59,6 @@ for subdir, dirs, files in os.walk(gBlogDir):
       [monthNum, yearNum] = getMonthAndYearNum(month, year)
       if (not os.path.exists(targetFile) and 
         validateMonthAndYear(monthNum, yearNum)):
-        print(targetFile)
+        convert(fullPath, targetFile)
         
       
