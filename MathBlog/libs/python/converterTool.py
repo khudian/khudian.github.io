@@ -1,4 +1,5 @@
 import os
+import re
 from pathlib import Path
 from shutil import copyfile
 
@@ -34,7 +35,6 @@ gTemplate = """
 </html>
 """
 
-print(gTemplate)
 def monthStringToNumber(monthString):
   monthsMap = {'jan': 1,
     'feb': 2,
@@ -82,13 +82,36 @@ def convert(inFile, targetFile):
   cleverCopy(inFile, targetFile)
   print("")
 
+def removeHeaderDefs(data):
+  lastDef = R"\def\w {\omega}"
+  foundIdx = data.find(lastDef)
+  if foundIdx == -1:
+    raise "invalid header"
+   
+  return data[foundIdx + len(lastDef):]
+   
+    
+def eqnoToTag(data):
+  eqnoString = R"\eqno"
+  tagString = R"\tag"
+  data = re.sub(R"\\eqno.*\((.*)\)", r"\\tag{\1}", data)
+  return data
+   
+
+def convertTexString(data):
+  data = removeHeaderDefs(data)
+  data = eqnoToTag(data)
+  return data
+  
+
 def convert(pathFrom, pathTo):
   with open(pathFrom, 'r') as file:
     data = file.read();
 
+  data = convertTexString(data)
   result = gTemplate.replace("PYTHON_DATE_KEY", "SDFDSF")
   result = result.replace("PYTHON_MAIN_ARTICLE_KEY", data)
-    
+  print(result)
   with open(pathTo, 'w') as file:
     file.write(result)  
     
