@@ -89,6 +89,15 @@ def removeHeaderDefs(data):
     raise "invalid header"
    
   return data[foundIdx + len(lastDef):]
+  
+def removeAfterBye(data):
+  byeString = R"\bye"
+  foundIdx = data.find(byeString)
+  if foundIdx == -1:
+    raise "cannot find \bye command"
+   
+  return data[:foundIdx]
+  
    
     
 def eqnoToTag(data):
@@ -99,6 +108,7 @@ def eqnoToTag(data):
 
 def convertTexString(data):
   data = removeHeaderDefs(data)
+  data = removeAfterBye(data)
   data = eqnoToTag(data)
   return data
   
