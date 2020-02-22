@@ -92,11 +92,10 @@ def removeHeaderDefs(data):
    
     
 def eqnoToTag(data):
-  eqnoString = R"\eqno"
-  tagString = R"\tag"
   data = re.sub(R"\\eqno.*\((.*)\)", r"\\tag{\1}", data)
   return data
-   
+  
+     
 
 def convertTexString(data):
   data = removeHeaderDefs(data)
@@ -130,6 +129,6 @@ def execute():
 
 execute();
 convert(R"C:\Users\khuda\Desktop\khudian.github.io\MathBlog\2020\January20\9theorem\index.html",
-R"C:\Users\khuda\Desktop\khudian.github.io\MathBlog\2020\January20\9theorem\index_covnertes.html")
+        R"C:\Users\khuda\Desktop\khudian.github.io\MathBlog\2020\January20\9theorem\index_covnertes.html")
           
 
