@@ -5,8 +5,9 @@ from shutil import copyfile
 
 gBlogDir = R"C:\Users\khuda\Desktop\Blog"
 gDestinationDir = R"C:\Users\khuda\Desktop\khudian.github.io\MathBlog"
-gTemplate = """
-<!DOCTYPE html>
+GENERAL_BEGIN_KEY = "GENERAL_BEGIN_KEY"
+GENERAL_END_KEY = "GENERAL_END_KEY"
+gTemplate = """<!DOCTYPE html>
 <html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -98,8 +99,88 @@ def removeAfterBye(data):
    
   return data[:foundIdx]
   
-   
+def checkCaretInsideFormula(data, caretIdx):
+  result = False
+  dataStripped = data[:caretIdx + 1]
+  currentIdx = 0;
+  while (True):
+    fIdx1 = dataStripped.find("$", currentIdx)
+    fIdx2 = dataStripped.find("$$", currentIdx)
+
+    if (fIdx1 == -1) and (fIdx2 == -1):
+      return result
     
+    if (fIdx1 == fIdx2):
+      currentIdx = fIdx1 + 2 
+    else:
+      currentIdx = fIdx1 + 1 
+      
+    result = not result    
+
+def getMinMax(data, startIdx, openStr, closeStr):
+  fIdxMin = data.find(openStr, startIdx)
+  if (fIdxMin - startIdx) < 2:
+    return
+  
+  sum = 1
+  fIdx = fIdxMin + 1
+  while fIdx < len(data):
+    if (data.find(openStr, fIdx) == fIdx):
+      sum += 1
+    if (data.find(closeStr, fIdx) == fIdx):
+      sum -= 1
+      
+    if sum == 0:
+      return [fIdxMin, fIdx]
+    
+    fIdx += 1
+  
+  raise "the start and open keys are not canceling each other"
+        
+    
+  
+def replace(data, minmax, keys, replacementPair):
+  data = data[:minmax[0]] + replacementPair[0] + \
+    data[minmax[0] + len(keys[0]):]
+
+  adjustment = len(replacementPair[0]) - len(keys[0]) 
+  data = data[:minmax[1] + adjustment] + replacementPair[1] + \
+    data[minmax[1] + len(keys[1]) + adjustment:]
+    
+  return data  
+
+def replaceCommand_OverwhelmingType(
+  data, commandString, 
+  replacementPair):  
+  
+  foundIdx = data.find(commandString)
+  if checkCaretInsideFormula(data, foundIdx):
+    raise "command is inside formula"
+
+  minmaxParentheses = getMinMax(data, foundIdx, "{", "}")  
+  minmaxInternalKeys = getMinMax(data, foundIdx,
+    GENERAL_BEGIN_KEY, GENERAL_END_KEY)  
+  
+  minmax = None
+  keys = None
+
+  if minmaxParentheses != None:
+    minmax = minmaxParentheses
+    keys = ["{", "}"]    
+  
+  if minmaxInternalKeys != None and \
+    minmaxParentheses != None and \
+    minmaxInternalKeys[0] < minmaxParentheses[0]:
+    minmax = minmaxInternalKeys
+    keys = [GENERAL_BEGIN_KEY, GENERAL_END_KEY]
+  
+  if minmax == None:
+    raise "cannot find open/close keys for the command"  
+    
+  data = replace(data, minmax, keys, replacementPair)  
+  return data
+    
+   
 def eqnoToTag(data):
   data = re.sub(R"\\eqno.*\((.*)\)", r"\\tag{\1}", data)
   return data
@@ -110,6 +191,8 @@ def convertTexString(data):
   data = removeHeaderDefs(data)
   data = removeAfterBye(data)
   data = eqnoToTag(data)
+  data = replaceCommand_OverwhelmingType(
+    data, R"\centerline", [R"<h3>", R"</h3>"])
   return data
   
 
@@ -120,9 +203,9 @@ def convert(pathFrom, pathTo):
   data = convertTexString(data)
   result = gTemplate.replace("PYTHON_DATE_KEY", "SDFDSF")
   result = result.replace("PYTHON_MAIN_ARTICLE_KEY", data)
-  print(result)
   with open(pathTo, 'w') as file:
-    file.write(result)  
+    file.write(result)
+  print(result)
     
 def execute():
   for subdir, dirs, files in os.walk(gBlogDir):
