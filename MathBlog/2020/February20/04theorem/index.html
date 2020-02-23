@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="4 February 2020">
+      <br><br>
+<h3><b> Very useful exercise (for proving the theorem)</b></h3><br><br>
+
+ Let
+   $$
+\L(g)=\Phi_S^*(g)=
+   $$
+where $$
+S=S(x,q)=S_0(x)+S^a(x)q_a+S^{ab}(x)q_bq_a+S^{abc}(x)q_cq_bq_a
+       $$
+then
+    $$
+\L(g)=l_0(x)+L_1(x,g)+L_2(x,g,g)+L_3(x,g,g,g)+\dots=
+     $$
+     $$
+L_0(x)+
+\int L_1(x,y)g(y)dy
+\int L_2(x,y,z)g(y)g(z)dydz+
+\int L_3(x,y,z,w)g(y)g(z)g(w)dydzdw+\dots\,,
+   $$
+where
+       $$
+L_0(x)=S_0(x)\,,   
+L_1(x,g)=\int L_1(x,y)g(y)dy=g(S_1^a(x))\,,
+        $$
+         $$
+L_2(x,g,g)=\int L_2(x,y,z)g(y)g(z)dydz=
+         S^{ab}(x)l_al_b\,,
+      $$
+and so on....<br><br>
+   We use notation 
+               $$
+   l_a(y)={\p g(y)\over \p y^a}
+            $$
+Calulate it up to the  3-rd order:
+       $$
+       f(x)=\Phi_S^*(g)=g(y_g(x))+
+       \left[S(x,q)-y^aq_a\right]_
+       {q_a=Q_a(x)}
+       $$ 
+       where
+       $$
+       \cases
+       {
+       Q_a(x)=
+       {\p g(y\over \p y^a)}\big\vert_{y^a=y^a_g(x)}\cr
+	y^a_g(x)={\p S(x,q)\over \p q_a}_  
+       {q_a=Q_a(x)}\cr
+        }\,.
+	   $$
+We see that	   
+	   $$
+	 y^a_g(x)=
+     \left[S^a(x)+2S^{ab}q_bq_a+3S^{abc}q_cq_b+\dots\right]
+     \big\vert_{q_a=Q_a(x)}=  
+	   $$
+ $$
+S^a(x)+2S^{ab}(x)Q_b(x)+3S^{abc}(x)
+Q_c(x)Q_b(x)+\dots=
+ $$
+         $$
+    S^a(x)+2S^{ab}
+                   l_b
+     \left(S^a(x)+2S^{ab}Q_b(x)+\dots \right)
+      +3S^{abc}Q_c(x)Q_b(x)+\dots
+     =
+          $$
+       $$
+    S^a(x)+ 
+	  2 S^{ab}(x)l_b(S^m(x))+
+    2l_{bc}\left(S^m(x)\right)\cdot 2S^{cd}(x)l_d\left(S^n(x)\right)
+                       +
+		       $$
+		       $$
++3S^{abc}(x)
+l_c(S^m(x))
+l_b(S^n(x))
++\dots=
+ $$
+ $$
+      S^a(x)+2S^{ab}l_b^\dagger(x)+
+       4S^{ab}(x)S^{cd}(x)
+     l_{bc}^\dagger(x)
+     l_d^\dagger(x)
+                       +
+3S^{abc}(x)
+l_c^\dagger(x)
+l_b^\dagger(x)
++\dots\,,
+		       $$
+		  where we denote: 
+   $$
+   l_{ab}(y)={\p^2 g(y)\over \p y^a \p y^b}\,,\quad
+      l_a^\dagger(x)=l_a(y)\big\vert_{y^a=S^a(x)}\,,\quad
+      l_{ab}^\dagger(x)=l_{ab}(y)\big\vert_{y^a=S^a(x)}\,.
+      $$
+     Now we have that
+              $$
+       \Phi_S^*(g)=g(y_g(x))+
+       \left[S(x,q)-y^aq_a\right]_
+       {q_a=Q_a(x)}=
+       $$
+       $$
+   g\left(
+       S^a(x)+2S^{ab}l_b^\dagger(x)+
+       4S^{ab}(x)S^{cd}(x)
+     l_{bc}^\dagger(x)
+     l_d^\dagger(x)
+                       +
+		       3S^{abc}(x)
+l_c^\dagger(x)
+l_b^\dagger(x)
+\dots
+   \right)+
+      $$
+      $$
+      S_0(x)+S^a(x)Q_a(x)+S^{ab}(x)Q_b(x)Q_a(x)
+      +S^{abc}Q_c(x)Q_b(x)Q_a(x)-
+      $$
+      $$
+       \left[
+S^a(x)+2S^{ab}l_b^\dagger(x)+
+       8S^{ab}(x)S^{cd}(x)
+     l_{bc}^\dagger(x)
+     l_d^\dagger(x)+
+              3S^{abc}(x)
+l_c^\dagger(x)
+l_b^\dagger(x)
++\dots\right]
+     Q_a(x)=
+      $$
+     (now we expand function $g$ in Taylir seies) 
+      $$
+     g\left(\left(S^a(x)\right)\right)+
+     2l_a^\dagger(x)
+         S^{ab(x)}
+     l_b^\dagger(x)
+      +
+     4l_a^\dagger(x)
+      S^{ab}(x)S^{cd}(x)
+     l_{bc}^\dagger(x)
+     l_d^\dagger(x)+
+       $$
+        $$
+	+3
+      l_a^\dagger(x)
+          S^{abc}
+	  l_b^\dagger(x)
+	  l_c^\dagger(x)
+	  +
+     2S^{ab}(x)S^{cd}(x)
+l_{ac}^\dagger (x)l_b^\dagger (x)
+l_d^\dagger (x) +\dots+ 
+  $$
+  $$
+      S_0(x)+S^a(x)Q_a(x)+S^{ab}(x)Q_b(x)Q_a(x)
+      +S^{abc}Q_c(x)Q_b(x)Q_a(x)-
+      $$
+      $$
+       \left[
+S^a(x)+2S^{ab}l_b^\dagger(x)+
+       8S^{ab}(x)S^{cd}(x)
+     l_{bc}^\dagger(x)
+     l_d^\dagger(x)+
+              3S^{abc}(x)
+l_c^\dagger(x)
+l_b^\dagger(x)
++\dots\right]
+     Q_a(x)=
+      $$
+      $$
+     g\left(\left(S^a(x)\right)\right)+
+     l_a^\dagger(x)
+         S^{ab(x)}
+     l_b^\dagger(x)
+      +
+      l_a^\dagger(x)
+          S^{abc}
+	  l_b^\dagger(x)
+	  l_c^\dagger(x)
+	  +
+     2S^{ab}(x)S^{cd}(x)
+l_{ac}^\dagger (x)l_b^\dagger (x)
+l_d^\dagger (x) +\dots+S_0(x) 
+  $$<br><br>
+      
+     Now collecting the terms of different orders togeher we see that
+          $$
+\L(g)=\Phi_S^*(g)=
+  L_0(x)+L_1(x,g)+L_2(x,g,g)+L_3(x,g,g,g)+\dots=\,,
+     $$
+     where
+     $$
+     L_0(x)=S_0(x)\,,
+     $$
+      $$
+     L_1(x,g)=g\left(S_1\left(x\right)\right)\,,
+     $$
+      $$
+      L_2(х,g,g)= l_a^\dagger(x)
+         S^{ab(x)}
+     l_b^\dagger(x)
+   \,, 
+      $$
+        $$
+	L_3(x,g,g,g)=
+	l_a^\dagger(x)
+          S^{abc}
+	  l_b^\dagger(x)
+	  l_c^\dagger(x)
+              +
+     2S^{ab}(x)S^{cd}(x)
+l_{ac}^\dagger (x)l_b^\dagger (x)
+l_d^\dagger (x) 
+	$$
+      <br><br>
+      <tt> A question</tt> Does locality of differential is preserved?<br><br>
+      Linearly, yes:
+           $$
+	   \Phi_S^*(g+h)-
+	   \Phi_S^*(g)=h(y_g(x))\,.
+             $$ 
+       
+       
+    </div>
+ </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="14 January 2020">
+      <br><br>
+<h3><b> Another formulation of thick morphisms</b></h3><br><br>
+Let $B_1(M)$ be a space of <i> exact $1$-forms</i> on $M$, abd
+let $B_1(N)$ be a space of <i> exact $1$-forms</i> on $N$, 
+then an action $S=S(x,q)$ defines the pull-back:
+      $$
+B_1(N)\ni g_a(y) dy^a\mapsto f_i(x)dx^i\in B_1(M)\,\,
+\hbox{such that}\,\§, F=\Phi_S^* (G)\,,
+      $$
+where functions $F$ and $G$ are potentials of exact $1$-forms
+  $f_i(x)dx^i$ and $g_a(y)dy^a$
+                   $$
+          \cases
+           {
+        f_i(x)={\p F(x)\over \p x^i}\,,
+        g_a(x)={\p G(y)\over \p y^a}\cr
+    F(x)=G(y)+S(x,q)-y^aq_a\cr
+        y^a(x)={\p S(x,q)\over \p q_a}\,,
+        q_a(x)={\p G(y)\over \p y^a}\,,
+          }
+                   $$
+Map (1) is well-defined, since
+       $$
+F+C=\Phi_S^* (G+C)\,.
+     $$<br><br>
+
+    </div>
+ </body>
+</html>

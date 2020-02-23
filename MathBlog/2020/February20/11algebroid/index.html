@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="11 February 2020">
+      
+<h3>On one generalisation of fundamental vector field</h3><br><br>
+   We know how imporatnt are fundamental vector fields.<br><br>
+     Today I learnt about an action of `lie algebroid on manifold,
+     i.e. the generalisation of fundamental vector field.<br><br>
+     Let $A_1\to A_0$ be Lie algebroid with commutator
+      $[[\,,\,]]$ 
+ and with anchor $\a$. Let $M$ be a manifold and $\varphi\colon M\to A_0$.<br><br>
+ <b> Definition</b>  Let $\rho$ be a map fro sections of Lie algebroid
+ to vector fields on $M$. THis map is called 
+ <tt> action of Lie algebroid on</tt> $M$ if following conditions hold:
+           
+	   1) for every two sections $u,v$
+	   $$
+	   \rho\left(\left[\left[
+		   u,v
+		   \right]\right]\right)
+		   =\left[\rho(u),\rho(v)\right]\,.
+                     $$
+ 2) Let  $f$ be an arbitrary function on the base $A_0$. Then
+ for arbitrary section $u$
+                $$
+		\rho (fu)=
+\varphi^*(f)\rho (u)
+		$$
+                and
+          $$
+	  \rho (u)\left(\varphi^*\left(f\right)\right)
+	    =
+	 \varphi^*\left(\a\left(u f\right)\right)   
+	  $$
+$$ $$<br><br>
+In the special case if Lie algebroid is just Lie algebra
+       $$
+       A_1={\cal G}, A_0=\{*\}
+       $$
+     
+    </div>
+ </body>
+</html>

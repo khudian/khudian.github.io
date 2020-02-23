@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="18 January 2020">
+      <br><br>
+<h3><b> One remark</b></h3><br><br>
+
+    We often use  a map $y^a=y^a_g(x)$ which is defined as
+      $$
+    y^a_g(x)\colon\quad \cases
+   {
+ y^a_g(x)={\p S(x,q)\over \p q_a}\cr
+  q_b={\p g(y)\over \p y^b}\big\vert_{y^b=y^b_g(x)}
+}
+      $$
+where
+      $$
+S=S(x,q)=S^a(x)q_a+S^{ab}(x)q_bq_a+\dots
+      $$
+defines  thick morphism.
+   This map can be defined by the following formula
+       $$
+y_g^a(x)=\int S(x,q)
+\prod_a\delta \left(q_a-l_a(y_g(x))\right)
+\prod_b\delta \left(y^b-y^b_g(x)\right)
+      dqdy\,,
+      $$
+where   $l_a(y)={\p g(y)\over \p y^a}$§.<br><br>
+This is very similar to quasiclassics, is not it?<br><br>
+
+    </div>
+ </body>
+</html>
