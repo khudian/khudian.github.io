@@ -5,6 +5,7 @@ from shutil import copyfile
 
 gBlogDir = R"C:\Users\khuda\Desktop\Blog"
 gDestinationDir = R"C:\Users\khuda\Desktop\khudian.github.io\MathBlog"
+gArticlesJsPath = R"C:\Users\khuda\Desktop\khudian.github.io\MathBlog\articles.js"
 GENERAL_BEGIN_KEY = "GENERAL_BEGIN_KEY"
 GENERAL_END_KEY = "GENERAL_END_KEY"
 gTemplate = """<!DOCTYPE html>
@@ -292,9 +293,38 @@ def convert(pathFrom, pathTo):
   creatFileDirIfNotExist(pathTo)
   with open(pathTo, 'w', encoding ="utf8") as file:
     file.write(result)
+
+def generateLinksToInsert(targets):
+  targets.sort()
+  result = ''
+  for target in targets:
+    targetStripped = target[3][len(gDestinationDir) + 1:]
+    result += "\n  [\""  + targetStripped + "\"],"
+    
+  result = result + "\n"
+  print(result)
+  return result  
+    
   
+def addTargetsToArticlesJs(targets):
+    
+  data = ''
+  with open(gArticlesJsPath, 'r', encoding ="utf8") as file:
+    data = file.read();
+
+  fIdx = data.find('[')
+  if fIdx == -1:
+    raise "Cannot find the first bracket"
+  
+  linksToInsert = generateLinksToInsert(targets)
+
+  data = data[:fIdx] + linksToInsert + data[fIdx + 1:]
+  with open(gArticlesJsPath, 'w', encoding ="utf8") as file:
+    file.write(data)
+    
     
 def execute():
+  targets = []
   for subdir, dirs, files in os.walk(gBlogDir):
     for file in files:
       if file.endswith("tex"):
@@ -305,10 +335,20 @@ def execute():
         [monthNum, yearNum] = getMonthAndYearNum(month, year)
         if (not os.path.exists(targetFile) and 
           validateMonthAndYear(monthNum, yearNum)):
-          
           dayNum = getDayNum(file)
           convert(fullPath, targetFile)
-
+          targets.append([yearNum, monthNum, dayNum, targetFile])          
+  
+  targets = [
+    [2020, 12, 26, 'C:\\Users\\khuda\\Desktop\\khudian.github.io\\MathBlog\\2019\\December19\\26tangthick\\index.html'],
+    [2020, 12, 26, 'C:\\Users\\khuda\\Desktop\\khudian.github.io\\MathBlog\\2019\\December19\\26tangthick\\index.html'],
+    [2021, 12, 26, 'C:\\Users\\khuda\\Desktop\\khudian.github.io\\MathBlog\\2019\\December19\\26tangthick\\index.html'],
+    [2010, 10, 26, 'C:\\Users\\khuda\\Desktop\\khudian.github.io\\MathBlog\\2019\\December19\\26tangthick\\index.html'],
+    [2010, 11, 26, 'C:\\Users\\khuda\\Desktop\\khudian.github.io\\MathBlog\\2019\\December19\\26tangthick\\index.html'],
+    [2010, 11, 27, 'C:\\Users\\khuda\\Desktop\\khudian.github.io\\MathBlog\\2019\\December19\\26tangthick\\index.html']
+    ]
+  addTargetsToArticlesJs(targets)
+  
 execute();
           
 
