@@ -278,7 +278,7 @@ def convert(pathFrom, pathTo):
   result = gTemplate.replace("PYTHON_DATE_KEY", "SDFDSF")
   result = result.replace("PYTHON_MAIN_ARTICLE_KEY", data)
   creatFileDirIfNotExist(pathTo)
-  with open(pathTo, 'w') as file:
+  with open(pathTo, 'w', encoding ="utf8") as file:
     file.write(result)
   
     
