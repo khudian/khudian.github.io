@@ -238,12 +238,24 @@ def eqnoToTag(data):
   data = re.sub(R"\\eqno.*\((.*)\)", r"\\tag{\1}", data)
   return data
   
+def skipsToBr(data):
+  data = re.sub(R"\\medskip", r"<br><br>", data)
+  data = re.sub(R"\\smallskip", r"<br><br>", data)
+  data = re.sub(R"\\bigskip", r"<br><br><br>", data)
+  data = re.sub(R"\n\n", r"<br><br>\n", data)
+  return data
+
+def removeInternalKeys(data):
+  data = re.sub(R"GENERAL_BEGIN_KEY", "", data)
+  data = re.sub(R"GENERAL_END_KEY", "", data)
+  return data
      
 
 def convertTexString(data):
   data = removeHeaderDefs(data)
   data = removeAfterBye(data)
   data = eqnoToTag(data)
+  data = skipsToBr(data)
   data = replaceCommand_OverwhelmingType(
     data, R"\centerline", [R"<h3>", R"</h3>"])
   data = replaceCommand_InnerType(
@@ -252,6 +264,7 @@ def convertTexString(data):
     data, R"\it", [R"<i>", R"</i>"])
   data = replaceCommand_InnerType(
     data, R"\tt", [R"<tt>", R"</tt>"])
+  data = removeInternalKeys(data)  
   return data
   
 
