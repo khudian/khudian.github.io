@@ -71,17 +71,10 @@ def getMonthAndYearNum(month, year):
 def validateMonthAndYear(month, year):
   return (year == 2019) and (month > 6) or (year > 2019) 
 
-def cleverCopy(inFile, targetFile):
-  targetFolder = os.path.split(targetFile)[0];
-  if not os.path.exists(targetFolder):
-    os.makedirs(targetFolder)
-  copyfile(inFile, targetFile)  
-  
-#def convert(inFile, targetFile):
-#  print("converting: " + inFile)
-#  print("destination:" + targetFile)
-#  cleverCopy(inFile, targetFile)
-#  print("")
+def creatFileDirIfNotExist(file):
+  folder = os.path.split(file)[0];
+  if not os.path.exists(folder):
+    os.makedirs(folder)
 
 def removeHeaderDefs(data):
   lastDef = R"\def\w {\omega}"
@@ -277,6 +270,7 @@ def convert(pathFrom, pathTo):
   data = convertTexString(data)
   result = gTemplate.replace("PYTHON_DATE_KEY", "SDFDSF")
   result = result.replace("PYTHON_MAIN_ARTICLE_KEY", data)
+  creatFileDirIfNotExist(pathTo)
   with open(pathTo, 'w') as file:
     file.write(result)
   print(result)
