@@ -318,7 +318,7 @@ def addTargetsToArticlesJs(targets):
   
   linksToInsert = generateLinksToInsert(targets)
 
-  data = data[:fIdx] + linksToInsert + data[fIdx + 1:]
+  data = data[:fIdx + 1] + linksToInsert + data[fIdx + 1:]
   with open(gArticlesJsPath, 'w', encoding ="utf8") as file:
     file.write(data)
     
