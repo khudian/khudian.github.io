@@ -285,6 +285,9 @@ def removeInternalKeys(data):
   data = re.sub(R"GENERAL_END_KEY", "", data)
   return data
      
+def simpleReplaces(data):
+  return data.replace("\\\'e", "é")
+  
 
 def convertTexString(data):
   data = removeHeaderDefs(data)
@@ -299,7 +302,8 @@ def convertTexString(data):
     data, R"\it", [R"<i>", R"</i>"])
   data = replaceCommand_InnerType(
     data, R"\tt", [R"<tt>", R"</tt>"])
-  data = removeInternalKeys(data)  
+  data = removeInternalKeys(data)
+  data = simpleReplaces(data)
   return data
   
 
@@ -372,5 +376,6 @@ def execute():
   addTargetsToArticlesJs(targets)
   
 execute();
+
           
 
