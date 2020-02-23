@@ -119,7 +119,7 @@ def checkCaretInsideFormula(data, caretIdx):
 
 def getMinMax(data, startIdx, openStr, closeStr):
   fIdxMin = data.find(openStr, startIdx)
-  if (fIdxMin - startIdx) < 2:
+  if not fIdxMin in range(startIdx, startIdx + 2):
     return
   
   sum = 1
@@ -135,9 +135,20 @@ def getMinMax(data, startIdx, openStr, closeStr):
     
     fIdx += 1
   
+  print(data)
   raise "the start and open keys are not canceling each other"
         
-    
+def getMinMax_inner(data, startIdx, openStr, closeStr):
+  idx1 = startIdx - len(openStr)
+  if (data.find(openStr, idx1) == idx1):
+    return getMinMax(data, idx1, openStr, closeStr)
+
+  idx1 -= 1
+  if (data.find(openStr, idx1) == idx1):
+    return getMinMax(data, idx1, openStr, closeStr)
+  
+  return
+  
   
 def replace(data, startIdx, minmax, keys, replacementPair):
   first = data[:startIdx]
@@ -148,6 +159,32 @@ def replace(data, startIdx, minmax, keys, replacementPair):
     second + GENERAL_END_KEY + replacementPair[1] + third
     
   return data  
+  
+def replace_forInner(data, startIdx, minmax, keys, replacementPair):
+  first = data[:minmax[0]]
+  second = data[startIdx:minmax[1]]
+  third = data[minmax[1] + len(keys[1]):]
+  
+  data = first + GENERAL_BEGIN_KEY + replacementPair[0] +\
+    second  + replacementPair[1]  + GENERAL_END_KEY + third
+  
+  return data  
+  
+
+def chooseMinMaxAndKeys(minmaxParentheses, minmaxInternalKeys):
+  minmax = None
+  keys = None
+
+  if minmaxParentheses != None:
+    return [minmaxParentheses, 
+      ["{", "}"]]
+  
+  if minmaxInternalKeys != None: 
+    return [minmaxInternalKeys,
+      [GENERAL_BEGIN_KEY, GENERAL_END_KEY]]
+  
+  raise R"cannot find open/close keys for the command"  
+    
 
 def replaceCommand_OverwhelmingType(
   data, commandString, 
@@ -157,28 +194,36 @@ def replaceCommand_OverwhelmingType(
   if checkCaretInsideFormula(data, foundIdx):
     raise "command is inside formula"
 
-  minmaxParentheses = getMinMax(data, foundIdx, "{", "}")  
-  minmaxInternalKeys = getMinMax(data, foundIdx,
-    GENERAL_BEGIN_KEY, GENERAL_END_KEY)  
-  
-  minmax = None
-  keys = None
+  minmaxParentheses = getMinMax(data, 
+    foundIdx + len(commandString), "{", "}")  
+  minmaxInternalKeys = getMinMax(data,
+    foundIdx + len(commandString), GENERAL_BEGIN_KEY, GENERAL_END_KEY)  
 
-  if minmaxParentheses != None:
-    minmax = minmaxParentheses
-    keys = ["{", "}"]    
-  
-  if minmaxInternalKeys != None and \
-    minmaxParentheses != None and \
-    minmaxInternalKeys[0] < minmaxParentheses[0]:
-    minmax = minmaxInternalKeys
-    keys = [GENERAL_BEGIN_KEY, GENERAL_END_KEY]
-  
-  if minmax == None:
-    raise "cannot find open/close keys for the command"  
-    
+  [minmax, keys ] = chooseMinMaxAndKeys(
+    minmaxParentheses, minmaxInternalKeys)  
+
   data = replace(data, foundIdx, minmax, keys, replacementPair)  
   return data
+  
+def replaceCommand_InnerType(
+  data, commandString, 
+  replacementPair):  
+  
+  foundIdx = data.find(commandString)
+  if checkCaretInsideFormula(data, foundIdx):
+    raise "command is inside formula"
+
+  minmaxParentheses = getMinMax_inner(data, foundIdx, "{", "}")  
+  minmaxInternalKeys = getMinMax_inner(data, foundIdx,
+    GENERAL_BEGIN_KEY, GENERAL_END_KEY)  
+  
+  [minmax, keys ] = chooseMinMaxAndKeys(
+    minmaxParentheses, minmaxInternalKeys)  
+    
+  data = replace_forInner(data, foundIdx + len(commandString), 
+    minmax, keys, replacementPair)  
+  return data
+  
     
    
 def eqnoToTag(data):
@@ -193,6 +238,8 @@ def convertTexString(data):
   data = eqnoToTag(data)
   data = replaceCommand_OverwhelmingType(
     data, R"\centerline", [R"<h3>", R"</h3>"])
+  data = replaceCommand_InnerType(
+    data, R"\bf", [R"<b>", R"</b>"])
   return data
   
 
