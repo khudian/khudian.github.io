@@ -190,39 +190,47 @@ def replaceCommand_OverwhelmingType(
   data, commandString, 
   replacementPair):  
   
-  foundIdx = data.find(commandString)
-  if checkCaretInsideFormula(data, foundIdx):
-    raise "command is inside formula"
+  while True:
+    foundIdx = data.find(commandString)
 
-  minmaxParentheses = getMinMax(data, 
-    foundIdx + len(commandString), "{", "}")  
-  minmaxInternalKeys = getMinMax(data,
-    foundIdx + len(commandString), GENERAL_BEGIN_KEY, GENERAL_END_KEY)  
+    if foundIdx == -1:
+      return data
 
-  [minmax, keys ] = chooseMinMaxAndKeys(
-    minmaxParentheses, minmaxInternalKeys)  
+    if checkCaretInsideFormula(data, foundIdx):
+      raise "command is inside formula"
+  
+    minmaxParentheses = getMinMax(data, 
+      foundIdx + len(commandString), "{", "}")  
+    minmaxInternalKeys = getMinMax(data,
+      foundIdx + len(commandString), GENERAL_BEGIN_KEY, GENERAL_END_KEY)  
 
-  data = replace(data, foundIdx, minmax, keys, replacementPair)  
-  return data
+    minmaxKeys = chooseMinMaxAndKeys(
+      minmaxParentheses, minmaxInternalKeys)  
+    data = replace(data, foundIdx, minmaxKeys[0],
+      minmaxKeys[1], replacementPair)  
+  
   
 def replaceCommand_InnerType(
   data, commandString, 
   replacementPair):  
   
-  foundIdx = data.find(commandString)
-  if checkCaretInsideFormula(data, foundIdx):
-    raise "command is inside formula"
-
-  minmaxParentheses = getMinMax_inner(data, foundIdx, "{", "}")  
-  minmaxInternalKeys = getMinMax_inner(data, foundIdx,
-    GENERAL_BEGIN_KEY, GENERAL_END_KEY)  
-  
-  [minmax, keys ] = chooseMinMaxAndKeys(
-    minmaxParentheses, minmaxInternalKeys)  
+  while True:
+    foundIdx = data.find(commandString)
+    if foundIdx == -1:
+      return data
     
-  data = replace_forInner(data, foundIdx + len(commandString), 
-    minmax, keys, replacementPair)  
-  return data
+    if checkCaretInsideFormula(data, foundIdx):
+      raise "command is inside formula"
+    
+    minmaxParentheses = getMinMax_inner(data, foundIdx, "{", "}")  
+    minmaxInternalKeys = getMinMax_inner(data, foundIdx,
+      GENERAL_BEGIN_KEY, GENERAL_END_KEY)  
+    
+    [minmax, keys ] = chooseMinMaxAndKeys(
+      minmaxParentheses, minmaxInternalKeys)  
+      
+    data = replace_forInner(data, foundIdx + len(commandString), 
+      minmax, keys, replacementPair)  
   
     
    
@@ -240,6 +248,10 @@ def convertTexString(data):
     data, R"\centerline", [R"<h3>", R"</h3>"])
   data = replaceCommand_InnerType(
     data, R"\bf", [R"<b>", R"</b>"])
+  data = replaceCommand_InnerType(
+    data, R"\it", [R"<i>", R"</i>"])
+  data = replaceCommand_InnerType(
+    data, R"\tt", [R"<tt>", R"</tt>"])
   return data
   
 
