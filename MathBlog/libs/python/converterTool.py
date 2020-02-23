@@ -57,6 +57,28 @@ def monthStringToNumber(monthString):
     return out
   except:
     raise ValueError('Not a month')
+    
+def monthNumToString(month):
+  monthsMap = {
+    1: 'January',
+    2: 'February',
+    3: 'March',
+    4: 'April',
+    5: 'May',
+    6: 'June',
+    7: 'July',
+    8: 'August',
+    9: 'September',
+    10: 'October',
+    11: 'November',
+    12: 'December'}
+  
+  try:
+    out = monthsMap[month]
+    return out
+  except:
+    raise ValueError('Not a month')
+    
         
         
 def getMonthAndYear(subdir):
@@ -281,14 +303,20 @@ def convertTexString(data):
   return data
   
 
-def convert(pathFrom, pathTo):
+def dateToString(date):
+  return str(date[2]) +\
+  ' ' + monthNumToString(date[1]) +\
+  ' ' + str(date[0])
+  
+def convert(pathFrom, pathTo, date):
   print("pathFrom: ", pathFrom)
   print("pathTo: ", pathTo)
   with open(pathFrom, 'r', encoding="utf8") as file:
     data = file.read();
 
   data = convertTexString(data)
-  result = gTemplate.replace("PYTHON_DATE_KEY", "SDFDSF")
+  result = gTemplate.replace("PYTHON_DATE_KEY",
+    dateToString(date))
   result = result.replace("PYTHON_MAIN_ARTICLE_KEY", data)
   creatFileDirIfNotExist(pathTo)
   with open(pathTo, 'w', encoding ="utf8") as file:
@@ -337,7 +365,8 @@ def execute():
         if (not os.path.exists(targetFile) and 
           validateMonthAndYear(monthNum, yearNum)):
           dayNum = getDayNum(file)
-          convert(fullPath, targetFile)
+          convert(fullPath, targetFile, 
+          [yearNum, monthNum, dayNum])
           targets.append([yearNum, monthNum, dayNum, targetFile])          
   
   addTargetsToArticlesJs(targets)
