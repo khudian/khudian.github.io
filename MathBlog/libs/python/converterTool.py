@@ -66,6 +66,18 @@ def getMonthAndYear(subdir):
 
 def getMonthAndYearNum(month, year):
   return [monthStringToNumber(month), int(year)]
+  
+def getDayNum(file):
+  oneDigit = file[0]
+  twoDigits = file[0:2]
+  if not oneDigit.isdigit():
+    raise "File name does not contain any day information"
+  
+  if twoDigits.isdigit():
+    return int(twoDigits)
+
+  return int(oneDigit)    
+  
 
   
 def validateMonthAndYear(month, year):
@@ -293,6 +305,8 @@ def execute():
         [monthNum, yearNum] = getMonthAndYearNum(month, year)
         if (not os.path.exists(targetFile) and 
           validateMonthAndYear(monthNum, yearNum)):
+          
+          dayNum = getDayNum(file)
           convert(fullPath, targetFile)
 
 execute();
