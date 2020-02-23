@@ -89,7 +89,8 @@ def removeAfterBye(data):
   byeString = R"\bye"
   foundIdx = data.find(byeString)
   if foundIdx == -1:
-    raise "cannot find \bye command"
+    print("WARNING: cannot find \bye command")
+    return data
    
   return data[:foundIdx]
   
@@ -112,6 +113,7 @@ def checkCaretInsideFormula(data, caretIdx):
     result = not result    
 
 def getMinMax(data, startIdx, openStr, closeStr):
+
   fIdxMin = data.find(openStr, startIdx)
   if not fIdxMin in range(startIdx, startIdx + 2):
     return
@@ -128,6 +130,11 @@ def getMinMax(data, startIdx, openStr, closeStr):
       return [fIdxMin, fIdx]
     
     fIdx += 1
+
+  print("startIdx", startIdx)
+  print("opencloseStr", [openStr, closeStr])
+  print("substring", data[startIdx: startIdx + 10])
+  print("data", data)
   
   raise "the start and open keys are not canceling each other"
         
@@ -273,7 +280,7 @@ def convert(pathFrom, pathTo):
   creatFileDirIfNotExist(pathTo)
   with open(pathTo, 'w') as file:
     file.write(result)
-  print(result)
+  
     
 def execute():
   for subdir, dirs, files in os.walk(gBlogDir):
@@ -289,7 +296,5 @@ def execute():
           convert(fullPath, targetFile)
 
 execute();
-convert(R"C:\Users\khuda\Desktop\khudian.github.io\MathBlog\2020\January20\9theorem\index.html",
-        R"C:\Users\khuda\Desktop\khudian.github.io\MathBlog\2020\January20\9theorem\index_covnertes.html")
           
 
