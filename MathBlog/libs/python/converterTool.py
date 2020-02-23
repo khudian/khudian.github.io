@@ -300,6 +300,7 @@ def generateLinksToInsert(targets):
   result = ''
   for target in targets:
     targetStripped = target[3][len(gDestinationDir) + 1:]
+    targetStripped = targetStripped.replace("\\", "/")
     result += "\n  [\""  + targetStripped + "\"],"
     
   print(result)
