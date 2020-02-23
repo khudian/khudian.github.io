@@ -139,13 +139,13 @@ def getMinMax(data, startIdx, openStr, closeStr):
         
     
   
-def replace(data, minmax, keys, replacementPair):
-  data = data[:minmax[0]] + replacementPair[0] + \
-    data[minmax[0] + len(keys[0]):]
-
-  adjustment = len(replacementPair[0]) - len(keys[0]) 
-  data = data[:minmax[1] + adjustment] + replacementPair[1] + \
-    data[minmax[1] + len(keys[1]) + adjustment:]
+def replace(data, startIdx, minmax, keys, replacementPair):
+  first = data[:startIdx]
+  second = data[minmax[0] + len(keys[0]):minmax[1]]
+  third = data[minmax[1] + len(keys[1]):]
+  
+  data = first + replacementPair[0] + GENERAL_BEGIN_KEY +\
+    second + GENERAL_END_KEY + replacementPair[1] + third
     
   return data  
 
@@ -177,7 +177,7 @@ def replaceCommand_OverwhelmingType(
   if minmax == None:
     raise "cannot find open/close keys for the command"  
     
-  data = replace(data, minmax, keys, replacementPair)  
+  data = replace(data, foundIdx, minmax, keys, replacementPair)  
   return data
     
    
