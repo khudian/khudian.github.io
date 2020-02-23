@@ -295,13 +295,13 @@ def convert(pathFrom, pathTo):
     file.write(result)
 
 def generateLinksToInsert(targets):
-  targets.sort()
+  print("Adding links: ")
+  targets.sort(reverse = True)
   result = ''
   for target in targets:
     targetStripped = target[3][len(gDestinationDir) + 1:]
     result += "\n  [\""  + targetStripped + "\"],"
     
-  result = result + "\n"
   print(result)
   return result  
     
@@ -339,14 +339,6 @@ def execute():
           convert(fullPath, targetFile)
           targets.append([yearNum, monthNum, dayNum, targetFile])          
   
-  targets = [
-    [2020, 12, 26, 'C:\\Users\\khuda\\Desktop\\khudian.github.io\\MathBlog\\2019\\December19\\26tangthick\\index.html'],
-    [2020, 12, 26, 'C:\\Users\\khuda\\Desktop\\khudian.github.io\\MathBlog\\2019\\December19\\26tangthick\\index.html'],
-    [2021, 12, 26, 'C:\\Users\\khuda\\Desktop\\khudian.github.io\\MathBlog\\2019\\December19\\26tangthick\\index.html'],
-    [2010, 10, 26, 'C:\\Users\\khuda\\Desktop\\khudian.github.io\\MathBlog\\2019\\December19\\26tangthick\\index.html'],
-    [2010, 11, 26, 'C:\\Users\\khuda\\Desktop\\khudian.github.io\\MathBlog\\2019\\December19\\26tangthick\\index.html'],
-    [2010, 11, 27, 'C:\\Users\\khuda\\Desktop\\khudian.github.io\\MathBlog\\2019\\December19\\26tangthick\\index.html']
-    ]
   addTargetsToArticlesJs(targets)
   
 execute();
