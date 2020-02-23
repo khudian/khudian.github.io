@@ -77,17 +77,18 @@ def cleverCopy(inFile, targetFile):
     os.makedirs(targetFolder)
   copyfile(inFile, targetFile)  
   
-def convert(inFile, targetFile):
-  print("converting: " + inFile)
-  print("destination:" + targetFile)
-  cleverCopy(inFile, targetFile)
-  print("")
+#def convert(inFile, targetFile):
+#  print("converting: " + inFile)
+#  print("destination:" + targetFile)
+#  cleverCopy(inFile, targetFile)
+#  print("")
 
 def removeHeaderDefs(data):
   lastDef = R"\def\w {\omega}"
   foundIdx = data.find(lastDef)
   if foundIdx == -1:
-    raise "invalid header"
+    print("WARNING: cannot find a header in the file")
+    return data
    
   return data[foundIdx + len(lastDef):]
   
@@ -135,7 +136,6 @@ def getMinMax(data, startIdx, openStr, closeStr):
     
     fIdx += 1
   
-  print(data)
   raise "the start and open keys are not canceling each other"
         
 def getMinMax_inner(data, startIdx, openStr, closeStr):
@@ -269,7 +269,9 @@ def convertTexString(data):
   
 
 def convert(pathFrom, pathTo):
-  with open(pathFrom, 'r') as file:
+  print("pathFrom: ", pathFrom)
+  print("pathTo: ", pathTo)
+  with open(pathFrom, 'r', encoding="utf8") as file:
     data = file.read();
 
   data = convertTexString(data)
