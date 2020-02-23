@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="28 October 2019">
+      <br><br>
+<h3><b> One example of calculations</b></h3><br><br>
+   Consider sphere $S^2$ equipped with symplectic 
+structure, which is volume form
+  $\sin\theta d\theta\wedge d\varphi$.
+   This form has can be considered as differential of
+$1$-form, almost everywhere:   
+ $$
+\sin\theta d\theta 
+\wedge d\varphi= 
+d(-\cos\theta d\varphi)\,,
+  \tag{1}
+ $$
+or
+       $$
+\sin\theta d\theta \wedge d\varphi= 
+d(\varphi d\cos\theta)\,,\quad
+\hbox {except the points where $\varphi=0$ or }\,.
+ \tag{2}
+       $$<br><br>
+<br><br>
+Sure antiderivative cannnot be defined everywhere
+since $$
+ \int_{S^2}\sin\theta d\theta\wedge d\varphi=4\pi
+\not=\int_{S^2}d\omega=0\,.
+    \tag{4}
+     $$
+       
+  
+ Consider on symplectic manifold
+        $$ 
+(S^2,\Omega=\sin\theta d\theta\wedge
+d\varphi=d\varphi\wedge du)\,,\quad (u=\cos\theta )\,,
+    \tag{5}
+       $$ 
+and the Hamiltonian $H=H(u)$.
+(One can consider e.g. $H=u^n$). 
+It is $U(1)$-invariant Hamiltonian.
+  Its Hamiltonian vector field is equal to
+      $$
+D_H=l(u)\p_\varphi=-H'(u)\p_\varphi
+  \tag{6} 
+    $$
+  Indeed  the vector field $D_H$  can be defined by
+the condition  
+   $$
+d_{D_H}\left(
+\Omega
+      +H
+       \right)=0\,.
+      \tag{7}
+    $$
+Thus we have 
+         $$
+     d_{l(u)\p_\varphi}\left(
+\sin\theta d\theta\wedge d\varphi
+      +H\left(\cos\theta\right)
+            \right)
+        =-l(u)\sin\theta
+d\theta-H'(u)\sin\theta d\theta=0\Rightarrow
+l(u)=-H'(u)\,.
+       $$
+Now consider $1$-form $\omega$ such that
+       $$
+\omega=-f(u)ud\varphi+g(u)\varphi du\,,
+   \tag{8}
+       $$
+   (if $f=g={1\over 2}$ then 
+$d\omega= du\wedge d\varphi=
+\sin\theta d\theta\wedge d\varphi$.).<br><br>
+The $1$-form (8) is defined on all the sphere
+except the meridian $\varphi=0$
+and the poles;
+and
+      $$
+\tilde\Omega=d\omega=
+\left[f'(u)u+f(u)+g(u)\right]dœq\varphi\wedge du
+=
+\left[f'u+f+g\right]\Omega\,.
+      $$<br><br>
+We will choose functions $f=f(u),g=g(u)$ 
+such that the form $\omega$  will be
+invariant with respect to Hamiltonian vector field
+$D_H=l(u)\p_\varphi=-H'(u)\p_\varphi$.
+One can see that
+      $$
+\L_{D_H}\omega=
+\left(
+  d    \circ    \iota_{D_H}
+                 + 
+\iota_{D_H}    \circ d
+ \right)
+      \omega=
+              \left(
+   d\circ \iota_{l\p_\varphi}
+          +
+   \iota_{l\p_\varphi}\circ d
+             \right)
+              \left(
+               g(u)\varphi du-f(u)ud\varphi
+             \right)=
+              $$
+              $$
+  d\left(-f ul(u)    \right)+
+\iota_{l\p_\varphi}
+  \left[
+  \left(g +f+uf'\right)d\varphi\wedge du
+\right]=
+               $$
+               $$
+    -d(uf(u)l(u))+(g(u)+f(u)+uf'(u))l(u)du=
+     (gl-ufl')du\,.     
+       $$      
+Hence the $1$-form
+     $\omega$ is $D_H$-invariant if $g={ul'(u)\over f(u)l(u)}$.<br><br>
+We choose  f=1. Recall that 
+$D_H=l(u)\p_\varphi=-H'(u)\p_\varphi$.
+   Thus we see that the $1$-form
+                   $$
+     \omega={uH^{''}(u)\over H'(u)}\varphi du-ud\varphi
+                      $$
+is what we need.<br><br>
+ It<br><br>
+i) is   $D_H$-invariant for an arbitrary Hamiltonian
+ $H=H(u)$, however in general it is not 
+invariant with respect
+to the odd field $d_{D_H}=d+\iota_{D_H}$
+which is equal to the <tt> square root </tt> of
+the field $D_H$
+               $$
+ d_{D_H}\omega=\iota_{D_H}\omega+ d\omega=
+ \tilde H+\tilde\Omega
+=uH'(u)+
+   \left(
+1+{uH^{''}(u)\over H'(u)}
+   \right)d\varphi \wedge du\,,
+                 $$
+In other words the function 
+$\tilde H+\tilde\Omega$ 
+shares with the function
+$H+\Omega$ 
+the same Hamiltonian field $D_H$:
+                $$
+   \iota_{D_H}
+      \left(
+H+\Omega 
+\right)
+           =
+   \iota_{D_H}
+      \left(
+\tilde H+\tilde \Omega 
+\right)=0\,.
+               $$    <br><br>
+
+ii) defines symplectic structure
+almost everywhere on $S^2$.<br><br>
+
+Thus we come to the  integral
+    $Z(t)$ <br><br>
+<br><br>
+This integral does not depend on $t$<br><br>
+
+and it expresses  the initiql integral
+$Z(0)$  in terms of auqsi clqssicql approximation: 
+the answer:
+  
+   <b> FACT</b><br><br>
+    The integral
+         $$
+Z(t)=\int_{-1}^1 
+       e^{
+         iH(u)+it uH'(u)}
+   \left(1+t
+        \left(1+
+    {uH^{''}(u)\over H'(u)}
+         \right)
+     \right)
+      du
+         $$
+ does not depend on $t$. In the case $t=0$ it is our
+initial integral  which we try to calculate and in the
+case if $t\to \infty$ it can be calculated by sationary
+phase method:<br><br>
+
+    </div>
+ </body>
+</html>

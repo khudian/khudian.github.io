@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="9 January 2020">
+      <br><br>
+<h3><b> Attempt to prove</b></h3><br><br>
+Another attempt.<br><br>
+  Let $\L$ be a functional whcih transforms  $C^\infty (N=\R^m)$
+into formal power series in $C^\infty (M=\R^m)$, such that
+for every $g\in C^\infty (N)$ there exists a map
+    $y_g=y_g^a(x^i)$ such that for every $h\in C^\infty(N)$
+         $$
+\L(g+\vare h)-\L(g)=\vare h(y^a_g(x))\,.
+    \tag{1}
+         $$
+   Denote by $S(x,q)$ a function on $M\times N^*$
+     $$
+  S(x,q)=\L(y^aq_a)
+     $$
+<b> Hypothesis</b>: 
+     $$
+\L(g)=\Phi_S^*(g)\,.
+\tag{hyp}
+     $$
+Recall that 
+          $$
+\Phi_S(g+\vare h)=\Phi_S(g)+\vare h(y_g(x))\,,
+        \tag{theorvor}
+          $$
+where
+           $$
+   y^a_g(x)\colon \,\,  
+         \cases
+           {
+             y^a_g(x)={\S(x,q)\over \p q_a}\cr
+                q_b={\p g(y)\over \p y^b}\cr
+                       }
+                     $$
+ <br><br>
+  <b> Attempts to prove</b><br><br>
+   Consider nilpotents$\vare_1,\vare_2,\dots$<br><br>
+   First prove equation (hyp) in the first infinitesimal 
+neighbourhood of linear functions, i.e.
+prove that
+      $$
+  \L(g(y)+\vare h(y))=\Phi_S(g+\vare h)
+       \tag{2}
+      $$
+if $g=A_ay^a$.<br><br>
+ Proof:
+   According to (1) and (theor) for $g=A_ay^a$
+           $$
+   \L(g+\vare h)=\L(A_ay^a)+\vare h(y_g)=S(x,A_a)+\vare h(y_g(x))
+           $$
+This holds for arbitrary $h$. In particular for $h=b_ay^a$
+           we have:
+      $$
+\L(g+\vare h)=S(x, A_a+\vare b_a)=S(x,A_a)+b_a y^a_g(x)
+       $$
+This holds for arbitrary covector $b_a$ hence
+           $$
+    y^a_g(x)={\p S(x,q)\over q_a}\big\vert_{q_a=A_a}
+           $$
+i.e. (2) holds
+
+    </div>
+ </body>
+</html>

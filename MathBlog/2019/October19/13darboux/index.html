@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="13 October 2019">
+      <br><br>
+<h3><b> Coordinates a la Darboux?</b></h3><br><br>
+\def\D {{\cal D}}
+  Let $(u,v,\theta,\eta)$ be local coordinates (on
+$CP^{1|1}$) such that volume form has the appearance
+        $$
+  \rho={\D (u,v,\theta,\eta)\over 1+u^2+v^2+k\theta\eta}\,.
+        $$
+where $k$ is a constant.
+  This volume form gives localy not zero integral since
+          $$
+      {1\over 1+u^2+v^2+k\theta\eta}
+   =
+      {1\over 1+u^2+v^2}
+   \left(1-{c\theta\eta\over 1+u^2+v^2}\right)=
+      {1\over 1+u^2+v^2}-
+      {k\theta\eta\over (1+u^2+v^2)^2}\,.
+  $$<br><br>
+
+    Consider new coordinates
+    $$
+ \cases
+     {
+  u=\sqrt s \cos\varphi\cr
+  v=\sqrt s \sin\varphi\cr
+   \theta\mapsto \theta\cr
+    \eta\mapsto \eta\cr
+  }
+   $$
+In these coordinates
+     $$
+\rho={1\over 2}
+{\D(s,\varphi,\theta,\eta)\over 1+s+k\theta\varphi}
+     $$
+Consider now new `unimodular' coordinates
+    $$
+ \cases
+  {
+ s=s(t,\varphi,\theta,\eta)\cr
+ \varphi\mapsto \varphi\cr
+ \theta\mapsto \theta\cr
+ \eta\mapsto \eta\cr
+   }
+  $$
+such that
+    $$
+{\p s(t,\varphi,\theta,\eta)\over \p t}=
+   2(1+s+k\theta\varphi)\,,
+     $$
+i.e.
+    $$
+s=e^{2t}-1-k\theta\varphi\,.
+       $$
+In these coordinates volume form will be equal to $1$.
+
+    </div>
+ </body>
+</html>

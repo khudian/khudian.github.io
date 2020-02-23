@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="2 December 2019">
+      <br><br>
+<h3><b> An example?</b></h3><br><br>
+<br><br>
+
+   Consider two odd Hamiltonians:
+                $$
+      Q_M(x,p)=Q^{ab}(x)p_bp_a\,,\quad \hbox{(on $T^*M$ and }
+      Q_N(y,q)=Q(y)+Q^i(y)q_i+Q^{ij}(y)q_jq_i\,,\quad
+\hbox{(on $T^*N$ )}
+            \tag{1}
+                $$
+ such that <br><br>
+
+a) they induce homological vector fields, i.e.
+                     $$
+       (Q_M,Q_M)_{T^*M}=0\,,\quad
+       (Q_N,Q_N)_{T^*N}=0\,
+                     $$
+where $(\,\,,\,\,)_{T^*M}$ (and respectively
+ $(\,\,,\,\,)_{T^*N}$) is the canonical even Poisson bracket on
+  $T^*M$ ($T^*N$).<br><br>
+b) they are connected by the function
+             $$
+           S(x,q)=S_0(x)+\varphi^i(x)q_i\,,
+                  \tag{2}
+             $$
+i.e.
+             $$
+      Q_M\left(x^a,{\p S(x,q)\over \p x^a}\right)\equiv
+      Q_N\left({\p S(x,q)\over q_i},q_j\right)
+                  \tag{3}
+             $$
+Then according the general theory, the thick morphism
+generatedd by the function ((2) induces $L_\infty$
+  morphism of odd homotopy brackets  (1), 
+the map
+               $$
+            C^\infty(M)
+{\buildrel \Phi_S^*\over \leftrightarrow}
+            C^\infty(N)
+                $$
+ connects the homological vector fields induced by
+  Hamiltonians $Q_M$  and $Q_N$:
+for an arbitrary  function
+  $g(y)\in C^\infty(N)$
+                $$
+                 \Phi_S
+             \left(
+   g(y)+\vare H_N(y,q)\big
+\vert_{q_i={\p g(y)\over \p y^i}}
+               \right)=f(x)+
+ \vare H_M(x,p)\left(
+    \vert_{p_a={\p f(x)\over \p x^a}}
+               \right)\,,
+                $$ <br><br>
+in the case if   $$
+                 \Phi^*_S
+             \left(
+   g(y)\right)=f(x)\,.
+                $$ <br><br>
+
+                 $$
+            [\,,\,]_M\colon
+            [\,,\,]_M\colon
+                 $$<br><br>
+
+
+    </div>
+ </body>
+</html>

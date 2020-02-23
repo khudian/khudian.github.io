@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="19 January 2020">
+      <br><br>
+<h3><b> Proof of  one proposition</b></h3><br><br>
+  Let $\L(g)=\Phi_S^*(g)$ be a functional corresponding to a 
+thick morphism. Then this functional defines a map
+  $y^a_g(x)$: $M\to N$ depending on the function $g$:
+         $$
+ y^a_g(x)\colon y^a_i(x)={\p S(x,q)\over \p q_a}
+\big\vert_{q_a={\p g(y)\over \p y^a}} 
+  \tag{1}
+         $$
+such that this map defines the differentail of the pull-back defined
+by the thick morphism:
+           $$
+\hbox {for arbitrary functions $g(y)$ and $h(y)$}\,,\quad
+      \L(g+\vare h)-\L(g)=
+ \Phi^*_S(g+h)
+-\Phi^*_S(g)
+\vare h\left(y^a_g(x)\right)
+   \tag{2}
+          $$
+The inverse implication is also true:<br><br>
+
+<b> Propsition</b>  Let $\L=\L(g)$ be a functional
+whcih transforms functions on $N$ to functions on $M$.<br><br>
+  Let $y^a=y^a(x)_g$ be a usual map $M\to N$ depending on a function
+$g$ such that the differential of the map $\Phi_S^*$
+at the 'point' $g$ is defined by this function:
+              $$
+\L(g+\vare h)-\L(g)=\vare h(y_g^a(x))\,.
+    \tag{3}
+              $$
+then a map $y^a=y^a(x)_g$ depend on derivatives of function $g$, i.e.
+for arbotrary constant $C$,
+            $$
+      y^a(x)_g=
+      y^a(x)_{g+C}\,.
+     \tag{4}
+            $$      <br><br>
+Proof.  Let
+          $$
+\L(g)=L_0(x)+\sum_n\int L(x,y_1\dots, y_n)
+     g(y_1)
+     \dots g(y_n)
+dy_1\dots dy_n
+    \tag{5}    
+          $$
+    and
+     $$
+  y^a_g(x)=K_0^a(x)+
+ \sum_n\int K^a(x,y_1,\dots y_n)g(y_1)\dots g(y_n)
+dy_1\dots dy_n
+\tag{6}
+     $$,<br><br>
+<b> Remark</b> If $\L(g)=\Phi_Sg$ then relation
+between $S(x,q)$ and $L,K^a$ holds only for  very small $n$
+     
+  <br><br><br><br><br>
+Now the condition (3) may be rewritten as
+           $$
+h(y^a_g(x))=
+   h\left(
+  K_0^a(x)+
+ \sum_n\int K^a(x,y_1,\dots y_n)g(y_1)\dots g(y_n)
+dy_1\dots dy_n
+\right))=
+           $$
+           $$
+\int L(x,y)h(y)dy+
+\sum_{n\geq 2}n \int L_n(x,y,z_1,\dots,z_{n-1})
+    h(y)g{z_1}\dots g(z_{n-1})
+      dy dz_1\dots dz_{n-1}
+      \tag{7}
+           $$
+    Compare left and right hand sides
+of this expression.
+On the right hand side  all $L_n=L_n(x,z_1,z_2,\dots z_n)$
+are symmetrical over $z_1,z_2,\dots z_n$
+           $$
+   L_n(x,y,z_1,\dots, z_n)=
+   L_n(x, z_1,\dots,z_j,y,z_{j+1},\dots, z_{n-1})=
+\dots=
+    L_n(x,z_1,\dots,z_{n-1},y)
+           $$ 
+(being consisdered as generalised functions)
+whence on the left had side the dependence on $h$ has to be the same
+as dependance on $g$. However we see that left had side depends
+on derivatives of $h$. Indeed   expand left had side 
+ in power series:
+             $$
+h(y^a_g(x))=
+   h\left(
+  K_0^a(x)+
+ \sum_n\int K^a(x,y_1,\dots y_n)g(y_1)\dots g(y_n)
+dy_1\dots dy_n
+\right)=
+             $$
+        $$
+ h\left(
+  K_0^a(x)
+\right))+
+{\p h(y)\over \p y^a}\big\vert_{y^a=y^a_g(x)=K^a_0(x)+\dots}
+  \left(
+ \sum_n\int K^a(x,y_1,\dots y_n)g(y_1)\dots g(y_n)
+dy_1\dots dy_n
+   \right)  
+$$
+      $$
+   +{1\over 2}
+  {\p^2 h(y)\over \p y^a\p y^b}\big\vert_{y^a=y^a_g(x)=K^a_0(x)+\dots}
+  \left(
+ \sum_n\int K^a(x,y_1,\dots y_n)g(y_1)\dots g(y_n)
+dy_1\dots dy_n
+   \right)
+   \times
+         $$
+        $$
+   \left(
+ \sum_m\int K^b(x,z_1,\dots z_m)g(z_1)\dots g(z_n)
+dz_1\dots dz_n
+   \right)+\dots 
+      $$
+      $$
+= h\left(
+  K_0^a(x)
+\right))+
+{\p h(y)\over \p y^a}\big\vert_{y^a=K^a_0(x)}
+  \left(
+ \int K^a_1(x,y)g(y)
+      dy
+   \right) 
+      $$
+e come to the statement of the Proposition/
+
+    </div>
+ </body>
+</html>

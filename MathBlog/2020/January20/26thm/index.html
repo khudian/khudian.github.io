@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="26 January 2020">
+      <br><br>
+<h3><b> Another attempt to prove the theorem</b></h3><br><br>
+  Let $\L(g)$ be a functional which transforms a space of functions on
+  $N=\R^n$ to a space of functions on $M=\R^m$:
+         $$
+	\L(g)= 
+\sum_{r\geq 0}\int L_r(x,y_1,\dots,y_r)
+   g(y_1)\dots)g(y_r)dy_1\dots dy_r=
+     $$
+      $$
+L_0(x)+
+ \int L_1(x,y)g(y)dy+
+ \int L_2(x,y_1,y_2)g(y_1)g(y_2)dy_1dy_2+
+   $$
+    $$
+ \int L_3(x,y_1,y_2,y_3)g(y_1)g(y_2)g(y_3)dy_1dy_2dy_3+\dots
+ \tag{1}
+	 $$ 
+	   $y^a$ are coordinates on $N$
+	   and $x^i$ are coordinates on $M$.
+	  (All kernels $L(x,y_1,\dots,y_k)$
+	   are generalised functions.)<br><br>
+<br><br><br><br><br>
+Two words about functionals.<br><br>
+
+We say that a functional $\L(g): C^\infty(N)\to C^\infty(M)$ 
+is a local functional, if there exists<br><br>
+a map $\varphi\colon M\to N$ such that
+          $$
+	  \L(g)=\varphi^* g=g\left(\varphi\left(x\right)\right)
+	      \tag{2}
+	  $$ <br><br>
+<br><br>
+	  An arbitrary functional $\L(g)$ defines
+	  a differential $d\L$ such that at every 'point'
+	  a function $g$, and for every function $h(y)$
+	         $$
+	    \vare d\L(h)=\L(g+\vare h)-\L(g)\,.
+	  \tag{3}
+	 $$<br><br>
+		Consider functionals such that
+		theur differential is a local functional, i.e.
+for every function $g=g(y)$
+	   there exists a map $y^a_g(x):M\to N$ such that
+	 
+	             $$
+		      \L(g+\vare h)-\L(g)=
+		      \vare h(y)\big\vert_{y^a=y^a_g(x)}
+		       \tag{4}
+		      $$
+	   for arbitrary function $h(y)$<br><br>
+
+	  Every  thick morphisms defined by an "action"
+	  $S(x,q)$ defines a functional
+		 $$
+		 \L(g)=\Phi_S(g)\,.
+		 \tag{5}
+		 $$
+	  
+	   
+<tt> THEOREM</tt> A differential of  functional is local if and only if
+is defined by a thick morphism.
+	 
+	 
+	 The fact that a differentail of 'pull-back'
+	 induced by thick morphism was proved. Here we will
+	 try to prove that if a differential of
+	  functional $\L(g)$ is local, then there exists
+	  a function $S$ such that
+	           $$
+		   \L(g)=\Phi_S(g)
+		   \tag{6}
+		   $$<br><br>
+Let $\L(g)$ be a functional (1) such that its differential is local, i.e.
+      for arbitrary function $g$   $$
+	 \L(g+\vare h)-\L(g)=\vare h(y^a_g(x))
+	 \tag{7}
+	 $$ 
+	 Let 
+    $$
+    y_g^a(x)=
+    \sum_{r\geq 0}\int K^a(x,y_1,\dots,y_r)
+   g(y_1)\dots)g(y_r)dy_1\dots dy_r=
+     $$
+      $$
+     K^a_0(x)+
+ \int K^a_1(x,y)g(y)dy+
+ \int K^a_2(x,y_1,y_2)g(y_1)g(y_2)dy_1dy_2+
+ \int K^a_3(x,y_1,y_2,y_3)g(y_1)g(y_2)g(y_3)dy_1dy_2dy_3+\dots
+ \tag{8}
+    $$
+We see that condition (4) that differential is local means that
+         $$
+	 h\left(
+ y_g^a(x)
+	  \right)=
+	 h\left(
+    \sum_{r\geq 0}\int K^a(x,y_1,\dots,y_r)
+   g(y_1)\dots)g(y_r)dy_1\dots dy_r=
+	  \right)=
+	 $$
+	 $$
+	 h\left(
+   K^a_0(x)+
+ \int K^a_1(x,y)g(y)dy+
+ \int K^a_2(x,y_1,y_2)g(y_1)g(y_2)dy_1dy_2+
+ \int K^a_3(x,y_1,y_2,y_3)g(y_1)g(y_2)g(y_3)dy_1dy_2dy_3+\dots
+	  \right)=
+	 $$
+         $$
+\sum_{r\geq 0}r\int L(x,y_1,\dots,y_r)
+   h(y_1)g(y_{r_2})\dots)g(y_r)dy_1\dots dy_r=
+     $$
+      $$
+ \int L(x,y)h(y)dy+
+ 2\int L(x,y_1,y_2)h(y_1)g(y_2)dy_1dy_2+
+ 3\int L(x,y_1,y_2,y_3)h(y_1)g(y_2)g(y_3)dy_1dy_2dy_3+\dots
+ \tag{9}
+	 $$ <br><br>
+Now go to the proof.<br><br>
+Let $\L=\L(g)$ be a functional (1) such that its differential  (3)
+is a local functional.<br><br>
+<h3>I-step</h3><br><br>
+Consider thick morphism $\Phi_{S_1}$ with 'action' 
+        $$
+	S_1(x,q)=L_0(x)+K^a(x)q_a
+	      (1.1)
+	 $$
+Use the formulas
+      $$
+      \Phi_S^*(g)=g(y)+S(x,q)-y^aq_a\,,\quad
+      \cases
+                {
+	   y^a={\p S(x,q)\over \p q_a}\cr
+	   q_b={\p g(y)\over \p y^b}\cr
+	      }\,,
+	      \tag{1.2}
+       $$,i.e.
+       $$
+       \Phi_{S_1}^*(g)=g(y)\big\vert_{y^a=K^a_0(x)}
+       \tag{1.3}
+       $$
+	 Equation (9) will be rewritten in this approximmation as
+  $$
+	 h\left(
+ y_g^a(x)
+	  \right)=
+	 h\left(
+   K^a_0(x)
+	  \right)=
+ \int L(x,y)h(y)dy
+ \tag{1.4}
+	 $$ 
+Thus
+   $$
+  \int L_1(x,y)g(y)dy=
+       g(y)\big\vert_{y^a=K^a_0(x)}
+       \tag{1.5}
+    $$
+    Comparing (1.3) and (1.5) we seee that
+      
+One can see that
+        $$
+	\L(g)-\Phi^*_{S_1}(g)=
+	L_0(x)+\int L_1(x,y)g(y)dy+\dots-\Phi_{S_1}^*(g)=
+         $$
+	 $$
+\left[L_0(x)+g(K^a(x))+\dots\right]
+	-\left[L_0(x)+g(K^a(x))
+	 \right]=O[g]\,.
+	$$
+<b> Resum\'e</b> <i> Thus we show that for our functional $\L(g)$ there exists
+a function $S_1=S_1(x,q)$ such that
+                 $$
+		 \L(g)-\Phi_{S_1}^*(g)=o[g]\,.
+		 $$ </i><br><br>
+<br><br><br><br><br>
+<h3>II-step</h3><br><br>
+
+ Use the first step. It follows from the first step that
+     $$
+     \L(g)=\Phi_{S_1}(g)+\int \tilde L_2(x,y,z)g(y)g(z)dydz+\dots
+     \tag{2.1}
+      $$<br><br>
+Rewrite condition (9) that $d\L(g)$ is local functional. We come to
+         $$
+\L(g+\vare h)-\L(g)=\vare h(K_0^a(x))+
+2\vare\int \tilde L_2(x,y,z)h(y)g(z)dydz+\dots=
+	 $$
+	 $$
+	 \vare h\left(
+   K^a_0(x)+
+ \int K^a_1(x,y)g(y)dy+\dots
+	  \right)=
+	   $$
+	   $$
+	 \vare h(K^a_0(x))+
+	 \vare {\p h(y)\over \p y^a}_{y^a=K^a_(x)}
+ \int K^a_1(x,y)g(y)dy+\dots
+	  \,.
+	  \tag{2.2}
+	 $$
+Use the condition that $\tilde L_2(x,y,z)$ is symmetric:
+            $$
+	    \tilde L_2(x,y,z)
+	    =\tilde L_2(x,y,z)\,.
+	    \tag{2.3}
+	    $$
+Equation (2.2) and (2.3) (and conition of symmetricity!) imply  that
+      $$
+{\p g(y)\over \p y^a}\big\vert_{y^a=K^a(x)}\int K^a_1(x,y)g(y)dy=
+2\int \tilde  L(x,y,z)g(y)g(z)dydz
+      $$
+i.e.
+         $$
+	\int\tilde L(x,y,z)g(y)g(z)dydz=
+	{1\over 2}l_a(x)\int K_1^a(x,y)g(ydy)=
+={1\over 2}S^{ab}(x)l_b(x)l_a(x)\,,   \quad (S^{ab}=S^{ba})
+	 $$
+where 
+     $$
+     l_b(x)={\p g(y)\over \p y ^b}\big\vert_{y^b=K^b(x)}э,.
+     \tag{2.4}
+     $$<br><br>
+Consider thick morphism $\Phi_{S_2}$ with 'action' 
+        $$
+	S_2(x,q)=S_1(x)+
+	{1\over 2}S^{ab}(x)q_aq_b=
+	L_0(x)+K^a(x)q_a+
+	{1\over 2}S^{ab}(x)q_aq_b
+	      (2.3)
+	 $$
+	 	We see that
+		$$
+		\Phi_{S_2}(g)
+		 =g\left(
+		 K^a(x)+S^{ab}(x)l_b(x)+\dots
+		 \right)+
+		 L_0(x)+K^a(x)q_q+{1\over 2}S^{ab}(x)q_aq_b
+		-y^aq_a
+		$$
+		$$
+		=
+		 g\left(
+		 K^a(x)+S^{ab}(x)l_b(x)
+		 +\dots\right)+
+		 L_0(x)+K^a(x)q_q+{1\over 2}S^{ab}(x)q_aq_b
+		-(K^a(x)+S^{ab}(x)l_b)q_a=
+		$$
+		$$
+	   \int L_2(x,y,z)g(y)g(z)dydz\,.	
+		$$
+   Comparing with (1.1) we come to<br><br>
+   <b> Resum\'e</b>
+     Thus we show that for our functional $\L(g)$ there exists
+a function $S_2=S_2(x,q)$ such that
+                 $$
+		 \L(g)-\Phi_{S_2}^*(g)=o[g\cdot g]\,.
+		 $$ <br><br>
+	 
+<br><br><br><br><br>
+<h3>III-rd step</h3><br><br>
+
+ Use the second step. It follows from the second  step that
+     $$
+     \L(g)=\Phi_{S_2}(g)+\int \tilde L_3(x,y,z,w)g(y)g(z)g(w)dydzdw+\dots
+     \tag{3.1}
+      $$
+...<br><br>
+  $$
+  $$<br><br>
+
+Now go to the induction.<br><br>
+
+ Suppose that for $n=k$ we can find a function
+$S=S_k(x,q)$ such that
+                 $$
+		 \L(g)-\Phi_{S_k}^*(g)=
+		 o\left[
+			 \underbrace { g\cdot \dots \cdot g}
+			 _{\hbox {k times}}
+			 \right]\,.
+		 $$ <br><br>
+We badly needd to prove that
+for  $n=k+1$ we can find a function
+$S=S_{k+1}(x,q)$ such that
+                 $$
+		 \L(g)-\Phi_{S_k+1}^*(g)=
+		 o\left[
+			 \underbrace { g\cdot \dots \cdot g}
+			 _{\hbox {k+1 times}}
+			 \right]\,.
+		 $$ <br><br>
+
+    </div>
+ </body>
+</html>
