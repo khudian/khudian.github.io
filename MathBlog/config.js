@@ -8,6 +8,7 @@ function configureMathJax()
       A: "{\\bf A}", 
       B: "{\\cal B}",
       C: "{\\bf C}",
+      D: "{\\cal D}",
       CC: "{\\cal C}",
       Cl: "{\\tt \\hbox{Cliff}}",
       E: "{\\bf E}",
