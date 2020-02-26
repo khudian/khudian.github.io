@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="3 January 2020">
+      <br><br>
+<h3><b> Attempt to prove</b></h3><br><br>
+<br><br>
+Let $\L$ be a functional on $C^\infty (M)$ such that for every $g$
+there exists a map $y^a=y^a(g)$ such that for every $h=h(y)$
+         $$
+\L(g+\vare h)-\L(g)=\vare h(y^a_g(x))\,.
+    \tag{1}
+         $$
+  Consider a function
+    $$
+  S(x^i,q_a)=\L(y^aq_a)
+  \tag{2}
+     $$
+The hypothesis is that
+       $$
+\L=\Phi_S^*
+\tag{2a}
+        $$<br><br>
+Note first of all that the relation (2a) evidently holds for linear functions:
+ Indeed if $g=A_ay^a$ then
+              $$
+      \Phi_S^*(g)=A_ay^a+S(x,q)-q_ay^a\,,\hbox{with}\,\, 
+q_a={\p g\over \p y^a}=A_a\,,
+              $$
+hence relation (2a) for linear functions  $g=A_ay^a$
+           $$
+  \hbox{if $g=A_ay^a$ then}\quad
+\Phi_S^*(g)=S(x,A_a)=\L(g)\,.
+       \tag{2b}
+           $$<br><br>
+Now check the relation (2a) in the infinitesimal
+vicinity of linear functions<br><br>
+ Let $h=h(y)$ be an arbitrary function, and $g=A_ay^a$ be 
+a linear function,
+then  there exists a function  $y^i_g(x)$ such that
+          $$
+\L(g+\vare h)-L(g)=\vare h(y^a_g(x))
+     \tag{3}
+        $$
+This holds for an arbitrary function $h$. 
+Consider a special case if $h$ is the linear function also.
+Suppose that $h=b_aY^a$ then it follows from `(2b) that
+     $$
+\L(g+\vare h)-\L(g)=
+\L(A_ay^a+\vare b_ay^a)-\L(A_ay^a)=
+     $$
+    $$
+      S(x,A_a+\vare b_a)-S(x,A_a)=
+{\p S(x,q)\over \p q_a}\big\vert_{q=A_a}
+= \vare h(y^a_g(x))\,.
+   \tag{3b}
+     $$
+  Comparing relations (3) and (3b)
+we come to conclusion that
+         $$
+    y^a_g(x)=
+{\p S(x,q)\over \p q_a}\big\vert_{q=A_a}\,,
+         $$      
+i.e.
+        $$
+\L(g+\vare h)=\Phi_S^*(g+\vare h)
+        $$
+in the case if $g$ is linear and $h$ is an arbitrary.
+
+    </div>
+ </body>
+</html>

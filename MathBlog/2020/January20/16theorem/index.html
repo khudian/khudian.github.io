@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="16 January 2020">
+      <br><br>
+<h3><b> Another attempt to prove</b></h3><br><br>
+Let $\L=\L(g)$ be a functional on $C^\infty (\R^N)$ such that
+         $$
+\L(g)=L(x)+
+ \int L(x,y)g(y)dy+
+ \int L(x,y_1,y_2)g(y_1)g(y_2)dy_1dy_2+
+ \int L(x,y_1,y_2,y_3)g(y_1)g(y_2)g(y_3)dy_1dy_2dy_3+\dots
+ \tag{1}
+         $$
+for every functions $g(y),h(y)$,
+        $$
+\L(g+\vare h)-\L(g)=\vare h\left(y^a_g(x)\right)\,,
+ \tag{2}
+         $$
+where
+     $$
+  y^a_g(x)=K_0^a(x)+
+  \int K^a(x,y)g(y)dy+
+ \int K^a(x,y_1,y_2)g(y_1)g(y_2)dy_1dy_2+\dots
+\tag{3}
+     $$,
+<b> Remark</b> Bearing in mind the relation with thick morphosm
+we rewrite the condition (3) in the following way:
+              $$
+  y^a_g(x)=K_0^a(x)+
+  \int \tilde S^a(x^i,q_a)\prod_a\delta (q_a-l_a(y))
+  \prod_b \delta (y^b-y^b_g(x))dydq\,,
+              $$
+where
+      $$
+\tilde S^a(x^i,q_a)={\p S^+(x,q)\over \p q_a}=
+       2S^{ab(x)}q_b+3S^{abc}q_cq_b+\dots
+      $$<br><br>
+
+<br><br><br><br><br>
+
+ rewriting equation (2) in temrs of equation (1)  we come to
+             $$
+ \int L(x,y)h(y)dy+
+ 2\int L(x,y_1,y_2)h(y_1)g(y_2)dy_1dy_2+
+ 3\int L(x,y_1,y_2,y_3)h(y_1)g(y_2)g(y_3)dy_1dy_2dy_3+\dots
+        $$<br><br>
+
+    $$
+       =h
+    \left[
+  K_0^a(x)+
+  \int K^a(x,y)g(y)dy+
+ \int K_1^a(x,y_1,y_2)g(y_1)g(y_2)dy_1dy_2+
+ \dots
+   \right]
+             $$<br><br>
+Compare left and right hand sides<br><br>
+
+I) zeroth term
+           $$
+ \int L(x,y)h(y)dy+\dots
+       =h
+    \left[
+  K_0^a(x)+\dots
+   \right],
+             $$
+i.e.     $$
+   L(x,y)=\prod_a\delta \left(y^a-K^a_0(x) \right)
+          $$
+We see that if we restrict ourselves by the condition
+          $$
+\int gg =0
+          $$
+then
+        $$
+\L(g)=\Phi_S^*(g), \hbox {where}\,\,
+  S(x,q)=L(x)+K^a(x)q_a+\dots
+        $$
+<br><br><br>
+    
+II) first order  term
+        $$
+ \int L(x,y)h(y)dy+
+ 2\int L(x,y,z)h(y)g(z)dydz+
+\dots
+        $$
+    $$
+       =h
+    \left[
+  K_0^a(x)+
+  \int K_1^a(x,y)g(y)dy+
+ \dots
+   \right]=
+      $$
+      $$
+ h\left(
+     K_0^a(x)
+         \right)+
+ {\p h(y)\p y}
+ \big\vert_{y^a=K_0^a(x)}
+  \int K_1^a(x,z)g(z)dz=
+             $$
+     $$
+  \int 
+\underbrace{\prod_a\delta\left(y^a-K^a_0(x)\right)}_{L(x,y)}
+   h(y)dy
+      +
+  \int 
+\underbrace{\prod_a
+         {
+   \p  \delta\left(y^a-K^a_0(x)\right)
+    \over\p y^a
+         }
+       K_1^a(x,z)
+      }_{L(x,y,z)}
+   h(y)g(z)dydz
+     $$<br><br>
+Comparing terms in left and right hand sides we come to
+   $$
+   L(x,y)=\prod_a\delta \left(y^a-K^a_0(x) \right)\,,\quad
+ L(x,y,z)=
+          $$<br><br>
+<br><br>
+
+
+    </div>
+ </body>
+</html>
