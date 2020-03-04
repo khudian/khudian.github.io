@@ -6,6 +6,7 @@ function configureMathJax()
     Macros: 
     {
       A: "{\\bf A}", 
+      AA: "{\\cal A}", 
       B: "{\\cal B}",
       C: "{\\bf C}",
       D: "{\\cal D}",
