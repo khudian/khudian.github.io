@@ -1,7 +1,5 @@
 var links =
 [
-  ["2020/February20/25theorem/index.html"],
-  ["2020/February20/23theorem/index.html"],
   ["2020/February20/20inductstat/index.html"],
   ["2020/February20/15theorem/index.html"],
   ["2020/February20/11algebroid/index.html"],
