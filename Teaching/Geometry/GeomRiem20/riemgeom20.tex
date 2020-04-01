@@ -1,4 +1,4 @@
-%It is a new course. I began this document on 31-st January 2010.
+%It is a new course. I began this document on 31-st January 2010.nother 
 % This is version of 2013
 % I began to write the file on 31-st January
 %on the base of the previous year
@@ -83,7 +83,7 @@
 
   \centerline {it is a draft of Lecture Notes of H.M. Khudaverdian.}
 
-  \centerline { Manchester, 17 February,  2020}
+  \centerline { Manchester,  23 March,  2020}
 
 
 
@@ -450,7 +450,7 @@ coordinates and rational points on the plane. }
 
 
 
-  \subsubsection{ Tensors on Manifold}
+  \subsubsection{ Tensors on Manifold}\label{tensors}
 
 
 {\it tangent vector and tangent vector space}
@@ -845,7 +845,7 @@ A^{i'}(x')=\sum_{i=1}^n{\p x^{i'}\over \p x^i}A^i(x)\,.
 
 
     \subsubsection {Riemannian manifold---
-manifold equipped with Riemannian metric}
+manifold equipped with Riemannian metric}\label{riemmetricdef}
 
 {\bf Definition} The Riemannian manifold $(M,G)$ is a
 manifold equipped with a Riemannian metric.
@@ -2528,7 +2528,7 @@ The length of the curve $\r(t)=\r (h(t), \varphi(t))$ on the
                \end{equation}
 
 
-\end{document}
+%\end{document}
 
 %17 February 2020
 
@@ -2753,7 +2753,6 @@ surfaces see in in Appendix.
 
 %\end{document}   %12 February 2015
 %\end{document} %12 February   2018   19 February  2017
-
 \subsection {Isometries of Riemannian manifolds.}
 
 \subsubsection {Riemannian metric induced by map}
@@ -2761,19 +2760,34 @@ surfaces see in in Appendix.
 Let $M$ be a manifold, and let $(N,G(N)^{})$ 
 be a Riemannian manifold.
 Let $F$ be a map from $M$ to $N$,
-         $$
+         $
 F\colon \qquad  M\longrightarrow\, N
-         $$
+         $.
 We do not suppose that $F$ is diffeomorphism, we 
 even do not suppose that manifolds $M$ and $N$
-have the same dimension\footnote{We just suppose that
+have the same dimension. We just suppose that
 $F$ is differentiable map, i.e. local expressions
-for $F$ are smooth functions}.
+for $F$ are smooth functions.
 
-  We can define $F^*G$,  a {\it Riemannian metric on
+  We can define $F^*G$,  a {\it ''Riemannian metric''  on
 manifold $M$ induced by the map $F\colon\, M\to N$}.
 
- Describe the metric $F^*G$ on $M$ in local coordinates.
+{\footnotesize
+
+{\bf Remark}   It is better to say that $F^*G$
+is $\begin{pmatrix}\ 0 \cr 2\cr \end{pmatrix}$ valency
+symmetric tensor field, which  defines Riemannian metric
+on manifold $M$ in the case if this tensor field
+is positive definite (see counterexample  
+ below).  It is why we put  
+the expression 
+ {\tt Riemannian metric} in 
+ quotes.
+}
+\smallskip
+
+
+ Describe the object $F^*G$ on $M$ in local coordinates.
   
 Let  $x^a$, ($a=1,\dots,m$) be local coordinates on 
 $m$-dimensional  manifold
@@ -2785,7 +2799,7 @@ be local coordinates on $n$-dimensional manifold $N$
 in a vicinity of point  $\pt_N$.
 If in local coordinates $y^i$,
  Riemannian metric $G^{(N)}$ on $N$ has appearance 
-       $$G^{(N)}
+      $$G^{(N)}
        =g^{(N)}_{ij}(y)dy^idy^j\,,
        $$
 then in local coordinates $x^a$,
@@ -2806,11 +2820,19 @@ g^{(M)}_{ab}(x)=
 where $y^i=y^i(x^a)$ is expression of map $F$ in local 
 coordinates  $x^a$ and $y^i$,       
 
-{\bf Remark}  The metric $F^*(G^{(N)})$ on $M$
-is called {\it pull-back} of metric $G^{(N)}$
-under the map $F\colon\, M\to N$.
 
-\medskip
+{\footnotesize
+{\bf Remark}  The object $F^*(G^{(N)})$ on $M$
+is {\it pull-back} of metric $G^{(N)}$
+under the map $F\colon\, M\to N$.
+This is $\begin{pmatrix}\ 0 \cr 2\cr \end{pmatrix}$ valency
+tensor field. In the case if axioms of Riemannian metric are obeyed,
+i.e. $F^*G$ defines on $M$ Riemannian metric 
+(see paragraph \ref{riemmetricdef}) 
+then pull-back of Riemannian metric is Riemannian metric 
+(see also example and counterexample below) 
+}
+\smallskip 
  
 {\bf Example}  The induced metric
 on surfaces in $\E^3$ is a special example of this
@@ -2831,6 +2853,30 @@ for induced metric:
                  \end{equation*}
 (or another manifestation of this formula, equation
   \eqref{goodnotations2}).
+
+{\footnotesize
+{\bf CounterExample}  
+Consider projection of $3$-dimensional 
+ Euclidean space $\E^3$ with Cartesian
+coordinates $(x,y,z)$ ($G_{\E^3}=dx^2+dy^2+dz^2$)
+on Euclidean spaces $\E^2$ with Cartesian
+coordinates $(u,v)$ ($G_{\E^2}=du^2+dv^2$)
+                 \begin{equation*} 
+     F\colon   M=\E^3\ni(x,y,z)\to (u,v)\in \E^2=N \,\,
+\hbox{such that}\,\, 
+\begin{cases}u=x\cr
+            v=y\cr
+\end{cases}
+              \end{equation*}
+Then pull-back
+             $$
+   F^*G_{\E_2}=F^*\left(du^2+dv^2\right)=dx^2+dy^2
+              $$
+does not define Euclidean (Riemannian) metric on $\E^3$
+since the condition 
+of positive definitness (see paragraph \ref{riemmetricdef})
+is not satisfied.
+}
 
 
 \subsubsection {Diffeomorphism, which is an isometry}
@@ -3003,6 +3049,9 @@ Are there other isometries? Yes  there are
 
 \subsubsection {Locally Euclidean Riemannian 
  manifolds }
+
+% \end{document} % 24 February
+
 It is useful to formulate the  local isometry condition between
 Riemannian manifold and Euclidean space.
 A neighbourhood of every point of $n$-dimensional
@@ -3017,7 +3066,7 @@ $(M,G)$ is locally isometric to Euclidean space $\E^n$,
 i.e.  it is locally Euclidean Riemannian manifold,
 if for every point $\pt\in M$ there exists an  open
 neighboorhood $D$ (domain) containing this point, $\pt\in D$
-such that $D$ is isometric to a domain in Euclidean plane. In other words
+such that $D$ is isometric to a domain in Euclidean space. In other words
 in a vicinity of every point $\pt$ there exist local coordinates
 $u^1,\dots,u^n$ such that Riemannian metric $G$ in
 these coordinates has an appearance
@@ -3152,7 +3201,8 @@ sphere is as  a geometry of Euclidean plane.
 On the other hand we know from the course of Geometry
 that this is not the case:
 sum of angles of triangels on the sphere is not equal to $\pi$,
-sphere cannot be bended without shrinking. Later in this course we will
+sphere cannot be bended without shrinking (creasing). 
+Later in this course we will
 return to this question....
 
      \m
@@ -3179,7 +3229,9 @@ is isometric to the sphere with radius $R$.
     \subsection {Volume element in Riemannian manifold}
 
 
+%\end{document}
 
+%26 February 2020
 
    The volume element
 in $n$-dimensional Riemannian manifold with metric $G=g_{ik}dx^i
@@ -3504,12 +3556,13 @@ Now calculation of integral becomes easy:
     Consider in Lobachevsky plane the domain $D_a$ such that
                             \begin{equation}\label
           {triangleinlobachevskyplane}
-               D_a=\{x,y\colon \quad   x^2+y^2\geq 1, |y|\leq a\}\,, 
+               D_a=\{x,y\colon \quad   x^2+y^2\geq 1, |x|\leq a\}\,, 
                  (|a|\leq 1)\,.
                             \end{equation}
  {\bf Remark} Note that vertical lines and half-circle are geodesics.
-   One can see that the distance between these lines tends to zero.
-   (We will studly it later). If we 
+   One can see that the distance between these lines 
+tends to zero\footnote(see the coursework).
+    If we 
 denote by $A$ a point $(a,\sqrt {1-a^2})$ and by $B$ the point 
  $(-a,\sqrt {1-a^2})$, then the domain $D_a$ can be cinsidered
 as a `triangle' with vertices at the point $A,B,C$ where $C$
@@ -3522,7 +3575,7 @@ form on Lobachevsky plane
         V(D_a)=\int_{-a\leq y\leq a\,, x^2+y^2\geq 1}{dxdy\over y^2}=
                   2\arcsin{a}
                    \end{equation}
-(See in detail Homework)
+(See in detail Homework and coursework)
   We will discuss later the geometrical meaning of this formula.
 
 
@@ -3569,7 +3622,7 @@ It is remarkable formula: area of the segment is a polynomial function of radius
 %\end{document} 28 Bebruary  2018
 
 %\end{document} 26 February   2017
-\end{document} % 13 february 2019
+%\end{document} % 13 february 2019
 
 
 \section {Covariant differentiaion. Connection. Levi Civita  Connection on Riemannian manifold}
@@ -3578,6 +3631,10 @@ It is remarkable formula: area of the segment is a polynomial function of radius
 
 How to differentiate vector fields on a (smooth )manifold  $M$?
 
+
+%\end{document}
+
+% 2 March 2020
 
 Recall  the differentiation  of functions on a (smooth )manifold  $M$.
 
@@ -3672,7 +3729,7 @@ that conditions \eqref{conditionsforderivative} above  be satisfied.
 
 
 \subsubsection{Definition of connection. Christoffel symbols of connection}
-\label{defintionofconnection}
+\label{definitionofconnection}
 
 {\bf Definition} Affine connection on $M$ is the {\it operation} $\nabla$
 which assigns to every vector field $\bf X$ a linear map, (but not necessarily $C(M)$-linear map!)
@@ -3787,8 +3844,13 @@ Later it will be explained why we us the word "connection"
 We see from the formula above that to define covariant derivative of vector fields, connection,
 we have to define Christoffel symbols in local coordinates.
 
-\subsubsection {Transformation of Christoffel symbols for an arbitrary connection}
+\subsubsection {Transformation of Christoffel 
+symbols for an arbitrary connection}\label{newparagraph2020}
 
+
+%khudian
+%\end{document}
+% 5 March 2020
  Let $\nabla$ be a connection on manifold $M$.
   Let $\{\Gamma^i_{km}\}$ be Christoffel symbols of this connection in  given local coordinates $\{x^i\}$.
   Then according \eqref{cristoffelinlocalcoordiantes1} and \eqref{covariantderivative} we have
@@ -4060,7 +4122,267 @@ Christoffel symbols.
 %\end{document}  % 6 March 2018
 
 
-\subsection {Connection induced on the surfaces}
+
+\subsubsection {Space of connections}.
+
+\def\A {{\cal A}}
+ We defined axiomatically connection. 
+ How look aspace of all connecctions?
+ Denote by $\A_M$ the space of all connecctions on manifold $M$.
+ We still have
+ only one example of connection: canonical flat  connection in $\E^n$.
+
+ In other words we proved that space ${\cal A}_{\E^n}$ is not empty.
+ Are there another connections?
+
+ {\bf Proposition} Let $\nabla$ be an arbitrary connection on manifold $M$.
+   Then operation $\widetilde\nabla$ is connection if and only if
+   the difference 
+      \begin{equation}\label{differeceofconnections}
+	      \widetilde \Gamma^i_{km}
+	       -
+	      \Gamma^i_{km}=T^i_{km}
+      \end{equation}
+is tensor of valency $\begin{pmatrix}1\cr 2\cr\end{pmatrix}$.
+	Here as usual $\Gamma^i_{km}$ are Christoffel symbols
+	of connection $\nabla$ in local coordinates
+	$\{x^i\}$ and 
+	 $\widetilde \Gamma^i_{km}$ are Christoffel symbols
+	of connection $\widetilde \nabla$ in same local coordinates
+	$\{x^i\}$.
+
+  In other words {\footnotesize space of connections is affine space
+  associated with vector space of tensor fileds of valency
+ $\begin{pmatrix}1\cr 2\cr\end{pmatrix}$}.
+
+	 Roughly speaking one can say that there are as many connections
+	 as many tensor fields of valency
+ $\begin{pmatrix}1\cr 2\cr\end{pmatrix}$.
+\medskip
+
+
+
+
+{\tt Proof}
+
+   Recall that under change  $\{x^i\}\to\{x^{i'}\} $
+   of local coordinates Christofel symbols of connection
+   transform according equation 
+   \eqref{formualfortransformationofconnection}, i.e.
+               $$
+ \Gamma^{i'}_{k'm'}=
+          {\p x^k\over \p x^{k'}}
+          {\p x^m\over \p x^{m'}}
+          {\p x^{i'}\over \p x^i}
+          \Gamma_{km}^i+
+    {\p^2  x^r\over \p x^{k'}\p x^{m'}}{\p x^{i'}\over \p x^r}
+	       $$
+and	       
+\begin{equation}\label{formualfortransformationofconnection2}
+    \widetilde \Gamma^{i'}_{k'm'}=
+          {\p x^k\over \p x^{k'}}
+          {\p x^m\over \p x^{m'}}
+          {\p x^{i'}\over \p x^i}
+          \widetilde \Gamma_{km}^i+
+    {\p^2  x^r\over \p x^{k'}\p x^{m'}}{\p x^{i'}\over \p x^r}\,.
+ \end{equation}
+Substracting these equations we come to
+          $$
+T^{i'}_{k'm'}=	  
+    \widetilde \Gamma^{i'}_{k'm'}-
+     \Gamma^{i'}_{k'm'}=  
+      {\p x^k\over \p x^{k'}}
+      {\p x^m\over \p x^{m'}}
+      {\p x^{i'}\over \p x^i}
+	  \left
+	  (\widetilde \Gamma_{km}^i-
+	 \Gamma_{km}^i\right)=
+	 {\p x^k\over \p x^{k'}}
+      {\p x^m\over \p x^{m'}}
+      {\p x^{i'}\over \p x^i}
+	  T^i_{km}\,,
+	  $$
+i.e. ${T^i_{km}}$ are components of tensor of valency
+ $\begin{pmatrix}1\cr 2\cr\end{pmatrix}$ (see paragraph \ref{tensors}).
+\medskip
+{\footnotesize
+	 {\tt Another proof}
+	
+	Let operations  
+	$\nabla$ and  $\widetilde \nabla$ be two connections.
+	Consider operation
+	 \begin{equation*}
+		 T(\X,\Y)=
+		 \widetilde\nabla_\X \Y
+		 -\nabla_\X \Y\,.
+	 \end{equation*}
+
+
+	 Using axioms for connection (see paragraph
+	 \ref{definitionofconnection}) we show that
+	 $T(\X,\Y)$ is linear operation and
+	 moreover for arbitrary functions $f,g$
+	    \begin{equation}\label{linear1}
+	  T(f\X,g\Y)=fgT(\X,\Y)\,.  
+	    \end{equation}
+	 This implies that it is tensor. It follows from
+	 linearity and equation \eqref{linear1} that
+	           $$
+   T\left(\X,\Y\right)=
+   T\left(X^k(x)\p_k,Y^m(x)\p_m\right)=X^k(x)Y^m(x)T(\p_k,\p_m)
+	   T_{km}^i\p_i\,,{\rm where}\,\,
+	      T(\p_k,\p_m)
+	      =T_{km}^i\p_i\,.
+	          $$
+}.
+
+\medskip
+
+{\bf Example}   
+Let $\nabla$ be an affine connection on a $2$-dimensional manifold 
+	$M$ such that in local coordinates $(x,y)$
+
+		       $$
+          \nabla_{\p\over \p x}{\p\over \p x}=x{\p\over \p y}\,.
+		       $$
+	   Calculate the Christoffel symbols $\Gamma^x_{xx}$
+		and $\Gamma^y_{xx}$.
+
+	Let $\omega=a(x,y)dx+b(x,y)dy$ be the 
+differential $1$-form on $M$.
+  Consider the operation
+              $$
+\widetilde\nabla_\X\Y=\nabla_\X\Y+\omega (\Y)\X
+              $$
+         Show that this operation is also
+an affine connection, and calculate
+ the Christoffel symbols 
+ $\widetilde\Gamma^x_{xx},$
+		and $\widetilde\Gamma^y_{xx}$ of this new connection.
+		
+First calculate Christoffel symbols 
+	    symbols $\Gamma^x_{xx}$
+		and $\Gamma^y_{xx}$ of initial connection. We have:
+		 $$
+\nabla_{\p\over \p x}{\p\over \p x}=
+\Gamma_{xx}^x{\p\over \p x}+
+\Gamma_{xx}^y{\p\over \p y}=
+x{\p\over \p y}\Rightarrow \,\,
+\Gamma_{xx}^x=0\,,+
+\Gamma_{xx}^y=x\,.
+		 $$
+
+
+Check  straightforwardly that the operation
+            $$
+\widetilde\nabla_\X\Y=\nabla_\X \Y+\omega(\Y)\X
+            $$
+is also connection, i.e. it obeys
+obeys conditions 
+\eqref{defofconnection},
+\eqref{linearityonfunctions}
+and \eqref{leibnitzrule} (see paragraph \ref{definitionofconnection})
+\footnote{One can see that the difference between connection $\nabla$
+and new operation $\widetilde \nabla$
+is defined by tensor:
+    $T(\X,\Y)=\widetilde \nabla_\X\Y-\nabla_\X\Y=\X\omega (\Y)$
+Due to Proposition this implies that $\widetilde \nabla$ is a connection
+too.
+}.
+
+\begin{itemize}
+	\item
+             $$
+  \widetilde \nabla_{\bf X}\left(\lambda{\bf Y}+\mu{\bf Z}\right)=
+  \nabla_{\bf X}\left(\lambda{\bf Y}+\mu{\bf Z}\right)+
+ \omega\left(\lambda{\bf Y}+\mu{\bf Z}\right)\X=
+               $$
+               $$
+\lambda\left(\nabla_\X\Y+\omega(\Y)\X\right)
+\mu\left(\nabla_\X\Z+\omega(\Z)\Y\right)=
+\lambda\widetilde\nabla_\X\Y+
+\mu\widetilde\nabla_\X\Z\,.
+             $$
+		Hence condition \eqref{defofconnection} is obeyed.
+
+	\item
+             $$
+  \widetilde \nabla_{f\bf X+g\Y}\Z=
+  \nabla_{f\bf X+g\Y}\Z+\omega(\Z)(f\bf X+g\Y)=
+        $$
+        $$
+      f\nabla_\X\Z+g\nabla_\Y\Z+
+       f\omega(\Z)\X+g\omega(\Z)\Y=
+      f\widetilde\nabla_\X\Z
+      +g\widetilde\nabla_\Y\Z
+              $$
+              
+		Hence condition 
+		\eqref{linearityonfunctions} is obeyed.
+
+	\item
+             $$
+  \widetilde \nabla_\X (f\Y)=
+   \nabla_\X (f\Y)+\omega(f\Y)\X=
+   f\nabla_\X\Y+\p_\X f\Y+f\omega(\Y)\X=
+f\widetilde\nabla_\X\Y+\p_\X f\Y  
+        $$
+		Hence condition \eqref{leibnitzrule} 
+		is also obeyed.  
+		
+\end{itemize}	
+		
+		Hence we proved that
+$\widetilde\nabla$ is also the connection.
+
+Now express the Christoffel symbols of new connection
+through the Christoffel symbols of connection $\nabla$
+
+We have that
+$$
+\omega\left({\p\over \p x}\right)=
+(adx+bdy)\left({\p\over \p x}\right)=a\,,
+{\rm and}\,\,
+\omega\left({\p\over \p y}\right)=
+(adx+bdy)\left({\p\over \p y}\right)=b
+$$
+hence
+            $$
+\widetilde\nabla_{\p_x}\p_x=
+\widetilde\Gamma^x_{xx}{\p_x}
++\widetilde\Gamma^y_{xx}{\p_y}=
+\nabla_{\p_x}\p_x+\omega(\p_x)\p_x=
+\Gamma^x_{xx}{\p_x}
++\Gamma^y_{xx}{\p_y}+a(x,y)\p_x\,,
+     $$
+     hence
+      $$
+      \widetilde\Gamma^x_{xx}=
+      \Gamma^x_{xx}+a\,,
+      \widetilde\Gamma^y_{xx}=
+      \Gamma^y_{xx}\,.
+      $$
+    In the same way fpr other symbols.  E.g. 
+       $$
+\widetilde\nabla_{\p_x}\p_y=
+\widetilde\Gamma^x_{xy}{\p_x}
++\widetilde\Gamma^y_{xy}{\p_y}=
+\nabla_{\p_x}\p_y+\omega(\p_y)\p_x=
+\Gamma^x_{xy}{\p_x}
++\Gamma^y_{xy}{\p_y}+b(x,y)\p_x\,,
+     $$
+     hence
+      $$
+      \widetilde\Gamma^x_{xy}=
+      \Gamma^x_{xy}+b\,,
+      \widetilde\Gamma^y_{xy}=
+      \Gamma^y_{xy}\,.
+      $$
+             
+
+
+
+	 \subsection {Connection induced on the surfaces}
 
    Let $M$ be a manifold embedded in 
  Euclidean space%\footnote{We know that every $n$-dimensional 
@@ -4267,19 +4589,31 @@ i.e.
 
 \subsection {Levi-Civita connection}
 
+We learned that one can consider 
+different connections on manifold $M$.
+It turns out that on Riemannian manifold 
+there is one distinguished connection.
+This is Levi-Civita connection.
 
   \subsubsection {Symmetric connection}
+
+% khudian
+% 12 March 2020
+%\end{document}
+
 
  {\bf Definition}. We say that connection is symmetric if its Christoffel symbols $\Gamma^i_{km}$ are symmetric with respect to
   lower indices
   \begin{equation}\label{symmetricconnection}
     \Gamma^i_{km}=\Gamma^i_{mk}
   \end{equation}
-  The canonical flat connection and induced connections considered above are symmetric connections.
+  The canonical flat connection 
+  and induced connections 
+  considered above are symmetric connections.
 
   \m
 
-  {\small
+  {\footnotesize
 
    \centerline {\it Invariant definition of symmetric connection}
 
@@ -4330,7 +4664,7 @@ if it preserves the scalar product:
 
  {\sl Proof}
 
-{\small Suppose that this connection exists and $\Gamma^i_{mk}$ are its Christoffel symbols.
+{\footnotesize Suppose that this connection exists and $\Gamma^i_{mk}$ are its Christoffel symbols.
  Consider vector fields $\X=\p_m,\Y=\p_i$ and $\Z=\p_k$ in \eqref{connpreservingmetric}.
   We have that
             \begin{equation}\label{conditionforallindices}
@@ -4456,11 +4790,14 @@ Hence
 \end{equation}
 
 
+\medskip
 
 
 \subsubsection {Example of the sphere again}
 
  {Calculate Levi-Civita connection on the sphere.
+		       %\end{document}
+% 16 Мarch 2020
 
  On the sphere first quadratic form (Riemannian metric)
  $G=R^2d\theta^2+R^2\sin^2\theta d\varphi^2$.  Hence we
@@ -4580,13 +4917,18 @@ of the metric induced on this submanifold coincides with the connection induced 
 by Levi-Civita connection of the metric $G$.}
 
 
+\medskip
+
+
+
    \section {Parallel transport and geodesics}
 
    \subsection{Parallel transport}\label{paralleltransport}
 
 %\end{document}  % 16 March 2018
 
-
+%\end{document}
+%18 March 2020
 \subsubsection {Definition}
 
    Let $M$ be a manifold equipped with affine connection $\nabla$.
