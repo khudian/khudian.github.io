@@ -7,15 +7,41 @@
 
 Due to Coronavirus Pandemie we will switch on on-line teaching.
 
+</li>
+
+<Li>
+
+
 During Lecture (Monday 20 April 10 am) we will recall the
 parallel transport and geodesics.   Our lecture will be founded
 on lecture notes and  
-  <a href="online1.pdf"> these slides</a>  is  
+  <a href="20april.pdf"> these slides</a>    
 
 
+</li>
 
+<Li>
 
+During Lecture and Tutorial (Thursday 23 10 am--11.50 am) we will
+formulate Theorem about  changing of a vector during parallel transport
+along closed curve on the surface in $E^3$. Then we will exlain
+what is it Weingarten (Shape) operator, and how to calculate
+Gaussian curvature in terms of Shape operator.   We will end the lecture
+calculating Gaussian curvature for cylinder and sphere
 
+Our lecture will be founded on lecture notes and 
+<a href="23april2.pdf"> these slides</a>
+
+</li>
+
+<Li>
+
+During these two hours we will find a time and I will explain how to calculate
+Christoffel symbols of Levi-Civita connection using Euler-lagrange
+equations of motion.
+
+Our improvised tutorial  will be founded on homeworks  and 
+<a href="23april1.pdf"> these slides</a>
 <!--
 --<p>
 The content of the last subsection: Gauss-Bonnet  Theorem
