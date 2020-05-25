@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="16 May 2020">
+      <br><br>
+
+<h3>It was so long ago</h3><br><br>
+Here I would like to do some standard exercise in classical mechanis using
+HAMILTONIAN REDUCTION.<br><br>
+<br><br>
+   Consider partcile in central symmetric field:
+          $$
+	  L={m(\dot x^2+\dot y^2+\dot z^2)\over 2}
+	  -{\a\over |\r|}\,.
+	  $$
+	  (it will be attracting if $\a>0$).
+The Lagrangian can be reduced to one-dimensional
+by the following standard procedure.
+Momentum ${\bf M}=\r\times\bf \v$ is preserved, so take a plane
+$\a$ which is orthogonal to $\bf M$.
+Particle moves in this plane.
+In this plane in polar coordinates 
+          $$
+	  L=
+	  {
+		  m\left(
+	{\dot R}^2+
++R^2{\dot \varphi}^2
+          \right)
+\over 2}-{\a\over R}\,.
+	  $$
+We have ${d\over dt}{\p L\over \p \dot\varphi}=$
+${d\over dt}mR^2\dot \varphi=0$, thus $\dot \varphi={M\over mR^2}$.
+We come to one-dimensional Lagrangian:
+             $$
+	    L= {
+		  m\left(
+	{\dot R}^2+
++R^2{\dot \varphi}^2
+          \right)
+\over 2}-{\a\over R}\big\vert_{\dot \varphi={M\over mR^2}}=
+	     $$<br><br>
+We have that Hamiltonian
+      $$
+     H={p_x^2+p_y^2+p_z^2\over 2m}+{\a\over r}\,. 
+      $$<br><br>
+Consider $3$ functions
+     $$
+     F_i=\vare_{ikm}p_kq_m
+     $$
+We are interested about reduced symplectic  space related with 
+      $$
+      F_i=p_i\,.
+      $$<br><br>
+
+    </div>
+ </body>
+</html>

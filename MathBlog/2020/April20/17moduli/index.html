@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="17 April 2020">
+      <br><br>
+<br><br>
+<h3>Moduli space, what is it</h3><br><br>
+<br><br><br><br>
+One of students asked me a question: Moduli spaces, What is it?<br><br>
+   Suppose that we consider (usually infinite-dimensioanl) 
+   space, where  we perform 
+   some identifications. We come by this identification to
+   moduli space if the remaining degrees of freedom still take
+   continuous values.   
+ <br><br>
+       Consider examples.<br><br>
+
+       <b> First example</b><br><br>
+          Consider a space of vector fields on $\R$.  We identify
+	  two vector fields $\A=A(x){\p\over \p x}$ 
+	  and $\C=C(x){\p\over \p x}$ if there exists
+	  diffeomorphism $F\colon \R\to\R$ which connects these fields,
+	  i.e.
+	         $$
+		 \A=F_* \C\,,\quad\colon\,\,\,
+     A(x){\d F(x)\over dx}=C(y)\big\vert_{y=F(x)}\,.
+         \tag{1}
+	$$
+<b> Exercise</b> 
+     Consider vector fields 
+       $\A=x{d\over dx}$ and
+       $\C=3y{d\over dy}$.
+One can see that map 
+        $$
+	y=x^3
+	$$
+conneccts these fields, however this map <tt> is not!!!</tt> the 
+diffeomorphism, and one can see that these vector fields
+cannot be identified by any diffeomorphism!<br><br>
+We see in this example that moduli space of vector fields on $\R$
+with identification as above contains line:vector fields
+  $\lambda x{d\over dx}$ and
+  $\mu x{d\over dx}$  can be identified if and only if $\lambda=\mu$.<br><br>
+<br><br><br><br>
+  <b> Second example</b>
+   This is very important example, however i afraid,
+   that I do not remember this clear..
+ Consider the space of two-dimensional
+  Riemannian surfaces which are diffeomorphic to $S_1\times S_1$.<br><br>
+  We identify  two tori  if they are conformally isometric to each other.<br><br>
+  ``In the previous example we showed that the space of vector fields
+  factorised by relation (1) contains the line, since
+  two vector fields 
+  $\lambda x{d\over dx}$ 
+ and  $\mu x{d\over dx}$ 
+  are not identical to each other if $\lambda\not=\mu$.
+  In the same way we will give an example of subspace of 
+  tori such that two different elements 
+  are not conformally isometric to each other.
+     Consider Lobachevsky plane and assign to every point 
+     $\pt (x,y)\colon y>0$  parallelogram with sides
+              $\pmatrix {x\cr y\cr}$
+	      and 
+              $\pmatrix {1\cr 0\cr}$.
+	      This parallelogram defines surface of 
+	      torus with Riemannian metric, and we will call
+	      it $T_{x,y}$. One can see , 
+	       that 
+	       
+	       <b> Theorem</b> Two tori $T_z$ and $T_{z'}$
+	          $z=x+iy$  are conformally isometric
+	       if snd only if
+	            $$
+		    z'={az+b\over cz+d}\,,\quad a,b,c,d\in \R, ad-bc\not=0\,.
+		    $$
+	      this is very beautiful theorem which explains why Hyperbolic
+	      geometry is so important, that<br><br>
+	      Reading:<br><br>
+	      go to my homepage
+	    https://khudian.net/Lectures/Galgrouplectures/euclocaltalk4.pdf<br><br>
+		 
+ 	
+	
+	
+	
+	
+    </div>
+ </body>
+</html>

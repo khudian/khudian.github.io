@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="23 May 2020">
+      <br><br>
+<br><br>
+<tt> here I represent the famous result about even dimensionality
+of the orbit of adjoint action on Lie coalgebra. However I will try to consider
+just its linear version</tt><br><br>
+<br><br>
+
+Let  $V$ be $n$-dimensional vector space.
+For an arbitrary antisymmetric form 
+$\Omega$ on this space  denote by $H_\Omega$  
+the following subspace of $V$:
+       $$
+    H_\Omega=\{V\ni\x\colon\,\,\Omega(\x.\y)=0\,,
+    \hbox{for arbitrary $\y\in V$}\}\,.   
+       \tag{1}
+       $$
+One can see that dimension of $H_\Omega$ differs on dimension of $V$
+on an even number. Indeed antisymmetric form 
+$\Omega$ is non-degenerate on vector space 
+                $$
+V'=V\backslash H_\Omega\,.
+\tag{2}
+		$$
+This implies that dimension of vector space $V'$ is even
+        $$
+	{\rm dim}\, V'={\rm even}\,\,{\rm number}
+	\tag{2a}
+	$$
+since determinant of anisymmetrical $n\times n$ matrix 
+vanishes for odd $n$.<br><br>
+  The statement that vector space $V'=V\backslash H_\Omega$
+  has even dimension is the source of the fact why
+  orbits  of coadjoint action of Lie group
+  have even dimension (and they have natural symplectic structure.)<br><br>
+
+  Indeed let $p\in \GG$ be  linear for on Lie algebra. Consider a
+  map $\sigma$ from Lie algebra $\GG$ to tangent space $T_p\GG^*$
+  which assigns to very vector $\xi\in \GG$ infinitesimal
+  curve on $\GG^*$: 
+        $$
+	p(t)\colon \GG\ni \eta 
+	\langle\xi ,p(t)\rangle=
+	\langle\ e^{t\xi}\eta e^{-t\xi} ,p\rangle
+	\tag{3}
+$$
+This curve begins at $p$, and the equivalence class of this curve
+defines tangent vector in $T_p\GG^*$.  Thus we define
+the map $\sigma$ from  Lie algebra $\GG$ to $T_p \GG^*$.
+                 $$
+		 \sigma (\xi)=\left[p(t)\right]\,.
+		 \tag{4}
+		 $$<br><br>
+   Now consider the antisymmetric bilinear form
+           $$
+	   \Omega=\Omega_p\colon\,
+	 \Omega_p\left(\X,\Y\right)=
+	   p\left(\left[\X,\Y\right]\right)\,.
+	   \tag{5}
+	   $$
+One can see that  vector space $H_\Omega$ defined by (1)
+coincides with kernel of the map $\sigma$
+               $$
+\sigma (\xi =0)\Leftrightarrow p\left[\xi,\GG\right]=0\,.
+                $$
+Thus as it follows from (2a)
+	    $$
+	    \hbox{dimension of orbit passing via the point $P$}
+	    =
+	    \dim T_p\GG^*=
+	    $$
+	    $$
+	  {\rm dim\,}\Im \sigma=
+	  {\rm dim\,} {\GG}-
+	  {\rm dim\,}\ker \sigma=\hbox {even number}
+	    $$<br><br>
+
+    </div>
+ </body>
+</html>

@@ -124,7 +124,7 @@ def removeAfterBye(data):
   byeString = R"\bye"
   foundIdx = data.find(byeString)
   if foundIdx == -1:
-    print("WARNING: cannot find \bye command")
+    print("WARNING: cannot find bye command")
     return data
    
   return data[:foundIdx]
@@ -255,7 +255,7 @@ def replaceCommand_InnerType(
       return data
     
     if checkCaretInsideFormula(data, foundIdx):
-      raise "command is inside formula"
+      return data
     
     minmaxParentheses = getMinMax_inner(data, foundIdx, "{", "}")  
     minmaxInternalKeys = getMinMax_inner(data, foundIdx,
@@ -280,6 +280,15 @@ def skipsToBr(data):
   data = re.sub(R"\n\n", r"<br><br>\n", data)
   return data
 
+def calcToRfloor(data):
+  return re.sub(R"\\cal c", R"\\rfloor", data)
+
+def calxToS(data):
+  return re.sub(R"\\cal x", R"\\S", data)
+
+def addSpaceToLessOperator(data):
+  return re.sub(R"<", R"< ", data)
+
 def removeInternalKeys(data):
   data = re.sub(R"GENERAL_BEGIN_KEY", "", data)
   data = re.sub(R"GENERAL_END_KEY", "", data)
@@ -292,8 +301,11 @@ def simpleReplaces(data):
 def convertTexString(data):
   data = removeHeaderDefs(data)
   data = removeAfterBye(data)
+  data = addSpaceToLessOperator(data)
   data = eqnoToTag(data)
   data = skipsToBr(data)
+  data = calcToRfloor(data)
+  data = calxToS(data)
   data = replaceCommand_OverwhelmingType(
     data, R"\centerline", [R"<h3>", R"</h3>"])
   data = replaceCommand_InnerType(
@@ -365,7 +377,11 @@ def execute():
         [month, year] = getMonthAndYear(subdir)
         targetDir = os.path.join(gDestinationDir, year, month, Path(file).stem)
         targetFile = os.path.join(targetDir, 'index.html')
-        [monthNum, yearNum] = getMonthAndYearNum(month, year)
+        [monthNum, yearNum] = [None, None]
+        try:
+          [monthNum, yearNum] = getMonthAndYearNum(month, year)
+        except:
+          continue
         if (not os.path.exists(targetFile) and 
           validateMonthAndYear(monthNum, yearNum)):
           dayNum = getDayNum(file)

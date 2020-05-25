@@ -1,2 +1,2 @@
-converterTool.py
+python converterTool.py
 pause

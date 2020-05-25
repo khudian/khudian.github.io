@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="24 March 2020">
+      <br><br>
+<br><br>
+   I feel like I knew it..... (<tt> Tedd just recalledd that we (I!???)
+   put it in the text Frobenius-Bulough</tt>)<br><br>
+
+   \m
+<b> Remark</b>
+ In formulas empty set was absent.
+ Today I realised why this is mistake!
+ Empty set is responsible for constants!!!<br><br>
+  $$ $$<br><br>
+
+      <b> Polarisation formula</b><br><br>
+   Let $Q(x)=Q_n(x)$ be polynomail of degree $n$.
+   For every $k$ We write an expression such that it vanishes if
+   $n< k$:<br><br>
+                   $$
+     B(x,y)={1\over 2}\left(Q(x+y)-Q(x)-Q(y+Q(0)\right)\,,
+                 $$
+                   $$
+     B(x,y,z)={1\over 6}\left(
+     Q(x+y+z)-Q(x+y)-Q(y+z)-Q(x+z)+\right.
+     $$
+     $$
+     \left.
+     Q(x)+
+     Q(y)+Q(z)-Q(0)
+     \right)\,,
+                $$
+                  $$
+     B(x,y,z,t)={1\over 24}
+        \left(
+     Q(x+y+z+t)-\right.
+       $$
+       $$
+     \left.-Q(x+y+z)-Q(x+y+t)-Q(x+z+t)-Q(y+z+t)+
+     \right.
+      $$
+      $$
+      \left.
+  Q(x+y)+Q(x+z)+Q(x+t)+Q(y+z)+Q(y+t)+Q(z+t)\right.
+  $$
+  $$
+  \left.
+     -Q(x)-Q(y)-Q(z)+Q(0)
+     \right)\,,
+                $$
+and so on:
+          $$
+B_n(x_1,\dots,x_n)=\sum (-1)^{n+k} 
+Q\left(
+x_{i_1}+\dots+i_k
+\right)\,
+         $$
+where summation goes over all subsets, and
+for empty subset we mean that 
+          $$
+      Q\left(\emptyset\right)=Q(0)
+      $$
+  where $0$ is null-vector.    <br><br>
+Note that $B_n$ is polarised form of $Q(x)$ and 
+moreover: $B_n$ vanishes if $Q$ has degree less than $n$.<br><br>
+One can say that for arbitrary polynomial  $Q(x)$,
+ the expression  $B_n$ vanishes or has first term linear!<br><br>
+Namely
+   Consider
+     $$
+     \Phi_1(u_1)=u_1-u_0\,,
+     $$
+     $$
+     \Phi_2(u_0,u_1,u_2,u_{12})=
+     {1\over 2}
+   \left(u_{12}-u_1-u_2+u_0\right)\,,
+     $$
+     $$
+     \Phi_3(u_0,u_1,u_2,u_{12},u_{13},u_{23},u_{123})=
+     {1\over 6}
+   \left(u_{123}-u_{12}-u_{13}-u_{23}+u_1+u_2+u_3-u_0\right)\,,
+     $$
+     $$
+     \Phi_2(u_0,u_1,u_2,u_3,u_4,u_{12},u_{13},u_{14},
+     u_{23},u_{24},u_{34},u_{123},u_{124},u_{134},u_{234})=
+      $$
+      $$
+     {1\over 24}
+   \left(u_{1234}-u_{123}-u_{124}-u_{134}-u_{234}+\right.
+         $$
+	 $$
+  \left. u_{12}+u_{13}+u_{14}+
+     u_{23}+u_{24}+u_{34}-
+   u_1-u_2-u_3-u_4+u_0\right)\,,
+     $$
+and so on:
+        $$
+	\Phi\left(u_\sigma\right)
+	$$<br><br>
+
+Let $P=P(\x)$ be an arbitrary function on vecit space $V$.
+Then consider 
+        $$
+	B_1(\x)=\Phi_1\big\vert_{u_1=P(\x),u_0=P(0)}\,, 
+	$$
+    $$
+     B_2(\x_1,\x_2)=
+     \Phi_2\big\vert_{u_0=P(0),u_1=P(\x_1),u_2=
+     P(\x_2),u_{12}=P(\x_1+\x_2)}\,,
+     $$
+     $$
+     B_3(\x_1,\x_2,\x_3)=
+      $$
+      $$
+     \Phi_3\big\vert_{u_1=P(\x_1),u_2=
+     P(\x_2),u_3=P(\x_3),
+     u_{12}=P(\x_1+\x_2),
+     u_{13}=P(\x_1+\x_3),
+     u_{23}=P(\x_2+\x_3),
+     u_{123}=P(\x_1+\x_2+\x_3),
+     }\,,
+     $$
+and so on:
+      $$
+      B_n(\x_1,\dots,\x_n)=\Phi_n(u_{i_1\dots i_k})\big\vert
+       _{u_{j_1\dots j_m}=P(\x_{j_1}+\dots+x_{j_m})}
+      $$<br><br>
+<tt> Statement</tt> Let $P=P(\x)$ be a polynomial of order $N$
+and of minimum degree $n$, i.e.
+      $$
+    P(\x_1,\dots,x_k)=0 \,\, {\rm if}\,\, k< n\,\, k>N  
+      $$
+Then
+  $B_k$ vanishes at $k< n$ and $k>N$ and if $k_0$
+  is minimal such that
+  which produces not zero $B_{k_0}\not=0$ then
+  $B_{k_0}$ is $k_0$-linear.<br><br>
+  This procedure catchs bilinbear forms!
+   
+    </div>
+ </body>
+</html>
