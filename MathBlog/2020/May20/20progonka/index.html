@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="20 May 2020">
+      <br><br>
+
+<h3><b> Progonka</b></h3><br><br>
+
+Solve equation<br><br>
+$$
+\cases
+{
+A_1 x_0+B_1 x_1+C_1x_2=h_1\cr
+A_2x_1+B_2 x_2+C_2x_3=h_2\cr
+A_3 x_2+B_3 x_3+C_3x_4=h_3\cr
+A_4x_3+B_4 x_4+C_4x_5=h_4\cr
+A_5x_4+B_5 x_5+C_5x_6=h_5\cr
+A_6x_5+B_6 x_6+C_6x_7=h_6\cr
+}\,\quad {\rm with}\,\, A_1=C_6=0\,.
+\tag{1}
+$$
+We look for
+              $$
+\cases
+{
+	x_1=\a_2 x_2+\beta_2\cr
+	x_2=\a_3 x_3+\beta_3\cr
+	x_3=\a_2 x_4+\beta_4\cr
+	x_4=\a_5 x_5+\beta_5\cr
+	x_5=\a_6 x_6+\beta_6\cr
+	}
+	\tag{2}
+         $$
+	 Put in system:
+	 $$
+	 \cases
+	 {
+A_1 x_0+B_1 x_1+C_1x_2-h_1=0=
+B_1(\a_2x_2+\beta_2)+c_1x_2-h_1=\cr
+=(B_1\a_2+c_1)x_2+B_1\beta_2-h_1=0\cr
+A_2x_1+B_2 x_2+C_2x_3-h_2=
+A_2(\a_2x_2+\beta_2)+B_2 (\a_3x_3+\beta_3)+
+C_2x_3-h_2=\cr
+=A_2\a_2(\a_3x_3+\beta_3)+A_2\beta_2+
+B_2\a_3x_3+B_2\beta_3+C_2x_3-h_2=\cr
+(A_2\a_2\a_3+B_2\a_3+C_2)x_3+
+(A_2\a_2\beta_3+A_2\beta_2+B_2\beta_3-h_2)=0\cr
+A_3 x_2+B_3 x_3+C_3x_4-h_3=
+A_3 (\a_3x_3+\beta_3)+B_3 (\a_4x_4+\beta_4)+C_3x_4-h_3=\cr
+A_3\a_3(\a_4x_4+\beta_4)+A_3\beta_3+
+B_3\a_4x_4+B_3\beta_4+C_3x_4-h_3=\cr
+(A_3\a_3\a_4+B_3\a_4+C_3)x_4+
+(A_3\a_3\beta_4+A_3\beta_3+B_3\beta_4-h_3)=0\cr
+A_4x_3+B_4 x_4+C_4x_5-h_4=
+A_4(\a_4x_4+\beta_4)+B_4 
+(\a_5x_5+\beta_5)+C_4x_5-h_4=\cr
+A_4\a_4(\a_5x_5+\beta_5)+A_4\beta_4+
+B_4\a_5x_5+B_4\beta_5+C_4x_5-h_4=\cr
+(A_4\a_4\a_5+B_4\a_5+C_4)x_5+
+(A_4\a_4\beta_5+A_4\beta_4+B_4\beta_5-h_4)=0\cr
+A_5x_4+B_5 x_5+C_5x_6-h_5=
+A_5(\a_5x_5+\beta_5)+B_5(\a_6x_6+\beta_6)+C_5x_6-h_5 =\cr
+A_5\a_5(\a_6x_6+\beta_6)+A_5\beta_5+B_5\a_6x_6+
+B_5\beta_6+C_5x_6-h_6=\cr
+(A_5\a_5\a_6+B_5\a_6+C_5)x_5+
+(A_5\a_5\beta_6+A_5\beta_5+B_5\beta_6-h_6)=0\cr
+A_6x_5+B_6 x_6-h_6=
+A_6(\a_6x_6+\beta_6)+B_6 x_6-h_6=\cr
+(A_6\a_6+B_6)x_6+(A_6\beta_6-h_6)=0\cr
+}
+\tag{3}
+$$
+We come to solution if we suppose that
+           $$
+	 \cases
+	 {
+(B_1\a_2+C_1)=0\,,\quad 
+ (B_1\beta_2-h_1)=0\cr
+(A_2\a_2\a_3+B_2\a_3+C_2)=0\,\quad
+(A_2\a_2\beta_3+A_2\beta_2+B_2\beta_3-h_2)=0\cr
+(A_3\a_3\a_4+B_3\a_4+C_3)=0\,,\quad
+(A_3\a_3\beta_4+A_3\beta_3+B_3\beta_4-h_3)=0\cr
+(A_4\a_4\a_5+B_4\a_5+C_4)=0\,,\quad
+(A_4\a_4\beta_5+A_4\beta_4+B_4\beta_5-h_4)=0\cr
+(A_5\a_5\a_6+B_5\a_6+C_5)=0\,,\quad
+(A_5\a_5\beta_6+A_5\beta_5+B_5\beta_6-h_6)=0\cr
+%(A_6\a_6+B_6)=0\,,\quad (A_6\beta_6-h_6)=0\cr
+}
+\tag{4}
+$$
+here we removed  the last equation!
+      These equations give us that 
+      coefficients $\a_i,\beta_j$ in equation (2)
+      are equal to
+      $$
+       \cases
+       {
+	       \a_2=-{C_1\over B_1}\,,
+	       \quad 
+	      \beta_2={h_1\over B_1}\cr
+\a_3=-{C_2\over B_2+A_2\a_2}\,,
+	       \quad 
+\beta_3={h_2-A_2\beta_2\over B_2+A_2\a_2}\cr
+\a_4=-{C_3\over B_3+A_3\a_3}\,,
+	       \quad 
+\beta_4={h_3-A_3\beta_3\over B_3+A_3\a_3}\cr
+\a_5=-{C_4\over B_4+A_4\a_4}\,,
+	       \quad 
+\beta_5={h_4-A_4\beta_4\over B_4+A_4\a_4}\cr
+\a_6=-{C_5\over B_5+A_5\a_5}\,,
+	       \quad 
+\beta_6={h_5-A_5\beta_5\over B_5+A_5\a_5}\cr
+        }    
+       $$
+       Now recall last equation in (4) which calculates us $x_6$:
+         $$
+(A_6\a_6+B_6)x_6=(A_6\beta_6-h_6)\Rightarrow
+     x_6={a-6\beta_6-h_6\over B_6+A_6\a_6}
+	 $$
+   We know the last variable $x_6$ and all the coefficients
+   in (2).   Now step by step we return 
+   from 
+   $x_6$ to $x_5$ since $x_5=\a_6 x_6+\beta_6$, then
+   from 
+   $x_5$ to $x_4$ since $x_4=\a_5 x_5+\beta_l$, then
+   from 
+   $x_4$ to $x_3$ since $x_3=\a_4 x_4+\beta_4$, then
+   from 
+   $x_3$ to $x_2$ since $x_2=\a_3 x_3+\beta_3$, then
+   finally from 
+   $x_2$ to $x_1$ since $x_1=\a_2 x_2+\beta_2$.
+   
+   from <br><br>
+   $x_6$ to $x_5$ since $x_5=\a_6 x_6+\beta_6$, then<br><br>
+  Vot pochemu eto nazyvaetsia progonkoj!
+   Sure we could exclude in (3) another variable....<br><br>
+
+    </div>
+ </body>
+</html>

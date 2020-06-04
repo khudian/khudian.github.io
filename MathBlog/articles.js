@@ -1,5 +1,16 @@
 var links =
 [
+  ["2020/May20/23orbit/index.html"],
+  ["2020/May20/20progonka/index.html"],
+  ["2020/May20/19stereogr/index.html"],
+  ["2020/May20/16coulomb/index.html"],
+  ["2020/May20/15reduction/index.html"],
+  ["2020/May20/13grass/index.html"],
+  ["2020/May20/12grassm/index.html"],
+  ["2020/April20/17moduli/index.html"],
+  ["2020/March20/27hypothes/index.html"],
+  ["2020/March20/24identity/index.html"],
+  ["2020/March20/10orient/index.html"],
   ["2020/February20/20inductstat/index.html"],
   ["2020/February20/15theorem/index.html"],
   ["2020/February20/11algebroid/index.html"],

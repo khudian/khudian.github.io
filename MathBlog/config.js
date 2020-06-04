@@ -18,6 +18,7 @@ function configureMathJax()
       FF: "{\\cal F}",
       G: "\\Gamma",
       GG: "{\\cal G}",
+      J: "{\\bf J}",
       H: "{\\bf H}",
       K: "{\\bf K}",
       L: "{\\cal L}",
@@ -63,6 +64,7 @@ function configureMathJax()
       vare: "\\varepsilon",
       x: "{\\bf x}",
       y: "{\\bf y}",
+      z: "{\\bf z}",
       w: "\\omega"
     }    
   },

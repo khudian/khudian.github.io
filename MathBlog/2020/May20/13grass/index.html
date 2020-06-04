@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="13 May 2020">
+      <br><br>
+<br><br>
+<h3><b> One calculation</b></h3><br><br>
+
+We do the following exercise<br><br>
+Consider Grassmanian $G_1(N)$.   For arbitrary two points
+$P=[\ac]$ and $Q=[\b]$ of this projective space 
+according our studies (Look my MathBlog September 2018)
+distance between these points is equal to
+            $$
+	  d(P,Q)=\sqrt{
+		  {\rm Tr\,}
+		  \left[
+		1-
+		NM^+-
+	(MM^+)^{-1}
+            MN^+
+	(NN^+)^{-1}
+	\right]
+		  }=  
+	    $$
+	    $$
+\sqrt{
+	1-
+  {(\ac\cdot \b)^2\over \ac^2 \b^2}
+      }
+      =\sin\theta_{\ac,\b}\,.	    
+	    $$
+Now define metric  at the point $P=[\ac]$
+      $$
+  g_{ik}\delta x^i\delta x^k=\sin\theta_{\ac,\ac+\delta \x}   
+=\sqrt{
+	1-
+  {(\ac\cdot \left(\ac+\delta \x\right))^2\over \ac^2 
+  \left(\ac+\delta\x\right)^2}
+      }=
+      $$
+      $$
+=\sqrt{
+	1-
+  {\left[a_m \left(a^m+\delta x^m\right)\right]^2\over 
+  \ac^2 
+  \left(\ac^2+2a_m \delta x^m+\delta_{mn}
+  \delta x^m
+  \delta x^n
+  \right)^2}
+  }=
+      $$
+Performing infinitesimal calculations up to the order $2$ we come to
+         $$
+  g_{ik}\delta x^i\delta x^k=   
+    {1\over \ac^2}\left(
+    \delta_{ik}-{a_ia_m\over \ac^2}
+    \right)\delta x^i\delta x^k	 
+	$$
+This is Fubini Studi. 
+      $$
+     X^+ 
+      $$<br><br>
+
+    </div>
+ </body>
+</html>
