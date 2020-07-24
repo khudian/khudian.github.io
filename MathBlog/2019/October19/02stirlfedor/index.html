@@ -24,10 +24,25 @@
 <h3>Stirling+Fedoruk</h3>
 <i>I deduce standard Stirling formula using Ted
 Vornov's comments on Fedoruk paper</i><br><br>    
+
+<tt>See this file better written (with correction of mistakes) in the Blog for June 2020</tt><br><br>
    
     This is standard that  $
 n!=\int_0^\infty t^ne^{-t}dt=
-\int_0^\infty e^{-t+n\log t}dt=$
+\int_0^\infty e^{-t+n\log t}dt$.
+
+To use stationary phase method consider substitution
+  $t=n(1+x)$ (The point $t=-n$ is stationary point, 
+  we consider $t=n(1+x)$ not just $t=1+x$ to have 
+  'big coefficient' in a vicinity of  stationary point)
+
+      Thus we have:
+           $$
+	  N!=\int_0^\infty t^Ne^{-t}dt=
+\int_0^\infty e^{-t+N\log t}dt=
+\int_{-1}^\infty e^{-N(1+x)+
+N\log\left[N\left(1+x\right)\right] }Ndx=
+	   $$
        $$
 \int_{-1}^\infty e^{-n(1+x)+n\log (n(1+x))}ndx=
 e^{-n}n^{n+1}\int_{-1}^\infty e^{-n\left(
@@ -64,6 +79,8 @@ and
 {1\over \sqrt {2\pi n}}
 \int e^{-k^2\over 2n}e^{ikx}dkdx
 \int \varphi (p)e^{ipx}dp=
+$$
+$$
 {1\over \sqrt {2\pi n}}
 \int  e^{-k^2\over 2n}e^{ikx}\varphi (p)e^{ipx}dpdkdx=
      $$
@@ -96,7 +113,7 @@ e^{ikx_0}
 \int \tilde f(k)
 e^{ikx_0}
 \tilde u(k) dk=
-\int f\left({1\over i}{d\over dx}\right)
+f\left({1\over i}{d\over dx}\right)
       u(x)\big\vert_{x=0}\,.
      $$:
 </div>
