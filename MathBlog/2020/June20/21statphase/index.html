@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="21 June 2020">
+      <br><br>
+
+<h3><b> Stationary phase method</b></h3><br><br>
+
+I am thinking to understand the mystery of the hard part
+of atationary phase method (see Blog on 16 June)
+Again and again I return to the fact that the contibution
+to the integral
+   $$
+   \int e^{{i\over \hbar} S(x)}dx=\hbox {contribution of positive powers}
+    \tag{1}
+   $$
+   (see Blog on 16 June)<br><br>
+   I decided to do calculations again avoiding Fedoruc identity.<br><br>
+
+Calculate the integral
+     $$
+ \int e^{i{c\over 2}A^{ab}k_ak_b+ik_ax^a}d^nk.   
+     $$
+     Notice that
+     $$
+{c\over 2}A^{ab}(k_a+l_a)(k_b+l_b)+(k_a+l_a)x^a=
+  {c\over 2}A^{ab}k_ak_b+cA^{ab}k_al_b+
+  {c\over 2}A^{ab}l_al_b+k_ax^a+l_ax^a\,.
+     $$
+     Hence if we choose $l_a=-{1\over c}A_{ab}x^b$, then
+	      $$
+	{c\over 2}A^{ab}k'_ak'_b+k'_ax^a=      
+{c\over 2}A^{ab}k_ak_b+{c\over 2}A^{ab}l_al_b+l_ax^a=
+cA^{ab}k_ak_b-{1\over 2c}A_{ab}x^ax^b\,,
+         $$
+where $k'_a=k_a+l_a$,<br><br>
+hence
+            $$ 
+ \int e^{icA^{ab}k_ak_b+ik_ax^a}d^nk=
+e^{-{1\over 2c}A_{ab}x^ax^b}   
+ \int e^{cA^{ab}k_ak_b}d^nk=   
+     K_M\sqrt {\pi \det A\over c^n}
+e^{-{1\over 2c}A_{ab}x^ax^b},   
+      $$
+     where $\det A$ is determinan of the matrix with lower indices,
+     $K_M$ is complex number with modulus $1$
+     (related with signature....)
+   
+  To  apply thia formula to calculate (1), first prove lemma.
+   
+   Let $\varphi(x)$ be an arbitrary function, then
+         $$
+e^{ -iA_{ab}x^ax^b\over 2c}\varphi (x)dx=	 
+	 {1\over K_M}
+	 \sqrt {c^n\over \pi \det A}
+	\int e^{-i{c\over 2}A^{ab}k_ak_b+ik_ax^a}
+	\varphi(x)dk^n\,,   
+	 $$
+and       $$
+\int e^{ -iA_{ab}x^ax^b\over 2c}\varphi (x)dx=	 
+	 {1\over K_M}
+	 \sqrt {c^n\over \pi \det A}
+	\int e^{-i{c\over 2}A^{ab}k_ak_b+ik_ax^a}
+	\varphi(x)dk^n=   
+	 $$
+	 $$
+	 {1\over K_M}
+	 \sqrt {c^n\over \pi \det A}
+	\int e^{-i{c\over 2}A^{ab}k_ak_b}
+	     \underbrace
+	         {
+	     e^{ik_ax^a}
+	\varphi(x)dx^n	
+	    dk^n
+	    }_
+	    {\tilde \varphi(k) }\,.
+	   $$
+Since
+           $$
+\int f(k)\tilde \varphi (k)dk=
+\left[\int f(k)e^{ikx}\tilde \varphi (k)dk\right]
+\big\vert_{x=0}=
+                 \int      
+                \left[ 
+	  f\left(
+	  {1\over i} {d\over dx}
+	\right)
+	   e^{ikx}
+	   \tilde \varphi(k)
+	     \right]_{x=0}dk
+	   $$
+Thus we come to <br><br>
+<b> Lemma</b>   $$
+\int e^{ -iA_{ab}x^ax^b\over 2c}\varphi (x)dx=	 
+	 {1\over K_M}
+	 \sqrt {c^n\over \pi \det A}
+	 e^{
+		 -i{c\over 2}
+		  \left(
+		  A^{ik}
+	 {\p\over \p x^i}       
+	 {\p\over \p x^k}
+	     \right)}
+	\varphi(x)
+	\big\vert_{x=0}
+	   $$<br><br>
+	 
+   Apply this lemma to (1).
+   
+   Suppose expansion of $S(x)$ in stationary point is
+          $$
+	 S(x)=A_{ab}x^ax^b+S_+(x) 
+	  $$
+	(we suppose that it is at $x=0$ where stationary point is). 
+	Then due to lemma
+	  $$
+	 \int e^{{i\over \hbar} S(x)}dx=
+	 K_M {(\pi \hbar)^{n}\over \sqrt {\det A}
+	 e^\Delta S_+(x)\,.
+	   $$
+   
+    </div>
+ </body>
+</html>

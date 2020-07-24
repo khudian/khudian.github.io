@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="4 July 2020">
+      <br><br>
+
+<h3><b> Primer of canonical transformation</b></h3><br><br>
+   Let $H=H(p,q,t)$ be Hamiltonian, and let 
+$F=F(p,q,t)$ be generating function 
+of canonical transformation
+         $$
+  \pmatrix {p\cr q\cr}
+ \mapsto
+  \pmatrix {\rho\cr Q\cr}
+     \tag{1a}
+         $$
+such that
+        $$
+    pdq-Hdt=\rho dQ-hdt\,,
+      \tag{1b}
+        $$
+ i.e.
+        $$
+p={\p F(q,Q,t)\over \p q}\,,
+\rho={\p F(q,Q,t)\over \p Q}\,,
+    \tag{1c}
+        $$
+ and new Hamiltonian $h(\rho,Q,t)$
+         $$
+    h(\rho,Q,t)=H(p,q,t)+{ F(q,Q,t)\over \p t}\,.
+    \tag{1d}
+         $$
+This is <tt> extended</tt> canonical transformation:
+           $$
+	   dp_i\wedge dq_i-dE\wedge dt=
+	   d\rho_i\wedge dQ_i-dE'\wedge dt\,.
+	   \tag{2a}
+	   $$
+    Check straightforwardoy 
+    that this canonical transformation  transforms solutions
+    of equation
+          $$
+	  \dot p={\p H(p,q,t)\over \p p}\,\quad
+	  \dot q=-{\p H(p,q,t)\over \p q}\,.
+	  \tag{2b}
+	  $$
+to the solutions of equation
+          $$
+	  \dot \rho={\p h(\rho,Q,t)\over \p \rho}\,,
+	  \tag{2c}
+	  $$
+	  and
+	  $$
+	  \dot q=-{\p h(\rho,Q,t)\over \p Q}\,.
+	  \tag{2d}
+	  $$<br><br>
+	Check (2c).  
+First consider example
+<br><br><br><br>
+<b> Example</b>
+ $$
+ H={p^2\over 2m}+mgq\,,     F=qQt\,,
+ \tag{3a}
+ $$
+ we have  that
+      $$
+     \dot q={p\over m}\,,\dot p=-mg
+     \tag{3b}
+      $$
+  and relation between new coordinates $(\rho,Q)$ and 
+  the old $(p,q)$ is the following:       
+     $$
+    \cases
+    {
+p=Qt\cr
+\rho=-qt\cr
+    }\,, {\rm i.e.}\,\,
+    \cases
+    {
+p=Qt\cr
+q=-{\rho\over t}\cr
+    }\,,\,\,
+    \cases
+    {
+\rho=-qt\cr
+Q={p\over t}\cr
+    }\,,\, {\rm and}\,\,
+    h={p^2\over 2m}+mgq+qQ=
+    {Q^2t^2\over 2m}-mg{\rho\over t}-{\rho Q\over t}\,\,,
+    \tag{3c}
+    $$
+Equation of motion for coordinates $(\rho,Q)$ 
+according equations (3c) is
+      $$
+ \dot\rho={d\over dt}
+ \left(-qt\right)=-\dot q t-q=
+ -t{\p H(p,q,t)\over \p p}-q=
+ -{pt\over m}-q=-{Qt^2\over m}+{\rho\over t}\,,
+      $$
+      $$
+  \dot Q={d\over dt}
+  \left(p\over t\right)={{\dot p}\over t}-{p\over t^2}=
+  {-{\p H(p,q)\over \p q}\over t}-{Q\over t}=
+  -{mq\over t}-{Q\over t}\,.
+      $$
+      One can see that they coincide with 
+Hamiltonian equations of motion:
+           $$
+	  \dot\rho=-{\p h(\rho,Q,t)\over \p Q}=
+ -{Qt^2\over m}+{\rho \over t}\,\quad\,,
+	  \dot Q={\p h(\rho,Q,t)\over \p \rho}=
+ -{mg\over t}-{Q\over t}\,\,,
+	   $$<br><br>
+	   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%<br><br>
+Now return to general case<br><br>
+<br><br>
+Check in general case that 
+for new momenta and coordinates $(\rho,Q)$
+canonical Hamiltonian  equations
+in terms of new coordinates $(\rho,Q)$ and new 
+Hamiltonian $h(\rho,Q,t)$
+coincide with euqations in terms of coordinates
+ $(p,q)$.<br><br>
+ First consider coordinates $\rho$:<br><br>
+In coordinates $(p,q)$,
+       $$
+       \dot\rho={d\over dt}\left(\rho(p,q,t)\right)=
+       {\p \rho(p,q,t)\over \p p}\dot p
+       +
+       {\p \rho(p,q,t)\over \p q}\dot q
+       +
+   {\p \rho(p,q,t)\over \p t}=
+   $$
+   $$
+       {\p \rho(p,q,t)\over \p p}
+       \left(-{\p H(p,q)\over \p q}\right)
+       +
+       {\p \rho(p,q,t)\over \p q}
+       \left({\p H(p,q)\over \p p}\right)
+       +
+   {\p \rho(p,q,t)\over \p t}\,.
+         \tag{5a}
+       $$
+       On the other hand in coordinates $(\rho,Q)$
+        $$
+\dot\rho=-{\p h(\rho,Q,t)\over \p Q}
+            \tag{5b}
+	$$
+It has to be proved that (5a) coincides with (5b).
+   
+   
+   In the same way
+    for $Q$:<br><br>
+In coordinates $(p,q)$,
+       $$
+       \dot Q={d\over dt}\left(Q(p,q,t)\right)=
+       {\p Q(p,q,t)\over \p p}\dot p
+       +
+       {\p Q(p,q,t)\over \p q}\dot q
+       +
+   {\p Q(p,q,t)\over \p t}=
+   $$
+   $$
+       {\p Q(p,q,t)\over \p p}
+       \left(-{\p H(p,q)\over \p q}\right)
+       +
+       {\p Q(p,q,t)\over \p q}
+       \left({\p H(p,q)\over \p p}\right)
+       +
+   {\p Q(p,q,t)\over \p t}\,.
+         \tag{5c}
+       $$
+      And on the other hand in coordinates $(\rho,Q)$
+        $$
+\dot Q={\p h(\rho,Q)\over \p \rho}
+            \tag{5d}
+	$$
+and it  has to be proved that (5c) coincides with (5d).
+ 
+Here as usual
+    $$
+    h\left(\rho,Q,t\right)= 
+    H\left(p\left(\rho,Q,t\right),
+    q\left(\rho,Q\right)\right)+
+    F_t\left(q\left(\rho,Q,t\right),
+    Q,t\right)\,. 
+     $$
+So, check that (5a) coinsides with (5b)
+and (5c) coincides with (5d).<br><br>
+   We have for (5b)
+     $$
+   \dot \rho_m=
+   -{\p h(\rho,Q,t)\over \p Q^m}
+   =-{\p\over \p Q^m}
+    \left[H(p,q)+F_t(q,Q)	    \right]=
+    $$
+    $$
+   -{\p\over \p Q^m}
+    \left[H\left(p\left(\rho,Q,t\right),
+    q\left(\rho,Q,t\right)
+    \right)+F_t(q(\rho,Q,t),Q,t)	    \right]=
+     $$
+     $$
+   -H_{p_i}{\p p_i\over \p Q^m}
+   -H_{q^i}{\p q^i\over \p Q^m}-
+{\p^2 F\over \p t \p Q^m}-
+{\p^2 F\over \p t \p q^i}{\p q^i(\rho,Q)\over \p Q^m}
+\tag{5b'}
+     $$
+Compare this with (5a). Recall that in (5a)	  
+  $$
+       \dot\rho_m=
+      H_{p_i} {\p \rho_m(p,q,t)\over \p q^i}
+       -H_{q^i}{\p \rho_m(p,q,t)\over \p p_i}
+       +
+   {\p \rho_m(p,q,t)\over \p t}\,.
+         \tag{5a'}
+       $$
+  In the same way  we have for (5d)
+     $$
+   \dot Q^m=
+   {\p h(\rho,Q,t)\over \p \rho_m}
+   ={\p\over \p \rho_m}
+    \left[H(p,q)+F_t(q,Q)	    \right]=
+    $$
+    $$
+   {\p\over \p \rho_m}
+    \left[H\left(p\left(\rho,Q,t\right),
+    q\left(\rho,Q,t\right)
+    \right)+F_t(q(\rho,Q,t),Q,t)	    \right]=
+     $$
+     $$
+   H_{p_i}{\p p_i\over \p \rho_m}
+   +H_{q^i}{\p q^i\over \p \rho_m}+
+{\p F\over \p q^i}{\p q^i(\rho,Q,t)\over \p \rho_m}
+\tag{5d'}
+     $$
+Compare this with (5c). Recall that in (5c)	  
+  $$
+       \dot Q^m=
+      H_{p_i} {\p Q^m(p,q,t)\over \p q^i}
+       -H_{q^i}{\p Q^m(p,q,t)\over \p p_i}
+       +
+   {\p Q^m(p,q,t)\over \p t}\,.
+         \tag{5c'}
+       $$<br><br>
+
+<h3>${\S} $ $2$ Proof of invariance</h3><br><br>
+
+ Comparing equations (5a) and (5b),
+ we see that
+        $$
+{\p \rho_m(p,q,t)\over \p p_i}=
+{\p q^i(\rho,Q,t)\over \p Q^m}\,,
+{\p \rho_m(p,q,t)\over \p q^i}=
+-{\p p_i(\rho,Q,t)\over \p Q^m}\,,
+$$
+and
+    $$
+    {\p\rho_m(p,q,t)\over \p t}=
+    -{\p^2 F(q,Q,t)\over \p t  \p Q^m}
+    -{\p^2 F(q,Q,t)\over \p t  \p q^i}
+    {\p q^i(\rho,Q,t)\over   \p Q^m}
+    $$
+    In the same way 
+ Comparing equations (5c) and (5d) we see that we have to prove 
+ that 
+$$
+{\p Q^m(p,q,t)\over \p q^i}={\p p_i(\rho,Q,t)\over \p \rho_m}\,,
+{\p Q^m(p,q,t)\over \p p_i}=
+-{\p q^i(\rho,Q,t)\over \p \rho_m}\,.
+\tag{2.1}
+	$$<br><br>
+
+The following matrices are engaged:<br><br>
+           $$
+  A=\pmatrix
+   { {\p \over \p p_i}\rho_m\quad   {\p \over \p q^j}\rho_m 
+        \cr
+{\p \over \p p_i}Q^m \quad  {\p \over \p q^j}Q^m 
+        \cr
+   }
+   =\pmatrix
+   { {\p \rho_m(p,q,t)\over \p p_i}\quad   
+     {\p \rho_m(p,q,t)\over \p q^j} 
+        \cr
+{\p Q^m(p,q,t)\over \p p_i} \quad  
+{\p Q^m(p,q,t)\over \p q^j} 
+        \cr
+   }
+        $$
+	and
+    $$
+  B=\pmatrix
+   { {\p \over \p \rho_m} p_i\quad   {\p \over \p Q^n}p_i 
+        \cr
+{\p \over \p \rho_m} q^j \quad  {\p \over \p Q^n}q^j 
+        \cr
+   }
+  =
+  \pmatrix
+   { {\p p_i(\rho,Q,t)\over \p \rho_m} \quad   
+   {  \p p_i(\rho,Q,t)\over \p Q^n} 
+        \cr
+{\p q^i(\rho,Q)\over \p \rho_m} \quad  
+{\p q^j(\rho,Q)\over \p Q^n} 
+        \cr
+   }
+   \tag{2.2}
+        $$<br><br>
+We have to prove the relations (2.1) for matrices (2.2).
+
+    </div>
+ </body>
+</html>

@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="16 June 2020">
+      <br><br>
+
+<h3><b> Stirling+Fedoruk</b></h3><br><br>
+<i> Famous Stirling formula is a good problem which explains 
+staionary phase method including its non-trivial part.
+I deduce standard Stirling formula using Ted
+Voronov's comments on Fedoruk paper</i>    <br><br>
+<tt> I returned to this text again in June 2020...(see another version
+in math Blog on October 2019)</tt><br><br>
+
+Method of stationary phase...    Almost everybody knows that
+it is about how to calculate the leading term in
+in the integral
+       $$
+      \int\exp {i S(x)\over \hbar}u(x)dx  
+       $$
+if $\hbar \to 0$.   If $x_0$ is  unique
+stationary point of function $S$,
+         $$
+	S(x)=S(x_0)+A_{ab}(x^a-x_0^a)(x^b-x^b_0)+S_+(x) 
+	 $$
+and Hessian at this point is not degenerate,	 then
+              $$
+      \int\exp {i S(x)\over \hbar}u(x)dx = 
+	   C\exp {i S(x_0)\over \hbar}
+	   {(\pi \hbar)^{n\over 2}\over \sqrt {\det A}}
+	   \left(1+O(\hbar)\right)\,.
+	   \tag{01}
+	       $$
+People say that if $\hbar\to 0$ then
+the main contibution to the integral is
+given by vicinity of the stationary point, and this is just 
+gaussian integral. 
+	       
+    What about other terms of expansion?<br><br>
+    There is deep and powerfull statement:
+    All other terms are polynomial in $\hbar$!
+    Namely
+      $$
+      \int \exp {iS(x)\over \hbar}u(x)dx=
+	   C\exp {i S(x_0)\over \hbar}
+	   {(\pi \hbar)^{n\over 2}\over \sqrt {\det A}}
+	     $$
+	     $$
+	     \underbrace
+	      {
+   \left(
+ \exp \left(-{\hbar\over 2i}
+A^{ab}
+{\p \over \p x^a}
+{\p \over \p x^b}
+\right)
+\right)
+\left(\exp {iS_+(x)\over \hbar}
+\right)
+      }_{I}
+ \tag{02}
+      $$
+   <i> whereas the expression $I$ is an expansion
+   over  positive powers of $\hbar$.</i>, i.e. 
+               $$
+	       \hbox
+{Only positive powers of $\hbar$ have imput in $O(\hbar)$}  
+        \tag{03}
+             $$
+ <br><br>
+On one hand everybody knows the statement (01),
+on the other way the statement (02) is not simple, and it is
+highly non-trivial.<br><br>
+    The best way to see this 
+    statement it is to study famous Stirling formula.<br><br>
+    Recall that Striling formula says that
+         $$
+	N!=\left(N\over e\right)^N\sqrt {2\pi N}
+	\left(1+{1\over 12 N}+{1\over 288 N^2}+\dots\right)
+	\tag{\hbox{Stirling}}
+	   $$
+The "easy part" of Stirling formula, i.e. the statement
+         $$
+	N!\approx \left(N\over e\right)^N\sqrt {2\pi N}\,,\quad
+	N!= \left(N\over e\right)^N\sqrt {2\pi N}
+	\left(1+O\left(1\over N\right)\right)\,,
+	   $$
+is related with (01). Equation ({\rm Stirling})
+is the 'difficult part'.
+of Stirling formula. In particular studying this equation
+it is impossible to avoid the question: why in formal series
+appear only negative powers of $N$ (compare with (02,03)).<br><br>
+
+    <br><br><br><br><br>
+   <h3>Calculations of Stirling formula</h3> 
+    
+    This is standard that  
+        $$
+N!=\int_0^\infty t^Ne^{-t}dt=
+\int_0^\infty e^{-t+N\log t}dt\,.
+       $$
+Calculate it.<br><br>
+To use stationary phase method consider substitution
+  $t=N(1+x)$ (The point $t=-N$ is stationary point, 
+  we consider $t=N(1+x)$ not just $t=1+x$ to have 
+  'big coefficient' in a vicinity of  stationary point)<br><br>
+      Thus we have:
+           $$
+	  N!=\int_0^\infty t^Ne^{-t}dt=
+\int_0^\infty e^{-t+N\log t}dt=
+\int_{-1}^\infty e^{-N(1+x)+
+N\log\left[N\left(1+x\right)\right] }Ndx=
+	   $$
+       $$
+\int_{-1}^\infty e^{-N(1+x)+N\log (N(1+x))}Ndx=
+e^{-N}N^{N+1}\int_{-1}^\infty e^{N\left(
+\log(1+x)-x\right)}dx=
+         $$
+$$
+N\left(N\over e\right)^N\int_{-1}^\infty e^{-N
+   \left(
+  {x^2\over 2 }
+- {x^3\over 3 }
+ +{x^4\over 4 }+\dots
+   \right)}dx=
+N\left(N\over e\right)^N
+\int e^{-N{x^2\over 2}}
+     e^{
+      N
+     \left(
+ {x^3\over 3 }
+ -{x^4\over 4 }+\dots
+     \right)
+ }dx\,.
+ \tag{2}
+      $$<br><br>
+To go further use identity:
+      $$
+  \sqrt {2\pi N}e^{-Nx^2\over 2}=
+\int e^{-k^2\over 2N}e^{ikx}dk
+\tag{***}
+       $$ 
+ The meaning  of his identity see later
+ (see equation <tt> Fedoruk identity)</tt>)<br><br>
+This identity implies that
+     $$
+\int e^{-n{x^2\over 2}}
+      \varphi(x)dx=
+{1\over \sqrt {2\pi n}}
+\int e^{-k^2\over 2n}e^{ikx}dkdx
+\int \varphi (p)e^{ipx}dp=
+   $$
+   $$
+{1\over \sqrt {2\pi n}}
+\int  e^{-k^2\over 2n}e^{ikx}\varphi (p)e^{ipx}dpdkdx=
+     $$
+        $$  
+{2\pi \over \sqrt {2\pi n}}
+\int e^{-k^2\over 2n}\delta (k+p)\varphi (p)dpdk
+=\int e^{-k^2\over 2n}\varphi (k)dk=
+{2\pi \over \sqrt {2\pi n}}
+ e^{-{1\over 2n}\left({d\over
+dx}\right)^2}\varphi(x)\big\vert_{x=0}
+        $$
+Identity (***) allows us to rewrite (2)
+in terms of differential operator.
+[In fact doing this trick we formally we used due to Fedoruk
+the following identity
+      $$
+\int f(x_0-x)u(x)dx=
+\int \tilde f(k)
+e^{ik(x_0-x)}
+\tilde u(p)e^{ipx}dx dk dp=
+  $$
+  $$
+\int \tilde f(k)
+e^{ikx_0}
+\tilde u(p)e^{i(p-k)x}dx dk dp
+\int \tilde f(k)
+e^{ikx_0}
+\tilde u(p)\delta(p-k) dk dp=
+  $$
+  $$
+\int \tilde f(k)
+e^{ikx_0}
+\tilde u(k) dk=
+ f\left({1\over i}{d\over dx}\right)
+      u(x)\big\vert_{x=0}\,.
+      \tag{\hbox {Fedoruc identity}}
+     $$
+]<br><br>
+Namely apply identity (***)  to equation (2):
+ $$
+N!=
+\left(N\over e\right)^N\sqrt {2\pi N}
+\int_{-1}^\infty e^{-N
+   \left(
+  {x^2\over 2 }
+- {x^3\over 3 }
+ +{x^4\over 4 }+\dots
+   \right)}dx=
+   $$
+   $$
+\left(N\over e\right)^N\sqrt {2\pi N}
+\int e^{-N{x^2\over 2}}
+     e^{
+      N
+     \left(
+ {x^3\over 3 }
+ -{x^4\over 4 }+\dots
+     \right)
+ }dx=
+     $$
+     $$
+\left(N\over e\right)^N\sqrt {2\pi N}
+\int e^{-N{x^2\over 2}}
+\underbrace
+  {
+     e^{
+      N
+     \left(
+ {x^3\over 3 }
+ -{x^4\over 4 }+\dots
+     \right)
+ }
+ }_{\hbox {terms of order $\geq 3$ in $x$}}
+ dx=
+  $$
+  $$
+\left(N\over e\right)^N\sqrt {2\pi N}
+\left\{
+ e^{-{1\over 2N}\left({1\over i}
+ {d\over dx}\right)^2}
+    \left[
+     e^{
+      N
+     \left(
+ {x^3\over 3 }
+ -{x^4\over 4 }+\dots
+     \right)
+ } 
+\right]
+\right\}_{x=0}\,.
+     $$<br><br>
+... and here the mystery began: since the expression
+$    \left[
+     e^{
+      N
+     \left(
+ {x^3\over 3 }
+ -{x^4\over 4 }+\dots
+     \right)
+ } 
+\right]$ possesses only the terms of the order $\geq 3$
+in exponent the last integral possess only terms
+which are proportional to $1\over N $:
+         $$
+	 {1\over N}\approx \hbar
+	 $$
+    $$
+\int e^{-{1\over N}\left({d\over dx}\right)^2}
+    \left[
+     e^{
+      N
+     \left(
+ {x^3\over 3 }
+ -{x^4\over 4 }+\dots
+     \right)
+ } 
+\right]dx=
+1+{1\over 12 N}+{1\over 288 N^2}+\dots
+    $$
+Try to show it. We have 
+  $$
+  N!=
+\left(N\over e\right)^N\sqrt {2\pi N}
+\left(1+O\left({1\over N}\right)\right)\,,
+   $$
+   where<br><br>
+ $$
+1+O\left({1\over N}\right)=
+\left\{
+ e^{-{1\over 2N}
+  \left(
+   {1\over i}
+{d\over dx}
+    \right)^2
+      }
+    \left[
+     e^{
+      N
+     \left(
+- {x^3\over 6 }
+ +{x^4\over 24 }+\dots
+     \right)
+ } 
+\right]
+   \right\}_{x=0}=
+     $$
+    $$
+\left[1
+       -
+      {1\over 2N}
+  \left(
+    {1\over i}
+{d\over dx}
+     \right)^2
+     +
+  {1\over 8N^2}
+  \left(
+    {1\over i}
+{d\over dx}
+     \right)^4
+   -
+  {1\over 48N^3}
+  \left(
+    {1\over i}
+{d\over dx}
+     \right)^6
+         +\dots
+\right]
+    $$
+      $$
+  \left[
+   1+
+ N\left(
+    {x^3\over 3}
+     -
+   {x^4\over 4}
+    +\dots
+    \right)
+    +
+     {1\over 2}N^2
+ \left(
+    {x^3\over 3}
+     -
+   {x^4\over 4}
+      +\dots
+    \right)^2
+      +\dots
+   \right]=
+       $$
+        $$
+\left[1
+       +
+      {1\over 2n}
+    {d^2\over dx^2}
+     +
+  {1\over 8n^2}
+    {d^4\over dx^4}
+        +
+  {1\over 48n^3}
+   {d^6\over dx^6}
+         +\dots
+\right]\,\,
+     $$
+       $$
+  \left[
+   1+
+ n\left(
+    {x^3\over 3}
+     -
+   {x^4\over 4}
+     +\dots
+    \right)
+    +
+     {1\over 2}n^2
+ \left(
+    {x^3\over 3}
+     -
+   {x^4\over 4}
+      +\dots
+    \right)^2
+      +\dots
+   \right]
+      =
+      \tag{\hbox {}}
+       $$
+       Calculate in detail 
+contribution given by this expression.<br><br>
+First show that all terms which give contibution 
+to this expression have negative degree by $N$.
+  
+  Consider  the action of the terms
+   $\left[
+  {1\over 2n}\left({1\over i}{d\over dx}\right)^2
+    \right]^\lambda$
+which act on the monoms
+     $$
+     F_{p_1}F_{p_2}\dots F_{p_r},
+     $$
+ where every $F_{p_k}$ is a monom of the order $p_k$,
+  ($p_i\geq 3$)  which belong to  the term
+     $$
+   n\left(
+   {x^3\over 3}
+    -
+   {x^4\over 4}
+     +
+  {x^5\over 5}
+    -
+   {x^6\over 6}
+    +\dots
+   \right)\,.
+    $$
+The condition that the action
+of the operator 
+   $\left[
+  {1\over 2n}\left({1\over i}{d\over dx}\right)^2
+    \right]^\lambda$
+on the monom 
+$F_{p_1}F_{p_2}\dots F_{p_r}$,
+is not zero is the following:
+    $$
+   2\lambda=p_1+p_2+\dots+p_r\,,
+     $$
+and the power of $n$ corresponding to this monom is
+equal to 
+      $$
+\left({1\over n}\right)^\lambda \cdot 
+   n^r=n^{r-\lambda}\,.
+       $$
+Use this formula.<br><br>
+First of all note that all $p_i\geq 3$, hence
+ $2\lambda\geq 3r$, hence
+ $$
+r-\lambda\leq r-{3r\over 2}< 0\,.
+ $$
+Thus in the case of Stirling formula we proved hard part of
+stationary phase method, showing that
+ only negative powers of $N$
+ (positive poweers of $\hbar\approx {1\over N}$)
+ contirbute to the integral.<br><br>
+
+<br><br><br><br><br>
+
+Now calculate the contribution of power ${1\over n^k}$
+for $k=1,2,3\dots$.<br><br>
+We have that 
+      $$
+   \cases
+{
+2\lambda=p_1+\dots+p_r\cr
+r-\lambda=-k\cr 
+}\,, \quad  (p_i\geq 3)\,.
+      $$
+Hence
+      $$
+   \cases
+      {
+2\lambda=p_1+\dots+p_r\geq 3r\cr
+\lambda=r+k\cr
+     }\Rightarrow 2r+2k\geq 3r, \,\,{\rm i.e.}\,\,
+   r\leq 2k
+      $$
+Thus we see that
+ <tt> contribution to terms of order ${1\over n^k}$
+is given by  action of
+  $\exp{-{1\over n}\left({1\over i}{d\over dx}\right)^2}$
+on terms which possess not more than $2k$ monoms</tt>
+ <br><br>
+<br><br><br><br>
+Now calculate contribution to the term $1\over N$. <br><br>
+
+I  Calculate contribution to ${1\over n}$, $k=1$:
+      $$
+   \cases
+      {
+2\lambda=p_1+\dots+p_r\geq 3r\cr
+\lambda=r+1\cr
+     }\Rightarrow r=1,2\,.
+      $$
+   $$
+a) r=1\,,
+   \cases
+      {
+2\lambda=p_1\cr
+\lambda=r+1=2\cr
+     }\,,p_1=4\,,\quad 
+b) r=2\,,  \cases
+      {
+2\lambda=p_1+p_2\geq 3r\cr
+\lambda=r+1=3\cr
+     }\,,p_1=p_2=3,  
+   $$
+According to these calculations and to
+equation (contribution),
+the contibution is equal to:
+       $$
+     {1\over 8N^3}
+     \left({1\over i}{d\over dx}\right)^4
+     \left[n\left(-{x^4\over 4}\right)\right]
+     +
+     \left(-{1\over 48 N^3}\right)
+     \left({1\over i}{d\over dx}\right)^6
+     \left[
+ {1\over 2}N^2\left(x^2\over 3\right)^2
+   \right]={1\over 12 N}
+       $$
+Thus
+      $$
+    N!=\left(N\over e\right)^N\sqrt {2\pi N}
+    \left(1+{1\over 12 N}
+        +O\left(1\over N^2\right)\right)\,.
+      $$
+
+    </div>
+ </body>
+</html>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="8 July 2020">
+      <br><br>
+<br><br>
+<h3><b> On extended canonical transformaions</b></h3><br><br>
+<tt> This is continuation of blog on 04 July.</tt><br><br>
+Let $H=H(p,q,t)$ be Hamiltonian; a function 
+$F=F(Q,q,t)$ a function (which obeys
+some conditions) generates extended canonical transformation 
+    $$
+   \pmatrix
+   {p\cr q\cr}\mapsto 
+   \pmatrix {\rho\cr Q\cr}
+=
+   \pmatrix {\rho(p,q,t)\cr Q(\rho,q,t)\cr}\,,
+   \quad
+    H(p,q,t)\mapsto h(\rho, Q,t)
+   \tag{1a}
+    $$
+defined  by condition
+   $$
+  pdq-Hdt=\rho dQ-hdt+dF\,, 
+   \tag{1b}
+   $$
+i.e.
+        $$
+\cases
+{
+\rho_m=g_m(q,Q,t)=
+-{\p F(q,Q,t)\over \p Q^m}\cr	
+p_i=f_i(q,Q,t)=
+{\p F(q,Q,t)\over \p q^i}\cr	
+h=H+
+{\p F(q,Q,t)\over \p t}\cr	
+}
+\tag{1c}
+	$$<br><br>
+Here we have to be (as usual) carefull with partial derivatives.
+E.g. first two equations in equation  (1c) 
+	$$
+\cases
+{
+	\rho_m=g_m(q,Q,t)=
+-{\p F(q,Q,t)\over \p Q^m}\qquad (*)\cr	
+p_i=f_i(q,Q,t)=
+{\p F(q,Q,t)\over \p q^i}\qquad (**)\cr		
+}
+\tag{1d}
+	$$
+define extended canonical transformation
+$$
+\pmatrix
+   {p\cr q\cr}\mapsto 
+   \pmatrix {\rho\cr Q\cr}
+=
+   \pmatrix {\rho(p,q,t)\cr Q(\rho,q,t)\cr}\,,
+   \tag{2a}
+$$
+and its inverse. Namely equation (**) in (1d)
+defines   $Q^m=Q^m(p,q,t)$, then putting it in equation
+(*) of (1d) we define
+          $\rho_m=\rho_m(p,q,t)=g_m(q,Q,t)\big\vert_{Q=Q(p,q,t)}$;
+     thus we come to extended canonical transformation
+     $$\cases{
+	 \rho_m=\rho_m(p,q,t)\cr
+	Q^m=Q^m(p,q,t
+	 )
+     }\,.
+        \tag{2b}
+     $$
+     Analogously  equation (*) in (1d)
+defines   $q^m=q^m(\rho,Q,t)$, then putting it in equation
+(*) of (1d) we define
+          $p_i=p_i(p,q,t)=
+	  f_m(q,Q,t)\big\vert_{q=q(\rho,Q,t)}$;
+     thus we come to inverse extended canonical transformation
+                 $$\cases{
+	 p_m=p_m(\rho, Q,t)\cr
+	q^m=q^m(\rho,Q,t)
+             }\,.
+     \tag{2c}
+     $$
+Our aim is to show straightforwardly that equation of motions
+remain the same if we perform canonical transformations,
+i.e.
+       $$
+     \dot f =
+     \{H,f\}_{I} 
+     =
+     \{h,f\}_{II}\,,
+      \tag{3a} 
+       $$
+where $H=H(p,q,t)$ is initial Hamiltonian,
+$h$ is the new Hamiltonian (see 1(c)), and 
+$\{f,g\}_{I}$ is canonical Poisson bracket with respect to
+initial coordinates $(p_i,q^j)$:
+             $$
+	  \{f,g\}_{I}=
+	  {\p f(p,q)\over \p p_i}   
+	  {\p g(p,q)\over \p q^i}   
+	  -
+	  {\p f(p,q)\over \p q^i}   
+	  {\p g(p,q)\over \p p_i}\,,   
+	  \tag{3b}
+	     $$
+and $\{f,g\}_{II}$ is canonical Poisson bracket with respect to
+new coordinates $(\rho_m,Q^n)$:
+             $$
+	  \{f,g\}_{II}=
+	  {\p f(\rho,Q)\over \p \rho_i}   
+	  {\p g(\rho,Q)\over \p Q^i}   
+	  -
+	  {\p f(\rho,Q)\over \p Q^i}   
+	  {\p g(\rho,Q)\over \p \rho_i}\,,
+	      \tag{3c}
+	     $$<br><br>
+<b> Lemma</b>
+Consider matrices of Jacobians for 
+extended canonical transformation
+  (2b) and 
+and for inverse extended canonical transformation
+ (2c)
+          $$
+  A
+    =\pmatrix
+   { {\p \rho_m(p,q,t)\over \p p_i}\quad   
+     {\p \rho_m(p,q,t)\over \p q^j} 
+        \cr
+{\p Q^m(p,q,t)\over \p p_i} \quad  
+{\p Q^m(p,q,t)\over \p q^j} 
+        \cr
+   }\,,\quad
+  B=
+  \pmatrix
+   { {\p p_i(\rho,Q,t)\over \p \rho_m} \quad   
+   {  \p p_i(\rho,Q,t)\over \p Q^n} 
+        \cr
+{\p q^i(\rho,Q)\over \p \rho_m} \quad  
+{\p q^j(\rho,Q)\over \p Q^n} 
+        \cr
+   }
+   \tag{4a}
+        $$
+then
+          $$
+{\p \rho_m\over \p p_i}=
+{\p q^i\over \p Q^m}\,,\quad
+{\p \rho_m\over \p q^i}
+=-{\p p_i\over \p Q^m}\,,
+     \quad
+     {\p Q^m\over \p p_j}= 
+   {  \p q^j\over \p \rho_m}\,,\quad 
+{\p Q^m\over \p q^i}= 
+{\p p_i\over \p \rho_m}\,. 
+ \tag{4b}
+$$<br><br>
+<b> Technical Remark I</b><br><br>
+To avoid confusions in calculation we have to choose rows
+and columns in matrices.   One way to fix notations is the following:
+ 
+ <tt> for every partial derivative ${\p \Pi_a\over \p S_b}$</tt>
+ we choose indices in a way such that 
+ indices  in numerator are ROW indices, and 
+ index   $b$ in denumerator are COLUMN  indices.  In this case equation
+ (4b) reads
+          $$
+	{\p \rho\over \p p}=
+	\left(\p q\over \p Q\right)^T\,,
+{\p \rho\over \p q}
+=-\left({\p p\over \p Q}\right)^T\,,
+     {\p Q\over \p p}= 
+ -\left({  \p q\over \p \rho}\right)^T\,, 
+{\p Q\over \p q}= 
+\left({\p p\over \p \rho}\right)\,. 	  
+\tag{4c}
+$$
+i.e.
+         $$
+A_{11}=B^T_{22}\,, A_{12}=-B^T_{12}\,,
+ A_{21}=-B^T_{21}\,, A_{22}=B^T_{11}\,.
+ \tag{4d}
+	 $$
+Notice also that  for $f_i={\p F(q,Q,t)\over \p q^i}$
+and for $g_m=-{\p F(q,Q,t)\over \p Q^m}$<br><br>
+    $$
+    \left(\p f\over \p Q\right)^T=
+    -{\p g\over \p q}
+    \tag{5}
+    $$<br><br>
+<br><br>
+Proof of lemma follows immediately from these relations.<br><br>
+E.g.
+        $$
+A_{11}={\p \rho\over \p p}={\p g(q,Q)\over \p Q}{\p Q\over \p p}\,,
+\, {\rm where}\, {\p f(q,Q)\over \p Q}{\p Q\over \p p}\,
+\tag{6a}
+	$$
+hence
+     $$
+   A_{11}=  {\p g(q,Q)\over \p Q}\left({\p f(q,Q)\over \p Q}\right)^{-1}
+    \tag{6b}
+    $$
+  and
+      $$
+      B_{11}={\p q\over \p Q}
+        \tag{6c}
+       $$
+       with
+       $$
+       0={\p \rho\over \p Q}=0={\p g\over \p Q}+{\p g\over \p q}
+       {\p q\over \p Q}\Rightarrow
+       B_{11}={\p q\over \p Q}=
+       -\left({\p g\over \p q}\right)^{-1}
+            {\p g\over \p Q}
+	    \tag{6d}
+       $$
+Comparing $A_{11}$ with $B_{11}$ using (5)
+we see that $A_{11}=B_{11}^T$.<br><br>
+
+Analogously one can prove all relations in (4b).<br><br>
+
+Use lemma to prove the invarince (3).  It suffices to show that (3)
+is obeyed for $f=\rho_m$ and $f=Q^n$.<br><br>
+If  $f=\rho_m$ then using (4) we have
+   $$
+{d\over dt}\rho_m =\{H,\rho_m\}+{\p \rho_m(p,q,t)\over \p t}=
+  {\p H\over \p p_i} 
+  {\p \rho_m\over \p q^i}- 
+  {\p H\over \p q^i} 
+  {\p \rho_m\over \p p_i}+{\p \rho_m(p,q,t)\over \p t}= 
+   $$
+   $$
+  -{\p H\over \p p_i} 
+  {\p p_i\over \p Q^m}- 
+  {\p H\over \p q^i} 
+  {\p q^i\over \p Q^m}+{\p \rho_m(p,q,t)\over \p t} 
+      \tag{7a}  
+      $$
+    On the other hand in new coordinates we have
+       $$
+       \{h,\rho_m\}_{II}=-{\p h \over \p Q^m}=
+     - {\p \over \p Q^m}
+      \left(H+{\p F(q,Q,t)\over \p t}\right)
+      \tag{7b}
+       $$
+   Comparing (7a) with (7b) we see that to prove that
+   equation (3) holds (independence of equations  
+   with respect to changing
+   canonical doordinates) means that we have to prove that<br><br>
+<b> Appendix</b><br><br>
+Note that  all partial derivatives, can be calulcated
+from (1d) in terms of partial derivatives of
+$g_m(q,Q)$
+and $f_m(q,Q)$. In fct we will see that the second row
+ (matrices $A_{21}$ and $A_{22}$)
+ are expressed in temrs of the first row)<br><br>
+   a)    Calculations for  $A_{11}$
+   $$
+\left(A_{11}\right)_m^i=
+{\p \rho_m(p,q)\over \p p_i}
+={\p g_m(q,Q)\over \p Q^n}
+   {\p Q^n(p,q)\over \p p_i}\,,
+   $$
+where   
+   $
+{\p Q^n(p,q)\over \p p_j}=\left(A_{21}\right)^{ni}$ is inverse to
+   ${\p f_i(q,Q)\over \p Q^n}$:
+               $$
+\delta_i^j={\p p_i\over \p p_j}=
+{\p f_i(q,Q)\over \p Q^n}
+{\p Q^n(p,q)\over \p p_j}\,,
+\tag{\hbox {calcul. of $A_{11}$}}
+   $$
+  
+  Calculations for $A_{12}$<br><br>
+  $$
+  \left(A_{12}\right)_{mi}=
+   {\p \rho_m(p,q)\over \p q^i}=
+   {\p g_m(q,Q)\over \p q^i}+
+   {\p g_m(q,Q)\over \p Q^n}
+   {\p Q^n(p,q)\over \p q^i}\,,
+   $$
+   where
+   $
+   {\p Q^n(p,q)\over \p q^i}=\left(A_{22}\right)^n_i$ 
+   is defined by conidition
+    $$
+   0={\p p_i\over \p q^j}=
+{\p f_i(q,Q)\over \p q^j}+
+ {\p f_i(q,Q)\over \p Q^n}
+{\p Q^n(p,q)\over \p q^j}
+\tag{\hbox {calcul. of $A_{12}$}}
+   $$<br><br>
+   In the same way we calculate the inverse jacobian:<br><br>
+        $$
+\left(B_{11}\right)^m_i=
+{\p p_i(\rho,Q)\over \p \rho_m}=
+{\p f_i(q,Q)\over \p q^j}
+{\p q^j(\rho,Q)\over \p \rho_m}\,,
+    $$
+where
+ ${\p q^j(\rho,Q)\over \p \rho_m}=\left(B_{21}\right)^{jm}$
+ is inverse to 
+ ${\p g_m(q,Q)\over \p q^j}$:
+          $$
+{\p \rho_m\over \p \rho_n}=
+\delta_m^n={\p g_m(q,Q)\over \p q^j}
+{\p q^j(\rho,Q)\over \p \rho_n}
+\tag{\hbox {calcul. of $B_{11}$}}
+ $$<br><br>
+
+ $$
+\left(B_{12}\right)_{im}=
+{\p p_i(\rho,Q,t)\over \p Q^m}=
+ {\p f_i(q,Q,t)\over \p Q^m}+
+ {\p f_i(q,Q,t)\over \p q^j}
+ {\p q^j(\rho,Q,t)\over \p Q^m}\,,
+ $$
+where
+    $\left(B_{22}\right)^i_m=
+    {\p q^i(\rho,Q,t)\over \p Q^m}$
+    is defined by condition
+   $$
+{\p \rho_m\over \p Q^n}=0=
+{\p g_m(q,Q)\over \p Q^n}+
+{\p g_m(q,Q)\over \p q^i}
+ {\p q^i(\rho,Q)\over \p Q^n}\,,
+\tag{\hbox {calcul. of $B_{12}$}}\,.
+    $$
+ <br><br>
+This lemma  implies invariance of equations of motion.
+Sure this is consequence of construction. However this is illuminating
+to check it straightforwardly.   Perform this check
+for coordinates $(\rho_m, Q^n)$.<br><br>
+
+1) Coordinate $\rho_m$<br><br>
+Check straightforwardly that $\{\rho_m,H\}_I=$
+
+    </div>
+ </body>
+</html>

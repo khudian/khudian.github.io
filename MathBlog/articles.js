@@ -1,5 +1,10 @@
 var links =
 [
+  ["2020/July20/14extendcanon/index.html"],
+  ["2020/July20/08extendedcantrans/index.html"],
+  ["2020/July20/04hamil/index.html"],
+  ["2020/June20/21statphase/index.html"],
+  ["2020/June20/16stirlfedor/index.html"],
   ["2020/May20/23orbit/index.html"],
   ["2020/May20/20progonka/index.html"],
   ["2020/May20/19stereogr/index.html"],

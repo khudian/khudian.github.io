@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="14 July 2020">
+      <br><br>
+<br><br>
+<h3><b> On extended canonical transformaions</b></h3><br><br>
+<tt> This is continuation of blog on 08 July.</tt><br><br>
+   Consider Hamiltonian system on symplectic space with canonical
+   coordinates
+     $(p_i,q^i)$. Let $H=H(p,q,t)$ be Hamiltonian:
+     for an arbitrary function $f=f(p,q,t)$ on extended phase space
+         $$
+  {d\over dt} f=
+  \{H,f\}+{\p f(p,q,t)\over \p t}=
+  {\p H\over \p p_i}
+  {\p f\over \p q^i}
+       -
+  {\p H\over \p q^i}
+  {\p f\over \p p_i}
+       +
+  {\p f(p,q,t)\over \p t}\,.
+          \tag{1a}
+	 $$
+	 In particular 
+	 $$
+  {d\over dt} p=\dot p
+  -{\p H\over \p q^i}\,,\quad 
+  {d\over dt} q=\dot q
+  {\p H\over \p p_i}\,,\quad 
+	 $$
+Now perform extended canonical transformation.
+ Let $W=W(q,Q,t)$ be an arbitrary (smooth,...e.t.c.)
+ function. We consider canonical transformation
+         $$
+	   \sigma_W \colon \cases {
+		 \rho=\rho_W(p,q)\cr
+		 Q=Q_W(p,q)\cr
+		    }
+		    \tag{2a}
+	 $$
+	 and new Hamiltonian   $h=h(\rho,q,t)$ such that
+   $$
+ p_mdq^m-dH=\rho_mdQ^m-dh+dW\,,
+ \tag{2b}
+   $$
+   i.e.
+   $$
+  \cases
+  {
+ \rho_m=g_m(q,Q,t)\cr	  
+ p_i=f_i(q,Q,t)\cr	  
+  }\,,
+  {\rm where}\,\,
+g_m(q,Q,t)=-{\p W(q,Q,t)\over \p Q^m}\,,\,
+f_i(q,Q,t)={\p W(q,Q,t)\over \p q^i}\,.
+  \tag{2c}
+   $$
+   and  new Hamiltonian is defined by
+     $$
+   h(\rho,Q,t)=
+   \left[
+H(p,q,t)+{\p W(q,Q,t)\over \p t}
+\right]_{\cases {p=p_{_W}(\rho,Q)\cr
+q=q_W(\rho,Q,t)\cr}}\,.  
+     \tag{2d}
+     $$
+<b> Remark</b>  Notice that equations (2c) indeed define transformation (2a):
+the second equation $p_i=f_i(q,Q,t)$ defines $Q=Q(p,q,t)$.
+Putting this equation in first equation we come to
+$\rho_m=g_m\left(q,Q\left(p,q,t\right)\right)$ and vice versa:
+the first  equation $\rho_m=g_i(q,Q,t)$ defines $q=q(\rho,Q,t)$;
+putting this equation in second  equation we come to
+$p_i=f_i\left(q\left(\rho,Q,t\right),Q.t\right)$.<br><br>
+<br><br><br><br>
+
+  <b> Theorem</b>  
+  
+  Let $\sigma_W$ be transformation of coordinates
+  defined by function $W$.<br><br>
+   Then this transformation is extended canonical transformation:
+   for arbitrary function $F$ on phase space
+ 
+         
+	 $$
+\{h(\rho,Q,t),F_{II}(\rho,Q,t)\}_{II}=	 
+\{H(p,q,t),F_{I}(\rho,Q,t)\}_I	 
+	 \tag{3a}
+	 $$
+Here $\{f,g\}_I=
+  \{f,g\}$  is canonical Poisson bracket (1a) in coordinates $(p_i,q^j)$;
+  $\{f,g\}_{II}$ is  canonical 
+  Poisson bracket which is canonical in new coordinates
+  $\rho, Q$
+  (
+  $\{\rho_m,Q^n\}=\delta_m^n$,
+  $\{\rho_m,\rho_n^n\}=0$,
+  $\{Q^m,,Q^n\}=0$),
+  $F$ is an arbitrary function on phase space,
+   $F_I$ is an expression of this  function on coordinates $p,q$,
+  and $F_{II}$ is a 'same' function expressed in 
+  new coordinates $\rho,Q$:
+           $$
+	 F_I(p,q,t)\equiv F_{II}\left(\rho,Q,t\right)\big
+	 \vert_{  \cases
+  {
+ \rho_m=g_m(q,Q,t)\cr	  
+ p_i=f_i(q,Q,t)\cr	  
+  }\,,
+}
+\tag{3b}
+	   $$
+     <br><br>
+Consider matrix $A$ of Jacobian for 
+extended canonical transformation
+$\sigma_{_W}$
+and matrix $B=A^{-1}$ for inverse extended canonical transformation
+$\sigma^{-1}_{_W}$: 
+          $$
+  A
+    =\pmatrix
+   { {\p \rho_m(p,q,t)\over \p p_i}\quad   
+     {\p \rho_m(p,q,t)\over \p q^j} 
+        \cr
+{\p Q^m(p,q,t)\over \p p_i} \quad  
+{\p Q^m(p,q,t)\over \p q^j} 
+        \cr
+   }\,,\quad
+  B=
+  \pmatrix
+   { {\p p_i(\rho,Q,t)\over \p \rho_m} \quad   
+   {  \p p_i(\rho,Q,t)\over \p Q^n} 
+        \cr
+{\p q^i(\rho,Q)\over \p \rho_m} \quad  
+{\p q^j(\rho,Q)\over \p Q^n} 
+        \cr
+   }
+   \tag{4a}
+        $$
+then
+   $$
+   A_{11}^T=B_{22}\,,\quad
+   A_{12}^T=-B_{12}\,,\quad
+   A_{21}^T=-B_{21}\,,\quad
+   A_{22}^T=-B_{11}\,,
+   \tag{4b}
+   $$
+  i.e.
+          $$
+{\p \rho_m\over \p p_i}=
+{\p q^i\over \p Q^m}\,,\quad
+{\p \rho_m\over \p q^i}
+=-{\p p_i\over \p Q^m}\,,
+     \quad
+     {\p Q^m\over \p p_j}= 
+   {  \p q^j\over \p \rho_m}\,,\quad 
+{\p Q^m\over \p q^i}= 
+{\p p_i\over \p \rho_m}\,, 
+ \tag{4c}
+$$<br><br>
+In some sence (es ais chem haskanum minchev verdzh)
+          $$
+	  \sigma^{-1}_{_W}=\sigma_{_{-W^T}}\,.
+	  \tag{5}
+	  $$<br><br>
+
+To avoid confusions in calculation we have to choose rows
+and columns in matrices.   One way to fix notations is the following:
+ 
+ <tt> for every partial derivative ${\p \Pi_a\over \p S_b}$</tt>
+ we choose indices in a way such that 
+ indices  in numerator are ROW indices, and 
+ index   $b$ in denumerator are COLUMN  indices. <br><br>
+Proof of Theorem<br><br>
+This Theorem can be proved in two different ways<br><br>
+
+I) using standard tools of symplectic geometry, i.e.  checking that
+           $
+	 A^TMA=M,   
+	   $
+	   i.e.
+    $$
+    A^T M A=
+    \pmatrix 
+           {
+	    A^T_{11} A^T_{21}\cr
+	    A^T_{12} A^T_{22}\cr
+	    }
+    \pmatrix 
+           {
+	    0  I\cr
+	    -I 0\cr
+	    }
+\pmatrix 
+           {
+	    A_{11} A_{12}\cr
+	    A_{21} A_{22}\cr
+	    }
+	   =  \pmatrix 
+           {
+	    0  I\cr
+	    -I 0\cr
+	    } 
+$$
+This relation implies that
+  that
+ $$
+ B=A^{-1}=\pmatrix 
+           {
+		   A_{22}  &-A_{12}\cr
+	    -A_{21} & A_{11}\cr
+	    }
+ $$<br><br>
+II  Brute force calulcations  
+checking 'naively' that motion equation (3) are preserved.<br><br>
+During this 'naive' checking we have to use equations (4c)
+There is a temptation 
+to simplify these  calculations
+using equation (5).
+
+    </div>
+ </body>
+</html>
