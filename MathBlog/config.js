@@ -57,6 +57,7 @@ function configureMathJax()
       q: "{\\bf q}",
       r: "{\\bf r}",
       s: "\\sigma",
+      ss: "{\\bf s}",
       t: "{\\bf t}",
       tS: "{\\tilde \\Sigma}",
       td: "\\tilde",
