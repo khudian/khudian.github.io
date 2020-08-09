@@ -145,6 +145,13 @@ function generateNavigationLinks()
   return result;
 }
 
+function generateLinkToTableOfContents()
+{
+  result = `<div class="mathBlogButton">
+    <a class="mathBlogButton" href="tableOfContents.html">Table of contents</a>
+  </div><br><br>`;
+  return result;
+}
 
 function generateWrappers()
 {
@@ -157,7 +164,8 @@ function generateWrappers()
   }
   
   [minArticleNumber, maxArticleNumber] = getMinMaxArticleIds(pageId);
-  htmlCode += generateNavigationLinks()
+  htmlCode += generateNavigationLinks();
+  htmlCode += generateLinkToTableOfContents();
   for (var i = minArticleNumber; i <= maxArticleNumber; i++)
   {
     htmlCode += generateWrapper(i);
@@ -205,7 +213,7 @@ function generateArticles()
   
   for (var i = minArticleNumber; i <= maxArticleNumber; i++)
   {
-    loadArticle(i, links[i]);
+    loadArticle(i, links[i][0]);
   }
 
   
