@@ -8,6 +8,9 @@ gDestinationDir = R"D:\khudian.github.io\MathBlog"
 gArticlesJsPath = R"D:\khudian.github.io\MathBlog\articles.js"
 GENERAL_BEGIN_KEY = "GENERAL_BEGIN_KEY"
 GENERAL_END_KEY = "GENERAL_END_KEY"
+TITLE_TAG_OPEN = R"<h2>"
+TITLE_TAG_CLOSE = R"</h2>"
+
 gTemplate = """<!DOCTYPE html>
 <html>
 <meta charset="UTF-8">
@@ -104,7 +107,7 @@ def getDayNum(file):
 
   
 def validateMonthAndYear(month, year):
-  return (year == 2019) and (month > 6) or (year > 2019) 
+  return (year == 2020) and (month > 6) or (year > 2020)
 
 def creatFileDirIfNotExist(file):
   folder = os.path.split(file)[0];
@@ -306,6 +309,8 @@ def convertTexString(data):
   data = skipsToBr(data)
   data = calcToRfloor(data)
   data = calxToS(data)
+  data = replaceCommand_OverwhelmingType(
+    data, R"\nameofthetitle", [TITLE_TAG_OPEN, TITLE_TAG_CLOSE])
   data = replaceCommand_OverwhelmingType(
     data, R"\centerline", [R"<h3>", R"</h3>"])
   data = replaceCommand_InnerType(
