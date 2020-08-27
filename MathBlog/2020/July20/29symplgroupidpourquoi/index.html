@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="29 July 2020">
+      <br><br>
+<br><br>
+<h3><b> Groupoids symplectic Pourquoi?</b></h3><br><br>
+I think that there are two reasons why and how symplectic groupoid
+becomes improtant.<br><br>
+
+<br><br><br><br><br>
+
+ 1-st reason it is when Karasev noted natural construction
+ of symplectic groupoid $T^*G$:
+ cotangent bundle $T^*G$ becomes groupoid over set of points $\GG^*$
+ when we identify $T^*G$ with action groupoid $G\times \GG^*$
+ <br><br>
+<br><br><br><br><br>
+ 2-nd reason it is when Weinstein realised how to deal with
+ action $G,M$ where $G$ is group of symplectomorphisms
+ in general case if $G$ preserves symplectic form but
+ global hamiltonian is not existed.
+ Recall that group of symplectomorphisms
+ define fundamental vector field:  denote by $\tilde \xi_i$
+ fundamental vector field correspondind to basis 
+ vector $\xi_i\in\GG$. If all $\tilde \xi_i$ have global Hamiltonians
+ $H_i$:
+           $$
+	\Omega  {\rfloor} \tilde \xi_i=dH_i   
+	   $$
+ 
+ then one can define moment map $J\colon M\to \GG^*$:
+            
+	    How to define moment map in general case.  It is here
+	    when Weinstein (reading carefully works of Karasev and Maslov)
+	    came to symplectic groupoid.<br><br>
+	    Namely: Let  $(M,\Omega)$ be symplectic manifold,
+	    and let $G$ acts on $M$ by symplectomorphisms
+	    (i.e. preserving $\Omega)$.<br><br>
+	    Consider groupoid $\Pi(M)\to M$  where set of arrows,
+	    $\Pi(M)$ is set of all paths with identification
+	    of homotopy equivalent paths with fixed ends
+	    [e.g. if $M=S^2$, then $\Pi(S^2)=S^2\times S^2$].<br><br>
+	  Note that  fundamental vector field $\tilde X$ on $M$
+	  defines the functional  on paths
+	         $$
+		 \int_\gamma \Omega {\rfloor}\tilde X
+		 $$
+	  abd this is functional o
+	  on set $\Pi (M)$ of arrows:
+	  if two arrows $\gamma_1$ and $\gamma_2$ coincide at ends
+	  and are homotopic, then by Stokes Theorem
+	         $$
+		 \int_{\gamma_1} \Omega {\rfloor}\tilde X
+		 =\int_{\gamma_2} \Omega {\rfloor}\tilde X
+		 $$
+ 
+ Hence we come to moment map defined
+ on set of arrows. It is here where Weinstein formulates
+ the condition when this moment map defined on symplectic groupoid
+    $\Pi (M)$ is hamiltonian.<br><br>
+<br><br>
+ <br><br><br><br><br>
+
+ Finally remark: structure of symplectic groupoid on path groupoid
+  $\Pi(M)$ is defined by the following symplectic structure
+  on set of arrows
+         $$
+	\left({\bf s}\oplus {\bf t}\right)
+	\left(\Omega\oplus \left(-\Omega\right)\right)\,,
+	 $$
+ where $\Omega$ is symplectic form on $M$, and
+  ${\bf s}$,
+  ${\bf t}$ are sourse and target maps.<br><br>
+  Note, Fedia! that in the case if $M$ is simply connectedd then
+         set of arrows of $\Pi (M)$ is just $M\times M$.
+ 
+ 
+
+    </div>
+ </body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="26 July 2020">
+      
+\def \title <br><br>
+
+<h3><b> Foundations of mechanics (by Arnold)</b></h3><br><br>
+ <i> Here I will try to recall the Arnold's foundation</i><br><br>
+
+   Let $M^{2n+1}$  be $2n+1$-dimensional manifold (one of 
+   its coordinates is a time). 
+   Let $\a$ be $1$-form.  Then $2$-form $d\a$ has  at every point
+   zero vector:
+     $$
+     \hbox {for every point $\pt\in M$ there exist $\xi$ such that 
+      $\langle\rangle$} 
+     $$
+    since $2n+1$ is an odd number.<br><br>
+    We will call $\a$ non-degenerate if every zero vector of
+      $d \a$  is proportional to this vector.<br><br>
+       
+There is another additional condition that for this vector
+its $t$-component does not vanish.<br><br>
+     We will denote by  $\xi_0$  vector field  such that it
+     vanishes the form $d\a$ and its $t$-component is equal to $1$.<br><br>
+  
+Vector field $\xi_0$ defines  dynamics,.....   However I still did not define
+the Hamiltonian?<br><br>
+
+     <br><br><br><br><br>
+
+ 
+   
+   I do no know how to prove it, however
+   "shtob ne draznitj gusej"
+   suppose that there are coordinates $(p_i,q^i,t)$
+   such that $\a=p_idq^i$. in this case it is easy to see that
+          $$
+	  \xi_0={\p }
+	  $$
+   Let $H=H(p,q,t)$ be a function, hamiltonian.<br><br>
+Consider $1$-form
+      $$
+      \a_H=p_dq^i-Hdt
+      $$<br><br>
+   One can see that this is non-degenerate one form:
+    vector field
+        $$
+\xi_0={\p H(p.q.t)\over \p p_i}	
+     {\p \p q^i}	
+     -
+{\p H(p.q.t)\p q^i}	
+     {\p H(p,q,t)\over \p p_i}+{\p\over \p t}\,,\qquad
+     \left(
+   \xi_0 f=\{H,f\}_{\rm canonical}+{\p f\over \p t}
+     \right)\,,
+	$$
+   2-form $d\a_H$ is annihilated  on $\x_0$  and every vector field
+   which annihilates this form is proportional to this 
+   vector field.<br><br>
+
+It defines dynamics:  for every function $f=f(p,q,t)$
+on extended phase space<br><br>
+        $$
+   {d f\over  dt}=\xi_0 f\,.	
+	$$<br><br>
+<h3>${\S} 2$ Corollaries</h3><br><br>
+<br><br>
+Let $W=W(q,Q,t,T)$ be an arbitrary function.  Consider in extended
+phase space transformation
+         $$
+(p,q,t)\mapsto (\rho,Q,T)
+	 $$
+   such that
+        $$
+p_idq^i-H(p,q,t)dt=\rho_m dQ^m-h\left(\rho,Q,T\right)dT+dW\,,	
+	$$
+i.e.
+       $$
+       \cases
+        {
+  p_i={\p W(q,Q,t,T)\over \p q^i}\cr		
+  \rho_m=-{\p W(q,Q,t,T)\over \p Q^m}\cr		
+  H(p,q,t)=-{\p W(q,Q,t,T)\over \p t}\cr		
+  h(\rho,Q,T)={\p W(q,Q,t,T)\over \p T}\cr		
+	}
+       $$<br><br>
+       
+    
+    </div>
+ </body>
+</html>

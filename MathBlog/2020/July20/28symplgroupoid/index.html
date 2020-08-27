@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="28 July 2020">
+      <br><br>
+<br><br>
+<h3><b> Learning symplectic groupoids</b></h3>
+<h3><b> et pourquoi ils sont si important</b></h3><br><br>
+<h3><i> by wonderful review of
+Mateus Moreira de Melo 'Symplectic actions 
+and Symplectic Groupoids' (13 January, 2018)</i></h3><br><br>
+
+ Let $\G\to M$ be groupoid, i.e. 
+ $\G$ is set of arrows, and $M$ set of unities;
+ such that there are two maps $\bf s$ (sourse)
+and $\bf t$ (target maps from  $\G$ to $M$, and there is a map
+  $\bf u$ (unity map) from $M$ to $G$ and
+      $$
+      {\bf s}\circ {\bf u}=
+      {\bf t}\circ {\bf u}=\hbox {identity on $M$}\,.
+      \tag{1a}
+      $$
+      Denote  by $\G^{(2)}$ subset of pairs of arrows
+  in $\G\times\G$
+  such that the source  of first arrow is the target  of
+  the second:
+       $$
+       \G^{(2)}=
+       \{(g,h)\colon\quad 
+       {\bf s}(g)= 
+       {\bf t}(h) 
+       \}\,.
+       \tag{1b}
+       $$
+One can define on these pairs 
+associative multiplication  $\bf m$,
+       $$gg
+      {\bf m}\colon \G^{(2)}\to \G\,.
+      \tag{1c}
+       $$
+   such that:<br><br>
+<br><br>
+ 1)  for all $g,h\in \G^{(2)}$
+    $$
+    {\bf s}\circ {\bf m}(g,h)={\bf s}(h)\,,\quad 
+    {\bf t}\circ {\bf m}(g,h)={\bf t}(h) 
+    \tag{1d}
+      $$
+      i.e.
+       $$
+     {\bf s}\left(gh\right)={\bf s}(h)\,,  
+     {\bf t}\left(gh\right)={\bf t}(g)\,,
+     \tag{1e}
+       $$
+    for all $g,h\in \G^{(2)}$,<br><br>
+2) for all $g$
+      $$
+ g\circ \left({\bf u} {\bf s}\left(g\right)\right)=g \,,
+\left({\bf u} {\bf t}\left(g\right)\right)=g \,,
+ \tag{1f}
+      $$<br><br>
+      3)
+  if  elements $g,h,f$ are <i> companible</i>,
+  i.e. $t(f)=s(h)$ and  $t(h)=s(g)$ then
+      $$
+   g\circ (h\circ f)=(g\circ h)\circ f\,.
+      $$<br><br>
+{\bf Remark} every thing is natural vice versa:
+<tt> sourse</tt> of arrow is the end of arrow,
+<tt> target</tt> of arrow is the beginning  of arrow;
+one can say that we see $gh$ as composition
+of functions:
+    $$
+    	x{\buildrel h\over \rightarrow}y\,,\quad
+    y{\buildrel g\over \rightarrow}z\,,{\rm then}\,\,
+    {\bf t}(h)=y={\bf s}(g)\,,\quad {\rm and}
+    \,\,	x{\buildrel gh\over \rightarrow}z\,,\quad
+    $$<br><br>
+ <br><br>
+{\bf Remark}  Compare equations (1f) and (1a)<br><br>
+
+(with inverse)<br><br>
+
+{\bf Remark}  I heard many times expression that in groupoid 
+all arrows are invertible.    On the other hand it is not true that
+that  <br><br>
+<tt> for every $x,y$ there is just unique arrow $g\in \G$ such that
+$\ss(g)=x$ and $\t(y)=y$</tt>   
+ ({Peut etre ce ne pas vrai})<br><br>
+ Oui, ce n'est pas vrai: see EWxercise below<br><br>
+
+Proof: this follows from the fact that there is just unique inverse.
+ ({Peut etre ce ne pas vrai})<br><br>
+
+{\bf Examples}<br><br>
+{\bf Example }  Group $G$ is a groupoid<br><br>
+Let $G$ be a group.  The groupoid $G\to \{*\}$ is just a group $G$.<br><br>
+<tt> Path groupoid</tt>
+Let $M$ be manifold.  Consider groupoid ${\cal P}(M)M$
+of all paths on $M$ with natural multiplication. If we identify
+paths by homotopy we will come to groupid $\Pi (M)$<br><br>
+{\bf Example }  <tt> Action groupoid</tt><br><br>
+Let group $G$  acts on the space $M$.     Consider the action groupoid
+    $\G\to M$ where set of arrows is $\G=G\times M$, and
+           $$
+	 {\bf s}(g,x)=x\,,\quad 
+	 {\bf t}(g,x)=gx\,,\quad {\rm and}
+	 {\bf u}x=e
+	   $$<br><br>
+<br><br><br><br>
+<tt> Groupoids $TG$ and $T^*G$</tt><br><br>
+Action groupoids naturally produce groupoid structure on $TG$ and $T^*G$.
+    To define groupoid structure on tangent bunlde $TG$, note that
+    $TG$ can be identified with $G\times\GG$:
+           $$
+G\times\GG	\ni (g,\xi)\mapsto \hbox {vector $\X\in T_{g}G$ 
+corresponding to
+curve $\gamma_\X (t)=g(1+t\xi)$}\,.  
+	   $$
+Thus we come to groupoid $TG$ identifying it with
+action groupid $[G,\GG]$.<br><br>
+In the analogous way we define groupoid structure on $T^*G$ <br><br>
+
+<br><br><br><br><br>
+{\bf Exercises}<br><br>
+
+{\bf Exercise 1}<br><br>
+Consider for groupoid   $\G\to M$<br><br>
+    $$
+   \G(x,-)=\ss^{-1}(x)\,,\quad 
+   \G(-,x)=\t^{-1}(x)\,,\quad 
+    $$
+Suppose for  $g\in \G$, $\ss(g)=x$ and $\t(g)=y$, where $x,y\in M$. Then
+   transformation
+   $$
+  h=h\circ g  \hbox {is bijection of $\G(y,_)$ to $\G(x,-)$}
+    $$
+   and transformation
+   $$
+  h=g\circ h  \hbox {is bijection of $\G(-,x)$ to $\G(-,y)$}
+    $$<br><br>
+{\bf Exercise 2}<br><br>
+For every point $x\in M$ the set of arrows
+     $$
+     \G(x,-)\cup \G(-,x)
+     $$
+is a subgroup. It is isotropy subgroup of a pont $x$.<br><br>
+<br><br><br><br>
+
+{\bf Exercise 3}   Consider for action groupoid
+ $\G(m,-)$ and  $\G(-,n)$.
+ Then intersection of these arrows is the set of arrows
+ which transform $m$ to $n$<br><br>
+
+<h3>\bf Symplectic groupoid</h3>
+Let $\G\to M$ be a groupoid.
+      We say that a form $\sigma$ on $\G$ (of any rank) is multiplicative
+       if
+          $$
+	 {\bf m}^*\sigma=\pi_s^*\sigma+\pi_t^*\sigma\,.
+	  $$
+ 
+ Let $\Omega$  be $2$-form on $\G$ (space of arrows)
+     such that it defines symplectic
+ structure on it (is closed and non-degenerrate).<br><br>
+ We say that   this groupoid is symplectic if 
+ the form $\Omega$ is multiplicative form.<br><br>
+
+ {\bf Basic example}<br><br>
+ Let $G$ be Lie group. 
+  
+  Consider groupoid $T^*G\to \GG^*$ in {see  Example above}.<br><br>
+Reall that we come to this groupoid identifying
+ $T^*G$ with $G\times \GG^*$.
+ Since 
+ The action of $G$ on $\GG^*$ defines action groupoid
+ over $\GG^*$. Arrows of this groupod are
+  pairs $(g,\theta)$ where $g\in G$ and $\theta\in\GG^*$,
+  the source and target maps are
+          $$
+	  {\bf s}(g,\theta)=\theta\,,\quad
+	  {\bf t}(g,\theta)=Ad```^*_g \theta\,,
+	  $$
+and unity map $\bf u$ such that ${\bf u}(\theta)=(e.\theta).$	  <br><br>
+One can see that tautological form (and hence its differential)
+becomes multiplictive form.   Thus we define
+symplectic groupoid structure on $T^*G$.    Recall what is
+it tautological $1$-form on $T^*M$.<br><br>
+Let $m\in M$ be an arbitrary point on $M$. and $\theta$
+be linear function on vector space $T_mM$.
+Thus we come to an arbitrary point $\theta\in T^*M$
+such that its projection $\pi T^*M\to M$ is equal to point
+$m$.  Let $\X\in T_\theta \left(T^*M\right)$
+be an arbitrary vector tangent to manifold $T^*M$ art the point $\theta$.<br><br>
+   The point $\theta$ is projected on the point $m\in M$,
+   thus the tangent vector $\X$ is projected on the vector
+     $\pi_*\X$ which is attached at the point $m$ to the manifold $M$.<br><br>
+     We are ready to define tautological $1$-form $\a$:
+              $$
+\hbox {the value of the form $\a$ on the vector $\X$ is equal to
+the value of the form $\theta$ on the vector $\pi_*\X$}\,.	      
+	      $$<br><br>
+
+<br><br><br><br><br>
+{\bf Theorem} (Karasev, Weinstein,)
+Let $\G\to M$ be symplectic groupoid.  Then maps
+   $\pi_s$ and $\pi_t$ induce Poisson and anti-Poisson maps.<br><br>
+
+ Why symplectic groupoid is so important?<br><br>
+
+ <tt> Raison d'etre:</tt>      Let $M$ be symplectic manifold.
+One can consider functional
+    $$
+    \Psi_gamma(\X)=\int \L_\X \omega
+    $$
+ 
+One can see that
+       $$
+       \Psi_{\gamma_1}(\X)
+       =\Psi_{\gamma_2}(\X)
+       $$
+if paths $\gamma_1$ and $\gamma_2$ coincide at the  starting
+and ending point.   This means that functional
+$\Psi(X)$ can be well-defined on groupid $\Pi(M)$.
+
+    </div>
+ </body>
+</html>

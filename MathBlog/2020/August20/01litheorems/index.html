@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="1 August 2020">
+      <br><br>
+<h2><b> Lie's theorems I,II and III-rd</b></h2>
+<h3>using book of Eisenhart</h3>
+<h3>I began to write it on 01 August, </h3>
+<h3>then returned to this file again
+  on 14 August</h3><br><br>
+<i> I was learning it during all my life from 1978... On other hand
+I never red Sophus Lie, however I red Hisenhart....
+Let me try to reconstruct it....</i><br><br>
+Let  $G$ be $r$-dimensional group $G$. Suppose that it
+acts on $n$-dimensional manifold $M$:
+       $$
+    y^i=f^i(a^\a,x^i)\,,
+    \tag{0.1}
+       $$
+where $\{a^\a\}$ ($\a=1,\dots,r$) are parameters of $G$, $x^i,y^i$
+($i=1,\dots,N$) coordinates of $M$.<br><br>
+     We naturaly suppose that all group parameters $a^\a$
+     are <i> essential</i>.        What is it?   
+     (See blogs on 2-nd August,
+     10 August)
+     It seems naturally to think that parameters are essential
+     in the case if
+               $$
+	  {\rm rank} 
+	  \left({\p f^i(a^\a,x^i)\over \p a^\beta}\right)=r\,.
+	  \tag{0.2}
+	       $$
+	  In fact the story is more subtle, 
+	  (see blogs on 2-nd, 10 and 11.. august)
+	  and we take another definition:<br><br>
+   The $r$ parameters $a^1,\dots,a^r$ {]it are not} essentiаl if 
+   $$
+	  {\rm rank} 
+	  \left({\p f^i(a^\a,x^i)\over \p a^\beta}\right)\leq rr\,.
+	  \tag{0.2}
+	       $$
+  (see the blogs 02,05,10,11... on August)<br><br>
+  Composition of two transofmration is another transformation:
+        $$
+	z^i=z^i\left(b,y^j\right)
+	=z^i\left(b,y^j\left(a,x^i\right)\right)=
+	f^i\left(b,f^j\left(a,x^i\right)\right)=
+	f^i\left(\varphi\left(b,a\right),x^i\right)\,.
+	\tag{0.3}
+         $$ 
+	Show that 
+	parameters $a$ and $b$ in equation (0.3) are also
+	essential:
+	      $$
+	   \det {\p \varphi^\a(a,b)\over \p a^\beta}\not=0\,,   
+	      \tag{0.4a}
+	      $$
+	      and
+   $$
+	   \det {\p\varphi^\a(a,b)\over \p b^\beta}\not=0\,,
+	   \tag{0.4b}
+	      $$
+Prove first (0.4b).    Suppose condition (4b) fails, then 
+equation (0.2) fails also. Indeed using composition law (0.3) 
+we have that
+            $$
+	    {\p z^i(b,y)\over \p b^\beta}=
+  {\p z^i\left(b,y\left(a,x\right)\right)\over \p b^\beta}
+  =
+  {\p z^i\left(\varphi(b,a),x\right)\over \p b^\beta}=
+ {\p z^i\left(\varphi(b,a),x\right)\over \p \varphi^\a}
+  {\p \varphi^\a(b,a)\over \p b^\beta}\,
+ $$
+ hence
+       $$
+       A^\beta_{(b)}(a,b){\p\varphi^\a(a,b)\over \p b^\beta}=0\Rightarrow
+       A^\beta_{(b)}(a,b){\p z^i(b,y)\over \p b^\beta}=
+       A^\beta_{(b)}(a,b)
+ {\p z^i\left(\varphi(b,a),x\right)\over \p \varphi^\a}
+  {\p \varphi^\a(b,a)\over \p b^\beta}=0\,,
+       $$
+(LHS of this equation means that condition (4b) fails, and RHS
+means that equation (0.2) fails.)       <br><br>
+Analogously to prove (0.4a) we note that using (0.3)
+    one can consider $z^i(b,y)$ as
+        $$
+z^i(b,y)=z^i(b,y(a,x))\Rightarrow
+ {\p z^i(b,y)\over \p a^\beta}=
+ {\p z^i(b,y(a,x))\over \p y^j}
+ {\p y^j(a,x)\over\p a^\beta}\,.
+	$$
+Hence  if condition (0.4a) fails, then condition (0.2) fails also:
+       $$
+       A^\beta_{(a)}(a,b){\p\varphi^\a(a,b)\over \p a^\beta}
+       =0\Rightarrow
+       A^\beta_{(a)}(a,b){\p z^i(b,y(a,x))\over \p a^\beta}=
+       A^\beta_{(b)}(a,b)
+  {\p z^i(b,y(a,x))\over \p y^j}
+ {\p y^j(a,x)\over\p a^\beta}
+  =0\,.
+       $$
+(LHS of this equation means that condition (4a) fails, and RHS
+means that equation (0.2) fails.)       <br><br>
+Begin with the simple case of one-parametric group:  Let
+one-dimensional group $G$ acts on $\R^n$:
+           $$
+	 y^i=f^i(g,x^i)  
+	   $$
+suppose (WLOG) that coordinate $g=0$ corresponds to unity.
+   Composition of two transofmration is another transformation:
+        $$
+	z^i=z^i\left(h,y^j\right)
+	=z^i\left(h,y^j\left(g,x^i\right)\right)=
+	f^i\left(h,f^j\left(g,x^i\right)\right)=
+	f^i\left(\varphi\left(h,g\right)x^i\right)\,.
+         $$ 
+ 
+ 
+    </div>
+ </body>
+</html>

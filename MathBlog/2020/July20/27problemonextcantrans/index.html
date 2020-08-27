@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="27 July 2020">
+      <br><br>
+<br><br>
+<h3><b> One problem related with extended canonical transformations</b></h3><br><br>
+
+A canonical transformation can be defined 
+(a la Landau, Lifshitz) by generating function.
+This becomes important for extemded canonical transformations.<br><br>
+E.g. a function    $W(q,Q,t,T)$ defines canonical transformation
+                  $$
+(p,q,t)\mapsto (\rho,Q,T)
+     \tag{1a}
+	 $$
+   such that
+              $$
+p_idq^i-H(p,q,t)dt=\rho_m dQ^m-h\left(\rho,Q,T\right)+dW\,,
+\tag{1b}
+	$$
+i.e.
+       $$
+       \cases
+        {
+  p_i={\p W(q,Q,t,T)\over \p q^i}\cr		
+  \rho_m=-{\p W(q,Q,t,T)\over \p Q^m}\cr		
+  H(p,q,t)=-{\p W(q,Q,t,T)\over \p t}\cr		
+  h(\rho,Q,T)={\p W(q,Q,t,T)\over \p T}\cr		
+	}
+      \tag{1c}
+       $$
+a function 
+    $S(q,Q,t)$ defines canonical transformation
+                  $$
+p\mapsto \rho(p,q,t)\,,\quad
+Q\mapsto Q(p,q,t)\,,\quad
+\tag{2a}
+	 $$
+   such that
+              $$
+p_idq^i-H(p,q,t)dt=\rho_m dQ^m-h\left(\rho,Q,T\right)dT+dS\,,
+\tag{2b}
+	$$
+i.e.
+       $$
+       \cases
+        {
+  p_i={\p S(q,Q,t)\over \p q^i}\cr		
+  \rho_m=-{\p S(q,Q,t)\over \p Q^m}\cr				
+  h(\rho,Q,T)=H(p,q,t)+{\p W(q,Q,t,T)\over \p T}\cr		
+	}
+	\tag{2c}
+       $$
+and a function 
+    $G(q,Q)$ defines canonical transformation
+                  $$
+p\mapsto \rho(p,q)\,,\quad
+Q\mapsto Q(p,q)\,,
+       \tag{3a}
+	 $$
+   such that
+              $$
+p_idq^i=\rho_m dQ^m+dS\,,
+\tag{3b}
+	$$
+i.e.
+       $$
+       \cases
+        {
+  p_i={\p G(q,Q)\over \p q^i}\cr		
+  \rho_m=-{\p G(q,Q,t)\over \p Q^m}\cr						
+	}
+	\tag{3c}
+       $$<br><br>
+   <tt> QUESTION</tt>    <br><br>
+How to define generating function $W(q,Q,t,T)$
+such that transformation (1) coincides qith (2)?<br><br>
+E.g. if $S(q,Q,t)=G(q,Q)$   then (2) coincides with (3).<br><br>
+To answer this question we have to go to extended
+space $(p,q,t,E)$<br><br>
+<br><br>
+<br><br>
+
+    </div>
+ </body>
+</html>

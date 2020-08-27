@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="11 August 2020">
+      <br><br>
+
+<h2><b> Essential  remark on essential parameters</b></h2> 
+   <h3><tt> using book of Eisenhart</tt></h3><br><br>
+
+In blogs on 2-nd August and 10 August  we discussed this conception.
+  We see that number of essential parameters is very close
+to rank of Jacobian, however this is not the same.<br><br>
+  I would like again to emphasize the key points.<br><br>
+Let  $\cal C$ be $r$-parametric family of maps 
+           $$
+	 y^\mu =f^\mu(x^i,a^\s)\colon\,\,
+	 M\times P {\buildrel f\over \rightarrow }N
+	 \tag{1}
+	   $$ 
+from $M\times A$ to $N$, 
+$M$ is $m$-dimensional manifold,
+  $P$ is the $r$-dimensional space (manifold) 
+  of parameters, and
+$N$ is $N$-dimensional 'target' manifold,
+($x^i$ are coordinates on $M$, $y^\mu$ are coordinates on $N$, and
+$a^\s$--parameters).
+    <br><br>
+We say that parameters $a^\s$ are essential if it is not true that
+they are not essential.  We say that parameters
+are not essential if one can reduce their amount, i.e.
+there exists another $r-1$-dimensional space (manifold) of parameters
+$P'$ such that 
+     $$
+	 y^\mu =f^\mu(x^i,a^\s)\colon\,\,
+	 M\times P {\buildrel f\over \rightarrow }N=
+	 M\times  
+	 \left(P{\buildrel A\over \rightarrow } P'\right)
+	 {\buildrel F\over \rightarrow} N\,,
+	 \tag{2a}
+     $$
+i.e.
+     $$
+	 y^\mu =f^\mu(x^i,a^\s)=
+	 F^\mu\left(x^i,
+	 A_1\left(a^1,\dots,a^r\right),\dots
+	 A_{r-1}\left(a^1,\dots,a^r\right)
+	 \right)\,.
+	 \tag{2b}
+     $$
+   In this case consider non-vanishing vector field $\R$ 
+   such that $A_*\R=0$:
+             $$
+	  \R=\varphi^\s{a}{\p\over \p a^\s}\colon\,\,
+	  \R\not=0, {\rm but\,}
+	  A_*R=0, {\rm i.e.}
+	  \varphi^\s {\p A_I(a)\over \p a^\s}=0
+	  (I=1,\dots,r-1)\,.
+	     \tag{3}
+	     $$
+   (this field exists since dimension of $P$
+   is greater than dimension of $P'$.).
+   One can see from equation (2) that image of
+   this vector field under the map $f$ vanishes.
+   We see that if parameters are not essential then
+   there exists non-vanishing vector field $\R$
+   in the space of parameters such that vector field 
+   $f_*\R$ in $N$ vanishes: 
+            $$
+	  f_*\R=
+	  \varphi^\s(a){\p f^\mu(x,a)\over \p a^\s}{\p\over \p y^\mu}=
+	  \varphi^\s(a)
+	  {\p F^\mu\left(x, A_I(a^\a) \right)\over \p a^\s}{\p\over \p y^\mu}=
+	    $$
+	    $$
+	  \varphi^\s(a)
+	  {\p A_I(a)\over \p a^\s}
+	  {\p F^\mu\left(x, A_I(a^\a) \right)
+	  \over \p A_I}{\p\over \p y^\mu}=0\,.
+	  $$
+One can see that this condition is also sufficient.
+The existence of non-vanishing vector field $\R$ 
+in space of parameters such that
+ $f_*\R=0$ means thaat these parameters are not essential.
+Indeed make 'straight' this vector field: go to coordinates
+ $(t,\xi_1,\dots,\xi_{r-1})$ such that $\R={\p\over \p t}$
+ in these coordinates. It is evident that in this case
+ parameters $a^i$ are not essential: map (2)
+ depends on parameters
+       $$
+    A_1(a)=\xi_1(a)\,,\dots A_{r-1}(a)=\xi_{r-1}(a)\,.   
+       $$
+We see that parameters $a^\s$ are not essential
+if and only if there exists non-vanishing vector field
+   $\R$ in space of parameters such that $f_*\R=0$.
+    
+    One can formulate it in the following way also:<br><br>
+    Parameters $\{a^\s\}$ ($s=1,\dots,r$) are essential
+if and only if an arbitrary vector 
+field $\R=\varphi^\s(a){\p\over \p a^\s}$
+<b> in the space of parameters</b>
+which does not change any function $f\in\cal C$ has to vanish:
+                 $$
+  \left(
+\forall f\in {\cal C}\,, df(\R)=\varphi^\a{\p f^\mu(x,a)
+\over \p a^\a}=0 
+\right)\Rightarrow \varphi^\a\equiv 0\,.
+\tag{4}
+                 $$
+		 Consider  Jacobian,  $r\times n$ matrix
+		 $M_0=
+		 \left|\left|{\p f^\mu(x,a)\over \p a^\a}\right|\right|$	 
+In the case if
+    $$
+    {\rm rank} M_0=r
+    \tag{5}
+    $$
+it is comme il faut: all parameters are essential since 
+   $$
+   \varphi^\s {\p f^\mu(x,a)\over \p a^\s}=0
+   \Rightarrow \varphi^\s\equiv 0\,.
+   \tag{6}
+   $$
+Sure this does not mean that if rank of $M_0$ is less than $r$, then
+parameters are not essential.   To exclude 'non-essentiality'
+of parameters one has to exclude the existence
+of non vanishing solution for equation
+   $$
+   \varphi^\s (a){\p f^\mu(x,a)\over \p a^\s}=0\,. (\hbox {for $\varphi$})
+   \tag{7}
+   $$
+i.e. one has to differentiate this equation on $x$. E.g.
+equation (7) implies that
+         $$
+	\varphi^\s (a)
+	{\p^2 f^\mu(x,a)\over\p x^i\p a^\s}=0\,,\quad\,,
+	\varphi^\s (a)
+	{\p^3 f^\mu(x,a)\over \p x^i\p x^j\p a^\s}=0\,,\quad
+           $$
+and one comes to the fact that parameters are esseential
+if for example  rank of extended matrix
+        $M_1$ is equal to $r$ or rank of matrix $M_2$
+	is equal to $r$.
+	(Here $M_1= 
+	 \left|\left|
+	     \matrix
+	     {
+	  {\p f^\mu(x,a)\over \p a^a}\cr
+	  {\p^2 f^\mu(x,a)\over \p x^i\p a^a}\cr
+	  }
+	   \right|\right|
+$ and 
+	$M_2= \left|\left|
+	     \matrix
+	     {
+	  {\p f^\mu(x,a)\over \p a^a}\cr
+	  {\p^2 f^\mu(x,a)\over \p x^i\p a^a}\cr
+	  {\p^3 f^\mu(x,a)\over \p \p x^j x^i\p a^a}\cr
+	  }
+	   \right|\right|
+$
+)
+      Sure this does not work for groups, but....<br><br>
+      Consider example:<br><br>
+    $y=a+x+bx^2$.  Rank of matrix  $M_0$ is equal to $1$, however
+    rank of all matrices $M_n$ is equal to $2$ for $n\geq 2$
+        $$=
+M_0=\pmatrix {1 x^2}\,,
+M_1=\pmatrix {&1 &x^2\cr &0 & 2x\cr}\,,\quad
+M_2=\pmatrix {&1 &x^2\cr &0 & 2x\cr &0 &2\cr}\,\dots
+	$$
+Sure this does not happen for groups...
+
+    </div>
+ </body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="27 August 2020">
+      <br><br>
+<h2><b> Calculation of $\Phi_3^*$</b></h2>
+<h3>encore....</h3><br><br>
+
+Let $S=S_0(x)+S_1^a(x)q_a+S_2^{ab}(x)q_aq_b+S_3^{abc}(x)q_aq_bq_c$
+     
+     We want to calculate   $\Phi_S^*(g)$ up to the order $3$ including.
+     Thus we will calculate   $y^a$ and $q_b$ up to the order $2$ including. 
+     $$
+y^a={\p S\over \p q_a}=
+S_1^a(x)+2S_2^{ab}(x)q_b(y)+3S_3^{abc}(x)q_bq_c+\dots	  
+	  $$	  
+	    $$
+	  q_b={\p g(y)\over  \p y^b}=
+	  q_b\left[S_1^a(x)+2S_2^{ab}q_b
+	  +3S_3^{abc}(x)q_bq_c+\dots\right]=
+  q_b\left[S_1^a(x)+2S_2^{ab}q_b
+	  +\dots\right]=
+	    $$    
+	    $$
+	q_b\left(S_1^a(x)\right)+    
+	q_{bc}\left(S_1^a(x)\right)\times 2S_2^{cd}q_d=
+	g_b^*(x)+2S_2^{cd}(x)g_d^*(x)g_{bc}^*(x)+\dots,
+          $$
+hence $y^a=S_1^a(x)+2S_2^{ab}(x)q_b(y)+3S_3^{abc}(x)q_bq_c+\dots=$	  	  	   $$
+S_1^a(x)+2S_2^{ab}(x)\left[g_b^*(x)+
+2S_2^{cd}(x)g_d^*(x)g_{bc}^*(x)+\dots,\right]
+	   +3S_3^{abc}(x)g_b^*(x)g_c^*(x)+\dots=	  
+	  $$
+	  $$
+S_1^a(x)+2S_2^{ab}(x)g_b^*(x)+
+4S_2^{ab}(x)g_{bc}^*S_2^{cd}g_d^*(x)+3S_3^{abc}
+g_b^*(x)	  
+g_c^*(x)+\dots\,.	  
+	  $$
+	  Now we will calculate $\Phi_S^*(g)$ up to the order $3$
+	  including:
+		  $$
+\Phi_S^*(g)=g\left(y^a_0(x)+y^a_1(x,g)+y^a_2(x,g)+\dots
+\right)
+       $$
+       $$
++S_0(x)+S_1^a(x)q_a+
+S_2^{ab}(x)q_aq_b+S_3^{abc}(x)q_aq_bq_c-y^aq_a= 
+	  $$
+       $$
+       g\left(S_1^a(x)+2S_2^{ab}(x)g_b^*(x)+
+4S_2^{ab}(x)g_{bc}^*S_2^{cd}g_d^*(x)+3S_3^{abc}
+g_b^*(x)	  
+g_c^*(x)+\dots	
+\right)
+       $$
+       $$
+   +\left(S_0(x)-S^{ab}(x)q_aq_b-2S^{abc}q_aq_bq_c\right)-    
+   \left(S_1^a(x)+2S^{ab}(x)q_b+3S^{abc}q_bq_c\right)q_a=    
+       $$
+       $$
+   g^*(x)+2g_a^*(x)S_2^{ab}(x)g_b^*(x)+
+   4g_a^* S_2^{ab}(x)g_{bc}^*S_2^{cd}g_d^*(x)+
+   3S_3^{abc}
+g_a^*(x)
+g_b^*(x)	  
+g_c^*(x)
+        $$
+	$$
++{1\over 2}g_{ef}^*(x)\times	    
+       2S_2^{eb}(x)g_b^*(x)\times
+       2S_2^{fb'}(x)g_{b'}^*(x)
+       +S_0(x)-
+       S_2^{ab}q_aq_b-
+       2S_3^{abc}q_aq_bq_c=
+       $$
+       $$
+   g^*(x)+g_a^*(x)S_2^{ab}(x)g_b^*(x)+
+   4g_a^* S_2^{ab}(x)g_{bc}^*S_2^{cd}g_d^*(x)+
+   S_3^{abc}
+g_a^*(x)
+g_b^*(x)	  
+g_c^*(x)+
+     $$
+     $$
+   2g_{ef}^*(x)
+   S_2^{eb}(x)g_b^*(x)  
+   S_2^{fb'}(x)g_{b'}^*(x)+\dots=  
+     $$
+    $$
+   g^*(x)+g_a^*(x)S_2^{ab}(x)g_b^*(x)+
+   6?g_a^* S_2^{ab}(x)g_{bc}^*S_2^{cd}g_d^*(x)+
+   S_3^{abc}
+g_a^*(x)
+g_b^*(x)	  
+g_c^*(x)+\dots
+     $$
+
+    </div>
+ </body>
+</html>

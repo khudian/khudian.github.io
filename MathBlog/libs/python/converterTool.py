@@ -312,6 +312,8 @@ def convertTexString(data):
   data = replaceCommand_OverwhelmingType(
     data, R"\nameofthetitle", [TITLE_TAG_OPEN, TITLE_TAG_CLOSE])
   data = replaceCommand_OverwhelmingType(
+    data, R"\nameofthefile", [TITLE_TAG_OPEN, TITLE_TAG_CLOSE])
+  data = replaceCommand_OverwhelmingType(
     data, R"\centerline", [R"<h3>", R"</h3>"])
   data = replaceCommand_InnerType(
     data, R"\bf", [R"<b>", R"</b>"])

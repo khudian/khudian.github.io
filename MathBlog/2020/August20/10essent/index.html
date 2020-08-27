@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="10 August 2020">
+      <br><br>
+<br><br>
+<h2><b> Essential parameters II</b></h2>
+<h3><tt> using book of Eisenhart</tt></h3><br><br>
+About one week ago we considered the concept of 
+<i> essential parameters</i> for collection $\cal C$ 
+of functions $f^i(x,a)$.
+[Usually collection is the span of the functions].<br><br>
+ Recall that we say that set of $r$ parameters $a^\s$ ($s=1,\dots,r$)
+which describe the collection are  not essential 
+if we can reduce the number of parameters
+(see for detail blog on 02 August). We proved that
+      $$
+    \hbox{\tt one can reduce the number of parameters 
+    describing the set of functions $\cal C$  }  
+      $$
+      $$
+    \hbox{\tt if and only if there exists a non-vanishing 
+    vector field  $\R$ in the space } 
+       $$
+       $$
+   \hbox {\tt  of parameters such that
+    it does not change any function of the collection $\cal C $:}\,,  
+      $$
+    $$
+     \R=\varphi^\s(a){\p\over \p a^\s}\not=0\colon\,  
+       \hbox {such that for every function $f\in \cal C$}\,,\,
+     df(\R)=\varphi^\s(a){\p f(x,a)\over \p a^\s}\equiv 0\,,
+     \tag{1}
+$$<br><br>
+<b> Remark</b>
+   Notice that equation (1) implies that ${\rm rank}{\p f\over \p a}< r$.
+   However these conditions are not equivalent.
+<br><br><br><br>
+How to calculate the number of effective parameters?
+E.g. if collection $\cal C$ is the span of functions  
+$\{f^i(x,a)\}$ then what is the relation of number of essential paramets
+and rank of Jacobian $\p f(x,a)\over \p a$?<br><br>
+
+      First of all define<br><br>
+      <b> Definition</b>    
+      
+      Let $\cal C$ be collection of maps from $\R^m$
+      to $\R^n$ depending on $r$ parameters $a^1,\dots,a^r$:
+               $$
+	     f^\mu=f^\mu(x^i,a^\a)\,,\quad 
+	     (\mu=1,\dots,n\,,i=1,\dots,m\,, \a=1,\dots,r)
+	     \tag{2}
+	       $$
+      We say that $l$  ($l\leq r$) 
+      is the number of essential parameters if
+      there exist $l$ parameters $A_I=A_I(a^1,\dots,a^r)$
+      ($I=1,\dots,l$) such that this $r$-parametric set of maps
+      can be expressed as $l$-parametric set of maps:
+              $$
+	    f^\mu(x^i,a^\a)=F^\mu\left(x^i,A_I(a^\a)\right)
+	        \tag{4}
+	      $$
+and these $l$ parameterrs are essential, i.e.
+...<br><br>
+<br><br>
+      Consider prolongations $M_1,M_2,\dots$  of Jacobian
+              $$
+	   \hbox {$n\times r$ matrix}\,\,
+	   M_0=
+	  \left|\left|
+	   {\p f^\mu\over \p a^a}
+	   \right|\right|
+	  = 
+	   \pmatrix
+	     {
+		     &{\p f^1(x,a)\over \p a^1}
+		     &\dots
+		     &{\p f^1(x,a)\over \p a^r}\cr
+		     &\dots
+		     &\dots
+		     &\dots\cr
+		     &{\p f^n(x,a)\over \p a^1}
+		     &\dots
+		     &{\p f^n(x,a)\over \p a^r}\cr
+  }
+  \tag{5}
+	      $$
+            $$
+	   \hbox {$
+	   \left(m+n\right)\times r$ matrix} 
+	M_1= 
+	 \left|\left|
+	     \matrix
+	     {
+	  {\p f^\mu(x,a)\over \p a^a}\cr
+	  {\p^2 f^\mu(x,a)\over \p x^i\p a^a}\cr
+	  }
+	   \right|\right|
+	     =
+\pmatrix
+	     {
+		     &{\p f^1(x,a)\over \p a^1}
+		     &\dots
+		     &{\p f^1(x,a)\over \p a^r}\cr
+		     &\dots
+		     &\dots
+		     &\dots\cr
+		     &{\p f^n(x,a)\over \p a^1}
+		     &\dots
+		     &{\p f^n(x,a)\over \p a^r}\cr
+  		     &{\p^2 f^1(x,a)\over \p x^1\p a^1}
+		     &\dots
+		     &{\p^2 f^1(x,a)\over \p x^1\p a^r}\cr
+		     &\dots
+		     &\dots
+		     &\dots\cr
+		     &{\p^2 f^n(x,a)\over \p x^m\p a^1}
+		     &\dots
+		     &{\p^2 f^n(x,a)\over \p x^m\p a^r}\cr
+}
+\tag{6}
+	    $$
+  $$
+	   \hbox 
+	   {$\left(m+n+{n(n+1)\over 2}\right)
+	   \times r$ matrix} 
+	M_2= \left|\left|
+	     \matrix
+	     {
+	  {\p f^\mu(x,a)\over \p a^a}\cr
+	  {\p^2 f^\mu(x,a)\over \p x^i\p a^a}\cr
+	  {\p^3 f^\mu(x,a)\over \p \p x^j x^i\p a^a}\cr
+	  }
+	   \right|\right|
+	   =
+\pmatrix
+	     {
+		     &{\p f^1(x,a)\over \p a^1}
+		     &\dots
+		     &{\p f^1(x,a)\over \p a^r}\cr
+		     &\dots
+		     &\dots
+		     &\dots\cr
+		     &{\p f^n(x,a)\over \p a^1}
+		     &\dots
+		     &{\p f^n(x,a)\over \p a^r}\cr
+  		     &{\p^2 f^1(x,a)\over \p x^1\p a^1}
+		     &\dots
+		     &{\p^2 f^1(x,a)\over \p x^1\p a^r}\cr
+		     &\dots
+		     &\dots
+		     &\dots\cr
+		     &{\p^2 f^n(x,a)\over \p x^m\p a^1}
+		     &\dots
+		     &{\p^2 f^n(x,a)\over \p x^m\p a^r}\cr
+     &{\p^3 f^1(x,a)\over \p x_1^2\p a^1}
+		     &\dots
+		     &{\p^3 f^1(x,a)\over \p x_1^2\p a^r}\cr
+		     &\dots
+		     &\dots
+		     &\dots\cr
+		     &{\p^3 f^n(x,a)\over \p x_m^2\p a^1}
+		     &\dots
+		     &{\p^3 f^n(x,a)\over \p x_m^2\p a^r}\cr
+}
+\tag{7}
+	    $$
+and so on:
+               $$
+\left(m+n+{n(n+1)\over 2}+\dots+
+{n(n+1)\dots (n+k)\over k!}\right)	M_{k+1}= \left|\left|
+	     \matrix
+	     {
+	   M_k\cr
+	  {\p^{k+2} f^\mu(x,a)\over \p \p x^{i_1}\dots 
+	  \p x^{i_{k+1}}\p a^a}\cr
+	  }
+	   \right|\right|
+	   =
+	   \tag{8}
+          $$
+	All these matrices have $r$ columns, i.e.
+    rank of any  matrix $M_k$ is less or equal than $r$:
+	     $$
+	   {\rm rank}M_0\leq  
+	   {\rm rank}M_1\leq  
+	   {\rm rank}M_2\leq\dots \leq M_k
+	   \tag{9}
+	     $$<br><br>
+	 Denote by $s_k$ rank of $M_k$.    <br><br>
+<b> Proposition</b>
+  
+  1)  for every $k$, $s_k\leq s_{k+1}\leq r$<br><br>
+  2) there exist $N_0$ such that for all $k\geq N_0$
+         $$
+	s_k=s_{N_0}
+	 \tag{10}
+	 $$
+        
+	 <br><br>
+It is well defined    
+	     $$
+	  {\rm rank} M_\infty=
+	  \lim_{k\to\infty}{\rm rank} M_k
+	  \tag{10}
+	     $$<br><br>
+<br><br>
+<br><br>
+
+<b> Theorem</b>  Number of essential parametrs of the family of maps
+$\{f^\mu(x^i,a^\a)\}$ is equal to  the ${\rm rank M_\infty}$.<br><br>
+
+{\sl Proof}    	We have that ${\rm rank \,} M_0\leq r$.
+Suppose that ${\rm rank \,} M_0= r$. 
+  This means that rows of the matrix ${\p f^i\over \p a^\a}$
+  are linearly independent, i.e. 
+             $$
+	     df(\R)=R^\a(a){\p f^i(x,a)\over \p a^\a}=0\Rightarrow 
+	      R^\a\equiv 0\,.
+	      $$
+This means that all parameters are essential. Thus we prove theorem
+in the case if ${\rm rank \,} M_0= r$.<br><br>
+
+
+    </div>
+ </body>
+</html>

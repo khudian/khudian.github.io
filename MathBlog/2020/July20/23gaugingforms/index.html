@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="23 July 2020">
+      <br><br>
+<br><br>
+<h3><b> Gauging foms </b></h3><br><br>
+<i> in this text we will fix signs and coefficients in forms</i><br><br>
+   Let $H$ be a Hamiltonian on symplectic manifold $(M,\Omega)$,
+where in local coordinates
+      $$
+      \Omega={1\over 2}\omega_{ik}(x)dx^i\wedge dx^k\,,
+      \omega_{ik}=-\omega_{ki}\,,\quad
+      H=H(x)\,.
+      \tag{0.a}
+      $$
+      Let $\xi=D_H$ be Hamiltonian vector field:
+             $$
+	\iota_{\xi}\Omega=
+	\Omega {\rfloor}\xi=-dH\,,
+	\tag{0.b}
+	 $$
+i.e. in local coordinates Hamiltonian vector field $D_H$
+defines solutions of differential equations
+           $$
+	   {d x^i(t)\over dt}=\omega^{is}(x){\p H(x)\over \p x^s}\,.
+	   \tag{1a}
+	   $$
+Poisson bracket is
+    $$
+    \{f,g\}=D_f g\,.
+    $$<br><br>
+ Check (0b):
+          $$
+\Omega{\rfloor}D_H=	  
+     {1\over 2}\omega_{ik}(x)dx^i\wedge dx^k
+     {\rfloor}
+     \left(
+	{d x^i(t)\over dt}{\p\over \p x^i}
+     \right)
+     =2\cdot {1\over 2}\omega_{ik}(x)
+	{d x^i(t)\over dt}dx^k=
+	  $$
+	  $$
+     \omega_{ik}(x)
+\omega^{is}(x){\p H(x)\over \p x^s}dx^k=
+-\delta_k^s{\p H(x)\over \p x^s}dx^k=-dH\,.
+	  $$<br><br>
+<b> Example</b>    Suppose $\Omega=dp_i\wedge dq^i$
+      We claim that
+             $$
+	  D_H=
+	  {\p H(p,q)\over \p p_i}   
+	  {\p \over \p q^i}   
+	  -
+	  {\p H(p,q)\over \p q^i}   
+	  {\p \over \p p_i}\,,   
+	       $$
+indeed
+            $$
+\iota_{D_H}\Omega=dp_i\wedge dq^i {\rfloor} D_H=
+-{\p H(p,q)\over \p q^i}dq^i-   
+	  {\p H(p,q)\over \p p_i}dp_i=-dH\,.   
+	     $$<br><br>
+    For Poisson bracket we have
+        $$
+\{f,g\}=D_f g=
+ \left[
+{\p f(p,q)\over \p p_i}   
+	  {\p \over \p q^i}   
+	  -
+	  {\p f(p,q)\over \p q^i}   
+	  {\p \over \p p_i}
+	  \right]
+	  g(p,q)=
+{\p f(p,q)\over \p p_i}   
+	  {\p g(p,q)\over \p q^i}   
+	  -
+	  {\p f(p,q)\over \p q^i}   
+	  {\p g(p,q)\over \p p_i}\,.
+	  $$
+
+    </div>
+ </body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="14 August 2020">
+      <br><br>
+<h2><b> Lie's theorems I,II and III-rd</b></h2>
+<h3>using book of Eisenhart</h3>
+<h3>I began to write it on 01 August, </h3>
+<h3>then returned to this file again
+  on 14 August</h3><br><br>
+<h3>${\S}0$ one technical lemma</h3><br><br>
+<i> I was learning it during all my life from 1978... On other hand
+I never red Sophus Lie, however I red Hisenhart....
+Let me try to reconstruct it...</i><br><br>
+
+Let  $G$ be $r$-dimensional group $G$. Suppose that it
+acts on $n$-dimensional manifold $M$:
+       $$
+    y^i=f^i(a^\a,x^i)\,,
+    \tag{0.1}
+       $$
+where $\{a^\a\}$ ($\a=1,\dots,r$) are parameters of $G$, $x^i$
+($i=1,\dots,N$) are coordinates of $M$.<br><br>
+     We  suppose that all $f^i$ are idependent for any values of parameters,
+     i.e.
+                $$
+	\det {\p f^i(x,a)\over \p x^j}\not=0
+	  \tag{0.2a}
+		$$
+ and all group parameters $a^\a$
+     are <i> essential</i>, i.e. for an arbitrary non-vanishing vector field 
+     $\R = R^\s(a){\p \over \p a^s}$ its image is not vanished:
+     $df_*\R\not=0$ if $\R\not=0$:
+          $$
+	  R^\s(a){\p f(x,a)\over \p a^s}=0
+	  \Rightarrow R^s\equiv 0\,,
+	 \tag{0.2b}
+	  $$ 
+  (see blogs on 2-nd 10,11 )
+  
+  Composition of two transformation is another transformation:
+           $$
+	 f^i(y,b)=
+	 f^i(f^j(x,a),b)=
+	 f^i(x,\varphi (a,b))\,,
+	 \tag{0.3}
+	   $$
+where $a\colon\, y=f^i(x,a)$ and	   
+    function $\varphi(a,b)$ defines multiplication of
+    parameters.<br><br>
+    <b> Lemma</b>
+	            $$
+	   \det {\p\varphi^\a(a,b)\over \p b^\beta}\not=0\,,
+	   \tag{0.4a}
+	      $$   
+and
+  $$
+	   \det {\p \varphi^\a(a,b)\over \p a^\beta}\not=0\,,   
+	      \tag{0.4b}
+	      $$
+	     <br><br>
+<br><br><br><br>
+We prove this lemma in this paragraph.<br><br>
+            Consider on $G\times G$ vector fields
+'<tt> left</tt>' vector field ${\bf L}=N^\s(a,b){\p\over \p a^\s}$  
+and
+'<tt> right</tt>' vector field $\R=R^\s(a,b){\p\over \p b^\s}$.  
+  Consider images of left and right vector fields
+  under the map $f$.
+   It follows from
+equation (0.3) that  for right vector field  
+      $$
+    f_*\R=R^\s(a,b){\p\over \p b^\s}
+    f\left(f\left(x,a\right),b\right)=
+R^\s(a,b){\p f(x.\varphi)\over \p \varphi^\a}
+    {\p\varphi^\a(a,b)\over \p b^\s}\,,
+    \tag{5a}
+       $$
+   and for left vector field    
+       $$
+    f_*{\bf L}=L^\s(a,b){\p\over \p a^\s}
+    f\left(f\left(x,a\right),b\right)=
+    L^\s(a,b){\p f^i(a,b)\over \p \varphi^\a}
+    {\p \varphi^\a\over \p a^\s}
+    \tag{5b}
+       $$
+We are ready to prove relations (4a) and (4b).
+Proof is by contradiction.<br><br>
+
+Failing of relation (4a) means that there exists
+non-vanishing right vector field
+such that 
+  $$
+    d\varphi (\R)=
+    R^\s(a,b){\p \varphi ^\a\over\p b^\s}=0\,.
+       $$
+   Respectively failing of relation (4b) means that there exists
+non-vanishing left vector field
+such that 
+  $$
+    d\varphi ({\bf L})=
+    L^\s(a,b){\p \varphi ^\a\over\p a^\s}=0\,.
+       $$<br><br>
+We will show that condition $d\varphi(\R)=0$ for non-vanishing
+vector field $\R$ implies that
+$f_*\R=0$, and respectively 
+we will show that condition $d\varphi({\bf L})=0$ for non-vanishing
+vector field $\bf L$ implies that
+$f_*{\bf L}=0$.  Thus degeneracy of multiplication
+implies that parameters are not essential.<br><br>
+<br><br><br><br>
+ Suppose relation (4a) is failed.    We see that this means
+ that there exists non-vanishing right vector field
+    $\R$ such that
+          $
+    d\varphi (\R)=0$.
+       It follows from relation (5a) that   $f_*\R=0$.  
+       This is true for all
+values $a$.   This implies that for function $f(y,b)$
+parameters are not essential. Contradiction.<br><br>
+
+<br><br><br><br>
+Now prove equation (0.4b). We see 
+that there exists non-vanishing left vector field
+    $\bf L$ such that
+    $d\varphi ({\bf L})=0$.
+  It follows from relation (0.5b) that   $f_*{\bf L}=0$.
+  Again using (0.5b) we see that
+        $$
+0=f_*{\bf L}=
+L^\s(a,b){\p \over \p a^\s}
+f\left(
+    f
+\left(x,a
+\right),
+      b
+\right)=
+L^\s(a,b)
+{\p f^i\over \p y^j}\big\vert_{y=y(x,a)}
+{\p y^j\over \p a^\s}
+	$$
+Since equation (0.2)   $df$ is invertible, hence this relation
+implies that   for non-vanishing vector field $\bf L$
+$f_*{\bf L}=0$.  This contradicts to the fact that
+parameters are essential.
+       $$
+       L^s(a,b){\p y^i(x,a)\over \p x^s}=0
+       $$
+ Thus we proved very small but essential equation (0.4)<br><br>
+ <br><br><br><br>
+ <h3>$\S$ $1$  Integrability condition</h3>
+Our plan is the following: <br><br>
+on the base of equations (0.3) of action of the group	
+ we  deduce diff. equations
+        $$
+{\p y^i(x,a)\p a^\a}=\Psi^i_\a(y,a)
+	$$<br><br>
+Then we will prove very important fact that these differential equations
+<tt> are </tt><br><br>
+This will give us group structure.<br><br>
+     Recall that action of the group is defined by equation
+           $$
+	  f^i(y^j,b)=f^i(f^j(x,a),b)=f^i(x,c)\,,
+	       \tag{1}
+	   $$
+where $y^j=f^j(x,a)$, and $c^\a=\varphi^\a(a^\beta,b^\gamma)$
+is group's multiplication table. 
+The equation (0.4) proved in the ${\S} 0$ means that
+$b=\psi(c,a)$. Put it in equation (1):
+            $$
+	   f^i\left(f^j\left(x,a\right),
+	   \psi\left(c,a\right)\right)=f^i(x,c)\,.
+	     \tag{2a}
+	     $$
+	  RHS does not depend on $a$, hence
+       $$
+    0={\p\over \p a^\a}\left[
+	     f^i\left(f^j\left(x,a\right),
+	   \psi\left(c,a\right)\right)\right]=   
+       $$
+       $$
+   {\p f^i(y^j,b)\over \p y^j}\big\vert_{b^\a=\psi^\a(c,a)}
+   {\p y^j(x,a)\over \p a^\a}
+          +
+{\p f^i(y^j,b)\over \p b^\s}\big\vert_{b^\s=\psi^\s(c,a)}
+{\p \psi^\s(c,a)\over \p a^\a}\,.
+   $$
+Since $df$ is invertible (see equation (0.2a)) then
+this equation implies that
+   $$
+   {\p y^i(x,a)\over \p a^\a}=-
+   \Psi^i_j(x,a)
+{\p f^j(y,b)\over \p b^\s}\big\vert_{b^\s=\psi^\s(c,a)}
+{\p \psi^\s(c,a)\over \p a^\a}\,.
+   $$<br><br>
+
+    </div>
+ </body>
+</html>

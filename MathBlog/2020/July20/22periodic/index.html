@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="22 July 2020">
+      <br><br>
+<br><br>
+<h3><b> Periodic Hamiltonian systems</b></h3><br><br>
+<h3>Guillemin, Sternberg, Chapter IV, {${\S}6 $ }</h3><br><br>
+<br><br>
+Let $H$ be a Hamiltonian on symplectic manifold $(M,\Omega)$,
+where in local coordinates
+      $$
+      \Omega={1\over 2}\omega_{ik}(x)dx^i\wedge dx^k\,,
+      \omega_{ik}=-\omega_{ki}\,,\quad
+      H=H(x)\,.
+      \tag{0.a}
+      $$
+      Let $\xi=D_H$ be Hamiltonian vector field:
+             $$
+	\iota_{\xi}\Omega=
+	\Omega {\rfloor}\xi=-dH\,,
+	\tag{0.b}
+	 $$
+i.e. in local coordinates Hamiltonian vector field $D_H$
+defines solutions of differential equations
+           $$
+	   {d x^i(t)\over dt}=\omega^{is}(x){\p H(x)\over \p x^s}\,.
+	   \tag{1a}
+	   $$
+Consider <tt> one-parametric</tt> family of solutions of this differential
+equation, i.e. a map from $\R^2$ to $M$, $F\colon x^i=x^i(s,t)$
+such that
+        $$
+{\p x^i(t,s)\over \p t}=
+\omega^{is}(x){\p H(x)\over \p x^s}\big\vert_{x^i=x^i(t,s)}\,,
+\tag{1b}
+	$$<br><br>
+	<b> Lemma </b>
+	    $$
+	 F^*\Omega=dt\wedge d\bar H   
+	    $$
+	  where we denote by $\bar H$ the value of $H$ on $\R^2$
+	       $$
+	     \bar H=F^*H=H(x^i(s,t))  
+	       $$
+<b> Remark</b> $\bar H$ evidently does not depend on $t$, 
+however we will
+discuss it later (adiabatic invariant???)<br><br>
+Proof:
+        $$
+F^*\Omega=F^*
+\left(
+{1\over 2}\omega_{ik}(x)dx^i\wedge dx^k
+\right)=
+  $$
+  $$
+{1\over 2}\omega_{ik}
+\left(
+x\left(t,s\right)
+\right)
+\left[
+{\p x^i(t,s)\over \p t}dt+
+{\p x^i(t,s)\over \p s}ds
+\right]
+\wedge 
+\left[
+{\p x^k(t,s)\over \p t}dt+
+{\p x^k(t,s)\over \p s}ds
+\right]=
+    $$
+    $$
+{1\over 2}\omega_{ik}
+\left(
+x\left(t,s\right)
+\right)
+\left(
+{\p x^i(t,s)\over \p t}
+{\p x^k(t,s)\over \p s}
+-
+{\p x^k(t,s)\over \p t}
+{\p x^i(t,s)\over \p s}
+\right)dt\wedge ds=
+    $$
+    $$
+\omega_{ik}
+\left(
+x\left(t,s\right)
+\right)
+{\p x^i(t,s)\over \p t}
+{\p x^k(t,s)\over \p s}
+   dt\wedge ds=	
+ \omega_{ik}
+\left(
+x\left(t,s\right)
+\right)
+\left[
+	\omega^{ir}(x){\p H(x(t,s))\over \p x^r} 
+\right]
+{\p x^k(t,s)\over \p s}
+   dt\wedge ds=	  
+   $$
+   $$
+ -
+	{\p H(x(t,s))\over \p x^k} 
+{\p x^k(t,s)\over \p s}
+   dt\wedge ds   
+   =dH\big\vert_{x^i=x^i(t,s)}
+   \wedge
+   dt=d\bar H \wedge dt\,.
+   $$
+ (Recall that $\bar H=F^*H$).  <br><br>
+<br><br>
+Now use this lemma to study some features of dynamics.<br><br>
+
+Suppose that trajectory the family of trajectores
+$x^i=x^i(t,s)$ (depending on $s$) is periodic:
+   $x^i(t+T(s),s)=x^i(t,s)$.<br><br>
+     Denote by $C_s$ the curve  
+       $$
+    C_s\colon x^i_s(t)=x^i(t,s)   
+       $$
+The period of motion around  curve  $C_s$ is equal to
+$T(s)$: $$
+x^i_s(t+T(s))=x^i_s(t)\,.
+   $$
+ Consider $2$-dimensional domain  $D$ in $\R^2$
+ $$
+D=\{(t,s)\colon s_1\leq s\leq s_2\,,  0\leq t\leq Т(с)\} 
+ $$
+	The image of this domain under the map $F\colon\,
+	x^i=x^i(t,s)$, $F_*D$ is the piece  of cylindre between two 
+	'circle' $C_{s_1}$ and $C_{s_2}$.<br><br>
+  Now calculate   different 'manifestations'
+  of integral of two form $\Omega$  over domain $D$.<br><br>
+  From now on we suppose that $\Omega=d\a$  is exact form.
+  On one hand
+            $$
+	   \int_D F^*\Omega=\int_{F_* D}\Omega\,.  
+	    $$
+and if $\Omega=d\a$ then due to Stokes Theorem it is equal to
+         $$
+\int_{F_*D}\Omega=\int_{F_*D} d\a=\int_{\p \left(F_*D\right)}\a=
+	\int_{C_{s_{_2}}}\a 
+	-\int_{C_{s_{_1}}}\a 
+	 $$
+	 On the other hand due to the Lemma
+            $
+	   F^*\Omega=d\bar H\wedge dt\,,  
+	    $, hence
+      $$
+\int_{F_*D}\Omega=
+\int_D F^*\Omega=
+\int_D d\bar H \wedge  dt=
+\int_{\p D} t d\bar H
+      $$
+The curves $C_{s_{_1}}$ and
+ $C_{s_{_2}}$ do not contibute to these integrals.  This is only vericl curve
+ contributes:
+      $$
+\int_{F_*D}\Omega=
+\int_D F^*\Omega=
+\int_D d\bar H \wedge  dt=
+\int_{\p D} t d\bar H=
+\int_0^a T(s)H'(s)ds
+      $$
+Comparing this equation with previous one we come to conclusion:<br><br>
+<b> Theorem</b><br><br>
+<br><br>
+
+    </div>
+ </body>
+</html>

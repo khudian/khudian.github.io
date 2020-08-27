@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="5 August 2020">
+      <br><br>
+<h2><b> Solving one equation: $f\colon df(\X)=0$</b></h2>
+<h3><tt>   I did hundred years ago, however...</tt></h3><br><br>
+     How look functions $f=f(x)$ on 
+     $\R^n$ such that
+          $$
+	A^i(x){\p f\over \p x^i}=0\,, (i=1,\dots,n)\,.
+	    \tag{1}
+	  $$
+Consider vector field $\X=A^i(x){\p \over \p x^i}$.
+Equation (1) may be rewritten as
+           $$
+	f\colon\, df(\X)=0\,,   
+	   $$
+where $\X=A^i(x)\p_i$ is vector field.<br><br>
+To solve this equation we have to choose coordinates such that
+vector field $\X$ becomes "straight" in these coordinates
+                    $$
+ \hbox {Local coordinates $t,\xi_1,\dots,\xi_{r-1}$ such that
+ $\X={\p\over \p t}$}		    
+		    $$
+		Then this is obvious that solution of
+(1) is 
+     arbitrary function on $\xi_1,\dots\xi_{r-1}$.<br><br>
+<br><br>
+Let $M$ be $n-1$ dimensional 'surface' in $\R^n$.   
+Consider in tubular neighborhood of $M$
+new local coordinates 
+   $$
+  t\,,\xi_1,\dots,\xi_{n-1}  
+   $$
+   adjusted to the surface $M$ and vector field $\X$, i.e.
+   coordinates such that 
+    $$
+    \X={\p\over \p t}\,,{\rm and}\,\,t\big\vert_M=0\,.
+    $$
+   one can see that for arbitrary point (which is in a vicinity
+   of $M$) 
+     $$
+    t(\pt)\colon\,\, \exp (-t\X) \pt\rangle\in M 
+     $$
+   $\xi_i$ ($i=1,\dots,n-1$)
+   is constant along the flux of vector field $\X$:
+        $$
+	{dx^i\over dt}=A^i(x)
+	$$
+ <b> Example</b>   Let $M$ be a surface in $\R^3$ defined
+ by equation 
+            $$
+	   z=f(x,y)\,, 
+	    $$
+	 where $c
+	 x,y,z$ are standard cartesian coordinates.
+	 Consider vector field
+	      $$
+	      \X=
+	      x{\p\over \p x}+
+	      y{\p\over \p y}+
+	      z^2{\p\over \p z}\,,
+	      $$
+and describe  coordinates $(t,\xi_1,\xi_2)$  such that
+              $$
+	      \X=
+	      {\p\over \p t}\,,\quad
+	      t\big\vert_M=0\,.
+	   $$<br><br>
+Solution
+    $$
+    \cases
+    {
+\dot x=x\cr	    
+\dot y=y\cr	    
+\dot z=z^2\cr	    
+    }\Rightarrow
+    \cases
+    {
+	    x(t)=Ae^t\cr
+    y(t)=Be^t\cr
+    z(t)={1\over C-t}\cr
+    }
+    \,,\quad \r(t)\vert_{t=0}\in M \,\,
+    {\rm condition 
+    \,\, means}\,\, 
+    z(t)\vert_{t=0}={1\over C}=
+       $$
+       $$
+    f\left(x(t)_{t=0}, y(t)_{t=0}\right)=
+    f\left(A, B\right),\,\, {\rm i.e.}
+    \, t=t(x,y,z)\colon\,\,
+    {\rm such \,\, that}\,
+       \cases
+    {x(t)=Ae^t\cr
+    y(t)=Be^t\cr
+    z(t)={f(A,B)\over 1-tf(A,B)}\cr
+    }
+    $$
+
+    </div>
+ </body>
+</html>
