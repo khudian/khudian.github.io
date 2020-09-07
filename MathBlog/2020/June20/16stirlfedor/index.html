@@ -160,30 +160,45 @@ To go further use identity:
        $$ 
  The meaning  of his identity see later
  (see equation <tt> Fedoruk identity)</tt>)<br><br>
+
 This identity implies that
      $$
-\int e^{-n{x^2\over 2}}
+\int e^{-N{x^2\over 2}}
       \varphi(x)dx=
-{1\over \sqrt {2\pi n}}
-\int e^{-k^2\over 2n}e^{ikx}dkdx
-\int \varphi (p)e^{ipx}dp=
+{1\over \sqrt {2\pi N}}
+\int e^{-k^2\over 2n}
+\underbrace{e^{ikx}\varphi(x)dk}_{2\pi \tilde \varphi{(-k)}}dx=
    $$
-   $$
-{1\over \sqrt {2\pi n}}
-\int  e^{-k^2\over 2n}e^{ikx}\varphi (p)e^{ipx}dpdkdx=
-     $$
         $$  
-{2\pi \over \sqrt {2\pi n}}
-\int e^{-k^2\over 2n}\delta (k+p)\varphi (p)dpdk
-=\int e^{-k^2\over 2n}\varphi (k)dk=
-{2\pi \over \sqrt {2\pi n}}
- e^{-{1\over 2n}\left({d\over
+={2\pi\over \sqrt {2\pi N}}
+\int e^{-k^2\over 2N}\tilde \varphi (k)dk=
+{2\pi \over \sqrt {2\pi N}}
+ e^{{1\over 2N}\left({d\over
 dx}\right)^2}\varphi(x)\big\vert_{x=0}
+\tag{2a}
         $$
-Identity (***) allows us to rewrite (2)
+Identity (***) allows us to rewrite (2) as (2a), i.e.
 in terms of differential operator.
-[In fact doing this trick we formally we used due to Fedoruk
-the following identity
+Here we used Fourier transformation:
+       $$
+ e^{{1\over 2N}\left({d\over
+dx}\right)^2}\varphi(x)\big\vert_{x=0}=
+ \left[
+	 e^{{1\over 2N}\left({d\over
+dx}\right)^2}\int \tilde \varphi(k)e^{ikx}
+\right]_{x=0}=
+       $$
+       $$
+ \left[
+\int \tilde \varphi(k)
+\left(e^{-{k^2\over 2N}}\right)e^{ikx}
+\right]_{x=0}=
+\int \tilde \varphi(k)
+e^{-{k^2\over 2N}}dk\,.
+       $$
+(see also e.g. MathBlog on September 2020)
+
+[In fact doing this trick we use  the 'Fedoruk' identity
       $$
 \int f(x_0-x)u(x)dx=
 \int \tilde f(k)
@@ -193,24 +208,37 @@ e^{ik(x_0-x)}
   $$
 \int \tilde f(k)
 e^{ikx_0}
-\tilde u(p)e^{i(p-k)x}dx dk dp
-\int \tilde f(k)
+\tilde u(p)e^{i(p-k)x}dx dk dp=
+2\pi \int \tilde f(k)
 e^{ikx_0}
 \tilde u(p)\delta(p-k) dk dp=
   $$
   $$
-\int \tilde f(k)
+2\pi \int \tilde f(k)
 e^{ikx_0}
 \tilde u(k) dk=
- f\left({1\over i}{d\over dx}\right)
-      u(x)\big\vert_{x=0}\,.
-      \tag{Fedoruc identity}
+2\pi  \tilde f\left({1\over i}{d\over dx}\right)
+      u(x)\big\vert_{x=x_0}\,,
+      \tag{\hbox {Fedoruc identity}}
      $$
-]<br><br>
-Namely apply identity (***)  to equation (2):
- $$
+
+where  $\tilde f,\tilde u$ are Fourier images of functions $f,u$:
+    $$
+  g(x)=\int \tilde g(k)e^{ikx}dk\,,\quad {\rm with}  
+  \quad \tilde g(k)={1\over 2\pi }
+   \int \tilde g(k)e^{-ikx}dk\,. 
+    $$
+]
+
+Namely apply identity (***)  to equation (2)
+using the fact that according to 
+equation (****),
+Fourier image of function $f(x)=e^{-Nx^2\over2}$
+is equal to $\tilde f (k)=
+{e^{-k^2\over 2N}\over \sqrt {2\pi N}}$: 
+$$
 N!=
-\left(N\over e\right)^N\sqrt {2\pi N}
+N\left(N\over e\right)^N
 \int_{-1}^\infty e^{-N
    \left(
   {x^2\over 2 }
@@ -219,7 +247,7 @@ N!=
    \right)}dx=
    $$
    $$
-\left(N\over e\right)^N\sqrt {2\pi N}
+N\left(N\over e\right)^N
 \int e^{-N{x^2\over 2}}
      e^{
       N
@@ -230,25 +258,38 @@ N!=
  }dx=
      $$
      $$
-\left(N\over e\right)^N\sqrt {2\pi N}
-\int e^{-N{x^2\over 2}}
+N\left(N\over e\right)^N
+\int 
 \underbrace
+    {
+e^{-N{x^2\over 2}}
+}_{f}
+\overbrace
   {
+\underbrace
+   {
      e^{
       N
      \left(
  {x^3\over 3 }
  -{x^4\over 4 }+\dots
      \right)
- }
- }_{\hbox {terms of order $\geq 3$ in $x$}}
+     }
+ }_{u}
+ }^{\hbox 
+ { terms of order $\geq 3$ in $x$}}
  dx=
   $$
   $$
-\left(N\over e\right)^N\sqrt {2\pi N}
+N\left(N\over e\right)^N\cdot 2\pi
 \left\{
- e^{-{1\over 2N}\left({1\over i}
- {d\over dx}\right)^2}
+	{
+	e^{\left(
+	-{1\over 2N}
+	\left({1\over i}
+ {d\over dx}\right)^2
+      \right)}
+     \over \sqrt {2\pi N} }
     \left[
      e^{
       N
@@ -258,8 +299,27 @@ N!=
      \right)
  } 
 \right]
-\right\}_{x=0}\,.
-     $$<br><br>
+\right\}_{x=0}=
+     $$
+   $$
+\left(N\over e\right)^N\cdot \sqrt {2\pi N}
+	e^{
+	{1\over 2N}
+ {d^2\over dx^2}
+          }
+    \left[
+     e^{
+      N
+     \left(
+ {x^3\over 3 }
+ -{x^4\over 4 }+\dots
+     \right)
+ } 
+\right]_{x=0}=
+     $$
+     
+
+
 ... and here the mystery began: since the expression
 $    \left[
      e^{
