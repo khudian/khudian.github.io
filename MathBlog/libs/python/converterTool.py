@@ -362,8 +362,9 @@ def convert(pathFrom, pathTo, date):
   data = removeAfterBye(data)
 
   nameOfFile =  findCommand_OverwhelmingType(data, R"\nameofthefile")
+  nameOfFile = removeKey(nameOfFile, R"\bf ");
   nameOfFile = removeKey(nameOfFile, R"\bf");
-  #nameOfFile = convertTexString(nameOfFile)
+  nameOfFile = re.sub(R"\n", r"", nameOfFile)
 
   data = convertTexString(data)
   result = gTemplate.replace("PYTHON_DATE_KEY",
