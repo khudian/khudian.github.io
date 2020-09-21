@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="2 September 2020">
+      <br><br>
+<h2><b> Comparing  of quantum and classic morphisms</b></h2>
+<h3>encore....</h3><br><br>
+
+	For $S=S_1^a(x)q_a+S_2^{ab}(x)q_aq_b$ 
+	we calculate qunatum thick morphism and compare and 
+	compare it with classical one.<br><br>
+Define quantum morphism: 	
+     $$
+     \Phi_S^{q*}(\hbar,g)\colon\quad
+     e^{{i\over \hbar}\left(
+     \Phi_S^{q*}(\hbar,g)
+     \right)
+     }=
+     \int e^{{i\over \hbar} \left(S(x,q)-y^aq_a+g(y)\right)}dydq\,.
+     $$<br><br>
+   We have that
+       $$
+     \int e^{{i\over \hbar} \left(S(x,q)-y^aq_a\right)}dq=
+     \int e^{{i\over \hbar} \left(
+     B^a(x)q_a+S^{ab}q_aq_b
+     -y^aq_a\right)}dq\,.
+       $$
+       Use substitution $q_a\to q_a+t_a$, and choose 
+       $$
+       t_a={y_a-B_a\over 2}\,, \left(S^{ab}y_b=y_a\right)
+       $$
+(we suppose that $S_2^{ab}$ is non-degenerate).
+Then only quadratic term will remain:
+       $$
+     \int e^{{i\over \hbar} \left(
+     B^a(x)q_a+S^{ab}q_aq_b
+     -y^aq_a\right)}dq=
+             C
+	     e^{{i\over \hbar} 
+	     \left(
+     -t_at^a
+     \right)}=  C
+	     e^{{i\over \hbar} 
+	     \left(
+     -{1\over 4}(y-B)^2
+     \right)}
+          $$
+where
+       $$
+     C=  
+     \int e^{{i\over \hbar} 
+     S^{ab}q_aq_b}dq=
+    \left( {\pi \hbar\over i}\right)^n\det S_2\,,
+       $$
+    and for every $g(y)$
+   $$
+     e^{{i\over \hbar}\left(
+     \Phi_S^{q*}(\hbar,g)
+     \right)
+     }=
+     \int e^{{i\over \hbar} \left(S(x,q)-y^aq_a+g(y)\right)}dydq=
+     \left(\int e^{{i\over \hbar} \left(S(x,q)-y^aq_a\right)}dq\right)
+e^{{i\over \hbar} g(y)}=
+     $$
+    $$
+    C\int e^{{i\over \hbar} 
+	     \left(g(y)
+     -{1\over 4}(y-B)^2
+     \right)}dy
+$$
+In accordance with classical limit  stationary phase method 
+this integral is 'concetrated' in a vicinity of the point
+                $$
+	y^a=S_1^a(x)+2S_2^{ab}(x)q_b\,.	
+		$$
+         <br><br>
+
+    </div>
+ </body>
+</html>

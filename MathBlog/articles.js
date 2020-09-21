@@ -1,5 +1,13 @@
 var links =
 [
+  [["2020/September20/12badcoord/index.html"], ["12 September 2020"], ["Action of free particle in very bad coordinates"]],
+  [["2020/September20/11actionprop/index.html"], ["11 September 2020"], ["Properties of action"]],
+  [["2020/September20/10fedoruk2/index.html"], ["10 September 2020"], ["'Hard part' of stationary phase method.Point of view of physicist."]],
+  [["2020/September20/09action/index.html"], ["9 September 2020"], ["On one meaning of action"]],
+  [["2020/September20/07fedoruk/index.html"], ["7 September 2020"], ["Fedoruk identity and meaning of  $\delta$-function of momenta"]],
+  [["2020/September20/05gauging/index.html"], ["5 September 2020"], ["Gauging of $\delta$-function"]],
+  [["2020/September20/02quant/index.html"], ["2 September 2020"], ["Comparing  of quantum and classic morphisms"]],
+  [["2020/August20/30mk/index.html"], ["30 August 2020"], ["To the proof of Theorem"]],
   [["2020/August20/27encore/index.html"], ["27 August 2020"],["Calculation of $\Phi_3^*$"]],
   [["2020/August20/18completelyintegr/index.html"], ["18 August 2020"],["Completely integrability"]],
   [["2020/August20/14lie/index.html"], ["14 August 2020"],["Lie's theorems I,II and III-rd"]],
