@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="11 September 2020">
+      <br><br>
+<h2><b> Properties of action</b></h2>
+<h3>vek zhivi, vek uchisj, durakom....</h3>
+Here I will formulate some of their properties,
+paying attention to <tt> non-conservative</tt> systems.
+    
+    Let $L=L(q,\dot q,t)$ be a Lagrangian,
+   $H=H(p,q,t)$ be a Hamiltonian, and 
+   $S=S(q_1,t_1, q_2,t_2)$
+    be an action of the mechanical system:
+         $$
+H=H(p,q,t)=p_i\dot q^i-L(q,\dot q,t)\,,\quad\colon\,\,
+  p_i={\p L(q,\dot q,t)\over \p \dot q^i}\,,
+  \tag{1a}
+	 $$
+    $$
+  S(q_1,t_1;q_2,t_2)=
+  \int^{t_1}_{t_2}
+  L\left(x(\tau),\dot x(\tau)\right)d\tau\,,
+  \tag{1b}
+      $$
+   where $x^i(tau)$ be a path, which obeys Euler-Lagrange equations
+   of  motion, and the boundary conditions
+            $$
+	    x(\tau)\colon\quad
+	{d\over dt}  \left({\p L\over \p \dot q^i}\right)=
+	    {\p L\over \p  q^i}\,,
+	    \cases
+	    {
+  x(\tau)\big\vert_{\tau=t_1}=q_1\cr  
+  x(\tau)\big\vert_{\tau=t_2}=q_2\cr
+           }\,.
+	   \tag{1c}
+    $$
+    Using this formula one can show that
+          $$
+{\p S\left(t_1,q_1;t_2,q_2\right)\over \p t_2}
+=-H\left(
+p_i={\p S\left(t_1,q_1;t_2,q_2\right)\over \p q_2^i},
+    q_2,t_2
+\right)\,,
+\tag{2a}
+	  $$
+     $$
+{\p S\left(t_1,q_1;t_2,q_2\right)\over \p t_1}
+=H\left(
+p_i={\p S\left(t_1,q_1;t_2,q_2\right)\over \p q_1^i},
+    q_1,t_1
+\right)\,.
+\tag{2b}
+	  $$
+Show for example (2a):
+    $$
+  \delta_2{\p S\over \p t_2}=
+  S\left(t_1,q_1;t_2+\delta_2,q_2\right)  
+  -S\left(t_1,q_1;t_2,q_2/\right)=  
+    $$
+       $$
+  \int^{t_1}_{t_2+\delta_2}
+  L\left(\tilde x(\tau),\dot {\tilde x}(\tau)\right)d\tau-
+  \int^{t_1}_{t_2}
+  L\left(x(\tau),\dot x(\tau)\right)d\tau=
+  L(q_2,\dot q_2)\delta_2+
+    $$
+    $$
+  \int^{t_1}_{t_2}
+  L\left(x(\tau)+\vare h(\tau),\dot {\tilde x}(\tau)\right)d\tau-
+  \int^{t_1}_{t_2}
+  L\left(x(\tau),\dot x(\tau)\right)d\tau=
+       $$
+        $$
+  L(q_2,\dot q_2)\delta_2+
+  \int_{t_1}^{t_2}
+     {d\over dt}
+     \left[
+{\p L(q,\dot q,t)\over \p \dot q^i}
+  \vare h^i(\tau)
+	\right]^{t_2}_{t_1}\,,
+	\tag{3a}
+	$$
+	where $\delta_2$,$\vare$ are nilpotents: $\delta_2^2=\vare^2=0$.
+	Boundary conditions tell us
+	that
+	   $$
+\tilde x^i(t_2+\delta_2)=
+	x^i(t_2+\delta_2)+\vare h(t_2+\delta_2)=
+	x^i(t_2)+v^i(t_2)\delta_2+\vare h(t_2),
+	     $$
+Since $\tilde x^i(t_2+\delta_2)=x^i(t`_2)=q_2^i$, this means that
+  $$
+ \vare h^i(t_2)=-\dot x^i(t_2)\delta_2\,. 
+  \tag{3b}
+  $$
+Thus exptession in (3a) is equal to
+  $$
+  L(q_2,\dot q_2)\delta_2+
+  \int_{t_1}^{t_2}
+     {d\over dt}
+     \left[
+{\p L(q,\dot q,t)\over \p \dot q^i}
+  \vare h^i(\tau)
+	\right]^{t_2}_{t_1}=
+\delta_2\left(L\left(q_2,\dot q_2,t\right)-
+      {\p L(q,\dot q,t)\over \p \dot q^i}
+           \dot q^i
+      \right)	\tag{3d}
+	$$
+Using (1a) we prove (2a) using this relation.<br><br>
+<br><br><br><br><br>
+<h3>${\S}2$   Extended canonical transformations</h3><br><br>
+
+Every function $F=F(q_,Q,t)$generates extended canonical transformations
+(see previous blogs)
+            $$
+	    \pmatrix
+             {p_i\cr
+	     q^j\cr
+		     }
+		     \mapsto
+	    \pmatrix
+	     {\rho_i(p,q,t)\cr
+	     Q^j(p,q,t)\cr
+		     }\colon
+		  \quad, 
+		  p_i=
+		  {\p F(q,Q,t)\over\p q^i}\,,   
+		  Q^i=-
+		  {\p (q,Q,t)\over\p q^i}\,,   
+	    \tag{2.1a}
+	    $$
+	    such that new Hamiltonia is defined by
+	       $$
+	     h(\rho,Q,t)=-{\p F(q,Q,t)\over \p t}+H(p,q,t)\,.
+	     (2.1b)
+	       $$
+These equations follow from equation:
+     $$
+    pdq-Hdt=\rho dQ-hdt+dF\,. 
+     $$<br><br>
+<h3>${\S}3$   Action and extended canonical transformations</h3><br><br>
+Take as $F$ an action, however action depends on two times, 
+and here 'mystery' began:<br><br>
+An arbitrary action defines one-parametric family
+Notice that equation (2,1b)
+implies that new Hamiltonian $h$ vanishes if
+      $$
+{\p F(q,Q,t)\over \p t}+H(p,q,t)\,, {\rm where}\,
+, p_i={\p F(q,Q,t)\p q^i}\,,
+      $$
+      but this is nothing but Hamilton Jacobi equation for action!
+We come to the statement.<br><br>
+Let $S=S\left(q_1,t_1;q_2.t_2\right)$ 
+be an action of mechanical system
+with hamiltonian $H=H(p,q,t)$.  
+Consider an arbitrary  canonical
+transformation generated by one-parametric family of functions
+       $$
+       F_\tau(q,Q,t)=S\left(q,\tau;Q,t\right)\,.
+       $$
+    For  an arbitrary such a tramsformation a new Hamiltonian vanishes,
+    i.e. equations of motion are:
+        $$
+	\rho(t)\equiv \rho_0\,,
+	Q(t)\equiv Q_0\,.
+	$$
+      <b> Remark</b>  There is a temptation to write
+      'one parametric' family of extended canonical transformations,
+      however in simple cases this is not true. I do not know the
+      general statement.<br><br>
+
+    </div>
+ </body>
+</html>

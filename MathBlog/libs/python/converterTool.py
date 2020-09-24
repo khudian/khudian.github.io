@@ -131,6 +131,10 @@ def removeAfterBye(data):
     return data
    
   return data[:foundIdx]
+
+
+def removeKey(data, key):
+  return data.replace(key, '')
   
 def checkCaretInsideFormula(data, caretIdx):
   result = False
@@ -221,8 +225,29 @@ def chooseMinMaxAndKeys(minmaxParentheses, minmaxInternalKeys):
     return [minmaxInternalKeys,
       [GENERAL_BEGIN_KEY, GENERAL_END_KEY]]
   
-  raise R"cannot find open/close keys for the command"  
-    
+  raise R"cannot find open/close keys for the command"
+
+
+def findCommand_OverwhelmingType(
+        data, commandString):
+  while True:
+    foundIdx = data.find(commandString)
+
+    if foundIdx == -1:
+      return data
+
+    if checkCaretInsideFormula(data, foundIdx):
+      raise "command is inside formula"
+
+    minmaxParentheses = getMinMax(data,
+                                  foundIdx + len(commandString), "{", "}")
+    minmaxInternalKeys = getMinMax(data,
+                                   foundIdx + len(commandString), GENERAL_BEGIN_KEY, GENERAL_END_KEY)
+
+    [minmax, _] = chooseMinMaxAndKeys(
+      minmaxParentheses, minmaxInternalKeys)
+    return data[minmax[0] + 1: minmax[1]]
+
 
 def replaceCommand_OverwhelmingType(
   data, commandString, 
@@ -302,15 +327,11 @@ def simpleReplaces(data):
   
 
 def convertTexString(data):
-  data = removeHeaderDefs(data)
-  data = removeAfterBye(data)
   data = addSpaceToLessOperator(data)
   data = eqnoToTag(data)
   data = skipsToBr(data)
   data = calcToRfloor(data)
   data = calxToS(data)
-  data = replaceCommand_OverwhelmingType(
-    data, R"\nameofthetitle", [TITLE_TAG_OPEN, TITLE_TAG_CLOSE])
   data = replaceCommand_OverwhelmingType(
     data, R"\nameofthefile", [TITLE_TAG_OPEN, TITLE_TAG_CLOSE])
   data = replaceCommand_OverwhelmingType(
@@ -337,6 +358,14 @@ def convert(pathFrom, pathTo, date):
   with open(pathFrom, 'r', encoding="utf8") as file:
     data = file.read();
 
+  data = removeHeaderDefs(data)
+  data = removeAfterBye(data)
+
+  nameOfFile =  findCommand_OverwhelmingType(data, R"\nameofthefile")
+  nameOfFile = removeKey(nameOfFile, R"\bf ");
+  nameOfFile = removeKey(nameOfFile, R"\bf");
+  nameOfFile = re.sub(R"\n", r"", nameOfFile)
+
   data = convertTexString(data)
   result = gTemplate.replace("PYTHON_DATE_KEY",
     dateToString(date))
@@ -345,6 +374,9 @@ def convert(pathFrom, pathTo, date):
   with open(pathTo, 'w', encoding ="utf8") as file:
     file.write(result)
 
+  return nameOfFile
+
+
 def generateLinksToInsert(targets):
   print("Adding links: ")
   targets.sort(reverse = True)
@@ -352,7 +384,9 @@ def generateLinksToInsert(targets):
   for target in targets:
     targetStripped = target[3][len(gDestinationDir) + 1:]
     targetStripped = targetStripped.replace("\\", "/")
-    result += "\n  [\""  + targetStripped + "\"],"
+    result += "\n  [[\""  + targetStripped + "\"], [\"" \
+              + str(target[2]) + " " + monthNumToString(target[1]) + " " + str(target[0]) + "\"], [\"" + \
+              target[4] + "\"]],"
     
   print(result)
   return result  
@@ -392,9 +426,9 @@ def execute():
         if (not os.path.exists(targetFile) and 
           validateMonthAndYear(monthNum, yearNum)):
           dayNum = getDayNum(file)
-          convert(fullPath, targetFile, 
+          nameOfFile = convert(fullPath, targetFile,
           [yearNum, monthNum, dayNum])
-          targets.append([yearNum, monthNum, dayNum, targetFile])          
+          targets.append([yearNum, monthNum, dayNum, targetFile, nameOfFile])
   
   addTargetsToArticlesJs(targets)
   

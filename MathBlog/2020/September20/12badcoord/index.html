@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="12 September 2020">
+      <br><br>
+<h2><b> Action of free particle in very bad coordinates</b></h2><br><br>
+
+We know that in fact action is $S=S(q_1,t_1;q_2,t_2)$,
+and
+        
+     $$
+    {\p S\over \p t_2}+H\left(
+    p_i={\p S\over \p q_2^i},q^i\right)=0\,, 
+     \tag{1a}
+     $$
+     where
+        $$
+H(p,q,t)=p_i\dot q^i-L(q,\dot q,t)\,,\qquad
+{\rm with}\,, p_i={\p L\over \p q^i}
+\tag{1b}
+	$$
+Formulae for action follow from definition:
+    $$
+S=S(q_1,t_1;q_2,t_2)=
+\int_{t_1}^{t_2}
+L\left(x(\tau),\dot x(\tau),\tau\right)\,, {\rm where}
+\,\, 
+x(t_1)=q_1,
+x(t_2)=q_2.
+    $$
+however for conservative systems $L=L(q,\dot q)$,
+and action effectively depends on $T=t_2-t_1$.<br><br>
+   $$
+   $$<br><br>
+
+   Consider free particle $L={m\dot q^2\over 2}$
+   in 'bad' coordinate:
+          $$
+	q=xt\,.  
+	  $$
+In new coordinates
+          $$
+	  L={m\over 2}(x+t\dot x)^2=
+	  {m\over 2}x^2+
+	  {m\over 2}\dot x^2t^2\,,+
+	  $$
+and
+     $$
+    H={p^2\over 2mt^2}-{p_ix^i\over t}\,. 
+     $$
+ For free particle 
+ $$
+ L={m\dot q^2\over 2}\,,
+ S={m(q_2-q_1)^2\over 2(t_2-t_1)},
+         $$
+and action $S$ is scalar, hence in new coordinates
+           $$
+ S={m(x_2t_2-x_1t_1)^2\over 2(t_2-t_1)},.
+	   $$ 
+Perform calculations. It is useful to introduce notations
+            $$
+	  S={m\Delta_i\Delta^i\over 2T}\,, 
+	  \Delta^i=x_2^it_2-x_1^it_1\,,
+	  T={t_2-t_1}\,.
+	    $$
+	We see that
+	$$
+{\p S\over \p t_2}={m\Delta_ix_2^i\over T}-
+   {m\Delta_i\Delta^i\over 2T^2}\,,
+	$$
+	and
+	$$
+p_i={\p S\over x_2^i}={m\Delta_i t_2\over T}\,.	
+	$$
+     This leads to the answer:  $S$ is obeyed to
+     Hamilton Jacobi equation (1) in new 'bad' coordinates also.<br><br>
+
+    </div>
+ </body>
+</html>

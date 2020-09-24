@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="5 September 2020">
+      <br><br>
+<h2><b> Gauging of $\delta$-function
+</b></h2>
+We know that $\delta(x)=C\int e^{ikx}dk$.   Calculate $C$.<br><br>
+Take function $\varphi$ such that
+  $\varphi=\varphi_\d(x)=
+  \cases{ 
+  0 \quad \hbox {for $|x|\geq \delta$}\cr
+  1 \quad\hbox {for $|x|\leq \delta$}\cr
+  }$. We have
+ $$
+  1=\int \delta(x)\varphi dx=
+  \int_{-\infty}^{\infty} dk
+  \left(
+  \int_{-\d}^\d Ce^{ikx}dx
+  \right)=
+  \int_{-\infty}^{\infty} 
+  \left({Ce^{ikx}\over ik}\big\vert^\d_{-\delta}\right)
+  $$
+  $$
+  =
+  \int_{-\infty}^{\infty}{Ce^{ik\d}-Ce^{-ik\d}\over ik}dk= 
+  2C\int_{-\infty}^{\infty}{\sin k\d\over k}dk= 
+  4C\int_0^{\infty}{\sin k\d\over k}dk=4C\cdot {\pi\over 2}\,.
+    $$
+  Thus $C={1\over 2\pi}$ and
+      $$
+     \delta(x)={1\over 2\pi}\int e^{ikx}dk\,. 
+      $$
+   One can see that for Fourier transfomration
+      $$
+      \varphi(x)=
+      C_1\int_{-\infty}^{\infty}
+      \tilde \varphi(k)e^{ikx}dk\Rightarrow
+      \,\tilde \varphi(k)=
+      C_2\int_{-\infty}^{\infty}
+       \varphi(x)e^{-ikx}dk\,, {\rm with}\,\,
+         C_1C_2={1\over 2\pi}\,,
+      $$
+      usually
+    $$
+      \varphi(x)=
+      {1\over \sqrt {2\pi}}
+      \int_{-\infty}^{\infty}
+      \tilde \varphi(k)e^{ikx}dk\,,\quad
+     \tilde \varphi(k)=
+      {1\over\sqrt {2\pi}}
+      \int_{-\infty}^{\infty}
+       \varphi(x)e^{-ikx}dk\,, {\rm with}\,\,
+         C_1C_2={1\over 2\pi}\,,
+      $$
+     Usually we put $C_1=1$ and $C_2={1\over 2\pi}$:
+         $$
+	 \varphi(x)=\int \tilde\varphi(p)e^{ipx}dp\,,\quad
+	 \tilde\varphi(p)={1\over 2\pi}
+	 \int \varphi(x)e^{-ipx}dp\,.
+	 $$
+
+    </div>
+ </body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="7 September 2020">
+      <br><br>
+<h2><b> Fedoruk identity and meaning of  
+$\delta$-function of momenta</b></h2>
+ 
+  Fedoruk identity (see the Stirling fomula Blog)
+  claims that 
+         $$
+	\int f(x_0-x)u(x)dx=
+\sqrt {2\pi}\left[
+		\tilde f\left({1\over i}{d\over dx}\right)u(x)
+		\right]_{x=x_0}\,,
+	 $$
+where $\tilde f$   Fourier image of $f$.<br><br>
+The formal proof is the following
+         $$
+	\int f(x_0-x)u(x)dx=
+	   {1\over 2\pi}\int 
+	\tilde f(k)\exp \left({ik\left(x_0-x\right)}\right)
+	\tilde u(p)\exp \left({ipx}\right)dkdpdx=
+	       $$
+	       $$
+	   {1\over 2\pi}\int 
+	\tilde f(k)\exp (ikx_0)
+	\exp \left({ix\left(p-k\right)}\right)
+	\tilde u(p)dkdpdx=
+	\int 
+	\tilde f(k)\exp (ikx_0)
+	\delta (k-p)
+	\tilde u(p)dkdp
+	       $$
+	       $$
+  \int 
+	\tilde f(k)\exp (ikx_0)
+	\tilde u(k)dk
+	=\sqrt `[2\pi]\left[
+		\tilde f\left({1\over i}{d\over dx}\right)u(x)
+		\right]_{x=x_0}\,.
+	 $$
+	 Here we choose gauging:
+	    $$
+f(x)={1\over \sqrt 2\pi}\int \tilde f(k)\exp (ikx)dk\,,	    
+\tilde f(k)={1\over \sqrt 2\pi}\int  f(x)\exp (-ikx)dx\,,
+\left(\delta (x)={1\over 2\pi}\int \exp (ikx)dk\right)\,.
+	    $$
+(this is the gauging which is different from the gauging which we used 
+in other texts (<tt> see Striling, Blog,...</tt> ))<br><br>
+I have to confess that I did not understand the Fedoruk identity<br><br>
+To understand it better consider the special case if $f\equiv 1$. 
+Then 
+     $$
+    \tilde f(k)=\sqrt {2\pi}\delta(k)\,.
+     $$
+Fedoruk identity tells that in this case for 'every' function $u$
+   $$
+   \int u(x)dx=
+   \sqrt{2\pi} \left[
+	    \left(\sqrt{2\pi }\delta(k)
+  \big\vert_{k=
+   {1\over i}{d\over dx}}\right)u(x)
+   \right]_{x=x_0}=
+   {2\pi} \left[
+	    \left(\delta(k)
+  \big\vert_{k=
+   {1\over i}{d\over dx}}\right)u(x)
+   \right]_{x=x_0}\,.
+   $$
+Check it:
+      $$
+   2\pi \left[
+    \left(\delta(k)
+  \big\vert_{k=
+   {1\over i}{d\over dx}}\right)u(x)
+   \right]_{x=x_0}=
+  2\pi\left( \delta (\hat k)u(x)\right)_{x=x_0}=
+ \left[ 
+\left(\int \exp {i\hat k}z dz\right) u(x)
+ \right]_{x=x_0}\,.
+    $$
+ Using the fact that 
+ $$
+ \exp {ikz}u(x)=\exp 
+ \left\{i{1\over i}{d\over dx}z\right\}
+         u(x)=u(x+z)\,,
+ $$   
+we come to the answer:
+      $$
+     2\pi\left[
+    \left(\delta(k)
+  \big\vert_{k=
+   {1\over i}{d\over dx}}\right)u(x)
+   \right]_{x=x_0}=
+\int u(x_0+z)dz
+ =\int u(z)dz\,.
+    $$
+<tt> Fedoruk Identity have the deep physical meaning.</tt>  
+
+    </div>
+ </body>
+</html>
