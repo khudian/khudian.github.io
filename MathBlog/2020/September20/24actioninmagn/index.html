@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="24 September 2020">
+      <br><br>
+<h2><b> Action in parallel magnetic and elevtirc field)</b></h2><br><br>
+We calculate here the action of Hamiltonian
+         $$
+	 {
+	 H=\left({\bf p}-{e\over c}{\bf A}\right)^2
+	 \over 2m}+e\varphi
+	 \tag{1a}
+	 $$
+	 in the case if electric and magnetic fields are directed 
+	 along $z$ axis.
+	 We know that in the case if magnetic field vanishes,
+	 then
+	  $$
+S\left(t_1,q_1;t_2,q_2\right)=
+{m(\r_2-\r_1)^2\over 2T}-mg{z_1+z_2\over 2}T-{1\over 24}mg^2T^3
+ \tag{0}
+	  $$
+	  (here $T=t_2-t_1$, and $g$ is such that $e\varphi=mgz$)
+	  (see previous Bloges)<br><br>
+Switch on magnetic field $\bf B$ along  $z$-axis.
+      $$
+      {\bf A}={1\over 2}{\bf B}\times \r\,,\quad {\rm with}\,, 
+      {\bf B}=b\e_z, \quad {\rm i.e.}
+    {\bf A}={b\over 2}\left(y\e_x-x\e_y\right)\,,
+     \tag{1b}
+    $$
+and
+      $$
+      H=
+      {\left(p_x-{yeb\over 2c}\right)^2\over 2m}
+      +{\left(p_y+{xeb\over 2c}\right)^2\over 2m}+
+      {p_z^2\over 2m}+mgz\,,\quad (e\varphi=mgz)\,
+      \tag{2a}
+      $$
+     and  Lagrangian is equal to
+         $$
+L={m(\dot x^2+\dot y^2+\dot z^2)\over 2}+
+{e\over c}A_i\dot x^i-mgz=
+{m(\dot x^2+\dot y^2+\dot z^2)\over 2}+
+{eb\over 2c}(y\dot x-x\dot y)-mgz\,.
+       \tag{2b}	 
+	 $$
+Euler-Lagrange equations of motion are:
+           $$
+	   \cases
+	   {
+{d\over dt}{\p L\over \p \dot x}=
+m{\buildrel {..}\over x}+{eb\over 2c}\dot y
+={\p L\over \p  x}=-{eb\over 2c}\dot y\cr	   
+{d\over dt}{\p L\over \p \dot y}=
+m{\buildrel {..}\over y}-{eb\over 2c}\dot x
+={\p L\over \p  y}={eb\over 2c}\dot x\cr	
+{d\over dt}{\p L\over \p \dot z}=
+m{\buildrel {..}\over z}
+={\p L\over \p  z}=-mg\cr
+              }
+	      \Leftrightarrow
+	   \cases
+	   {
+m{\buildrel {..}\over x}+
+		{eb\over c}\dot y=0\cr	   
+m{\buildrel {..}\over y}-{eb\over c}\dot x=0\cr
+m{\buildrel {..}\over z}=-mg\cr
+              }
+	       \Leftrightarrow
+	   \cases
+	   {  
+{\buildrel {..}\over x}+w\dot y=0\cr
+{\buildrel {..}\over y}-w\dot x=0\cr
+{\buildrel {..}\over z}=-g\cr
+              }
+	      \,, \left(w={eb\over mc}\right)\,.
+   \tag{3a}
+   $$
+Solve these equations. The last equation 
+(${\buildrel {..}\over z}=-g$) is trivial, solve first and second:
+    $$ 
+    \cases
+	   {  
+{\buildrel {..}\over x}+w\dot y=0\cr
+{\buildrel {..}\over y}-w\dot x=0\cr
+            }
+	   \Leftrightarrow
+{d^2\r(t)\over dt^2}=-w P{d\r(t)\over dt}\,,\quad	
+	P=\pmatrix {0 & 1\cr -1 & 0}\,.
+   \tag{4a}
+   $$
+  $P$ is generator of $SO(2)$, i.e. this equation (4) implies
+  that
+     $$
+ {d\r(t)\over dt}=e^{-wPt}\ac\,,\quad
+ \left(
+ e^{-wPt}=
+ \pmatrix 
+ {
+\cos wt &-\sin wt\cr
+\sin wt & \cos wt\cr
+}\,\,,\hbox {and $\ac$ is a constant vector}
+ \right)\,.
+ \tag{4b}
+     $$
+  This equation implies that
+       $$
+     \r(t)=-{P^{-1}\over w}e^{-w Pt}\ac+\b=  
+     {P\over w}e^{-w Pt}\ac+\b\,, \hbox {since $P^2=-1$}\,.  
+       $$
+here $\ac$ and $\b$ are  constant vectors. Use boundary
+conditions to calculate these vectors:
+    $$
+    \cases
+     {
+ \r(t)\big\vert_{t=0}=\r_0\cr
+ {d\r(t)\over dt}\big\vert_{t=0}=\v_0\cr
+ }
+ \Rightarrow    
+    \cases
+    {
+	    {1\over w}P(\ac)+\b=\r_0\cr
+      \ac=\v_0\cr
+    }
+    \Rightarrow
+    \r(t)={1\over w}e^{-wPt} P(\v_0)+\r_0-
+    {1\over w}P(\v_0)\,,
+    $$
+  i.e.  
+        $$
+   \r(t)= {1\over w}
+   \pmatrix
+   {
+	   \cos wt & -\sin wt\cr	   
+	   \sin wt & \cos wt\cr	   
+   }
+   \pmatrix
+   {
+	   0 & 1\cr
+	   -1 & 0\cr
+   }
+   \pmatrix
+   {
+	   v_{0x}\cr
+	   v_{0y}\cr
+   }+
+   \pmatrix
+   {
+	   x_0\cr
+	   y_0\cr
+   }
+   -
+    {1\over w}
+   \pmatrix
+   {
+	   0  &1\cr
+	   -1  &0\cr
+   }
+   \pmatrix
+   {
+	   v_{0x}\cr
+	   v_{0y}\cr
+   }\,.
+   $$
+ Collect equations together, we come to
+      $$
+ x(t)={v_{0y}\over w}\cos wt+
+ {v_{0x}\over w}\sin wt+x_0
+-{v_{0y}\over w}\,,
+\tag{5a}
+$$    
+$$
+ y(t)={v_{0y}\over w}\sin wt-
+ {v_{0x}\over w}\cos wt+y_0
++{v_{0x}\over w}\,,
+\tag{5b}
+$$
+and
+  $$
+z(t)=z_0+v_{0z}t-{gt^2\over 2}\,.
+\tag{5c}
+  $$
+ 
+ These  equations describe standard 'Larmor'  
+ circles in non-relativistic case. The desribe particle
+ starting
+ at initial point $\r_0=\pmatrix {x_0\cr y_0\cr z_0\cr}$  
+ with initial velocity 
+ ${\bf v}_0=\pmatrix {v_{x0}\cr v_{y0}\cr v_{z0}\cr}$
+ rotates around the helix with Larmor
+        frequence $w={eb\over mc}$
+\footnote {$^*$}
+{the centre of Larmor circle is an 'integral of motion'} <br><br>
+
+<tt> We are ready to calculate the action</tt><br><br>
+We already caclulated the action of free particle,
+and the action of particle in homogeneous field. This is why
+it is convenient to consider Lagrangian $L$ (see equation (2b))
+as a sum of three:
+  $$
+  L=L_A+L_B+L_C\,,
+  \tag{6a}
+  $$
+  where
+   $$
+   \underbrace
+   {L_A={m(\dot x^2+\dot y^2)\over 2}}\,,
+   _{\hbox {free particle}}
+   \tag{6b}
+   $$
+   $$
+   \underbrace
+   {L_B={m\dot z^2\over 2}-mgz}\,,
+   _{\hbox {free particle}}
+   \tag{6c}
+   $$
+and
+   $$
+   L_C=   
+{eb\over 2c}(y\dot x-x\dot y)\,.
+       \tag{6d}	 
+	 $$
+	 We have
+	    $$
+W\left(\r_1,t_1;\r_2,t_2|g,b\right)=
+\int_{t_1}^{t_2} L\left(x(\tau),\dot x(\tau),\tau\right)d\tau	  
+	    $$
+where $x^i(\tau)$ is a trajecctory which obeys boundary conditions	    
+Simplify calculations using the fact tht Lagrangian does not depend
+on time, and it is the sum of three Langrangians, such that we also know
+the action of Lagrangians $L_A$ and $L_B$. However we again will check
+the previous calculations.  Hence now switch off magnetic field:
+In this case $v_x$ and $v_y$ are preserved and
+          $$
+W\left(\r_1,t_1;\r_2,t_2|g,b=0\right)=
+\int_0^T \left[{m\dot z^2\over 2}-mgz\right]d\tau+
+\int_0^T \left[{m\dot x^2+m\dot y^2\over 2}\right]d\tau\,,\quad
+(T=t_2-t_1)\,.
+    \tag{7a}
+	   $$
+The boundary conditions  (see equation (5c)) say that
+    in this case
+    $$
+   x_2=x_1+v_{x0}T\,,  
+   y_2=y_1+v_{y0}T\Rightarrow
+   v_{x0}={x_2-x_1\over T}\,,
+   v_{y0}={y_2-y_1\over T}\,,
+   \tag{7b}
+     $$
+ and    
+  $$
+ z_2=z_1+v_{0z}T-{gT^2\over 2}\Rightarrow 
+ v_{0z}={z_2-z_1\over T}+{gT\over 2}\,,
+   \tag{7c}
+  $$
+ thus in the absence of magnetic field
+          $$
+W\left(\r_1,t_1;\r_2,t_2|g,b=0\right)=
+\int_0^T \left[{m\dot z^2\over 2}-mgz\right]d\tau+
+\int_0^T \left[{m\dot x^2+m\dot y^2\over 2}\right]d\tau=
+	   $$
+	   $$
+{m\over 2}\int_0^{t_2-t_1}\left[
+	{z_2-z_1\over t_2-t_1}
+	   +{g(t_2-t_1)\over 2}-g\tau
+	\right]^2d\tau+	   
+	   $$
+	   $$
+	  -mg\int_0^T\left[z_1+
+	  \left(
+		{z_2-z_1\over T}
+	   +{gT\over 2}
+	  \right)\tau-{g\tau^2\over 2}
+	\right]
+	d\tau+
+	    $$
+	    $$
+	{m(x_2-x_1)^2\over 2(t_2-t_1)} 
+	+{m(y_2-y_1)^2\over 2(t_2-t_1)}= 
+	   $$
+           $$
+	   {m\over 2}\int_0^T \left[
+		  {(z_2-z_1)^2\over T^2}+
+		  {g^2T^2\over 4}+   
+		 g^2\tau^2+
+		  g(z_2-z_1)-
+		  {2(z_2-z_1)\over T}g\tau-
+		  g^2T\tau
+		   \right]d\tau-
+	   $$
+	   $$
+	  - mg\left[
+		   z_1T+{\Delta z\over T}{T^2\over 2}	
+		   +{gT\over 2}{T^2\over 2}-
+		   {gT^3\over 6}
+		   \right]+
+	      $$
+	    $$
+	{m(x_2-x_1)^2\over 2(t_2-t_1)} 
+	+{m(y_2-y_1)^2\over 2(t_2-t_1)}= 
+	   $$
+          $$
+{m\over 2}\left[
+	{(z_2-z_1)^2\over T}+{g^2T^3\over 4}+{g^2T^3\over 3}
+	+g(z_2-z_1)T- {2(z_2-z_1)\over T}g{T^2\over 2}-
+	{g^2T^2\over 2}
+	\right]-	  
+	  $$
+	  $$
+	 -mg\left[{z_1+z_2\over 2}+{1\over 12}gT^3\right]
+	 +\left[
+	{m(x_2-x_1)^2\over 2(t_2-t_1)} 
+	+{m(y_2-y_1)^2\over 2(t_2-t_1)}= 
+		 \right]=
+	 $$
+  $$
+  {m(\r_2-\r_1)^2\over (t_2-t_1)}-
+mg{z_1+z_2\over 2}-{1\over 24}{mg^2T^3}\,.
+   \tag{8}
+  $$
+{\bf Remark}  We are happy; the answer coincides with previous calculations
+ (see the Blog on September 2019).<br><br>
+
+ Now using equation (5d)calculate the most intriguing: 
+ the part of action
+ responsible
+ for  magnetic field:
+   $$
+W\left(\r_1,t_1;\r_2,t_2|g,b\right)-
+W\left(\r_1,t_1;\r_2,t_2|g,b=0\right)=
+{eb\over 2c}\int_C ydx-xdy\,.
+\tag{9}
+   $$
+where we have to integrate over the trajectory of the particle.
+Here let us take a breath. $C$ is a curve $x^i(\tau) $ such that
+it starts at the  point $\r_1$ and it ends at the point $\r_2$:
+      $$
+     C\colon\,], \r(t)\,,\quad
+           \cases
+	   {
+      \r(t_1)=\r_1\
+      \r(t_2)=\r_2\
+      }
+      $$
+     Sure one can find this curve using  
+   formulae (5), in particular using (5) one can find $\v$
+   such that particle with initial velocity $\v$
+   approaches the point $\r_2$ at the moment $T=t_2-t_1$.
+   On the other hand
+the calculation of the integral (9) can be preformed
+in a short and beautiful way:
+Particle's trajectory is helix,
+its radius is equal to $R={v\over w}$,
+where $w={eb\over mc}$, hence in (9)
+we come to the projection of helix on the base circle"
+         $$
+{eb\over 2c}\int_C ydx-xdy=
+{eb\over 2c}\cdot {R^2\varphi\over 2}=
+{eb\over 2mc}\cdot {mv^2\over w^2}\cdot {wT\over 2}=
+   {mv^2T\over 4}
+   \tag{10}
+	   $$
+Recall that $T$ is a time, during this time
+particle moving by this helix with speed $|\v|$
+moves from the point
+$\r_1$ to the point $\r_2$.<br><br>
+<br><br>
+
+ Now we have to calcuclate   $\v$ such that particle
+ reachs the point $\r_2$ from the point $\r_1$ in a time $T=t_2-t_1$.
+     Recall that as we shown in equations (4), (5)
+         $$
+\r(t)={1\over w}e^{-wPt} P(\v)+\r_1-
+    {1\over w}P(\v)\,.
+    \tag{11a}
+	 $$
+This means that if particle reaches the point $\r_2$ in the time
+$T=t_2-t_1$, then
+             $$
+	  {1\over w}\left(e^{-TPw}-1\right)P(\v)=\r_2-\r_1\,,
+	  \left(\hbox {recall that}\,\,
+	  e^{-TPw}= \right)\,,
+	        \tag{11b}
+	   	     $$
+Note that
+        $$
+	e^{-TPw}-1=
+	\pmatrix 
+{
+	\cos Tw -1&-\sin Tw\cr 
+\sin Tw & \cos Tw-1\cr
+}=	
+  -2\sin {Tw\over 2}
+\pmatrix 
+{
+	\sin {Tw\over 2}& \cos {Tw\over 2}\cr 
+-\cos {Tw\over 2} & \sin {Tw\over 2} \cr
+}
+         $$
+where the last matrix is orthogonal.   Since matrix $P$
+is also orthogonal, the we see that equation (11b)
+implies that
+     $$
+    {1\over w}\left|-2\sin {Tw\over 2}\right|
+    |\v|=|\r_2-\r_1|\,,
+     $$
+ i.e.
+   $$
+  \v^2={w^2(\r_2-\r_1)^2\over 4\sin^2{Tw\over 2}}\,, 
+   $$
+   and
+   $$
+{eb\over 2c}\int_C ydx-xdy=
+   {mv^2T\over 4}
+   ={mw^2(\r_2-\r_1)^2T\over 16\sin^2{Tw\over 2}}   
+   $$
+   Thus wee come that action is equal to
+          $$
+W\left(\r_1,t_1;\r_2,t_2|g,b\right)=
+W\left(\r_1,t_1;\r_2,t_2|g,b=0\right)+
+{eb\over 2c}\int_C ydx-xdy=
+   {mv^2T\over 4}=
+	  $$
+	  $$
+{m(\r_2-\r_1)^2\over 2T}+	  
+{mw^2T(\r_2-\r_1)^2\over 16\sin^2{Tw\over 2}}-
+ mg{\r_2+\r_1\over 2}\n T-{1\over 24}mg^2T^3\,.
+	  $$
+
+    </div>
+ </body>
+</html>

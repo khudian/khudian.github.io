@@ -1,5 +1,9 @@
 var links =
 [
+  [["2020/September20/24actioninmagn/index.html"], ["24 September 2020"], ["Action in parallel magnetic and elevtirc field)"]],
+  [["2020/September20/23geomobject/index.html"], ["23 September 2020"], ["Geometrical object (look from outside)"]],
+  [["2020/September20/19example/index.html"], ["19 September 2020"], ["Example of canon. transformation induced by an action"]],
+  [["2020/September20/18exofaction/index.html"], ["18 September 2020"], ["Action for particle in constant field"]],
   [["2020/September20/12badcoord/index.html"], ["12 September 2020"], ["Action of free particle in very bad coordinates"]],
   [["2020/September20/11actionprop/index.html"], ["11 September 2020"], ["Properties of action"]],
   [["2020/September20/10fedoruk2/index.html"], ["10 September 2020"], ["'Hard part' of stationary phase method.Point of view of physicist."]],
