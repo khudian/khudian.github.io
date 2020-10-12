@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="28 September 2020">
+      <br><br>
+<h2><b> Action in parallel magnetic and electric fields II)</b></h2><br><br>
+<i> This is the short version of the previous blog.
+  Here I emphasise cental moments of calulcation of the action.
+  
+  I never will stop to surprise the power of an action,
+  in particular how the straightforward calculations
+  of action of Lagrangian lead to function which obeys 
+  Hamilton-Jacobi equation.  in two days it will be my official retirement...
+  </i><br><br>
+Here we will calculate the action of a particle which moves
+in parallel electircal and magnetic fields.<br><br>
+We will present here the short version of calculations
+based on calculations of action in homogeneous
+electric field (see the Blog on 24 September 2019).<br><br>
+    Conisder Lagrangian in homogeneous electirc and magnetic
+    fields directed along $z$-axis: 
+         $$
+	 L=       
+{m(\dot x^2+\dot y^2+\dot z^2)\over 2}+
+{eb\over 2c}(y\dot x-x\dot y)-mgz\,, 
+\left(\hbox {we choose $\E=E\e_z$ such that $eEz=mgz$}\right)
+       \tag{1a}	 
+	 $$
+respectively
+      $$
+      H=
+      {\left(p_x-{yeb\over 2c}\right)^2\over 2m}
+      +{\left(p_y+{xeb\over 2c}\right)^2\over 2m}+
+      {p_z^2\over 2m}+mgz\,,\quad (e\varphi=mgz)\,
+      \tag{1b}
+      $$
+     We have to calculate an action $W=W(T,r,\R)$.
+     To do this we consider the trajectory  $x(\tau)$
+     such that it starts at the point $\r$ at $0$
+     and ends at the point $\R$ at the moment $\tau=T$
+     (system is conservative):
+      $$
+    W(T,\r,\R)=\int_0^T L(x(\tau),\dot x(\tau))d\tau   
+      \tag{1c}
+      $$
+<b> Remark</b> For not conseervative Lagrangians $W=W(t_1,\r,t_2,\R)$.
+To calculate the action we consider the trajectory which begins
+at the point $\r$ at $t_1$ and ends at the point  $\R$ at the moment $t_2$.
+In the case if Lagrangian is conservative (it does not depend on
+time) then  the action $W=W(t_1,\r,t_2=t_1+T,\R)$ 
+does not depend on  $t_1$.<br><br>
+Using some properties of action we already calculated
+an action if magnetic interaction is absent (see the blog on  September 2019)"
+          $$
+W_0=W_{b=0}
+(t_1,\r;t_2,\R)={m(\R-\r)^2\over 2T}-mg{z+Z\over 2}T-
+{1\over 24}mg^2T^3\,,\quad (T=t_2-t_1)\,.	
+\tag{2a}
+	$$
+The switching on of magnetic field leads to
+        $$
+W_b=W_0+{eb\over 2c}\int_C  ydx-xdy\,
+\tag{2b},	
+	$$
+	where $C$ is the trajectory of the particle.
+  The problem is reduced to differential geometry: we have to solve it!   <br><br>
+It is convenient to introduce
+       $$
+     w=w_L={eb\over mc}
+     \tag{3a}
+       $$
+    (so calledd 'Larmor' frequency.) 
+ Partcile moves along the helix of the radius $R_L$.
+ Denote by $\v_\perp$ the projection of the velocity on
+ the $OXY$ plane.  We have that 
+        $$
+|\v_\perp|=R_Lw\,,\quad \v=\v_\perp-gt \e_z\,
+\tag{3b}
+	$$   
+One can see (using Stokes formula) that
+	$$
+{eb\over 2c}\int_C ydx-xdy=
+{mw\over 2}\int_C ydx-xdy={mw\over 2}{R^2\Phi\over 2}\,,
+      \tag{3c}
+       $$
+    where $\Phi=wT$ is the angle of rotation of the particle,
+    which moves along the helix.
+    Thus using (3) we come to
+       $$
+{eb\over 2c}\int_C ydx-xdy=
+{mw^2\v^2_\perp\over 4}\,.
+      \tag{3d}
+       $$
+We have to calculate $\v_\perp$, (beter to say its length).)
+Equations of motion are followjng:
+       $$
+    {\p L\over \p x}=   
+       $$<br><br>
+
+    </div>
+ </body>
+</html>

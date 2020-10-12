@@ -1,6 +1,10 @@
 var links =
 [
-  [["2020/September20/24actioninmagn/index.html"], ["24 September 2020"], ["Action in parallel magnetic and elevtirc field)"]],
+  [["2020/October20/08hitchin/index.html"], ["8 October 2020"], ["Hitchin's talk"]],
+  [["2020/October20/07identity/index.html"], ["7 October 2020"], ["A larchik prosto otkryvalsia: on one unexpected identity"]],
+  [["2020/October20/02hjequation/index.html"], ["2 October 2020"], ["Hamilton-Jacobi method--what is it ?"]],
+  [["2020/September20/28larmoraction/index.html"], ["28 September 2020"], ["Action in parallel magnetic and electric fields II)"]],
+  [["2020/September20/24actioninmagn/index.html"], ["24 September 2020"], ["Action in parallel magnetic and electric fields)"]],
   [["2020/September20/23geomobject/index.html"], ["23 September 2020"], ["Geometrical object (look from outside)"]],
   [["2020/September20/19example/index.html"], ["19 September 2020"], ["Example of canon. transformation induced by an action"]],
   [["2020/September20/18exofaction/index.html"], ["18 September 2020"], ["Action for particle in constant field"]],

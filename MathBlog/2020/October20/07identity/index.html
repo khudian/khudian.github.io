@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="7 October 2020">
+      <br><br>
+<h2><b> A larchik prosto 
+otkryvalsia: on one unexpected identity</b></h2><br><br>
+Today 
+trying to calculate the action for `Kepler problem,
+I was 
+trying to calculate 
+$\int {dx\over (x+a)\sqrt {1-x^2}}$.
+For this purpose
+I was playing  with the formula of
+taking derivstive of $\rm arcsin$
+of fractional limear function.    Thus I came to
+     $$
+\int {dx\over (x+a)\sqrt {1-x^2}}=
+  {\rm arcsin }\,
+  \left(
+  {ax+1\over x+a}
+ \right)\,,
+      $$
+and unexpectedly I came to the identity<br><br>
+          $$
+{\rm arcsin}{1\over x}	
+={\sqrt {-1}}
+\log \tan
+{\rm arcsin }\,
+  \left(
+  {x\over 2}
+ \right)+{\pi\over 2}\,.
+	  $$
+This formula lives in complex world. (It can be conisdered as
+analitical continuation for $\rm arcsin$. 
+ I never saw it, evidently I was excited, and.....<br><br>
+    I wrote some manifestation of this formula
+    in real world, and realised tht it
+    is just a simple exercise in geometry.<br><br>
+Calculations are following:
+  $$
+ {\rm arcsin}{1\over x}
+ =\int \left(
+  {\rm arcsin}{1\over x}
+ \right)'+C=-\int {dx\over x\sqrt {x^2-1}}=
+ \left(x={\rm ch}\theta\right)=
+ -\int {{\rm sh\,}\theta d\theta\over 
+ {\rm ch}\theta
+ {\rm sh}\theta
+ }=
+  $$
+  $$
+ -\int { d\theta\over 
+ {\rm ch\,}\theta
+ }=
+ -\int 
+ { d\theta\over 
+ {\rm ch\,}^2{\theta\over 2}
+ +
+ {\rm sh\,}^2{\theta\over 2}
+ }=
+ -\int { d\theta\over 
+ {\rm ch\,}^2{\theta\over 2}
+      } 
+     { 1\over 
+         1
+ +
+ {\rm th\,}^2{\theta\over 2}
+ }\,\,
+ \left(u={\rm th}{\theta\over 2}\right)
+ $$
+ $$
+   =
+  - 2\int {du\over 1+u^2}=
+   -2{\rm arctan\,}u+C'=
+  - 2{\rm arctan\,}
+   \left(
+   {\rm th\,}
+   \left({1\over 2}
+   \left(
+   {\rm arcch \,}x
+   \right)
+   \right)
+   \right)
+   +C'\,,
+  $$
+        $$
+{\rm th\,}{\theta\over 2}=
+{2{\rm sh\,}{\theta\over 2}{\rm ch\,}{\theta
+\over 2}
+\over
+2{\rm ch}^2 {\theta\over 2}
+}=
+{{\rm sh\,}\theta\over {\rm ch\,}\theta+1}=
+{\sqrt {x^2-1}\over x+1}=\sqrt {x-1\over x+1}
+\, {\rm hence}
+{\rm arcsin}{1\over x}=-2{\rm arctg\,}\sqrt {x-1\over x+1}+C
+	$$
+Comparing LHS and RHS  for $x=1$ we come to $C={\pi\over 2}$, i.e.
+  $$
+ {\rm arcsin}{1\over x}=
+  {\pi\over 2}-
+  2{\rm arctg\,}
+  \sqrt{x-1\over x+1}
+  $$
+  and this formula is stupiditly evident: consider triangle
+    $\triangle ABC$ where  $\angle C={\pi\over 2}$,
+$c=AB=x$ and    $a=BC=1$. Let $BD$ be bissector of the angle $B$
+where a point $D$ is on the side $AC$.
+Then
+      $$
+     \angle A={\rm arcsin\,}{1\over x}=
+    {\pi\over 2}-2\angle DBC\,,
+      $$
+and $\angle DBC={\rm arctg\,}{|DC|\over |BC|}
+={\rm arctg\,}\sqrt{x-1\over x+1}$, since
+$|AD|:|DC|=x$. Thus the identity is proved.<br><br>
+	
+    </div>
+ </body>
+</html>
