@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="11 September 2021">
+      <br><br>
+<h2><b> Baranov-Schwarz transformation</b></h2><br><br>
+Let $M$ be a supermanifold. One can consider
+an invariant volume form on it which : $D_{\rm canon.}(x,\theta, dx,d\theta)$:
+                  $$
+D_{\rm canon.}(x',\theta', dx',d\theta')=
+D_{\rm canon.}(x,\theta, dx,d\theta)
+                   $$
+  since
+                                            $$
+                            {\rm Ber} 
+                            {
+                              \p\left(
+                          {x',\theta',dx',d\theta'}
+                        \right) 
+                           \over
+                           \p\left({x,\theta,dx,d\theta}
+                      \right) }=1\,.                   
+                                             $$
+           Example Let $M$ be $p|q$-dimensional supermanifold
+           with local coordinates<br><br>
+           $$
+           \underbrace
+            {
+        \xi^1,\dots,\xi^p   
+           }_{\rm even\,\,cordinates};
+           \underbrace
+            {
+        \eta^1,\dots,\eta^q   
+           }_{\rm odd\,\,cordinates}
+           $$
+           Then local coordinates on $\Pi TM$ are
+ $$
+           \underbrace
+            {
+        \xi^1,\dots,\xi^p   
+           }_{\rm even\,\,cordinates};
+           \underbrace
+            {
+        d\xi^1,\dots,d\xi^p   
+           }_{\rm odd\,\,cordinates};
+           \underbrace
+            {
+        \eta^1,\dots,\eta^q   
+           }_{\rm odd\,\,cordinates}
+           \underbrace
+            {
+        d\eta^1,\dots,\eta^q   
+           }_{\rm even\,\,cordinates}
+          $$
+                         If 
+                         $$
+                         F(x,\theta)=F_\empty(x)+F_i(x)\theta^i+
+                         \dots+F_{\rm top}(x)\theta^1\dots\theta^n              
+                         $$
+          and 
+                     $$
+                  \int  F_{\rm top}(x)d^n(x)< \infty              
+                      $$
+then
+                     $$
+                     \int F(x,\theta) 
+     D_{\rm canon.}(x,\theta, dx,d\theta)=
+                  \int  F_{\rm top}(x)d^n(x)\,.              
+                     $$<br><br>
+                     Let $$
+                     \Omega(z,dz)=\Omega(x,dx,\theta,d\theta)
+                     $$                  
+         be an arbitrary pseudodifferential form in <br><br>
+         Let $C=C^{p|q}$ be an arbitrary $p|q$-dimensional surface
+         in superspace $E^{m|n}$: 
+                      $$
+                      z^A=z^A(\zeta^B), \quad
+                      \zeta^B=(\xi^1,\dots,\xi^p,\eta^1,\dots,\eta^q)\,.
+                      $$
+Then integral of $\Omega$ over $C$ is equal to
+ $$
+ \int_C\Omega=\int \Omega
+                 \left(
+                   z(\zeta),
+                   {\p z(\zeta)\over \p \zeta}
+          D_{\rm canon}(\xi,d\xi,\eta.d\eta)
+                 \right)
+ $$
+         Define the $p|q$-density, Baranov--Schwarz transform:
+                                     $$
+                                A^{(BS)}_\Omega
+                                \left(
+               z(\zeta)\,,
+                   {\p z(\zeta)\over \p \zeta}
+                 \right)=  
+                 \int \Omega\left(
+        z(\zeta)\,,
+                   {\p z(\zeta)\over \p \zeta}\bar\zeta
+                 \right)D(\bar\zeta) \,.
+                                      $$
+                                      
+  The following theorem takes place (Baranov-Schwarz theorem)
+                           $$
+                           \int_C\Omega=
+                           A^{(BS)}_\Omega(C)\,.
+                           $$<br><br>
+         
+    </div>
+ </body>
+</html>

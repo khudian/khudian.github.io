@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="7 May 2021">
+      <br><br>
+<h2><b> propeties of delta operator</b></h2><br><br>
+<br><br>
+It is disaster with formulas!
+I did it!<br><br>
+   Ստացվեց!<br><br>
+   <tt> Based on the formula (1) I proved that $\Delta_\rho^2$
+   by straightforward calculations
+ that $\Delta^2$ is a Poisson vector field.</tt><br><br>
+
+Use:
+           $$
+       \Delta_\rho f=
+       \Delta f=
+       \Delta_0 f+\{A,f\}\,,
+       \tag{1}
+            $$
+            where $A$ is an even function such that $A={1\over 2}\log\rho$    
+and
+              $$
+            \Delta_0 f={\p^2 f\over \p x^i \p\theta_i}
+              $$<br><br>
+            Calculate $\Delta (fg)$.<br><br>
+     First note that
+              $$
+              \{f,gh\}=
+              \{f,g\}h+
+              (-1)^{p(gh)}\{f,h\}g
+               $$
+    and
+     $$
+     \Delta_0(f\cdot g)=
+     (\Delta_0 f)\cdot g+
+     (-1)^{p(f)}f\cdot \Delta_0 g+
+     (-1)^{p(f)}\{f,g\}\,,
+      \tag{3} 
+      $$
+and              $$
+               \Delta_0\{f,g\}=      
+               \{\Delta_0f,g\}-(-1)^f      
+              \{f, \Delta_0 g\}\,.  
+              \tag{4}
+               $$
+               Using the prepresentation (1) one can
+               show that the  formulas similar
+               to formulas (3) and (4)
+               hold for operator $\Delta$
+               also
+      $$
+     \Delta(f\cdot g)=
+     (\Delta f)\cdot g+
+     (-1)^{p(f)}f\cdot \Delta g+
+     (-1)^{p(f)}\{f,g\}\,,
+      \tag{3a} 
+      $$
+and              $$
+               \Delta\{f,g\}=      
+               \{\Delta f,g\}-(-1)^f      
+              \{f, \Delta g\}\,.  
+              \tag{4a}
+               $$<br><br>
+        Check (3a):
+         $$
+         \Delta(fg)=\Delta_0(fg)+\{A,fg\}=
+          $$
+          $$
+         (\Delta_0 f)g+(-1)^f\{f,g\}+
+         (-1)^f f \Delta_0 g+\{A,f\}g+(-1)^{fg}\{A.g\}f=
+         $$
+         $$
+         \left[(\Delta_0 f)g+\{A,f\}g\right]+
+         \left[(-1)^{f} f \Delta_0 g+
+         \{A.g\}f\right]+
+        (-1)^f\{f,g\}=
+         $$
+         $$
+        (\Delta f)g+
+      (-1)^{f} f \Delta g+
+        (-1)^f\{f,g\}\,.
+         $$
+         it is harder to check (4a)
+          $$
+               \Delta\{f,g\}=      
+               \Delta_0\{f,g\}+     
+               \{A,\{f,g\}\}=   
+          $$
+                   $$    
+                   \{\Delta_0f,g\}-(-1)^f\{f,\Delta_0g\}+ 
+                \underbrace
+                       {    
+                        \{A,\{f,g\}+   
+                          (-1)^{f+g}\{f,\{g,A\}\}+   
+                          (-1)^{(g+1)f}) \{g,\{A,f\}\}
+              }
+              _{\hbox {Jacobi identity}}-
+          $$
+          $$
+                      -   
+              (-1)^{f+g}\{f,\{g,A\}-   
+                (-1)^{(g+1)f}) \{g,\{A,f\}=
+          $$
+               $$
+               \left[
+                 \{\Delta_0f,g\}-(-1)^{(g+1)f} \{g,\{A,f\}\}
+               \right]-        
+               \left[
+      (-1)^f\{f,\Delta_0 g\}+
+      (-1)^{f+g} \{f,\{g,A\}\}
+               \right]=        
+               $$
+               $$
+               \left[
+                 \{\Delta_0f,g\}-(-1)^{(g+1)f} \{\{A,f\},g\}
+                 (-1)^
+  {\left[\left(p\left(A\right)+p\left(f\right)+1\right)+1\right](p(g)+1)+1}
+               \right]-  
+               $$
+   $$
+    \left[
+      (-1)^f\{f,\Delta_0 g\}+
+      (-1)^{f+g} \{f,\{A,g\}(-1)^{(A+1)(g+1)+1}\}
+               \right]= $$
+          $$
+               \left[
+                 \{\Delta_0f,g\}-(-1)^{(g+1)f} \{\{A,f\},g\}
+                 (-1)^
+  {f(g+1)+1}
+               \right]-  
+               $$
+   $$
+    \left[
+      (-1)^f\{f,\Delta_0 g\}+
+      (-1)^{f+g} \{f,\{A,g\}(-1)^{g}\}
+               \right]= $$
+       $$
+               \left[
+                 \{\Delta_0f,g\}+\{\{A,f\},g\}
+               \right]-  
+   (-1)^f \left[
+    \{f,\Delta_0 g\}+
+       \{f,\{A,g\}(-1)^{g}\}
+               \right]= $$
+       $$
+            \{\Delta f,g\}-  
+            (-1)^f \{f,\Delta g\}\,.
+        $$<br><br>
+<br><br>
+<br><br>
+        Now using (3)and (4) calculate $\Delta^2(f)$.<br><br>
+
+      $$
+  \Delta^2(f)=
+  \Delta
+  \left(\Delta_0(f)+\{A,f\}\right)=
+      $$
+      $$
+    \Delta_0 \left(\Delta_0(f)+\{A,f\}\right)+
+    \left\{A,
+  \left(\Delta_0(f)+\{A,f\}\right)
+\right\}=
+      $$
+       $$
+       \Delta_0^2(f)+
+       \Delta_0\{A,f\}+
+      \{A,\Delta_0 f\}+
+      \{A,\{A,f\}\}
+             $$
+  Having in mind that $\Delta_0^2=0$ and formula (4) we have
+                      $$
+                      \Delta^2 f=  \Delta_0^2(f)+
+       \Delta_0\{A,f\}+
+       \{A,\Delta_0 f\}+
+       \{A,\{A,f\}\}=
+        $$
+        $$:
+       =\{\Delta_0 A,f\}+
+       \{A,\{A,f\}\}
+                     $$
+Using Jacobi identity we will rewrite
+      $$
+      \{A,\{A,f\}\}=-{1\over 2}\{\{A,A\},f\}
+       \tag{5}
+     $$
+     Indeed
+         $$
+         (-1)^{(p(f)+1)(p(A)+1)}\{A,\{A,f\}\}+
+         (-1)^{(p(A)+1)(p(A)+1)}
+      \{A,\{f,A\}\}+
+       $$
+       $$
+         (-1)^{(p(f)+1)(p(A)+1)}\{A,\{A,f\}\}+
+      \{f,\{A,A\}\}=0\,.
+     $$
+i.e.       $$
+(-1)^{(p(f)+1)}
+           \left(
+             \{A,\{A,f\}\}
+            +
+ (-1)^{p(f)}           
+      \{A,\{f,A\}\}+
+      \{f,\{A,A\}\}
+    \right)=0\,.
+     $$
+     Since  $\{A,f\}=(-1)^f\{f,A\}$  , then
+      we come to equation (5).
+    
+     and we will come to    $$
+     \Delta^2_\rho=\Delta^2   
+       =\{\Delta_0 A,f\}+
+       \{A,\{A,f\}\}
+       =\{\Delta_0 A,f\}+
+      {1\over 2}\{\{A,A\},f\}
+      \tag{6}
+                            $$
+                            We see that this is vecotr field,
+                            moreover it is locally
+                            hamiltonian: it has the local
+                            hamiltonian
+                 $$
+                 H_{\rm local}=\Delta_0A+{1\over 2}\{A,A\}
+                  $$
+                  with $A={1\over 2}\rho$<br><br>
+   We come to THEOREM<br><br>
+
+     For Poisson manifold one can define $\Delta_\rho$
+     and its square is the Poisson vector field.<br><br>
+     \m
+     Why Poisson? because according to (6) has 'local'
+     Hamiltonian<br><br>
+     \m
+     One can check it also in other way using (3) and (4):
+              $$
+              \Delta^2(f\cdot g)=
+              \Delta\left[
+ (\Delta f)\cdot g+
+     (-1)^{p(f)}f\cdot \Delta g+
+     (-1)^{p(f)}\{f,g\}\,
+              \right]=
+              $$
+              $$
+              (\Delta^2 f)\cdot g-(-1)^f\Delta f\Delta g-(-1)^f
+              \{\Delta f,g \}
+              $$
+              $$
+     +(-1)^{p(f)}\Delta f\cdot \Delta g+
+            f\cdot \Delta^2 g+
+            \{f\cdot \Delta g\}+
+     (-1)^{p(f)}\Delta \{f,g\}=
+              $$
+               $$
+             \left[ \Delta^2 f\cdot g
+                 +
+               f\cdot \Delta^2 g\right]
+               -(-1)^f\{\Delta f,g \}+
+            \{f\cdot \Delta g\}+
+              $$
+              $$
+     (-1)^{p(f)} \{\Delta f,g\}=
+    -\{f,\Delta g\}=
+             \left[ \Delta^2 f\cdot g
+                 +
+               f\cdot \Delta^2 g\right]
+              $$
+              Hence $\Delta^2$ is a vector field.<br><br>
+              
+   
+    </div>
+ </body>
+</html>

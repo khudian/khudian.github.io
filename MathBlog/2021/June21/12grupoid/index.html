@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="12 June 2021">
+      <br><br>
+<h2><b> Groupoid of Batalin Vilkovisky</b></h2><br><br>
+    We know that for every second order operator of weight $\delta$
+    there is a pencil of operators $\{\Delta_\sigma\}$
+    which passes through this operator [My work with Ted of 2012].
+    Moreover for special values of $\sigma$ there are many operators
+    passing through the given operator. This comes from the 
+    following selfadjoint pencil :
+              $$
+            \Delta={t^{\delta}\over 2}
+                     \left[
+                       S^{ab}\p_b\p_a+\p_bS^{ba}\p_a+
+                       \left(2\hat \lambda+\delta-1\right)\gamma^a\p_a+
+                       \hat\lambda\p_a\gamma^a+
+                       \hat\lambda\left(
+                       \hat\lambda+\delta-1
+                             \right)\theta
+                          \right]\,,        
+                          \tag{1} 
+                          $$
+acting on algebra of densities of all weights. 
+Here $t=Dx$, $\gamma_a$ is the connection on volume forms,
+($\gamma^a=S^{ab}\gamma_b$. One can consider a special
+case if this connection is produced by volume form. We will come to the
+flat connection:
+             $$
+             \gamma_a=-\p_a\log\rho_0
+             \tag{2}
+             $$
+for the given volume form $\rho_0$. In this casse for arbitrary volume form
+$\rho$
+           $$
+           \nabla_\X \rho=X^a(\p_a\rho+\gamma_a\rho)=\rho_0\p_\X
+           \left(\rho\over\rho_0\right)
+           $$
+In (1)
+            $$
+        \theta=\gamma_a\gamma^a \,,   
+            $$
+ and
+                $$
+                \hat \lambda=t{\p \over \p t}
+                $$
+           However we return to the pencil (1).
+           Let
+                   $$
+                  L= |Dx|^\delta 
+                  \left[
+                   E^{ab}\p_a\p_b+T^a\p_a+U(x)
+                 \right]      
+                 \tag{3}
+                   $$
+be an arbitrary  second order operator of the weight $\delta$ acting on
+densities of the weight $\lambda$ (i.e. transforming them to the densities
+of the weight $\mu=\lambda+\delta$).<br><br>
+    Ask a question:
+               $$
+               \hbox{Does the pencil 
+               cross the operator $L$ in equation (3)?}       
+               $$
+To have this it has to be obeyed:
+                 $$
+                  \cases
+                        {
+                     E^{ab}=S^{ab}\cr
+                     T^a=(2\lambda+\delta-1)\gamma^a\cr
+                     U=\lambda\p_a\gamma^a+
+                     \lambda(\lambda+\delta-1)\theta\cr
+                      }
+                   $$:
+      We see that in the case if  main symbol of operator $L$
+      coincides with the $S$ and
+                   $$
+                   \cases{
+                  2\lambda+\delta-1\not =0\cr
+                  \lambda\not=0\cr 
+                  \lambda+\delta-1\not =0\cr
+                }
+                        \tag{4}
+                     $$  
+      then the pencil  $\Delta\left(
+        t^\delta S^{ik},gamma\right)$
+      with suitable parameters passes through the operator $L$
+      in (3).
+      What happened if equation (4) is not obeyed?<br><br>
+      Consider the case if $(2\lambda+\delta-1)=0$, i.e.
+      operator $\Delta$ acts on densities of the weight
+      $\lambda={1-\delta\over 2}$ abd takes values in densities
+      of the weight $\mu=\lambda+\delta={1+\delta\over 2}$.<br><br>
+     Consider the following groupoids:<br><br>
+     a) groupoid $C$--an abelian groupoid of connections on volume forms
+     on manifold $M$. Groupoid $C_S$ is associated with principal symbol
+      $S^{ab}(x)Dx^\delta$.
+                        
+      b) groupoid $C^1$--an abelian groupoid of volume forms
+       (to every volume form corresponds the connection $\gamma_a=
+       -\p_a\log \rho$)
+    
+      a') groupoid $C_S$--subgroupoid of $C$ of all
+      arrows $\gamma\arrow \gamma'$ such that
+                    $$
+                    \Delta (S,\gamma)=\Delta (S,\gamma') 
+                     $$<br><br>
+
+      
+       b') groupoid $C^1_S$--subgroupoid of $C^1$ of all
+      arrows $\rho\arrow \rho'$ such that
+                    $$
+                    \Delta (S,\gamma)=\Delta (S,\gamma') 
+                     $$
+              where  $\gamma=-\p_a\log\rho$,       
+              $\gamma'=-\p_a\log\rho'$.       <br><br>
+
+              <h3>Cocycles and groupoid.</h3>
+       <br><br>
+
+  
+    </div>
+ </body>
+</html>

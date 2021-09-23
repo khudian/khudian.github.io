@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="18 June 2021">
+      <br><br>
+<h2><b> Groupoid of Batalin Vilkovisky: 2002--2017-2021</b></h2><br><br>
+In 2002 with Ted we discovered BV-groupoid. It was the following:<br><br>
+Consider the solutions of equation
+            $$
+            \Delta_\rho e^{\sigma\over 2}=0
+            \tag{1}
+             $$<br><br>
+           Denote 
+               $$
+          \rho'=e^\sigma \rho
+          \tag{2}
+               $$
+    Then           
+               $$
+               \cases
+                 {
+            \Delta_\rho e^{\sigma\over 2}=0\cr
+            \Delta_{\rho'} e^{\tau\over 2}=0\cr
+                     }
+                 \Rightarrow     
+                 \Delta_\rho e^{\sigma+\tau\over 2}=0\,,
+                 \quad \hbox {(composition)}
+                 \tag{3a}
+                $$
+      and
+                     $$
+            \Delta_\rho e^{\sigma\over 2}=0\Rightarrow
+            \Delta_{\rho'} e^{-\sigma\over 2}=0
+            \quad \hbox {(inverse)}
+            \tag{3b}
+                     $$
+      
+                     Show it based on 
+                     my work with Peddie \footnote{${^1)}$}
+                {this statement which was
+                  'misteriously' formulated in LMP in 2002
+          follows from the Max  Planck preprint in 2011 also,
+        however the simplest proof follows from 
+      the work in 2011,}.<br><br>
+              For an arbitrary volume form $\rho$ introduce
+              operator on half densities
+              $$
+              \Delta^{(\rho)}=\sqrt\rho\circ
+              \Delta_\rho\circ{1\over \sqrt \rho}\,,
+               {\rm and}\,\,
+\Delta_{(\rho)}={1\over \sqrt\rho}\circ
+              \Delta^\rho\circ \sqrt \rho\,,
+              \tag{4}
+              $$
+Operators $\Delta^{(\rho)}$ and
+              $\Delta^{(\rho')}$ have the same symbol and they both are
+              self-adjoint, hence they differ on scalar:
+           $$
+              \Delta^{(\rho')}=
+              \Delta^{(\rho)}+F(\rho',\rho)\,,
+              \tag{5}
+           $$
+   where $F$ is sero order operator.        
+   Apply operator (5) to semidensity $\sqrt {\rho'}$. We come
+           to
+            $$
+            \Delta^{(\rho')}\sqrt {\rho'}=0=
+            \left[
+\Delta^{(\rho)}+F(\rho',\rho)\,,
+            \right]\sqrt{\rho'}=
+            \left[
+\Delta^{(\rho)}+
+F(\rho',\rho)\,,
+            \right]
+            \sqrt{\rho}e^{\sigma\over 2}=
+            $$
+            $$
+            \sqrt\rho\circ{1\over \sqrt \rho}\Delta^{(\rho)}
+            \sqrt{\rho}
+            e^{\sigma\over 2}+
+F(\rho',\rho)
+            \sqrt{\rho}e^{\sigma\over 2}\,.
+            $$
+     This implies that
+             $$
+             F(\rho',\rho)=
+            e^{-\sigma\over 2}
+            \Delta_\rho
+            e^{\sigma\over 2}
+            \tag{6}
+             $$
+             Note that formula (6) coincides
+             up the sign with cocycle $H(\rho',\rho)$
+             which was written in equation (2.3) in LMP.
+             On this base prove  (3a)
+             We have from (3a) that
+              $$
+        \Delta_{\rho'} e^{\tau\over 2}=0
+        \Rightarrow 
+        \Delta^{(\rho')}\sqrt {\rho'} e^{\tau\over 2}=0=
+        \left[\Delta^{(\rho)}+F\right]
+        \sqrt {\rho'} e^{\tau\over 2}=
+       \Delta^{(\rho)}\sqrt {\rho'} e^{\tau\over 2}=
+              $$
+              $$
+ \Delta^{(\rho)}\sqrt {\rho} e^{\tau+\sigma\over 2}=
+ \sqrt\rho {1\over \sqrt\rho}
+ \Delta^{(\rho)}\sqrt {\rho} e^{\tau+\sigma\over 2}=0\Rightarrow
+ \Delta_\rho e^{\tau+\sigma\over 2}=0\,.
+              $$
+since 
+$F(\rho',\rho)=e^{-\sigma\over 2}\Delta_\rho e^{\sigma\over 2}=0$
+according to (3a).
+Now prove (3b).<br><br>
+We have to prove that   condition $\Delta_\rho e^{\sigma\over 2}=0$
+           implies that
+           $\Delta_{\rho'} e^{-\sigma\over 2}=0$.
+          To prove this  use (4) and (5).
+    
+             $$
+\Delta_{\rho'}e^{-\sigma\over 2}= 
+{1\over \sqrt {\rho'}}\Delta^{(\rho')} 
+e^{-\sigma\over 2} {\sqrt \rho'}=
+{e^{-\sigma\over 2}\over \sqrt\rho}
+  \left[\Delta^{(\rho)}+F(\rho',\rho)\right]
+  \sqrt \rho=0\,,
+             $$
+             since
+             $F(\rho',\rho)=
+            e^{-\sigma\over 2}
+            \Delta_\rho
+            e^{\sigma\over 2}=0$  due to the fact that
+    $\Delta_\rho e^{\sigma\over 2}=0$
+             and $\Delta^{(\rho)}\sqrt\rho=0$:
+              $$
+              \Delta^{(\rho)}\sqrt\rho=\sqrt\rho 
+              {1\over \sqrt\rho}
+              \Delta^{(\rho)}\sqrt\rho=
+              \sqrt\rho \Delta_\rho 1=
+              \sqrt\rho {\rm div\,\,}_\rho{\bf D}_F\big\vert_{F=1}=0\,.
+              $$
+
+    </div>
+ </body>
+</html>

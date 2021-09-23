@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="4 July 2021">
+      <br><br>
+<h2><b> Densities</b></h2><br><br>
+On the base of examples which I wrote two days ago
+write down the density on Lagrangian surfaces.<br><br>
+ On the base of paper vie1.tex write down the density
+ on $(1|1)$-dimensional surface
+ (sure later it will be Lagrangian, but now arbitrary).<br><br>
+ Let $C$ be $(1|1)$-dimensional surface defined by relations
+  $F=0,f=0$ in $(2|2)$-dimensional odd symplectic
+  superspace with coordinates $(x,y|\theta,\varphi)$,
+  where $F$ is even and 
+$f$ is odd 
+  (see the blog on 02 July of this year).<br><br>
+  We often will quote the condition
+        that the surface is lagrangian:
+         $$
+         \{F,F\}\big\vert_{\{F,F\}=0,\{F,f\}=0}=0\,.
+         \tag{1}
+         $$<br><br>
+  $$
+  A\left(
+    x,y;\theta,\varphi;
+  {\p F\over \p x},
+  {\p F\over \p y},
+  {\p F\over \p \theta},
+  {\p F\over \p \varphi};
+{\p f\over \p x},
+{\p f\over \p y},
+{\p f\over \p \theta},
+{\p f\over \p \varphi},
+\right) 
+  $$
+  $$
+  \sqrt
+   {  
+  {\rm Ber}
+  \left(
+  {\p (G,F; g,f)\over \p (x,y;\theta,\varphi)}
+ \right)
+   }
+  \sqrt
+  {
+ {\rm Ber}
+ \left(
+   \{G^{\tilde a}, F_b\}  
+ \right)
+  }
+  $$
+  $$
+  \sqrt
+   {  
+  {\rm Ber}
+  \pmatrix
+  {
+    G_x & G_y & G_\theta & G_\varphi \cr 
+    F_x & F_y & F_\theta & F_\varphi \cr 
+    g_x & g_y & g_\theta & g_\varphi \cr 
+    f_x & f_y & f_\theta & f_\varphi \cr 
+  }
+   }
+  \sqrt
+  {
+ {\rm Ber}
+ \pmatrix
+  {
+    \{g, F\},&   \{g, f\}\cr
+    \{G, F\},&   \{G, f\}\cr
+  }
+}
+ $$
+One can see that this density does not depend on functions G
+in the case if surface is Lagrangian, i.e. condition (1)
+is obeyed.<br><br>
+  Choose
+             $$
+             G=x,g=\theta\,.
+              $$
+In this case we have
+                $$
+A=  \sqrt
+   {  
+  {\rm Ber}
+  \pmatrix
+  {
+    G_x & G_y & G_\theta & G_\varphi \cr 
+    F_x & F_y & F_\theta & F_\varphi \cr 
+    g_x & g_y & g_\theta & g_\varphi \cr 
+    f_x & f_y & f_\theta & f_\varphi \cr 
+  }
+   }
+  \sqrt
+  {
+ {\rm Ber}
+ \pmatrix
+  {
+    \{g, F\},&   \{g, f\}\cr
+    \{G, F\},&   \{G, f\}\cr
+  }
+}
+                 $$
+$$
+\sqrt
+   {  
+  {\rm Ber}
+  \pmatrix
+  {
+    1 & 0 &  0 & 0 \cr 
+    F_x & F_y & F_\theta & F_\varphi \cr 
+    0 & 0 & 1 &  0 \cr 
+    f_x & f_y & f_\theta & f_\varphi \cr 
+  }
+   }
+  \sqrt
+  {
+ {\rm Ber}
+ \pmatrix
+  {
+    \{\theta, F\},&   \{\theta, f\}\cr
+    \{x, F\},&   \{x, f\}\cr
+  }
+}
+$$
+$$
+\sqrt
+{
+        {
+\det\left[
+  \pmatrix
+  {
+    1 & 0 \cr 
+    F_x & F_y  \cr  
+  }
+-  \pmatrix
+  {
+    0 & 0 \cr 
+    F_\theta & F_\varphi  \cr  
+  }
+  \left(
+  \pmatrix
+  {
+    1 & 0 \cr 
+    f_\theta & f_\varphi  \cr  
+  }
+\right)^{-1}
+  \pmatrix
+  {
+    0 & 0 \cr 
+    f_x & f_y  \cr  
+  }
+\right]
+\over f_\varphi}
+ {\rm Ber}
+ \pmatrix
+  {
+    -F_x,&   -f_x\cr
+    F_\theta,&   f_\theta\cr
+  }
+=
+}
+$$
+$$
+\sqrt
+{
+        {
+\det\left[
+  \pmatrix
+  {
+    1 & 0 \cr 
+    F_x-{F_\varphi f_x\over f_\varphi}&  
+    F_y-{F_\varphi f_y\over f_\varphi}  \cr  
+  }
+\right]
+\over f_\varphi}
+ {\rm Ber}
+ \pmatrix
+  {
+    -F_x,&   -f_x\cr
+    F_\theta,&   f_\theta\cr
+  }
+}=
+$$
+             $$
+             \sqrt
+              {-
+             \left(
+            {F_y\over f_\varphi}-
+             {F_\varphi f_y\over f_\varphi^2}
+           \right) 
+             \left(
+            {F_x\over f_\theta}+
+             {F_\theta f_x\over f_\theta^2}
+           \right)
+         }=
+            $$
+            $$
+         \sqrt
+         {
+ {\rm Ber}
+ \pmatrix
+  {
+    F_y,&   F_\varphi\cr
+    f_y,&   f_\varphi\cr
+  } {\rm Ber}
+ \pmatrix
+  {
+    F_x,&   f_x\cr
+    F_\theta,&   f_\varphi\cr
+  }
+}\,.
+             $$<br><br>
+<br><br>
+              
+    </div>
+ </body>
+</html>

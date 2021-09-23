@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="2 July 2021">
+      <br><br>
+<h2><b> Ywo examples of lagrange surfaces</b></h2><br><br>
+ Let $E^{2|2}$ be odd symplectic superspace
+ with canonical coordinates $(x,y,\theta,\varphi)$. Consider
+ a function of variables $x,y,\eta$
+                  $$
+                  \Psi(x,y,\eta)=(x^2+y^2-1)\eta
+                  \tag{1}
+                   $$
+and a function
+                   $$
+                  \Phi(x,y,\nu)=(x^2+y^2-1)\nu
+                   $$
+                   where $\nu$ is an {\rm odd constant}<br><br>
+                   To the surface $\Psi$ corresponds the 
+                   $(1|1)$- dimensional Lagrangian surface
+                      $$
+\L_\Psi\colon\quad {\p\Psi\over \p\eta}=x^2+y^2-1=\,\,,
+\theta={\p\Psi\over \p x}2x\eta\,,
+\varphi={\p\Psi\over \p y}=2y\eta\,,
+                       $$<br><br>
+                    To the surface $\Phi$ 
+                corresponds the 
+                   $(2|0)$- dimensional Lagrangian surface
+                      $$
+\L_\Phi\colon\quad 
+\theta={\p\Psi\over \p x}=2x\nu\,,
+\varphi={\p\Psi\over \p y}=2y\nu\,,
+                       $$
+                       Thus we see that for $(1|1)$-dimensional
+                       Lagrangian surface
+                    $$
+         \L_\Psi\colon\quad
+          \cases
+           {
+    x(t,\eta)=\cos t\cr
+      y(t,\eta)=\sin t\cr
+      \theta(t,\eta)=\eta\cos t\cr
+      \varphi(t,\eta)=\eta\sin t\cr
+           }\,\,
+           {\rm dually}\,\,
+           \cases
+           {
+  F_1= x^2+y^2-1=0\cr
+  F_2= y\theta-x\varphi =0\cr
+           }\,,
+                    $$
+        and for $(2|0)$-dimensional
+                       Lagrangian surface
+                    $$
+         \L_\Phi\colon\quad
+          \cases
+           {
+      \theta(t,\xi)=2x\nu\cr
+      \varphi(t,\eta)=\eta\sin t\cr
+           }\,\,
+           {\rm dually}\,\,
+           \cases
+           {
+  F_1= \theta-2x\nu\cr
+  F_2= \varphi-2y\nu\cr
+           }\,,
+           $$
+    where $\nu$ is an odd constant.      <br><br>
+ Calculate Buttin brackets in both cases<br><br>
+ Fur the first case<br><br>
+ $$
+ \{F_1,F_1\} =\{x^2)+y^2-1, x^2+y^2-1\}=0\,, 
+ $$
+ $$
+ \{F_2.F_2\}=0\,,
+ $$
+ since $F_2$ is odd function
+  and
+    $$
+    \{F_1,F_2\}=
+    \{x^2+y^2-1,x\varphi-y\theta\}=
+    {\p F_1 \over \p x} 
+    {\p F_2 \over \p \theta}+ 
+    {\p F_1 \over \p y} 
+    {\p F_2 \over \p \varphi}+ 
+    {\p F_1 \over \p \theta} 
+    {\p F_2 \over \p x}+ 
+    {\p F_1 \over \p \varphi} 
+    {\p F_2 \over \p y}= 
+     $$
+     $$
+     2x\cdot (-y)+ 
+     2y\cdot (x)+0=0 
+     $$
+   for the second case
+    $$
+    \{F_1,F_1\}= 
+    \{F_2,F_2\}=0 
+     $$
+   since both these functions are odd and
+            $$    
+            \{F_1,F_2\}=
+    \{\theta-2x\nu,\varphi-2y\nu\}=
+    {\p F_1 \over \p x} 
+    {\p F_2 \over \p \theta}+ 
+    {\p F_1 \over \p y} 
+    {\p F_2 \over \p \varphi}- 
+    {\p F_1 \over \p \theta} 
+    {\p F_2 \over \p x}- 
+    {\p F_1 \over \p \varphi} 
+    {\p F_2 \over \p y}=0 \,.
+     $$
+     
+    </div>
+ </body>
+</html>

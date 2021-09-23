@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="30 April 2021">
+      <br><br>
+<h2><b> Invariance of odd Laplacian</b></h2><br><br>
+We study here transformations which preserve
+the operator
+         $$
+         \Delta f={\p^2 f\over \p x^i\p \theta_i}\,.
+          $$
+ This operator is an operator which can be constructed
+ by odd symplectic form and volume form $\rho$
+ We choose here $\rho$ to be a coordinate form,
+ and coordinates $(x^1,\dots x^n,\theta_1,\dots,\theta_n)$
+ are Darboux coordinates of the symplectic structure<br><br>
+ I want to prove the theorem:<br><br>
+ <b> Theorem</b> Let $F$ be a transformation of superspace
+ $E^{n|n}$ which preserves the operator $\Delta_0$.
+ Then $F$ is a canonical transformation, and there
+ exists  a number $\lambda$ such that  $F\circ F_\lambda$
+ is unimodular symplectic transformation.<br><br>
+ A much weaker statement is the following:<br><br>
+ Let $Q$ be a hamiltonian such that is generating
+ the canonical infinitesimal transformation. This transformation
+ preserves $\Delta_0$ iff $\Delta_0 Q=constant$.<br><br>
+  This weaker statement follows from<br><br>
+  $\Delta$<br><br>
+  Proof of the <b> Theorem</b>
+  <br><br>
+  Use the espression of bracket in terms of $\Delta$-operator:
+                 $$
+                 \Delta_0 \{f,g\}=\{\Delta_0 f,g\}+(-1)^{p(f)}\{f,g\}+
+                 \{ f \Delta_0 g\}+(-1)^{p(f)}\{f,g\} 
+                 $$<br><br>
+It follows from this equation that under transformation
+non-degenerate symplectic structure
+is preserved.<br><br>
+              $$
+              [\Delta_0, D_f]=D_{\Delta_0 f} 
+               $$<br><br>
+<br><br>
+<br><br>
+               
+    </div>
+ </body>
+</html>

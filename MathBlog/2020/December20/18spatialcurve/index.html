@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="18 December 2020">
+      <br><br>
+<h2><b> Spatial curve ---recalling.</b></h2>
+ <br><br>
+  Let $I\mapsto \E^n$ be a curve in $\E^n$,
+  Choose $s$--natural parameter. Then $\v=\dot\r(s)$
+  is a unit vector and curvature is equal to
+  $k(s)=\left|{d^2\r(s)\over ds^2}\right|$. 
+  
+<br><br><br><br>
+<b> Exercise</b>
+  In arbitrary parameterisation for curve in $\E^2$
+        $$
+	k={x_{tt}y_t-x_ty_{tt}\over \left(x_t^2+y_t^2\right)^{3\over 2}}\,.
+	$$<br><br>
+For a curve in $\E^2$ one can consider also $k_{\rm algebraic}$, i.e. curvature with a sign:
+          $$
+	 k_{\rm alg}=\cases {
+	 k\,\,  \hbox {if}\left\{\v(s), {d\v(s)\over ds}\right\} 
+	 \hbox {form left-oriented basis}\cr
+	 -k\,\,  \hbox {if}\left\{\v(s), {d\v(s)\over ds}\right\} 
+	 \hbox {form right-oriented basis}\cr
+	 }\,. 
+	  $$<br><br>
+   For the curve $\r(s)$, where $s$ is a natural parameter, one can consider, the normal
+              $$
+	     \n(s)={1\over k(s)}{d\over ds}\v(s) 
+	      $$
+	   (we suppose that $k\not=0$)
+	   One can see that for the plane curve
+	       $$
+	      {d\over ds}
+	       \pmatrix
+            {\v\cr \n\cr}=
+	      \pmatrix 
+	          {0 &k\cr -k & 0}
+  \pmatrix
+            {\v\cr \n\cr}
+\qquad:\hbox {(Frenet formula)}
+	    $$<br><br>
+
+<br><br><br><br>
+
+	      <h3><b>  ${\S} 2$ <tt> Spatial curves</tt></b></h3><br><br>
+<br><br>
+Now return to curve in $\E^n$ for arbitrary $n$.    If curve is not
+	   'spriamliaemaya' then the normal $\n(s)$ is defined:
+    $\n(s)={1\over k(s)}{d\over ds}\v(s) $. <br><br>
+Consider the special case of $n=3$.<br><br>
+     Consider vector
+         $$
+	 {\bf b}=\v\times \n \,,\quad (\hbox{vector of binormal})
+	 $$
+One can see that
+       $$
+       {d\over ds}
+       \pmatrix
+       {\v\cr \n\cr {\bf b}}=
+       \pmatrix
+       {
+       0 & k &0\cr
+       -k & 0 &\kappa\cr
+       0 & -\kappa &0\cr
+       }
+       \pmatrix
+       {\v\cr \n\cr {\bf b}}\,,\qquad (\hbox {Frenet formula for spatial curves})
+       $$<br><br>
+$\kappa$ is called the torsion of the curve<br><br>
+<br><br><br><br>
+
+	      <h3>\bf  ${\S} 2$ <tt> Connection on
+	      spatial curves</tt></h3>
+Consider parallel transport of vector in oscullating plane:
+    $$
+  \x(s) =\a(s)\v+\beta(s)\n(s) \,,\quad
+{d\over ds}\x(s)=\gamma(s){\bf b}(s)\,,
+    $$
+(during parallel transport o only the component proportional to 
+    $\bf b$ may change, i.e.
+           $$
+	  {d\over ds}
+	  \left[
+  \a(s)\v+\beta(s)\n(s)
+	  \right]
+  \,\,\hbox {is orthogonal to $\v(s)$ and $\n(s)$}\,, 
+	   $$
+Using structurw equation for spatial curve we have
+            $$
+	  {d\over ds}
+	  \left[
+  \a(s)\v+\beta(s)\n(s)
+	  \right]=
+	  {d\over ds}\a(s)\v(s)+\a(s)k(s)\n(s)+
+	  {d\over ds}\beta(s)\n(s)-\beta(s)k(s)\v(s)+
+	  \beta(s)\kappa(s){\bf b}(s)\,,
+	   $$
+   thus like in Frenet formula
+       	       $$
+	      {d\over ds}
+	       \pmatrix
+            {\a(s)\cr \beta(s)\cr}=
+	      \pmatrix 
+	          {0 &k(s)\cr -k(s) & 0}
+  \pmatrix
+            {\a(s)\cr \beta(s)\cr}
+	    $$
+This defines the parallel transport.
+    
+    </div>
+ </body>
+</html>

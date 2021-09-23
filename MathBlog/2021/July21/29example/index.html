@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="29 July 2021">
+      <br><br>
+<h2><b> Flux and Lagrange surface</b></h2><br><br>
+
+ Consider flux of the vector field 
+             $$
+\R=A\p_x+B\p_y\,.
+\tag{1}
+             $$
+through the cirlce
+             $$
+             x^2+y^2=R^2
+             $$
+Assign to this circle a Lagrangian surface in 
+$E^{2|2}$
+given by gauge fermion
+                      $$
+                      \Psi=(x^2+y^2-R^2)\eta
+                      $$
+It is
+                         $$
+                         L_\Psi\colon
+                         \cases
+                         {
+                      x^2+y^2-R^2=0\cr
+                         x^*=2x\eta\cr
+                         y^*=2y\eta\cr
+                         }\quad i.e.\quad
+                         \cases
+                         {
+                           x=R\cos t\cr
+                           y=R\sin t\cr
+                          x^*= 2R\eta\cos t\cr   
+                          y^*= 2R\eta\sin t\cr   
+                         }
+                         $$
+Consider tangent vectors to this lagrangian surface
+                 $$
+                 \E=-R\sin t{\p\over\p x}
+                 +R\cos t{\p\over\p y}
+		 -2R\sin t\eta{\p\over\p x_*}
+		 +2R\cos  t\eta{\p\over\p y_*}
+\,,\quad
+                 \f=2x {\p\over\p x^*}
+                 +2y {\p\over\p y^*}
+                  $$
+                  and consider the basis self-dual basis 
+                  $\{\E,{\bf F},\e.\f\}$, i.e. a basis
+                  in $E^{2|2}$ such that
+                   $$
+                   \cases
+                        {
+                   \omega(\E,\E)=0\,, 
+                   \omega(\E,{\bf F})=0\,, 
+                   \omega(\E,\e)=1\,, 
+                   \omega(\E,\f)=0\,, \cr
+                   \omega({\bf F},{\bf F})=0\,, 
+                   \omega({\bf F},\e)=1\,, 
+                   \omega({\bf F},\f)=1\,,\cr                    
+                   \omega(\e,\e)=1\,, 
+                   \omega(\e ,\f)=1\,,\cr                   
+                   \omega(\f ,\f)=0\,.\cr                   
+                    }
+                    \tag{2}
+                   $$
+Many of these relations are fullfilled automatically. In any rate
+we may choose
+                           $$
+                           {\bf F}=A{\p\over \p x}
+                          +B{\p\over \p y}\,,\quad
+                           \e=p{\p\over \p x^*}
+                           +q{\p\over \p x^*}\,,
+                            $$
+ such that
+                            $$
+                            \cases
+                            {
+                 \E=-R\sin t{\p\over\p x}
+                 +R\cos t{\p\over\p y}
+                -2R\sin t \,\eta{\p\over\p x_*}
+		 +2R\cos  t\,\eta{\p\over\p y_*}
+                    \,,\cr
+                 {\bf F}={\cos t\over 2R}{\p\over \p x}
+                +{\sin t\over 2R}{\p\over \p y}\,,\cr
+                          \e=-{\sin t\over R}{\p\over \p x^*}
+                          +{\cos t\over R}{\p\over \p y^*}\,,\cr 
+                          \f=2R\cos t {\p\over\p x^*}
+                 +2 R\sin t {\p\over\p y^*}\cr
+                             }
+                $$
+                and equations (1) are fullfilled          
+                Now consider half-density corresponding to vector field (1)    
+                $$
+               \ss=\ss_\R=
+               (Ax^*+ 
+               By^*)\sqrt {D(x,y,x^*,y^*)}\,. 
+                $$
+  This semidensity induces density $\rho_L$ on the lagrangian surface:
+                           $$
+                           \rho_L(
+                           x(t,\eta),y(t,\eta),
+                           x^*(t,\eta),y^*(t,\eta);
+                           \E,\f)=
+                           \ss_\R(
+                           x(t,\eta),y(t,\eta),
+                           x^*(t,\eta),y^*(t,\eta);
+                           \E, {\bf F}.\e,\f)\,.
+                           $$
+  Thus we have that                         
+                           $$
+                           \rho_L(
+                           x=R\cos t\,,
+                           y=R\sin t,\quad
+                           x^*=2R\eta\cos t,\,
+                           y^*=2R\eta\sin t,
+                            ;
+                           \E,\f)=
+                               $$
+                               $$
+                           \ss_\R(
+                            x=R\cos t\,,
+                           y=R\sin t,\quad
+                           x^*=2R\eta\cos t,\,
+                           y^*=2R\eta\sin t,
+                                  ;
+                           \E, {\bf F}.\e,\f)=
+                           $$
+                            $$
+                            (A(x,y)x^*+B(x,y)y^*)
+                           \sqrt {D(x,y,x^*,y^*)}
+                          \left (\E, {\bf F},\e,\f)\right)
+                          =
+                           \sqrt {D(x,y,x^*,y^*)}
+                           $$
+                           $$
+                           (A(x,y)x^*+B(x,y)y^*)
+                               \sqrt{
+                                 {\rm Ber}
+                             \pmatrix
+                             {
+                               &\E_x & \E_y           
+                               &\E_{x^*} &\E_{y^*}\cr             
+                               &{\bf F}_x
+                               &{\bf F}_x
+                               &{\bf F}_{x^*}
+                               &{\bf F}_{y^*}\cr
+                               &\e_x & \e_y           
+                               &\e_{x^*} &\e_{y^*}\cr             
+                               &\f_x & \f_y           
+                               &\f_{x^*} &\f_{y^*}\cr             
+                             }
+                                 }
+                                 \sqrt {D(x,y,x_*,y_*)}
+                                 \left(
+                                 {\p\over \p x},
+                                 {\p\over \p y},
+                                 {\p\over \p x_*},
+                                 {\p\over \p y_*}
+                               \right)      
+                           $$
+                           $$
+                           (A(x,y)x^*+B(x,y)y^*)
+                               \sqrt{
+                                 {\rm Ber}
+                             \pmatrix
+                             {
+                               &-R\sin t & R\cos t          
+                               &0 &0\cr             
+                               &{\cos t\over 2R}
+                               &{\sin t\over 2R}
+                               &0
+                               &0\cr
+                               &0 & 0           
+                               &{-{\sin t\over R}} &{\cos t\over R}\cr             
+                               &0 & 0           
+                               &2R\cos t &2R\sin t\cr             
+                             }
+                                 }=
+                           $$
+                           $$
+                           (A(x,y)x^*+B(x,y)y^*)
+                               \sqrt{
+                                        {
+                                 \det
+                             \pmatrix
+                                   {
+                               &-R\sin t & R\cos t  \cr             
+                               &{\cos t\over 2R}
+                               &{\sin t\over 2R}\cr             
+                             }
+                             \over
+                             \det
+                             \pmatrix
+                             {
+                            \pmatrix
+                                   {
+                &{-\sin t\over R} & {\cos t\over R}  \cr             
+                               & 2R\cos t
+                               &2R\sin t\cr             
+                             }
+                       }}}=
+                 $$                $$
+            (A(x,y)x^*+B(x,y)y^*
+                               \sqrt{
+                                        {
+                                 \det
+                             \pmatrix
+                                   {
+                               &-R\sin t & R\cos t  \cr             
+                               &{\cos t\over 2R}
+                               &{\sin t\over 2R}\cr             
+                             }
+                             \over
+                             \det
+                             \pmatrix
+                             {
+                            \pmatrix
+                                   {
+                &{-\sin t\over R} & {\cos t\over R}  \cr             
+                               & 2R\cos t
+                               &2R\sin t\cr             
+                             }
+                       }}}=
+                 $$
+                 $$
+                            A(x,y)x^*+B(x,y)y^*\over 4
+                   $$
+ Now calculate the integral of density $\rho_L$
+ over the circle $x^2+y^2=R^2$ and compare it with the
+ flux of $\R$.
+ Flux is equal to
+                    $$
+                    \int_{x^2+y^2-R^2} \R=
+                    \int_{x^2+y^2=R^2}\iota_\R (dx\wedge dy)=
+                    \int_{x^2+y^2=R^2}(A(x,y)dy-B(x,y)dx)=
+                      $$
+                     $$
+                     \int_0^{2\pi} 
+                     \left[A(R\cos t, R\sin t)R\cos t+
+                    B(R\cos t, R\sin t)R\sin t
+                     \right ]dt        
+                     $$<br><br>
+The integral of the density is equal to
+                     $$
+                  \int_0^{2\pi}\rho_L(x(t,\eta), y(t,\eta), \E,\f)dt=
+                        $$
+                        $$
+                        \int_0^{2\pi}A(x(t,\tau),y(t.\tau))
+                        x_*(t,\tau)+
+                        B(x(t,\tau),y(t,\tau))y_*(t,\tau)D(t,\tau)= 
+                      $$
+                     $$
+                  \int_0^{2\pi}A(R\cos t,R\sin t)2R\eta\cos t
+                +B(R\cos t,R\sin t)2R\eta\sin t dt 
+                      $$
+                   
+    </div>
+ </body>
+</html>

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="8 August 2021">
+      <br><br>
+<h2><b> Flux lagrange surface and mixed density</b></h2><br><br>
+
+ Consider flux of the vector field 
+             $$
+\R=R^i\p_i.
+\tag{1}
+             $$
+through the $n-1$-dimensional surface in $\R^n$
+             $$
+             F=0
+	     \tag{2}
+             $$
+which is already can be given by parameterised form
+          $$
+	 x^i=x^i(\xi^\a)\,,\quad,\a=1,\dots,n-1\,
+	 \tag{2a}. 
+	  $$
+Assign to this surfsce a Lagrangian surface in 
+$E^{n|n}$
+given by gauge fermion
+                      $$
+                      \Psi=F\eta
+                      $$
+It is
+                         $$
+                       %  L_\Psi\colon
+                         \cases
+                         {
+				 F=0,  x^i(\xi^a)\cr
+			 x_{i*}={\p \Psi\over \p x^i}=
+			 ={\p F\over \p x^i}\eta=
+			 F_i\eta\cr
+		 }\,\quad {\rm i.e.}
+		  \cases
+			{
+				x^i=x^i(\xi)\cr	
+			 x_{i*}
+			 ={\p F\over \p x^i}\eta=
+			 F_i(x(\xi))\eta\cr
+			}
+			\tag{3}
+                         $$
+			 Later we will assign to an arbitrary
+			 semidensity $\ss$ the density on the Lagrangian
+			 surface (3), and we integrate
+			 this semidensity over Lagrangian surface
+			 in the following way.
+			If  $L$ is $(n-1|1)$-dimensional
+			 lagrangian surface given by parameterisation
+			 $x(\xi^1,\dots,\xi^{n-1},\eta)$
+		and $\E_\a$ is a tangent vectors corresponding
+	   to parameter $\xi^\a$, ($\a=1,\dots,n-1$),
+                 $\f$ is a tangent vector corresponding to the odd parameter
+		 $\tau$, then
+we come to the following formula for the integral
+           $$
+	  \int_{F=0}\R=\int\rho_L
+	      \left(
+x(\xi,\eta)\,, x_*(\xi,\eta);
+\E_1,\dots, \E_{n-1},\f	  
+  \right)
+        D(\xi,\eta)\,,
+\tag{xxx}
+	   $$
+	  where
+		  $D(\xi,\tau)$ is coordinate volume form.<br><br>
+
+   Perform calculations.<br><br>
+
+   <br><br><br><br>
+
+Consider tangent basis $\{\E_\a,\f\}$  to this lagrangian surface.
+This basis span $(n-1|1)$-dimenisonal vector space.
+                 $$
+		 \cases
+		 {
+		 \E_\a=
+		 {\p x^i(\xi,\eta)\over \p \xi^\a}
+		  {\p\over \p x^i}
+		+{\p x_{*i}(\xi,\eta)\over \p \xi^\a}
+		  {\p\over \p x_{*i}}
+		 \,,\cr
+                 \f=
+		 {\p x^i(\xi,\eta)\over \p \eta}
+		  {\p\over \p x^i}
+		+{\p x_{*i}(\xi,\eta)\over \p \eta}
+		  {\p\over \p x_{*i}}
+ =F_i(x) {\p\over \p x_{*i}}
+		  \cr
+	  }
+                  $$
+                  and consider the self-dual basis 
+                  $\{\E_\a,{\bf F},\e^\beta,\f\}$, i.e. a basis
+                  in $E^{n|n}$ such that
+		   $$
+                   \cases
+                        {
+                   \omega(\E_\a,\E_\beta)=0\,, 
+                   \omega(\E_\a,{\bf F})=0\,, 
+                   \omega(\E_\a,\e^\beta)=\delta_\a^\beta\,, 
+                   \omega(\E_\a,\f)=0\,, \cr
+                   \omega({\bf F},{\bf F})=0\,, 
+                   \omega({\bf F},\e^\beta)=0\,, 
+                   \omega({\bf F},\f)=1\,,\cr                    
+                   \omega(\e^\a,\e^\beta)=1\,, 
+                   \omega(\e^\a ,\f)=0\,,\cr                   
+                   \omega(\f ,\f)=0\,.\cr                   
+                    }
+                    \tag{2}
+                   $$
+Many of these relations are fullfilled automatically. In any rate
+we may choose
+ 
+                            $$
+                            \cases
+                            {
+                 \E_\a=
+		 {\p x^i(\xi,\eta)\over \p \xi^\a}
+		  {\p\over \p x^i}+\dots
+		 \,,\cr
+                 {\bf F}
+     ={F_i(x) {\p\over \p x^i}\over p}
+			 \cr
+			 \e^\beta=
+			 {
+		 {\p x^i(\xi,\eta)\over \p \xi^\beta}
+		  \over q}
+	  {\p\over \p x_{*i}}\,,\cr
+	  \f
+ =F_i(x) {\p\over \p x_{*i}}\,,
+                             }
+                $$
+		where we choose constants $p$ and $q$ such that
+             
+     $$
+    p={\p F(x)\over \p x^i} 
+     {\p F(x)\over \p x^j} 
+     \delta^{ij}
+      $$
+and
+          $$
+     q\delta^{\a\beta}={\p x^i(\xi)\over \p \xi^\a}
+      {\p x^j(\xi)\over \p \xi^\beta}
+      \delta_{ij}
+      \tag{4}
+     $$
+Of course here the second condition put the additional restriction
+on the surface. (E.g. it cannot be obeyed for surface with
+zero gaussian curvature).
+)We sssume later that this condition is dullfilled.
+.
+                Now consider half-density corresponding to vector field (1)    
+                $$
+	       \ss=\ss_\R=R^ix_{*i}=
+               (Ax_*+ 
+               By_*+Cz_*)\sqrt {D(x,y,z,x_*,y_*,z_*)}\,. 
+                $$
+  This semidensity induces density $\rho_L$ on the lagrangian surface:
+                           $$
+                           \rho_L(
+                           x^i(\xi,\eta),
+			   x_{*i}(\xi,\eta)
+			   \E_1,\dots,\E_{n-1},\f)=
+			   $$
+			   $$
+			   \ss_\R\left(
+                           x^i(\xi,\eta)\,,
+			   x_{*i}(\eta,\eta),;
+			   \E_1,\dots,\E_{n-1}, 
+			   {\bf F}\,,\e^1,\dots, \e^{n-1},\f\right)=
+                           $$                   
+                           $$
+			 R^i\left(x(\xi,\eta)\right)
+			 {\p F\over \p x^i}\big\vert
+			 _{x(\xi,\eta)}
+			 \times
+                               $$
+                                                    $$
+                               \sqrt{
+                                 {\rm Ber}
+                             \pmatrix
+                             {
+				     &\E_x &\E_y           
+			       &\E_{x_{*}} &\E_{y_{*}}\cr             
+                               &{\bf F}_x
+                               &{\bf F}_y
+                               &{\bf F}_{x_*}
+                               &{\bf F}_{y_*}\cr
+                               &\e_x & \e_y           
+                               &\e_{x^*} &\e_{y^*}\cr             
+                               &\f_x & \f_y           
+                               &\f_{x^*} &\f_{y^*}\cr             
+                             }
+                                 }
+                                 \sqrt {D(x,y,x_*,y_*)}
+                                 \left(
+                                 {\p\over \p x},
+                                 {\p\over \p y},
+                                 {\p\over \p x_*},
+                                 {\p\over \p y_*}
+			       \right)=     
+                           $$
+			   (The rest of caclulation are done for the
+			   flux of vector field through the curve
+			   in $\R^2$)
+                           $$  
+			 R^i\left(x(\xi,\eta)\right)
+			 {\p F\over \p x^i}\eta\big\vert
+			 _{x(\xi,\eta)\eta }
+                               \sqrt{
+                                 {\rm Ber}
+                             \pmatrix
+                             {
+                               &x_\xi&  y_\xi          
+		 &F_{xx}x_\xi+F_{xy}y_\xi &F_{yx}x_\xi+F_{yy}y_\xi\cr 
+                               &{F_x\over F_x^2+F_y^2}
+                               &{F_y\over F_x^2+F_y^2}
+                               &0
+                               &0\cr
+                               &0 & 0           
+			       &{x_\xi\over x_\xi^2+y_\xi^2}
+			       &{y_\xi\over x_\xi^2+y_\xi^2}
+				\cr             
+                               &0 & 0           
+                               &F_x&  F_y\cr             
+                             }
+                                 }=
+                           $$
+                           $$
+                           R^i\left(x(\xi,\eta)\right)
+			 {\p F\over \p x^i}\eta\big\vert
+			 _{x(\xi,\eta)\eta }
+                               \sqrt{
+                                        {
+                                 \det
+                             \pmatrix
+                                   {
+                               &x_\xi& y_\xi\cr             
+			       &{F_x\over F_x^2+F_y^2}
+			       &{F_y\over F_x^2+F_y^2}                                                                     }                             \over
+	                         \det
+                             \pmatrix
+                                   {
+		&{x_\xi\over x_\xi^2+y_\xi^2}
+		&{x_\xi\over x_\xi^2+y_\xi^2}\cr
+			       &F_x
+			       &F_y                                                                     } }}
+		                  $$   
+                        $$
+                         R^i\left(x(\xi,\eta)\right)
+			 {\p F\over \p x^i}\eta\big\vert
+			 _{x(\xi,\eta)\eta }
+			      {
+			 \sqrt {x_\xi^2+y_\xi^2}
+			     \over
+			 \sqrt {F_x^2+F_y^2}
+		 }
+                               $$   <br><br>
+ Now calculate the integral of density $\rho_L$
+ over the circle $F(x,y)=0$ and compare it with the
+ flux of $\R$.<br><br>
+ Suppose that  $F=y-f(x)$. 
+Consider the vector field $\R=A\p_x+B\p_y$
+To this vector fielf corresponds semidensity
+ $\ss=Ax_*+By_*$.<br><br>
+ Calculate the integral of density $\rho_L$
+ associated with semidensity $\ss$ over the curve
+ $F=y-f(x)$.<br><br>
+
+ $$
+ \int_{F=0} \rho_L=\int\rho_L\left(x
+ \left(\xi,\eta\right)\,
+ \E,\f\right)
+ D(\xi,\eta)=
+ \int     R^i\left(x(\xi,\eta)\right)
+			 {\p F\over \p x^i}\eta\big\vert
+			 _{x(\xi,\eta)}
+			      {
+			 \sqrt {x_\xi^2+y_\xi^2}
+			     \over
+			 \sqrt {F_x^2+F_y^2}
+		 }D(\xi,\eta)\,.
+                  $$
+Now taking in account that  $F=y-f(x)$ and 
+$\cases {x=\xi\cr y=f(\xi)\cr}$
+we simplify the last expression
+		  $$
+ \int     R^i\left(x(\xi,\eta)\right)
+			 {\p F\over \p x^i}\big\vert
+			 _{x(\xi,\eta)\eta }
+			      {
+			 \sqrt {x_\xi^2+y_\xi^2}
+			     \over
+			 \sqrt {F_x^2+F_y^2}
+		 }D\xi
+		 = \int     R^i\left(x(\xi,\eta)\right)
+			 {\p F\over \p x^i}\big\vert
+			 _{x(\xi,\eta)\eta }
+			 D\xi
+			 $$
+			 $$
+=\int (AF_x+BF_y)D\xi=			
+	\int (B-Af_x)D\xi=\int Bdx-Ady\,.
+	$$
+This is equal to the flux:<br><br>
+      $$
+      \int_F=0\R=\int *\R=\int *\left(A\p_x+B\p_x\right)=
+      \int Bdx-Ady\,.
+      $$
+                 
+    </div>
+ </body>
+</html>

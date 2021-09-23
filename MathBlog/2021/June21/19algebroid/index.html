@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="19 June 2021">
+      <br><br>
+<h2><b> BV algebroid.</b></h2><br><br>
+ Recall BV groupoid of odd Poisson manifold.<br><br>
+ The objets are non-vanishing volume forms, and arrows are
+                    $$
+                    \rho
+                    {\buildrel J \over \rightarrow}
+                    \rho'
+                    \quad {\rm such\,\, that}\, \Delta_\rho J=0\,, {\rm where}
+                    J={\rho'\over \rho}\,.
+                    $$
+                    (One can consider connections instead volume forms.)             
+  Construct the Lie algebroid.<br><br>
+  For BV groupoid the Lie algebroid is the vector bundle over
+  the (infinite-dimensional) manifold $Vol^\times (M)$
+  of volume forms.  The fiber over volume form $\rho$
+  is the vector space of slutions of equation
+                              $$
+                              \Delta_\rho F=0
+                              \tag{1}
+                              $$
+                    where $F\in C^\infty(M)$.                           
+    The anchor is tautological: it 
+    sends a function $F$ to s the infinitesimal shift
+                             $$
+                    \rho\to \rho+\vare\rho  F 
+                                 $$
+A section of this bundle is a functional $F=F[\rho]$   
+of non-vanishing volume forms with values  in functions on $M$,
+such that for each $\rho=\rho(x)Dx$, the above equation
+(1???) is satisfied.<br><br>
+  The Lie bracket is the restriction of the canoncial commutator
+  of vector fields on  $Vol^\times$ and can be expressed by 
+  the explicit formula:
+                    $$
+                    [F,G][\rho,x]=\int_M D(y)\rho(y)
+                    \left(
+                      F\left[\rho,y\right]  
+                      {\delta G\left[\rho,x\right]\over \delta\rho(y)}
+                      -
+                      G\left[\rho,y\right]  
+                      {\delta F\left[\rho,x\right]\over \delta\rho(y)}
+                    \right)
+                    $$
+                    Here we write  $F[\rho,x]$
+                    for the value of (function)
+                    $F[\rho]$ at the point $x\in M$.             
+    
+                    (There are extra signs for super...)
+                    
+    </div>
+ </body>
+</html>

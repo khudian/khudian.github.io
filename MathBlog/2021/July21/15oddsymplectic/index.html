@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="15 July 2021">
+      <br><br>
+<h2>The base of odd symplectic</h2><br><br>
+There is the symplectic structure in $E^{n|n}$.
+It defines symplectoorthogonal product which is defined
+by the condition that coordinates $x^m$ are conjugate to $\theta_n$
+\footnote{$^1)$}{the condition of closedness and not generacy of two form
+are covered by condition of Darboux coordinates existnesse}:
+          $$
+          \Omega\left(
+          {\p\over \p x^m}, {\p\over \p\theta_n}\right)
+          =\delta_m^n\,.
+          \langle {\p\over \p x^m}, {\p\over \p\theta_n}\rangle=\delta_m^n\,.
+            $$
+The 'scalar product' is superamtisymmetric        
+            $$
+            \langle\X, \Y\rangle(-1)=
+            \langle\Y, \X\rangle(-1)^{p(\X)p(\Y)}\,,
+          $$
+and linear          
+               $$
+          \langle\X \lambda, \Y\rangle=
+           \langle\X, \lambda\Y\rangle\,,
+          \langle\lambda\X+\mu{\bf Z}, \Y\rangle=
+            \lambda\langle\X, \Y\rangle +
+            \mu\langle\Z, \Y\rangle\,,
+          $$
+          To every function $f$ corresponds the vector field
+$D_f$ :
+                   $$
+                   D_f=
+                   {\p f\over \p x^i}{\p\over \p\theta_i} +      
+                   (-1)^{p(f)} 
+                   {\p f\over \p \theta_i}{\p\over\p x^i}             
+                   $$
+                   such that for arbitrary vector field $\X$
+                 $$
+                 \langle\X,D_f\rangle=\X f\,.    
+                   \tag{1}
+                 $$
+    Check it:
+                    $$
+                 \langle\X,D_f\rangle=
+                   \left\langle
+                 X^i{\p \over \p x^i}+
+                 X_m{\p \over \p \theta_m}
+\,,\,
+                   {\p f\over \p x^j}{\p\over \p\theta_j} +      
+                   (-1)^{p(f)} 
+                   {\p f\over \p \theta_j}{\p\over\p x^j}         
+               \right\rangle=
+                    $$
+                    $$
+                   \left\langle
+                 X^i{\p \over \p x^i}
+\,,\,
+                   {\p f\over \p x^j}{\p\over \p\theta_j}              
+               \right\rangle     
+               +\left\langle
+                 X_m{\p \over \p \theta_m}
+\,,\,      
+                   (-1)^{p(f)} 
+                   {\p f\over \p \theta_n}{\p\over\p x^n}              
+               \right\rangle      $$
+                                 $$
+                   X^i{\p f\over \p x^j}\left\langle
+                 {\p \over \p x^i}
+\,,\,
+                   {\p\over \p\theta_j}              
+               \right\rangle     
+               +X_m{\p f\over \p \theta_n}
+         (-1)^{p(f)+(p(f)+1)1}
+               \left\langle
+                 {\p \over \p \theta_m}
+\,,\,      
+                  {\p\over\p x^n}              
+               \right\rangle                       
+               $$
+               $$
+               =     X^i{\p f\over \p x^j}\delta_i^j                
+               -X_m{\p f\over \p \theta_n}
+               (-\delta^m_n)=
+                 X^i{\p f\over \p x^i}+               
+               X_m{\p f\over \p \theta_m}
+                =\X f\,.
+               $$
+It preserves the symplectic 
+structure:
+               $$
+               \L_{D_f}\langle\rangle=0\,.
+                $$
+This property
+which sometimes is called the softness of symplectic structure
+(or rigidness of Riemannian structure) essentially 
+differes the symplectic structure  from Riemannian.<br><br>
+We will recall also the Buttin bracket:
+            $$
+            \{f,g\}=\langle D_f,D_g\rangle=
+            \left\langle 
+  {\p f\over \p x^i}{\p\over \p\theta_i} +      
+                   (-1)^{p(f)} 
+                   {\p f\over \p \theta_i}{\p\over\p x^i}       
+            \,\,,\,\,
+   {\p g\over \p x^m}{\p\over \p\theta_m} +      
+                   (-1)^{p(g)} 
+                   {\p g\over \p \theta_m}{\p\over\p x^m}       
+           \right \rangle=
+                        $$
+                        $$
+             {\p f\over \p x^i}\left\langle 
+ {\p\over \p\theta_i}       
+            \,\,,\,\,      
+                   (-1)^{p(g)} 
+                   {\p g\over \p \theta_m}{\p\over\p x^m}       
+           \right \rangle+
+           \left\langle       
+                   (-1)^{p(f)} 
+                   {\p f\over \p \theta_i}{\p\over\p x^i}       
+            \,\,,\,\,
+   {\p g\over \p x^m}{\p\over \p\theta_m}      
+                  \right \rangle=
+             $$
+            $$
+             {\p f\over \p x^i}{\p g\over \p \theta_m}
+         (-1)^{p(g)+(p(g)+1)1} 
+             \left\langle 
+ {\p\over \p\theta_i}       
+            \,\,,\,\,       
+                   {\p\over\p x^m}       
+           \right \rangle+
+{\p f\over \p \theta_i}
+           {\p g\over \p x^m}
+                   (-1)^{p(f)} 
+           \left\langle       
+                   {\p\over\p x^i}       
+            \,\,,\,\,
+  {\p\over \p\theta_m}      
+                  \right \rangle=
+             $$
+             $$
+             {\p f\over \p x^i}{\p g\over \p \theta_m}
+             (-1) 
+             (-\delta^i_m)
+               +
+{\p f\over \p \theta_i}
+           {\p g\over \p x^m}
+                   (-1)^{p(f)} 
+           \delta^i_m=       
+        {\p f\over \p x^i}{\p g\over \p \theta_i}
+               +
+                   (-1)^{p(f)} 
+{\p f\over \p \theta_i}
+           {\p g\over \p x^i}\,.
+             $$<br><br>
+        <br><br>
+
+
+    </div>
+ </body>
+</html>

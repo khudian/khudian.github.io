@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="14 July 2021">
+      <br><br>
+<h2><b> Flux and Lagrange surface</b></h2><br><br>
+
+Consider surface
+                   $$
+                   z=f(x^i)
+                   \tag{1a}
+                    $$
+Assing to this surface the gauge fermion
+                    $$
+                    \Psi=(z-f(x^1,\dots, x^n))\eta
+                     \tag{1b}
+                    $$
+       and the Lagrange surface  
+                   $$
+  L_\Psi\colon
+                  \cases
+                  {
+                    {\p \Psi\over \p \eta}\equiv =0\cr
+                    \theta_i={\p \Psi\over \p x^i}\cr
+                    \pi={\p \Psi\over \p z}\cr
+                  }
+                  $$
+                  This will be $(n|1)$-dimensional Lagrange surface:
+                  (Even coordinates are $z,x^1,\dots, x^n$
+                  odd coordinates are $\pi,\theta_1,\dots,\theta_n$.)                
+                  $$
+                  L_\Psi\colon
+                  \cases
+                  {
+                  x^i=\xi^i \cr
+                  z=f(\xi^i)\cr
+                  \theta_i=-f_i(\xi)\eta\cr
+                    \pi=\eta\cr
+                  }
+                  $$
+                  where we denote $f_i={\p f\over \p \xi^i}$.<br><br>
+                  Consider $(n|1)$ tangent reper
+                    $$
+                    \{\E_i\,,\f\}\,,\quad (i=1,\dots,n)\,
+                 $$
+to this surface, where even vectors are
+              $$
+              \E_i={\p\r\over \p\xi^i}{\p\over \p \r}=
+              {\p\over \p x^i}+f_i(\xi){\p\over \p z}
+              -f_{im}\eta{\p\over \p \theta_m}
+              \tag{1f}
+              $$
+ and odd vector is
+         $$
+         \f=-f_i(\xi){\p \over \p \theta_i}+{\p\over \p\pi}   
+         $$
+<br><br><br><br>
+There is the symplectic structure in $E^{n+1|n+1}$
+which defines symplectoorthogonal product which is defined
+by the condition that coordinates $x^m$ are conjugate to $\theta_n$,
+coordinate $z$ is conjugate to $\pi$,
+          $$
+           \langle\X, \Y\rangle=
+            \langle\Y, \X\rangle(-1)^{p(\X)p(\Y)}\,,
+          $$
+          (see in detail e.g. blog on 15 July)
+          We have in $E^{n+1|n+1}$
+          the dual reper,
+                    $$
+                    \{\E_i,\f;\e^j,{\bf F}\}=
+                    \{\E_1\,\dots,\E_n,\f;\e^1,\dots,\e^m,{\bf F}\}\,, 
+                    $$
+                    i.e. the reper such that first 
+                    $n+1$
+vectors  coincide with tangent reper 
+                    $\{\E_i,\f;\}$=
+to the Lagrangian surface 
+and the rest is 'symplectoorthonormal':
+                $$
+     \langle\E_i,\e^j\rangle=\delta_i^j\,,    
+     \langle {\bf F},\f\rangle=1\,,
+              $$
+               $$
+     \langle \E_i, \E_j,\rangle=
+     \langle \E_i, \f\rangle=
+     \langle\E_i,{\bf F}\rangle=
+    \langle\f,\f\rangle=
+    \langle\f,\e^i\rangle=
+    \langle\e^i,\e^j\rangle=
+    \langle\e^i,{\bf F}\rangle=0\,.
+    \langle {\bf F},{\bf F}\rangle=0\,.
+                $$ <br><br>
+    In details:
+              $$
+          \langle\E_i,\E_j\rangle=0\,,    
+          \langle\E_i,\f\rangle=0\,,  
+          \langle\f,\f\rangle=0\,,  
+        \langle {\bf F},{\bf F}\rangle=0\,,    
+                        \tag{2a}
+                     $$
+                          $$
+          \langle\E_i,\e^j\rangle=\delta_i^j\,,
+             \tag{2b}
+                    $$
+                     $$
+          \langle\E_i,{\bf F}\rangle=0\,,
+           \tag{2c}
+                      $$
+                 $$
+          \langle \f,\e^i\rangle=0\,,
+          \tag{2d}
+          $$
+                    $$
+                    \langle \f,{\bf F}\rangle=1\,,
+                                 \tag{2e}
+                        $$
+                        $$
+          \langle \e^i,\e^j\rangle=0\,,
+          \tag{2f}
+          $$
+                     $$
+                     \langle \e^i, {\bf F}\rangle=0\,,
+          \tag{2g}
+                    $$<br><br>
+    <br><br>
+<br><br>
+               (We assume that vectors 
+      $\E_1\,,\dots\,,\E_n,{\bf F}$ are even and
+                    vectors
+                    $\e_1\,,\dots\,\e_n,\f$ are odd.)
+                    Solve equation (2). 
+                  
+ Suppose that                   
+                    $$
+                    \e^i=\a^{im}{\p\over \p x^m}+
+                    \gamma^{i}{\p\over \p z}+
+                       A^{i}_m{\p\over \p \theta_m}
+                       +B^{i}{\p\over \p \pi}
+                       $$
+         and              
+                       $$
+        {\bf F}=C^m{\p\over \p x^m}+
+        D{\p\over \p z}+
+     \beta_m{\p\over \p \theta_m}+
+     \delta{\p\over \p \pi}\,,
+        $$
+                  where vectors $\e^i$ are odd,
+                   i.e. coefficients $\a^{im}$
+                                 and $\gamma^i$ are odd
+                                 and  coefficients 
+                                 $A^i_m$ and $B^i$ are even
+          and vector $\bf F$ is even, i.e.
+                              coefficients $C^m$ and $D$ are even
+        and  coefficients $\beta_m$ and $\delta$ are odd.<br><br>
+        Put this in equation (2).<br><br>
+        Note that conditions (2a) are fullfilled automatically    
+        since $L$ is $(n|1)$-dimensional Lagrangian surface,
+        and also $\langle \X,\rangle\Y$=
+      $-\langle \X,\Y\rangle$ if one of these vectors is even.
+  
+                  Condition (2b) means that            
+      $$
+          \langle\E_i,\e^j\rangle=\delta_i^j=    
+         \left \langle
+         {\p\over \p x^i}+f_i(\xi){\p\over \p z}
+              -f_{im}\eta{\p\over \p \theta_m}\,,
+          \a^{jn}{\p\over \p x^n}+
+                    \gamma^{j}{\p\over \p z}+
+                       A^{j}_n{\p\over \p \theta_n}
+                       +B^{j}{\p\over \p \pi}
+              \right\rangle=    
+      $$
+      $$
+      A^j_i+f_i(\xi)B^j+f_{im}(\xi)\a^{jm}\eta=\delta_i^j\,,
+      \tag{3b}
+      $$<br><br>
+       
+   Condition (2c)  means that
+                  $$
+              \langle\E_i,{\bf F}\rangle=
+             \left \langle
+              {\p\over \p x^i}+f_i(\xi){\p\over \p z}
+              -f_{im}(\xi)\eta{\p\over \p \theta_m}\,,
+              C^m{\p\over \p x^m}+D{\p \over\p z}
+              +\beta_m{\p\over \p \theta_m}
+            +\delta{\p\over \p \pi}
+             \right \rangle=
+                   $$
+                            $$
+             \left \langle
+              {\p\over \p x^i}
+              \,,
+               \beta_m{\p\over \p \theta_m}
+                   \right \rangle+
+             \left \langle
+             f_i(\xi){\p\over \p z}
+              \,,
+            \delta{\p\over \p \pi}
+             \right \rangle-
+         \left \langle
+              f_{im}\eta{\p\over \p \theta_m}\,,
+              C^m{\p\over \p x^m}
+             \right \rangle=
+              $$
+               $$
+             \beta_i+f_i(\xi)\delta-f_{im}(\xi)C^m\eta=0\,.
+             \tag{3c}
+                 $$
+  
+      Condition (2d) means that
+                 $$
+                 0=
+                 \langle \f,\e^i\rangle=
+        \left\langle 
+-f_i(\xi){\p \over \p \theta_i}+{\p\over \p\pi}\,,\,   
+  \a^{im}{\p\over \p x^m}+
+                    \gamma^{i}{\p\over \p z}+
+                       A^{i}_m{\p\over \p \theta_m}
+                       +B^{i}{\p\over \p \pi}
+              \right\rangle=
+                 $$
+                 $$
+        \left\langle 
+-f_i(\xi){\p \over \p \theta_i}\,,\,   
+  \a^{im}{\p\over \p x^m}
+              \right\rangle+
+  \left\langle 
+{\p\over \p\pi}\,,\,   
+  \gamma^{i}{\p\over \p z}
+              \right\rangle=
+              -f_m(\xi)\a^{im}+\gamma^i\,.
+              \tag{3d}
+           $$
+    Condition (2e) means that<br><br>
+            $$
+          \langle {\bf F},\f\rangle=1=
+ \left \langle 
+               A^m{\p\over \p x^m}+
+        A{\p\over \p z}+
+     \beta_m{\p\over \p \theta_m}+
+     \beta{\p\over \p \pi}\,,
+  -f_i(\xi){\p \over \p \theta_i}+{\p\over \p\pi}   
+                     \right \rangle=         
+            $$ 
+              $$
+              -A^m f_m(\xi)+A=1\,.
+              \tag{3e}
+              $$<br><br>
+              Condition (2f) means that
+              $$
+          \langle \e^i,\e^j\rangle=0=
+                     $$
+                      $$
+          \left\langle   
+          \a^{im}{\p\over \p x^m}+
+                    \a^{i}{\p\over \p z}+
+                       A^{i}_m{\p\over \p \theta_m}
+                       +A^{i}{\p\over \p \pi}
+                      \,,
+ \a^{jn}{\p\over \p x^n}+
+                    \a^{j}{\p\over \p z}+
+                       A^{j}_n{\p\over \p \theta_n}
+                       +A^{j}{\p\over \p \pi}
+          \right\rangle=
+              $$
+              $$
+              \a^{im}A^j_m+ 
+              \a^{jm}A^i_m+
+              \a^iA^j+
+              \a^jA^i=0
+              \tag{3f}
+              $$<br><br>
+
+      Condition (2g) means that 
+          $$
+          \langle e^i,{\bf F}\rangle=0=    
+  \left \langle 
+               A^m{\p\over \p x^m}+
+        A{\p\over \p z}+
+     \beta_m{\p\over \p \theta_m}+
+     \beta{\p\over \p \pi}\,,
+  \a^{im}{\p\over \p x^m}+
+                    \a^{i}{\p\over \p z}+
+                       A^{i}_m{\p\over \p \theta_m}
+                       +A^{i}{\p\over \p \pi}
+                     \right \rangle              
+           $$
+            $$
+           = A^mA^i_m+AA^i+\beta_m\a^{im}+\beta\a^i=0\,,
+            \tag{3g}
+            $$<br><br>
+                    <br><br>
+
+    </div>
+ </body>
+</html>

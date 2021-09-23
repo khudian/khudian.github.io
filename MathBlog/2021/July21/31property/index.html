@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="31 July 2021">
+      <br><br>
+<h2><b> One propety of odd symplectic vector space</b></h2><br><br>
+Let $L^{n-k|k}$ be a lagrangian plane in $E^{n|n}$
+ Suppose 
+             $$
+  \{\E_1,\dots,\E_{n-k},\f^1.\dots,f^k\}
+             $$
+             be a basis in this plane.
+ Assign to this basis the basis
+         $$
+    \{\E_1,\dots,\E_{n-k},,{\bf F}_1,\dots,{\bf F}_k;
+     \e^1,\dots,\e^{n-k},\f^1.\dots,f^k\}
+          $$
+          in the whole space $\E^{n|n}$ such that the basis is self-dual:
+             $$
+             \cases
+             {
+ \omega (\E_i,\E_j)=0\,,
+ \omega (\E_i, {\bf F_j})=0\,,
+ \omega (\E_i,\e^j)=\delta_i^j\,,
+ \omega (\E_i,\f^j)=0\,,\cr
+ \omega({\bf F}_i,{\bf F}_j)=0\,,
+ \omega({\bf F}_i,\e^j)=0\,,
+ \omega({\bf F}_i,\f^j)=\delta_i^j\,,\cr
+ \omega (\e^i,\e^j)=
+ \omega (\e^i,\f^j)=0\cr
+ \omega (\f^i,\f^j)=0\cr
+             }
+             $$<br><br>
+             some of these relations are automatically fulfilled,
+             e.g. $\omega (\E_i,\f^j)=0$ (since $L$ is a lagrangian
+             plane.)<br><br>
+<br><br>
+             Do it first for the case $k=1,n=2$.
+             
+             Let $\{\E,\f\}$ be a basis in $L$ and
+             let $\{\E,{\bf F},\e,\f\}$ be a basis in $E^{2|2}$ 
+             such that the basis  $\{\E,{\bf F},\e,\f\}$ 
+             is self-dual
+            $$
+             \cases
+             {
+ \omega (\E,\E)=0\,,
+ \omega (\E, {\bf F})=0\,,
+ \omega (\E,\e)=1\,,
+ \omega (\E,\f)=0\,,\cr
+ \omega({\bf F},{\bf F})=0\,,
+ \omega({\bf F},\e)=0\,,
+ \omega({\bf F},\f)=1\,,\cr
+ \omega (\e,\e)=
+ \omega (\e,\f)=0\cr
+ \omega (\f,\f)=0\cr
+             }
+             $$
+             some of these relations are automatically fulfilled
+           
+             Consider new basis $\{\E',\f'\}$ in $L$
+                               $$
+                               \cases
+                               {
+ \E'=a\E+\beta \f\cr
+ \f'=\gamma\E+d\f\cr
+              }
+                               $$<br><br>
+             Try to define the new self-dual basis in $E^{2|2}$,
+              $\E', {\bf F}', \e',\f'$ adjusted to this basis:
+             
+              We try
+             $$
+            \cases
+            {
+              {\bf F}'=p{\bf F}+\pi \e\cr
+              \e'=\rho {\bf F}+r\e\cr
+            }
+             $$<br><br>
+             Then
+            $$
+             \cases
+             {
+         0=\omega (\E',\E')=\omega(a\E+\beta \f,a\E+\beta \f)=0\cr
+     0= \omega (\E', {\bf F}')=
+      \omega(a\E+\beta\f,p{\bf F}+\pi \e)=a\pi-p\beta=0
+      \cr
+     1= \omega (\E',\e')=\omega(a\E+\beta\f,\rho {\bf F}+r\e)
+      =ar-\beta\rho=1,,\cr
+      0= \omega (\E',\f')=\omega (a\E+\beta\f,\gamma\E+d\f)=
+      ad+\beta\gamma=0                 \,,\cr
+      0= \omega({\bf F}',{\bf F}')=\omega(p{\bf F}+\pi\e,p{\bf F}+\pi\e)=0\cr
+      0= \omega({\bf F}',\e')=0=
+      \omega(p{\bf F}+\pi\e,\rho {\bf F}+r\e)=0\cr
+      1= \omega({\bf F}',\f')=\omega(p{\bf F}+\pi\e,\gamma\E+d\f)=
+      pd-\pi\gamma\,,\cr
+    0=  \omega (\e',\e')=0\cr
+    0= \omega (\e',\f')= \omega (\rho {\bf F}+r\e, \gamma \E+d\f)
+    =\rho d-r\gamma\cr
+ 0=\omega (\f,\f)=0\cr
+             }
+             $$
+   We come to  conditions
+         $$
+         \cases
+         {
+0=\omega (\E', {\bf F}')=0
+      \Rightarrow  a\pi-p\beta=0\cr
+1=\omega (\E',\e')\Rightarrow 
+      ar-\beta\rho=1\,,\cr
+      1= \omega({\bf F}',\f')\Rightarrow
+      pd-\pi\gamma=1\,,\cr
+    0= \omega (\e',\f')\Rightarrow\rho d-r\gamma\cr
+         }
+         $$
+             
+    </div>
+ </body>
+</html>

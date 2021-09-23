@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="28 June 2021">
+      <br><br>
+<h2><b> General case for Lagrange surface</b></h2><br><br>
+Let $\Psi=\Psi(x^i,y^a)=\Psi(x^1,\dots,x^n;y^1,\dots,y^m)$
+be an arbitraru function on $n+m$ variables.<br><br>
+             Consider the space $\R^{2n}$ with coordinates
+             $(p_1,\dots,p_n;q^1,\dots,q^n)$<br><br>
+             Consider the surface
+$$
+\L=\L_\Psi=\{x^i,y^a, p_i,q_a\colon\quad
+  p_i={\p\Psi(x,y)\over \p x^i}\,,
+  \quad
+q_a={\p \Psi(x,y)\over \p y^a}=0\}\,.
+\tag{1}
+             $$
+             in the space $\R^{2n}$.
+If
+                $$
+                {\p^2\over \p x^i\p y^a}\not=0\,
+                 $$
+this is $n$-dimensional surface             
+Show that this is Lagrange surface:
+                  $$
+                  dp_i\wedge dx^i=
+                d\left({\p\Psi(x,y)\over \p x^i}\right)\wedge dx^i=
+      {\p^2\Psi(x,y)\over \p x^j\p x^i}dx^j\wedge dx^i+
+      {\p^2\Psi(x,y)\over \p y^a\p x^i}dy^a\wedge dx^i=
+                        $$
+                        $$
+      0+{\p^2\Psi(x,y)\over \p x^i\p y^a}dy^a\wedge dx^i=
+      0+{\p q_a\over \p x^i}dy^a\wedge dx^i=0\,.
+                  $$
+ <tt> Je ne peux pas me souvenir plus de cette cas! Et
+ je ne peux pas ca trouver dans le livre GS!</tt>                  
+   <br><br>
+ Recal formulae frpm GS<br><br>
+      <b> Proposition</b> Let $\L\in T^*M$
+      then there is a fibre bundle $N\to M$
+      and a fuction $\Psi \colon N\to R$ such that
+                          $$
+                          \L=d\pi_*{\rm graph}d\varphi
+                          \tag{2}
+                           $$<br><br>
+              Choose a point $\l_0\in\L$.
+              First note that using (just  a linear)
+          transformation of coordinates in $T^*M$
+      one may come to coordinates which are independent
+      on $\L$ in a vininity of the point $\l_0$ 
+      \footnote {$^{1)}$}
+     {This follows from the following:
+     Let $X$ and $Y$ be two complimetary Lagrange planes (subspaces)
+     in
+     symplectic vector space $V$.
+     For every Lagrange plane
+     $W$ in $V$, consider planes $W\cap X$
+     and the projection, $PW$, of $W$ on $Y$ with respect to
+     decomposition $V=X\oplus Y$:if $\{e_i, \f^k\}$ is a Darboux
+     basis adjusted to the decomposition $V=X\oplus Y$,
+     (vectors $\e_i$ span $X$ and they are symplectoorthogonal
+      o vectors $\f^j$ which span $Y$).
+     Then 
+                         $$
+                  P(a^i\e_i+b_j\f^j)=b_jf^j\,.
+                          $$
+      We have that
+                          $$
+                          W\cap X {\rm is}\,\,
+                          {\rm symplectoorthogonal} 
+                          \quad {\rm to}\,\, PW\,.
+                          $$
+        This means that for the basis
+        $\{\e_i,\f^j\}$ one can choose $k$ such that
+        vectors $\{\e_1,\dots,\e_k\}$ belong to $W\cap X$
+          Thus we have chosen the basis 
+        $\{\e_1,\dots,\e_k,\f^{k+1},\dots, \f^{n}\}$
+        in $V$ adjusted to the 
+      Lagrange plane.}.
+      This means that my linear symplectic rotation
+      one can make the Lagrange surface, to be the function
+      on variables $(p_1,\dots,p_k,x^{k+1},\dots,x^n)$:
+                $$
+                \cases
+                   {
+                  x^1=-f^1(p_1,\dots,p_k;x^{k+1},\dots, x^n)\cr
+                  \dots \dots\dots \dots\dots \dots\dots \dots\cr
+                  x^k=-f^k(p_1,\dots,p_k;x^{k+1},\dots, x^n)\cr
+                  p_{k+1}=f_{k+1}(p_1,\dots,p_k;x^{k+1},\dots, x^n)\cr
+                  \dots \dots\dots \dots\dots \dots\dots \dots\cr
+                  p_{n}=f_{n}(p_1,\dots,p_k;x^{k+1},\dots, x^n)\cr
+                }
+                          $$
+                          (signs are chosen for the convenience).<br><br>
+                          Now we have that symplectic form
+                          vanishes on $\L$. Thus
+                    $$
+                    0=\omega_\L=\sum_{i=1}^n
+                    dp_i\wedge dx^i\big\vert_\L=         
+                    \left(
+                      \sum_{i=1}^{k}dp_i\wedge dx^i+
+                      \sum_{i=k+1}^{n}dp_i\wedge dx^i
+                                \right)\big\vert_\L=
+                    $$
+                    $$
+   \sum_{i=1}^{k}dp_i\wedge 
+   \left(-
+   \sum_{j=1}^k{\p f^i\over \p p_j}dp_j-
+   \sum_{j=k+1}^n{\p f^i\over \p x^j}dx^j
+ \right)+
+   \sum_{j=k+1}^{n}dp_i\wedge 
+   \left(
+   \sum_{j=1}^k{\p f^i\over \p p_j}dp_j+
+   \sum_{j=k+1}^n{\p f^i\over \p x^j}dx^j
+ \right)=
+                    $$
+                    $$
+   2\sum_{i=1}^k\sum_{j=k+1}^n{\p f^i\over \p x^j}dx^j\wedge dp_i\,.
+                    $$
+                    Hence there exists a function $F=F(x,p)$
+                    such that
+                     $$
+                     f^i={\p F(p,x)\over\p p_i}\,.               
+                     $$
+Consider a function 
+                      $$
+                      \Psi(x^1,\dots, x^n,p_1,\dots,p_n)
+                      =p_1x^1+\dots+p_kx^k+
+                      F(x,p)+
+                  \sum_{i-1}^n\left(p_i-f_i(p,x)\right)^2\,.
+                      $$
+                            
+    </div>
+ </body>
+</html>

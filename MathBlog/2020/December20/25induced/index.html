@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="25 December 2020">
+      <br><br>
+<h2><b> Induced connection.</b></h2>
+ 
+ <i> Here we describe standard deriving for induced connection
+ (see my lecture course) with  some details.
+ In particular we will focus special attention on
+ <tt> prolongation</tt></i><br><br>
+
+    Let $(M,G)$ be an $n$-dimenisonal
+    Riemannian manifold, and let $C$ be $k$-dimensional surface ib $M$.
+    One can consider  Levi-Civita connection of metric induced on
+    $C$. However this connection coicides with induced connection
+              $$
+	      \nabla^{(C)}_\X\Y=
+	      \left[\nabla_\X\Y\right]_{||}\,,
+	      \tag{1}
+	         $$
+if $\nabla$ is Levi-Civita connectiona of metric $G$ in $M$.
+THis fact follows from uniqueness of Levi-Civita connection.
+[In (1) $X_{||}$ means component of $\X$ tangent to $C$.]
+[See my lecture course]. However   application of formula (1)
+has one delicate problem: we have to consider vector fields
+  $\X,\Y$ in the vicinity of the surface.
+ During many years
+I 'swallowed' it in my course. Here I try to be more delicate,
+writing induced connection (1).<br><br>
+Let $x^i(\xi^\a)$ be a manifold $M$, and $\X,\Y$ two vector fields on $M$.
+   In tubular neighbourhood of $C$ consider prolongations of these fileds:
+   arbitrary vector fields
+   $\hat \X$ and $\hat\Y$ such that they coincide with fields
+   $\X,\Y$ on $C$:
+               $$
+	       \hat\X\big\vert_{C}=\X\,,\quad
+	       \hat\Y\big\vert_{C}=\Y\,
+	       \tag{1a}
+	         $$
+   write down formula (1) properly in terms of prolongations:
+         $$
+	      \nabla^{(C)}_\X\Y=
+	     \left[ 
+	     \left(\nabla_{\hat\X}\hat \Y\right)_C
+	     \right]_{||}\,.
+	     \tag{1b}
+	  $$
+This is the well-defined  formula for the induced  connection.<br><br>
+<tt> Proof</tt>  One can easy to see that this is a connecition,
+and it preserves scalar product, hence by uniqueness it 
+ is Levi-Civita connection  of induced metric on $C$.
+It is not worthless to perform calculations, in spite of the fact that
+this proof allows to calculate the induced connection
+as the Levi-Civita connection of induced metric:
+         $$
+	\Gamma^{\gamma}_{\a\beta}=
+	{1\over 2} g^{\gamma\sigma}
+	\left(
+	{\p g_{\a\sigma}(\xi)\over \p \xi^\beta}
+	     +
+	{\p g_{\beta\sigma}(\xi)\over \p \xi^\a}
+	    -
+	{\p g_{\a\beta}(\xi)\over \p \xi^\sigma}
+	\right)\,,
+	\tag{1c} 
+	 $$
+where  the induced metric is defined by the metric in $M$:
+          $$
+	  g_{\a\beta}(\xi)=
+	  \left\langle,
+      \r_\a,\r_\beta
+	  \right\langle_G=
+	    x^i_\a(\xi)G_{ij}\left(x(\xi)\right)
+	      x^j_\beta(\xi)\,.
+	      \tag{1d}
+	   $$
+	 Neverheless try to calculate the induced connection
+	 without use of Levi-Civita Theorem.<br><br>
+    Cosider vector fields on $C$:
+         $$
+	\r_\a={\p x^i(\xi) \over \p \xi^\a} \p_i
+	\tag{2}
+	 $$
+and denote by $\R_\a$ the prolongation of the field $\r_\a$
+on tubular neighbourhood of $C$. We have that
+           $$
+	   \left[
+\left(
+  \nabla^{(M)}_{\R_\a}\R_\beta
+\right)_{C}
+	   \right]_{||}=
+	   \Gamma_{\a\beta}^\gamma\r_\gamma\,,
+	   \tag{2a}
+	   $$
+        where $\Gamma_{\a\beta}^\gamma$ are Christoffel symbols
+	   of induced connection on $C$.
+One can see that
+            $$
+  \nabla^{(M)}_{\R_\a}\R_\beta=
+  \nabla_{\r_\a+\dots}\left(\r_\beta+\dots\right)=
+  x^i_{\a\beta}\p_i+x^i_\a x^j_\beta\Gamma_{ij}^m\p_m+\dots\,,
+  \tag{2b}
+	    $$
+	    where we denote by $\dots$ terms 
+	    whcih vanish on manifold $C$.
+It follows from this equation that for the induced connection
+           $$
+	   \nabla^{(C)}_{\r_\a}\r_\beta=
+	   \Gamma^{(C)\gamma}_{\a\beta}
+	   \r_{\gamma}
+	   =
+	   \r_{\a\beta}+
+	   x^i_\a
+	   x^j_\beta \Gamma^{(M)m}_{ij}\p_m\,,
+	   $$
+	   where
+$\{\Gamma^{(C)\gamma}_{\a\beta}\}$ Christoffel symbols of
+induced connection (see equation (1d)), and
+$\{\Gamma^{(M) m}_{ij}\}$ Christoffel symbols of
+of connection in $M$ (which may be is Levi-Civita connecction of G).
+Take the scalar product of the lasst equation with arbitrary
+tangent vector $\r_\beta$.  We come t
+ 
+    </div>
+ </body>
+</html>

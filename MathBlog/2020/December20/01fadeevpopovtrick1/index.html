@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="1 December 2020">
+      <br><br>
+<h2><b> Example of Fadeev-Popov functional</b></h2>
+ 
+ In non-invariant verrsion of Fadeev-Popov trick essential role is played
+ by the functional
+     $$
+  W_F(x)=\left[\int \delta\left(F(x^g)\right)dg\right]^{-1}  \,, 
+     $$
+where compact group $G$ acts on manifold $E$, and surface $F=0$ is transversal
+to the 'action' of the group. <br><br>
+<b> Remark</b> One can see that this functional as well as the functional 
+$W_F(x)$ are not geometricsal.<br><br>
+<br><br>
+One can see that
+the functional $W_F(x)$
+is $G$-invariant;
+If $f$ is $G$-invariant function on $E$,
+ and $d\mu$ is also $G$-invariant measure on $E$:
+          $$
+	  W_F(x^g)=W_F(x)\,,\quad
+	  f(x^g)=f(x)\,,\quad 
+	  \int_{\triangle} d\mu= 
+	 \int_{\triangle^g} d\mu\,, 
+	  $$
+      then for every 'gauge condition' defined by $F=0$, we
+      have that
+             $$
+	   \int f(x)d\mu=\int f(x)
+	        \left(
+	   \underbrace{W_F(x)\int 
+        \delta\left(F(x^g)\right)dg}_
+	{\rm unity}
+	        \right)d\mu=
+	\int f(y)
+	  W_F(y) 
+        \delta\left(F(y)\right)dg
+	        d\mu
+	      $$<br><br>
+Consider the example.<br><br>
+Let $G$ be a group of rotations of plane:
+    $$
+    \pmatrix
+       {
+    x^g\cr
+     y^g\cr
+    }
+    =
+    \pmatrix
+       {
+    x\cos g-y\sin g\cr
+     x\sin g +y\cos g\cr
+    }
+ $$<br><br>
+and let
+     
+    </div>
+ </body>
+</html>

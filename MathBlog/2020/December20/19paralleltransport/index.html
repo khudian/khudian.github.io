@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="19 December 2020">
+      <br><br>
+<h2><b> Parallel transport</b></h2>
+ 
+      Let $M$ be $k$-dimenisonal manifold in Euclidean space
+      $\E^n$. Let $\gamma$ be a curve on $M$.   Then there
+      are three  ways to define the parallel transport
+      of a vector along this curve:<br><br>
+<br><br>
+<br><br>
+<br><br>
+      a) take metric $G$ induced
+      on $M$ by Euclidean metric, then 
+        take parallel transport with this Levi-Civita connection
+      induced on $M$ <br><br>
+      b) take the connection induced on $M$ by standard connection
+      in Euclidean space:
+                $$
+		\nabla^{\rm induced}_\X\Y=
+		\nabla^{\rm Euclidean}_\X\Y\,.
+		$$<br><br>
+   c)    We say that $\X(t)$ is parallel transport if
+     the vector field  $d \X(t)\over dt$
+     is orthogonal to the surface.<br><br>
+<b> Theorem</b>.   These three ways coincide.<br><br>
+The induced connection preserves metric.  Hence the uniqueness implies
+that $b)=a)$<br><br>
+    Show that c)=a) by straightforward  calculations.<br><br>
+    Let $x^i=x^i(\xi^\a)$; consider vectors
+        $$
+	\r_\a={\p x^i(\xi)\over \p \xi^\a}{\p \over \p x^i}=
+	x^i_\a\e_i\,.
+	$$
+Consider an arbitrary curve on $M$
+     $$
+ \gamma\colon \r(t)=\r\left(\xi(t)\right)\,.
+      $$<br><br>
+Consider the parallel transport 
+$\Y(t)=u^\a(t)\r_\a(\xi(t))$
+of vector field along this curve.<br><br>
+We have that for arbitrary $t$,
+     $$
+     \nabla_{\X(t)}\ր
+     ւt)=0\,,
+     $$<br><br>
+where $\Y(t)$ is the vector tangent to the curve $\gamma$:
+       $$
+       \Y(t)=x^\a(t)\r_\a(t)\,,\quad {\rm with}\,\,
+       x^\a(t)={d\xi^\a(t)\over dt}\,.
+       $$<br><br>
+
+the condition that only orthogonal component changes means that,
+the derivstive of the vector is orthogonal to the surface:
+      $$
+      0=\left
+      \langle
+      {d\over dt}\left(\X(t)\right),
+      \r_\beta
+      \right\rangle=
+      \langle
+      {d\over dt}\left(u^\a\r_\a\right),
+      \r_\beta
+      \rangle=
+      \dot {u^\a}\langle \r_\a.\r_\beta\rangle+
+      u^\a(t)
+      \left\langle {d\r_\a(\xi(t))\over dt},
+      \r_\beta\right\rangle=
+      $$
+          $$
+\dot {u^\a}g_{\a\beta}+
+u^\a
+\langle\r_{\a\gamma},\r_\beta\rangle
+ {d\xi^{\gamma}(t)\over dt}
+          $$<br><br>
+    
+    </div>
+ </body>
+</html>

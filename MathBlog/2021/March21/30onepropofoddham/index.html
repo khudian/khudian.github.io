@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="30 March 2021">
+      <br><br>
+<h2><b> One property of odd Hamiltonian</b></h2><br><br>
+The statement of this blog is wrong. Better to say that
+it   has to be told more properly: see the blog on 30 April 2021<br><br>
+<i> I know very well the following: Let $Q$ be an odd Hamiltonian
+  such that $\Delta_0 Q=0$. Then corresponding Darboux transformation
+  does not change the operator $\Delta_0$. 
+  I know it very well, today trying to prove it I spent the efforts.
+Am I old?</i><br><br>
+   Check this property: <br><br>
+   Suppose odd bracket is canonical (Buttin bracket).<br><br>
+   Let $Q$ be am odd Hamiltonian.
+   Consider infinitesimal transformattion
+                $$
+   \cases{
+   \td x^i=  x^i+\vare\{Q,x^i\}=x^i-
+   \vare{\p Q(x,\theta)\over \p \theta_i}\cr
+   \td \theta_i=  \theta_i+\vare\{Q,\theta_i\}=
+   \theta_i+\vare{\p Q(x,\theta)\over \p x^i}\cr
+       }
+              $$
+              The operator $\Delta_0={\p^2 \over \p \theta_i\p x^i}$
+              changes in the following way:
+                   $$
+                   \Delta_0={\p \over \p \theta_i}{\p \over \p x^i}=
+                   \left[
+                   {\p \td x^m\over \p \theta_i}
+                   {\p \over\p \td x^m }
+                             +
+                   {\p \td \theta_m\over \p \theta_i}
+                   {\p \over\p \td \theta_m }
+                 \right]
+                   \left[
+                   {\p \td x^m\over \p x^i}
+                   {\p \over\p \td x^m }
+                             +
+                   {\p \td \theta_m\over \p x^i}
+                   {\p \over\p \td \theta_m }
+                 \right]
+                        $$=
+                     $$          
+                   \left[
+                   {\p \over \p \theta_i}
+                   \left(x^m-\vare{\p Q(x,\theta)\over \p \theta_m}\right)
+                   {\p \over\p \td x^m }
+                             +
+                   {\p \over \p \theta_i}
+                   \left( \theta_m+\vare{\p Q(x,\theta)\over \p x^m}\right)
+                   {\p \over\p \td \theta_m }
+                 \right]
+                 \times
+                   $$
+                   $$
+                   \left[
+                   {\p \over \p x^i}
+                   \left(x^m-\vare{\p Q(x,\theta)\over \p \theta_m}\right)
+                   {\p \over\p \td x^m }
+                             +
+                   {\p \over \p x^i}
+        \left( \theta_m+\vare{\p Q(x,\theta)\over \p x^m}\right)
+  {\p \over\p \td \theta_m }
+                 \right]=
+   $$     
+                   $$          
+                   \left[
+          -\vare{\p Q^2(x,\theta)\over\p\theta_i \p \theta_m}
+                   {\p \over\p \td x^m }
+                             +
+        \left(\delta_m^i+\vare{\p^2 Q(x,\theta)\over \p \theta_i\p x^m}\right)
+                   {\p \over\p \td \theta_m }
+                 \right]
+                 \times
+                   $$
+                   $$
+                   \left[
+  \left(\delta^m_i-\vare{\p Q(x,\theta)\over \p x^i\p \theta_m}\right)
+                   {\p \over\p \td x^m }
+                             +
+              \vare{\p Q(x,\theta)\over \p x^i\p x^m}
+  {\p \over\p \td \theta_m }
+                 \right]=
+                 $$     
+     $$          
+                   \left[
+                     {\p \over \p \td\theta_i} 
+          -\vare{\p Q^2(x,\theta)\over\p\theta_i \p \theta_m}
+                   {\p \over\p \td x^m }
+                             +
+        \vare{\p^2 Q(x,\theta)\over \p \theta_i\p x^m}
+                   {\p \over\p \td \theta_m }
+                 \right]
+                      $$
+                      $$
+                   \left[
+      {\p\over \p \td x^i}-\vare{\p Q(x,\theta)\over \p x^i\p \theta_m}
+                   {\p \over\p \td x^m }
+                             +
+              \vare{\p^2 Q(x,\theta)\over \p x^i\p x^m}
+  {\p \over\p \td \theta_m }
+                 \right]=
+                 $$     
+Now we coninue writing only the terms 
+of order $1$ over $\vare$ amd using  that $\Delta_0 Q=0$
+we come to
+                    $$
+          = {\p \over \p \td\theta_i} 
+               {\p\over \p \td x^i}
+                    $$
+                    $$-
+            \vare{\p^2 Q(x,\theta)\over \p x^i,\p \theta_m}
+             {\p^2\over \p \td \theta_i\p \td x^m}
+            \vare{\p Q^2(x,\theta)\over\p\theta_i \p \theta_m}
+                   {\p \over\p \td \theta_i }
+                   {\p \over\p \td x^m }
+                   + \vare{\p Q(x,\theta)\over \p x^i\p x^m}
+  {\p^2 \over\p \td \theta_i\p \td \theta_m }
+        +\vare{\p^2 Q(x,\theta)\over \p \theta_i\p x^m}
+             {\p^2\over \p \td \theta_m\p \td x^i}
+                     $$<br><br>
+  ttthe first term is what we need. the second cancels with
+   fifth, the third and fourth vanish.<br><br>
+<br><br>
+<br><br>
+              
+    </div>
+ </body>
+</html>

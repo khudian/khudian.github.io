@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="6 July 2021">
+      <br><br>
+<h2><b> Linear algebra of Lagrange subspaces</b></h2><br><br>
+Let ${\e_i}$ ($i=1.\dots,n$) be a set of linear idependent even vectors.<br><br>
+Let ${\f^i}$ ($i=1.\dots,n$) be a set of linear idependent odd vectors.
+\footnote{$^1)$} {may be here some condition of independace of
+vectors $\e_i$ and $f^j$?}.<br><br>
+
+Let V be span of 
+even vectors
+${\e_i}$ ($i=1.\dots,n$) 
+ and odd vectors
+${\f^i}$ ($i=1.\dots,n$).
+          $$
+          V=\{a^i\e_i+\a_i \f^j\}\,,         
+          $$
+          where coefficients $a_i$ are even elements (of an Grassman algebra)
+          and coefficients $\a_i$ are odd elements (of an Grassman algebra).<br><br>
+We define in $V$ scalar product 
+    $$
+    G\colon  G(\e_i,\f^j)=\delta_i^j\,,
+    G(\e_i,\e_j)=0\,,
+    G\colon  G(\f^i,\f^j)=0\,,
+    $$
+This scalar product defines the odd symplectic structure.<br><br>
+Let $R$ be an arbitrary subspace of $V$.
+We say that dimension of $R$ is equal to $p|q$
+($p\leq n, q\leq n$)if there are 
+$p$ linealy independent even vectors<br><br>
+<b> Proposition</b> $R$ is Lagrange surface iff its dimension is
+equal to $(n-k|k)$ ($k=0,\dots$)<br><br>
+
+    </div>
+ </body>
+</html>
