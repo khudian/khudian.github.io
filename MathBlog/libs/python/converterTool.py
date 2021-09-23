@@ -3,9 +3,9 @@ import re
 from pathlib import Path
 from shutil import copyfile
 
-gBlogDir = R"D:\Blog"
-gDestinationDir = R"D:\khudian.github.io\MathBlog"
-gArticlesJsPath = R"D:\khudian.github.io\MathBlog\articles.js"
+gBlogDir = R"C:\work\Blog"
+gDestinationDir = R"C:\work\khudian.github.io\MathBlog"
+gArticlesJsPath = R"C:\work\khudian.github.io\MathBlog\articles.js"
 GENERAL_BEGIN_KEY = "GENERAL_BEGIN_KEY"
 GENERAL_END_KEY = "GENERAL_END_KEY"
 TITLE_TAG_OPEN = R"<h2>"
