@@ -107,7 +107,7 @@ def getDayNum(file):
 
   
 def validateMonthAndYear(month, year):
-  return (year == 2020) and (month > 6) or (year > 2020)
+  return (year == 2021) and (month > 8) or (year > 2021)
 
 def creatFileDirIfNotExist(file):
   folder = os.path.split(file)[0];

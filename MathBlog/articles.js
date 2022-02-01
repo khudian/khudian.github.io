@@ -1,5 +1,11 @@
 var links =
 [
+  [["2022/January22/15con/index.html"], ["15 January 2022"], ["Non-trivial parameterisation of cone"]],
+  [["2021/October21/11groupoid/index.html"], ["11 October 2021"], ["Natural construction of groupoid"]],
+  [["2021/October21/10againbv/index.html"], ["10 October 2021"], ["BV encore"]],
+  [["2021/October21/9lettoted/index.html"], ["9 October 2021"], ["Letter to Ted ()"]],
+  [["2021/October21/03bernuliandceb/index.html"], ["3 October 2021"], ["Tchebyshof polinomials (continuation: see 22 September)"]],
+  [["2021/September21/22cheb/index.html"], ["22 September 2021"], ["Tchebyshof polinomials"]],
   [["2021/September21/11invvolume/index.html"], ["11 September 2021"], ["Baranov-Schwarz transformation"]],
   [["2021/August21/08flux/index.html"], ["8 August 2021"], ["Flux lagrange surface and mixed density"]],
   [["2021/July21/31property/index.html"], ["31 July 2021"], ["One propety of odd symplectic vector space"]],

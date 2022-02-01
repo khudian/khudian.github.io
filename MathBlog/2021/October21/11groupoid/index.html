@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="11 October 2021">
+      <br><br>
+<h2><b> Natural construction of groupoid</b></h2><br><br>
+Let $M$ be a (super)manifold
+Let $A$ be a trivial groupoid of volume forms on $M$.<br><br>
+Let $\rho$ be a volume form,
+$S^{ab}\p_a\otimes\p_b$ be symmetric contravariant tensor field
+on $M$, and  let 
+$\Pi(\rho,\lambda)$ be a pencil of operators acting on densities
+of weight $\lambda$ auch that<br><br>
+<br><br>
+We know that $\lambda={1\over2}$
+is a singular point of this pencil.<br><br>
+Consider set of pairs $(\rho,\rho')$ such that for this pair
+operators at the singular points, i.e. on semidensities
+coinside at the points $\rho$
+and $\rho'$:
+             $$
+             \Pi\left(\rho,{1\over 2}\right)\equiv 
+             \Pi\left(\rho',{1\over 2}\right)
+             \tag{1}
+              $$<br><br>
+  In the case if         
+        $$
+        \Pi(\rho,\lambda) s(x)|Dx|^\lambda=
+        \rho^\lambda\Delta_\rho\left({s(x)}\over \rho^\lambda\right)
+        $$
+        condition (1)reads
+                   $$
+        \sqrt\rho\Delta_\rho\left({s(x)}\over \sqrt \rho\right)=
+        \sqrt{\rho'}\Delta_{\rho'}\left({s(x)}\over \sqrt {\rho'}\right)\,. 
+                 \tag{2}           
+        $$<br><br>
+Thus we come to the groupoid $C_S$.
+            
+          Let a pair $(\rho,\rho')\in C_S$. i.e.
+                  $$
+        \sqrt\rho\Delta_\rho\left({s}\over \sqrt \rho\right) \equiv
+        \sqrt\rho'\Delta_{\rho'}\left({s}\over \sqrt {\rho'}\right)\,. 
+                 \tag{3}           
+                  $$
+                  In particular relation (3) is obeyed for semidensities
+                  $s=\sqrt {\rho'}$ and
+                  $s=\sqrt {\rho}$ . Applying relation (3)
+                  for these semidensities and using that
+                   $\Delta_\rho 1=0$ we come to
+                   the relation that for arbitrary  pair
+                   $(\rho,\rho')\in C_S$.
+                             $$
+                   \hbox {for arbitrary  
+                   $(\rho,\rho')\in C_S$}\quad
+                             \Delta_\rho\left(
+   \sqrt {\rho'\over \rho}
+                      \right)=0 
+                      \Leftrightarrow
+                      \Delta_{\rho'}\left(
+   \sqrt {\rho\over \rho'}
+ \right)=0 \quad \hbox{inverse}
+                              $$
+In the same way consider two conjugate pairs
+                   $(\rho_1,\rho_2)\in C_S$ and
+                   $(\rho_2,\rho_3)\in C_S$.<br><br>
+                Relation (3) reads<br><br>
+                   $$
+                   \sqrt{\rho_1}\Delta_{\rho_1}
+                  \left({s(x)}\over \sqrt {\rho_1}\right)= 
+                   \sqrt{\rho_2}\Delta_{\rho_2}
+                  \left({s(x)}\over \sqrt {\rho_2}\right)= 
+                   \sqrt{\rho_3}\Delta_{\rho_3}
+                  \left({s(x)}\over \sqrt {\rho_3}\right)
+        \tag{4}           
+                     $$<br><br>
+Using it and in particular the fact that for semidensity
+$\s=\sqrt {\rho_3}$  all terms in equation (4) vanish, we come to the
+relation
+                            $$
+                          \Delta_{\rho_1}  
+                            \left(
+                            \sqrt {\rho_3\over \rho_1}
+                            \right)=0=
+                          \Delta_{\rho_1}  
+                            \left(
+                            \sqrt {\rho_3\over \rho_2}
+                            \sqrt {\rho_2\over \rho_1}
+                            \right)\,.
+                             $$
+ Thus we checked that  for arbitrary two conjugate pairs
+                   $(\rho_1,\rho_2)$,
+                   $(\rho_2,\rho_3)$ belonging to the
+                 groupoid $C_S$, composition law
+                                 $$
+                          \Delta_{\rho_1}  
+                            \left(
+                            \sqrt {\rho_3\over \rho_1}
+                            \right)=0\,.
+                             $$
+        holds.
+                             
+    </div>
+ </body>
+</html>

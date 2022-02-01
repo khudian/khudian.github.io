@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="3 October 2021">
+      <br><br>
+<h2><b> Tchebyshof polinomials 
+(continuation: see 22 September)</b></h2><br><br>
+There are not many formulae which are deep and almost evident.
+Good example of such a formula is the famous Cauchi-Buniakovskij
+inequality:
+                    $$
+                    \langle u,u\rangle      
+                    \langle v,v\rangle      
+                    \geq 
+                    \langle u,v\rangle^2
+                       $$<br><br>
+                       We call this type formula <tt> fundamental</tt><br><br>
+To Russian mathematician Tchebyshof belong at least
+two fundamental formulae.<br><br>
+One is about famous Chebyshov polinomials 
+$T_n(x)\colon 
+\cases {T_n(x)=\cos n\theta \cr x=\cos\theta\cr } $ <br><br>
+One can see that polinomial ${T_n(x)\over 2^n}=x^n+\dots$
+is on the minimal distance on $[-1.1]$. i.e.
+for every $x\in [-1,1]$ $|T_n(x)|\leq 1$ and for an arbitrary
+polinomial $P(x)=x^n+\sum_{i< n} a_i x^i$
+                    there exists a point $x_0\in [-1,1]$  such that
+                    $$
+                     |P_n(x_0)|={1\over 2^n}
+                     $$
+   
+  Another fundamental formula which belongs to Chebyshov is related
+  with probability.<br><br>
+  Let $X_1$, \dots, $X_n$ be independent random variables
+  which take values $0$ or $1$
+  such that every $X_i$ it takes value  $0$ with probability $p$
+  and respectively
+  it takes value  $1$ with probability $q=1-p$.<br><br>
+
+  The famous Bernulli law says that
+                    $$
+                    \lim_{n\to\infty} 
+                    P\left(
+                      \left|
+                    {X_1+\dots+X_n\over n}-p
+                  \right|>\vare
+                 \right)=0\,.         
+                    $$
+ This follows from the fact that
+                $$
+                   P\left(
+                    \{X_1+\dots+X_n= k\}
+                  \right)=C^k_np^k(1-p)^{n-k}\,.
+                $$<br><br>
+<br><br>
+                     
+    </div>
+ </body>
+</html>

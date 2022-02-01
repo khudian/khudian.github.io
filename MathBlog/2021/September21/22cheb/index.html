@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="22 September 2021">
+      <br><br>
+<h2><b> Tchebyshof polinomials</b></h2><br><br>
+There are not many formulae which are deep and almost evident.
+Good example of such a formula is the famous Cauchi-Buniakovskij
+inequality:
+                    $$
+                    \langle u,u\rangle      
+                    \langle v,v\rangle      
+                    \geq 
+                    \langle u,v\rangle^2
+                       $$
+Two of them belong to Russian mathematician Tchebyshof.<br><br>
+
+  <b> Example</b> 
+Pick $n$ .  Consider polynomial  $T_n(x)$ 
+  of degree $n$.i.e
+  $$
+   P_n(x)=x^n+\hbox {terms of power less than $n$}
+   $$
+   such that for every polynomial $Q_n$ of degree $n$
+                             $$
+                             \max_{x\in A} Q_n(x)
+                             \geq
+                             \max_{x\in A} T_n(x)
+                             $$
+                             
+                             One can see that if $A=[-1,1]$
+                             then
+$T_2=x^2-{1\over 2}$,
+$T_3=x^3-{3\over 4}$, and for every $n$
+           $$
+           T_n(x)={1\over 2^n}\cos n\varphi\,,     
+           $$
+  where $x=\cos\varphi$.<br><br>
+
+  $T_n(x)$ are famous Chebyshov polinomials (see the Blog... ).<br><br>
+Another example is Chebyshov inequality<br><br>
+       <b> Example</b><br><br>
+<br><br>
+           
+    </div>
+ </body>
+</html>

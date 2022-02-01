@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="15 January 2022">
+      <br><br>
+<h2><b> Non-trivial parameterisation of cone</b></h2><br><br>
+Let $C$ be a conic surface with apex at the point $O=(0,0,1)$ such that
+the circle 
+$$ C\colon\quad
+\cases { x=\cos\varphi,\quad y=\sin\varphi \cr z=0}\,.
+$$<br><br>
+How looks the equation of the cone which passes through the vertex $O$
+and the circle $C$?<br><br>
+<br><br>
+The point $\r=(x,y,z)$ belongs to the surface of this cone
+if and only if
+          $$
+          \det
+          \pmatrix
+          {
+            x &y &z\cr  
+            0 &0 &1\cr  
+            \cos\varphi &\sin\varphi &0\cr  
+          }
+          =
+          y\cos\varphi-x\sin\varphi=0\,.
+          $$
+The equation of this cone is
+  $$
+  x^2+y^2=(z-1)^2\,.
+  $$<br><br>
+Consider  the skew cone with the vertex at the point
+   $O=(a,0,1)$, passing through the circle
+          $ C\colon
+\cases { x=\cos\varphi,\quad y=\sin\varphi \cr z=0}
+$.
+Equation of this cone is
+           $$
+           S_a\colon\quad
+          \det
+          \pmatrix
+          {
+            x &y &z\cr  
+            a &0 &1\cr  
+            \cos\varphi &\sin\varphi &0\cr  
+          }
+          =
+          y\cos\varphi-x\sin\varphi+za\sin\varphi=0\,.
+          \tag{1}
+          $$
+      Intersect the cone $S_a$ with the plane
+                     $$
+                  \pi\colon\quad{x\over L}
+                        +
+                  {z\over H}=0\,.   
+                     $$
+    We come to the equation
+     $$
+     \cases
+      {
+     y=x\tan\varphi-az\cr
+     xH+zL=LH\cr
+   }
+     $$
+  
+The plane $\pi$ makes the angle $\theta$ such that 
+$\cos\theta={H\over \sqrt {H^2+L^2}}$. Thus we see that 
+for $dx$, $dy$ and $dz$ in the plane $\pi$
+
+    </div>
+ </body>
+</html>
