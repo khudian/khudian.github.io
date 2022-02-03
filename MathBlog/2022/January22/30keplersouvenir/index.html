@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="30 January 2022">
+      <br><br>
+<h2><b> Souvenirs on Kepler law....</b></h2><br><br>
+ <i> O sweet memories! I remember very well the day, when  I realised that
+  origin is the focus of the ellipse which is formed
+  by the section  of the cone $x^2+y^2=z^2$ \footnote{$^{1)}$}{This day I knew
+the diagnosis on my eye.It was 30 March 2016...}</i>
+ <br><br>
+ Here I will show it. More precisely we will show that 
+ equation       
+ $$
+            {x^2\over a^2}
+            +{y^2\over b^2}=1\,.
+            \tag{1}
+            $$
+ describes an ellipse with
+foci  at the points $F_i=\pm c$ where $c=\sqrt {a^2+b^2}$<br><br>
+
+Show first that
+statement (1) implies that
+for the ellpse 
+$$\cases {x^2+y^2=z^2\cr z=kx+b\cr}\,.
+\tag{2}
+$$
+the  origin is one of its foci.<br><br>
+(We suppose that $|k|\leq 1$).
+ 
+Indeed one can see that the ellipse (2) can be rewritten in the following way
+        $$
+    x^2+y^2=(kx+b)^2 \Leftrightarrow     
+    (1-k^2)x^2-2kxb=b^2\Leftrightarrow
+        $$
+        $$
+        (1-k^2) \left(x^2-{2xkb\over 1-k^2}+{k^2b^2\over (1-k^2)^2}\right)
+        =b^2+{k^2b^2\over 1-k^2}=
+        {b^2\over 1-k^2}\Leftrightarrow
+        $$
+        $$
+        (1-k^2)\left(x-{kb\over 1-k^2}\right)^2
+           +y^2={b^2\over 1-k^2}\,.
+           \tag{3}
+         $$
+i.e.        $$
+        {(1-k^2)^2\over b^2}\left(x-{kb\over 1-k^2}\right)^2
+           +{1-k^2\over b^2}y^2={b^2\over 1-k^2}\,.
+           \tag{3}
+         $$<br><br>
+ Recall that  the ellpse (1) 
+               $$
+              \left({x\over A}\right)^2 
+              +\left({y\over B}\right)^2=1\,, \quad (A\leq B) 
+               \tag{1}
+               $$
+         has foci at the points $(\pm c,0)  $ with $C=\sqrt {A^2-B ^2}$<br><br>
+hence the ellipse (3) has foci at the points 
+                $$
+              F_{1,2}=-{kb\over 1-k^2}\pm \sqrt{A^2-B^2}=  
+              -{kb\over 1-k^2}\pm \sqrt{{b^2\over (1-k^2)^2}-
+              {b^2\over (1-k^2)^2}}=  
+                $$
+                $$
+              -{kb\over 1-k^2}\pm {kb\over (1-k^2)}\,,  
+                $$
+i.e. one focus is at the origin, and the second at the 
+$x={2kb\over (1-k^2)}$.<br><br>
+One can see this clear in polar coordinates:<br><br>
+In polar coordinates (2) becomes
+$$
+\cases {r=z\cr z=kx+b\cr}\,.
+\tag{2 }
+$$
+         
+    </div>
+ </body>
+</html>

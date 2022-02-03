@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="21 January 2022">
+      <br><br>
+<h2><b> Parameterisation of the skew cone</b></h2><br><br>
+Let $M$ be a conic surface with apex at the point $O=(a,0,1)$ such that
+it passes via the circle  
+$$ C\colon\quad
+\cases { x=\cos\varphi,\quad y=\sin\varphi \cr z=0}\,.
+$$
+How looks its equation?<br><br>
+<br><br>
+
+The vector $\r$ belongs to this conic surface
+if and only if there exists a point $\r_\varphi$ 
+at the circle $C$ such that vectors
+$\r-{O}$ and $\r_\varphi-{O}$ are coplanar:
+          $$
+        \r-{O}\times   
+        \r_\varphi-{O}=0\,,
+                  $$
+i.e.
+                $$
+        \det
+        \pmatrix
+           {
+       {\bf i}     &  {\bf j}     & {\bf k}  \cr   
+        x-a       &  y           & z-1\cr
+        \cos\varphi-a       &  \sin\varphi          & -1\cr
+     } =0= 
+           $$
+           $$
+           {\bf i}
+        \pmatrix
+           {   
+          y           & z-1\cr
+           \sin\varphi          & -1\cr
+     }      
+           -{\bf j}
+        \pmatrix
+           {
+        x-a               & z-1\cr
+        \cos\varphi-a                 & -1\cr
+                }
+                +
+         {\bf k}
+     \pmatrix
+           {  
+        x-a       &  y          \cr
+        \cos\varphi-a       &  \sin\varphi    \cr
+     }=0\,.         $$<br><br>
+Thus we see that equation of the conic surface is
+                   $$
+                   (x,y,z)\colon \cases
+                   {
+                     -y-(z-1)sin\varphi=0\cr
+                     -(x-a)-(\cos\varphi-a)(z-1)=0\cr
+           (x-a)\sin\varphi-y(\cos\varphi-a)\cr
+                   }\,.
+                   $$ Those equation of skew cone 
+with apex at the point $ O=(a,0,1)$ passing via the circle
+$C\colon  \{x=\cos\varphi, y=\sin\varphi z=0 \}$
+                   is
+       $$
+  \sin^2\varphi +    
+  \cos^2\varphi=
+  \left(
+  {y\over 1-z}
+  \right)^2   +  
+  \left(a+
+  {x-a\over 1-z}
+  \right)^2=1\,.     
+       $$
+
+    </div>
+ </body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../../libs/mathBlogStyle.css">
+
+  <script type="text/javascript" src="../../../libs/jquery_3.4.1.js"></script>
+  <script type="text/javascript" src="../../../libs/menu.js"></script>
+  <script type="text/javascript" src="../../../config.js"></script> 
+  <script type="text/javascript" src="../../../libs/mathBlogBase.js"></script>
+  <script type="text/javascript" src="../../../libs/mathBlogArticle.js"></script> 
+  <script type="text/x-mathjax-config">
+    configureMathJax();
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>  
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <div class="mainText">
+    <div class="article" date="22 January 2022">
+      <br><br>
+<h2><b> Second circle in the skew cone</b></h2><br><br>
+ The skew cone 
+                 $$
+              \left[\{{\bf O}\}=(a,b,h);
+              {\rm base}=\{R\cos\varphi,R\sin\varphi,h\}\right]   
+                  $$
+                 
+ is passing via the circle
+ $C\colon \{z=0,x^2+y^2=R^2\}$ and it has  the apex at the point
+ ${\bf O}=(a,b,h)$.<br><br>
+ Its equation is
+                    $$
+                 \left [
+                   (x-O_x){\bf i}+(y-O_y){\bf j} +(z-O_z){\bf k}
+                   \right]\times
+                 \left [
+         (R\cos\varphi-O_x){\bf i}+(R\sin\varphi-O_y){\bf j}+ (0-O_z){\bf k}
+                   \right]=                     
+                    $$
+                      $$
+                 =\left [
+                   (x-a){\bf i}+(y-b){\bf j} +(z-h){\bf k}
+                   \right]\times
+                 \left [
+         (R\cos\varphi-a){\bf i}+(R\sin\varphi-b){\bf j}+ (0-h){\bf k}
+                   \right]=0\,.
+                      $$ 
+          We come to the relation
+                     $$
+                    \cases
+                    {
+                    -h(y-b)-(z-h)(R\sin\varphi-b)\cr 
+                    -h(x-a)-(z-h)(R\cos\varphi-a)\cr 
+                    }
+                     \Rightarrow
+                    \cases
+                    {
+                  R\varphi=b+{h(y-b)\over (h-z) }\cr 
+                  R\cos\varphi=a+{h(x-a)\over (h-z) }\cr 
+                    }
+                     \Rightarrow
+                     $$
+           
+          
+        (see details in the previous blog.)<br><br>
+
+       Thus we see that points of this conic surface $M$ obey equations
+      $$
+ \sin^2\varphi+\cos^2\varphi=1=
+\left({a\over R}+{(x-a)h\over (h-z)R}\right)^2+     
+\left({b\over R}+{(y-b)h\over (h-z)R}\right)^2=1     
+      $$<br><br>
+      Now consider another skew cone 
+                 $$
+              \left[\{{\bf O}\}=(a,0,0);
+              {\rm base}=\{\cos\varphi,\sin\varphi,1\}\right]   
+                  $$
+                 
+ it is passing via the circle
+ $C\colon \{z=1,x^2+y^2=1\}$ and it has  the apex at the point
+ ${\bf O}=(a,0,0)$.<br><br>
+ Its equation is
+                    $$
+                 \left [
+                   (x-O_x){\bf i}+(y-O_y){\bf j} +(z-O_z){\bf k}
+                   \right]\times
+                 \left [
+         (R\cos\varphi-O_x){\bf i}+(R\sin\varphi-O_y){\bf j}+ (1-O_z){\bf k}
+                   \right]=                     
+                    $$
+                      $$
+                 =\left [
+                   (x-a){\bf i}+y{\bf j} +z{\bf k}
+                   \right]\times
+                 \left [
+         (\cos\varphi-a){\bf i}+\sin\varphi {\bf j}+ 1{\bf k}
+                   \right]=0=
+                      $$ 
+                      $$
+                      \det
+                     \pmatrix
+                        {
+                          {\bf i} &{\bf j} &{\bf k}\cr
+                          {x-a} &{y} &{z}\cr
+                          {\cos\varphi-a} &{\sin\varphi} &{1}\cr
+                        }=                       
+{\bf i}(y-z\sin\varphi)-                     
+{\bf j}(x-a-z(\cos\varphi-a)                      
+{\bf k}((x-a)\sin\varphi-y(\cos\varphi-a))=0.                      
+                      $$<br><br>
+Thus $\sin\varphi={y\over z}$ $\cos\varphi=a+{x-a\over z}$ and 
+                   $$
+                  \left (a+{x-a\over z}\right)^2+
+                  \left({y\over z}\right)^2=1
+                   $$
+is the equation of this skewcone.
+ 
+
+    </div>
+ </body>
+</html>

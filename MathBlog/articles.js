@@ -1,6 +1,10 @@
 var links =
 [
+  [["2022/January22/30keplersouvenir/index.html"], ["30 January 2022"], ["Souvenirs on Kepler law...."]],
+  [["2022/January22/22skewconecircle/index.html"], ["22 January 2022"], ["Second circle in the skew cone"]],
+  [["2022/January22/21skewcone/index.html"], ["21 January 2022"], ["Parameterisation of the skew cone"]],
   [["2022/January22/15con/index.html"], ["15 January 2022"], ["Non-trivial parameterisation of cone"]],
+  [["2022/January22/6kolmgelf/index.html"], ["6 January 2022"], ["The last (secret) statement of Gelfand Kolmogorov"]],
   [["2021/October21/11groupoid/index.html"], ["11 October 2021"], ["Natural construction of groupoid"]],
   [["2021/October21/10againbv/index.html"], ["10 October 2021"], ["BV encore"]],
   [["2021/October21/9lettoted/index.html"], ["9 October 2021"], ["Letter to Ted ()"]],
