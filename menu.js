@@ -9,6 +9,7 @@
     string += '    <a href="http://khudian.net/Lectures/lectures.html">Lectures</a>';
     string += '    <a href="http://khudian.net/Etudes/etudes.html">&Eacute;tudes</a>';
     string += '    <a href="http://khudian.net/MathBlog/index.html">Math Blog</a>';
+    string += '    <a href="http://khudian.net/Armenian/index.html">Armenian Poetry</a>';
     string += '  </small>';
     string += '</p>';
     string += '<hr>';
